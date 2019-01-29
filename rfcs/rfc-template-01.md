@@ -1,8 +1,8 @@
 - Start Date: 2019-01-29
-- Target Major Version: 
+- Target Major Version: (EPIC or User Story TAG|Link)
 - Reference Issues: NameX needs to know that a NR is consumed or expired (consumption date and corp_num of entity that was created)
-- Entity Issue: 
-- Implementation PR: 
+- Entity Issue: (leave this empty)
+- Implementation PR: (leave this empty)
 
 
 # Summary
@@ -30,9 +30,20 @@ We need to copy consumption date and corp_num of entity from NRO to Namex databa
 
 # Drawbacks
 
+Why should we *not* do this? Please consider:
+
+- implementation cost, both in term of code size and complexity
+- whether the proposed feature can be implemented in user space
+- the impact on teaching people
+- integration of this feature with other existing and planned features
+- cost of migrating existing applications (is it a breaking change?)
+
+There are tradeoffs to choosing any path. Attempt to identify them here.
 
 # Alternatives
 
+- What other designs have been considered?
+- What is the impact of not doing this?
 
 # Adoption strategy
 
@@ -40,4 +51,8 @@ This implemenmtation will break some old test cases so we need to update related
 
 # Unresolved questions
 
+Optional, but suggested for first drafts. What parts of the design are still TBD?
+
 # Thanks
+
+This template is heavily based on the Vue, Golang, React, and other RFC templates. Thanks to those groups for allowing us to stand on their shoulders.
