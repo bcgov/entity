@@ -4,7 +4,8 @@
 - Entity Issue: (leave this empty)
 - Implementation PR: (leave this empty)
 
-(submit this RFC as a regular PR -- remove this line when submitting)
+(1. submit this RFC as a regular PR -- remove this line when submitting)
+(2. make a copy of the template, and rename to rfc-YOUR_FEATURE.md)
 
 # Summary
 
