@@ -6,7 +6,7 @@
 
 # Summary
 
-The legacy NRO system provides a feature to show detailed changes of an NR as it is processed. Most of the information from the examiners are looking for already exists on the main details page for an NR, but showing the historical edits and transitions is not listed in the UI.
+The legacy NRO system provides a feature to show detailed changes of an NR as it is processed. Most of the information that the examiners are looking for already exists on the main details page for an NR, but showing the historical edits and transitions is not listed in the UI.
 
 This proposal is to add that functionality to NameX and the Name-Examination UI.
 
@@ -48,7 +48,7 @@ The UX team has put forward the following as the initial design (no addittional 
 # Drawbacks
 
 - The audit feature affects the core model of the API service, and may have uninintended consequences.
-- All of the best options leverage SQLAlchemy. This keeps the database as a dumb datastore, and as such the historical pattern of doing data fixes directly on the database will not auto-magically pick up changes toThe data in the table.
+- All of the best options leverage SQLAlchemy. This keeps the database as a dumb datastore, and as such the historical pattern of doing data fixes directly on the database will not auto-magically pick up changes to the data in the table.
 
 # Alternatives
 
