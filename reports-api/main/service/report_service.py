@@ -9,7 +9,7 @@ class ReportService:
 
     @staticmethod
     def create_report_from_stored_template(template: str, template_args: object):
-        template = env.get_template('templates/{}.html'.format(template))
+        template = env.get_template('main/templates/{}.html'.format(template))
         html_out = template.render(template_args)
         pdf_out = HTML(string=html_out).write_pdf()
         return pdf_out

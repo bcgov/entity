@@ -1,5 +1,5 @@
 from flask_restplus import Resource, Namespace
-from service.template_service import TemplateService
+from main.service.template_service import TemplateService
 
 api = Namespace('templates', description='Reports System - Template Endpoints')
 templateService = TemplateService()

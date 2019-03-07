@@ -1,6 +1,6 @@
 from flask_restplus import Resource
-from service.report_service import ReportService
-from util.dto import ReportRequestDto
+from main.service.report_service import ReportService
+from main.util.dto import ReportRequestDto
 from flask import Response, request, abort
 from jinja2 import TemplateNotFound
 

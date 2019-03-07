@@ -1,2 +1,6 @@
 venv
 reports-api/util/__pycache__
+reports-api/main/__pycache__
+reports-api/main/routes/__pycache__
+reports-api/main/service/__pycache__
+reports-api/main/util/__pycache__
