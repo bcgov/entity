@@ -12,6 +12,6 @@ class TemplateList(Resource):
     @api.response(200, 'Templates successfully returned')
     def get(self):
         templates = templateService.get_all_templates()
-        #print(templates)
-        return templates, 200
+        resp = {'templates': templates}
+        return resp, 200
 

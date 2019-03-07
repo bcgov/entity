@@ -1,9 +1,8 @@
-from flask_restplus import Resource, Namespace
+from flask_restplus import Resource
 from service.report_service import ReportService
 from util.dto import ReportRequestDto
 from flask import Response, request, abort
 from jinja2 import TemplateNotFound
-from datetime import date
 
 api = ReportRequestDto.api
 reportService = ReportService()
