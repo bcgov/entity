@@ -16,7 +16,7 @@ class Report(Resource):
     @api.response(201, 'Report successfully created')
     @api.response(404, 'Template Not Found')
     def post(self, template_name):
-        template_vars = request.data
+        template_vars = request.get_json()
         try:
             pdf = reportService.create_report(template_name, template_vars)
             response = Response(pdf, 201)
