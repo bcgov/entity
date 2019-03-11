@@ -17,7 +17,7 @@ pip install -r requirements/dev.txt
 
 * Run the application
 ```python
-python3 wsgi.py
+python wsgi.py
 ```
 This would start the application at default port (5000). Navigate to http://localhost:5000 to see the swagger documentation
 
@@ -27,7 +27,7 @@ pytest
 ```
 
 * Code Coverage
-```python
+```
 pytest --cov=main
 ```
 
