@@ -10,23 +10,29 @@ API for generating PDF reports
 
 ## Deployment (Local Development)
 
-* Install all the dependencies using
+#### Install all the dependencies 
 ```python
 pip install -r requirements/dev.txt
 ```
 
-* Run the application
+#### Weasyprint setup
+
+*Follow the documentation (https://weasyprint.readthedocs.io/en/stable/install.html) to setup weasyprint on local machine based on the operating system.*
+
+run *weasyprint* command on the terminal to verify the setup
+
+#### Run the application
 ```python
 python wsgi.py
 ```
 This would start the application at default port (5000). Navigate to http://localhost:5000 to see the swagger documentation
 
-* Test the application
+#### Test the application
 ```python
 pytest
 ```
 
-* Code Coverage
+#### Code Coverage
 ```
 pytest --cov=main
 ```
