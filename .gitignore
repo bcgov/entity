@@ -7,3 +7,6 @@ reports-api/main/util/__pycache__
 reports-api/tests/__pycache__
 reports-api/tests/python/__pycache__
 reports-api/tests/python/endpoints/__pycache__
+.coverage
+*.pyc
+*.pyc
