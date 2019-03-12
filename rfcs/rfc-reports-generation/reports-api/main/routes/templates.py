@@ -2,7 +2,6 @@ from flask_restplus import Resource, Namespace
 from main.service.template_service import TemplateService
 from ..decorators import timetracker
 
-
 api = Namespace('templates', description='Reports System - Template Endpoints')
 templateService = TemplateService()
 

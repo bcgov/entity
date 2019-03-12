@@ -23,10 +23,9 @@ The API uses Jinja2 (http://jinja.pocoo.org/docs/2.10/) for creating the report 
 * Apply the template variables received to the template using jinja2 library
 * Convert the HTML to PDF using weasyprint library
 
-The API provides 3 endpoints:
+The API provides 2 endpoints:
 * /reports-api/v1/templates               - Returns all the stored template names
-* /reports-api/v1/reports/:template_name  - Generate report based on the template name
-* /reports-api/v1/reports                 - Generate report using the template from request
+* /reports-api/v1/reports                 - Generate report using the template(either encoded string or template_name) from request
 
 # Drawbacks
 

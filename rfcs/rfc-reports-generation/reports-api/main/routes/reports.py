@@ -22,34 +22,24 @@ class Report(Resource):
     def post(self):
         request_json = request.get_json()
         logging.info('Reports request received {}'.format(request_json))
-        pdf = reportService.create_report_from_template(request_json['template'], request_json['template_vars'])
-        response = Response(pdf, 201)
-        report_name = '{}.pdf'.format(request_json['report_name'])
-        response.headers.set('Content-Disposition', 'attachment', filename=report_name)
-        response.headers.set('Content-Type', 'application/pdf')
-        return response
+        template_vars = request_json['template_vars']
+        report_name = request_json['report_name']
+        pdf = None
+        if 'template_name' in request_json: #Ignore template if template_name is present
+            template_name = request_json['template_name']
+            try:
+                pdf = reportService.create_report_from_stored_template(template_name, template_vars)
+            except TemplateNotFound as e:
+                abort(404)
 
+        elif 'template' in request_json:
+            pdf = reportService.create_report_from_template(request_json['template'], template_vars)
 
-@api.route("/<template_name>")
-@api.param('template_name', 'Name of the template')
-class Report(Resource):
-
-    @api.doc('Creates report for the template with the template_name using incoming request json')
-    @api.expect(object, validate=True)
-    @api.response(201, 'Report successfully created')
-    @api.response(404, 'Template Not Found')
-    #@api.representation('application/pdf')
-    @timetracker.timetracker
-    def post(self, template_name):
-        template_vars = request.get_json()
-        try:
-            pdf = reportService.create_report_from_stored_template(template_name, template_vars)
+        if pdf is not None:
             response = Response(pdf, 201)
-            response.headers.set('Content-Disposition', 'attachment', filename='{}.pdf'.format(template_name))
+            response.headers.set('Content-Disposition', 'attachment', filename='{}.pdf'.format(report_name))
             response.headers.set('Content-Type', 'application/pdf')
             return response
-        except TemplateNotFound as e:
-            abort(404)
-
-
+        else:
+            abort(400)
 
