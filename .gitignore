@@ -1,0 +1,12 @@
+venv
+reports-api/util/__pycache__
+reports-api/main/__pycache__
+reports-api/main/routes/__pycache__
+reports-api/main/service/__pycache__
+reports-api/main/util/__pycache__
+reports-api/tests/__pycache__
+reports-api/tests/python/__pycache__
+reports-api/tests/python/endpoints/__pycache__
+.coverage
+*.pyc
+*.pyc

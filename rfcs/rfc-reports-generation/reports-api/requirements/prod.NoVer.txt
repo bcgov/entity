@@ -1,0 +1,14 @@
+gunicorn
+Flask
+Flask-Migrate
+Flask-Script
+Flask-Moment
+Flask-SQLAlchemy
+Flask-RESTplus
+Flask-Marshmallow
+flask-jwt-oidc
+python-dotenv
+psycopg2-binary
+marshmallow
+marshmallow-sqlalchemy
+cx_Oracle

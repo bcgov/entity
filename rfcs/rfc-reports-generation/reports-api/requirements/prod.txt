@@ -1,0 +1,17 @@
+gunicorn
+Flask
+Flask-Migrate
+Flask-Script
+Flask-Moment
+Flask-SQLAlchemy
+Flask-RESTplus
+Flask-Marshmallow
+flask-jwt-oidc>=0.1.5
+python-dotenv==0.8.2
+psycopg2-binary
+marshmallow
+marshmallow-sqlalchemy
+
+#For report generation
+WeasyPrint
+Flask-WeasyPrint
