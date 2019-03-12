@@ -4,6 +4,7 @@ from main.util.dto import ReportRequestDto
 from flask import Response, request, abort
 from jinja2 import TemplateNotFound
 import logging
+from ..decorators import timetracker
 
 api = ReportRequestDto.api
 reportService = ReportService()
@@ -17,6 +18,7 @@ class Report(Resource):
     @api.expect(report_request, validate=True)
     @api.response(201, 'Report successfully created')
     #@api.representation('application/pdf')
+    @timetracker.timetracker
     def post(self):
         request_json = request.get_json()
         logging.info('Reports request received {}'.format(request_json))
@@ -37,6 +39,7 @@ class Report(Resource):
     @api.response(201, 'Report successfully created')
     @api.response(404, 'Template Not Found')
     #@api.representation('application/pdf')
+    @timetracker.timetracker
     def post(self, template_name):
         template_vars = request.get_json()
         try:
