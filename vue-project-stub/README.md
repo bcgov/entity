@@ -1,4 +1,4 @@
-# project-stub
+# vue-project-stub
 
 ## Project setup
 ```

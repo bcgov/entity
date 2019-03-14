@@ -4,22 +4,19 @@
     <router-view/>
   </div>
 </template>
+
 <script>
-// @ is an alias to /src
-import StdHeader from '@/components/StdHeader.vue';
+import StdHeader from '@/components/StdHeader.vue'
 
 export default {
   name: 'home',
   components: {
-    StdHeader,
-  },
-};
+    StdHeader
+  }
+}
 </script>
+
 <style lang="stylus">
-
-body
-  margin 0
-
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
@@ -27,5 +24,11 @@ body
   text-align center
   color #2c3e50
 
-
+#nav
+  padding 30px
+  a
+    font-weight bold
+    color #2c3e50
+    &.router-link-exact-active
+      color #42b983
 </style>

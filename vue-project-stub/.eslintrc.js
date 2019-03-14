@@ -1,18 +1,19 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
+    node: true
   },
-  extends: [
+  'extends': [
     'plugin:vue/essential',
-    '@vue/airbnb',
+    '@vue/standard',
+    '@vue/typescript'
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'max-len': ['warn', { code: 120 }],
+    'max-len': ['warn', { code: 120 }]
   },
   parserOptions: {
-    parser: 'babel-eslint',
-  },
-};
+    parser: '@typescript-eslint/parser'
+  }
+}
