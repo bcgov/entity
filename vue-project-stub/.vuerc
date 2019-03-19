@@ -1,0 +1,30 @@
+{
+  "useTaobaoRegistry": false,
+  "presets": {
+    "entities project defaults": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-typescript": {
+          "classComponent": true,
+          "useTsWithBabel": true
+        },
+        "@vue/cli-plugin-pwa": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "standard",
+          "lintOn": [
+            "save"
+          ]
+        },
+        "@vue/cli-plugin-unit-jest": {},
+        "@vue/cli-plugin-e2e-nightwatch": {}
+      },
+      "router": true,
+      "routerHistoryMode": true,
+      "vuex": true,
+      "cssPreprocessor": "stylus"
+    }
+  },
+  "latestVersion": "3.5.1",
+  "lastChecked": 1552593244860
+}
