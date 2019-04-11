@@ -2,9 +2,9 @@
 | Component        | Description           |Installation Help|Repo Path|
 | :-------------   | :---------------------|:----------------|:--------|
 | Namex UI         | Namex UI (web caddy)  | https://github.com/bcgov/name-examination/blob/master/docs/DeveloperSetupAndRun.md| https://github.com/bcgov/name-examination|              |         |
-| Namex-api: Flask/Python 3.6,Marshmallow, Alembic|Manages gets and puts to the namex DB and front-end|Namex API|https://github.com/bcgov/namex/blob/master/docs/Backend-namex_api_setup.md|https://github.com/bcgov/namex/tree/master/api|
+| Namex api|Flask/Python 3.6,Marshmallow, Alembic|https://github.com/bcgov/namex/blob/master/docs/Backend-namex_api_setup.md|https://github.com/bcgov/namex/tree/master/api|
 | Namex Postgres  PGAdmin v10/11 DB|namex postgres database|Install locally or port-forward https://github.com/bcgov/namex/blob/master/namex-db/PortForwardingaDatabase.md|https://github.com/bcgov/namex/tree/master/namex-db|
-| Colin-api: Flask/Python 3.6|Returns a corporate json file to display a summary for the selected corporate conflict. |Port-forward when no changes are required.|https://github.com/bcgov/namex/tree/master/colin-api|
+| Colin-api: Flask/Python 3.6|Returns a corporate json file to display a summary for the selected corporate conflict. |Port-forward when no changes are required. https://github.com/LJTrent/entity/blob/master/docs/namex/Colin-PortForwarding.md|https://github.com/bcgov/namex/tree/master/colin-api|
 | Solr: 6.6.3|Provides documents for the examination process and decision.|Install locally or port-forward | https://github.com/bcgov/namex/blob/master/solr/docs/solr_standalone_installation.md |https://github.com/bcgov/namex/tree/master/solr|
 | BC_REGISTRIES_NAMES|Postgres Foreign Data Wrapper to oracle view that updates the solr indexes.|Port-forward required to load local solr install with data through the solr-ui Dataimport.|See instructions to setup port-forwarding to the Names DB. https://github.com/bcgov/namex/blob/master/solr/docs/solr_standalone_installation.md|
 | BC_REGISTRIES|Postgres Foreign Data Wrapper to oracle view that updates the solr indexes.|see instructions for BC_REGISTRIES_NAMES| |
@@ -20,7 +20,7 @@
 7.	Use the entity zenHub board to get and report status of the assigned work.
 8.	Follow the git flow for management of repos, inclusion of tests, pull request and code review set out here: https://github.com/bcgov/namex/blob/master/docs/developer.md
 9.	Rules for database fixtures: https://github.com/bcgov/namex/blob/master/docs/database.md  when the scope of work includes data model changes.
-10.	Follow the “Code with Us” workflow to complete releases.
+10.	Follow the “Code with Us” workflow to complete releases/phases of a "Code with Us" opportunity.
 
 
 
