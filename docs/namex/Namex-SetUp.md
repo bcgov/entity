@@ -20,9 +20,9 @@
 7.	Use the entity zenHub board to get and report status of the assigned work.
 8.	Follow the git flow for management of repos, inclusion of tests, pull request and code review set out here: https://github.com/bcgov/namex/blob/master/docs/developer.md
 9.	Rules for database fixtures: https://github.com/bcgov/namex/blob/master/docs/database.md  when the scope of work includes data model changes.
-10.	Follow the “Code with Us” workflow, to complete releases/phases of a "Code with Us" opportunity.
+10.	Follow the “Code with Us”,https://github.com/bcgov/entity/blob/master/docs/codewithus/CodewithUsProcess.png  workflow, to complete releases/phases of a "Code with Us" opportunity.
 	
-- https://github.com/bcgov/entity/blob/master/docs/codewithus/CodewithUsProcess.png
+
 
 
 
