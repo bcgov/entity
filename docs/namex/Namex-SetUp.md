@@ -10,7 +10,7 @@
 | BC_REGISTRIES|Postgres Foreign Data Wrapper to oracle view that updates the solr indexes.|Port-forward to the foreign data wrapper.|https://github.com/LJTrent/namex/blob/master/solr/docs/operations_manual.md |
 | solr DB: Postgres 10|Solr postgres database required for solr synonyms|See solr instructions to setup port-forwarding| |
 
-## Workflow and Process
+# Workflow and Process
 1.	Use Pycharms for your IDE.
 2.	Obtain authorization in the namex dev namespace in Openshift from the product owner.
 3.	Obtain an .env file from the product owner to install names-examination.
