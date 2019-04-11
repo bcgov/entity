@@ -6,8 +6,8 @@
 | Namex Postgres  PGAdmin v10/11 DB|namex postgres database|Install locally or port-forward https://github.com/bcgov/namex/blob/master/namex-db/PortForwardingaDatabase.md|https://github.com/bcgov/namex/tree/master/namex-db|
 | Colin-api: Flask/Python 3.6|Returns a corporate json file to display a summary for the selected corporate conflict. |Port-forward when no changes are required. https://github.com/LJTrent/entity/blob/master/docs/namex/Colin-PortForwarding.md|https://github.com/bcgov/namex/tree/master/colin-api|
 | Solr: 6.6.3|Provides documents for the examination process and decision.|Install locally or port-forward | https://github.com/LJTrent/namex/blob/master/solr/docs/solr_standalone_customization.md , https://github.com/LJTrent/namex/blob/master/solr/docs/operations_manual.md |https://github.com/bcgov/namex/tree/master/solr|
-| BC_REGISTRIES_NAMES|Postgres Foreign Data Wrapper to oracle view that updates the solr indexes.|Port-forward required to load local solr install with data through the solr-ui Dataimport.|See instructions to setup port-forwarding to the Names DB. https://github.com/bcgov/namex/blob/master/solr/docs/solr_standalone_installation.md|
-| BC_REGISTRIES|Postgres Foreign Data Wrapper to oracle view that updates the solr indexes.|see instructions for BC_REGISTRIES_NAMES| |
+| BC_REGISTRIES_NAMES|Postgres Foreign Data Wrapper to oracle view that updates the solr indexes.|Port-forward to the foreign data wrapper required to load local solr install with data.|https://github.com/LJTrent/namex/blob/master/solr/docs/operations_manual.md|
+| BC_REGISTRIES|Postgres Foreign Data Wrapper to oracle view that updates the solr indexes.|Port-forward to the foreign data wrapper.|https://github.com/LJTrent/namex/blob/master/solr/docs/operations_manual.md |
 | solr DB: Postgres 10|Solr postgres database required for solr synonyms|See solr instructions to setup port-forwarding| |
 
 ##Workflow and Process
