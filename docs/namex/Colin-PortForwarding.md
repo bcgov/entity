@@ -23,15 +23,15 @@ To accomplish this, we will use OpenShift port forwarding.  Some additional deta
 	NAME                                   READY     STATUS      RESTARTS   AGE
 	backup-2-2lbt6                         1/1       Running     0          6d
 	colin-api-213-497df                    1/1       Running     0          6d
- ```
+
  - Port forward the colin-api port to your local machine
   ```
   $ oc port-forward colin-api-213-497df 5432:5432
-  ```
+  
   Forwarding from 127.0.0.1:5432 -> 5432
   Forwarding from [::1]:5432 -> 5432
   127.0.0.1:5432Handling connection for 5432
   Handling connection for 5432
   Handling connection for 5432
-  ```
-The colin-api is available for use in Namex.
+  
+- The colin-api is available for use in Namex.
