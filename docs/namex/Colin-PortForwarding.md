@@ -33,5 +33,5 @@ To accomplish this, we will use OpenShift port forwarding.  Some additional deta
   127.0.0.1:5432Handling connection for 5432
   Handling connection for 5432
   Handling connection for 5432
-  
+  ```
 - The colin-api is available for use in Namex.
