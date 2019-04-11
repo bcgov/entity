@@ -3,8 +3,8 @@
 The following instructions assume:
 1. You have the `oc` command line tool installed on your system and it is functioning.
 1. You know how to login to an OpenShift server from the command line; using the login token from the web console.
-1. You have permissions to access the project containing the database pod.
-1. You have pgAdmin (or some other tool) installed and know how to use it.  The 
+1. You have permissions to access the colin-api pod.
+
 
 ## Port forwarding to your local system
 
