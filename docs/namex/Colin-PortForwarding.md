@@ -19,7 +19,7 @@ To accomplish this, we will use OpenShift port forwarding.  Some additional deta
  - List the pods
 	```
 	$ oc get pods
-	```
+	
 	NAME                                   READY     STATUS      RESTARTS   AGE
 	backup-2-2lbt6                         1/1       Running     0          6d
 	colin-api-213-497df                    1/1       Running     0          6d
