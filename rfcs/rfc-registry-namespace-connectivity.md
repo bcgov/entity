@@ -59,19 +59,19 @@ All internal business oriented services will communicate directly over HTTPS or 
 ### Inter-Registry Business Services (External Facing)
 All externally exposed business services will communicate via HTTPS or HTTPS/2.
 
-The interfaces will all be documented and exposed via OAS (Open SPI Specification) v3 or better.
+The interfaces will all be documented and exposed via OAS (Open API Specification) v3 or better.
 
-All payloads will be JSON, with associated and publiched JSON Schemas.
+All payloads will be JSON, with associated and published JSON Schemas.
 
 ![Registry Namespace Connectivity Diagram](rfc-registry-namespace-connectivity/namespace-connectivity.png)
 
 # Drawbacks
 
-The platform only provides for joining the namepsaces into all together, rather than activing more like network routing that could ensure directionality and limit which segments can be accessed. In the case of joined namespace, any service can access any other namespaces services directly.
+The CSI platform only provides the ability to join namespaces together, rather than acting more like network routing that could ensure directionality and limit which segments can be accessed. In the case of joined namespaces, any service can access any other namespace's services directly.
 
-More care must be taken to ensure that services are communicating over the correct network path and that non-HTTP based protocols do not proliferate beyind whatThe 3rd Party commonly used packages require.
+More care must be taken to ensure that services are communicating over the correct network path and that non-HTTP based protocols do not proliferate beyond what the 3rd Party commonly used packages require.
 
-No doing so could make the bespoke Registry services more difficult to move to other platforms or cloud providers.
+Not doing so could make the bespoke Registry services more difficult to move to other platforms or cloud providers, in addition to not promoting security in-depth.
 
 # Alternatives
 
@@ -81,7 +81,7 @@ Tools such as Jaeger could have their agents wrapped in an HTTP server, but the 
 
 # Adoption strategy
 
-Common services and adapting the business services to use them will be managed via individual stories and tickets, making it no differnet than any other feature added to the environment. The joining of the namespaces just provides the capability for better, or in some cases the only access to common services.
+Common services and adapting the business services to use them will be managed via individual stories and tickets, making it no different than any other feature added to the environment. The joining of the namespaces just provides the capability for better, or in some cases the only access to common services.
 
 # Unresolved questions
 
