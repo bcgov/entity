@@ -16,7 +16,7 @@ Registry Payment System flow
 The registry applications would need a payment system to calculate fees and to create payment related records. 
 
 # Detailed design
-
+### Pay API
 The pay-api would be responsible for the following;
    * Calculate the fees for a filing
    * Store the fees information
@@ -31,6 +31,12 @@ The sequence diagram below shows the flow on below conditions;
    * Receipt : This will be used when the payment is complete and the filing application needs a receipt of payment. 
 
 ![Registry Pay System Flow Diagram](rfc-pay-api-flow/pay-api-flow.png)
+
+### PayBC API
+PayBC is an AR (Accounts and Receivables) system. The client needs to create an invoice to make a payment. The below sequence shows the calls to PayBC API to create an invoice.
+
+![Registry Pay System Flow Diagram](rfc-pay-api-flow/paybc-api-flow.png)
+
 
 ### Documentation
 
