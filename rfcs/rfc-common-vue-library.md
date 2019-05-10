@@ -48,7 +48,7 @@ https://cli.vuejs.org/guide/build-targets.html#library
 The components will be deployed to NPM so that any project which needs it can be used.
 https://www.npmjs.com/package/sbc-common-components
 
-***How to use it**
+**How to use it**
 
 Just use it like any other npm package.More details on the github page
 
