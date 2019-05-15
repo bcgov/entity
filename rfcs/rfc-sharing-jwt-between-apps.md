@@ -8,11 +8,11 @@
 
 # Summary
 
-The filing website compromises of multiple web application. User logs into SBC-AUTH web application and then gets redirected to COOPS web application .
+The filing website or the overall filing experience for the user compromises of multiple web application. User logs into SBC-AUTH web application and then gets redirected to COOPS web application .
 To keep the user logged into multiple application , its necessary to share the JWT token across all these applications.
 
 The challenge is once the user logs into auth-app , the user gets redirected to coops-ui and the browser redirect doesnt support any headers.Or else the token could've been passed as headers.
-Most of the browser storage are limited to single domain and this might the not be the case of auth app and coops
+Most of the browser storage are limited to single domain and this might the not be the case of auth app and coops.
 
 
 
@@ -61,14 +61,14 @@ In the coops-ui apps entry point , it should listen for any message from the aut
     }}`
     
     
-The urls make sure the message is for targeted origins only.    
+_The urls has to be set to make sure the message is for targeted origins only._    
     
 
 
 # Drawbacks
 
 I am unable to find much drawbacks with the solution as such.But any XSS vulnerabilities in one of these sites will lead to the solution to be vulnerable as well.So prevention of XSS and other security scans is pretty important.
-
+CSRF might also have the same implications
 
 
 # Alternatives
@@ -79,7 +79,7 @@ I am unable to find much drawbacks with the solution as such.But any XSS vulnera
     
     - passing the token as url query param
         
-        The solution is not robust enough and might hit a character limit as well.Not an ideal solution
+        The solution is not robust enough and might hit a URL character limit as well.Not an ideal solution
     
     - Cookies
             
@@ -95,17 +95,12 @@ I am unable to find much drawbacks with the solution as such.But any XSS vulnera
          
          The mapping of JWT and GUID will age out after a short span.ie 1 mint or after the first retrieval of the record so that user cant just use the url once again.  
 
-         The solution doesnt have any tradebacks except additional effort for implementing the solution.At this point , no drawbacks with IFRAME solution has been found and easier to implement. Thats why the custom  solution is not being used now.
+         The solution doesnt have any disadvantages except the additional effort for implementing the solution.At this point , no drawbacks with IFRAME solution has been found and easier to implement. Thats why the custom  solution is not preferred.
   
      - single app aka microfront end
                    
           The solution is not robust enough and might hit a character limit as well.Not an ideal solution
       
-    
-
-     
-     
-    
 - What is the impact of not doing this?
 
 # Adoption strategy
