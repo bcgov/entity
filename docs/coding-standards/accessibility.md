@@ -3,22 +3,26 @@
 - Alt Text
     - For screen readers, this describes non-text elements such as 
 - Descriptive link text
-    - Not ìclick hereî or ìmoreî 
+    - Not ‚Äúclick here‚Äù or ‚Äúmore‚Äù 
 - Keyboard tabbing
     - Does the tab order make sense?
     - Is it not annoying, ie: hard to get to the main part of the page without tabbing through 200 insignificant elements first? 
 - Page titles and headings
     - Short and clear
-    - Nested properly ñ ie: h1 above h2 above h3, etc ñ no jumping around 
+    - Nested properly ‚Äì ie: h1 above h2 above h3, etc ‚Äì no jumping around 
 - Colour contrast
     - Enough contrast between text and background 
-- Form inputs
-    - Use labels with ìforî attributes to associate labels and input fields
-    - Ie: <label for=îthe_idî>Name</label> <input id=îthe_idî />
 
 ## Less common issues:
 - Data tables
     - Make sure to use <thead> and <th> for headers
 - Video and Audio
-    - Description for those that canít see/hear it
+    - Description for those that can‚Äôt see/hear it
     - All important info in description 
+- Form inputs
+    - Vuetify takes care of this, so only relevant if not using Vuetify component
+    - Use labels with ‚Äúfor‚Äù attributes to associate labels and input fields
+    - Ie: <label for=‚Äùthe_id‚Äù>Name</label> <input id=‚Äùthe_id‚Äù />
+
+Site can be validated using Google Lighthouse in Chrome dev tools:
+https://developers.google.com/web/tools/lighthouse/#devtools
