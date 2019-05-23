@@ -19,6 +19,7 @@ Acceptance / DoD:
 - [ ] Design / Solution accepted by Product Owner
 - [ ] Test coverage acceptable
 - [ ] Peer Reviewed
+- [ ] Accessibility reviewed and acceptable
 - [ ] UX Approved
 - [ ] PR Accepted
 - [ ] Production burn in completed
