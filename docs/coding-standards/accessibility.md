@@ -1,4 +1,8 @@
 # Accessibility Guidelines
+
+Site can be validated using Google Lighthouse in Chrome dev tools:
+https://developers.google.com/web/tools/lighthouse/#devtools
+
 ## Common issues:
 - Alt Text
     - For screen readers, this describes non-text elements such as 
@@ -24,5 +28,3 @@
     - Use labels with “for” attributes to associate labels and input fields
     - Ie: <label for=”the_id”>Name</label> <input id=”the_id” />
 
-Site can be validated using Google Lighthouse in Chrome dev tools:
-https://developers.google.com/web/tools/lighthouse/#devtools
