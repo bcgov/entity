@@ -19,6 +19,7 @@ Acceptance / DoD:
 - [ ] Design / Solution accepted by Product Owner
 - [ ] Test coverage acceptable
 - [ ] Peer Reviewed
+- [ ] Accessibility reviewed and acceptable [checklist](https://github.com/bcgov/entity/docs/coding-standards/accessibility.md)
 - [ ] UX Approved
 - [ ] PR Accepted
 - [ ] Production burn in completed
