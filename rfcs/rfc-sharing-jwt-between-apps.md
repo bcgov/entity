@@ -1,4 +1,4 @@
-- Start Date: (fill me in with today's date, 2019-05-19)
+- Start Date: (fill me in with today's date, 2019-06-03)
 - Target Major Version: (EPIC or User Story TAG|Link)
 - Reference Issues: (fill in existing related issues, if any)
 - Entity Issue: github/entity#502
@@ -8,12 +8,8 @@
 
 # Summary
 
-The filing website compromises of multiple web application. User logs into SBC-AUTH web application and then gets redirected to COOPS web application .
-To keep the user logged into multiple application , its necessary to share the JWT token across all these applications.
-
-The challenge is once the user logs into auth-app , the user gets redirected to coops-ui and the browser redirect doesnt support any headers.Or else the token could've been passed as headers.
-Most of the browser storage are limited to single domain and this might the not be the case of auth app and coops
-
+The filing website compromises of multiple web application.Typical user flow is  usser logging into SBC-AUTH web application and  getting redirected to COOPS web application .
+To keep the user logged into multiple application , its necessary to share the JWT token across all these applications.Since the applications are of different domain names , a strategy has to be established for sharing token since browser doesnt implicitly share tokens across domain names.
 
 
 
@@ -26,7 +22,8 @@ Most of the browser storage are limited to single domain and this might the not 
 
 # Detailed design
 
-There are multiple options to address this problem.The team chose the sharing of JWT via embedded iframes and iframe messaging [https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage]
+There are multiple options to address this problem.The team chose the sharing of JWT via embedded iframes and iframe messaging [https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage].
+The token will be transmitted using the iframe messaging.
 
 ##### The auth app  changes
 
@@ -69,6 +66,7 @@ The urls make sure the message is for targeted origins only.
 
 I am unable to find much drawbacks with the solution as such.But any XSS vulnerabilities in one of these sites will lead to the solution to be vulnerable as well.So prevention of XSS and other security scans is pretty important.
 
+_If the application ends up in single domain , this solution becomes obsolete since token will be available across all applications because of single domain_
 
 
 # Alternatives
@@ -77,6 +75,12 @@ I am unable to find much drawbacks with the solution as such.But any XSS vulnera
     
     There are other solutions which were also evaluated as below
     
+    - deploy all the apps with the same domain name 
+    
+        The problem roots back to the fact that coops app is deployed in multiple domain names.But if we can get a reverse proxy and all the apps has a common domain name in browser , the token will be shared automatically.This is could be the case if we have to deploy our app in WAM proxy.
+       
+        When prepping for first production deployment , this solution has to be revisited. If the application ends up in one single domain using a reverse proxy or WAM , this code can be removed
+        
     - passing the token as url query param
         
         The solution is not robust enough and might hit a character limit as well.Not an ideal solution
@@ -114,7 +118,9 @@ The change is already implemented and it works well.
 
 # Unresolved questions
 
-There are more about the tokens[offline token, expiry etc].But thats a different solution and is not considered here.
+1) There are more about the tokens[offline token, expiry etc].But thats a different solution and is not considered here.
+2) Should we do a POC on reverse proxy or how things are set up with WAM proxy?
+
 # Thanks
 
 This template is heavily based on the Vue, Golang, React, and other RFC templates. Thanks to those groups for allowing us to stand on their shoulders.
