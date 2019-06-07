@@ -32,16 +32,7 @@ import groovy.json.JsonOutput
             workingDir: '',
             command: '',
             args: '${computer.jnlpmac} ${computer.name}',
-            envVars: [
-                secretEnvVar(key: 'IDIRCredU', secretName: 'e2e-secrets', secretKey: 'IDIRCredU'),
-                secretEnvVar(key: 'IDIRCredP', secretName: 'e2e-secrets', secretKey: 'IDIRCredP'),
-                secretEnvVar(key: 'KeycloakCredU', secretName: 'e2e-secrets', secretKey: 'KeycloakCredU'),
-                secretEnvVar(key: 'KeycloakCredP', secretName: 'e2e-secrets', secretKey: 'KeycloakCredP'),                
-                secretEnvVar(key: 'keycloakAuthURL', secretName: 'e2e-secrets', secretKey: 'keycloakAuthURL'),
-                secretEnvVar(key: 'keycloakAuthBody', secretName: 'e2e-secrets', secretKey: 'keycloakAuthBody'),                
-                secretEnvVar(key: 'TestCC', secretName: 'e2e-secrets', secretKey: 'TestCC'),
-                secretEnvVar(key: 'TestCVD', secretName: 'e2e-secrets', secretKey: 'TestCVD')
-            ]
+            envVars: []
         )
     ])
     {    
@@ -55,8 +46,14 @@ import groovy.json.JsonOutput
             }
 
 
-            stage ("Sleep to allow rsh time") {	
-                sleep 3000	
+            stage ('Running e2e Tests') {
+                echo "Running tests "
+                
+                    sh '''
+                         cd e2e
+                         npm install
+                         npm run test
+                    '''
             }
     }
 }
