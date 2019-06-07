@@ -1,0 +1,6 @@
+NAME="e2e"
+PIPELINE_PURPOSE="test"
+GIT_REPO_URL="https://github.com/johnamlane/entity.git"
+GIT_REF="e2e-pipeline"
+SOURCE_CONTEXT_DIR="/e2e"
+JENKINS_FILE="Jenkinsfile"

@@ -52,11 +52,9 @@ import groovy.json.JsonOutput
                     sh '''
                          cd e2e
                          npm install
+                         npm run test
                     '''
             }
 
-            stage ("Sleep to allow rsh time") {	
-                sleep 3000	
-            }
     }
 }
