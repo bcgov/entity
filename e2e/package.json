@@ -1,0 +1,14 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "./node_modules/nightwatch/bin/nightwatch -t ./specs/test.js"
+  },
+  "dependencies": {
+    "nightwatch": "1.1.11",
+    "geckodriver": "latest",
+    "chromedriver": "2.46",
+    "dotenv": "8.0.0"
+  }
+}

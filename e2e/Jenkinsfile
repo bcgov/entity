@@ -1,0 +1,60 @@
+#!/usr/bin/env groovy
+// Copyright © 2018 Province of British Columbia
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+
+// define groovy functions
+import groovy.json.JsonOutput
+
+// pipeline
+
+//node/pod needs environment setup for testing
+    def e2e_label = "e2e-image${UUID.randomUUID().toString()}"
+    podTemplate(label: e2e_label, name: e2e_label, serviceAccount: 'jenkins', cloud: 'openshift', containers: [
+        containerTemplate(
+            name: 'jnlp',
+            image: 'docker-registry.default.svc:5000/gl2uos-tools/bddstack:latest',
+            resourceRequestCpu: '500m',
+            resourceLimitCpu: '1000m',
+            resourceRequestMemory: '1Gi',
+            resourceLimitMemory: '4Gi',
+            workingDir: '',
+            command: '',
+            args: '${computer.jnlpmac} ${computer.name}',
+            envVars: []
+        )
+    ])
+    {    
+        node (e2e_label) {
+        
+            stage('Checkout') {
+                
+                    echo "checking out source"
+                    echo "Build: ${BUILD_ID}"
+                    checkout scm              
+            }
+
+
+            stage ('Running e2e Tests') {
+                echo "Running tests "
+                
+                    sh '''
+                         cd e2e
+                         npm install
+                         npm run test
+                    '''
+            }
+
+    }
+}
