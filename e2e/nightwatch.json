@@ -1,8 +1,6 @@
 {
 	"src_folders": ["./specs"],
 	"output_folder": "./reports",
-	"custom_commands_path": "./custom-commands",
-	"page_objects_path": "./page-objects",
 	"globals_path": "globals.js",
 
 	"test_settings": {
