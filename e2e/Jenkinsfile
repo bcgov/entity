@@ -55,5 +55,9 @@ import groovy.json.JsonOutput
                     '''
             }
 
+            post {
+                junit './reports/*.xml'
+            }
+
     }
 }
