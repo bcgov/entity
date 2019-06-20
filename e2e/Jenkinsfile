@@ -51,12 +51,12 @@ import groovy.json.JsonOutput
                     sh '''
                          cd e2e
                          npm install
-                         
+                         npm run test
                     '''
             }
 
-            stage ('Sleep') {
-                sleep 3000
+            stage ('Save Test Results') {
+                junit 'e2e/reports/*.xml'
             }
 
     }
