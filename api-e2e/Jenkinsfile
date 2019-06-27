@@ -31,15 +31,10 @@ def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
                         npm install newman
                         ./node_modules/newman/bin/newman.js run test.json -r cli,junit
                     '''
+                    junit 'newman/*.xml'
                 }
 
             }
-
-            stage ('Save Test Results') {
-                junit 'newman/*.xml'
-            }
-
-
-                  
+     
         }
 } 
