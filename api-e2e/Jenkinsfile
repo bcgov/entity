@@ -7,7 +7,7 @@ def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
             resourceLimitCpu: '1000m',
             resourceRequestMemory: '1Gi',
             resourceLimitMemory: '2Gi',
-            workingDir: 'tmp',
+            workingDir: '/tmp',
             command: '',
             args: '${computer.jnlpmac} ${computer.name}',
             envVars: []
