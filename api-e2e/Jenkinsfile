@@ -7,7 +7,7 @@ def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
             resourceLimitCpu: '1000m',
             resourceRequestMemory: '1Gi',
             resourceLimitMemory: '2Gi',
-            workingDir: '',
+            workingDir: 'tmp',
             command: '',
             args: '${computer.jnlpmac} ${computer.name}',
             envVars: []
@@ -23,9 +23,19 @@ def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
                     checkout scm 
             }
 
-            stage('Sleep') {
-                sleep 3000
+            stage('Running API e2e Tests') {
+                echo "Running tests "
+                dir('api-e2e') {
+                    sh '''
+                        pwd
+                        npm install newman
+                        ./node_modules/newman/bin/newman.js run test.json
+                    '''
+                }
+
             }
+
+
                   
         }
 } 
