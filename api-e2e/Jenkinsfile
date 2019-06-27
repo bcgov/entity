@@ -23,24 +23,9 @@ def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
                     checkout scm 
             }
 
-            stage('Running API e2e Tests') {
-                echo "Running tests "
-                
-                    sh '''
-                        cd api-e2e
-                        npm install newman
-                        // newman run test.json
-                    '''
-            }
-
             stage('Sleep') {
                 sleep 3000
             }
-
-            // stage ('Save Test Results') {
-            //     junit 'newman/*.xml'
-            // }
-                    
-
+                  
         }
 } 
