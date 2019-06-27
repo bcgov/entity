@@ -35,6 +35,10 @@ def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
 
             }
 
+            stage ('Save Test Results') {
+                junit 'newman/*.xml'
+            }
+
 
                   
         }
