@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "./node_modules/nightwatch/bin/nightwatch -t ./specs/test.js"
+    "test": "./node_modules/nightwatch/bin/nightwatch -e chrome,firefox -t ./specs/test"
   },
   "dependencies": {
     "nightwatch": "1.1.11",
