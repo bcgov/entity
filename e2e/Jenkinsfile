@@ -45,7 +45,6 @@ import groovy.json.JsonOutput
                     checkout scm              
             }
 
-
             stage ('Running e2e Tests') {
                 echo "Running tests "
                 
@@ -54,6 +53,10 @@ import groovy.json.JsonOutput
                          npm install
                          npm run test
                     '''
+            }
+
+            stage ('Save Test Results') {
+                junit 'e2e/reports/*.xml'
             }
 
     }

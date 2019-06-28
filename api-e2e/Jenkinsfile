@@ -1,0 +1,40 @@
+def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
+    podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenkins', cloud: 'openshift', containers: [
+        containerTemplate(
+            name: 'jnlp',
+            image: '172.50.0.2:5000/openshift/jenkins-slave-py3nodejs',
+            resourceRequestCpu: '500m',
+            resourceLimitCpu: '1000m',
+            resourceRequestMemory: '1Gi',
+            resourceLimitMemory: '2Gi',
+            workingDir: '/tmp',
+            command: '',
+            args: '${computer.jnlpmac} ${computer.name}',
+            envVars: []
+        )
+    ])
+{    
+        node (py3nodejs_label) {
+        
+            stage('Checkout') {
+                
+                    echo "checking out source"
+                    echo "Build: ${BUILD_ID}"
+                    checkout scm 
+            }
+
+            stage('Running API e2e Tests') {
+                echo "Running tests "
+                dir('api-e2e') {
+                    sh '''
+                        pwd
+                        npm install newman
+                        ./node_modules/newman/bin/newman.js run test.json -r cli,junit
+                    '''
+                    junit 'newman/*.xml'
+                }
+
+            }
+     
+        }
+} 

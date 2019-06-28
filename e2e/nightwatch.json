@@ -1,22 +1,38 @@
 {
 	"src_folders": ["./specs"],
 	"output_folder": "./reports",
-	"custom_commands_path": "./custom-commands",
-	"page_objects_path": "./page-objects",
 	"globals_path": "globals.js",
 
-	"webdriver": {
-		"start_process": true,
-		"server_path": "./node_modules/chromedriver/lib/chromedriver/chromedriver",
-		"port": 9515,
-		"cli_args": []
-	},
 	"test_settings": {
 		"default": {
 			"globals": {
 				"AuthPath": "http://auth-ui-1rdehl-dev.pathfinder.gov.bc.ca/",
 				"CoopsPath": "https://coops-dev.pathfinder.gov.bc.ca/"
 			},
+			"webdriver": {
+				"start_process": true,
+				"server_path": "./node_modules/chromedriver/lib/chromedriver/chromedriver",
+				"port": 9515,
+				"cli_args": []
+			}
+		},
+		"firefox": {
+			"webdriver": {
+				"start_process": true,
+				"server_path": "./node_modules/geckodriver/geckodriver",
+				"port": 4444
+			},
+			"silent": true,
+			"desiredCapabilities": {
+				"browserName": "firefox",
+				"alwaysMatch": {
+					"moz:firefoxOptions": {
+						"args": ["-headless"]
+					}
+				}
+			}
+		},
+		"chrome": {
 			"silent": true,
 			"desiredCapabilities": {
 				"browserName": "chrome",
