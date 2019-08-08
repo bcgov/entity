@@ -1,6 +1,0 @@
-NAME="e2e"
-PIPELINE_PURPOSE="test"
-GIT_REPO_URL="https://github.com/riyazuddinsyed/E2E_API"
-GIT_REF="E2E-API-pipeline"
-SOURCE_CONTEXT_DIR="/E2E"
-JENKINS_FILE="Jenkinsfile"
