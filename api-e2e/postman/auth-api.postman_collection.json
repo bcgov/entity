@@ -1,0 +1,23 @@
+{
+  "info": {
+    "_postman_id": "3ee8e36b-3c21-474b-99bd-428c306c154f",
+    "name": "Test_Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://dummy.restapiexample.com/api/v1/employees",
+          "protocol": "http",
+          "host": ["dummy", "restapiexample", "com"],
+          "path": ["api", "v1", "employees"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
