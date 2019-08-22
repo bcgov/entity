@@ -35,6 +35,8 @@ def AUTH_API = 'auth-api'
 def AUTH_WEB = 'auth-web'
 def PAY_API = 'pay-api'
 def REPORT_API = 'report-api'
+def ENTITY_FILER = 'entity-filer'
+def NATS_STREAMING = 'nats-streaming'
 
 // set in setup stage (will be set to current values for running pods) TODO: username/name for auth/pay dbs
 def LEGAL_DB_USERNAME
@@ -45,11 +47,12 @@ def API_DB_NAME
 
 def DEPLOYMENTS_API_WITH_PG = [LEGAL_API, AUTH_API, PAY_API]
 def DEPLOYMENTS_API_WITH_ORA = [COLIN_API]
-def DEPLOYMENTS_API_WITHOUT_PG = [REPORT_API]
+def DEPLOYMENTS_API_WITHOUT_PG = [REPORT_API, ENTITY_FILER]
 def DEPLOYMENTS_UI = [COOPS_UI, AUTH_WEB]
 def DEPLOYMENTS_ORACLE = [ORACLE]
 def DEPLOYMENTS_DB = [POSTGRESQL]
-def DEPLOYMENTS = [DEPLOYMENTS_API_WITH_PG, DEPLOYMENTS_API_WITH_ORA, DEPLOYMENTS_API_WITHOUT_PG, DEPLOYMENTS_UI, DEPLOYMENTS_ORACLE, DEPLOYMENTS_DB].flatten()
+def DEPLOYMENTS_Q = [NATS_STREAMING]
+def DEPLOYMENTS = [DEPLOYMENTS_API_WITH_PG, DEPLOYMENTS_API_WITH_ORA, DEPLOYMENTS_API_WITHOUT_PG, DEPLOYMENTS_UI, DEPLOYMENTS_ORACLE, DEPLOYMENTS_DB, DEPLOYMENTS_Q].flatten()
 
 // old version of deployments
 def OLD_VERSIONS = []
@@ -216,6 +219,7 @@ node {
                         // save the db name for postman test
                         if (api_name == LEGAL_API) {
                             LEGAL_DB_NAME = API_DB_NAME
+                            LEGAL_DB_USERNAME = API_DB_USERNAME
                         }
 
                         echo "Scaling down ${api_name}-${COMPONENT_TAG}"
@@ -280,6 +284,60 @@ node {
                         api_deploy.rollout().latest()
                         api_deploy.scale('--replicas=1')
                     }
+
+                    // setup nats-db and deploy nats-streaming
+                    def nats_deploy = openshift.selector("dc", "${NATS_STREAMING}-${COMPONENT_TAG}")
+
+                    echo "Scaling down ${NATS_STREAMING}-${COMPONENT_TAG}"
+                    nats_deploy.scale('--replicas=0')
+
+                    API_DB_NAME =  "nats-db"
+                    echo "Dropping ${API_DB_NAME} in ${POSTGRESQL}-${COMPONENT_TAG}"
+                    def pg_version = pg_deploy.object().status.latestVersion
+                    PG_POD = openshift.selector('pod', [deployment: "${POSTGRESQL}-${COMPONENT_TAG}-${pg_version}"])
+                    latest = PG_POD.objects().size()-1
+
+                    // execute as postgres user and drop db
+                    def output_disconnect_db = openshift.exec(
+                        PG_POD.objects()[latest].metadata.name,
+                        '--',
+                        "bash -c \"\
+                            psql -c \\\"\
+                                UPDATE pg_database SET datallowconn = 'false' WHERE datname = '${API_DB_NAME}'; \
+                                SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = '${API_DB_NAME}'; \
+                            \\\" \
+                        \""
+                    )
+                    echo "Temporary DB disconnect results: "+ output_disconnect_db.actions[0].out
+
+                    // execute as postgres user and drop db
+                    def output_drop_db = openshift.exec(
+                        PG_POD.objects()[latest].metadata.name,
+                        '--',
+                        "bash -c \"\
+                            psql -c \\\"\
+                                DROP DATABASE \\\\\\\"${API_DB_NAME}\\\\\\\"; \
+                            \\\" \
+                        \""
+                    )
+                    echo "Temporary DB drop results: "+ output_drop_db.actions[0].out
+
+                    echo "Creating ${API_DB_NAME} in ${POSTGRESQL}-${COMPONENT_TAG}"
+                    // execute as postgres user and create test db
+                    def output_create_db = openshift.exec(
+                        PG_POD.objects()[latest].metadata.name,
+                        '--',
+                        "bash -c '\
+                            psql -c \"CREATE DATABASE \\\"${API_DB_NAME}\\\";\" \
+                        '"
+                    )
+                    echo "Temporary DB create results: "+ output_create_db.actions[0].out
+
+                    OLD_VERSIONS << "${NATS_STREAMING}-${api_version}"
+
+                    echo "Rolling out ${NATS_STREAMING}-${COMPONENT_TAG}"
+                    nats_deploy.rollout().latest()
+                    nats_deploy.scale('--replicas=1')
 
                     for (api_name in DEPLOYMENTS_API_WITHOUT_PG) {
                         def api_deploy = openshift.selector("dc", "${api_name}-${COMPONENT_TAG}")
