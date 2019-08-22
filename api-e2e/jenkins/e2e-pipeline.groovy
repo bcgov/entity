@@ -290,6 +290,7 @@ node {
 
                     echo "Scaling down ${NATS_STREAMING}-${COMPONENT_TAG}"
                     nats_deploy.scale('--replicas=0')
+                    def nats_version = nats_deploy.object().status.latestVersion
 
                     API_DB_NAME =  "nats-db"
                     echo "Dropping ${API_DB_NAME} in ${POSTGRESQL}-${COMPONENT_TAG}"
@@ -333,7 +334,7 @@ node {
                     )
                     echo "Temporary DB create results: "+ output_create_db.actions[0].out
 
-                    OLD_VERSIONS << "${NATS_STREAMING}-${api_version}"
+                    OLD_VERSIONS << "${NATS_STREAMING}-${nats_version}"
 
                     echo "Rolling out ${NATS_STREAMING}-${COMPONENT_TAG}"
                     nats_deploy.rollout().latest()
