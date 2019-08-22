@@ -340,7 +340,7 @@ node {
                         PG_POD.objects()[latest].metadata.name,
                         '--',
                         "bash -c '\
-                            psql ${API_DB_NAME} -f /var/lib/pgsql/data/nats_db.sql \
+                            psql ${API_DB_NAME} -f /scripts/nats_db.sql \
                         '"
                     )
                     echo "Temporary DB tables results: "+ output_create_tables.actions[0].out
