@@ -414,7 +414,7 @@ node {
                         test = sh "ls -al"
                         echo test
                         data_load_output = sh (
-                            script: """oc process data-loader.yml -p ENV_TAG=test | oc create -f -""",
+                            script: """oc process -f data-loader.yml -p ENV_TAG=test | oc create -f -""",
                                 returnStdout: true).trim()
                     }
                 }
