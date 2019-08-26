@@ -410,7 +410,9 @@ node {
             openshift.withCluster() {
                 openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
                     checkout scm
-                    dir('api-e2e/openshift') {
+                    dir('api-e2e/openshift/templates') {
+                        test = sh "ls -al"
+                        echo test
                         data_load_output = sh (
                             script: """oc process data-loader.yml -p ENV_TAG=test | oc create -f -""",
                                 returnStdout: true).trim()
