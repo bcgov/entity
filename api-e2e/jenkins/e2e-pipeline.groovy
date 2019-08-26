@@ -418,7 +418,8 @@ node {
                                 script: """oc delete jobs/data-loader""",
                                     returnStdout: true).trim()
                             echo delete_job
-                        } catch {
+                        } catch (Exception e) {
+                            echo e.getMessage()
                             pass
                         }
                         data_load_output = sh (
