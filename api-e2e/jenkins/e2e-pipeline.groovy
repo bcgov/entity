@@ -413,6 +413,14 @@ node {
                     dir('api-e2e/openshift/templates') {
                         test = sh "ls -al"
                         echo test
+                        try {
+                            delete_job = sh (
+                                script: """oc delete jobs/data-loader""",
+                                    returnStdout: true).trim()
+                            echo delete_job
+                        } catch {
+                            pass
+                        }
                         data_load_output = sh (
                             script: """oc process -f data-loader.yml -p ENV_TAG=test | oc create -f -""",
                                 returnStdout: true).trim()
