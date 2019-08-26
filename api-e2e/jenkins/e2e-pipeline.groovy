@@ -405,6 +405,21 @@ node {
         verify_new_deployments(NAMESPACE, TAG_NAME, COMPONENT_TAG, OLD_VERSIONS, components)
     }
 
+    stage('Load Data') {
+        script {
+            openshift.withCluster() {
+                openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
+                    checkout scm
+                    dir('api-e2e/openshift') {
+                        data_load_output = sh (
+                            script: """oc process data-loader.yml -p ENV_TAG=test | oc create -f -""",
+                                returnStdout: true).trim()
+                    }
+                }
+            }
+        }
+    }
+
     stage('Run Postman Tests - COLIN/LEGAL') {
         script {
             openshift.withCluster() {

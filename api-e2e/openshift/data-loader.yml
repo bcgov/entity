@@ -1,0 +1,136 @@
+---
+kind: "Template"
+apiVersion: "v1"
+metadata:
+  name: "data-loader"
+  annotations:
+    description: "Job to load coops from colin into legal db"
+    tags: "job"
+objects:
+- kind: "Job"
+  apiVersion: "batch/v1"
+  metadata:
+    name: "data-loader"
+  spec:
+    template:
+      spec:
+        containers:
+        - name: "data-loader"
+          image: "docker-registry.default.svc:5000/gl2uos-tools/data-loader:${ENV_TAG}"
+          imagePullPolicy: Always
+          args:
+          - /bin/sh
+          - -c
+          - cd /opt/app-root/src; ./run.sh
+          env:
+            - name: DATABASE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  key: database-user
+                  name: postgresql-e2e
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: database-password
+                  name: postgresql-e2e
+            - name: DATABASE_NAME
+              valueFrom:
+                configMapKeyRef:
+                  key: DATABASE_NAME
+                  name: legal-api-e2e-config
+            - name: DATABASE_HOST
+              valueFrom:
+                configMapKeyRef:
+                  key: DATABASE_HOST
+                  name: legal-api-e2e-config
+            - name: DB_PORT
+              valueFrom:
+                configMapKeyRef:
+                  key: DB_PORT
+                  name: legal-api-e2e-config
+            - name: JWT_OIDC_JWKS_CACHE_TIMEOUT
+              valueFrom:
+                configMapKeyRef:
+                  key: JWT_OIDC_JWKS_CACHE_TIMEOUT
+                  name: legal-api-e2e-config
+            - name: JWT_OIDC_WELL_KNOWN_CONFIG
+              valueFrom:
+                configMapKeyRef:
+                  key: JWT_OIDC_WELL_KNOWN_CONFIG
+                  name: legal-api-e2e-config
+            - name: JWT_OIDC_ALGORITHMS
+              valueFrom:
+                configMapKeyRef:
+                  key: JWT_OIDC_ALGORITHMS
+                  name: legal-api-e2e-config
+            - name: JWT_OIDC_AUDIENCE
+              valueFrom:
+                configMapKeyRef:
+                  key: JWT_OIDC_AUDIENCE
+                  name: legal-api-e2e-config
+            - name: JWT_OIDC_CLIENT_SECRET
+              valueFrom:
+                configMapKeyRef:
+                  key: JWT_OIDC_CLIENT_SECRET
+                  name: legal-api-e2e-config
+            - name: PAYMENT_SVC_URL
+              valueFrom:
+                configMapKeyRef:
+                  key: PAYMENT_SVC_URL
+                  name: legal-api-e2e-config
+            - name: COLIN_API
+              valueFrom:
+                configMapKeyRef:
+                  key: COLIN_URL
+                  name: legal-api-e2e-config
+            - name: REPORT_SVC_URL
+              valueFrom:
+                configMapKeyRef:
+                  key: REPORT_SVC_URL
+                  name: legal-api-e2e-config
+            - name: SENTRY_DSN
+              valueFrom:
+                configMapKeyRef:
+                  key: SENTRY_DSN
+                  name: legal-api-e2e-config
+            - name: NATS_SERVERS
+              valueFrom:
+                configMapKeyRef:
+                  key: NATS_SERVERS
+                  name: nats-e2e-config
+            - name: NATS_CLIENT_NAME
+              valueFrom:
+                configMapKeyRef:
+                  key: NATS_CLIENT_NAME
+                  name: nats-e2e-config
+            - name: NATS_CLUSTER_ID
+              valueFrom:
+                configMapKeyRef:
+                  key: NATS_CLUSTER_ID
+                  name: nats-e2e-config
+            - name: NATS_SUBJECT
+              valueFrom:
+                configMapKeyRef:
+                  key: NATS_SUBJECT
+                  name: nats-e2e-config
+            - name: NATS_QUEUE
+              valueFrom:
+                configMapKeyRef:
+                  key: NATS_QUEUE
+                  name: nats-e2e-config
+            - name: GO_LIVE_DATE
+              valueFrom:
+                configMapKeyRef:
+                  key: GO_LIVE_DATE
+                  name: legal-api-e2e-config
+        restartPolicy: "Never"
+        concurrencyPolicy: "Forbid"
+parameters: [
+        {
+          "name": "ENV_TAG",
+          "displayName": "ENV_TAG",
+          "description": "the tag for the environment that the job image runs from.",
+          "required": true,
+          "value": "dev"
+        },
+]
