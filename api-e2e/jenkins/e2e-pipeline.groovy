@@ -420,12 +420,15 @@ node {
                             echo delete_job
                         } catch (Exception e) {
                             echo e.getMessage()
-                            pass
                         }
+                        echo "here"
                         data_load_output = sh (
                             script: """oc process -f data-loader.yml -p ENV_TAG=test | oc create -f -""",
                                 returnStdout: true).trim()
                     }
+                    sleep 10
+                    def pod_selector = openshift.selector('pod', [ generateName:"data-loader-" ])
+                    echo pod_selector
                 }
             }
         }
