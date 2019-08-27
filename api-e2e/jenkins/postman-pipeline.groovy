@@ -78,7 +78,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                 failed_components = ''
                 sh 'npm install newman'
 
-                for (name in COMPONENTS.split(',').strip()) {
+                for (name in COMPONENTS.split(', ')) {
                     try {
                         echo "Running ${name} pm collection"
 
