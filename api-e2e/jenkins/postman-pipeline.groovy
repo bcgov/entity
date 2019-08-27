@@ -74,11 +74,12 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             checkout scm
 
             dir("${TESTS_PATH}") {
-
+                all_passed = true
+                failed_components = ''
                 sh 'npm install newman'
 
-                try {
-                    for (name in COMPONENTS.split(',')) {
+                for (name in COMPONENTS.split(',')) {
+                    try {
                         echo "Running ${name} pm collection"
 
                         def url = ""
@@ -95,11 +96,15 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                         --global-var clientid=${CLIENTID} --global-var pay-api-base-url=${url} \
                         --global-var tokenUrl=${TOKENURL} --global-var userName=${USERNAME} --global-var passCode=${PASSCODE}
                         """
+                    } catch (Exception e) {
+                        echo "One or more tests failed."
+                        echo "${e.getMessage()}"
+                        all_passed = false
+                        failed_components += name + ' '
                     }
-
-                } catch (Exception e) {
-                    echo "One or more tests failed."
-                    echo "${e.getMessage()}"
+                }
+                if (!all_passed) {
+                    echo "Components with failed tests: ${failed_components}"
                     currentBuild.result = "FAILURE"
                 }
 

@@ -419,9 +419,8 @@ node {
                                     returnStdout: true).trim()
                             echo delete_job
                         } catch (Exception e) {
-                            echo e.getMessage()
+                            echo "${e.getMessage()}"
                         }
-                        echo "here"
                         data_load_output = sh (
                             script: """oc process -f data-loader.yml -p ENV_TAG=test | oc create -f -""",
                                 returnStdout: true).trim()
@@ -433,6 +432,7 @@ node {
                         echo "pod: ${pod}"
                         if (it.objects()[0].status.phase == 'Succeeded') {
                             echo "${pod} successfully loaded data."
+                            echo "${data_load_output}"
                             return true
                         } else {
                             return false;
@@ -444,70 +444,41 @@ node {
         }
     }
 
-    stage('Run Postman Tests - COLIN/LEGAL') {
-        script {
-            openshift.withCluster() {
-                openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
-                    // prep postgres for tests
-                    echo "Prepping database"
-                    def latest = PG_POD.objects().size()-1
-                    def legal_name = '\'legal name CP0002098\''
-                    def founding_date = '\'2019-06-10\''
-                    def identifier = '\'CP0002098\''
-                    def output_alter_role = openshift.exec(
-                        PG_POD.objects()[latest].metadata.name,
-                        '--',
-                        "bash -c \"\
-                            psql -d ${LEGAL_DB_NAME} -c \\\"INSERT INTO businesses (legal_name, founding_date, identifier) VALUES (${legal_name}, ${founding_date}, ${identifier});\\\" \
-                        \""
-                    )
-                    echo "Temporary DB grant results: "+ output_alter_role.actions[0].out
-                    // run postman pipeline
-                    apis = [COLIN_API, LEGAL_API]
-                    for (name in apis) {
-                        echo "Running ${name} pm collection"
-                        try {
-                            def url = ""
-                            if (name == 'colin-api') {
-                                url = "http://${name}-${COMPONENT_TAG}.${NAMESPACE}-${TAG_NAME}.svc:8080"
-                            } else {
-                                url = "https://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
-                            }
-                            def pm_pipeline = openshift.selector('bc', 'postman-pipeline')
-                            pm_pipeline.startBuild('--wait=true', "-e=component=${name}", "-e=url=${url}").logs('-f')
-                        } catch (Exception e) {
-                            PASSED = false
-                            def error_message = e.getMessage()
-                            echo """
-                            Postman details for ${name}: ${error_message}
-                            """
-                        }
-                    }
-                }
-            }
-        }
-    }
+//     stage('Run Postman Tests - COLIN/LEGAL') {
+//         script {
+//             openshift.withCluster() {
+//                 openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
+//                     // run postman pipeline
+//                     apis = [COLIN_API, LEGAL_API]
+//                     for (name in apis) {
+//                         echo "Running ${name} pm collection"
+//                         try {
+//                             def url = ""
+//                             if (name == 'colin-api') {
+//                                 url = "http://${name}-${COMPONENT_TAG}.${NAMESPACE}-${TAG_NAME}.svc:8080"
+//                             } else {
+//                                 url = "https://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
+//                             }
+//                             def pm_pipeline = openshift.selector('bc', 'postman-pipeline')
+//                             pm_pipeline.startBuild('--wait=true', "-e=component=${name}", "-e=url=${url}").logs('-f')
+//                         } catch (Exception e) {
+//                             PASSED = false
+//                             def error_message = e.getMessage()
+//                             echo """
+//                             Postman details for ${name}: ${error_message}
+//                             """
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
     stage('Run Postman E2E Tests') {
         script {
             openshift.withCluster() {
                 openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
-                    // prep postgres for tests
-                    echo "Prepping database"
-                    def latest = PG_POD.objects().size()-1
-                    def legal_name = '\'legal name CP0002098\''
-                    def founding_date = '\'2019-06-10\''
-                    def identifier = '\'CP0002098\''
-                    def output_alter_role = openshift.exec(
-                        PG_POD.objects()[latest].metadata.name,
-                        '--',
-                        "bash -c \"\
-                            psql -d ${LEGAL_DB_NAME} -c \\\"INSERT INTO businesses (legal_name, founding_date, identifier) VALUES (${legal_name}, ${founding_date}, ${identifier});\\\" \
-                        \""
-                    )
-                    echo "Temporary DB grant results: "+ output_alter_role.actions[0].out
-
-                    // run postman pipeline
+                    // run e2e postman pipeline
                     try {
                         apis = "${COLIN_API}, ${LEGAL_API}, ${AUTH_API}, ${PAY_API}"
                         def pm_e2e_pipeline = openshift.selector('bc', 'postman-e2e-pipeline')
