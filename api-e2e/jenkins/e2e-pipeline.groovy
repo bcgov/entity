@@ -157,6 +157,10 @@ node {
             // wait for deployments to boot up
             openshift.withCluster() {
                 openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
+                    def pod_selector = openshift.selector('pod', [ job:"data-loader" ])
+                    echo "${pod_selector}"
+                    def pod_selector2 = openshift.selector('pod', [ generateName:"data-loader-" ])
+                    echo "${pod_selector2}"
                     // confirm all deployments are up (otherwise wait till all pods are up)
                     for (name in DEPLOYMENTS) {
                         echo "Verifying ${name} has a pod up and running"
@@ -427,8 +431,8 @@ node {
                                 returnStdout: true).trim()
                     }
                     sleep 10
-                    def pod_selector = openshift.selector('pod', [ generateName:"data-loader-" ])
-                    echo pod_selector
+                    def pod_selector = openshift.selector('pod', [ job:"data-loader" ])
+                    echo "${pod_selector}"
                 }
             }
         }
