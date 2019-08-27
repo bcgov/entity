@@ -157,8 +157,10 @@ node {
             // wait for deployments to boot up
             openshift.withCluster() {
                 openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
-                    def pod_selector = openshift.selector('pod', [ job:"data-loader" ])
+                    def pod_selector = openshift.selector('pod', [ "job-name":"data-loader" ])
+                    def pod_selector2 = openshift.selector('pod', [ job-name:"data-loader" ])
                     echo "${pod_selector}"
+                    echo "${pod_selector2}"
                     echo "${pod_selector.objects()}"
                     echo "${pod_selector.objects()[0]}"
                     echo "${pod_selector.objects()[0].metadata}"
