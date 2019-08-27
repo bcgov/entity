@@ -427,8 +427,8 @@ node {
                                 returnStdout: true).trim()
                     }
                     sleep 10
-                    def pod_selector = openshift.selector('pod', [ "job-name":"data-loader" ])
-                    podSelector.untilEach {
+                    def data_loader = openshift.selector('pod', [ "job-name":"data-loader" ])
+                    data_loader.untilEach {
                         def pod = it.objects()[0].metadata.name
                         echo "pod: ${pod}"
                         if (it.objects()[0].status.phase == 'Succeeded') {
