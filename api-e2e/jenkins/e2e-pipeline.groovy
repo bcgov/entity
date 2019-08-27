@@ -411,8 +411,6 @@ node {
                 openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
                     checkout scm
                     dir('api-e2e/openshift/templates') {
-                        test = sh "ls -al"
-                        echo test
                         try {
                             delete_job = sh (
                                 script: """oc delete jobs/data-loader""",
@@ -432,7 +430,6 @@ node {
                         echo "pod: ${pod}"
                         if (it.objects()[0].status.phase == 'Succeeded') {
                             echo "${pod} successfully loaded data."
-                            echo "${data_load_output}"
                             return true
                         } else {
                             return false;
@@ -443,36 +440,6 @@ node {
             }
         }
     }
-
-//     stage('Run Postman Tests - COLIN/LEGAL') {
-//         script {
-//             openshift.withCluster() {
-//                 openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
-//                     // run postman pipeline
-//                     apis = [COLIN_API, LEGAL_API]
-//                     for (name in apis) {
-//                         echo "Running ${name} pm collection"
-//                         try {
-//                             def url = ""
-//                             if (name == 'colin-api') {
-//                                 url = "http://${name}-${COMPONENT_TAG}.${NAMESPACE}-${TAG_NAME}.svc:8080"
-//                             } else {
-//                                 url = "https://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
-//                             }
-//                             def pm_pipeline = openshift.selector('bc', 'postman-pipeline')
-//                             pm_pipeline.startBuild('--wait=true', "-e=component=${name}", "-e=url=${url}").logs('-f')
-//                         } catch (Exception e) {
-//                             PASSED = false
-//                             def error_message = e.getMessage()
-//                             echo """
-//                             Postman details for ${name}: ${error_message}
-//                             """
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
 
     stage('Run Postman E2E Tests') {
         script {
