@@ -3,7 +3,8 @@ module.exports={
     step1:function (browser){
         browser
         .url('https://coops-test.pathfinder.gov.bc.ca/auth/')
-        .waitForElementVisible('body',1000)
+        .waitForElementVisible('body')
+        .waitForElementVisible('input[aria-label="Enter your Incorporation Number"]')
         .setValue('#app > div.application--wrap > div.app-body > div > div > article > div > div > div > form > div:nth-child(2) > div > div > div.v-input__slot > div > input[type=text]','CP0001229')
         .setValue('#app > div.application--wrap > div.app-body > div > div > article > div > div > div > form > div:nth-child(3) > div > div > div.v-input__slot > div.v-text-field__slot > input[type=password]','391046331')
         .click('#app > div.application--wrap > div.app-body > div > div > article > div > div > div > form > div.passcode-form__row.passcode-form__form-btns > button.sign-in-btn.v-btn.v-btn--large.theme--light.primary > div')

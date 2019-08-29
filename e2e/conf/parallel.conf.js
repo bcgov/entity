@@ -24,22 +24,38 @@ nightwatch_config = {
     },
     chrome: {
       desiredCapabilities: {
-        browser: "chrome"
+        'os': 'Windows',
+        'os_version': '10',
+        'browser': 'Chrome',
+        'browser_version': '76.0',
+        'resolution': '1920x1080'
       }
     },
     firefox: {
       desiredCapabilities: {
-        browser: "firefox"
+        'os': 'Windows',
+        'os_version': '10',
+        'browser': 'Firefox',
+        'browser_version': '69.0 beta',
+        'resolution': '1920x1080'
       }
     },
     safari: {
       desiredCapabilities: {
-        browser: "safari"
+        'os': 'OS X',
+        'os_version': 'Mojave',
+        'browser': 'Safari',
+        'browser_version': '12.1',
+        'resolution': '1920x1080'
       }
     },
     ie: {
       desiredCapabilities: {
-        browser: "internet explorer"
+        'os': 'Windows',
+        'os_version': '10',
+        'browser': 'IE',
+        'browser_version': '11.0',
+        'resolution': '1920x1080'
       }
     }
   }
