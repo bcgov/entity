@@ -436,6 +436,16 @@ node {
                             sleep 5
                         }
                     }
+                    echo "Setting postal codes in ${LEGAL_DB_NAME}"
+                    // execute as postgres user and create test db
+                    def output_set_postals = openshift.exec(
+                        PG_POD.objects()[latest].metadata.name,
+                        '--',
+                        "bash -c '\
+                            psql -d \"${LEGAL_DB_NAME}\" -c \"update addresses set postal_code=\'V8N4R7\'\" \
+                        '"
+                    )
+                    echo "Temporary DB create results: "+ output_set_postals.actions[0].out
                 }
             }
         }
@@ -447,7 +457,7 @@ node {
                 openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
                     // run e2e postman pipeline
                     try {
-                        apis = "${COLIN_API}, ${LEGAL_API}, ${AUTH_API}, ${PAY_API}"
+                        apis = "${COLIN_API}, ${LEGAL_API}, ${AUTH_API}"
                         def pm_e2e_pipeline = openshift.selector('bc', 'postman-e2e-pipeline')
                         pm_e2e_pipeline.startBuild('--wait=true', "-e=components='${apis}'", "-e=component_tag=${COMPONENT_TAG}", "-e=namespace=${NAMESPACE}-${TAG_NAME}").logs('-f')
                     } catch (Exception e) {
