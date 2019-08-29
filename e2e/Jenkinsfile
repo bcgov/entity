@@ -33,8 +33,10 @@ import groovy.json.JsonOutput
             command: '',
             args: '${computer.jnlpmac} ${computer.name}',
             envVars: [
-                secretEnvVar(key: 'BROWSERSTACK_USERNAME', secretName: 'browserstack-secrets', secretKey: 'BROWSERSTACK_USERNAME'),
-                secretEnvVar(key: 'BROWSERSTACK_ACCESS_KEY', secretName: 'browserstack-secrets', secretKey: 'BROWSERSTACK_ACCESS_KEY'),
+                secretEnvVar(key: 'BROWSERSTACK_USERNAME', secretName: 'browserstack-secret', secretKey: 'BROWSERSTACK_USERNAME'),
+                secretEnvVar(key: 'BROWSERSTACK_ACCESS_KEY', secretName: 'browserstack-secret', secretKey: 'BROWSERSTACK_ACCESS_KEY'),
+                secretEnvVar(key: 'IDIRCredU', secretName: 'browserstack-secret', secretKey: 'IDIRCredU'),
+                secretEnvVar(key: 'IDIRCredP', secretName: 'browserstack-secret', secretKey: 'IDIRCredP'),
             ]
         )
     ])
