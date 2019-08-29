@@ -436,6 +436,9 @@ node {
 //                             sleep 5
 //                         }
 //                     }
+                    def pg_deploy = openshift.selector('dc', "${POSTGRESQL}-${COMPONENT_TAG}")
+                    def pg_version = pg_deploy.object().status.latestVersion
+                    PG_POD = openshift.selector('pod', [deployment: "${POSTGRESQL}-${COMPONENT_TAG}-${pg_version}"])
                     LEGAL_DB_NAME = "legal_e2e"
                     echo "Setting postal codes in ${LEGAL_DB_NAME}"
                     // execute as postgres user and create test db
