@@ -436,6 +436,7 @@ node {
 //                             sleep 5
 //                         }
 //                     }
+                    LEGAL_DB_NAME = "legal_e2e"
                     echo "Setting postal codes in ${LEGAL_DB_NAME}"
                     // execute as postgres user and create test db
                     def output_set_postals = openshift.exec(
