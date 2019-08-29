@@ -443,7 +443,7 @@ node {
                     echo "Setting postal codes in ${LEGAL_DB_NAME}"
                     // execute as postgres user and create test db
                     def output_set_postals = openshift.exec(
-                        PG_POD.objects()[latest].metadata.name,
+                        PG_POD.objects()[0].metadata.name,
                         '--',
                         "bash -c '\
                             psql -d \"${LEGAL_DB_NAME}\" -c \"update addresses set postal_code=\\\"V8N4R7\\\"\" \
