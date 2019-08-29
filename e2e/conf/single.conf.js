@@ -14,7 +14,11 @@ nightwatch_config = {
         'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
         'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
         'browserstack.debug': true,
-        'browser': 'chrome'
+        'os': 'Windows',
+        'os_version': '10',
+        'browser': 'Chrome',
+        'browser_version': '76.0',
+        'resolution': '1920x1080'
       }
     }
   }
