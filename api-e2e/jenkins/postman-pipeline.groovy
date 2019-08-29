@@ -61,15 +61,15 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         stage("Running E2E API tests") {
 
             echo """
-            AUTHURL:${AUTHURL}
-            REALM:${REALM}
-            USERID:${USERID}
-            PASSWORD:${PASSWORD}
-            CLIENTID:${CLIENTID}
-            CLIENT_SECRET:${CLIENT_SECRET}
-            TOKENURL:${TOKENURL}
-            USERNAME:${USERNAME}
-            PASSCODE:${PASSCODE}
+            AUTHURL:${AUTHURL} \
+            REALM:${REALM} \
+            USERID:${USERID} \
+            PASSWORD:${PASSWORD} \
+            CLIENTID:${CLIENTID} \
+            CLIENT_SECRET:${CLIENT_SECRET} \
+            TOKENURL:${TOKENURL} \
+            USERNAME:${USERNAME} \
+            PASSCODE:${PASSCODE} \
             """
             checkout scm
 
