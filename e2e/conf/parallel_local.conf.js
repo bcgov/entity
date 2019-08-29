@@ -1,7 +1,7 @@
 var browserstack = require('browserstack-local');
 
 nightwatch_config = {
-  src_folders : [ "tests/local" ],
+  src_folders : [ "tests" ],
 
   selenium : {
     "start_process" : false,

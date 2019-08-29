@@ -1,5 +1,5 @@
 nightwatch_config = {
-  src_folders : [ "tests/single" ],
+  src_folders : [ "tests" ],
 
 
   selenium : {
