@@ -446,7 +446,7 @@ node {
                         PG_POD.objects()[0].metadata.name,
                         '--',
                         "bash -c '\
-                            psql -d \"${LEGAL_DB_NAME}\" -c \"update addresses set postal_code=\\\'V8N4R7\\\';\" \
+                            psql -d \"${LEGAL_DB_NAME}\" -c \"update addresses set postal_code=\'V8N4R7\';\" \
                         '"
                     )
                     echo "Temporary DB create results: "+ output_set_postals.actions[0].out
