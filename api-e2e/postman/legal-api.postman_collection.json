@@ -4278,7 +4278,7 @@
 									"    pm.expect(jsonData.filing).to.exist",
 									"    pm.expect(jsonData.filing.business).to.exist",
 									"    pm.expect(jsonData.filing.changeOfAddress).to.exist",
-									"    pm.expect(jsonData.filing.changeOfAddress.deliveryAddress.actions).to.eql('addressChanged')",
+									"    pm.expect(jsonData.filing.changeOfAddress.deliveryAddress.actions[0]).to.eql('addressChanged')",
 									"    pm.expect(jsonData.filing.changeOfAddress.deliveryAddress.streetAddress).to.eql('TEST D 2')",
 									"    pm.expect(jsonData.filing.changeOfAddress.mailingAddress.actions).to.eql('addressChanged')",
 									"    pm.expect(jsonData.filing.changeOfAddress.mailingAddress.streetAddress).to.eql('TEST M 2')",
