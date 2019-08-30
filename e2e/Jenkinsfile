@@ -60,9 +60,5 @@ import groovy.json.JsonOutput
                     '''
             }
 
-            stage ('Save Test Results') {
-                junit 'e2e/reports/*.xml'
-            }
-
     }
 }
