@@ -1,4 +1,4 @@
 {
-    "src_folders": ["tests"],
-    "custom_commands_path": ["custom-commands"]
+    "src_folders": ["./tests"],
+    "custom_commands_path": ["./custom-commands"]
 }
