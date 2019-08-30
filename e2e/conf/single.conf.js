@@ -1,5 +1,8 @@
 nightwatch_config = {
 
+  "src_folders": ["./tests"],
+  "custom_commands_path": ["./custom-commands"],
+
   selenium : {
     "start_process" : false,
     "host" : "hub-cloud.browserstack.com",
