@@ -1,5 +1,5 @@
 module.exports = {
-
+    '@disabled': true,
     'IDIR Test': function(browser) {
         browser
             .url('https://test.bcregistryallservices.gov.bc.ca/sofi/login/login.htm')

@@ -9,11 +9,11 @@
     "parallel_local": "node scripts/local.runner.js -c conf/parallel_local.conf.js -e chrome,firefox,safari"
   },
   "dependencies": {
+    "dotenv": "8.0.0",
     "nightwatch": "1.2.1",
-    "dotenv": "8.0.0"
+    "nightwatch-xhr": "^0.4.6"
   },
   "devDependencies": {
-    "browserstack-local": "^1.4.2",
-    "nightwatch-custom-commands-assertions": "^1.1.1"
+    "browserstack-local": "^1.4.2"
   }
 }

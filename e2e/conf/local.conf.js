@@ -2,7 +2,7 @@ var browserstack = require('browserstack-local');
 
 nightwatch_config = {
   "src_folders": ["./tests"],
-  "custom_commands_path": ["node_modules/nightwatch-custom-commands-assertions/js/commands"],
+  "custom_commands_path": ["./node_modules/nightwatch-xhr/es5/commands"],
 
   selenium : {
     "start_process" : false,
@@ -18,7 +18,11 @@ nightwatch_config = {
         'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
         'browserstack.debug': true,
         'browserstack.local': true,
-        'browser': 'chrome'
+        'os': 'Windows',
+        'os_version': '10',
+        'browser': 'Chrome',
+        'browser_version': '76.0',
+        'resolution': '1920x1080'
       }
     }
   }
