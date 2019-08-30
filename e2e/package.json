@@ -13,6 +13,7 @@
     "dotenv": "8.0.0"
   },
   "devDependencies": {
-    "browserstack-local": "^1.4.2"
+    "browserstack-local": "^1.4.2",
+    "nightwatch-custom-commands-assertions": "^1.1.1"
   }
 }

@@ -1,7 +1,7 @@
 nightwatch_config = {
 
   "src_folders": ["./tests"],
-  "custom_commands_path": ["./custom-commands"],
+  "custom_commands_path": ["node_modules/nightwatch-custom-commands-assertions/js/commands"],
 
   selenium : {
     "start_process" : false,
