@@ -37,6 +37,8 @@ import groovy.json.JsonOutput
                 secretEnvVar(key: 'BROWSERSTACK_ACCESS_KEY', secretName: 'browserstack-secret', secretKey: 'BROWSERSTACK_ACCESS_KEY'),
                 secretEnvVar(key: 'IDIRCredU', secretName: 'browserstack-secret', secretKey: 'IDIRCredU'),
                 secretEnvVar(key: 'IDIRCredP', secretName: 'browserstack-secret', secretKey: 'IDIRCredP'),
+                secretEnvVar(key: 'KeycloakCredU', secretName: 'browserstack-secret', secretKey: 'KeycloakCredU'),
+                secretEnvVar(key: 'KeycloakCredP', secretName: 'browserstack-secret', secretKey: 'KeycloakCredP'),
             ]
         )
     ])
