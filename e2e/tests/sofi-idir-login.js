@@ -1,5 +1,5 @@
 module.exports = {
-    '@disabled': true,
+    
     'IDIR Test': function(browser) {
         browser
             .url('https://test.bcregistryallservices.gov.bc.ca/sofi/login/login.htm')
@@ -8,6 +8,7 @@ module.exports = {
             .waitForElementVisible('#password')
             .setValue('#password', process.env.IDIRCredP)
             .click('input[name="btnSubmit"]')
-            .waitForElementVisible('div.outage_message')
+            .waitForElementVisible('div.outage_message', 15000)
+            .end();
     }
 };

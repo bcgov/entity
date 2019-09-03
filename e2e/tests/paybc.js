@@ -1,4 +1,5 @@
 module.exports = {
+    
     '@tags': ['cod'],
     'Coops Login': function (browser) {
         browser

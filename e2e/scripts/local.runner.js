@@ -2,6 +2,7 @@
 
 var Nightwatch = require('nightwatch');
 var browserstack = require('browserstack-local');
+require('dotenv').config();
 var bs_local;
 
 try {

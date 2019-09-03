@@ -22,7 +22,10 @@ nightwatch_config = {
         'os_version': '10',
         'browser': 'Chrome',
         'browser_version': '76.0',
-        'resolution': '1920x1080'
+        'resolution': '1920x1080',
+        "chromeOptions" : {
+          "args" : ["start-fullscreen"]
+        }
       }
     }
   }
