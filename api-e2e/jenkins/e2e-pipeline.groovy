@@ -35,6 +35,8 @@ def AUTH_API = 'auth-api'
 def AUTH_WEB = 'auth-web'
 def PAY_API = 'pay-api'
 def REPORT_API = 'report-api'
+def ENTITY_FILER = 'entity-filer'
+def NATS_STREAMING = 'nats-streaming'
 
 // set in setup stage (will be set to current values for running pods) TODO: username/name for auth/pay dbs
 def LEGAL_DB_USERNAME
@@ -45,11 +47,12 @@ def API_DB_NAME
 
 def DEPLOYMENTS_API_WITH_PG = [LEGAL_API, AUTH_API, PAY_API]
 def DEPLOYMENTS_API_WITH_ORA = [COLIN_API]
-def DEPLOYMENTS_API_WITHOUT_PG = [REPORT_API]
+def DEPLOYMENTS_API_WITHOUT_PG = [REPORT_API, ENTITY_FILER]
 def DEPLOYMENTS_UI = [COOPS_UI, AUTH_WEB]
 def DEPLOYMENTS_ORACLE = [ORACLE]
 def DEPLOYMENTS_DB = [POSTGRESQL]
-def DEPLOYMENTS = [DEPLOYMENTS_API_WITH_PG, DEPLOYMENTS_API_WITH_ORA, DEPLOYMENTS_API_WITHOUT_PG, DEPLOYMENTS_UI, DEPLOYMENTS_ORACLE, DEPLOYMENTS_DB].flatten()
+def DEPLOYMENTS_Q = [NATS_STREAMING]
+def DEPLOYMENTS = [DEPLOYMENTS_API_WITH_PG, DEPLOYMENTS_API_WITH_ORA, DEPLOYMENTS_API_WITHOUT_PG, DEPLOYMENTS_UI, DEPLOYMENTS_ORACLE, DEPLOYMENTS_DB, DEPLOYMENTS_Q].flatten()
 
 // old version of deployments
 def OLD_VERSIONS = []
@@ -216,6 +219,7 @@ node {
                         // save the db name for postman test
                         if (api_name == LEGAL_API) {
                             LEGAL_DB_NAME = API_DB_NAME
+                            LEGAL_DB_USERNAME = API_DB_USERNAME
                         }
 
                         echo "Scaling down ${api_name}-${COMPONENT_TAG}"
@@ -272,14 +276,78 @@ node {
                         )
                         echo "Temporary DB grant results: "+ output_alter_role.actions[0].out
 
-                        //OLD_VERSIONS = ["${LEGAL_API}-${legal_version}", "${COLIN_API}-${colin_deploy.object().status.latestVersion}", "${COOPS_UI}-${coops_ui_deploy.object().status.latestVersion}"]
-
                         OLD_VERSIONS << "${api_name}-${api_version}"
 
                         echo "Rolling out ${api_name}-${COMPONENT_TAG}"
                         api_deploy.rollout().latest()
                         api_deploy.scale('--replicas=1')
                     }
+
+                    // setup nats-db and deploy nats-streaming
+                    def nats_deploy = openshift.selector("dc", "${NATS_STREAMING}-${COMPONENT_TAG}")
+
+                    echo "Scaling down ${NATS_STREAMING}-${COMPONENT_TAG}"
+                    nats_deploy.scale('--replicas=0')
+                    def nats_version = nats_deploy.object().status.latestVersion
+
+                    API_DB_NAME =  "nats-db"
+                    echo "Dropping ${API_DB_NAME} in ${POSTGRESQL}-${COMPONENT_TAG}"
+                    def pg_version = pg_deploy.object().status.latestVersion
+                    PG_POD = openshift.selector('pod', [deployment: "${POSTGRESQL}-${COMPONENT_TAG}-${pg_version}"])
+                    latest = PG_POD.objects().size()-1
+
+                    // execute as postgres user and drop db
+                    def output_disconnect_db = openshift.exec(
+                        PG_POD.objects()[latest].metadata.name,
+                        '--',
+                        "bash -c \"\
+                            psql -c \\\"\
+                                UPDATE pg_database SET datallowconn = 'false' WHERE datname = '${API_DB_NAME}'; \
+                                SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = '${API_DB_NAME}'; \
+                            \\\" \
+                        \""
+                    )
+                    echo "Temporary DB disconnect results: "+ output_disconnect_db.actions[0].out
+
+                    // execute as postgres user and drop db
+                    def output_drop_db = openshift.exec(
+                        PG_POD.objects()[latest].metadata.name,
+                        '--',
+                        "bash -c \"\
+                            psql -c \\\"\
+                                DROP DATABASE \\\\\\\"${API_DB_NAME}\\\\\\\"; \
+                            \\\" \
+                        \""
+                    )
+                    echo "Temporary DB drop results: "+ output_drop_db.actions[0].out
+
+                    echo "Creating ${API_DB_NAME} in ${POSTGRESQL}-${COMPONENT_TAG}"
+                    // execute as postgres user and create test db
+                    def output_create_db = openshift.exec(
+                        PG_POD.objects()[latest].metadata.name,
+                        '--',
+                        "bash -c '\
+                            psql -c \"CREATE DATABASE \\\"${API_DB_NAME}\\\";\" \
+                        '"
+                    )
+                    echo "Temporary DB create results: "+ output_create_db.actions[0].out
+
+                    echo "Creating Tables for ${API_DB_NAME} in ${POSTGRESQL}-${COMPONENT_TAG}"
+                    // execute as postgres user and create test db
+                    def output_create_tables = openshift.exec(
+                        PG_POD.objects()[latest].metadata.name,
+                        '--',
+                        "bash -c '\
+                            psql ${API_DB_NAME} -f /scripts/nats_db.sql \
+                        '"
+                    )
+                    echo "Temporary DB tables results: "+ output_create_tables.actions[0].out
+
+                    OLD_VERSIONS << "${NATS_STREAMING}-${nats_version}"
+
+                    echo "Rolling out ${NATS_STREAMING}-${COMPONENT_TAG}"
+                    nats_deploy.rollout().latest()
+                    nats_deploy.scale('--replicas=1')
 
                     for (api_name in DEPLOYMENTS_API_WITHOUT_PG) {
                         def api_deploy = openshift.selector("dc", "${api_name}-${COMPONENT_TAG}")
@@ -329,51 +397,52 @@ node {
     }
 
     stage("Verify Deployments") {
-        //sleep 10
         def components = [DEPLOYMENTS_API_WITH_PG, DEPLOYMENTS_API_WITH_ORA, DEPLOYMENTS_API_WITHOUT_PG, DEPLOYMENTS_UI].flatten()
         echo "old versions: ${OLD_VERSIONS}"
         verify_new_deployments(NAMESPACE, TAG_NAME, COMPONENT_TAG, OLD_VERSIONS, components)
     }
 
-    stage('Run Postman Tests - COLIN/LEGAL') {
+    stage('Load Data') {
         script {
             openshift.withCluster() {
                 openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
-                    // prep postgres for tests
-                    echo "Prepping database"
-                    def latest = PG_POD.objects().size()-1
-                    def legal_name = '\'legal name CP0002098\''
-                    def founding_date = '\'2019-06-10\''
-                    def identifier = '\'CP0002098\''
-                    def output_alter_role = openshift.exec(
-                        PG_POD.objects()[latest].metadata.name,
-                        '--',
-                        "bash -c \"\
-                            psql -d ${LEGAL_DB_NAME} -c \\\"INSERT INTO businesses (legal_name, founding_date, identifier) VALUES (${legal_name}, ${founding_date}, ${identifier});\\\" \
-                        \""
-                    )
-                    echo "Temporary DB grant results: "+ output_alter_role.actions[0].out
-                    // run postman pipeline
-                    apis = [COLIN_API, LEGAL_API]
-                    for (name in apis) {
-                        echo "Running ${name} pm collection"
+                    checkout scm
+                    dir('api-e2e/openshift/templates') {
                         try {
-                            def url = ""
-                            if (name == 'colin-api') {
-                                url = "http://${name}-${COMPONENT_TAG}.${NAMESPACE}-${TAG_NAME}.svc:8080"
-                            } else {
-                                url = "https://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
-                            }
-                            def pm_pipeline = openshift.selector('bc', 'postman-pipeline')
-                            pm_pipeline.startBuild('--wait=true', "-e=component=${name}", "-e=url=${url}").logs('-f')
+                            delete_job = sh (
+                                script: """oc delete jobs/data-loader""",
+                                    returnStdout: true).trim()
+                            echo delete_job
                         } catch (Exception e) {
-                            PASSED = false
-                            def error_message = e.getMessage()
-                            echo """
-                            Postman details for ${name}: ${error_message}
-                            """
+                            echo "${e.getMessage()}"
+                        }
+                        data_load_output = sh (
+                            script: """oc process -f data-loader.yml -p ENV_TAG=test | oc create -f -""",
+                                returnStdout: true).trim()
+                    }
+                    sleep 10
+                    def data_loader = openshift.selector('pod', [ "job-name":"data-loader" ])
+                    data_loader.untilEach {
+                        def pod = it.objects()[0].metadata.name
+                        echo "pod: ${pod}"
+                        if (it.objects()[0].status.phase == 'Succeeded') {
+                            echo "${pod} successfully loaded data."
+                            return true
+                        } else {
+                            return false;
+                            sleep 5
                         }
                     }
+                    echo "Setting postal codes in ${LEGAL_DB_NAME}"
+                    // execute as postgres user and create test db
+                    def output_set_postals = openshift.exec(
+                        PG_POD.objects()[0].metadata.name,
+                        '--',
+                        "bash -c \"\
+                            psql -d \\\"${LEGAL_DB_NAME}\\\" -c \\\"update addresses set postal_code='V8N4R7';\\\" \
+                        \""
+                    )
+                    echo "Temporary DB create results: "+ output_set_postals.actions[0].out
                 }
             }
         }
@@ -383,24 +452,9 @@ node {
         script {
             openshift.withCluster() {
                 openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
-                    // prep postgres for tests
-                    echo "Prepping database"
-                    def latest = PG_POD.objects().size()-1
-                    def legal_name = '\'legal name CP0002098\''
-                    def founding_date = '\'2019-06-10\''
-                    def identifier = '\'CP0002098\''
-                    def output_alter_role = openshift.exec(
-                        PG_POD.objects()[latest].metadata.name,
-                        '--',
-                        "bash -c \"\
-                            psql -d ${LEGAL_DB_NAME} -c \\\"INSERT INTO businesses (legal_name, founding_date, identifier) VALUES (${legal_name}, ${founding_date}, ${identifier});\\\" \
-                        \""
-                    )
-                    echo "Temporary DB grant results: "+ output_alter_role.actions[0].out
-
-                    // run postman pipeline
+                    // run e2e postman pipeline
                     try {
-                        apis = "${COLIN_API}, ${LEGAL_API}, ${AUTH_API}, ${PAY_API}"
+                        apis = "${COLIN_API}, ${LEGAL_API}, ${AUTH_API}"
                         def pm_e2e_pipeline = openshift.selector('bc', 'postman-e2e-pipeline')
                         pm_e2e_pipeline.startBuild('--wait=true', "-e=components='${apis}'", "-e=component_tag=${COMPONENT_TAG}", "-e=namespace=${NAMESPACE}-${TAG_NAME}").logs('-f')
                     } catch (Exception e) {

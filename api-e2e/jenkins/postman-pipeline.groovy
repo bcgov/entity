@@ -61,24 +61,25 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         stage("Running E2E API tests") {
 
             echo """
-            AUTHURL:${AUTHURL}
-            REALM:${REALM}
-            USERID:${USERID}
-            PASSWORD:${PASSWORD}
-            CLIENTID:${CLIENTID}
-            CLIENT_SECRET:${CLIENT_SECRET}
-            TOKENURL:${TOKENURL}
-            USERNAME:${USERNAME}
-            PASSCODE:${PASSCODE}
+            AUTHURL:${AUTHURL} \
+            REALM:${REALM} \
+            USERID:${USERID} \
+            PASSWORD:${PASSWORD} \
+            CLIENTID:${CLIENTID} \
+            CLIENT_SECRET:${CLIENT_SECRET} \
+            TOKENURL:${TOKENURL} \
+            USERNAME:${USERNAME} \
+            PASSCODE:${PASSCODE} \
             """
             checkout scm
 
             dir("${TESTS_PATH}") {
-
+                all_passed = true
+                failed_components = ''
                 sh 'npm install newman'
 
-                try {
-                    for (name in COMPONENTS.split(',')) {
+                for (name in COMPONENTS.split(', ')) {
+                    try {
                         echo "Running ${name} pm collection"
 
                         def url = ""
@@ -91,15 +92,19 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                         sh """./node_modules/newman/bin/newman.js run ./${name}.postman_collection.json \
                         --global-var url=${url} --global-var auth_url=${AUTHURL} --global-var realm=${REALM} \
                         --global-var password=${PASSWORD} --global-var client_secret=${CLIENT_SECRET} \
-                        --global-var userid=${USERID} --global-var clientid=${CLIENTID} --global-var userid=${USERID} \
-                        --global-var clientid=${CLIENTID} --global-var pay-api-base-url=${url} \
-                        --global-var tokenUrl=${TOKENURL} --global-var userName=${USERNAME} --global-var passCode=${PASSCODE}
+                        --global-var userid=${USERID} --global-var clientid=${CLIENTID} \
+                        --global-var pay-api-base-url=${url} --global-var tokenUrl=${TOKENURL} \
+                        --global-var userName=${USERNAME} --global-var passCode=${PASSCODE}
                         """
+                    } catch (Exception e) {
+                        echo "One or more tests failed."
+                        echo "${e.getMessage()}"
+                        all_passed = false
+                        failed_components += name + ' '
                     }
-
-                } catch (Exception e) {
-                    echo "One or more tests failed."
-                    echo "${e.getMessage()}"
+                }
+                if (!all_passed) {
+                    echo "Components with failed tests: ${failed_components}"
                     currentBuild.result = "FAILURE"
                 }
 
