@@ -457,6 +457,7 @@ node {
                 openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
                     // run e2e postman pipeline
                     try {
+                        echo "${BUILD_NUMBER}"
                         apis = "${COLIN_API}, ${LEGAL_API}, ${AUTH_API}"
                         def pm_e2e_pipeline = openshift.selector('bc', 'postman-e2e-pipeline')
                         pm_e2e_pipeline.startBuild('--wait=true', "-e=components='${apis}'", "-e=component_tag=${COMPONENT_TAG}", "-e=namespace=${NAMESPACE}-${TAG_NAME}").logs('-f')
