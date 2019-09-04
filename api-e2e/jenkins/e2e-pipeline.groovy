@@ -150,7 +150,7 @@ node {
                 scale_down(NAMESPACE, TAG_NAME, COMPONENT_TAG, name)
             }
             sleep 10
-            scale up all deployments
+            // scale up all deployments
             for (name in DEPLOYMENTS) {
                 scale_up(NAMESPACE, TAG_NAME, COMPONENT_TAG, name)
             }
