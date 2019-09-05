@@ -40,6 +40,7 @@ def NATS_STREAMING = 'nats-streaming'
 
 // set in setup stage (will be set to current values for running pods) TODO: username/name for auth/pay dbs
 def PAY_DB_NAME
+def LEGAL_DB_NAME
 def PG_POD
 def API_DB_USERNAME
 def API_DB_NAME
@@ -220,6 +221,9 @@ node {
                         """
 
                         // save the db name for postman test
+                        if (api_name == LEGAL_API) {
+                            LEGAL_DB_NAME = API_DB_NAME
+                        }
                         if (api_name == PAY_API) {
                             PAY_DB_NAME = API_DB_NAME
                         }
