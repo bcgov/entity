@@ -24,7 +24,7 @@ import groovy.json.JsonOutput
     podTemplate(label: e2e_label, name: e2e_label, serviceAccount: 'jenkins', cloud: 'openshift', containers: [
         containerTemplate(
             name: 'jnlp',
-            image: 'docker-registry.default.svc:5000/gl2uos-tools/bddstack:latest',
+            image: 'docker-registry.default.svc:5000/d7eovc-tools/bddstack:latest',
             resourceRequestCpu: '500m',
             resourceLimitCpu: '1000m',
             resourceRequestMemory: '1Gi',
@@ -32,7 +32,14 @@ import groovy.json.JsonOutput
             workingDir: '',
             command: '',
             args: '${computer.jnlpmac} ${computer.name}',
-            envVars: []
+            envVars: [
+                secretEnvVar(key: 'BROWSERSTACK_USERNAME', secretName: 'browserstack-secret', secretKey: 'BROWSERSTACK_USERNAME'),
+                secretEnvVar(key: 'BROWSERSTACK_ACCESS_KEY', secretName: 'browserstack-secret', secretKey: 'BROWSERSTACK_ACCESS_KEY'),
+                secretEnvVar(key: 'IDIRCredU', secretName: 'browserstack-secret', secretKey: 'IDIRCredU'),
+                secretEnvVar(key: 'IDIRCredP', secretName: 'browserstack-secret', secretKey: 'IDIRCredP'),
+                secretEnvVar(key: 'KeycloakCredU', secretName: 'browserstack-secret', secretKey: 'KeycloakCredU'),
+                secretEnvVar(key: 'KeycloakCredP', secretName: 'browserstack-secret', secretKey: 'KeycloakCredP'),
+            ]
         )
     ])
     {    
@@ -51,12 +58,8 @@ import groovy.json.JsonOutput
                     sh '''
                          cd e2e
                          npm install
-                         npm run test
+                         npm run single
                     '''
-            }
-
-            stage ('Save Test Results') {
-                junit 'e2e/reports/*.xml'
             }
 
     }
