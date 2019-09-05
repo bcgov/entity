@@ -62,6 +62,10 @@ def PASSED = true
 
 def ROCKETCHAT_CHANNEL='#registries-bot'
 
+// sequence modifiers for invoice creation
+def SEQUENCE_MODIFIER = 55
+def INVOICE_CREATIONS_PER_RUN = 5
+
 // define groovy functions
 import groovy.json.JsonOutput
 
@@ -276,6 +280,24 @@ node {
                         )
                         echo "Temporary DB grant results: "+ output_alter_role.actions[0].out
 
+                        // if pay-api then increment the sequence number (needed for invoice creation to be successful)
+                        if (api_name == PAY_API) {
+                            increment_value = (BUILD_NUMBER - SEQUENCE_MODIFIER) * INVOICE_CREATIONS_PER_RUN
+                            echo """
+                                BUILD_NUMBER = ${BUILD_NUMBER} \
+                                SEQUENCE_MODIFIER = ${SEQUENCE_MODIFIER} \
+                                INVOICE_CREATIONS_PER_RUN = ${INVOICE_CREATIONS_PER_RUN} \
+                                Incrementing invoice id sequence by ${BUILD_NUMBER} - ${SEQUENCE_MODIFIER} * ${INVOICE_CREATIONS_PER_RUN} = ${increment_value}
+                            """
+                            def output_alter_sequence = openshift.exec(
+                                PG_POD.objects()[latest].metadata.name,
+                                '--',
+                                "bash -c '\
+                                    psql -d \"${API_DB_NAME}\" -c \"ALTER SEQUENCE invoice_id_seq INCREMENT BY ${increment_value};\" \
+                                '"
+                            )
+                            echo "Temporary DB increment sequence results: "+ output_alter_sequence.actions[0].out
+                        }
                         OLD_VERSIONS << "${api_name}-${api_version}"
 
                         echo "Rolling out ${api_name}-${COMPONENT_TAG}"
