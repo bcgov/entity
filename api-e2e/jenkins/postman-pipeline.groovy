@@ -58,57 +58,59 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
 ])
 {
     node(py3nodejs_label) {
-        echo """
-        AUTHURL:${AUTHURL} \
-        REALM:${REALM} \
-        USERID:${USERID} \
-        PASSWORD:${PASSWORD} \
-        CLIENTID:${CLIENTID} \
-        CLIENT_SECRET:${CLIENT_SECRET} \
-        TOKENURL:${TOKENURL} \
-        USERNAME:${USERNAME} \
-        PASSCODE:${PASSCODE} \
-        """
-        checkout scm
+        script {
+            echo """
+            AUTHURL:${AUTHURL} \
+            REALM:${REALM} \
+            USERID:${USERID} \
+            PASSWORD:${PASSWORD} \
+            CLIENTID:${CLIENTID} \
+            CLIENT_SECRET:${CLIENT_SECRET} \
+            TOKENURL:${TOKENURL} \
+            USERNAME:${USERNAME} \
+            PASSCODE:${PASSCODE} \
+            """
+            checkout scm
 
-        dir("${TESTS_PATH}") {
-            all_passed = true
-            failed_components = ''
-            sh 'npm install newman'
+            dir("${TESTS_PATH}") {
+                all_passed = true
+                failed_components = ''
+                sh 'npm install newman'
 
-            for (name in COMPONENTS.split(', ')) {
-                stage("Running ${name} pm tests")
-                    try {
-                        echo "Running ${name} pm collection"
+                for (name in COMPONENTS.split(', ')) {
+                    stage("Running ${name} pm tests") {
+                        try {
+                            echo "Running ${name} pm collection"
 
-                        def url = ""
-                        if (name == 'colin-api') {
-                            url = "http://${name}-${COMPONENT_TAG}.${NAMESPACE}.svc:8080"
-                        } else {
-                            url = "https://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
+                            def url = ""
+                            if (name == 'colin-api') {
+                                url = "http://${name}-${COMPONENT_TAG}.${NAMESPACE}.svc:8080"
+                            } else {
+                                url = "https://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
+                            }
+
+                            sh """./node_modules/newman/bin/newman.js run ./${name}.postman_collection.json \
+                            --global-var url=${url} --global-var auth_url=${AUTHURL} --global-var realm=${REALM} \
+                            --global-var password=${PASSWORD} --global-var client_secret=${CLIENT_SECRET} \
+                            --global-var userid=${USERID} --global-var clientid=${CLIENTID} \
+                            --global-var pay-api-base-url=${url} --global-var tokenUrl=${TOKENURL} \
+                            --global-var userName=${USERNAME} --global-var passCode=${PASSCODE}
+                            """
+                        } catch (Exception e) {
+                            echo "One or more tests failed."
+                            echo "${e.getMessage()}"
+                            all_passed = false
+                            failed_components += name + ' '
                         }
-
-                        sh """./node_modules/newman/bin/newman.js run ./${name}.postman_collection.json \
-                        --global-var url=${url} --global-var auth_url=${AUTHURL} --global-var realm=${REALM} \
-                        --global-var password=${PASSWORD} --global-var client_secret=${CLIENT_SECRET} \
-                        --global-var userid=${USERID} --global-var clientid=${CLIENTID} \
-                        --global-var pay-api-base-url=${url} --global-var tokenUrl=${TOKENURL} \
-                        --global-var userName=${USERNAME} --global-var passCode=${PASSCODE}
-                        """
-                    } catch (Exception e) {
-                        echo "One or more tests failed."
-                        echo "${e.getMessage()}"
-                        all_passed = false
-                        failed_components += name + ' '
                     }
                 }
-            }
-            stage("Result") {
-                if (!all_passed) {
-                    echo "Components with failed tests: ${failed_components}"
-                    currentBuild.result = "FAILURE"
+                stage("Result") {
+                    if (!all_passed) {
+                        echo "Components with failed tests: ${failed_components}"
+                        currentBuild.result = "FAILURE"
+                    }
                 }
-            }
-        } // end dir
+            } // end dir
+        } // end script
     } //end node
 } //end podTemplate
