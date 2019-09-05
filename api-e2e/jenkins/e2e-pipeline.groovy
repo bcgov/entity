@@ -63,7 +63,7 @@ def PASSED = true
 def ROCKETCHAT_CHANNEL='#registries-bot'
 
 // sequence modifiers for invoice creation
-def SEQUENCE_MODIFIER = 60
+def SEQUENCE_MODIFIER = 40
 def INVOICE_CREATIONS_PER_RUN = 5
 
 // define groovy functions
