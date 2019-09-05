@@ -58,27 +58,26 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
 ])
 {
     node(py3nodejs_label) {
-        stage("Running E2E API tests") {
+        echo """
+        AUTHURL:${AUTHURL} \
+        REALM:${REALM} \
+        USERID:${USERID} \
+        PASSWORD:${PASSWORD} \
+        CLIENTID:${CLIENTID} \
+        CLIENT_SECRET:${CLIENT_SECRET} \
+        TOKENURL:${TOKENURL} \
+        USERNAME:${USERNAME} \
+        PASSCODE:${PASSCODE} \
+        """
+        checkout scm
 
-            echo """
-            AUTHURL:${AUTHURL} \
-            REALM:${REALM} \
-            USERID:${USERID} \
-            PASSWORD:${PASSWORD} \
-            CLIENTID:${CLIENTID} \
-            CLIENT_SECRET:${CLIENT_SECRET} \
-            TOKENURL:${TOKENURL} \
-            USERNAME:${USERNAME} \
-            PASSCODE:${PASSCODE} \
-            """
-            checkout scm
+        dir("${TESTS_PATH}") {
+            all_passed = true
+            failed_components = ''
+            sh 'npm install newman'
 
-            dir("${TESTS_PATH}") {
-                all_passed = true
-                failed_components = ''
-                sh 'npm install newman'
-
-                for (name in COMPONENTS.split(', ')) {
+            for (name in COMPONENTS.split(', ')) {
+                stage("Running ${name} pm tests")
                     try {
                         echo "Running ${name} pm collection"
 
@@ -103,12 +102,13 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                         failed_components += name + ' '
                     }
                 }
+            }
+            stage("Result") {
                 if (!all_passed) {
                     echo "Components with failed tests: ${failed_components}"
                     currentBuild.result = "FAILURE"
                 }
-
-            } // end dir
-        } //end stage
+            }
+        } // end dir
     } //end node
 } //end podTemplate
