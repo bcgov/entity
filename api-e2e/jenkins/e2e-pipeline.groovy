@@ -462,7 +462,10 @@ node {
                         PG_POD.objects()[latest].metadata.name,
                         '--',
                         "bash -c '\
-                            psql -d \"${PAY_DB_NAME}\" -c \"ALTER SEQUENCE invoice_id_seq INCREMENT BY ${increment_value};\" \
+                            psql -d \"${PAY_DB_NAME}\" -c \" \
+                                ALTER SEQUENCE invoice_id_seq START WITH ${increment_value}; \
+                                ALTER SEQUENCE invoice_id_seq RESTART; \
+                            \" \
                         '"
                     )
                     echo "Temporary DB increment sequence results: "+ output_alter_sequence.actions[0].out
