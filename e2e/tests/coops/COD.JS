@@ -1,5 +1,5 @@
 module.exports = {
-    '@tags': ['rcod'],
+    '@tags': ['coops'],
     'Coops Login': function (browser) {
         browser
             .url('https://coops-test.pathfinder.gov.bc.ca/auth/')
