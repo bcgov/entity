@@ -39,7 +39,7 @@ def ENTITY_FILER = 'entity-filer'
 def NATS_STREAMING = 'nats-streaming'
 
 // set in setup stage (will be set to current values for running pods) TODO: username/name for auth/pay dbs
-def LEGAL_DB_USERNAME
+def PAY_DB_NAME
 def LEGAL_DB_NAME
 def PG_POD
 def API_DB_USERNAME
@@ -61,6 +61,10 @@ def OLD_VERSIONS = []
 def PASSED = true
 
 def ROCKETCHAT_CHANNEL='#registries-bot'
+
+// sequence modifiers for invoice creation
+def SEQUENCE_MODIFIER = 10
+def INVOICE_CREATIONS_PER_RUN = 5
 
 // define groovy functions
 import groovy.json.JsonOutput
@@ -219,7 +223,9 @@ node {
                         // save the db name for postman test
                         if (api_name == LEGAL_API) {
                             LEGAL_DB_NAME = API_DB_NAME
-                            LEGAL_DB_USERNAME = API_DB_USERNAME
+                        }
+                        if (api_name == PAY_API) {
+                            PAY_DB_NAME = API_DB_NAME
                         }
 
                         echo "Scaling down ${api_name}-${COMPONENT_TAG}"
@@ -443,6 +449,26 @@ node {
                         \""
                     )
                     echo "Temporary DB create results: "+ output_set_postals.actions[0].out
+
+                    // increment the invoice sequence in pay db (needed for invoice creation to be successful)
+                    int increment_value = (BUILD_NUMBER.toInteger() - SEQUENCE_MODIFIER.toInteger()) * INVOICE_CREATIONS_PER_RUN.toInteger()
+                    echo """
+                        BUILD_NUMBER = ${BUILD_NUMBER} \
+                        SEQUENCE_MODIFIER = ${SEQUENCE_MODIFIER} \
+                        INVOICE_CREATIONS_PER_RUN = ${INVOICE_CREATIONS_PER_RUN} \
+                        Incrementing invoice id sequence by (${BUILD_NUMBER} - ${SEQUENCE_MODIFIER}) * ${INVOICE_CREATIONS_PER_RUN} = ${increment_value}
+                    """
+                    def output_alter_sequence = openshift.exec(
+                        PG_POD.objects()[latest].metadata.name,
+                        '--',
+                        "bash -c '\
+                            psql -d \"${PAY_DB_NAME}\" -c \" \
+                                ALTER SEQUENCE invoice_id_seq START WITH ${increment_value}; \
+                                ALTER SEQUENCE invoice_id_seq RESTART; \
+                            \" \
+                        '"
+                    )
+                    echo "Temporary DB increment sequence results: "+ output_alter_sequence.actions[0].out
                 }
             }
         }

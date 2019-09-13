@@ -4,6 +4,7 @@ nightwatch_config = {
   "custom_commands_path": ["./node_modules/nightwatch-xhr/es5/commands"],
   "globals_path": "globals.js",
 
+
   selenium : {
     "start_process" : false,
     "host" : "hub-cloud.browserstack.com",
@@ -13,6 +14,7 @@ nightwatch_config = {
   test_settings: {
     default: {
       waitForConditionTimeout : 30000,
+
       desiredCapabilities: {
         'build': 'nightwatch-browserstack',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',

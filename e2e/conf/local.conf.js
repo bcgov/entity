@@ -5,6 +5,7 @@ nightwatch_config = {
   "custom_commands_path": ["./node_modules/nightwatch-xhr/es5/commands"],
   "globals_path": "globals.js",
 
+
   selenium : {
     "start_process" : false,
     "host" : "hub-cloud.browserstack.com",
