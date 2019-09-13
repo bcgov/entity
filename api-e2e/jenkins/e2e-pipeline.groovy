@@ -495,6 +495,26 @@ node {
         }
     }
 
+    stage('Run Nightwatch E2E Tests') {
+        script {
+            openshift.withCluster() {
+                openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
+                    // run e2e nightwatch pipeline
+                    try {
+                        def nightwatch_e2e_pipeline = openshift.selector('bc', 'nightwatch-test-pipeline')
+                        nightwatch_e2e_pipeline.startBuild('--wait=true').logs('-f')
+                    } catch (Exception e) {
+                        PASSED = false
+                        def error_message = e.getMessage()
+                        echo """
+                        Nightwatch failure details: ${error_message}
+                        """
+                    }
+                }
+            }
+        }
+    }
+
     stage('Clean E2E Environment') {
         script {
             openshift.withCluster() {
