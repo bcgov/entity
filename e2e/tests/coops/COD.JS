@@ -1,40 +1,27 @@
 module.exports = {
-    '@tags': ['coops'],
+    '@tags': ['rcod'],
     'Coops Login': function (browser) {
         browser
             .url('https://coops-test.pathfinder.gov.bc.ca/auth/')
             .waitForElementVisible('input[aria-label="Enter your Incorporation Number"]')
             .setValue('#app > div.application--wrap > div.app-body > div > div > article > div > div > div > form > div:nth-child(2) > div > div > div.v-input__slot > div > input[type=text]', 'CP0002141')
             .setValue('#app > div.application--wrap > div.app-body > div > div > article > div > div > div > form > div:nth-child(3) > div > div > div.v-input__slot > div.v-text-field__slot > input[type=password]', '415563022')
-            .click('#app > div.application--wrap > div.app-body > div > div > article > div > div > div > form > div.passcode-form__row.passcode-form__form-btns > button.sign-in-btn.v-btn.v-btn--large.theme--light.primary > div');
-                          
+            .click('#app > div.application--wrap > div.app-body > div > div > article > div > div > div > form > div.passcode-form__row.passcode-form__form-btns > button.sign-in-btn.v-btn.v-btn--large.theme--light.primary > div');                    
     },
     'Coops Dasboard to COD': function (browser) {
         browser
+            .waitForElementVisible('div.entity-name')
             .waitForElementVisible('#btn-standalone-directors')
             .waitForElementNotVisible('div.loading-container')
-            .waitForXHR('https://legal-api-test.pathfinder.gov.bc.ca/api/v1/businesses/CP0002141/directors', 5000)
-                function testCallback(xhrs) {
-                browser.assert.equal(xhrs[0].method, "GET");
-                browser.assert.equal(xhrs[0].status, "success");
-                browser.assert.equal(xhrs[0].httpResponseCode, 200);
-            }; 
-        browser
             .assert.containsText('#app > div.application--wrap > div.app-body > main > div.entity-info > div > dl > dd.incorp-number','CP0002141')
             .assert.containsText('#app > div.application--wrap > div > main > div.entity-info > div > div','DADS AUTO DELIVERIES CO-OP')
             .assert.containsText('#dashboardArticle > div > div > section:nth-child(2) > header > h2','Recent Filing History (0)')
             .assert.containsText('#dashboardArticle > div > div > section:nth-child(2) > div > div.no-results.v-card.v-card--flat.v-sheet.theme--light > div > div.no-results__title','You have no filing history')
             .assert.visible('#btn-standalone-addresses > div > span')
-            .waitForXHR('', 5000, function clickTrigger() {
-        browser.click('#btn-standalone-directors > div > span')
-      }, function testCallback(xhrs) {
-          browser.assert.equal(xhrs[0].method, "GET");
-          browser.assert.equal(xhrs[0].status, "success");
-          browser.assert.equal(xhrs[0].httpResponseCode, 200);
-      });
-            browser
-            .waitForElementVisible('button.new-director-btn')
-            .click('button.new-director-btn')
+            .click('#btn-standalone-directors > div > span')
+            .waitForElementVisible('#directors > div:nth-child(2) > button > div')
+            .pause(10000)
+            .click('#directors > div:nth-child(2) > button > div')
             .waitForElementVisible('#new-director__first-name')
             .waitForElementNotVisible('button.new-director-btn')
             .setValue('#new-director__first-name', 'test')
@@ -56,13 +43,6 @@ module.exports = {
             .setValue('#certified-by-textfield', 'test')
             .click('#AR-step-4-container > div > div.v-input.v-input--selection-controls.v-input--checkbox.theme--light > div > div.v-input__slot > div > div')
             .click('#cod-save-resume-btn > div')
-            .waitForXHR('https://legal-api-test.pathfinder.gov.bc.ca/api/v1/businesses/CP0002141/directors', 5000) 
-               function testCallback(xhrs) {
-                  browser.assert.equal(xhrs[0].method, "GET");
-                  browser.assert.equal(xhrs[0].status, "success");
-                  browser.assert.equal(xhrs[0].httpResponseCode, 200);
-              };
-            browser
             .assert.containsText('#dashboardArticle > div > div > section:nth-child(1) > header > h2','To Do (2)')
             .assert.visible('#dashboardArticle > div > div > section:nth-child(1) > div > ul > li:nth-child(1) > div.v-expansion-panel__header > div.list-item > div.list-item__actions > button > div')
             .assert.containsText('#dashboardArticle > div > div > section:nth-child(1) > div > ul > li:nth-child(1) > div.v-expansion-panel__header > div.list-item > div.list-item__actions > button > div','Resume')
@@ -70,11 +50,11 @@ module.exports = {
             .assert.attributeEquals('#btn-standalone-directors','disabled',"true")
             .click('#dashboardArticle > div > div > section:nth-child(1) > div > ul > li:nth-child(1) > div.v-expansion-panel__header > div.list-item > div.list-item__actions > button > div')
         //Making sure all the changes are present 
-            .assert.containsText('#director-5 > div > label > span:nth-child(1)','test')
-            .assert.containsText('#director-5 > div > label > span:nth-child(3)','test3')
-            .assert.containsText('#director-5 > div > div > div > div.address > div > div > div > div:nth-child(1)','123 test')
-            .assert.containsText('#director-5 > div > label > div > span:nth-child(1)','NEW')
-            .assert.visible('#director-5-change-btn > div')
+            .assert.containsText('#director-6 > div > label > span:nth-child(1)','test')
+            .assert.containsText('#director-6 > div > label > span:nth-child(3)','test3')
+            .assert.containsText('#director-6 > div > div > div > div.address > div > div > div > div:nth-child(1)','123 test')
+            .assert.containsText('#director-6 > div > label > div > span:nth-child(1)','NEW')
+            .assert.visible('#director-6-change-btn')
             .click('#AR-step-4-container > div > div.v-input.v-input--selection-controls.v-input--checkbox.theme--light > div > div.v-input__slot > div > div')
             .click('#cod-file-pay-btn')
     },
@@ -96,13 +76,13 @@ module.exports = {
             .waitForElementVisible('html body div#app.application.app-container.theme--light div.application--wrap div.app-body main div#dashboard div#dashboardContainer.container.view-container article#dashboardArticle div.dashboard-content div.dashboard-content__main section div ul.v-expansion-panel.theme--light li.v-expansion-panel__container.filing-history-list div.v-expansion-panel__header div.v-expansion-panel__header__status')
             .assert.visible('#dashboardArticle > div > div > section:nth-child(1) > header','To Do (1)')
             .assert.visible('#dashboardArticle > div > div > section:nth-child(1) > div > ul > li > div.v-expansion-panel__header > div.list-item > div.list-item__actions > button > div','disabled',"false")
-            .assert.attributeEquals('#btn-standalone-addresses', 'disabled',"false")
-            .assert.attributeEquals('#btn-standalone-directors','disabled',"false")
+            .assert.visible('#btn-standalone-addresses')
+            .assert.visible('#btn-standalone-directors')
             .assert.visible('#dashboardArticle > div > div > section:nth-child(2) > header > h2','Recent Filing History (1)')
             .assert.visible('#dashboardArticle > div > div > section:nth-child(2) > div > ul > li > div.v-expansion-panel__body','Director Change')
             .assert.visible('#dashboardArticle > div > div > section:nth-child(2) > div > ul > li > div.v-expansion-panel__header > div.v-expansion-panel__header__status','FILED AND PAID')
-            .assert.visible('#dashboardArticle > div > aside > section:nth-child(2) > div > ul > li:nth-child(5) > div.director-info > div.list-item__title','TEST TEST3')
+            .assert.visible('#dashboardArticle > div > aside > section:nth-child(2) > div > ul > li:nth-child(5) > div.director-info > div.list-item__title','test TEST3')
             .assert.visible('#dashboardArticle > div > aside > section:nth-child(2) > div > ul > li:nth-child(5) > div.director-info > div.list-item__subtitle > ul > li:nth-child(1)','123 test st')
             .end();
     }
-};
+  };

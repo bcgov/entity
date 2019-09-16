@@ -71,7 +71,7 @@ module.exports={
     browser
         .waitForElementVisible('#reg-off-addr-change-btn')
         .click('#reg-off-addr-change-btn')
-        .waitForElementVisible('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(1) > div > div > div.v-input__slot > div > input[type=text]', function() {
+        .waitForElementVisible('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(1) > div > div > div.v-input__slot > div > input[type=text]', function() {
             browser
                 .execute(function() {
                     var event = new Event('input', {
@@ -79,7 +79,7 @@ module.exports={
                         'cancelable': true
                     });
 
-                    var element = document.querySelector('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(1) > div > div > div.v-input__slot > div > input[type=text]');                                
+                    var element = document.querySelector('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(1) > div > div > div.v-input__slot > div > input[type=text]');                                
                     element.value = "123 test street";  
                     element.dispatchEvent(event);                 
                     return element;
