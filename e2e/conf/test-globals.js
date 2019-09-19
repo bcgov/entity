@@ -1,12 +1,12 @@
 module.exports = {
 	waitForConditionTimeout : 30000,	
-	throwOnMultipleElementsReturned : true,
+	throwOnMultipleElementsReturned : false,
 
-	launch_url: "https://coops-e2e.pathfinder.gov.bc.ca/",
+	launch_url: "https://coops-test.pathfinder.gov.bc.ca/",
 
 	CP0000977: {
 		identifier: "CP0000977",
-		passcode: "525222923",
+		passcode: "448226753",
 		director_count: 8,
 		legal_name: "WASHINGTON CO-OPERATIVE HOUSING ASSOCIATION",
 		mailing: {
