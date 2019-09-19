@@ -1,6 +1,6 @@
 
 module.exports={
-    '@tags': ['COA', 'single'],
+    '@tags': ['COA'],
     step1:function (browser){
         browser
         .url('https://coops-test.pathfinder.gov.bc.ca/auth/')
