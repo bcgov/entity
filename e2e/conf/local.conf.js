@@ -3,9 +3,6 @@ var browserstack = require('browserstack-local');
 nightwatch_config = {
   "src_folders": ["./tests"],
   "custom_commands_path": ["./node_modules/nightwatch-xhr/es5/commands"],
-  "page_objects_path": "page-objects",
-  "globals_path": "globals.js",
-
 
   selenium : {
     "start_process" : false,
@@ -15,6 +12,7 @@ nightwatch_config = {
 
   test_settings: {
     default: {
+      globals_path: "globals.js",
       desiredCapabilities: {
         'build': 'nightwatch-browserstack',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
@@ -30,6 +28,9 @@ nightwatch_config = {
           "args" : ["start-fullscreen"]
         }
       }
+    },
+    test: {
+      globals_path: "test-globals.js"
     }
   }
 };
