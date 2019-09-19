@@ -3,6 +3,7 @@ var browserstack = require('browserstack-local');
 nightwatch_config = {
   "src_folders": ["./tests"],
   "custom_commands_path": ["./node_modules/nightwatch-xhr/es5/commands"],
+  "page_objects_path": "page-objects",
   "globals_path": "globals.js",
 
 
