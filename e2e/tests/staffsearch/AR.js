@@ -4,8 +4,8 @@ module.exports={
         browser
         .url('https://coops-dev.pathfinder.gov.bc.ca/auth/signin/idir')
         .assert.visible('#login-to','Log in to sfstest7.gov.bc.ca')
-        .setValue('#user','johnstaf')
-        .setValue('#password','Automation4TheWin')
+        .setValue('#user','process.env.username')
+        .setValue('#password','process.env.password')
         .click('#login-form > section > div > div.col-sm-7.col-md-8 > div > div.panel-body > div.login-form-action > input')
     },
     step2:function(browser){
