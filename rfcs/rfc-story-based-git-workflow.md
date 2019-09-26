@@ -72,7 +72,7 @@ If an E2E environment can be set up in an automated fashion, webhooks can be use
 **Recommendation**: Work toward automated, scripted, consistent environments
 
 ## Forking instead of Branching
-To date, the entities team has not been using branches. Because the code is open source, developers can fork and share their fork between each other on an ad-hoc basis. 
+To date, the entities team has not been using branches directly off master in the same repo. Because the code is open source, developers can fork and share their fork between each other on an ad-hoc basis. 
 
 **Advantages of forking:**
 * No need to take the extra step to create a branch (public contributors don't need to have any permissions)
