@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "single": "./node_modules/.bin/nightwatch -c conf/single.conf.js",
-    "local": "node scripts/local.runner.js -c conf/local.conf.js --tag single",
+      
     "local-test": "node scripts/local.runner.js -c conf/local.conf.js --tag single --env test",
     "parallel": "./node_modules/.bin/nightwatch -c conf/parallel.conf.js -e chrome,firefox,safari,ie",
     "parallel_local": "node scripts/local.runner.js -c conf/parallel_local.conf.js -e chrome,firefox,safari"

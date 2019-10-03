@@ -1,16 +1,20 @@
 module.exports={
-    '@tags': ['ar','local'],
-    
-    'signin':function (browser){
+    '@tags': ['Stafflogin','local'],
+
+    'Login with IDIR':function (browser){
         browser
-            .url('https://coops-test.pathfinder.gov.bc.ca/')
-            .waitForElementVisible('input[aria-label="Enter your Incorporation Number"]')
-            .setValue('input[aria-label="Enter your Incorporation Number"]','CP0000977')
-            .waitForElementVisible('input[aria-label="Enter your Passcode"]')
-            .setValue('input[aria-label="Enter your Passcode"]','448226753')
-            .waitForElementVisible('button.sign-in-btn')
-            .click('button.sign-in-btn')
-            .pause(5000)
+        .url(browser.globals.launch_url1)
+        .assert.visible('#login-to','Log in to sfstest7.gov.bc.ca')
+        .setValue('#user','johnstaf')
+        .setValue('#password','Automation5TheWin')
+        .click('#login-form > section > div > div.col-sm-7.col-md-8 > div > div.panel-body > div.login-form-action > input')
+    },
+    'Login To Dashboard':function(browser){
+        browser
+        .assert.visible('#app > div > div.app-body > div > div > article > h1','Search Co-operatives')
+        .assert.visible('#app > div > div.app-body > div > div > article > h2','Incorporation Number')
+        .setValue('#input-18', 'CP0000977')
+        .click('#app > div > div.app-body > div > div > article > div > form > div.layout.align-end.justify-end > button > span')
     },
     'Dashboard':function(browser){
         var dashboard=browser.page.dashboard()
@@ -127,22 +131,11 @@ module.exports={
     'Appoint Director':function(browser){
         var Director=browser.page.Director()
         Director.DirectorAssertions(browser)
-       // Director.NewDirectorAssertions(browser)
+        Director.NewDirectorAssertions(browser)
     },
             
     'Certify Page':function(browser){
         var certify=browser.page.certify()
         certify.Certifypage(browser)
     },
-    'PayBC': function (browser) {
-        var paybc=browser.page.paybc()
-        paybc.paybcassertions(browser)
-    },
-    'Confirm Filing Completes': function (browser) {
-        var Filingcomplete=browser.page.Filingscomplete()
-        Filingcomplete.Filingcompleteassertions(browser)
-        end();
-    }
-    };
-    
-    
+};
