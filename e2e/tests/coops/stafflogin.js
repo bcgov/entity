@@ -1,5 +1,5 @@
 module.exports={
-    '@tags': ['Stafflogin','local'],
+    '@tags': ['Stafflogin', 'local'],
 
     'Login with IDIR':function (browser){
         browser
