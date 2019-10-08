@@ -1,763 +1,808 @@
 {
-  "info": {
-    "_postman_id": "11b32ffe-282b-4b37-b366-89298c51dfa8",
-    "name": "pay-api",
-    "description": "version=1.0.0",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "Get Fees",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "1ab09244-2ee0-4849-9ca0-ee39660b7dfe",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});",
-              "pm.test(\"filing type code matches\", function () {",
-              "    var jsonData = pm.response.json();",
-              "    pm.expect(jsonData.filing_type_code).to.eql('OTADR');",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/fees/CP/OTADR",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "fees",
-            "CP",
-            "OTADR"
-          ]
-        },
-        "description": "Calculate fees by Corp Type and Filing type"
-      },
-      "response": []
-    },
-    {
-      "name": "Create Payment Record",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "fb863ef4-20af-4ecf-923c-2e4ff414ef5d",
-            "exec": [
-              "pm.test(\"Status code is 201\", function () {",
-              "    pm.response.to.have.status(201);",
-              "});",
-              "pm.test(\"Set Payment Identifier\", function () {",
-              "    var jsonData = pm.response.json();",
-              "    pm.environment.set(\"payment-identifier\", jsonData.id);",
-              "    console.log(\"Created payment request with identifier \"+jsonData.id)",
-              "    console.log(\"Invoice identifier set as \"+jsonData.invoices[0].id)",
-              "    pm.environment.set(\"invoice_id\", jsonData.invoices[0].id);",
-              "});",
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"payment_info\": {\n    \"method_of_payment\": \"CC\"\n  },\n  \"business_info\": {\n    \"business_identifier\": \"CP1234\",\n    \"corp_type\": \"CP\",\n    \"business_name\": \"ABC Corp\",\n    \"contact_info\": {\n      \"city\": \"Victoria\",\n      \"postal_code\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"address_line_1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filing_info\": {\n    \"filing_types\": [\n      {\n        \"filing_type_code\": \"OTADD\",\n    \t\"filing_description\":\"TEST\"\n      },\n      {\n        \"filing_type_code\": \"OTANN\"\n      }\n    ]\n  }\n}"
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/payments",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "payments"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Get Payment Record",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "9e92a882-5f17-46e9-a6ee-f06c2f84869d",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "type": "text",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/payments/{{payment-identifier}}",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "payments",
-            "{{payment-identifier}}"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Get Invoices for the payment",
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "0436f54d-04c5-48ab-bba3-d070bf007832",
-            "exec": [
-              "",
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        },
-        {
-          "listen": "test",
-          "script": {
-            "id": "ef805864-534e-4d5d-8bae-7ea9876bdc78",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "type": "text",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/payments/{{payment-identifier}}/invoices",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "payments",
-            "{{payment-identifier}}",
-            "invoices"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Get Invoice for the payment",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "cb1edc83-120b-49d6-bc7b-a2842ddf070a",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "type": "text",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/payments/{{payment-identifier}}/invoices/{{invoice_id}}",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "payments",
-            "{{payment-identifier}}",
-            "invoices",
-            "{{invoice_id}}"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Update Payment Record ",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "918c0676-e75b-4dcf-a26c-bbe105b1b2e9",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "PUT",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"payment_info\": {\n    \"method_of_payment\": \"CC\"\n  },\n  \"business_info\": {\n    \"business_identifier\": \"cp0000019\",\n    \"corp_type\": \"CP\",\n    \"business_name\": \"ABC Corp\",\n    \"contact_info\": {\n      \"city\": \"Victoria\",\n      \"postal_code\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"address_line_1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filing_info\": {\n    \"filing_types\": [\n      {\n        \"filing_type_code\": \"OTCDR\",\n    \t\"filing_description\":\"Change of Directors - Director A\"\n      },\n      {\n        \"filing_type_code\": \"OTANN\"\n      }\n      \n    ]\n  }\n}"
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/payments/{{payment-identifier}}",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "payments",
-            "{{payment-identifier}}"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Create a Transaction Record",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "e06eedb1-011c-458a-a739-21e6f33d6feb",
-            "exec": [
-              "pm.test(\"Status code is 201\", function () {",
-              "    pm.response.to.have.status(201);",
-              "});",
-              "pm.test(\"Set Transaction Identifier\", function () {",
-              "    var jsonData = pm.response.json();",
-              "    pm.environment.set(\"transaction-identifier\", jsonData.id);",
-              "    console.log(\"Created transaction with identifier \"+jsonData.id)",
-              "});",
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/payments/{{payment-identifier}}/transactions?redirect_uri=https%3A%2F%2Fcoops.pathfinder.gov.bc.ca%2Fdashboard",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "payments",
-            "{{payment-identifier}}",
-            "transactions"
-          ],
-          "query": [
-            {
-              "key": "redirect_uri",
-              "value": "https%3A%2F%2Fcoops.pathfinder.gov.bc.ca%2Fdashboard"
-            }
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Get Transactions for the payment",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "1a7a7dd9-9e31-4f7d-9b34-3ca248f63b46",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "type": "text",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/payments/{{payment-identifier}}/transactions",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "payments",
-            "{{payment-identifier}}",
-            "transactions"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Get Transaction for the payment",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "d1efea08-989a-4dc3-af29-872a5e9ba520",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/payments/{{payment-identifier}}/transactions/{{transaction-identifier}}",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "payments",
-            "{{payment-identifier}}",
-            "transactions",
-            "{{transaction-identifier}}"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Update Transaction against a payment",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "b9e01256-ae86-4acc-bbd5-44dba862ee8a",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "PATCH",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/payments/{{payment-identifier}}/transactions/{{transaction-identifier}}",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "payments",
-            "{{payment-identifier}}",
-            "transactions",
-            "{{transaction-identifier}}"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Generate Receipt with Payment Identifier",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "5fad65bf-62e9-4d46-bae8-6b0a2d35649a",
-            "exec": [
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"corpName\": \"CP1234\",\n    \"filingDateTime\": \"June 27, 2019\",\n    \"fileName\":\"director-change\"\n}"
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/payments/{{payment-identifier}}/receipts",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "payments",
-            "{{payment-identifier}}",
-            "receipts"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Generate Receipt with Payment Identifier and Invoice Identifier",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "6c458ad7-32bc-4c4b-b033-cf3c2e16d872",
-            "exec": [
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"corpName\": \"CP1234\",\n    \"filingDateTime\": \"June 27, 2019\",\n    \"fileName\":\"director-change\"\n}"
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/payments/{{payment-identifier}}/invoices/{{invoice_id}}/receipts",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "payments",
-            "{{payment-identifier}}",
-            "invoices",
-            "{{invoice_id}}",
-            "receipts"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Get Service Downtime Status",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "3355ed3b-4d14-4e1d-85e5-4ca3dbc79115",
-            "exec": [
-              "pm.test(\"Response time is less than 5000ms\", function () {",
-              "    pm.expect(pm.response.responseTime).to.be.below(5000);",
-              "});",
-              "",
-              "pm.test(\"response is ok\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});",
-              "",
-              "pm.test(\"response should be okay to process\", function () { ",
-              "    pm.response.to.not.be.error; ",
-              "    //pm.response.to.have.jsonBody(\"\"); ",
-              "    pm.response.to.not.have.jsonBody(\"error\"); ",
-              "});",
-              "",
-              "pm.test(\"response must be valid and have a body\", function () {",
-              "     // assert that the status code is 200",
-              "     pm.response.to.be.ok; // info, success, redirection, clientError,  serverError, are other variants",
-              "     // assert that the response has a valid JSON body",
-              "     pm.response.to.be.withBody;",
-              "     pm.response.to.be.json; // this assertion also checks if a body  exists, so the above check is not needed",
-              "});",
-              "",
-              "pm.test(\"Verify payload\",  () => {",
-              "    pm.expect(pm.response.text()).to.include(\"service\");",
-              "    pm.expect(pm.response.text()).to.include(\"current_status\");",
-              "    pm.expect(pm.response.text()).to.not.include(\"service_name\");",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/status/PAYBC",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "status",
-            "PAYBC"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "POC  - BCOL - Verify User",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "cf9bc42e-7943-4c77-a6d5-8ca64cee8732",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n\t\"userId\":\"pc25020\",\n\t\"userKey\":\"3065\"\n}"
-        },
-        "url": {
-          "raw": "{{pay-api-base-url}}/api/v1/bcol/accounts/180670/users/pb25020",
-          "host": [
-            "{{pay-api-base-url}}"
-          ],
-          "path": [
-            "api",
-            "v1",
-            "bcol",
-            "accounts",
-            "180670",
-            "users",
-            "pb25020"
-          ]
-        }
-      },
-      "response": []
-    }
-  ],
-  "auth": {
-    "type": "oauth2",
-    "oauth2": [
-      {
-        "key": "accessToken",
-        "value": "{{accessToken}}",
-        "type": "string"
-      },
-      {
-        "key": "addTokenTo",
-        "value": "header",
-        "type": "string"
-      }
-    ]
-  },
-  "event": [
-    {
-      "listen": "prerequest",
-      "script": {
-        "id": "dca1bb4a-f917-43e2-ae5d-3cd3c52d1daf",
-        "type": "text/javascript",
-        "exec": [
-          "function getvar(variableName) {",
-          "    let value = pm.variables.get(variableName);",
-          "    if (!value) throw new Error(",
-          "        `Variable '${variableName}' is not defined.`);",
-          "    return value;",
-          "}",
-          "",
-          "let tokenUrl = getvar('tokenUrl');",
-          "let userName = getvar('userName');",
-          "let passCode = getvar('passCode');",
-          "",
-          "let getTokenRequest = {",
-          "    method: 'POST',",
-          "    url: tokenUrl,",
-          "    header: {",
-          "        'content-type': 'application/json'",
-          "    },",
-          " ",
-          "    body: {",
-          "        mode: 'raw',",
-          "        raw: JSON.stringify({ \"username\": userName, \"password\": passCode })",
-          "    }",
-          "    ",
-          "};",
-          "",
-          "pm.sendRequest(getTokenRequest, (err, response) => {",
-          "    let jsonResponse = response.json(),",
-          "        newAccessToken = jsonResponse.access_token;",
-          "",
-          "    console.log({ err, jsonResponse, newAccessToken })",
-          "",
-          "    pm.environment.set('accessToken', newAccessToken);",
-          "    pm.variables.set('accessToken', newAccessToken);",
-          "});",
-          ""
-        ]
-      }
-    },
-    {
-      "listen": "test",
-      "script": {
-        "id": "c078047b-a96e-41ad-8b31-a89c2528dd8e",
-        "type": "text/javascript",
-        "exec": [
-          ""
-        ]
-      }
-    }
-  ]
+	"info": {
+		"_postman_id": "11b32ffe-282b-4b37-b366-89298c51dfa8",
+		"name": "pay-api",
+		"description": "version=1.0.0\n\nBelow are the environment variables needed to run this collection with example value from DEV environment; \n\npay-api-base-url\t:\thttps://pay-api-dev.pathfinder.gov.bc.ca\ntokenUrl\t\t\t:\thttps://auth-api-dev.pathfinder.gov.bc.ca/api/v1/token\nuserName\t\t\t:\tCP0001219\npassCode\t\t\t:\t<Pass code>\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Fees",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1ab09244-2ee0-4849-9ca0-ee39660b7dfe",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"filing type code matches\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.filingTypeCode).to.eql('OTADR');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/fees/CP/OTADR",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fees",
+						"CP",
+						"OTADR"
+					]
+				},
+				"description": "Calculate fees by Corp Type and Filing type"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Payment Record",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fb863ef4-20af-4ecf-923c-2e4ff414ef5d",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"pm.test(\"Set Payment Identifier\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.environment.set(\"payment-identifier\", jsonData.id);",
+							"    console.log(\"Created payment request with identifier \"+jsonData.id)",
+							"    console.log(\"Invoice identifier set as \"+jsonData.invoices[0].id)",
+							"    pm.environment.set(\"invoice_id\", jsonData.invoices[0].id);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"cp0001219\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Payment Record",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9e92a882-5f17-46e9-a6ee-f06c2f84869d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests",
+						"{{payment-identifier}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Invoices for the payment",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0436f54d-04c5-48ab-bba3-d070bf007832",
+						"exec": [
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "ef805864-534e-4d5d-8bae-7ea9876bdc78",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/invoices",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests",
+						"{{payment-identifier}}",
+						"invoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Invoice for the payment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cb1edc83-120b-49d6-bc7b-a2842ddf070a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/invoices/{{invoice_id}}",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests",
+						"{{payment-identifier}}",
+						"invoices",
+						"{{invoice_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Payment Record ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "918c0676-e75b-4dcf-a26c-bbe105b1b2e9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"cp0001219\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests",
+						"{{payment-identifier}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Transaction Record",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e06eedb1-011c-458a-a739-21e6f33d6feb",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"pm.test(\"Set Transaction Identifier\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.environment.set(\"transaction-identifier\", jsonData.id);",
+							"    console.log(\"Created transaction with identifier \"+jsonData.id)",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/transactions?redirect_uri=https%3A%2F%2Fcoops.pathfinder.gov.bc.ca%2Fdashboard",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests",
+						"{{payment-identifier}}",
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "redirect_uri",
+							"value": "https%3A%2F%2Fcoops.pathfinder.gov.bc.ca%2Fdashboard"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transactions for the payment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1a7a7dd9-9e31-4f7d-9b34-3ca248f63b46",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/transactions",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests",
+						"{{payment-identifier}}",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaction for the payment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d1efea08-989a-4dc3-af29-872a5e9ba520",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/transactions/{{transaction-identifier}}",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests",
+						"{{payment-identifier}}",
+						"transactions",
+						"{{transaction-identifier}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Transaction against a payment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b9e01256-ae86-4acc-bbd5-44dba862ee8a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/transactions/{{transaction-identifier}}",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests",
+						"{{payment-identifier}}",
+						"transactions",
+						"{{transaction-identifier}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Receipt with Payment Identifier",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5fad65bf-62e9-4d46-bae8-6b0a2d35649a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"corpName\": \"CP1234\",\n    \"filingDateTime\": \"June 27, 2019\",\n    \"fileName\":\"director-change\"\n}"
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/receipts",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests",
+						"{{payment-identifier}}",
+						"receipts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Receipt with Payment Identifier and Invoice Identifier",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c458ad7-32bc-4c4b-b033-cf3c2e16d872",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"corpName\": \"CP1234\",\n    \"filingDateTime\": \"June 27, 2019\",\n    \"fileName\":\"director-change\"\n}"
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/invoices/{{invoice_id}}/receipts",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests",
+						"{{payment-identifier}}",
+						"invoices",
+						"{{invoice_id}}",
+						"receipts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Payment Record",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "918c0676-e75b-4dcf-a26c-bbe105b1b2e9",
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"cp0001219\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payment-requests",
+						"{{payment-identifier}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Service Downtime Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3355ed3b-4d14-4e1d-85e5-4ca3dbc79115",
+						"exec": [
+							"pm.test(\"Response time is less than 5000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
+							"});",
+							"",
+							"pm.test(\"response is ok\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"response should be okay to process\", function () { ",
+							"    pm.response.to.not.be.error; ",
+							"    //pm.response.to.have.jsonBody(\"\"); ",
+							"    pm.response.to.not.have.jsonBody(\"error\"); ",
+							"});",
+							"",
+							"pm.test(\"response must be valid and have a body\", function () {",
+							"     // assert that the status code is 200",
+							"     pm.response.to.be.ok; // info, success, redirection, clientError,  serverError, are other variants",
+							"     // assert that the response has a valid JSON body",
+							"     pm.response.to.be.withBody;",
+							"     pm.response.to.be.json; // this assertion also checks if a body  exists, so the above check is not needed",
+							"});",
+							"",
+							"pm.test(\"Verify payload\",  () => {",
+							"    pm.expect(pm.response.text()).to.include(\"service\");",
+							"    pm.expect(pm.response.text()).to.include(\"current_status\");",
+							"    pm.expect(pm.response.text()).to.not.include(\"service_name\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/status/PAYBC",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"status",
+						"PAYBC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POC  - BCOL - Verify User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cf9bc42e-7943-4c77-a6d5-8ca64cee8732",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\":\"pc25020\",\n\t\"userKey\":\"3065\"\n}"
+				},
+				"url": {
+					"raw": "{{pay-api-base-url}}/api/v1/bcol/accounts/180670/users/pb25020",
+					"host": [
+						"{{pay-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"bcol",
+						"accounts",
+						"180670",
+						"users",
+						"pb25020"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "{{accessToken}}",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "dca1bb4a-f917-43e2-ae5d-3cd3c52d1daf",
+				"type": "text/javascript",
+				"exec": [
+					"function getvar(variableName) {",
+					"    let value = pm.variables.get(variableName);",
+					"    if (!value) throw new Error(",
+					"        `Variable '${variableName}' is not defined.`);",
+					"    return value;",
+					"}",
+					"",
+					"let tokenUrl = getvar('tokenUrl');",
+					"let userName = getvar('userName');",
+					"let passCode = getvar('passCode');",
+					"",
+					"let getTokenRequest = {",
+					"    method: 'POST',",
+					"    url: tokenUrl,",
+					"    header: {",
+					"        'content-type': 'application/json'",
+					"    },",
+					" ",
+					"    body: {",
+					"        mode: 'raw',",
+					"        raw: JSON.stringify({ \"username\": userName, \"password\": passCode })",
+					"    }",
+					"    ",
+					"};",
+					"",
+					"pm.sendRequest(getTokenRequest, (err, response) => {",
+					"    let jsonResponse = response.json(),",
+					"        newAccessToken = jsonResponse.access_token;",
+					"",
+					"    console.log({ err, jsonResponse, newAccessToken })",
+					"",
+					"    pm.environment.set('accessToken', newAccessToken);",
+					"    pm.variables.set('accessToken', newAccessToken);",
+					"});",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c078047b-a96e-41ad-8b31-a89c2528dd8e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
 }
