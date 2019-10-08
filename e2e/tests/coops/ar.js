@@ -1,179 +1,51 @@
 module.exports={
     '@tags': ['coops', 'single'],
 
-'signin':function (browser){
+'Signin':function (browser){
     browser
         .url(browser.globals.launch_url)
-        .waitForElementVisible('input[aria-label="Enter your Incorporation Number"]')
-        .setValue('input[aria-label="Enter your Incorporation Number"]', browser.globals.CP0000977.identifier)
-        .waitForElementVisible('input[aria-label="Enter your Passcode"]')
-        .setValue('input[aria-label="Enter your Passcode"]', browser.globals.CP0000977.passcode)
+        .waitForElementVisible('#input-17')
+        .setValue('#input-17', browser.globals.CP0000977.identifier)
+        .waitForElementVisible('#input-20')
+        .setValue('#input-20', browser.globals.CP0000977.passcode)
         .waitForElementVisible('button.sign-in-btn')
-        .click('button.sign-in-btn');
+        .click('button.sign-in-btn')
+        .assert.urlEquals(browser.globals.launch_url + '/auth/businessprofile');
 },
-  'Launch AR filing and confirm initial state':function(browser){
-    browser
-        .waitForElementVisible('#dashboardArticle > div > div > section:nth-child(1) > div > ul > li > div.v-expansion-panel__header > div.list-item > div.list-item__actions > button')
-        .click('#dashboardArticle > div > div > section:nth-child(1) > div > ul > li > div.v-expansion-panel__header > div.list-item > div.list-item__actions > button')
-        .waitForElementVisible('#AR-header')
-        .assert.containsText('#AR-header','File 2019 Annual Report')
-        .assert.containsText('#AR-step-1-header','1. Annual General Meeting Date')
-        .assert.containsText('#app > div.application--wrap > div > main > div.entity-info > div > dl > dd.incorp-number', browser.globals.CP0000977.identifier)
-        .assert.containsText('#app > div.application--wrap > div > main > div.entity-info > div > div',browser.globals.CP0000977.legal_name)
-        .assert.containsText('#annual-report-container > aside > div > div > ul > li > div.fee-list__item-name','Annual Report')
-        .assert.containsText('#annual-report-container > aside > div > div > div.container.fee-total > div.fee-total__name','Total Fees')
-        .assert.containsText('#annual-report-container > aside > div > div > div.container.fee-total > div.fee-total__value > div','$30.00')
-        .waitForElementVisible('#agm-textfield')
-        .click('#agm-textfield')
-        .waitForElementVisible('#agm-datepicker > div > div > div.v-date-picker-table.v-date-picker-table--date.theme--light > table > tbody > tr:nth-child(5) > td:nth-child(4) > button > div')
-        .click('#agm-datepicker > div > div > div.v-date-picker-table.v-date-picker-table--date.theme--light > table > tbody > tr:nth-child(5) > td:nth-child(4) > button > div');
 
-    browser
-        .assert.containsText('#AR-step-2-header','2. Registered Office Addresses (as of 2019 Annual General Meeting)')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > label','Delivery Address')
-        .assert.visible('#reg-off-addr-change-btn > div > span')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(1)', browser.globals.CP0000977.mailing.street_address)
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(3) > span:nth-child(1)', browser.globals.CP0000977.mailing.city)
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(3) > span:nth-child(3)', browser.globals.CP0000977.mailing.postal_code)
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > label','Mailing Address')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div.meta-container__inner > div > div > div:nth-child(1)', browser.globals.CP0000977.delivery.street_address)
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div.meta-container__inner > div > div > div:nth-child(3) > span:nth-child(1)', browser.globals.CP0000977.delivery.city)
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div.meta-container__inner > div > div > div:nth-child(3) > span:nth-child(3)', browser.globals.CP0000977.delivery.postal_code)
-        .waitForElementVisible('#reg-off-addr-change-btn');
+'Verify initial state of dashboard, then start AR filing': function (browser) {
+    dashboard = browser.page.dashboardPage().navigate();
+    dashboard.verifyTombstone(browser.globals.CP0000977);
+    dashboard.verifyAddresses(browser.globals.CP0000977);
+    dashboard.verifyDirectorCount(browser.globals.CP0000977);
+    dashboard.startArFiling();
+},
 
-    browser.assert.cssClassNotPresent('#reg-off-addr-change-btn', 'v-btn--disabled');
+'Confirm initial state of Annual Report':function(browser){
+    ArPage = browser.page.annualReportPage();   
+    ArPage.verfifyInitialArState(browser.globals.CP0000977);
+    ArPage.checkFee1('Annual Report', '$30.00');
+    ArPage.checkFeeCount(1);
+    ArPage.checkTotalFees('$30.00');
+    ArPage.verifyOfficeAddresses(browser.globals.CP0000977);
+    ArPage.verifyDirectorCount(browser.globals.CP0000977.director_count);
 
-    browser.expect.elements('div.director-info').count.to.equal(browser.globals.CP0000977.director_count);
-  },
-  'Edit the Office Addresses': function(browser){
-    browser
-        .waitForElementVisible('#reg-off-addr-change-btn')
-        .click('#reg-off-addr-change-btn')
-        .waitForElementVisible('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(1) > div > div > div.v-input__slot > div > input[type=text]', function() {
-            browser
-                .execute(function() {
-                    var event = new Event('input', {
-                        'bubbles': true,
-                        'cancelable': true
-                    });
+},
 
-                    var element = document.querySelector('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(1) > div > div > div.v-input__slot > div > input[type=text]');                                
-                    element.value = "123 test street";  
-                    element.dispatchEvent(event);                 
-                    return element;
-
-                }, [], function(result) {
-                    console.log(result);
-                });
-        });
-
-    browser
-        .waitForElementVisible('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(2) > div > div > div.v-input__slot > div > input[type=text]', function() {
-            browser
-                .execute(function() {
-                    var event = new Event('input', {
-                        'bubbles': true,
-                        'cancelable': true
-                    });
-
-                    var element = document.querySelector('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(2) > div > div > div.v-input__slot > div > input[type=text]');                                
-                    element.value = "additional info";     
-                    element.dispatchEvent(event);                
-                    return element;
-
-                }, [], function(result) {
-                    console.log(result);
-                });
-        });
-
-    browser
-        .waitForElementVisible('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(1) > div > div.v-input__slot > div > input[type=text]', function() {
-            browser
-                .execute(function() {
-                    var event = new Event('input', {
-                        'bubbles': true,
-                        'cancelable': true
-                    });
-
-                    var element = document.querySelector('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(1) > div > div.v-input__slot > div > input[type=text]');                                
-                    element.value = "Victoria"; 
-                    element.dispatchEvent(event);                    
-                    return element;
-
-                }, [], function(result) {
-                    console.log(result);
-                });
-        });
-
-    browser
-        .waitForElementVisible('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div > input[type=text]', function() {
-            browser
-                .execute(function() {
-                    var event = new Event('input', {
-                        'bubbles': true,
-                        'cancelable': true
-                    });
-
-                    var element = document.querySelector('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div > input[type=text]');                                
-                    element.value = "V8V 4K9"; 
-                    element.dispatchEvent(event);                    
-                    return element;
-
-                }, [], function(result) {
-                    console.log(result);
-                });
-        });
-
-    browser
-        .waitForElementVisible('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(4) > div > div > div.v-input__slot > div > input', function() {
-            browser
-                .execute(function() {
-                    var event = new Event('input', {
-                        'bubbles': true,
-                        'cancelable': true
-                    });
-
-                    var element = document.querySelector('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(4) > div > div > div.v-input__slot > div > input');                                
-                    element.value = "CANADA";  
-                    element.dispatchEvent(event);                   
-                    return element;
-
-                }, [], function(result) {
-                    console.log(result);
-                });
-        });
-
-    browser
-        .waitForElementVisible('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div:nth-child(1) > div > div > div.v-input__slot > div > div')
-        .click('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div:nth-child(1) > div > div > div.v-input__slot > div > div')
-        .assert.visible('#reg-off-update-addr-btn')
-        .assert.visible('#reg-off-cancel-addr-btn > div')
-        .click('#reg-off-update-addr-btn')
-        .waitForElementNotVisible('#reg-off-update-addr-btn')
-        .waitForElementVisible('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(1)')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(1)','123 test street')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(2)','additional info')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(3) > span:nth-child(1)', 'Victoria')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(3) > span:nth-child(3)','V8V 4K9')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > label','Mailing Address')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div.meta-container__inner > div > div > div:nth-child(1)','123 test')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div.meta-container__inner > div > div > div:nth-child(2)','additional info')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div.meta-container__inner > div > div > div:nth-child(3) > span:nth-child(1)', 'Victoria')
-        .assert.containsText('#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div.meta-container__inner > div > div > div:nth-child(3) > span:nth-child(3)','V8V 4K9')
-        .assert.visible('#reg-off-addr-reset-btn > div');
-    
-    browser
-        .useXpath()
-        .waitForElementVisible('(//div[@class="fee-list__item-name"])[1]')
-        .assert.containsText('(//div[@class="fee-list__item-name"])[1]', 'Annual Report')
-        .assert.containsText('(//div[@class="fee-list__item-name"])[2]', 'Change of Registered Office Address');
-    
-    browser
-        .useXpath()
-        .waitForElementVisible('(//div[@class="fee-list__item-value"])[1]')
-        .assert.containsText('(//div[@class="fee-list__item-value"])[1]', '$30.00')
-        .assert.containsText('(//div[@class="fee-list__item-value"])[2]', '$20.00')
-        .assert.containsText('//div[@class="fee-total__value"]', '$50.00');
+'Edit the Office Addresses': function(browser){
+    ArPage = browser.page.annualReportPage();
+    ArPage.startEditingOfficeAddresses();
+    ArPage.fillInAddressField(ArPage.elements.officeDeliveryStreetAddress.selector, '123 test street', browser);
+    ArPage.fillInAddressField(ArPage.elements.officeDeliveryCity.selector, 'Victoria', browser);
+    ArPage.fillInAddressField(ArPage.elements.officeDeliveryPostalCode.selector, 'V8V 4K9', browser);
+    ArPage.fillInAddressField(ArPage.elements.officeDeliveryCountry.selector, 'CANADA', browser);
+    ArPage.click('@sameAsDeliveryButton');
+    ArPage.moveToElement('@updateAddressesButton', 5, 5);
+    ArPage.click('@updateAddressesButton');
+    ArPage.checkFeeCount(2);
+    ArPage.checkFee2('Change of Registered Office Address','$20.00');
+    ArPage.checkTotalFees('$50.00');
+    ArPage.assert.visible('@resetOfficeAddressButton');
 
   },   
 
