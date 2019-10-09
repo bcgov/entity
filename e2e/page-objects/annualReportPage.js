@@ -131,6 +131,10 @@ module.exports={
         newDirectorDoneButton: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.form__row.form__btns > button.form-primary-btn.v-btn.theme--light.primary > div",
         newDirectorChip: "#director-9 > div > div > label > div > span:nth-child(1) > span",
         certifyLegalName: "#certified-by-textfield",
-        certifyCheckBox: "#AR-step-4-container > div > div.v-input.v-input--selection-controls.v-input--checkbox.theme--light > div > div.v-input__slot > div > div"
+        certifyCheckBox: "#AR-step-4-container > div > div.v-input.v-input--selection-controls.v-input--checkbox.theme--light > div > div.v-input__slot > div > div",
+        saveAndResumeLaterButton: "#ar-save-resume-btn",
+        saveDraftButton: "#ar-save-btn",
+        fileAndPayButton: "#ar-file-pay-btn",
+        cancelFilingButton: "#ar-cancel-btn"
     }
 };
