@@ -8,31 +8,21 @@ var ArFilingsCommands = {
             .assert.containsText('#AR-step-4-header', '4. Certify Correct')
             .assert.containsText('dd.incorp-number', coopObject.identifier)
             .assert.containsText('div.entity-name', coopObject.legal_name)
-            .assert.visible('#ar-save-btn')
-            .assert.visible('#ar-save-resume-btn')
-            .assert.visible('#ar-cancel-btn')
-            .assert.visible('#ar-file-pay-btn > div');
+            .assert.visible('@saveDraftButton')
+            .assert.visible('@saveAndResumeLaterButton')
+            .assert.visible('@cancelFilingButton')
+            .assert.visible('@fileAndPayButton');
     },
-    checkFee1: function (feeName, feeValue) {
+    checkFeeByIndex: function (feeName, feeValue, desiredIndex) {
         return this
-            .assert.containsText('@fee1Name', feeName)
-            .assert.containsText('@fee1Value', feeValue);
-    },
-    checkFee2: function (feeName, feeValue) {
-        return this
-            .assert.containsText('@fee2Name', feeName)
-            .assert.containsText('@fee2Value', feeValue);
-    },
-    checkFee3: function (feeName, feeValue) {
-        return this
-            .assert.containsText('@fee3Name', feeName)
-            .assert.containsText('@fee3Value', feeValue);
+            .assert.containsText({selector: '@feeName', index: desiredIndex}, feeName)
+            .assert.containsText({selector: '@feeValue', index: desiredIndex}, feeValue);
     },
     checkFeeCount: function (expectedCount) {
-        return this.expect.elements('li.fee-list__item').count.to.equal(expectedCount);
+        return this.expect.elements('@feeListItem').count.to.equal(expectedCount);
     },
     checkTotalFees: function (expectedTotalString) {
-        return this.assert.containsText('div.fee-total__value', expectedTotalString);
+        return this.assert.containsText('@feeTotal', expectedTotalString);
     },    
     verifyOfficeAddresses: function (coopObject) {
         return this
@@ -93,12 +83,10 @@ var ArFilingsCommands = {
 module.exports={
     commands:[ArFilingsCommands],
     elements:{
-        fee1Name: "#annual-report-container > aside > div > div > ul > li > div.fee-list__item-name",
-        fee1Value: "#annual-report-container > aside > div > div > div.container.fee-total > div.fee-total__value > div",
-        fee2Name: "#annual-report-container > aside > div > div > ul > li:nth-child(2) > div.fee-list__item-name",
-        fee2Value: "#annual-report-container > aside > div > div > ul > li:nth-child(2) > div.fee-list__item-value",
-        fee3Name: "#annual-report-container > aside > div > div > ul > li:nth-child(3) > div.fee-list__item-name",
-        fee3Value: "#annual-report-container > aside > div > div > ul > li:nth-child(3) > div.fee-list__item-value",
+        feeName: "div.fee-list__item-name",
+        feeValue: "div.fee-list__item-value",
+        feeListItem: "li.fee-list__item",
+        feeTotal: "div.fee-total__value",
         officeDeliveryLine1: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(1)",
         officeDeliveryLine2: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(3)",
         officeDeliveryLine3: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(4)",

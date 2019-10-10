@@ -25,6 +25,13 @@ var dashboardCommands = {
                 .click('@fileNowButton')
                 .assert.urlEquals(this.api.globals.launch_url + '/annual-report')
                 .waitForElementVisible('#AR-header', 'Annual Report Page Loaded');
+    },
+    startCoaFiling: function () {
+        return this.waitForElementVisible('@launchCOAButton')
+                .assert.cssClassNotPresent('@launchCOAButton', 'v-btn--disabled')
+                .click('@launchCOAButton')
+                .assert.urlEquals(this.api.globals.launch_url + '/standalone-addresses')
+                .waitForElementVisible('#filing-header', 'COA Page Loaded');
     }            
     
 };
