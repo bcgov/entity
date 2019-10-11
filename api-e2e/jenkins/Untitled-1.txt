@@ -1,0 +1,234 @@
+{
+	"id": "7ab66f0d-9527-4de8-bc6a-b110dc4bc4d4",
+	"name": "coops-api",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "sso-dev.pathfinder.gov.bc.ca",
+			"enabled": true
+		},
+		{
+			"key": "realm_name",
+			"value": "fcf0kpqr",
+			"enabled": true
+		},
+		{
+			"key": "clientId",
+			"value": "sbc-auth-cron-job",
+			"enabled": true
+		},
+		{
+			"key": "clientSecret",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "defaultGroup",
+			"value": "basic/editor",
+			"enabled": true
+		},
+		{
+			"key": "api_url",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "webClientId",
+			"value": "sbc-auth-web",
+			"enabled": true
+		},
+		{
+			"key": "webClientSecret",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "corp_num",
+			"value": "CP0002098",
+			"enabled": true
+		},
+		{
+			"key": "tokenUrl",
+			"value": "https://sso-dev.pathfinder.gov.bc.ca/auth/realms/fcf0kpqr/protocol/openid-connect/token",
+			"enabled": true
+		},
+		{
+			"key": "user_email",
+			"value": "test111@gov.bc.ca",
+			"enabled": true
+		},
+		{
+			"key": "temp_password",
+			"value": "foobar",
+			"enabled": true
+		},
+		{
+			"key": "business_identifier",
+			"value": "CP0002098",
+			"enabled": true
+		},
+		{
+			"key": "sample_email",
+			"value": "foo@bar.com",
+			"enabled": true
+		},
+		{
+			"key": "sample_phone",
+			"value": "(555)-555-5555",
+			"enabled": true
+		},
+		{
+			"key": "sample_extension",
+			"value": "123",
+			"enabled": true
+		},
+		{
+			"key": "sample_updated_email",
+			"value": "test@bar.com",
+			"enabled": true
+		},
+		{
+			"key": "user_email",
+			"value": "test111@gov.bc.ca",
+			"enabled": true
+		},
+		{
+			"key": "test_staff_username",
+			"value": "johnstaf",
+			"enabled": true
+		},
+		{
+			"key": "test_staff_password",
+			"value": "Automation5TheWin",
+			"enabled": true
+		},
+		{
+			"key": "test_org_name",
+			"value": "Test Org",
+			"enabled": true
+		},
+		{
+			"key": "test_org_name_updated",
+			"value": "Test Org Updated",
+			"enabled": true
+		},
+		{
+			"key": "business_number",
+			"value": "791861073BC0001",
+			"enabled": true
+		},
+		{
+			"key": "business_name",
+			"value": "Foobar, Inc.",
+			"enabled": true
+		},
+		{
+			"key": "entity_passcode",
+			"value": "866729486",
+			"enabled": true
+		},
+		{
+			"key": "pay-api-base-url",
+			"value": "https://pay-api-e2e.pathfinder.gov.bc.ca",
+			"enabled": true
+		},
+		{
+			"key": "tokenUrl",
+			"value": "https://sso-e2e.pathfinder.gov.bc.ca/auth/realms/fcf0kpqr/protocol/openid-connect/token",
+			"enabled": true
+		},
+		{
+			"key": "userName",
+			"value": "CP0001219",
+			"enabled": true
+		},
+		{
+			"key": "passCode",
+			"value": "219168648",
+			"enabled": true
+		},
+		{
+			"key": "auth_url",
+			"value": "\nhttps://sso-e2e.pathfinder.gov.bc.ca",
+			"enabled": true
+		},
+		{
+			"key": "realm",
+			"value": "fcf0kpqr",
+			"enabled": true
+		},
+		{
+			"key": "tokenUrl",
+			"value": "https://auth-api-e2e.pathfinder.gov.bc.ca/api/v1/token",
+			"enabled": true
+		},
+		{
+			"key": "userName",
+			"value": "CP0002098",
+			"enabled": true
+		},
+		{
+			"key": "passCode",
+			"value": "866729486",
+			"enabled": true
+		},
+		{
+			"key": "password",
+			"value": "866729486",
+			"enabled": true
+		},
+		{
+			"key": "colin_id",
+			"value": "103251025",
+			"enabled": true
+		},
+		{
+			"key": "url",
+			"value": "https://legal-api-e2e.pathfinder.gov.bc.ca",
+			"enabled": true
+		},
+		{
+			"key": "colinurl",
+			"value": "http://localhost:8080//colinapi-e2e.pathfinder.gov.bc.ca",
+			"enabled": true
+		},
+		{
+			"key": "arEventId",
+			"value": "103285697",
+			"enabled": true
+		},
+		{
+			"key": "coaExtraEventId",
+			"value": "103285693",
+			"enabled": true
+		},
+		{
+			"key": "codExtraEventId",
+			"value": "103285695",
+			"enabled": true
+		},
+		{
+			"key": "arExtraEventId",
+			"value": "103285692",
+			"enabled": true
+		},
+		{
+			"key": "current_timestamp",
+			"value": "2019-10-10T18:35:07.387Z",
+			"enabled": true
+		},
+		{
+			"key": "adminRefreshToken",
+			"value": null,
+			"enabled": true
+		},
+		{
+			"key": "adminToken",
+			"value": null,
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2019-10-10T18:55:50.425Z",
+	"_postman_exported_using": "Postman/7.8.0"
+}
