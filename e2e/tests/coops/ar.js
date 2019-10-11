@@ -1,5 +1,5 @@
 module.exports={
-    '@tags': ['ar','local'],
+    '@tags': ['ar',  'local'],
     
     'signin':function (browser){
         browser

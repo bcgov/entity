@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e665c91e-9961-461e-a778-76af4d07870a",
+		"_postman_id": "162efeac-26f5-4557-bb15-1a0b898ee0e1",
 		"name": "colin-api",
 		"description": "version=0.103 - This is a Colin API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -93,9 +93,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/ops/healthz",
+							"raw": "{{colinurl}}/ops/healthz",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"ops",
@@ -105,7 +105,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "business",
@@ -158,9 +159,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -278,9 +279,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0001965",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0001965",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -385,9 +386,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/XCP0001987",
+							"raw": "{{colinurl}}/api/v1/businesses/XCP0001987",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -399,7 +400,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "AR",
@@ -477,9 +479,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/annualReport",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/annualReport",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -643,9 +645,9 @@
 							"raw": "{\n  \"filing\": {\n    \"annualReport\": {\n      \"annualGeneralMeetingDate\": \"2018-12-21\",\n      \"certifiedBy\": \"Tester testing\",\n      \"email\": \"tester@test.com\"\n    },\n    \"business\": {\n      \"businessNumber\": null,\n      \"cacheId\": 0,\n      \"corpState\": \"ACT\",\n      \"foundingDate\": \"2010-10-15\",\n      \"identifier\": \"CP0002098\",\n      \"jurisdiction\": \"BC\",\n      \"lastAgmDate\": \"2017-09-11\",\n      \"lastArFiledDate\": \"2017-09-11\",\n      \"lastLedgerTimestamp\": \"2017-12-21T00:00:00-00:00\",\n      \"legalName\": \"LAKES ARTISAN COOPERATIVE\",\n      \"status\": \"Active\",\n      \"type\": \"CP\"\n    },\n    \"header\": {\n      \"date\": \"{{today}}\",\n      \"name\": \"annualReport\"\n    }\n  }\n}"
 						},
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/annualReport",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/annualReport",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -806,9 +808,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/annualReport",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/annualReport",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -955,9 +957,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/annualReport?eventId={{arEventId}}",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/annualReport?eventId={{arEventId}}",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -1116,9 +1118,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/annualReport?year=2018",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/annualReport?year=2018",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -1208,7 +1210,8 @@
 						}
 					]
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "AR + ROA + COD",
@@ -1370,9 +1373,9 @@
 							"raw": "{\r\n    \"filing\": {\r\n        \"annualReport\": {\r\n\t\t\t\"annualGeneralMeetingDate\": \"2019-02-02\",\r\n\t\t\t\"certifiedBy\": \"Tester testing\",\r\n\t\t\t\"email\": \"tester@test.com\"\r\n\t    },\r\n        \"changeOfAddress\": {\r\n        \t\"certifiedBy\": \"Tester Testing\",\r\n            \"email\": \"tester@testing.com\",\r\n\t\t\t\"deliveryAddress\": {\r\n\t\t\t\t\"actions\": [\"addressChanged\"],\r\n\t\t\t\t\"addressCity\": \"Test city\",\r\n\t\t\t\t\"addressCountry\": \"CANADA\",\r\n\t\t\t\t\"addressRegion\": \"BC\",\r\n\t\t\t\t\"deliveryInstructions\": \"\",\r\n\t\t\t\t\"postalCode\": \"t3s 7e4\",\r\n\t\t\t\t\"streetAddress\": \"Test street 1\",\r\n\t\t\t\t\"streetAddressAdditional\": \"test\"\r\n\t\t\t},\r\n\t\t\t\"mailingAddress\": {\r\n\t\t\t\t\"actions\": [\"addressChanged\"],\r\n\t\t\t\t\"addressCity\": \"Test city\",\r\n\t\t\t\t\"addressCountry\": \"CANADA\",\r\n\t\t\t\t\"addressRegion\": \"BC\",\r\n\t\t\t\t\"deliveryInstructions\": \"\",\r\n\t\t\t\t\"postalCode\": \"t3s 7e4\",\r\n\t\t\t\t\"streetAddress\": \"PO BOX 7357\",\r\n\t\t\t\t\"streetAddressAdditional\": \"\"\r\n\t\t\t}\r\n        },\r\n       \"changeOfDirectors\": {\r\n        \t\"certifiedBy\": \"Tester Testing\",\r\n            \"email\": \"tester@testing.com\",\r\n\t\t\t\"directors\": [\r\n\t\t\t    {\r\n\t\t\t\t  \"actions\": [\"ceased\"],\r\n\t\t\t      \"appointmentDate\": \"2010-10-15\",\r\n\t\t\t      \"cessationDate\": \"{{today}}\",\r\n\t\t\t      \"deliveryAddress\": {\r\n\t\t\t        \"addressCity\": \"BURNS LAKE\",\r\n\t\t\t        \"addressCountry\": \"CANADA\",\r\n\t\t\t        \"addressId\": 102555536,\r\n\t\t\t        \"addressRegion\": \"BC\",\r\n\t\t\t        \"deliveryInstructions\": \"\",\r\n\t\t\t        \"postalCode\": \"\",\r\n\t\t\t        \"streetAddress\": \"3705 EAST-TCHESINKUT RD\",\r\n\t\t\t        \"streetAddressAdditional\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"endEventId\": \"\",\r\n\t\t\t      \"officer\": {\r\n\t\t\t        \"firstName\": \"CANDICE M\",\r\n\t\t\t        \"lastName\": \"LITTLE\",\r\n\t\t\t        \"middleInitial\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"startEventId\": 103219412,\r\n\t\t\t      \"title\": \"\"\r\n\t\t\t    },\r\n\t\t\t    {\r\n\t\t\t\t  \"actions\": [\"ceased\"],\r\n\t\t\t      \"appointmentDate\": \"2010-10-15\",\r\n\t\t\t      \"cessationDate\": \"{{today}}\",\r\n\t\t\t      \"deliveryAddress\": {\r\n\t\t\t        \"addressCity\": \"BURNS LAKE\",\r\n\t\t\t        \"addressCountry\": \"CANADA\",\r\n\t\t\t        \"addressId\": 102555537,\r\n\t\t\t        \"addressRegion\": \"BC\",\r\n\t\t\t        \"deliveryInstructions\": \"\",\r\n\t\t\t        \"postalCode\": \"\",\r\n\t\t\t        \"streetAddress\": \"115 SCHRITT CRES\",\r\n\t\t\t        \"streetAddressAdditional\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"endEventId\": \"\",\r\n\t\t\t      \"officer\": {\r\n\t\t\t        \"firstName\": \"BEATE\",\r\n\t\t\t        \"lastName\": \"MARQUARDT\",\r\n\t\t\t        \"middleInitial\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"startEventId\": 103219412,\r\n\t\t\t      \"title\": \"\"\r\n\t\t\t    },\r\n\t\t\t    {\r\n\t\t\t\t  \"actions\": [],\r\n\t\t\t      \"appointmentDate\": \"2012-05-08\",\r\n\t\t\t      \"cessationDate\": null,\r\n\t\t\t      \"deliveryAddress\": {\r\n\t\t\t        \"addressCity\": \"BURNS LAKE\",\r\n\t\t\t        \"addressCountry\": \"CANADA\",\r\n\t\t\t        \"addressId\": 102555538,\r\n\t\t\t        \"addressRegion\": \"BC\",\r\n\t\t\t        \"deliveryInstructions\": \"\",\r\n\t\t\t        \"postalCode\": \"\",\r\n\t\t\t        \"streetAddress\": \"1723 SIDAR ROAD\",\r\n\t\t\t        \"streetAddressAdditional\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"endEventId\": \"\",\r\n\t\t\t      \"officer\": {\r\n\t\t\t        \"firstName\": \"LORNA\",\r\n\t\t\t        \"lastName\": \"HANNETT\",\r\n\t\t\t        \"middleInitial\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"startEventId\": 103219412,\r\n\t\t\t      \"title\": \"\"\r\n\t\t\t    },\r\n\t\t\t    {\r\n\t\t\t\t  \"actions\": [],\r\n\t\t\t      \"appointmentDate\": \"2015-10-14\",\r\n\t\t\t      \"cessationDate\": null,\r\n\t\t\t      \"deliveryAddress\": {\r\n\t\t\t        \"addressCity\": \"BURNS LAKE\",\r\n\t\t\t        \"addressCountry\": \"CANADA\",\r\n\t\t\t        \"addressId\": 102555539,\r\n\t\t\t        \"addressRegion\": \"BC\",\r\n\t\t\t        \"deliveryInstructions\": \"\",\r\n\t\t\t        \"postalCode\": \"\",\r\n\t\t\t        \"streetAddress\": \"173 8TH AVE\",\r\n\t\t\t        \"streetAddressAdditional\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"endEventId\": \"\",\r\n\t\t\t      \"officer\": {\r\n\t\t\t        \"firstName\": \"PAULA\",\r\n\t\t\t        \"lastName\": \"LAURIE\",\r\n\t\t\t        \"middleInitial\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"startEventId\": 103219412,\r\n\t\t\t      \"title\": \"\"\r\n\t\t\t    },\r\n\t\t\t    {\r\n\t\t\t\t  \"actions\": [],\r\n\t\t\t      \"appointmentDate\": \"2017-12-21\",\r\n\t\t\t      \"cessationDate\": null,\r\n\t\t\t      \"deliveryAddress\": {\r\n\t\t\t        \"addressCity\": \"BURNS LAKE\",\r\n\t\t\t        \"addressCountry\": \"CANADA\",\r\n\t\t\t        \"addressId\": 102555540,\r\n\t\t\t        \"addressRegion\": \"BC\",\r\n\t\t\t        \"deliveryInstructions\": \"\",\r\n\t\t\t        \"postalCode\": \"\",\r\n\t\t\t        \"streetAddress\": \"10816 TINTAGEL ROAD\",\r\n\t\t\t        \"streetAddressAdditional\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"endEventId\": \"\",\r\n\t\t\t      \"officer\": {\r\n\t\t\t        \"firstName\": \"KELLY\",\r\n\t\t\t        \"lastName\": \"TURFORD\",\r\n\t\t\t        \"middleInitial\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"startEventId\": 103219412,\r\n\t\t\t      \"title\": \"\"\r\n\t\t\t    },\r\n\t\t\t    {\r\n\t\t\t\t  \"actions\": [\"appointed\"],\r\n\t\t\t      \"appointmentDate\": \"{{today}}\",\r\n\t\t\t      \"cessationDate\": null,\r\n\t\t\t      \"deliveryAddress\": {\r\n\t\t\t        \"addressCity\": \"TEST CITY\",\r\n\t\t\t        \"addressCountry\": \"CANADA\",\r\n\t\t\t        \"addressId\": 102555540,\r\n\t\t\t        \"addressRegion\": \"BC\",\r\n\t\t\t        \"deliveryInstructions\": \"\",\r\n\t\t\t        \"postalCode\": \"\",\r\n\t\t\t        \"streetAddress\": \"TESTING TESTS STREET\",\r\n\t\t\t        \"streetAddressAdditional\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"endEventId\": \"\",\r\n\t\t\t      \"officer\": {\r\n\t\t\t        \"firstName\": \"TESTER\",\r\n\t\t\t        \"lastName\": \"TESTING\",\r\n\t\t\t        \"middleInitial\": \"\"\r\n\t\t\t      },\r\n\t\t\t      \"title\": \"\"\r\n\t\t\t    }\r\n\t\t\t]\r\n        },\r\n        \"business\": {\r\n\t\t\t\"businessNumber\": null,\r\n\t\t\t\"cacheId\": 0,\r\n\t\t\t\"corpState\": \"ACT\",\r\n\t\t\t\"foundingDate\": \"2010-10-15\",\r\n\t\t\t\"identifier\": \"CP0002098\",\r\n\t\t\t\"jurisdiction\": \"BC\",\r\n\t\t\t\"lastAgmDate\": \"2018-12-21\",\r\n\t\t\t\"lastArFiledDate\": \"2019-07-11\",\r\n\t\t\t\"lastLedgerTimestamp\": \"2019-07-11T23:14:54-00:00\",\r\n\t\t\t\"legalName\": \"LAKES ARTISAN COOPERATIVE\",\r\n\t\t\t\"status\": \"In Good Standing\",\r\n\t\t\t\"type\": \"CP\"\r\n\t\t},\r\n        \"header\": {\r\n            \"date\": \"{{today}}\",\r\n            \"name\": \"annualReport\"\r\n        }\r\n    }\r\n}"
 						},
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/annualReport",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/annualReport",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -1454,7 +1457,8 @@
 						}
 					]
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Registered Office",
@@ -1521,9 +1525,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/office",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/office",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -1706,9 +1710,9 @@
 							"raw": "{\n    \"filing\": {\n        \"changeOfAddress\": {\n        \t\"certifiedBy\": \"Tester Testing\",\n            \"email\": \"tester@testing.com\",\n\t\t\t\"deliveryAddress\": {\n\t\t\t\t\"actions\": [\"addressChanged\"],\n\t\t\t\t\"addressCity\": \"Test city 2\",\n\t\t\t\t\"addressCountry\": \"CANADA\",\n\t\t\t\t\"addressRegion\": \"BC\",\n\t\t\t\t\"deliveryInstructions\": \"\",\n\t\t\t\t\"postalCode\": \"t3s 7e4\",\n\t\t\t\t\"streetAddress\": \"Test street 2\",\n\t\t\t\t\"streetAddressAdditional\": \"test\"\n\t\t\t},\n\t\t\t\"mailingAddress\": {\n\t\t\t\t\"actions\": [\"addressChanged\"],\n\t\t\t\t\"addressCity\": \"Test city 2\",\n\t\t\t\t\"addressCountry\": \"CANADA\",\n\t\t\t\t\"addressRegion\": \"BC\",\n\t\t\t\t\"deliveryInstructions\": \"\",\n\t\t\t\t\"postalCode\": \"t3s 7e4\",\n\t\t\t\t\"streetAddress\": \"PO BOX 7357\",\n\t\t\t\t\"streetAddressAdditional\": \"\"\n\t\t\t}\n        },\n        \"business\": {\n\t\t    \"businessNumber\": null,\n\t\t    \"cacheId\": 0,\n\t\t    \"corpState\": \"ACT\",\n\t\t    \"foundingDate\": \"2010-10-15\",\n\t\t    \"identifier\": \"CP0002098\",\n\t\t    \"jurisdiction\": \"BC\",\n\t\t    \"lastAgmDate\": \"2019-02-02\",\n\t\t    \"lastArFiledDate\": \"{{today}}\",\n\t\t    \"legalName\": \"LAKES ARTISAN COOPERATIVE\",\n\t\t    \"type\": \"CP\"\n\t\t},\n        \"header\": {\n            \"date\": \"{{today}}\",\n            \"name\": \"changeOfAddress\"\n        }\n    }\n}"
 						},
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/changeOfAddress",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/changeOfAddress",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -1878,9 +1882,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/changeOfAddress",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/changeOfAddress",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -2046,9 +2050,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/changeOfAddress?eventId={{coaExtraEventId}}",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/changeOfAddress?eventId={{coaExtraEventId}}",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -2138,7 +2142,8 @@
 						}
 					]
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Directors",
@@ -2194,9 +2199,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/directors",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/directors",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -2390,9 +2395,9 @@
 							"raw": "{\n    \"filing\": {\n        \"changeOfDirectors\": {\n        \t\"certifiedBy\": \"Tester Testing\",\n            \"email\": \"tester@testing.com\",\n\t\t\t\"directors\": [\n\t\t\t    {\n\t\t\t      \"actions\":[\"ceased\", \"nameChanged\", \"addressChanged\"],\n\t\t\t      \"appointmentDate\": \"2012-05-08\",\n\t\t\t      \"cessationDate\": \"{{today}}\",\n\t\t\t      \"deliveryAddress\": {\n\t\t\t        \"addressCity\": \"BURNS LAKE\",\n\t\t\t        \"addressCountry\": \"CANADA\",\n\t\t\t        \"addressRegion\": \"BC\",\n\t\t\t        \"deliveryInstructions\": \"CHANGED ADDRESS\",\n\t\t\t        \"postalCode\": \"\",\n\t\t\t        \"streetAddress\": \"1723 SIDAR ROAD\",\n\t\t\t        \"streetAddressAdditional\": \"\"\n\t\t\t      },\n\t\t\t      \"endEventId\": \"\",\n\t\t\t      \"officer\": {\n\t\t\t        \"firstName\": \"LORNA\",\n\t\t\t        \"lastName\": \"CHANGED\",\n\t\t\t        \"middleInitial\": \"N\",\n\t\t\t        \"prevFirstName\": \"LORNA\",\n\t\t\t        \"prevLastName\": \"HANNETT\",\n\t\t\t        \"prevMiddleInitial\": \"\"\n\t\t\t      },\n\t\t\t      \"startEventId\": 103219412,\n\t\t\t      \"title\": \"\"\n\t\t\t    },\n\t\t\t    {\n\t\t\t      \"actions\":[\"nameChanged\"],\n\t\t\t      \"appointmentDate\": \"2015-10-14\",\n\t\t\t      \"cessationDate\": null,\n\t\t\t      \"deliveryAddress\": {\n\t\t\t        \"addressCity\": \"BURNS LAKE\",\n\t\t\t        \"addressCountry\": \"CANADA\",\n\t\t\t        \"addressRegion\": \"BC\",\n\t\t\t        \"deliveryInstructions\": \"\",\n\t\t\t        \"postalCode\": \"\",\n\t\t\t        \"streetAddress\": \"173 8TH AVE\",\n\t\t\t        \"streetAddressAdditional\": \"\"\n\t\t\t      },\n\t\t\t      \"endEventId\": \"\",\n\t\t\t      \"officer\": {\n\t\t\t      \t\"firstName\": \"TEST\",\n\t\t\t        \"lastName\": \"CHANGE\",\n\t\t\t        \"middleInitial\": \"NAME\",\n\t\t\t        \"prevFirstName\": \"PAULA\",\n\t\t\t        \"prevLastName\": \"LAURIE\",\n\t\t\t        \"prevMiddleInitial\": \"\"\n\t\t\t      },\n\t\t\t      \"startEventId\": 103219412,\n\t\t\t      \"title\": \"\"\n\t\t\t    },\n\t\t\t    {\n\t\t\t      \"actions\":[\"addressChanged\"],\n\t\t\t      \"appointmentDate\": \"2017-12-21\",\n\t\t\t      \"cessationDate\": null,\n\t\t\t      \"deliveryAddress\": {\n\t\t\t        \"addressCity\": \"TEST\",\n\t\t\t        \"addressCountry\": \"CANADA\",\n\t\t\t        \"addressId\": 102555540,\n\t\t\t        \"addressRegion\": \"BC\",\n\t\t\t        \"deliveryInstructions\": \"\",\n\t\t\t        \"postalCode\": \"\",\n\t\t\t        \"streetAddress\": \"ADDRESS CHANGE\",\n\t\t\t        \"streetAddressAdditional\": \"\"\n\t\t\t      },\n\t\t\t      \"endEventId\": \"\",\n\t\t\t      \"officer\": {\n\t\t\t        \"firstName\": \"KELLY\",\n\t\t\t        \"lastName\": \"TURFORD\",\n\t\t\t        \"middleInitial\": \"\"\n\t\t\t      },\n\t\t\t      \"startEventId\": 103219412,\n\t\t\t      \"title\": \"\"\n\t\t\t    },\n\t\t\t    {\n\t\t\t      \"actions\":[],\n\t\t\t      \"appointmentDate\": \"{{today}}\",\n\t\t\t      \"cessationDate\": null,\n\t\t\t      \"deliveryAddress\": {\n\t\t\t        \"addressCity\": \"TEST CITY\",\n\t\t\t        \"addressCountry\": \"CANADA\",\n\t\t\t        \"addressId\": 102555540,\n\t\t\t        \"addressRegion\": \"BC\",\n\t\t\t        \"deliveryInstructions\": \"\",\n\t\t\t        \"postalCode\": \"\",\n\t\t\t        \"streetAddress\": \"TESTING TESTS STREET\",\n\t\t\t        \"streetAddressAdditional\": \"\"\n\t\t\t      },\n\t\t\t      \"endEventId\": \"\",\n\t\t\t      \"officer\": {\n\t\t\t        \"firstName\": \"TESTER\",\n\t\t\t        \"lastName\": \"TESTING\",\n\t\t\t        \"middleInitial\": \"\"\n\t\t\t      },\n\t\t\t      \"title\": \"\"\n\t\t\t    },\n\t\t\t    {\n\t\t\t      \"actions\":[\"appointed\", \"ceased\"],\n\t\t\t      \"appointmentDate\": \"{{today}}\",\n\t\t\t      \"cessationDate\": \"{{today}}\",\n\t\t\t      \"deliveryAddress\": {\n\t\t\t        \"addressCity\": \"TEST CITY2\",\n\t\t\t        \"addressCountry\": \"CANADA\",\n\t\t\t        \"addressId\": 102555540,\n\t\t\t        \"addressRegion\": \"BC\",\n\t\t\t        \"deliveryInstructions\": \"\",\n\t\t\t        \"postalCode\": \"\",\n\t\t\t        \"streetAddress\": \"TESTING TESTS STREET2\",\n\t\t\t        \"streetAddressAdditional\": \"\"\n\t\t\t      },\n\t\t\t      \"endEventId\": \"\",\n\t\t\t      \"officer\": {\n\t\t\t        \"firstName\": \"TESTER2\",\n\t\t\t        \"lastName\": \"TESTING2\",\n\t\t\t        \"middleInitial\": \"T\"\n\t\t\t      },\n\t\t\t      \"title\": \"\"\n\t\t\t    },\n\t\t\t    {\n\t\t\t      \"actions\":[\"appointed\"],\n\t\t\t      \"appointmentDate\": \"{{today}}\",\n\t\t\t      \"cessationDate\": null,\n\t\t\t      \"deliveryAddress\": {\n\t\t\t        \"addressCity\": \"TEST CITY3\",\n\t\t\t        \"addressCountry\": \"CANADA\",\n\t\t\t        \"addressId\": 102555540,\n\t\t\t        \"addressRegion\": \"BC\",\n\t\t\t        \"deliveryInstructions\": \"\",\n\t\t\t        \"postalCode\": \"\",\n\t\t\t        \"streetAddress\": \"TESTING TESTS STREET3\",\n\t\t\t        \"streetAddressAdditional\": \"\"\n\t\t\t      },\n\t\t\t      \"endEventId\": \"\",\n\t\t\t      \"officer\": {\n\t\t\t        \"firstName\": \"TESTER3\",\n\t\t\t        \"lastName\": \"TESTING3\",\n\t\t\t        \"middleInitial\": \"T3\"\n\t\t\t      },\n\t\t\t      \"title\": \"\"\n\t\t\t    }\n\t\t\t]\n        },\n        \"business\": {\n\t\t    \"businessNumber\": null,\n\t\t    \"cacheId\": 0,\n\t\t    \"corpState\": \"ACT\",\n\t\t    \"foundingDate\": \"2010-10-15\",\n\t\t    \"identifier\": \"CP0002098\",\n\t\t    \"jurisdiction\": \"BC\",\n\t\t    \"lastAgmDate\": \"2017-09-11\",\n\t\t    \"lastArFiledDate\": \"2017-09-11\",\n\t\t    \"lastLedgerTimestamp\": \"2017-12-21T00:00:00-00:00\",\n\t\t    \"legalName\": \"LAKES ARTISAN COOPERATIVE\",\n\t\t    \"status\": \"Active\",\n\t\t    \"type\": \"CP\"\n\t\t},\n        \"header\": {\n            \"date\": \"{{today}}\",\n            \"name\": \"changeOfDirectors\"\n        }\n    }\n}"
 						},
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/changeOfDirectors",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/changeOfDirectors",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -2572,9 +2577,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/changeOfDirectors",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/changeOfDirectors",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -2750,9 +2755,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/CP0002098/filings/changeOfDirectors?eventId={{codExtraEventId}}",
+							"raw": "{{colinurl}}/api/v1/businesses/CP0002098/filings/changeOfDirectors?eventId={{codExtraEventId}}",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -2842,7 +2847,8 @@
 						}
 					]
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Event",
@@ -2918,9 +2924,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/event/CP/{{arEventId}}",
+							"raw": "{{colinurl}}/api/v1/businesses/event/CP/{{arEventId}}",
 							"host": [
-								"{{url}}"
+								"{{colinurl}}"
 							],
 							"path": [
 								"api",
@@ -2998,7 +3004,8 @@
 						}
 					]
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"event": [
@@ -3022,5 +3029,6 @@
 				]
 			}
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
