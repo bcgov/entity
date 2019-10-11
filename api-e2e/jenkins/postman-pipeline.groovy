@@ -81,7 +81,8 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             secretEnvVar(key: 'USERNAME',secretName: "postman-e2e-secret",secretKey: 'userName'),
             secretEnvVar(key: 'USER_EMAIL',secretName: "postman-e2e-secret",secretKey: 'user_email'),
             secretEnvVar(key: 'USERID',secretName: "postman-e2e-secret",secretKey: 'userid'),
-            secretEnvVar(key: 'WEBCLIENTID',secretName: "postman-e2e-secret",secretKey: 'webClientId')
+            secretEnvVar(key: 'WEBCLIENTID',secretName: "postman-e2e-secret",secretKey: 'webClientId'),
+            secretEnvVar(key: 'WEBCLIENTSECRET',secretName: "postman-e2e-secret",secretKey: 'webClientSecret')
             
         ]
     )
@@ -127,7 +128,8 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             ENTITY_PASSCODE:${ENTITY_PASSCODE} \
             DEFAULTGROUP:${DEFAULTGROUP} \
             CORP_NUM:${CORP_NUM} \
-            COLIN_ID:${COLINID}
+            COLIN_ID:${COLINID} \
+            WEBCLIENTSECRET:${WEBCLIENTSECRET}
             """
             checkout scm
 
@@ -157,7 +159,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                             --global-var url=${url} --global-var auth_url=${AUTHURL} --global-var realm=${REALM} \
                             --global-var password=${PASSWORD} --global-var client_secret=${CLIENT_SECRET} \
                             --global-var userid=${USERID} --global-var clientid=${CLIENTID} \
-                            --global-var pay-api-base-url=${url} --global-var tokenUrl=${TOKENURL} \
+                            --global-var pay-api-base-url=${PAY-API-BASE-URL} --global-var tokenUrl=${TOKENURL} \
                             --global-var userName=${USERNAME} --global-var passCode=${PASSCODE} \
                             --global-var arEventId=${AREVENTID} --global-var arExtraEventId=${AREXTRAEVENTID} \
                             --global-var base_url=${BASE_URL} --global-var business_identifier=${BUSINESS_IDENTIFIER} \
@@ -169,7 +171,12 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                             --global-var realm_name=${REALM_NAME} --global-var sample_email=${SAMPLE_EMAIL} \
                             --global-var sample_extension=${SAMPLE_EXTENSION} --global-var sample_phone=${SAMPLE_PHONE} \
                             --global-var sample_updated_email=${SAMPLE_UPDATED_EMAIL} --global-var temp_password=${TEMP_PASSWORD} \
-                            --global-var test_org_name=${TEST_ORG_NAME}--global-var test_org_name_updated=${TEST_ORG_NAME_UPDATED}
+                            --global-var test_org_name=${TEST_ORG_NAME} --global-var test_org_name_updated=${TEST_ORG_NAME_UPDATED} \
+                            --global-var test_staff_password=${TEST_STAFF_PASSWORD} --global-var test_staff_username=${TEST_STAFF_USERNAME} \
+                            --global-var token=${TOKEN} --global-var url=${URL} \
+                            --global-var userName=${USERNAME} --global-var user_email=${USER_EMAIL} \
+                            --global-var userid=${USERID} \
+                            --global-var webClientId=${WEBCLIENTID} --global-var webClientSecret=${WEBCLIENTSECRET}
 
                             """
                         } catch (Exception e) {
