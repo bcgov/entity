@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="tests.namex-keycloak-login"
+    errors="1" failures="0" hostname="" id="" package="namex-keycloak-login" skipped="1"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+
+  
+    
+    <testcase
+      name="NameX login Keycloak creds" classname="tests.namex-keycloak-login">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

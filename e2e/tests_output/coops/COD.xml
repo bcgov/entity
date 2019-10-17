@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="coops.COD"
+    errors="1" failures="0" hostname="" id="" package="coops" skipped="9"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+
+  
+    
+    <testcase
+      name="Signin" classname="coops.COD">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Enter Business Contact Info" classname="coops.COD">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verify initial state of dashboard, then start COD filing" classname="coops.COD">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Confirm initial state of COD filing" classname="coops.COD">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Appoint New Director" classname="coops.COD">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Certify who filed" classname="coops.COD">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Save draft and resume later" classname="coops.COD">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Resume draft from Dashboard" classname="coops.COD">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verify draft resumed correctly then return to dashoard" classname="coops.COD">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

@@ -1,138 +1,183 @@
-module.exports={
-    '@tags': ['COA','local'],
-
-'signin':function (browser){
-    browser
-        .url('https://coops-test.pathfinder.gov.bc.ca/')
-        .waitForElementVisible('input[aria-label="Enter your Incorporation Number"]')
-        .setValue('input[aria-label="Enter your Incorporation Number"]','CP0001205')
-        .waitForElementVisible('input[aria-label="Enter your Passcode"]')
-        .setValue('input[aria-label="Enter your Passcode"]','828016238')
+module.exports = {
+    '@tags': ['COA', 'single'],
+  
+    'Signin': function (browser) {
+      browser
+        .url(browser.globals.launch_url)
+        .waitForElementVisible('#input-17')
+        .setValue('#input-17', browser.globals.CP0001024.identifier)
+        .waitForElementVisible('#input-20')
+        .setValue('#input-20', browser.globals.CP0001024.passcode)
         .waitForElementVisible('button.sign-in-btn')
         .click('button.sign-in-btn')
-        .pause(5000)
-},
-'Dashboard':function(browser){
-    var COADashboard=browser.page.coa_dashboard()
-    COADashboard.dashboardassertions(browser) 
-    COADashboard.baseaddressassertions(browser)
-    COADashboard.basedirectorsassertions(browser)
-},
-'Change of Address':function(browser){
-    var assertions =browser.page.coa_assertions()
-    assertions.COAAssertions(browser)
-    browser
-    .click('#reg-off-addr-change-btn')
-    .waitForElementVisible('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(1) > div > div > div.v-input__slot > div > input[type=text]', function() {
-          browser.execute(function() {
-                var event = new Event('input', {
-                    'bubbles': true,
-                    'cancelable': true
-                });
-
-                var element = document.querySelector('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(1) > div > div > div.v-input__slot > div > input[type=text]');                                
-                element.value = "123 test street";  
-                element.dispatchEvent(event);                 
-                return element;
-
-            }, [], function(result) {
-                console.log(result);
-            });
-    });
-
-browser
-    .waitForElementVisible('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(2) > div > div > div.v-input__slot > div > input[type=text]', function() {
-        browser
-            .execute(function() {
-                var event = new Event('input', {
-                    'bubbles': true,
-                    'cancelable': true
-                });
-
-                var element = document.querySelector('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(2) > div > div > div.v-input__slot > div > input[type=text]');                                
-                element.value = "additional info";     
-                element.dispatchEvent(event);                
-                return element;
-
-            }, [], function(result) {
-                console.log(result);
-            });
-    });
-
-browser
-    .waitForElementVisible('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(1) > div > div.v-input__slot > div > input[type=text]', function() {
-        browser
-            .execute(function() {
-                var event = new Event('input', {
-                    'bubbles': true,
-                    'cancelable': true
-                });
-
-                var element = document.querySelector('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(1) > div > div.v-input__slot > div > input[type=text]');                                
-                element.value = "Victoria"; 
-                element.dispatchEvent(event);                    
-                return element;
-
-            }, [], function(result) {
-                console.log(result);
-            });
-    });
-
-browser
-    .waitForElementVisible('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div > input[type=text]', function() {
-        browser
-            .execute(function() {
-                var event = new Event('input', {
-                    'bubbles': true,
-                    'cancelable': true
-                });
-
-                var element = document.querySelector('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div > input[type=text]');                                
-                element.value = "V8V 4K9"; 
-                element.dispatchEvent(event);                    
-                return element;
-
-            }, [], function(result) {
-                console.log(result);
-            });
-    });
-
-browser
-    .waitForElementVisible('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(4) > div > div > div.v-input__slot > div > input[type=text]', function() {
-        browser
-            .execute(function() {
-                var event = new Event('input', {
-                    'bubbles': true,
-                    'cancelable': true
-                });
-
-                var element = document.querySelector('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(4) > div > div > div.v-input__slot > div > input[type=text]');                                
-                element.value = "CANADA";  
-                element.dispatchEvent(event);                   
-                return element;
-
-            }, [], function(result) {
-                console.log(result);
-            });
-        });
-        browser
-        .click('#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div:nth-child(1) > div > div > div.v-input__slot > div > div')
-        .click('#reg-off-update-addr-btn > div')
-        var assertions =browser.page.coa_assertions()
-        assertions.Assertionsforchangeinaddress(browser)  
-},
-'Certify Page':function(browser){
-    var certify=browser.page.COAcertify()
-    certify.COAcertifypage(browser)
-    .click('#coa-file-pay-btn > div')
-},
-'PayBC': function (browser) {
-    var paybc=browser.page.paybc()
-    paybc.paybcassertions(browser)
-},
-'Confirm Filing Completes': function (browser) {
-    var Filingcomplete=browser.page.Filingscomplete()
-    Filingcomplete.Filingcompleteassertions(browser)
-    .end();
-},
-};
+        .assert.urlEquals(browser.globals.launch_url + '/auth/businessprofile');
+    },
+    
+    'Enter Business Contact Info': function (browser) {
+      browser
+        .waitForElementVisible('#input-42')
+        .setValue('#input-42', 'test.outputs@gov.bc.ca')
+        .setValue('#input-45', 'test.outputs@gov.bc.ca')
+        .setValue('#input-48', '2505555555')
+        .setValue('#input-51', '234');
+  
+      browser
+        .useXpath()
+        .assert.cssClassNotPresent('//*[@id="app"]/div/div[2]/div/div/article/div/div/div/form/div[5]/div/button[2]/span/span', 'v-btn--disabled')
+        .click('//*[@id="app"]/div/div[2]/div/div/article/div/div/div/form/div[5]/div/button[2]/span/span');
+  
+    },
+  
+    'Verify initial state of dashboard, then start COA filing': function (browser) {
+      dashboard = browser.page.dashboardPage();
+      dashboard.verifyTombstone(browser.globals.CP0001024);
+      dashboard.verifyAddresses(browser.globals.CP0001024);
+      dashboard.verifyDirectorCount(browser.globals.CP0001024.director_count);
+      dashboard.startCoaFiling();
+    },
+  
+    'Confirm initial state of COA filing': function (browser) {
+      CoaPage = browser.page.CoaPage();
+      CoaPage.verfifyInitialCoaState(browser.globals.CP0001024);
+      CoaPage.checkTotalFees('$0.00');
+      CoaPage.verifyOfficeAddresses(browser.globals.CP0001024);
+    },
+  
+    'Edit the Office Addresses': function (browser) {
+      CoaPage = browser.page.CoaPage();
+      CoaPage.startEditingOfficeAddresses();
+      CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryStreetAddress.selector, '123 test street', browser);
+      CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryCity.selector, 'Victoria', browser);
+      CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryPostalCode.selector, 'V8V 4K9', browser);
+      CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryCountry.selector, 'CANADA', browser);
+      CoaPage.click('@sameAsDeliveryButton');
+      CoaPage.moveToElement('@updateAddressesButton', 5, 5);
+      CoaPage.click('@updateAddressesButton');
+      CoaPage.checkFeeCount(1);
+      CoaPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 0);
+      CoaPage.checkTotalFees('$20.00');
+      CoaPage.assert.visible('@resetOfficeAddressButton');
+      CoaPage.assert.containsText('@officeDeliveryLine1', '123 test street');
+      CoaPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V8V 4K9');
+      CoaPage.assert.containsText('@officeDeliveryLine3', 'CANADA');
+      CoaPage.assert.containsText('@officeMailingLine1', '123 test street');
+      CoaPage.assert.containsText('@officeMailingLine2', 'Victoria BC V8V 4K9');
+      CoaPage.assert.containsText('@officeMailingLine3', 'CANADA');
+    },
+  
+    'Certify who filed': function (browser) {
+      CoaPage = browser.page.CoaPage();
+      CoaPage.setValue('@certifyLegalName', 'Tester');
+      CoaPage.click('@certifyCheckBox');
+    },
+  
+    'Save draft and resume later': function (browser) {
+      CoaPage = browser.page.CoaPage();
+      CoaPage.click('@saveAndResumeLaterButton');
+    },
+  
+    'Resume draft from Dashboard': function (browser) {
+      dashboard = browser.page.dashboardPage();
+      dashboard.waitForElementVisible('@resumeDraftButton');
+      dashboard.click('@resumeDraftButton');
+    },
+  
+    'Verify draft resumed correctly then return to dashoard': function (browser) {
+      CoaPage = browser.page.CoaPage();
+      CoaPage.checkFeeCount(1);
+      CoaPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 0);
+      CoaPage.checkTotalFees('$20.00');
+      CoaPage.assert.visible('@resetOfficeAddressButton');
+      CoaPage.assert.containsText('@officeDeliveryLine1', '123 test street');
+      CoaPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V8V 4K9');
+      CoaPage.assert.containsText('@officeDeliveryLine3', 'CANADA');
+      CoaPage.assert.containsText('@officeMailingLine1', '123 test street');
+      CoaPage.assert.containsText('@officeMailingLine2', 'Victoria BC V8V 4K9');
+      CoaPage.assert.containsText('@officeMailingLine3', 'CANADA');
+      CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
+      CoaPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
+      CoaPage.click('@saveAndResumeLaterButton');
+    },
+  
+    'Delete draft': function (browser) {
+      dashboard = browser.page.dashboardPage();
+      dashboard.waitForElementVisible('@resumeDraftButton');
+      dashboard.click('@toDoButtonMoreActionsArrow');
+      dashboard.click('@deleteDraftButton');
+      dashboard.waitForElementVisible('@confirmDeleteDraftButton');
+      dashboard.click('@confirmDeleteDraftButton');
+      dashboard.waitForElementVisible('@fileNowButton');
+    },
+  
+    'Start COA filing after deleting draft': function (browser) {
+      dashboard = browser.page.dashboardPage();
+      dashboard.startCoaFiling();
+    },
+  
+    'Confirm initial state of COA filing - POST DRAFT': function (browser) {
+      CoaPage = browser.page.CoaPage();
+      CoaPage.verfifyInitialCoaState(browser.globals.CP0001024);
+      CoaPage.checkTotalFees('$0.00');
+      CoaPage.verifyOfficeAddresses(browser.globals.CP0001024);
+    },
+  
+    'Edit the Office Addresses - POST DRAFT': function (browser) {
+      CoaPage = browser.page.CoaPage();
+      CoaPage.startEditingOfficeAddresses();
+      CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryStreetAddress.selector, '123 test street', browser);
+      CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryCity.selector, 'Victoria', browser);
+      CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryPostalCode.selector, 'V8V 4K9', browser);
+      CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryCountry.selector, 'CANADA', browser);
+      CoaPage.click('@sameAsDeliveryButton');
+      CoaPage.moveToElement('@updateAddressesButton', 5, 5);
+      CoaPage.click('@updateAddressesButton');
+      CoaPage.checkFeeCount(1);
+      CoaPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 0);
+      CoaPage.checkTotalFees('$20.00');
+      CoaPage.assert.visible('@resetOfficeAddressButton');
+      CoaPage.assert.containsText('@officeDeliveryLine1', '123 test street');
+      CoaPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V8V 4K9');
+      CoaPage.assert.containsText('@officeDeliveryLine3', 'CANADA');
+      CoaPage.assert.containsText('@officeMailingLine1', '123 test street');
+      CoaPage.assert.containsText('@officeMailingLine2', 'Victoria BC V8V 4K9');
+      CoaPage.assert.containsText('@officeMailingLine3', 'CANADA');
+    },
+  
+    'Certify who filed - POST DRAFT': function (browser) {
+      CoaPage = browser.page.CoaPage();
+      CoaPage.setValue('@certifyLegalName', 'Tester');
+      CoaPage.click('@certifyCheckBox');
+      CoaPage.assert.cssClassNotPresent('@fileAndPayButton', 'v-btn--disabled');
+      CoaPage.click('@fileAndPayButton');
+    },
+  
+    'PayBC': function (browser) {
+      browser
+        .waitForElementVisible('#paylistbutton')
+        .click('#paylistbutton')
+        .waitForElementVisible('#credit_payBtn')
+        .click('#credit_payBtn')
+        .waitForElementVisible('input[name=trnCardNumber]')
+        .setValue('input[name=trnCardNumber]', '4030000010001234')
+        .setValue('input[name=trnCardCvd]', '123')
+        .moveToElement('input[name=submitButton]', 10, 10)
+        .click('input[name=submitButton]');
+    },
+  
+    'Verify Dashboard after filing': function (browser) {
+      dashboard = browser.page.dashboardPage();
+      dashboard.assert.containsText('@toDoListHeader', 'To Do (1)');
+      dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (1)');
+      dashboard.assert.containsText('@topFilingInHistoryName', 'Address Change');
+      dashboard.assert.containsText('@topFilingInHistoryStatus', 'FILED AND PAID');
+      dashboard.verifyDirectorCount(browser.globals.CP0001024.director_count);
+      dashboard.assert.containsText('@mailingAddressLabel', 'Mailing Address');
+      dashboard.assert.containsText('@mailingLine1', '123 test street');
+      dashboard.assert.containsText('@mailingLine2', 'Victoria BC V8V 4K9');
+      dashboard.assert.containsText('@mailingLine3', 'CA');
+      dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
+      dashboard.assert.containsText('@deliveryLine1', '123 test street');
+      dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');
+      dashboard.assert.containsText('@deliveryLine3', 'CA');
+    }
+  };

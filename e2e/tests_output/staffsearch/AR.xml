@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="staffsearch.AR"
+    errors="1" failures="0" hostname="" id="" package="staffsearch" skipped="7"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+
+  
+    
+    <testcase
+      name="step1" classname="staffsearch.AR">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="step2" classname="staffsearch.AR">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="step3" classname="staffsearch.AR">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="step4" classname="staffsearch.AR">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="step5" classname="staffsearch.AR">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Appoint Director" classname="staffsearch.AR">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Certify Page" classname="staffsearch.AR">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
