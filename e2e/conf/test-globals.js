@@ -5,6 +5,7 @@ module.exports = {
 	throwOnMultipleElementsReturned : false,
 
 	launch_url: "https://coops-test.pathfinder.gov.bc.ca",
+	launch_idirurl: "https://coops-test.pathfinder.gov.bc.ca/auth/signin/idir",
 
 	CP0000977: {
 		identifier: "CP0000977",
@@ -45,7 +46,8 @@ module.exports = {
 	CP0001252:{
 		identifier: "CP0001252",
 		passcode: "157320888",
-		director_count: 6,
+		director_count: 5,
+		new_director_count: 6,
 		legal_name: "VIEW COURT HOUSING CO-OPERATIVE",
 		mailing:{ 
 			line1:"220 - 1651 COMMERCIAL DR",
@@ -57,13 +59,74 @@ module.exports = {
 			line2: "VANCOUVER BC V5L 3Y3",
 			line3: "CA"
 		},
-		director7:{
-			FIRSTNAME: "test",
-			LASTNAME: "test3",
+		director6:{
+			firatname:"test",
+			lastname:"test2",
 			street: "123 test st",
-			city: "victoria",
-			postalCode: "V1V1V1"
+			optionalfield: "I am an optional field",
+			city:"victoria",
+			province:"BC",
+			postalcode: "V1V1V1",
+			country: "CA"
+		},
+		director5:{
+			firstName: "NICKY",
+			lastName: "CAIRNCROSS",
+			street: "4 - 12 WEST 10TH AVENUE",
+			city: "VANCOUVER",
+			province: "BC",
+			postalCode: "V5Y1R6",
+			appointedDate: "2018-11-08",
+			country: "CA"
 		}	
 
 	},
+
+    CP0001468:{
+		identifier: "CP0001468",
+		director_count: 5,
+		legal_name: "MANANA PARK WATER CO-OPERATIVE",
+		mailing:{
+			line1: "4750 BRENTON PAGE ROAD",
+			line2: "LADYSMITH BC V9G 1L7",
+			line3: "CA"
+		},
+		delivery:{
+			line1: "4750 BRENTON PAGE ROAD",
+			line2: "LADYSMITH BC V9G 1L7",
+			line3: "CA"
+		}
+	},
+
+	CP0001496:{
+		identifier: "CP0001496",
+		director_count: 4,
+		legal_name: "SITKA HOUSING CO-OPERATIVE (1985)",
+		mailing:{
+			line1: "1550 WOODLAND DRIVE",
+			line2: "VANCOUVER BC V5L 5A5",
+			line3: "CA"
+		},
+		delivery:{
+			line1: "1550 WOODLAND DRIVE",
+			line2: "VANCOUVER BC V5L 5A5",
+			line3: "CA"
+		}
+	},
+
+	CP0001505:{
+		identifier: "CP0001505",
+		director_count: 6,
+		legal_name: "CENTENNIAL PARK HOUSING CO-OPERATIVE",
+		mailing:{
+			line1:"4160 BOND STREET",
+			line2: "BURNABY BC V5H 1G2",
+			line3:"CA"
+		},
+		delivery:{
+			line1: "4160 BOND STREET",
+			line2: "BURNABY BC V5H 1G2",
+			line3: "CA"
+		}
+	}
 };

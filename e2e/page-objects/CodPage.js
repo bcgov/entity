@@ -27,39 +27,52 @@ var CodFilingsCommands = {
         .waitForElementVisible('@AppointNewDirectorButton')
         .click('@AppointNewDirectorButton')
     },
-    AddNewDirector: function () {
+    AddNewDirector: function (directorObject,number) {
         return this.waitForElementVisible('@firstname')
         .waitForElementNotVisible('button.new-director-btn')
-        .setValue('@firstname','test')
-        .waitForElementVisible('@initial')
-        .setValue('@initial','test1')
+        .setValue('@firstname',directorObject.firstname)
+       // .waitForElementVisible('@initial')
+        //.setValue('@initial',directorObject.lastname)
         .waitForElementVisible('@lastname')
-        .setValue('@lastname','test3')
+        .setValue('@lastname',directorObject.lastname)
         .waitForElementVisible('@streetaddress')
-        .setValue('@streetaddress','123 test st')
+        .setValue('@streetaddress',directorObject.steet)
         .waitForElementVisible('@additionalstreet')
-        .setValue('@additionalstreet','I am an optional field')
+        .setValue('@additionalstreet',directorObject.optionalfield)
         .useXpath()
-        .waitForElementVisible('//*[@id="directors"]/div[3]/ul[1]/li/div/div/form/div[2]/form/div[3]/div[1]/div/div[1]/div/input')
-        .setValue('//*[@id="directors"]/div[3]/ul[1]/li/div/div/form/div[2]/form/div[3]/div[1]/div/div[1]/div/input','victoria')
+        .waitForElementVisible('@City')
+        .setValue('@City',directorObject.City)
         .useCss()
         .waitForElementVisible('@province')
         .click('@province')
         .click('@BC')
         .waitForElementVisible('@postalcode')
-        .setValue('@postalcode','V1V1V1')
+        .setValue('@postalcode',directorObject.postalcode)
         .waitForElementVisible('@country')
-        .setValue('@country','CA')
+        .setValue('@country',directorObject.country)
         .waitForElementVisible('@deliveryinstructions')
-        .setValue('@deliveryinstructions','thankyou')
+        .setValue('@deliveryinstructions',directorObject.deliveryinstructions)
         .waitForElementVisible('@completeAppointingDirector')
         .click('@completeAppointingDirector')
-        .assert.visible('@edit')
+        //.assert.visible('@edit')
     },
-   AssertDirectors: function(elementName, data) {
-    var element = this.elements[elementName.slice(1)];
-    return util.format(element.selector, data);
-   },
+    getDynamicElement: function (elementName, number) {
+        var element = this.elements[elementName];
+        return util.format(element.__selector, number);
+       }, 
+
+    validateDirectorByNumber: function (directorObject, number) {
+           return this
+                    .assert.containsText(this.getDynamicElement('dynamicFirstName', number), directorObject.firstName)
+                    .assert.containsText(this.getDynamicElement('dynamicLastName', number), directorObject.lastName)
+                    .assert.containsText(this.getDynamicElement('dynamicStreet', number), directorObject.street)
+                    .assert.containsText(this.getDynamicElement('dynamicCity', number), directorObject.city)
+                    .assert.containsText(this.getDynamicElement('dynamicProvince', number), directorObject.province)
+                    .assert.containsText(this.getDynamicElement('dynamicPostalCode', number), directorObject.postalCode)
+                    .assert.containsText(this.getDynamicElement('dynamicCountry', number), directorObject.country)
+                    .assert.containsText(this.getDynamicElement('dynamicAppointedDate', number), directorObject.appointedDate);                
+    
+       }
 };
 module.exports={
     commands:[CodFilingsCommands],
@@ -76,6 +89,10 @@ module.exports={
         additionalstreet: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.meta-container__inner > form > div:nth-child(2) > div > div > div.v-input__slot > div > input[type=text]",
         postalcode: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div > input[type=text]",
         deliveryinstructions: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.meta-container__inner > form > div:nth-child(5) > div > div > div.v-input__slot > div > textarea",
+        City: {
+            selector: '//*[@id="directors"]/div[3]/ul[1]/li/div/div/form/div[2]/form/div[3]/div[1]/div/div[1]/div/input',
+            locateStrategy: "xpath"
+        },
         province: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.meta-container__inner > form > div.form__row.three-column > div.v-input.item.v-text-field.v-text-field--box.v-text-field--enclosed.v-select.theme--light > div > div.v-input__slot > div.v-select__slot > div.v-select__selections",
         BC: "#app > div.v-menu__content.theme--light.menuable__content__active > div > div > div:nth-child(1) > a > div > div",
         country: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.meta-container__inner > form > div:nth-child(4) > div > div > div.v-input__slot > div > input[type=text]",
@@ -85,13 +102,17 @@ module.exports={
         saveDraftButton: "#cod-save-btn",
         fileAndPayButton: "#cod-file-pay-btn",
         cancelFilingButton: "#cod-cancel-btn",
-        edit:"#director-7-change-btn > div > span",
+        edit:"#director-9-change-btn > div > span",
         completeAppointingDirector: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.form__row.form__btns > button.form-primary-btn.v-btn.theme--light.primary > div",
-        FIRSTNAME: "#director-%s > div > div > label > span:nth-child(1)",
-        LASTNAME: "#director-%S > div > div > label > span:nth-child(3)",
-        street: "#director-%s> div > div > div > div > div.address > div > div > div > div:nth-child(1)",
-        city: "#director-%s > div > div > div > div > div.address > div > div > div > div:nth-child(3) > span:nth-child(1)",
-        postalCode:"#director-%s > div > div > div > div > div.address > div > div > div > div:nth-child(3) > span:nth-child(3)"
-
+        dynamicFirstName: "#director-%s > div > div > label > span:nth-child(1)",
+        dynamicLastName: "#director-%s > div > div > label > span:nth-child(3)",
+        dynamicStreet: "#director-%s> div > div > div > div > div.address > div > div > div > div:nth-child(1)",
+        dynamicCity: "#director-%s > div > div > div > div > div.address > div > div > div > div:nth-child(3) > span:nth-child(1)",
+        dynamicProvince: "#director-%s > div > div > div > div > div.address > div > div > div > div:nth-child(3) > span:nth-child(2)",
+        dynamicPostalCode:"#director-%s > div > div > div > div > div.address > div > div > div > div:nth-child(3) > span:nth-child(3)",
+        dynamicCountry: "#director-%s > div > div > div > div > div.address > div > div > div > div:nth-child(4)",
+        dynamicAppointedDate: "#director-%s > div > div > div > div > div.director_dates > div:nth-child(2)",
+        dynamicCessationDate: "#director-%s > div > div > div > div > div.director_dates > div:nth-child(4)",
+        dynamicEditButton: "#director-%s-change-btn"
     },
 }
