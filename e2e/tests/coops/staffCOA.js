@@ -5,8 +5,8 @@ module.exports={
         browser
         .url(browser.globals.launch_idirurl)
         .assert.visible('#login-to','Log in to sfstest7.gov.bc.ca')
-        .setValue('#user','process.env.username')
-        .setValue('#password','process.env.password')
+        .setValue('#user',process.env.username)
+        .setValue('#password',process.env.password)
         .click('#login-form > section > div > div.col-sm-7.col-md-8 > div > div.panel-body > div.login-form-action > input')
     },
 
