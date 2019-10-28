@@ -113,6 +113,173 @@ A discussion could be had around the order of these two environments. Does it ma
 
 The emphasis should be ensuring that we can promote the newly developed features (frequently) into an environment applicable for running `NightWatch`, `Postman/Newman` and any other automated testing tools to help in quality assurance of the product.
 
+# RFC - Updates to Support CI/CT/CDe
+
+
+## Problems that need to be solved
+
+  - Need to be able to spin up new environments with ease
+  - Need to be able to specify a branch to build the environment from
+  - Need to be able to seed/reseed the environment with any data that is required.
+
+# Detailed Design (REVISED)
+
+This section intends to outline the proposed changes to address the ability to easily spin up issolated environments for the purpose of development, pull-request validation and quality-assurance/e2e testing.  The first stage should be to make it so that environment-spinup is consistant, and highly repeattable.
+
+With this addressed, there will be an established baseline for developers and further automation processes. We can extend the usage of this with pre-environment Hithub actions for unit-tests and linting, we have developers work directly within openshift environments via port-forwarding or containerized rsync, and we can (re)create environments suitable for running e2e test suites. It all starts from having a consistant way to build environments.
+
+## What tools and packages are to be used
+
+The following are a list of the tools and packages that are intended to be used to facilitate the updated pipeline model.
+
+| Tool/Package | Description |
+| ------------ | ----------- |
+| `jenkins` | A perisistant installation of jenkins, with its installation and configuration contained within the repo so that it can be destroyed and rebuilt as needed. |
+| [BCDevops/ocp-cd-pipeline](https://github.com/BCDevOps/ocp-cd-pipeline) | A collection of jeknins/groovy scripts to help run the jobs in a jeknins pipeline.  These scripts will help enable is to utlize `ImageStreams` for both the source-code and configuration, helping ensure that the openshift caching mechanisms are utlized as much as possible. |
+| `source2image` | Openshift builder-images used to facilitate the containerization of the applications. |
+| `Blue Ocean` | Blue Ocean is a Jenkins plugin that generates better visualization of the pipeline stages, but doesn't affect that actual jobs. We can use this for reporting and status, and demoing to stakeholders. |
+
+
+## Why 'ocp-cd-pipeline'?
+
+Consideration was put into [openshift-pipelines](https://docs.okd.io/3.11/dev_guide/openshift_pipeline.html), but they do not support pr-based workflows, and are not well suited for building multiple application-components into a single environment.
+
+The more recent [BCDevops/pipeline-cli](https://github.com/BCDevOps/pipeline-cli) was considered as well, however it didn't seem to as easily support the multiple application-components into a single-environment either, and wasn't very clear how it could be easily extended the specific needs required here. It seemed as if it was more inteded for the generators.
+
+Landing on the `ocp-cd-pipeline`, while an older iteration of what is being used in the lab, it does fully support ImageStreams, mono-repos with mutliple application-components, and it can be extended to support the needs of this build.
+
+
+## Environment Details
+
+Environments should be abstracted into openshift 'applications', prefixed with the branch or PR-number that its being built from. The applications will contain the primary components (coops-ui, lear-api, entity-filer, and nats), with references to external services (auth, payments).
+
+Databases are to be handled with Enterprise Postgres, and there will need to be a script that can create a new db prefexed with the same application-prefix, with the schema migrated and seeded with data according to parameters passed to the job.
+
+
+The following environments are built using the parameterized jenkins job, building, pushing and tagging images to the openshift registry.
+
+| Environment | Description |
+| ----------- | ----------- |
+|`application-pr123` | an environment automatically spun up on pull-request. |
+|`application-feat-123` | an environment manually spun up for feature development. |
+|`application-dev` | an environment manually spun up representing the current dev-state |
+
+The following environments are built using a parameterzed jenkins job, utlizing image promotion but still enabling scriptable data-loading, and the ability to swap out/around configuration references. These should all promote from dev -> e2e -> test -> prod
+
+| Environment | Description |
+| ----------- | ----------- |
+| `application-e2e` | an environment manually spun up representing the e2e test state |
+| `application-test` | an environment manually spun up representing a pre-prod environment for business validation before releasing to production. |
+
+## General Template and Script File Structure
+
+| Path | Description |
+| ---- | ----------- |
+| `/devops` | Root directory for all devops scrips and templates |
+| `/devops/jenkins/` | Contains any scripts and templates required for building the jenkins master & slaves |
+| `/devops/openshift` | Contains the build and deployment config templates for each of the application components, along with any other configurations that might be associated with the openshift configuration of the components. |
+| `/devops/pipeline` | Contains any (jenkins, etc) scripts required to facilitate the actual pipeline runs - groovy, gradle scripts, etc |
+
+## Build and Deployment Config Template Structure
+
+The build and deployment configuration templates should contain parameterized objects for everything that is needed to build and deploy the components. These files need to be 100% environment agnostic, and be completely parameterized - even the resource allocation.
+
+This should result in a single build-config template, and a single deploy-config template for each of the application components. The values of the parameters will be fed into the templates from the jenkins/groovy scripts, and optionally pulling more secure/sensitive properties from a secret storage service (openshift, password-vault)
+
+Each of the application components needs to be completely parameterized to match, including references to the other components.
+
+This should result in a single application-component codebase that could be built and deployed to any environment without change, the single build and deploy config templates, each being fed parameters defined through jenkins-scripts, or through the jenkins job itself. These parameters can be overwritten either manually or programatically at the time of launching the job.
+
+## Application Components
+
+The following application components will require the build and deployment configuration templates, along with any paramterization required to support this process.
+
+  - coops-ui     (Frontend)
+  - legal-api    (Backend)
+  - postgres     (Configured for usage with Enterprise Postgres)
+  - entity-filer (Filing Working)
+  - nats         (Message Queue)
+
+To be able to ensure that the OpenShift ImageStreams are utlizes properly, all application source code and configuration is required to be separated by directory, for example:
+
+| Path | Description |
+| ---- | ----------- |
+| `/coops-ui` | Root directory for all devops scrips and templates |
+| `/coops-ui/src` | The source code of the application component |
+| `/coops-ui/tests` | Any unit/integration test for the applicaiton component |
+| `/devops/openshift/coops-ui` | The openshift build and deployment config template directory, outside of the application-components directory |
+
+For the most part all of the existing application components should be like this already, with the exception of the openshift build and deployment config templates - currently they are located within the application-components directory. Its proposed that we move these from the app-component directory into the devops directory primarily for the following reasons:
+
+- Allowing for development of this new process in tandem with the current structure to ensure that builds and deployments are not blocked while waiting for this update to be completely developed.
+- Abstraction of all build/deployment configrations into a centeralized devops source-folder, keeping the application-component source directories for only application-source/tests.
+
+Its important to state the need for this with the proposed changes utlizing this directory structure to create the ImageStreams, and to ensure that test-scripts are not included in the application builds.
+
+
+## Jenkins Jobs
+
+There should be a single job that builds and deploys all environments, regardless of its prefix or usage. This job should be parameterized, so that we can control the input and outputs directly at job instantiation.
+
+The following parameters are (intially, some of) the proposed parameters for the job. (Note, this is not intended to be a complete list - as this process is developed we will define the full set of parameters that would be needed.)
+
+| Parameter | Description |
+| --------- | ----------- |
+| `Namespace` | The openshift namespace that the job will output to. |
+| `InputSource` | The branch/pull-request that will be used as the source to build from. |
+| `Prefix` | Generally provided based on the InputSource, but can be overwritten. |
+
+
+### Pipeline Stages
+
+The following outlines the expected stages and outcomes of the job.
+
+1. **Sanity Check** - Perform any validation required on the input and source prior to commencing a build or deploy process.
+2. **Build Stage** - Iterate over the application-components:
+   1. checking their source and configuration directories for changes to the ImageStream
+   2. resolving any dependencies
+   3. run any non-integrated tests
+   4. Build (utlizing the build-config templates)
+3. **Push & Tag Stage** - Iterage over the application-components:
+   1. Pushing up the images if applicable
+   2. tagging them with the applicable tag
+4. **Deploy Stage** - Iterate over the application-components:
+   1. Create the oc-application if applicable
+   2. Deploy the application-components (using the deploy-config templates)
+5. **Verify Deployment Stage** -- Verify that all application components respond to:
+   1. Service / Health Checks
+   2. Readiness Checks
+   3. Validate accessiblity through prefixed-route.
+6. **Integration Testing Stage**
+   1. Optionally run on environments intended for integration testing (ie: e2e)
+7. **Cleanup Stage**
+   1. Remove any reminants or artifacts left over from building/errors
+   2. Perform any notifications required
+
+
+## External Services
+
+There will need to be references to external services (auth. payments, Enterprise DB) - services that are not intended to be replicated with each environment. References to these services should all be handled through the parameterization of both the application components, and the jenkins job (as applicable).
+
+## Next steps
+
+Once these environments can be spun up easlily, it should simplify the process for pushing developers contributions through the start of the Software Development Pipeline. The next steps would be looking at how to utlize these environments for further automated testing, and quality assurance.
+
+- There are existing postman/newman pipelines that we can leverage and start to further develop e2e test suites.
+- There are existing data-loader pipelines that we can leverage to setup the environments with data applicable for the types of tests that are to be run in them.
+- Gihub actions can be leveraged to perform pre-build unit testing
+
+
+## Additional Tasks
+
+  - Should talk to the labs ops team and see if they can merge the resources we have from the b-teams openshift project into the a-teams one ( as we are intending to share it now ) - This would be the ideal scenario - increase the resources allocated to a single project.
+  - If that is not possible, then we should look at using one for development, and the other for qa/staging/prod, ie:
+    - Any environment spun up on PR or as developer-environment can be done in the `ZCD4OU (B-Team) OpenShift Project.
+    - The `DEV` -> `E2E` -> `TEST` -> `PROD` environments can be deployed to the existing `GL2UOS (A-Team)` Openshift Project
+
+
+
+
 # Adoption Strategy
 
 Initially there is the work around getting the application components, environments and pipelines setup, primarily consisting of:
