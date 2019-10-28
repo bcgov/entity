@@ -1,5 +1,5 @@
 module.exports = {
-    '@tags': ['COD'],
+    '@tags': ['COD','single'],
   
     'Signin': function (browser) {
       browser
@@ -12,11 +12,11 @@ module.exports = {
           .useCss()
           .waitForElementVisible('button.sign-in-btn')
           .click('button.sign-in-btn')
-         // .assert.urlEquals(browser.globals.launch_url + '/auth/businessprofile');
+          .assert.urlEquals(browser.globals.launch_url + '/auth/businessprofile');
       },
     
 
-    /*'Enter Business Contact Info': function (browser) {
+    'Enter Business Contact Info': function (browser) {
         browser
         .waitForElementVisible('#input-42')
         .setValue('#input-42', 'test.outputs@gov.bc.ca')
@@ -28,7 +28,7 @@ module.exports = {
     .useXpath()
     .assert.cssClassNotPresent('//*[@id="app"]/div/div[2]/div/div/article/div/div/div/form/div[5]/div/button[2]/span/span', 'v-btn--disabled')
     .click('//*[@id="app"]/div/div[2]/div/div/article/div/div/div/form/div[5]/div/button[2]/span/span')
-    },*/
+    },
 
     'Verify initial state of dashboard, then start COD filing': function (browser) {
         dashboard = browser.page.dashboardPage();
@@ -48,7 +48,7 @@ module.exports = {
         CodPage = browser.page.CodPage()
         CodPage.startAppointingNewDirector()
         CodPage.AddNewDirector(browser.globals.CP0001252.director6,6);
-        CodPage.validateDirectorByNumber(browser.globals.CP0001252.director5,5)
+        CodPage.validateDirectorByNumber(browser.globals.CP0001252.director3,3)
       },
 
       'Certify who filed': function (browser) {
@@ -73,15 +73,9 @@ module.exports = {
         CodPage.checkFeeCount(1)
         CodPage.checkFeeByIndex('Change of Director', '$20.00', 0)
         CodPage.checkTotalFees('$20.00')
-        CodPage.assert.visible('@edit')
       },
 
-      'Checking the directors are present': function (browser) {
-        CodPage = browser.page.CodPage()
-        CodPage.checkWithTheDirectors('@FIRSTNAME','s')
-      },
      'Assert the directors are present': function (browser) {
-        //CodPage.AssertDirectors()
         CodPage.assert.valueContains('@certifyLegalName', 'Tester');
         CodPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
         CodPage.click('@saveAndResumeLaterButton');
@@ -94,7 +88,7 @@ module.exports = {
         dashboard.click('@deleteDraftButton');
         dashboard.waitForElementVisible('@confirmDeleteDraftButton');
         dashboard.click('@confirmDeleteDraftButton');
-        dashboard.waitForElementVisible('@fileNowButton');
+        dashboard.waitForElementVisible('@fileNowButton');   //will run in e2e scripts
       },
 
       'Start COD filing after deleting draft': function (browser) {
@@ -111,8 +105,8 @@ module.exports = {
       'Appoint New DIRECTOR - POST DRAFT': function (browser) {
         CodPage = browser.page.CodPage();
         CodPage.startAppointingNewDirector()
-        CodPage.AddNewDirector();
-        CodPage.validateDirectorByNumber(directorObject, number)
+        CodPage.AddNewDirector(browser.globals.CP0001252.director6,6);
+        CodPage.validateDirectorByNumber(browser.globals.CP0001252.director3,3)
       },
 
       'Certify who filed - POST DRAFT': function (browser) {
@@ -144,11 +138,11 @@ module.exports = {
         dashboard.assert.containsText('@topFilingInHistoryStatus', 'FILED AND PAID');
         dashboard.verifyDirectorCount(browser.globals.CP0001252.new_director_count);
         dashboard.assert.containsText('@mailingAddressLabel', 'Mailing Address');
-        dashboard.assert.containsText('@mailingLine1', '220 - 1651 COMMERCIAL DR');
+        dashboard.assert.containsText('@mailingLine1', '220 - 1333 COMMERCIAL DR');
         dashboard.assert.containsText('@mailingLine2', 'VANCOUVER BC V5L 3Y3');
         dashboard.assert.containsText('@mailingLine3', 'CA');
         dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
-        dashboard.assert.containsText('@deliveryLine1', '220 - 1651 COMMERCIAL DR');
+        dashboard.assert.containsText('@deliveryLine1', '220 - 1333 COMMERCIAL DR');
         dashboard.assert.containsText('@deliveryLine2', 'VANCOUVER BC V5L 3Y3');
         dashboard.assert.containsText('@deliveryLine3', 'CA');
       }
