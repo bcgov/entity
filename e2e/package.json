@@ -5,6 +5,7 @@
   "scripts": {
     "single": "nightwatch -c conf/single.conf.js",
     "local-test": "node scripts/local.runner.js -c conf/local.conf.js --tag single --env test",
+    "local-dev": "node scripts/local.runner.js -c conf/local.conf.js --tag single --env dev",
     "parallel": "nightwatch -c conf/parallel.conf.js -e chrome,firefox,safari,ie",
     "parallel_local": "node scripts/local.runner.js -c conf/parallel_local.conf.js -e chrome,firefox,safari"
   },

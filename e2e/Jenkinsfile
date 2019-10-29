@@ -59,7 +59,7 @@ import groovy.json.JsonOutput
                          cd e2e
                          npm install
 
-                         npm run single --tag single
+                         npm run local-test
 
                     '''
             }

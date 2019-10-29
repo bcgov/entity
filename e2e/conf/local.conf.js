@@ -32,6 +32,9 @@ nightwatch_config = {
     test: {
       globals_path: "test-globals.js"
     }
+    dev:{
+      globals_path: "dev-globals.js"
+    }
   }
 };
 
