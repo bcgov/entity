@@ -1,9 +1,7 @@
 {
 	"info": {
-		"_postman_id": "6c870592-a59a-432f-93fe-a3f6c4f00f75",
-		"name": "auth-api",
-		"description": "version=1.0.0\nBelow are the environment variables needed to run this collection with example value from DEV environment; \n\nbase_url\t\t\t:\tsso-dev.pathfinder.gov.bc.ca\nrealm_name\t\t\t:\tfcf0kpqr\ntokenUrl\t\t\t:\thttps://sso-dev.pathfinder.gov.bc.ca/auth/realms/fcf0kpqr/protocol/openid-connect/token\nclientId\t\t\t:\tsbc-auth-cron-job\nclientSecret\t\t:\t<client_secret>\ndefaultGroup\t\t:\tbasic/editor\napi_url\t\t\t\t:\thttp://localhost:5000\nwebClientId\t\t\t:\tsbc-auth-web\nwebClientSecret\t\t:\t<web_client_secret>\ncorp_num\t\t\t:\tCP0002098\nuser_email\t\t\t:\ttest111@gov.bc.ca\ntemp_password\t\t:\tfoobar\nbusiness_identifier\t:\tCP0002098\nsample_email\t\t:\tfoo@bar.com\nsample_phone\t\t:\t(555)-555-5555\nsample_extension\t:\t123\nsample_updated_email:\ttest@bar.com\ntest_staff_username :\t<test_staff_username>\ntest_staff_password :\t<test_staff_password>\ntest_org_name\t\t:\t\"Test Org\"\ntest_org_name_updated:\t\"Test Org Updated\"\nbusiness_number\t\t:\t791861073BC0001\nbusiness_name\t\t:\t\"Foobar, Inc.\"\nentity_passcode\t\t:\t12345\n\n\n",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"_postman_id": "8ee23609-fbbd-4d0c-ade9-9ea3355b92fd",
+		"name": "sso"
 	},
 	"item": [
 		{

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="tests.namex-idir-login"
+    errors="1" failures="0" hostname="" id="" package="namex-idir-login" skipped="1"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+
+  
+    
+    <testcase
+      name="NameX login IDIR creds" classname="tests.namex-idir-login">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

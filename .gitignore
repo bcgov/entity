@@ -94,6 +94,9 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# Nightwatch
+e2e/tests_output
+
 # mypy
 .mypy_cache/
 

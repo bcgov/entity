@@ -77,7 +77,7 @@ var ArFilingsCommands = {
             .setValue('@newDirectorPostalCode', 'V9A 1A7')
             .setValue('@newDirectorCountry', 'Canada')
             .click('@newDirectorDoneButton')
-            .waitForElementVisible('@newDirectorChip');
+            //.waitForElementVisible('@newDirectorChip');
     }
 };
 module.exports={
@@ -96,28 +96,45 @@ module.exports={
         changeOfficeAddressButton: "#reg-off-addr-change-btn",
         sameAsDeliveryButton: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div:nth-child(1) > div > div > div.v-input__slot > div > div",
         updateAddressesButton: "#reg-off-update-addr-btn",
-        resetOfficeAddressButton: "#reg-off-addr-reset-btn > div",
+        resetOfficeAddressButton: "#reg-off-addr-reset-btn > span",
         officeDeliveryStreetAddress: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(1) > div > div > div.v-input__slot > div > input[type=text]",
         officeDeliveryAdditional: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(2) > div > div > div.v-input__slot > div > input[type=text]",
         officeDeliveryCity: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(1) > div > div.v-input__slot > div > input[type=text]",
         officeDeliveryPostalCode: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div > input[type=text]",
         officeDeliveryCountry: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(4) > div > div > div.v-input__slot > div > input",
         officeDeliveryDeliveryInstructions: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(5) > div > div > div.v-input__slot > div > textarea",
-        appointDirectorButton: "#directors > div:nth-child(2) > button > div",
+        appointDirectorButton: "#directors > div:nth-child(2) > button",
         newDirectorFirstName: "#new-director__first-name",
-        newDirectorMiddleInitial: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.form__row.three-column > div.v-input.item.director-initial.v-text-field.v-text-field--box.v-text-field--enclosed.theme--light > div > div.v-input__slot > div > input[type=text]",
-        newDirectorLastName: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div > input[type=text]",
-        newDirectorStreetAddress: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.meta-container__inner > form > div:nth-child(1) > div > div > div.v-input__slot > div > input[type=text]",
-        newDirectorCity: {
-            selector: '//*[@id="directors"]/div[3]/ul[1]/li/div/div/form/div[2]/form/div[3]/div[1]/div/div[1]/div/input',
+        newDirectorMiddleInitial: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.form__row.three-column > div.v-input.item.director-initial.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div>input[type=text]",
+
+        newDirectorLastName:{
+            selector:"/html/body/div[1]/div/div[4]/main/div[2]/div[5]/div[2]/article/div/section[3]/div/div[3]/ul[1]/li/div/div/form/div[1]/div[3]/div/div[1]/div/input",
             locateStrategy: "xpath"
         },
-        newDirectorPostalCode: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div > input[type=text]",
-        newDirectorCountry: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.meta-container__inner > form > div:nth-child(4) > div > div > div.v-input__slot > div > input[type=text]",
-        newDirectorProvinceSelectBox: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.meta-container__inner > form > div.form__row.three-column > div.v-input.item.v-text-field.v-text-field--box.v-text-field--enclosed.v-select.theme--light > div > div.v-input__slot > div.v-select__slot > div.v-select__selections",
-        newDirectorProvinceBC: "#app > div.v-menu__content.theme--light.menuable__content__active > div > div > div:nth-child(1) > a > div > div",
-        newDirectorDoneButton: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.form__row.form__btns > button.form-primary-btn.v-btn.theme--light.primary > div",
-        newDirectorChip: "#director-9 > div > div > label > div > span:nth-child(1) > span",
+        newDirectorStreetAddress: {
+        selector:"/html/body/div/div/div[4]/main/div[2]/div[5]/div[2]/article/div/section[3]/div/div[3]/ul[1]/li/div/div/form/div[2]/div/form/div[1]/div/div/div[1]/div/input",
+        locateStrategy: "xpath"
+        },
+        newDirectorCity:{
+        selector:"/html/body/div[1]/div/div[4]/main/div[2]/div[5]/div[2]/article/div/section[3]/div/div[3]/ul[1]/li/div/div/form/div[2]/div/form/div[3]/div[1]/div/div[1]/div/input",
+        locateStrategy: "xpath"
+        },
+        newDirectorPostalCode: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.address-wrapper > div > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div>input[type=text]",
+        newDirectorCountry: {
+            selector: "/html/body/div[1]/div/div[4]/main/div[2]/div[5]/div[2]/article/div/section[3]/div/div[3]/ul[1]/li/div/div/form/div[2]/div/form/div[4]/div/div/div[1]/div/input",
+            locateStrategy: "xpath"
+
+        },
+        newDirectorProvinceSelectBox:{
+         selector:"/html/body/div/div/div[4]/main/div[2]/div[5]/div[2]/article/div/section[3]/div/div[3]/ul[1]/li/div/div/form/div[2]/div/form/div[3]/div[2]/div/div[1]/div[1]/div[1]",
+         locateStrategy: "xpath"
+        },
+        newDirectorProvinceBC:{
+        selector:"/html/body/div[1]/div[1]/div/div/div[1]/div/div",
+        locateStrategy: "xpath"
+        },
+        newDirectorDoneButton: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.form__row.form__btns > button.form-primary-btn.v-btn.v-btn--contained.theme--light.v-size--default.primary > span",
+        newDirectorChip: "#director-9 > div > label > div > span:nth-child(1)",
         certifyLegalName: "#certified-by-textfield",
         certifyCheckBox: "#AR-step-4-container > div > div.v-input.v-input--selection-controls.v-input--checkbox.theme--light > div > div.v-input__slot > div > div",
         saveAndResumeLaterButton: "#ar-save-resume-btn",

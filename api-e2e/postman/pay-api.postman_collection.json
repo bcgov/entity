@@ -1,8 +1,8 @@
 {
 	"info": {
-		"_postman_id": "11b32ffe-282b-4b37-b366-89298c51dfa8",
+		"_postman_id": "4065b799-832d-44d3-b219-00e8757de07b",
 		"name": "pay-api",
-		"description": "version=1.0.0\n\nBelow are the environment variables needed to run this collection with example value from DEV environment; \n\npay-api-base-url\t:\thttps://pay-api-dev.pathfinder.gov.bc.ca\ntokenUrl\t\t\t:\thttps://auth-api-dev.pathfinder.gov.bc.ca/api/v1/token\nuserName\t\t\t:\tCP0001219\npassCode\t\t\t:\t<Pass code>\n",
+		"description": "version=1.0.0\n\nBelow are the environment variables needed to run this collection with example value from DEV environment; \n\npay-api-base-url\t:\thttps://pay-api-dev.pathfinder.gov.bc.ca\ntokenUrl\t\t\t:\thttps://auth-api-dev.pathfinder.gov.bc.ca/api/v1/token\nuserName\t\t\t:\tCP0002098\npassCode\t\t\t:\t<Pass code>\n",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -29,10 +29,6 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/fees/CP/OTADR",
 					"host": [
@@ -86,7 +82,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"cp0001219\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
+					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"cp0002098\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
 				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/payment-requests",
@@ -288,7 +284,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"cp0001219\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
+					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"cp0002098\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
 				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}",
@@ -424,10 +420,6 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/transactions/{{transaction-identifier}}",
 					"host": [
@@ -603,7 +595,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"cp0001219\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
+					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"cp0002098\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
 				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}",
@@ -663,10 +655,6 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/status/PAYBC",
 					"host": [
@@ -804,5 +792,6 @@
 				]
 			}
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }

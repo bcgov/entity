@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="coops.ar"
+    errors="1" failures="0" hostname="" id="" package="coops" skipped="18"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+
+  
+    
+    <testcase
+      name="Signin" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Enter Business Contact Info" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verify initial state of dashboard, then start AR filing" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Confirm initial state of Annual Report" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Edit the Office Addresses" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Appoint a Director" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Certify who filed" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Save draft and resume later" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Resume draft from Dashboard" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verify draft resumed correctly then return to dashoard" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Delete draft" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Start AR filing after deleting draft" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Confirm initial state of Annual Report - POST DRAFT" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Edit the Office Addresses - POST DRAFT" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Appoint a Director - POST DRAFT" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Certify who filed - POST DRAFT" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="PayBC" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verify Dashboard after filing" classname="coops.ar">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
