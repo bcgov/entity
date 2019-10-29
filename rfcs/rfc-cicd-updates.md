@@ -113,14 +113,6 @@ A discussion could be had around the order of these two environments. Does it ma
 
 The emphasis should be ensuring that we can promote the newly developed features (frequently) into an environment applicable for running `NightWatch`, `Postman/Newman` and any other automated testing tools to help in quality assurance of the product.
 
-# RFC - Updates to Support CI/CT/CDe
-
-
-## Problems that need to be solved
-
-  - Need to be able to spin up new environments with ease
-  - Need to be able to specify a branch to build the environment from
-  - Need to be able to seed/reseed the environment with any data that is required.
 
 # Detailed Design (REVISED)
 
