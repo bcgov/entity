@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="POC.paybc"
+    errors="1" failures="0" hostname="" id="" package="POC" skipped="5"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+
+  
+    
+    <testcase
+      name="Coops Login" classname="POC.paybc">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Coops Dasboard to COD" classname="POC.paybc">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="File and Pay" classname="POC.paybc">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="PayBC" classname="POC.paybc">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Confirm Filing Completes" classname="POC.paybc">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

@@ -1,19 +1,21 @@
 module.exports = {
-  '@tags': ['coops'],
+  '@tags': ['ar','single'],
 
   'Signin': function (browser) {
     browser
       .url(browser.globals.launch_url)
-      .waitForElementVisible('#input-17')
-      .setValue('#input-17', browser.globals.CP0000977.identifier)
-      .waitForElementVisible('#input-20')
-      .setValue('#input-20', browser.globals.CP0000977.passcode)
+      .useXpath()
+      .waitForElementVisible('/html/body/div/div/div[2]/div/div/article/div/div/div/form/div[2]/div/div[1]/div/input')
+      .setValue('/html/body/div/div/div[2]/div/div/article/div/div/div/form/div[2]/div/div[1]/div/input', browser.globals.CP0000977.identifier)
+      .waitForElementVisible('/html/body/div/div/div[2]/div/div/article/div/div/div/form/div[3]/div/div[1]/div[1]/input')
+      .setValue('/html/body/div/div/div[2]/div/div/article/div/div/div/form/div[3]/div/div[1]/div[1]/input', browser.globals.CP0000977.passcode)
+      .useCss()
       .waitForElementVisible('button.sign-in-btn')
       .click('button.sign-in-btn')
-      .assert.urlEquals(browser.globals.launch_url + '/auth/businessprofile');
+     // .assert.urlEquals(browser.globals.launch_url + '/auth/businessprofile');
   },
 
-  'Enter Business Contact Info': function (browser) {
+ /* 'Enter Business Contact Info': function (browser) {
     browser
       .waitForElementVisible('#input-42')
       .setValue('#input-42', 'test.outputs@gov.bc.ca')
@@ -26,7 +28,7 @@ module.exports = {
       .assert.cssClassNotPresent('//*[@id="app"]/div/div[2]/div/div/article/div/div/div/form/div[5]/div/button[2]/span/span', 'v-btn--disabled')
       .click('//*[@id="app"]/div/div[2]/div/div/article/div/div/div/form/div[5]/div/button[2]/span/span');
         
-},
+},*/
 
   'Verify initial state of dashboard, then start AR filing': function (browser) {
     dashboard = browser.page.dashboardPage();
@@ -53,7 +55,7 @@ module.exports = {
     ArPage.fillInAddressField(ArPage.elements.officeDeliveryCity.selector, 'Victoria', browser);
     ArPage.fillInAddressField(ArPage.elements.officeDeliveryPostalCode.selector, 'V8V 4K9', browser);
     ArPage.fillInAddressField(ArPage.elements.officeDeliveryCountry.selector, 'CANADA', browser);
-    ArPage.click('@sameAsDeliveryButton');
+    //ArPage.click('@sameAsDeliveryButton');
     ArPage.moveToElement('@updateAddressesButton', 5, 5);
     ArPage.click('@updateAddressesButton');
     ArPage.checkFeeCount(2);
@@ -144,7 +146,7 @@ module.exports = {
     ArPage.fillInAddressField(ArPage.elements.officeDeliveryCity.selector, 'Victoria', browser);
     ArPage.fillInAddressField(ArPage.elements.officeDeliveryPostalCode.selector, 'V8V 4K9', browser);
     ArPage.fillInAddressField(ArPage.elements.officeDeliveryCountry.selector, 'CANADA', browser);
-    ArPage.click('@sameAsDeliveryButton');
+   // ArPage.click('@sameAsDeliveryButton');
     ArPage.moveToElement('@updateAddressesButton', 5, 5);
     ArPage.click('@updateAddressesButton');
     ArPage.checkFeeCount(2);

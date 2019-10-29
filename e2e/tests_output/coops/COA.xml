@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="coops.COA"
+    errors="1" failures="0" hostname="" id="" package="coops" skipped="16"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+
+  
+    
+    <testcase
+      name="Signin" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Enter Business Contact Info" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verify initial state of dashboard, then start COA filing" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Confirm initial state of COA filing" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Edit the Office Addresses" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Certify who filed" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Save draft and resume later" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Resume draft from Dashboard" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verify draft resumed correctly then return to dashoard" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Delete draft" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Start COA filing after deleting draft" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Confirm initial state of COA filing - POST DRAFT" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Edit the Office Addresses - POST DRAFT" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Certify who filed - POST DRAFT" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="PayBC" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verify Dashboard after filing" classname="coops.COA">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
