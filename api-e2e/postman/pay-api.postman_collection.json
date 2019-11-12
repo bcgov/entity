@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "4065b799-832d-44d3-b219-00e8757de07b",
-		"name": "pay-api",
+		"_postman_id": "0c7cbf4c-f36d-4a2e-9b5a-75c8efa89866",
+		"name": "pay-api copy",
 		"description": "version=1.0.0\n\nBelow are the environment variables needed to run this collection with example value from DEV environment; \n\npay-api-base-url\t:\thttps://pay-api-dev.pathfinder.gov.bc.ca\ntokenUrl\t\t\t:\thttps://auth-api-dev.pathfinder.gov.bc.ca/api/v1/token\nuserName\t\t\t:\tCP0002098\npassCode\t\t\t:\t<Pass code>\n",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -29,6 +29,10 @@
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/fees/CP/OTADR",
 					"host": [
@@ -420,6 +424,10 @@
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/transactions/{{transaction-identifier}}",
 					"host": [
@@ -611,115 +619,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "Get Service Downtime Status",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "3355ed3b-4d14-4e1d-85e5-4ca3dbc79115",
-						"exec": [
-							"pm.test(\"Response time is less than 5000ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(5000);",
-							"});",
-							"",
-							"pm.test(\"response is ok\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
-							"pm.test(\"response should be okay to process\", function () { ",
-							"    pm.response.to.not.be.error; ",
-							"    //pm.response.to.have.jsonBody(\"\"); ",
-							"    pm.response.to.not.have.jsonBody(\"error\"); ",
-							"});",
-							"",
-							"pm.test(\"response must be valid and have a body\", function () {",
-							"     // assert that the status code is 200",
-							"     pm.response.to.be.ok; // info, success, redirection, clientError,  serverError, are other variants",
-							"     // assert that the response has a valid JSON body",
-							"     pm.response.to.be.withBody;",
-							"     pm.response.to.be.json; // this assertion also checks if a body  exists, so the above check is not needed",
-							"});",
-							"",
-							"pm.test(\"Verify payload\",  () => {",
-							"    pm.expect(pm.response.text()).to.include(\"service\");",
-							"    pm.expect(pm.response.text()).to.include(\"current_status\");",
-							"    pm.expect(pm.response.text()).to.not.include(\"service_name\");",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{pay-api-base-url}}/api/v1/status/PAYBC",
-					"host": [
-						"{{pay-api-base-url}}"
-					],
-					"path": [
-						"api",
-						"v1",
-						"status",
-						"PAYBC"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POC  - BCOL - Verify User",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "cf9bc42e-7943-4c77-a6d5-8ca64cee8732",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"userId\":\"pc25020\",\n\t\"userKey\":\"3065\"\n}"
-				},
-				"url": {
-					"raw": "{{pay-api-base-url}}/api/v1/bcol/accounts/180670/users/pb25020",
-					"host": [
-						"{{pay-api-base-url}}"
-					],
-					"path": [
-						"api",
-						"v1",
-						"bcol",
-						"accounts",
-						"180670",
-						"users",
-						"pb25020"
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"auth": {
@@ -792,6 +691,5 @@
 				]
 			}
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
