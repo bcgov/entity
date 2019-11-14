@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "83628d32-73b0-455c-aed6-3d733730d8fd",
+		"name": "BCOL API",
+		"description": "This collection needs below variables in environment. Examples provided below with values from dev.\n\nbcol-api-base-url\t:\thttps://bcol-api-dev.pathfinder.gov.bc.ca\ntokenUrl\t\t\t:\thttps://auth-api-dev.pathfinder.gov.bc.ca/api/v1/token\nuserName\t\t\t:\t<Token User Name>\npassCode\t\t\t:\t<Token Pass Code>\nbcol-user-id\t\t:\t<BCOL User ID>\nbcol-password\t\t:\t<BCOL User Password>\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Verify Profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4a844b17-1107-4b1f-bbf9-c7654aba950a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"{{bcol-user-id}}\",\n    \"password\": \"{{bcol-password}}\"\n}"
+				},
+				"url": {
+					"raw": "{{bcol-api-base-url}}/api/v1/profiles",
+					"host": [
+						"{{bcol-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"feeCode\": \"BSH105\",\n\t\"userId\": \"PB25020\",\n\t\"invoiceNumber\": \"TEST1234567890\",\n\t\"folioNumber\": \"TEST1234567890\",\n\t\"formNumber\": \"\",\n\t\"quantity\": \"\",\n\t\"rate\": \"\",\n\t\"amount\": \"\",\n\t\"remarks\": \"TEST\",\n\t\"reduntantFlag\": \" \"\n}"
+				},
+				"url": {
+					"raw": "{{bcol-api-base-url}}/api/v1/payments",
+					"host": [
+						"{{bcol-api-base-url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "{{accessToken}}",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "f656be18-5b62-441d-9b82-398b92935656",
+				"type": "text/javascript",
+				"exec": [
+					"function getvar(variableName) {",
+					"    let value = pm.variables.get(variableName);",
+					"    if (!value) throw new Error(",
+					"        `Variable '${variableName}' is not defined.`);",
+					"    return value;",
+					"}",
+					"",
+					"let tokenUrl = getvar('tokenUrl');",
+					"let userName = getvar('userName');",
+					"let passCode = getvar('passCode');",
+					"",
+					"let getTokenRequest = {",
+					"    method: 'POST',",
+					"    url: tokenUrl,",
+					"    header: {",
+					"        'content-type': 'application/json'",
+					"    },",
+					" ",
+					"    body: {",
+					"        mode: 'raw',",
+					"        raw: JSON.stringify({ \"username\": userName, \"password\": passCode })",
+					"    }",
+					"    ",
+					"};",
+					"",
+					"pm.sendRequest(getTokenRequest, (err, response) => {",
+					"    let jsonResponse = response.json(),",
+					"        newAccessToken = jsonResponse.access_token;",
+					"",
+					"    console.log({ err, jsonResponse, newAccessToken })",
+					"",
+					"    pm.environment.set('accessToken', newAccessToken);",
+					"    pm.variables.set('accessToken', newAccessToken);",
+					"});",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "caf6d643-5cc9-434b-967d-9eb0cf595396",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
