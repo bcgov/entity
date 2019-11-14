@@ -1,7 +1,9 @@
 {
 	"info": {
 		"_postman_id": "8ee23609-fbbd-4d0c-ade9-9ea3355b92fd",
-		"name": "auth-api"
+		"name": "sso",
+		"description": "Endpoint samples to create an user using KeyCloak REST Admin API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -2314,6 +2316,5 @@
 				]
 			}
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
