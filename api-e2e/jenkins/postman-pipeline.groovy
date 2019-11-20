@@ -137,7 +137,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                     stage("Running ${name} pm tests") {
                         try {
                             echo "Running ${name} pm collection"
-                            def url = ""
+                            //def url = ""
                            // def url_name = "url"
                             if (name== 'auth-api'){
                                 url= "http://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
