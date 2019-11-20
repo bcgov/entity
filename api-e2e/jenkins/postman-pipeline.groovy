@@ -44,7 +44,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         command: '',
         args: '${computer.jnlpmac} ${computer.name}',
         echo: "check envVar"
-        envVars: [
+        envVars:([
             secretEnvVar(key: 'AUTHURL', secretName: "postman-e2e-secret", secretKey: 'authurl'),
             secretEnvVar(key: 'REALM', secretName: "postman-e2e-secret", secretKey: 'realm'),
             secretEnvVar(key: 'PASSWORD', secretName: "postman-e2e-secret", secretKey: 'password'),
@@ -80,8 +80,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             secretEnvVar(key: 'USER_EMAIL',secretName: "postman-e2e-secret",secretKey: 'user_email'),
             secretEnvVar(key: 'WEBCLIENTID',secretName: "postman-e2e-secret",secretKey: 'webClientId'),
             secretEnvVar(key: 'WEBCLIENTSECRET',secretName: "postman-e2e-secret",secretKey: 'webClientSecret')
-            
-        ]
+        ])
     )
 ])
 {
