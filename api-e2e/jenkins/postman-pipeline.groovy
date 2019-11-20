@@ -21,7 +21,7 @@
 
 // define constants
 // set from call
-def COMPONENTS = [sso,legal-api,colin-api,pay-api]
+def COMPONENTS = [auth-api,legal-api,colin-api,pay-api]
 def COMPONENT_TAG = 'e2e'
 def NAMESPACE = 'd7evoc'
 
@@ -139,7 +139,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                             echo "Running ${name} pm collection"
                             def url = ""
                            // def url_name = "url"
-                            if (name== '''sso'''){
+                            if (name== 'auth-api'){
                                 url= "http://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
                                // url_name= "api_url"
                             }
