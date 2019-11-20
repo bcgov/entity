@@ -50,7 +50,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             secretEnvVar(key: 'PASSWORD', secretName: "postman-e2e-secret", secretKey: 'password'),
             secretEnvVar(key: 'CLIENT_SECRET', secretName: "postman-e2e-secret", secretKey: 'clientSecret'),
             secretEnvVar(key: 'USERID', secretName: "postman-e2e-secret", secretKey: 'userid'),
-            secretEnvVar(key: 'CLIENTID', secretName: "postman-e2e-secret", secretKey: 'clientid'),
+            secretEnvVar(key: 'CLIENTID', secretName: "postman-e2e-secret", secretKey: 'clientId'),
             secretEnvVar(key: 'TOKENURL', secretName: "postman-e2e-secret", secretKey: 'tokenUrl'),
             secretEnvVar(key: 'USERNAME', secretName: "postman-e2e-secret", secretKey: 'userName'),
             secretEnvVar(key: 'PASSCODE', secretName: "postman-e2e-secret", secretKey: 'passCode'),
