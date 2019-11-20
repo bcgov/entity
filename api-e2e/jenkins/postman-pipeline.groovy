@@ -43,6 +43,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         workingDir: '/tmp',
         command: '',
         args: '${computer.jnlpmac} ${computer.name}',
+        echo: ""check for envVar""
         envVars: [
             secretEnvVar(key: 'AUTHURL', secretName: "postman-e2e-secret", secretKey: 'authurl'),
             secretEnvVar(key: 'REALM', secretName: "postman-e2e-secret", secretKey: 'realm'),
