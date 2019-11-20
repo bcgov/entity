@@ -146,7 +146,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                             else if (name == 'colin-api') {
                                 url = "http://${name}-${COMPONENT_TAG}.${NAMESPACE}.svc:8080"
                             }
-                             else if(name=='legal-api') {
+                            else if(name=='legal-api') {
                                 url = "https://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
                             }
                             else{
