@@ -139,7 +139,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                             echo "Running ${name} pm collection"
                             def url = ""
                            // def url_name = "url"
-                            if (name== 'sso'){
+                            if (name== '''sso'''){
                                 url= "http://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
                                // url_name= "api_url"
                             }
