@@ -21,9 +21,9 @@
 
 // define constants
 // set from call
-def COMPONENTS = components
-def COMPONENT_TAG = component_tag
-def NAMESPACE = namespace
+def COMPONENTS = [sso,legal-api,colin-api,pay-api]
+def COMPONENT_TAG = 'e2e'
+def NAMESPACE = 'd7evoc'
 
 // constant
 def TESTS_PATH = 'api-e2e/postman'
