@@ -149,7 +149,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                             else if(name=='legal-api') {
                                 url = "https://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
                             }
-                            else{
+                            else if(name=='pay-api') {
                                 url = "https://${name}-${COMPONENT_TAG}.pathfinder.gov.bc.ca"
                             }
 
