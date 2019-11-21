@@ -15,7 +15,7 @@ about: Describe a feature that will be estimated and considered for implementati
 
 
 Ready to Build (DoR):
-- [ ] Have Stakeholders have approved this story?
+- [ ] Have Stakeholders approved this story?
 - [ ] Does User story have full flow of business rules, happy and alternate paths etc. ?
 - [ ] Are the dependies known/understood?
 - [ ] Are the validation rules defined? (UI, Data, Role-Action)
