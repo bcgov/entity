@@ -131,8 +131,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             COLIN_ID:${COLIN_ID} \
             WEBCLIENTSECRET:${WEBCLIENTSECRET}\
             AREVENTID:${AREVENTID}\
-            AREXTRAEVENTID:${AREXTRAEVENTID}
-            
+            AREXTRAEVENTID:${AREXTRAEVENTID}\
             """
             checkout scm
 
