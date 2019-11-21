@@ -45,7 +45,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         args: '${computer.jnlpmac} ${computer.name}',
         echo: "check envVar",
         envVars:([
-           // secretEnvVar(key: 'AUTH_URL', secretName: "postman-e2e-secret", secretKey: 'auth_url'),
+            secretEnvVar(key: 'AUTH_URL', secretName: "postman-e2e-secret", secretKey: 'auth_url'),
             secretEnvVar(key: 'REALM', secretName: "postman-e2e-secret", secretKey: 'realm'),
             secretEnvVar(key: 'PASSWORD', secretName: "postman-e2e-secret", secretKey: 'password'),
             secretEnvVar(key: 'CLIENT_SECRET', secretName: "postman-e2e-secret", secretKey: 'clientSecret'),
@@ -87,6 +87,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
     node(py3nodejs_label) {
         script {
             echo """
+            AUTHURL:${AUTHURL} \
             REALM:${REALM} \
             USERID:${USERID} \
             PASSWORD:${PASSWORD} \
@@ -153,7 +154,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                             }
 
                             sh """./node_modules/newman/bin/newman.js run ./${name}.postman_collection.json \
-                            --global-var ${url_name}=${url} --global-var realm=${REALM} \
+                            --global-var ${url_name}=${url}   --global-var auth_url=${AUTH_URL} --global-var realm=${REALM} \
                             --global-var password=${PASSWORD} --global-var clientSecret=${CLIENT_SECRET} \
                             --global-var userid=${USERID} --global-var clientId=${CLIENTID} \
                             --global-var pay-api-base-url=${PAY-API-BASE-URL} --global-var tokenUrl=${TOKENURL} \
