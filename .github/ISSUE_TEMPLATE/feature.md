@@ -15,15 +15,15 @@ about: Describe a feature that will be estimated and considered for implementati
 
 
 Ready to Build (DoR):
-- [ ] Stakeholders have approved
-- [ ] User story completed (full flow of business rules, happy and alternate paths etc.)
+- [ ] Have Stakeholders have approved this story?
+- [ ] Does User story have full flow of business rules, happy and alternate paths etc. ?
 - [ ] Are the dependies known/understood?
 - [ ] Are the validation rules defined? (UI, Data, Role-Action)
-- [ ] Is a formal UAT required?
-- [ ] Are the acceptance criteria well defined in tickets (Story level) that QA can confirm or deny?
+- [ ] Is a formal UAT required for this user story?
+- [ ] Are the acceptance criteria well defined in this ticket (Story level) that QA can confirm or deny ?
 - [ ] Does user story need to reference BA checklist? ( are functional/Non functional descriptions captured ?)
 - [ ] The person who accepts the user story is identified? (PO)
-- [ ] User story can be sized be the Dev. team
+- [ ] User story can be sized be the Dev. team ?
 - [ ] Can User story be demoed to show value?
 - [ ] Is this user story small enough to be completed in a sprint?
 
