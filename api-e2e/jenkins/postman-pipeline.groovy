@@ -155,7 +155,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                             sh """./node_modules/newman/bin/newman.js run ./${name}.postman_collection.json \
                             --global-var ${url_name}=${url} --global-var realm=${REALM} \
                             --global-var password=${PASSWORD} --global-var clientSecret=${CLIENT_SECRET} \
-                            --global-var userid=${USERID} --global-var clientid=${CLIENTID} \
+                            --global-var userid=${USERID} --global-var clientId=${CLIENTID} \
                             --global-var pay-api-base-url=${PAY-API-BASE-URL} --global-var tokenUrl=${TOKENURL} \
                             --global-var userName=${USERNAME} --global-var passCode=${PASSCODE} \
                             --global-var arEventId=${AREVENTID} --global-var arExtraEventId=${AREXTRAEVENTID} \
