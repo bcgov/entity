@@ -29,9 +29,9 @@ Ready to Build, Story level (DoR):
 - [ ] Is a formal UAT required for this user story?
 - [ ] Are the acceptance criteria well defined in this ticket (Story level) that QA can confirm or deny ?
 - [ ] Does user story need to reference BA checklist? ( are functional/Non functional descriptions captured ?)
-- [ ] The person who accepts the user story is identified? (PO)
-- [ ] User story can be sized be the Dev. team ?
-- [ ] Can User story be demoed to show value?
+- [ ] Is the person who accepts this user story as complete identified? (PO)
+- [ ] Can this User story be sized by the Dev. team ?
+- [ ] Can this User story be demoed to show value?
 - [ ] Is this user story small enough to be completed in a sprint?
 
 
