@@ -79,7 +79,12 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             secretEnvVar(key: 'URL',secretName: "postman-e2e-secret",secretKey: 'url'),
             secretEnvVar(key: 'USER_EMAIL',secretName: "postman-e2e-secret",secretKey: 'user_email'),
             secretEnvVar(key: 'WEBCLIENTID',secretName: "postman-e2e-secret",secretKey: 'webClientId'),
-            secretEnvVar(key: 'WEBCLIENTSECRET',secretName: "postman-e2e-secret",secretKey: 'webClientSecret')
+            secretEnvVar(key: 'WEBCLIENTSECRET',secretName: "postman-e2e-secret",secretKey: 'webClientSecret'),
+            secretEnvVar(key: 'AREVENTID',secretName:"postman-e2e-secret",secretKey:'arEventId'),
+            secretEnvVar(key:'AREXTRAEVENTID',secretName:"postman-e2e-secret",secretkey:'arExtraEventId')
+
+            
+
         ])
     )
 ])
@@ -124,7 +129,10 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             DEFAULTGROUP:${DEFAULTGROUP} \
             CORP_NUM:${CORP_NUM} \
             COLIN_ID:${COLIN_ID} \
-            WEBCLIENTSECRET:${WEBCLIENTSECRET}
+            WEBCLIENTSECRET:${WEBCLIENTSECRET}\
+            AREVENTID:${AREVENTID}\
+            AREXTRAEVENTID:${AREXTRAEVENTID}
+            
             """
             checkout scm
 
