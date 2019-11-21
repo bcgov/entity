@@ -21,7 +21,7 @@
 
 // define constants
 // set from call
-def COMPONENTS = ['auth-api','legal-api','colin-api','pay-api']
+def COMPONENTS = ['auth-api','legal-api','colin-api']
 def COMPONENT_TAG = 'e2e'
 def NAMESPACE = 'd7eovc-tools'
 
@@ -64,7 +64,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             secretEnvVar(key: 'CORP_NUM',secretName: "postman-e2e-secret",secretKey:'corp_num'),
             secretEnvVar(key: 'DEFAULTGROUP',secretName: "postman-e2e-secret",secretKey:'defaultGroup'),
             secretEnvVar(key: 'ENTITY_PASSCODE',secretName: "postman-e2e-secret",secretKey:'entity_passcode'),
-            secretEnvVar(key: 'PAY-API-BASE-URL',secretName: "postman-e2e-secret",secretKey: 'pay-api-base-url'),
+            //secretEnvVar(key: 'PAY-API-BASE-URL',secretName: "postman-e2e-secret",secretKey: 'pay-api-base-url'),
             secretEnvVar(key: 'REALM_NAME',secretName: "postman-e2e-secret",secretKey: 'realm_name'),
             secretEnvVar(key: 'SAMPLE_EMAIL',secretName:"postman-e2e-secret",secretKey:'sample_email'),
             secretEnvVar(key: 'SAMPLE_EXTENSION',secretName:"postman-e2e-secret",secretKey:'sample_extension'),
@@ -119,7 +119,6 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             SAMPLE_EXTENSION:${SAMPLE_EXTENSION} \
             SAMPLE_EMAIL:${SAMPLE_EMAIL} \
             REALM_NAME:${REALM_NAME} \
-            PAY-API-BASE-URL:${PAY-API-BASE-URL} \
             PASSCODE:${PASSCODE} \
             ENTITY_PASSCODE:${ENTITY_PASSCODE} \
             DEFAULTGROUP:${DEFAULTGROUP} \
