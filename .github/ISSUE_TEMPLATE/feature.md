@@ -17,6 +17,9 @@ Ready for Sprint (DoR)
 - [ ] Do we have a prioritized Sprint backlog?
 - [ ] Defects, user stories and other work the team has committed to are contained in the sprint backlog?
 - [ ] Any hidden work?
+- [ ] All team members availability & capacity is known for the sprint
+- [ ] All users stories meet the definition of Ready
+
 
 Ready to Build, Story level (DoR):
 - [ ] Have Stakeholders approved this story?
