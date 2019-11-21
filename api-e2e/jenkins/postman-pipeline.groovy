@@ -123,7 +123,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             ENTITY_PASSCODE:${ENTITY_PASSCODE} \
             DEFAULTGROUP:${DEFAULTGROUP} \
             CORP_NUM:${CORP_NUM} \
-            COLIN_ID:${COLINID} \
+            COLIN_ID:${COLIN_ID} \
             WEBCLIENTSECRET:${WEBCLIENTSECRET}
             """
             checkout scm
