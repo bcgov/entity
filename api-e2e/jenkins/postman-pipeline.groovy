@@ -87,7 +87,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
     node(py3nodejs_label) {
         script {
             echo """
-            AUTHURL:${AUTHURL} \
+            AUTH_URL:${AUTHURL} \
             REALM:${REALM} \
             USERID:${USERID} \
             PASSWORD:${PASSWORD} \
