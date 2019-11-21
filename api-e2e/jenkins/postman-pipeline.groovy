@@ -156,7 +156,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                             --global-var auth_url=${AUTH_URL} --global-var realm=${REALM} \
                             --global-var password=${PASSWORD} --global-var clientSecret=${CLIENT_SECRET} \
                             --global-var userid=${USERID} --global-var clientId=${CLIENTID} \
-                            --global-var pay-api-base-url=${PAY-API-BASE-URL} --global-var tokenUrl=${TOKENURL} \
+                            --global-var tokenUrl=${TOKENURL} \
                             --global-var userName=${USERNAME} --global-var passCode=${PASSCODE} \
                             --global-var arEventId=${AREVENTID} --global-var arExtraEventId=${AREXTRAEVENTID} \
                             --global-var base_url=${BASE_URL} --global-var business_identifier=${BUSINESS_IDENTIFIER} \
