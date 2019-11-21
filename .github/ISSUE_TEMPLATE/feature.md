@@ -13,8 +13,12 @@ about: Describe a feature that will be estimated and considered for implementati
 
 **Validation Rules**
 
+Ready for Sprint (DoR)
+- [ ] Do we have a prioritized Sprint backlog?
+- [ ] Defects, user stories and other work the team has committed to are contained in the sprint backlog?
+- [ ] Any hidden work?
 
-Ready to Build (DoR):
+Ready to Build, Story level (DoR):
 - [ ] Have Stakeholders approved this story?
 - [ ] Does User story have full flow of business rules, happy and alternate paths etc. ?
 - [ ] Are the dependies known/understood?
