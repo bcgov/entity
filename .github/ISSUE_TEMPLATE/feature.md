@@ -25,6 +25,7 @@ Ready to Build, Story level (DoR):
 - [ ] Have Stakeholders approved this story?
 - [ ] Does User story have full flow of business rules, happy and alternate paths etc. ?
 - [ ] Are the dependies known/understood?
+- [ ] Dev team accepts user experience artifacts?
 - [ ] Are the validation rules defined? (UI, Data, Role-Action)
 - [ ] Is a formal UAT required for this user story?
 - [ ] Are the acceptance criteria well defined in this ticket (Story level) that QA can confirm or deny ?
