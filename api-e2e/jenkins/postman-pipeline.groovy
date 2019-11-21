@@ -21,7 +21,7 @@
 
 // define constants
 // set from call
-def COMPONENTS = ['auth-api','legal-api','colin-api']
+def COMPONENTS = ["auth-api legal-api colin-api"]
 def COMPONENT_TAG = 'e2e'
 def NAMESPACE = 'd7eovc-tools'
 
