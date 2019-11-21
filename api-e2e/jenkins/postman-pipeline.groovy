@@ -132,7 +132,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                 all_passed = true
                 failed_components = ''
                 sh 'npm install newman'
-                for (name in COMPONENTS.split()) {
+                for (name in COMPONENTS.split('')) {
                     stage("Running ${name} pm tests") {
                         try {
                             echo "Running ${name} pm collection"
