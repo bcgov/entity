@@ -13,7 +13,7 @@ about: Describe a feature that will be estimated and considered for implementati
 
 **Validation Rules**
 
-Ready for Sprint (DoR)
+  Sprint level Definition of Ready
 - [ ] Do we have a prioritized Sprint backlog?
 - [ ] Defects, user stories and other work the team has committed to are contained in the sprint backlog?
 - [ ] Any hidden work?
@@ -21,7 +21,7 @@ Ready for Sprint (DoR)
 - [ ] All users stories meet the definition of Ready?
 
 
-Ready to Build, Story level (DoR):
+  Definition of Ready:
 - [ ] Have Stakeholders approved this story?
 - [ ] Does User story have full flow of business rules, happy and alternate paths etc. ?
 - [ ] Are the dependies known/understood?
@@ -36,7 +36,7 @@ Ready to Build, Story level (DoR):
 - [ ] Is this user story small enough to be completed in a sprint?
 
 
-Acceptance / DoD:
+  Definition of Done:
 - [ ] PR to remove feature flags created
 - [ ] Check Requirements against completed stories
 - [ ] Completed stories verified in Dev/Test/Prod
@@ -58,3 +58,6 @@ Acceptance / DoD:
 - [ ] UX Approved
 - [ ] PR Accepted
 - [ ] Production burn in completed
+- [ ] Integration testing completed
+
+ 
