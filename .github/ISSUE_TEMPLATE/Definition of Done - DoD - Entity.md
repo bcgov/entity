@@ -1,6 +1,6 @@
 ---	
 name: DOD - Entity
-about: 
+about: DOD - Entity
 
 ---	
 
