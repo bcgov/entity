@@ -1,4 +1,9 @@
-  Story Level Definition of Ready:
+---	
+name: DOR - Entity
+about: DOR - Entity
+
+---	
+Story Level Definition of Ready:
   
 - [ ] Have Stakeholders approved this story?
 - [ ] Does User story have full flow of business rules, happy and alternate paths etc. ?
