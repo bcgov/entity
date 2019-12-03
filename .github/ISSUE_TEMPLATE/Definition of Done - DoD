@@ -1,4 +1,8 @@
-  Story Level Definition of Done:
+---	
+name: DOD - Entity
+---	
+
+Story Level Definition of Done:
 
 - [ ] PR to remove feature flags created
 - [ ] Check Requirements against completed stories
