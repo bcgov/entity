@@ -3,11 +3,14 @@ name: DOD - Relationships
 about: DOD - Relationships
 
 ---	
--[]- Have Stakeholders approved this story?
--[]- Does User story have full flow of business rules, happy and alternate paths etc.?
--[]- Are the dependencies known/understood?
--[]- Dev team accepts user experience artifacts.
--[]- Are the validation rules defined? (UI, Data, Role-Action)
--[]- Can the associated tasks be sized by the Dev. team?
--[]- Can this User story be demoed to show value?
--[]- Is this user story small enough to be completed in a sprint?
+-[]- Check Requirements against completed tasks
+-[]- Completed stories verified in Dev/Test/Prod
+-[]- Confirm Test cases built and succeeding 
+-[]- No regression test failures
+-[]- Linters passed (Task level)
+-[]- Test coverage acceptable by Product owner
+-[]- Ticket merged to master or story branch
+-[]- Add / maintain selectors for QA purposes
+-[]- Developer to list Config changes/ Update documents and designs
+-[]- Design / Solution accepted by Product Owner
+-[]- UX Approved
