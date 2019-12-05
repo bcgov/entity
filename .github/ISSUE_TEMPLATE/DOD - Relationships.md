@@ -14,3 +14,4 @@ about: DOD - Relationships
 - [ ] Developer to list Config changes/ Update documents and designs
 - [ ] Design / Solution accepted by Product Owner
 - [ ] UX Approved
+- [ ] Integration testing completed	
