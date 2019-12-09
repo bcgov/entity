@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "0c7cbf4c-f36d-4a2e-9b5a-75c8efa89866",
 		"name": "pay-api",
-		"description": "version=1.0.0\n\nBelow are the environment variables needed to run this collection with example value from DEV environment; \n\npay-api-base-url\t:\thttps://pay-api-dev.pathfinder.gov.bc.ca\ntokenUrl\t\t\t:\thttps://auth-api-dev.pathfinder.gov.bc.ca/api/v1/token\nuserName\t\t\t:\tCP0002098\npassCode\t\t\t:\t<Pass code>\n",
+		"description": "version=1.0.0\n\nBelow are the environment variables needed to run this collection with example value from DEV environment; \n\npay-api-base-url\t:\thttps://pay-api-dev.pathfinder.gov.bc.ca\ntoken-url\t\t\t:\thttps://sso-dev.pathfinder.gov.bc.ca/auth/realms/fcf0kpqr/protocol/openid-connect/token\nservice-account-id\t:\tregistries-public-user-test OR registries-staff-test\nservice-account-secret:\t<Secret>\n",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -86,7 +86,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"cp0002098\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
+					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"CP0001405\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
 				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/payment-requests",
@@ -288,7 +288,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"cp0002098\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
+					"raw": "{\n  \"paymentInfo\": {\n    \"methodOfPayment\": \"CC\"\n  },\n  \"businessInfo\": {\n    \"businessIdentifier\": \"CP0001405\",\n    \"corpType\": \"CP\",\n    \"businessName\": \"ABC Corp\",\n    \"contactInfo\": {\n      \"city\": \"Victoria\",\n      \"postalCode\": \"V8P2P2\",\n      \"province\": \"BC\",\n      \"addressLine1\": \"100 Douglas Street\",\n      \"country\": \"CA\"\n    }\n  },\n  \"filingInfo\": {\n    \"filingTypes\": [\n      {\n        \"filingTypeCode\": \"OTADD\",\n    \t\"filingDescription\":\"TEST\"\n      },\n      {\n        \"filingTypeCode\": \"OTANN\"\n      }\n    ]\n  }\n}"
 				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}",
@@ -329,13 +329,20 @@
 			],
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": ""
+					"raw": "{\n\t\"clientSystemUrl\": \"https://dev.bcregistry.ca/cooperatives/dashboard?filing_id=12345\",\n\t\"payReturnUrl\": \"http://localhost:8081\"\n}"
 				},
 				"url": {
-					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/transactions?redirect_uri=https%3A%2F%2Fcoops.pathfinder.gov.bc.ca%2Fdashboard",
+					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/transactions",
 					"host": [
 						"{{pay-api-base-url}}"
 					],
@@ -345,12 +352,6 @@
 						"payment-requests",
 						"{{payment-identifier}}",
 						"transactions"
-					],
-					"query": [
-						{
-							"key": "redirect_uri",
-							"value": "https%3A%2F%2Fcoops.pathfinder.gov.bc.ca%2Fdashboard"
-						}
 					]
 				}
 			},
@@ -463,10 +464,17 @@
 			],
 			"request": {
 				"method": "PATCH",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": ""
+					"raw": "{}"
 				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/transactions/{{transaction-identifier}}",
@@ -583,8 +591,8 @@
 					"script": {
 						"id": "918c0676-e75b-4dcf-a26c-bbe105b1b2e9",
 						"exec": [
-							"pm.test(\"Status code is 204\", function () {",
-							"    pm.response.to.have.status(204);",
+							"pm.test(\"Status code is 202\", function () {",
+							"    pm.response.to.have.status(202);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -650,21 +658,19 @@
 					"    return value;",
 					"}",
 					"",
-					"let tokenUrl = getvar('tokenUrl');",
-					"let userName = getvar('userName');",
-					"let passCode = getvar('passCode');",
+					"let tokenUrl = getvar('token-url');",
+					"let accountId = getvar('service-account-id');",
+					"let accountSecret = getvar('service-account-secret');",
 					"",
 					"let getTokenRequest = {",
 					"    method: 'POST',",
 					"    url: tokenUrl,",
 					"    header: {",
-					"        'content-type': 'application/json'",
+					"        'content-type': 'application/x-www-form-urlencoded',",
+					"        'Authorization': 'Basic '+ btoa(accountId+':'+accountSecret)",
 					"    },",
 					" ",
-					"    body: {",
-					"        mode: 'raw',",
-					"        raw: JSON.stringify({ \"username\": userName, \"password\": passCode })",
-					"    }",
+					"    body: 'grant_type=client_credentials'",
 					"    ",
 					"};",
 					"",
