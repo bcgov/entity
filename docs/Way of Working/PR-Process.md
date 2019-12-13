@@ -1,4 +1,4 @@
-The team agreed on Dec. 11 on the following process for PR´s:
+**The team agreed on Dec. 11 on the following process for PR´s**:
 
 1.	2 Assignees, any no. of reviewers 
   1.1 Assignees must approve 
