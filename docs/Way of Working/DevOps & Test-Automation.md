@@ -21,6 +21,11 @@ Environments
 Monitoring 
 
 
+**EPICS:**
+https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2144
+
+
+
 **Next Steps & Actions identified:** 
 - [x] Sprint 20: Workshop w. Roland (Thor) - story created:   #2148
 - [ ] Sprint 20: SRE DevOps Assessment (Thor) --- Recommendations and tickets to our backlog. 
