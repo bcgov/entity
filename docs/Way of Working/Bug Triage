@@ -1,0 +1,9 @@
+Bug Triage for all teams
+
+**Steps:**
+1. QA raise a Bug, link it to the Story and assigns to a BA 
+2. BA analyses the Bug - what impact, risk or dependency etc. 
+3. BA discuss with PO about "Priority" 
+4. PO make final decision: a) bring into current Sprint or b) put in Backlog 
+
+
