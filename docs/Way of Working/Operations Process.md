@@ -7,4 +7,3 @@ Exptected Outcome/ Goal:
 2. Post to "registries" 
    - someone from each team has to monitor registries channel 
 3. Email SPC IT Operations Support 
-
