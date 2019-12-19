@@ -4,6 +4,7 @@ about: DoR - Relationships
 
 ---
 
+- [ ] User Story 
 1.	User Story 
    a) Does User Story have full flow of business rules, happy and alternate paths, etc.?
    b) Include requirements & expected behavior
