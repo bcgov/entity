@@ -8,13 +8,13 @@
 4.	PR doesn´t get assigned, if int or unit tests fail 
 
 
----
+
 **PR-Process Assets Team**
 (1) @mention the reviewers on rocket
 (2) chat and include a link to the PR
 (3) It should be reviewed within an hour
 (3) We've been reviewing in 5-10 minutes
----
+
 
 
 ---
