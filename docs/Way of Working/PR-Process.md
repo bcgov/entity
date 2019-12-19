@@ -1,5 +1,4 @@
 **PR Process for Entities Team**
-
 **The team agreed on Dec. 11 on the following process for PR´s**:
 
 1.	2 Assignees, any no. of reviewers 
@@ -8,4 +7,19 @@
 2.	Check-in/ ask for update/ mention the PR in our Daily Scrum
 3.	Assignees will review within 2 days 
 4.	PR doesn´t get assigned, if int or unit tests fail 
+
+
+
+**PR-Process Assets Team**
+@mention the reviewers on rocket
+chat and include a link to the PR
+It should be reviewed within an hour
+We've been reviewing in 5-10 minutes
+
+
+
+**PR Process for Team Relationships**
+1) Assign any no. of reviewers 
+2) At least two assignees must approve 
+3) Communicate in RocketChat in channel "relationships-developers"
 
