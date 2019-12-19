@@ -11,10 +11,10 @@
 
 
 **PR-Process Assets Team**
-@mention the reviewers on rocket
-chat and include a link to the PR
-It should be reviewed within an hour
-We've been reviewing in 5-10 minutes
+(1) @mention the reviewers on rocket
+(2) chat and include a link to the PR
+(3) It should be reviewed within an hour
+(3) We've been reviewing in 5-10 minutes
 
 
 
