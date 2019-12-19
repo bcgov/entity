@@ -6,7 +6,7 @@
 2.	Check-in/ ask for update/ mention the PR in our Daily Scrum
 3.	Assignees will review within 2 days 
 4.	PR doesn´t get assigned, if int or unit tests fail 
-
+---
 
 
 **PR-Process Assets Team**
