@@ -1,16 +1,17 @@
 ---
 name: Task or Ops
-about: Small tasks that are added to the sprints that requires a change to any repos
+about: Small tasks that are added to the Sprints that requires a change to any repos
 
 ---
-
-### Replace_With_Short_Descriptive_Name
 ## Description:
 
 
-Acceptance / DoD:
-- [ ] Product Owner advised if task >= 1 full-day, or forms part of the business day
+
+Acceptance for a Task:
 - [ ] Requires deployments
+- [ ] Add/ maintain selectors for QA purposes
 - [ ] Test coverage acceptable
+- [ ] Linters passed
 - [ ] Peer Reviewed
+- [ ] PR Accepted
 - [ ] Production burn in completed
