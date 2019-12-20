@@ -1,4 +1,4 @@
-See Epic:   2144
+Based on our discussion 
 *** see also document from John (attachement in Epic as comment) 
 
 I. This Epic is an overview to this topic and includes a description and ideas, from the team and documents such as the recommendations from John Lane. 
@@ -21,8 +21,9 @@ Environments
 Monitoring 
 
 
-**EPICS:**
+**EPICS:** listed we have:
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2144
+
 
 
 
@@ -34,11 +35,8 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 --- Thor to create user stories and link them to this Epic . 
 _----- Thor is working together with Roland Stens and John Lane -----_ 
 
-
-
 ***** Recommendations by John: 
 _John created a document with current status, ideas and recommendations - see attachment in comment._ 
-
 1)	Product Owners  should lead the teams through DevOps self-assessments  at regular intervals. 
 Gaps identified in this review should be discussed and prioritized as part of backlog grooming and sprint planning. 
 2)	Each story must include automated unit and integration tests that run in a pipeline prior to being considered complete. 
@@ -47,6 +45,4 @@ a.	Application usage and traffic (who is using our app and are they successful?)
 b.	# of failed deployments (releases that cause bugs/outages)
 c.	Lead time to production (elapsed time from moving to in progress to being in production)
 d.	Mean time to recovery (How long a bug lives in production)
-
-
 
