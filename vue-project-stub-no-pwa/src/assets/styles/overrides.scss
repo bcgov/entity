@@ -1,0 +1,64 @@
+// Vuetify Overrides
+@import "theme.scss";
+
+// Buttons
+.v-btn {
+  min-width: 0;
+  text-transform: none;
+  font-weight: 500;
+  letter-spacing: normal;
+
+  .v-icon + span,
+  span + .v-icon {
+    margin-left: 0.25rem;
+  }
+}
+
+// Text Inputs
+.v-text-field--box .v-label--active,
+.v-text-field--full-width .v-label--active,
+.v-text-field--outline .v-label--active {
+  transform: translateY(-8px) scale(0.75);
+}
+
+// Dialogs
+.v-dialog {
+  margin: 2rem;
+
+  .v-card {
+    .v-card__title {
+      padding: 1.25rem 1.5rem;
+      color: $BCgovFontColorInverted;
+      background: $BCgovBlue5;
+      font-size: 1.5em;
+      font-weight: 400;
+    }
+
+    .v-card__text {
+      padding: 1.5rem !important;
+      font-weight: 300;
+    }
+
+    .v-card__actions {
+      padding: 1rem;
+    }
+  }
+}
+
+// Expansion Panels
+.v-expansion-panel:before {
+  box-shadow: none;
+}
+
+.v-expansion-panel.align-items-top {
+  .v-expansion-panel-header__icon {
+    align-self: flex-start;
+    margin-top: 0;
+  }
+}
+ 
+.v-expansion-panel-header.no-dropdown {
+  .v-expansion-panel-header__icon{
+    display: none;
+  }
+}
