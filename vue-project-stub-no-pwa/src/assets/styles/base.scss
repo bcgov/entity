@@ -1,0 +1,264 @@
+@import "theme.scss";
+
+@font-face {
+  font-family: 'BCSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/BCSans/BCSans-Regular.woff2') format('woff2'), /* Optimized for very modern browsers */
+       url('../fonts/BCSans/BCSans-Regular.woff') format('woff'); /* Modern Browsers */
+}
+@font-face {
+  font-family: 'BCSans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/BCSans/BCSans-Italic.woff2') format('woff2'), /* Optimized for very modern browsers */
+       url('../fonts/BCSans/BCSans-Italic.woff') format('woff'); /* Modern Browsers */
+}
+@font-face {
+  font-family: 'BCSans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/BCSans/BCSans-Bold.woff2') format('woff2'), /* Modern Browsers */
+       url('../fonts/BCSans/BCSans-Bold.woff') format('woff'); /* Optimized for very modern browsers */
+}
+@font-face {
+  font-family: 'BCSans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/BCSans/BCSans-BoldItalic.woff2') format('woff2'), /* Modern Browsers */
+       url('../fonts/BCSans/BCSans-BoldItalic.woff') format('woff'); /* Optimized for very modern browsers */
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  // default font size (14px)
+  font-size: 0.875rem;
+}
+
+@media (min-width: 960px) {
+  html {
+    // default font size (16px)
+    font-size: 1rem;
+  }
+}
+
+body {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+  color: $gray9;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.04rem;
+  font-weight: 700;
+}
+
+h1 {
+  line-height: 2.25rem;
+  font-size: 2rem;
+}
+
+p {
+  font-weight: 400;
+}
+
+.v-application {
+  font-family: 'BCSans', Verdana, Arial, sans-serif;  // BC Government Font
+}
+
+.theme--light.v-application {
+  color: $gray7;
+  background-color: $gray1;
+}
+
+.form-input {
+  display: flex;
+  border: 1px solid $gray5;
+  width: 10rem;
+
+  .prefix {
+    flex: 0 0 auto;
+    width: 2.5rem;
+    padding: 0.5rem;
+    background-color: $gray1;
+    border-right: 1px solid $gray5;
+    text-align: center;
+  }
+
+  input,
+  select {
+    padding-left: 0.5rem;
+    height: 36px;
+  }
+
+  input {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  select {
+    flex: 1 1 auto;
+    -webkit-appearance: menulist;
+  }
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+// Loading Indicator
+.loading-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 1);
+}
+
+.loading__content {
+  margin-top: -2rem;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.loading-msg {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.fade-out {
+  animation: fadeOut 2s forwards;
+}
+
+// styles for 'fade leave' transition
+// NB: 'fade enter' looks better without transition
+// .fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+// .fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -5;
+  }
+}
+
+// Common
+ul.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  line-height: 1.25rem;
+}
+
+.list-item + .list-item {
+  border-top: 1px solid $gray3;
+}
+
+.list-item__icon {
+  margin-right: 0.5rem;
+}
+
+.list-item__title {
+  font-weight: 700;
+}
+
+.list-item__subtitle {
+  color: $gray6;
+}
+
+.list-item__actions {
+  flex: 0 0 auto;
+  margin-left: auto;
+
+  .v-btn {
+    margin: 0;
+    min-width: 8rem;
+    font-weight: 500;
+  }
+}
+
+// No Results
+.no-results {
+  text-align: center;
+}
+
+.no-results__title {
+  color: $gray8;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.no-results__subtitle {
+  margin-top: 0.25rem;
+  color: $gray6;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.gray6 {
+  color: $gray6;
+}
+
+.genErr {
+  font-size: 0.9rem;
+}
+
+.white-background {
+  background-color: white !important;
+}
+
+// Hides an element to all devices except screen readers
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+// Vue Affix
+.vue-affix {
+  width: 282px;
+}
