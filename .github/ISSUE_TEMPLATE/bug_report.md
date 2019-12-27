@@ -4,6 +4,9 @@ about: Create a report to help us improve
 
 ---
 
+**Impact**
+Describe the impact, i.e. what the impact is, and number of users impacted. 
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
