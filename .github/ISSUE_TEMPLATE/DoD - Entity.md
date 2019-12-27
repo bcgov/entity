@@ -1,10 +1,10 @@
 ---	
-name: DOD - Entity
-about: DOD - Entity
+name: DoD - Entity
+about: DoD - Entity
 
 ---	
 
-Story Level Definition of Done:
+DoD - for all User Stories:
 
 - [ ] PR to remove feature flags created
 - [ ] Check Requirements against completed stories
