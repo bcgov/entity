@@ -6,9 +6,9 @@ about: Describe a feature that will be estimated and considered for implementati
 
 ### Replace_With_Short_Descriptive_Name	
 ## Description:	
-As a (persona)
+As a (type of user)
 I want (goal) 
-so that (reason) 
+so that (reason/ why/ value) 
 
 
 **Dependencies**	
