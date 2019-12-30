@@ -4,13 +4,11 @@ about: DoR - Relationships
 
 ---
 
-1. [ ] User Story 
-   a) Does User Story have full flow of business rules, happy and alternate paths, etc.?
-   b) Include requirements & expected behavior
-2. [ ] Are the dependencies known/ understood?
-3. [ ] Dev team accepts user experience artifacts
-4.	[ ] If there are validation rules, are they defined (UI, Data, Role-Action)?
-5. [ ] Does this User Story needs stakeholder approval?
-6.	[ ] Is this user story small enough to be completed in a Sprint?
-7.	[ ] What do we possible have to do re Change Management? 
-   a) GCPE, …?
+1. [ ] Does User Story have full flow of business rules, happy and alternate paths, etc.?
+2. [ ] Requirements & expected behavior included in the User Story?
+3. [ ] Are the dependencies known/ understood?
+4. [ ] Dev team accepts user experience artifacts
+5.	[ ] If there are validation rules, are they defined (UI, Data, Role-Action)?
+6. [ ] Does this User Story needs stakeholder approval?
+7.	[ ] Is this user story small enough to be completed in a Sprint?
+8.	[ ] What do we possible have to do re Change Management? - a) GCPE, …?
