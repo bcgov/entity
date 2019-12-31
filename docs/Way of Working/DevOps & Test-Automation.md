@@ -1,11 +1,12 @@
 Test-Automation & DevOps Overview and Action Items we derive & execute 
 =============
 
-I. This is an overview and includes a description with ideas, for next few iterations and upcoming few monhts.
-II. Input from team members, observations, and the recommendations from John Lane (link see in then end)
-III. Epics will be created for bigger topics for a few iterations. 
-IV. Action items will be defined as issues in a certain Epic (User Story or task?) (per one issue). 
-V. A story will be pulled into a Sprint to work on it, track the progress and see the progress. 
+* I. This is an overview and includes a description with ideas, for next few iterations and upcoming few monhts.
+* II. Input from team members, observations, and the recommendations from John Lane (link see in then end)
+* III. Epics will be created for bigger topics for a few iterations. 
+* IV. Action items will be defined as issues in a certain Epic (User Story or task?) (per one issue). 
+* V. A story will be pulled into a Sprint to work on it, track the progress and see the progress. 
+
 ----
 
 **Problem:**              
