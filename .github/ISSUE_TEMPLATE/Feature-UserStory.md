@@ -4,25 +4,27 @@ about: Describe a feature that will be estimated and considered for implementati
 
 ---	
 
-### Replace_With_Short_Descriptive_Name	
+### Title: Short descriptive Name (verb + noun)
+
 ## Description:	
-As a (type of user)
-I want (goal) 
-so that (reason/ why/ value) 
+* As a (type of user)
+* I want (goal) 
+* so that (reason/ why/ value) 
 
 
 **Dependencies**	
+- 
 
 **Acceptance Criteria**	
-GIVEN ... (you or your condition)
-WHEN ... (what you do) 
-THEN ... (what you see) 
+* GIVEN ... (you or your condition)
+* WHEN ... (what you do) 
+* THEN ... (what you see) 
 
 
 **Validation Rules**	
 
 
-*DoR for User Story:*	
+**DoR for User Story:**	
 - [ ] Do we have a prioritized Sprint Backlog?	
 - [ ] Defects, user stories and other work the team has committed to are contained in the sprint backlog?	
 - [ ] Any hidden work?	
@@ -30,7 +32,7 @@ THEN ... (what you see)
 - [ ] All users stories meet the DoR?
 
 
-*Definition of Ready:*	
+**Definition of Ready:**	
 1. [ ] Does User Story have full flow of business rules, happy and alternate paths, etc.?
 2. [ ] Requirements & expected behavior included in the User Story?
 3. [ ] Are the dependencies known/ understood?
@@ -42,7 +44,7 @@ THEN ... (what you see)
 
 
 
-*Definition of Done:*
+**Definition of Done:**
 1)	[ ] Check Requirements against completed tasks
 2)	[ ] Completed stories verified in Dev and Test
 3)	[ ] Confirm Test cases built and succeeding 
