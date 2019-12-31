@@ -1,17 +1,13 @@
 ### Test-Automation & DevOps Overview
 
-I. This Epic is an overview to this topic and includes a description and ideas, from the team and documents such as the recommendations from John Lane. 
+I. This doc is an overview to this topic and includes a description and ideas, from the team and documents such as the recommendations from John Lane. 
 II. Action items will be defined as stories (issue). 
 III. A story will be pulled into a Sprint to work on it, track the progress and see the progress. 
 
 **Table of Contents**
-[TOCM]
-[TOC]
-#H1 header
+#H1 
 
 
-Based on our discussion and workshops we : 
-*** see also document from John (attachement in Epic as comment) 
 
 **Problem:**              
 Manual testing: Benefits of a DevOps CI/CD process have been missed - slowing down both teams
@@ -19,34 +15,36 @@ Manual testing: Benefits of a DevOps CI/CD process have been missed - slowing do
 **What we want:**     
 Fast and frequent releases (every Sprint) of quality product, test-automation where possible for faster testing
 
+----
 
-H1 Epics and Timeline
+
+Epics and Timeline
 =============
-**EPICS:** 
-Dec 2019 - Feb 18      https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2144
-Feb 18 - June xx       x add link
+* Dec 2019 - Feb 18   # 2144   https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2144
+* Feb 18 - June xx       x add link
 ... 
 
 
-**_Related and relevant topics (for the next few months and to help create Epics):_**
+----
+Related and relevant topics for the next few months and to help create Epics
+=============
 Monitoring
 CD: How do we want to deploy our environments? - tools etc. 
 Environments
 Test Strategy 
 Test Process 
- 
 
 
-**Next Steps & Actions identified:** 
-- [x] Sprint 20: Workshop w. Roland (Thor) - story created:   #2148
-- [x] Sprint 20: SRE DevOps Assessment (Thor) --- Recommendations and tickets to our backlog. - see tasks created in Epic
-- [ ] Sprint 21: Update DoD to include functional, integration test (Waldemar) 
-- [ ] Sprint 22: Integration testing should be part of a user story/ QA is part of a Scrum Team (Waldemar) 
---- Thor will create user stories and link them to this Epic . 
-_----- Thor is working together with Roland Stens and John Lane -----_ 
+
+----
+
+Background: Input, Workshops & Discussions
+=============
+Based on our discussions and workshops as well as John´s recommendations this overview: 
+*** see also document from John (attachement in Epic as comment) 
 
 
-***** Recommendations by John: 
+**Recommendations by John:**
 _John created a document with current status, ideas and recommendations - see attachment in comment._ 
 1)	Product Owners  should lead the teams through DevOps self-assessments  at regular intervals. 
 Gaps identified in this review should be discussed and prioritized as part of backlog grooming and sprint planning. 
@@ -57,5 +55,17 @@ b.	# of failed deployments (releases that cause bugs/outages)
 c.	Lead time to production (elapsed time from moving to in progress to being in production)
 d.	Mean time to recovery (How long a bug lives in production)
 
+**Document:**
+https://app.zenhub.com/files/157936592/958b20d9-f077-4ca0-aa9c-b42a94cccce1/download
+
+
+----
+**Next Steps & Actions identified:** 
+- [x] Sprint 20: Workshop w. Roland (Thor) - story created:   #2148
+- [x] Sprint 20: SRE DevOps Assessment (Thor) --- Recommendations and tickets to our backlog. - see tasks created in Epic
+- [ ] Sprint 21: Update DoD to include functional, integration test (Waldemar) 
+- [ ] Sprint 22: Integration testing should be part of a user story/ QA is part of a Scrum Team (Waldemar) 
+--- Thor will create user stories and link them to this Epic . 
+_----- Thor is working together with Roland Stens and John Lane -----_ 
 
 
