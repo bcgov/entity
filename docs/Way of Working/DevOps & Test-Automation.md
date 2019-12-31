@@ -1,29 +1,31 @@
-Based on our discussion 
+Based on our discussion: 
 *** see also document from John (attachement in Epic as comment) 
 
 I. This Epic is an overview to this topic and includes a description and ideas, from the team and documents such as the recommendations from John Lane. 
-
 II. Action items will be defined as stories (issue). 
-
 III. A story will be pulled into a Sprint to work on it, track the progress and see the progress. 
 
 **Problem:**              
 Manual testing: Benefits of a DevOps CI/CD process have been missed - slowing down both teams
 
 **What we want:**     
-Frequent releases (every Sprint) of quality product, test-automation where possible for faster testing
+Fast and frequent releases (every Sprint) of quality product, test-automation where possible for faster testing
 
 
-**_Related and relevant topics:_**
+**_Related and relevant topics (for next months):_**
+Monitoring
+CD: How do we want to deploy our environments? - tools etc. 
+Environments
 Test Strategy 
 Test Process 
-Environments 
-Monitoring 
+ 
+ 
 
 
 **EPICS:** listed we have:
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2144
-
+... 
+other?
 
 
 
@@ -35,6 +37,7 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 --- Thor to create user stories and link them to this Epic . 
 _----- Thor is working together with Roland Stens and John Lane -----_ 
 
+
 ***** Recommendations by John: 
 _John created a document with current status, ideas and recommendations - see attachment in comment._ 
 1)	Product Owners  should lead the teams through DevOps self-assessments  at regular intervals. 
@@ -45,4 +48,6 @@ a.	Application usage and traffic (who is using our app and are they successful?)
 b.	# of failed deployments (releases that cause bugs/outages)
 c.	Lead time to production (elapsed time from moving to in progress to being in production)
 d.	Mean time to recovery (How long a bug lives in production)
+
+
 
