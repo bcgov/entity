@@ -24,7 +24,8 @@ Epics and Timeline
 =============
 * Dec 2019 - Feb 18   # 2144   https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2144
 * Feb 18 - June xx       x add link
-... 
+* ... (will be created by Thor in collaboration w. Roland & John Lane) 
+
 ----
 
 **Related and relevant topics for the next few months that to help create Epics and Action Items**
