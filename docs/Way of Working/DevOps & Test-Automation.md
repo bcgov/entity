@@ -44,12 +44,12 @@ Background: Input, Workshops & Discussions
 This overview is based on our discussions and workshops as well as John´s recommendations. 
 
 **John´s Recommendations:**
-+ 1. Product Owners should lead the teams through DevOps Self-Assessments at regular intervals. 
++ (1). Product Owners should lead the teams through DevOps Self-Assessments at regular intervals. 
     Gaps identified in this review should be discussed and prioritized as part of Backlog Grooming and Sprint Planning. 
  
-+ 2. DoD: Each story must include automated unit and integration tests that run in a pipeline prior to being considered complete. 
++ (2). DoD: Each story must include automated unit and integration tests that run in a pipeline prior to being considered complete. 
 
-+ 3. The team (beginning with the Product Owner and Scrum Master) should begin to track certain key metrics related to system/ process health. Here are some good ones to start with:
++ (3). The team (beginning with the Product Owner and Scrum Master) should begin to track certain key metrics related to system/ process health. Here are some good ones to start with:
     + 3.1 Application usage and traffic (who is using our app and are they successful?)
     + 3.2 # of failed deployments (releases that cause bugs/outages)
     + 3.3	Lead time to production (elapsed time from moving to in progress to being in production)
@@ -65,7 +65,7 @@ https://app.zenhub.com/files/157936592/958b20d9-f077-4ca0-aa9c-b42a94cccce1/down
 - [x] Sprint 20: SRE DevOps Assessment (Thor) --- Recommendations and tickets to our backlog. - see tasks created in Epic
 - [ ] Sprint 21: Update DoD to include functional, integration test (Thor w. Scrum Master) 
 - [ ] Sprint 22: Integration testing should be part of a User Story/ QA is part of a Scrum Team (Scrum Master) 
---- We agreed that Thor will create user stories and link them to this Epic . 
-_----- Thor is working together with Roland Stens and John Lane -----_ 
+* We agreed that Thor will create user stories and link them to this Epic.
+* Thor is working together with Roland Stens and John Lane.
 
 
