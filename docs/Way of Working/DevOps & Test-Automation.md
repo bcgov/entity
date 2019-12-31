@@ -1,9 +1,17 @@
-Based on our discussion: 
-*** see also document from John (attachement in Epic as comment) 
+### Test-Automation & DevOps Overview
 
 I. This Epic is an overview to this topic and includes a description and ideas, from the team and documents such as the recommendations from John Lane. 
 II. Action items will be defined as stories (issue). 
 III. A story will be pulled into a Sprint to work on it, track the progress and see the progress. 
+
+**Table of Contents**
+[TOCM]
+[TOC]
+#H1 header
+
+
+Based on our discussion and workshops we : 
+*** see also document from John (attachement in Epic as comment) 
 
 **Problem:**              
 Manual testing: Benefits of a DevOps CI/CD process have been missed - slowing down both teams
@@ -12,29 +20,29 @@ Manual testing: Benefits of a DevOps CI/CD process have been missed - slowing do
 Fast and frequent releases (every Sprint) of quality product, test-automation where possible for faster testing
 
 
-**_Related and relevant topics (for next months):_**
+H1 Epics and Timeline
+=============
+**EPICS:** 
+Dec 2019 - Feb 18      https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2144
+Feb 18 - June xx       x add link
+... 
+
+
+**_Related and relevant topics (for the next few months and to help create Epics):_**
 Monitoring
 CD: How do we want to deploy our environments? - tools etc. 
 Environments
 Test Strategy 
 Test Process 
  
- 
-
-
-**EPICS:** listed we have:
-https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2144
-... 
-other?
-
 
 
 **Next Steps & Actions identified:** 
 - [x] Sprint 20: Workshop w. Roland (Thor) - story created:   #2148
-- [ ] Sprint 20: SRE DevOps Assessment (Thor) --- Recommendations and tickets to our backlog. 
+- [x] Sprint 20: SRE DevOps Assessment (Thor) --- Recommendations and tickets to our backlog. - see tasks created in Epic
 - [ ] Sprint 21: Update DoD to include functional, integration test (Waldemar) 
 - [ ] Sprint 22: Integration testing should be part of a user story/ QA is part of a Scrum Team (Waldemar) 
---- Thor to create user stories and link them to this Epic . 
+--- Thor will create user stories and link them to this Epic . 
 _----- Thor is working together with Roland Stens and John Lane -----_ 
 
 
