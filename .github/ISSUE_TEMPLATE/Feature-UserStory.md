@@ -18,10 +18,10 @@ about: Describe a feature that will be estimated and considered for implementati
 * WHEN ... (what you do) 
 * THEN ... (what you see) 
 
-**Dependencies**	
+**Dependencies? (If so, link dependency in the ticket, make it visible in a team´s backlog)**	
 
 
-**Validation Rules**	
+**Validation Rules? (If yes, list here)**	
 
 ----
 
