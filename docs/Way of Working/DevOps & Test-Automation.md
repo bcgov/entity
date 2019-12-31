@@ -26,13 +26,13 @@ Epics and Timeline
 
 
 ----
-Related and relevant topics for the next few months and to help create Epics
-=============
-Monitoring
-CD: How do we want to deploy our environments? - tools etc. 
-Environments
-Test Strategy 
-Test Process 
+**Related and relevant topics for the next few months and to help create Epics**
+
+- Monitoring
+- CD: How do we want to deploy our environments? - tools etc. 
+- Environments
+- Test Strategy 
+- Test Process 
 
 
 
