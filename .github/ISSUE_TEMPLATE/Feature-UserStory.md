@@ -6,23 +6,24 @@ about: Describe a feature that will be estimated and considered for implementati
 
 ### Title: Short descriptive Name (verb + noun)
 
+----
+
 ## Description:	
 * As a (type of user)
 * I want (goal) 
 * so that (reason/ why/ value) 
-
-
-**Dependencies**	
-- 
 
 **Acceptance Criteria**	
 * GIVEN ... (you or your condition)
 * WHEN ... (what you do) 
 * THEN ... (what you see) 
 
+**Dependencies**	
+
 
 **Validation Rules**	
 
+----
 
 **DoR for User Story:**	
 - [ ] Do we have a prioritized Sprint Backlog?	
@@ -42,7 +43,7 @@ about: Describe a feature that will be estimated and considered for implementati
 7.	[ ] Is this user story small enough to be completed in a Sprint?
 8.	[ ] What do we possible have to do re Change Management? - a) GCPE, …?
 
-
+----
 
 **Definition of Done:**
 1)	[ ] Check Requirements against completed tasks
