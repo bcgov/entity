@@ -1,5 +1,7 @@
-Test-Automation & DevOps Overview and Action Items we derive & execute 
+Test-Automation & DevOps 
 =============
+Overview and Action Items we derive & execute 
+-------------
 
 * I. This is an overview and includes a description with ideas, for next few iterations and upcoming few monhts.
 * II. Input from team members, observations, and the recommendations from John Lane (link see in then end)
