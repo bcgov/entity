@@ -16,6 +16,7 @@ Manual testing: Benefits of a DevOps CI/CD process have been missed - slowing do
 
 **What we want:**     
 Fast and frequent releases (every Sprint) of a quality product, test-automation where possible for faster testing.
+
 ----
 
 
