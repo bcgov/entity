@@ -14,9 +14,9 @@ so that (reason/ why/ value)
 **Dependencies**	
 
 **Acceptance Criteria**	
-GIVEN ... 
-WHEN ... 
-THEN ... 
+GIVEN ... (you or your condition)
+WHEN ... (what you do) 
+THEN ... (what you see) 
 
 
 **Validation Rules**	
