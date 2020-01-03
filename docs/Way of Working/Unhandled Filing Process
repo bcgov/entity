@@ -1,4 +1,8 @@
+### Unhandled Filing Process
+
 **Trigger/ Input/ Source:**
+=============
+
 * Unhandled Filing comes across from COLIN 
 * Result: Error in Sentry from "update_legal_filings" visible 
 
@@ -12,6 +16,7 @@ Can be anytime
 (2) Otherwise, we should bring this error up in the Daily Scrum and or RocketChat 
 
 
-
-
+----
+Source/ Issue in ZenHub to create this process:
+https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2244 
 
