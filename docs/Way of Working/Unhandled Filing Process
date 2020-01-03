@@ -1,8 +1,7 @@
 ### Unhandled Filing Process
 
-
+----
 Trigger/ Input/ Source:
--------------
 * Unhandled Filing comes across from COLIN 
 * = Result: Error in Sentry from "update_legal_filings" visible 
 
@@ -11,12 +10,9 @@ Trigger/ Input/ Source:
 * anyone who check Sentry can see the error
 
 ----
-----
-**How to handle/ solve it:**
--------------
+How to handle/ solve it:
 (1) If it is an OTCGM, then bring it across manually 
 (2) Otherwise, we should bring this error up in the Daily Scrum and or RocketChat 
-
 
 ----
 Source/ Issue in ZenHub to create this process:
