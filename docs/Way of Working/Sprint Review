@@ -1,8 +1,11 @@
-
 Who wants to demo, and how long?
-* Please use following format:       Name - User Story/ Feature - how long
+-- In Sprint Planning discuss & agree what US/ Feature should be demoed to Stakeholders - in (common) Sprint Review on Tuesdays. 
+
+* Please use following format:       
+   Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&A) 
 
 
+----
 **Sprint Review Jan 7, 2020 - Sprint (Milestone) 20** 
 ----
 Assets (20 min.)
@@ -16,4 +19,5 @@ Entities (20 min.)
 
 ----
 Relationships (20 min.) 
+Jeremy - Account Set-up using BC Online (Ticket xxx) - 20 
 
