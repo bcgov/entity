@@ -1,20 +1,19 @@
 ### Unhandled Filing Process
 
-**Trigger/ Input/ Source:**
-=============
 
-Trigger/ Input/ Source
+Trigger/ Input/ Source:
 -------------
-
 * Unhandled Filing comes across from COLIN 
-* Result: Error in Sentry from "update_legal_filings" visible 
+* = Result: Error in Sentry from "update_legal_filings" visible 
 
 ----
-**When:** 
-Can be anytime 
-* anyone who check Sentry can see the error.
+* When is that happening: Can be anytime 
+* anyone who check Sentry can see the error
 
+----
+----
 **How to handle/ solve it:**
+-------------
 (1) If it is an OTCGM, then bring it across manually 
 (2) Otherwise, we should bring this error up in the Daily Scrum and or RocketChat 
 
