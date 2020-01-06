@@ -1,4 +1,4 @@
-# hello-world
+# Vue-FrontEnd-Framework
 
 ## Project setup
 ```

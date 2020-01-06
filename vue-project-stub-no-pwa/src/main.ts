@@ -3,8 +3,8 @@ import 'regenerator-runtime/runtime' // to use transpiled generator functions
 
 // Vue Libraries
 import Vue from 'vue'
-import Vuetify from 'vuetify'
-import router from './router'
+import vuetify from '@/plugins/vuetify'
+import router from '@/router'
 import { store } from '@/store'
 
 // Styles
@@ -22,10 +22,6 @@ import TokenServices from 'sbc-common-components/src/services/token.services'
 
 // get rid of "You are running Vue in development mode" console message
 Vue.config.productionTip = false
-
-Vue.use(Vuetify)
-
-const vuetify = new Vuetify({ iconfont: 'mdi' })
 
 // ********************** THIS IS FOR TESTING & DEVELOPMENT ONLY ***************************************
 // The following information allows the front to bypass authentication when developing locally
