@@ -20,17 +20,16 @@
 
 
 #### Entities 
-(1) previous Retro action items - use Retro Mountain to assess progress 
-- for the action items see ZenHub: Retro --- 
---- Review the PR-Process 
-(2) unhandled filings process: https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Unhandled%20Filing%20Process 
+1) previous Retro action items - use Retro Mountain to assess progress for the action items see ZenHub: Retro --- 
+2) Review the PR-Process 
+3) unhandled filings process: https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Unhandled%20Filing%20Process 
 - open, review with all, are there next steps? (update ZenHub issue) 
-(3) bug triage process: https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Bug%20Triage
+4) bug triage process: https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Bug%20Triage
 
 
 #### Relationsips
-(1) previous Retro action items
-(2) Bug Triage: 
+1) previous Retro action items
+2) Bug Triage: 
 https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Bug%20Triage
-(3) others?
+3) others?
 
