@@ -27,6 +27,11 @@
 4) bug triage process: https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Bug%20Triage
 
 
+
+
+
+---
+
 #### Relationsips
 1) previous Retro action items
 2) Bug Triage: 
