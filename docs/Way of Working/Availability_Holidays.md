@@ -1,21 +1,19 @@
 **Overview of Team availability BC Registries**
 - When are you going away?  
 
-
+--
 **Assets**
 
 
 
-
+----
 **Entities** 
-Dec. 2019 - Thor and Rich are here this Fr Dec. 27 
-Dec 30 and 31: 
--- All others are back on Jan. 2nd 2020
 
 
 
 
 
+----
 **Relationships** 
 
 
