@@ -1,4 +1,4 @@
-1 *Assetts*
+*Assetts*
  Tendayi: ZenHub columns/ pipeline - same flow & columns as all the other teams?
 
 
