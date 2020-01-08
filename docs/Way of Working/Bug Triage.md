@@ -1,6 +1,6 @@
 Bug Triage 
 
-**Relationships:**
+**Relationships**
 
 **Steps:**
 1. QA, or user identify a bug or dev team member raise a Bug
@@ -18,8 +18,8 @@ Bug Triage
 
 
 
-**Improvements & Ideas:**
-(1) Differentiate btw. bugs and defects (in PROD) 
-(2) Put defects in Sprint Backlog - pull - assign - In Progress - PO ...
-(3) We need a way to proceed on new high-priority (eg, blocking) bugs when PO is not available
+**Improvements & Ideas**
+* (1) Differentiate btw. bugs and defects (in PROD) 
+* (2) Put defects in Sprint Backlog - pull - assign - In Progress - PO ...
+* (3) We need a way to proceed on new high-priority (eg, blocking) bugs when PO is not available
 
