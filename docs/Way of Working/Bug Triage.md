@@ -7,9 +7,11 @@ Bug Triage
    - can it be linked to a Story???
 2. QA creates issue and label it as "bug"
 3. Based on the Sprint Goal and the severity of the bug, the developer decides if this bug should be fixed immediatetly 
-   - If yes, inform (in-person or RocketChat) the PO about the amount of effor to fix the bug, and the impact on the committed work
-   Decision: High Priority = high severity + high criticality (low, medium or high) User Impact(what impact is), Volume of users, Data impact  Define Priority 1, 2, 3 and meaning 
-4. If not for this Sprint, assign to the BA
+   - If yes, inform the PO (in-person or RocketChat) about the amount of effort needed to fix the bug, and the impact on the committed work
+   * Decision then is based on:            High Priority = high severity + high criticality (low, medium or high) and 
+                                          + User Impact (what impact), Volume of users, Data impact  
+             * Define Priority 1, 2, 3 and meaning 
+4. If Bug should not be fixed this Sprint, assign to the BA
 5. BA analyses the Bug - what impact, risk or dependency etc. 
 6. BA discuss with PO about "Priority" 
 7. PO make final decision: a) bring into current Sprint or b) put in Backlog 
