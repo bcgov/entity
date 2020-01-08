@@ -1,5 +1,6 @@
-PO-Sync. 
-** items for PO-Sync. to discuss between PO´s**
+# PO-Sync. 
+**items for PO-Sync. to discuss between PO´s**
+
 - to be discussed with all PO´s
 
 
