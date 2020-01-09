@@ -2,8 +2,6 @@
 - When are you away?  
 ----
 
-8-21
-
 **Assets**
 
 
