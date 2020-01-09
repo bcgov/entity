@@ -15,4 +15,5 @@ about: DOD - Relationships
 9)	[ ] UX Approved
 10)	[ ] Can be demoed in Sprint Review 
 11)	[ ] Release ticket is created and this US is linked to it
+12) [ ] Change Management activities done? 
 
