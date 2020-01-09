@@ -1,7 +1,7 @@
 Daily Scrum 
 
 - What I did complete yesterday - to help team meet the Sprint Goal
-- What I want to get done today  - to help team meet the Sprint Goa-
+- What I want to get done today  - to help team meet the Sprint Goal
 - Do I see any blocker that might prevent meet the Goal; do I need support/ help
 - Can we achieve our Sprint Goal? - Yes or No (why not)
 
