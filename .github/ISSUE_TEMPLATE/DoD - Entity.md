@@ -16,6 +16,7 @@ At the PR:
 - [ ] Peer Reviewed
 - [ ] Accessibility reviewed and acceptable [checklist] (https://github.com/bcgov/entity/docs/coding-standards/accessibility.md)
 - [ ] Production burn in completed (48 hrs) (good after two days)
+- [ ] Change Management activities done?
 - [ ] Schedule a Release w. Change Management
 - [ ] Open an issue to remove feature flags created
 
