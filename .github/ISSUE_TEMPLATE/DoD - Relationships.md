@@ -16,4 +16,6 @@ about: DOD - Relationships
 10)	[ ] Can be demoed in Sprint Review 
 11)	[ ] Release ticket is created and this US is linked to it
 12) [ ] Change Management activities done? 
+13) [ ] Schedule a Release w. Change Management
+
 
