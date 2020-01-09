@@ -24,3 +24,9 @@
 * Waldemar: Fr Jan 10 - Wed
 
 
+----
+Other Team Members:
+* Carol: 
+* Karla-Maria:
+* Simona:
+* ... please add
