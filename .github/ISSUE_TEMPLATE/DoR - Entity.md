@@ -9,6 +9,7 @@ DoR is for the PO.
 - [ ] Are the Acceptance Criteria defined?
 - [ ] Are the dependencies known/ understood?
 - [ ] Is this user story small enough to be completed in one Sprint?
+- [ ] What do we possibly have to do re Change Management? - e.g. GCPE, do we know who is impacted and what that impact is?
 
 
 Optional:
