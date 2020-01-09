@@ -22,6 +22,7 @@
 * Meng: Jan 14 and Jan 16 
 * Patrick: Jan 20 (1 Flex day) 
 * Waldemar: Fr Jan 10 - Wed
+* Jeremy: 25-27
 
 
 ----
