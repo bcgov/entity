@@ -1,0 +1,74 @@
+.app-container {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+.app-header {
+  position: -webkit-sticky; // Safari
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.app-body {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.app-container > .container:first-child {
+  padding: 2rem;
+}
+
+@media (min-width: 960px) {
+  main > .container:first-child {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.app-footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1224px; // should match auth-web, etc
+}
+
+// Page Layout
+.view-container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  article {
+    flex: 1 1 auto;
+
+    section {
+      margin-top: 2.25rem;
+    }
+  }
+}
+
+// Form Layout
+.form__row + .form__row {
+  margin-top: 0.25rem;
+}
+
+.form__btns {
+  display: flex;
+
+  .v-btn {
+    margin: 0;
+
+    + .v-btn {
+      margin-left: 0.5rem;
+    }
+
+    &.form-primary-btn {
+      margin-left: auto;
+    }
+  }
+}
