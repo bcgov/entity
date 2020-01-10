@@ -8,7 +8,7 @@
 
 ----
 **Entities** 
-* Kaine: Jan 27 - Feb xx? (2 weeks) - Linda?
+* Kaine: Jan 27 - Feb 13 - deputy: Linda (and Jyoti, Sienna)
 * Shahriar: Jan 27 - Feb 4 
 * Katie: Jan 9, Jan 16, Jan 23, Jan 30
 * Thor: Jan 23
