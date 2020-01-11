@@ -27,102 +27,42 @@ objects:
               valueFrom:
                 secretKeyRef:
                   key: database-user
-                  name: postgresql-e2e
+                  name: postgresql-${ENV_TAG}
             - name: DATABASE_PASSWORD
               valueFrom:
                 secretKeyRef:
                   key: database-password
-                  name: postgresql-e2e
+                  name: postgresql-${ENV_TAG}
             - name: DATABASE_NAME
               valueFrom:
                 configMapKeyRef:
                   key: DATABASE_NAME
-                  name: legal-api-e2e-config
+                  name: legal-api-${ENV_TAG}-config
             - name: DATABASE_HOST
               valueFrom:
                 configMapKeyRef:
                   key: DATABASE_HOST
-                  name: legal-api-e2e-config
+                  name: legal-api-${ENV_TAG}-config
             - name: DB_PORT
               valueFrom:
                 configMapKeyRef:
                   key: DB_PORT
-                  name: legal-api-e2e-config
-            - name: JWT_OIDC_JWKS_CACHE_TIMEOUT
-              valueFrom:
-                configMapKeyRef:
-                  key: JWT_OIDC_JWKS_CACHE_TIMEOUT
-                  name: legal-api-e2e-config
-            - name: JWT_OIDC_WELL_KNOWN_CONFIG
-              valueFrom:
-                configMapKeyRef:
-                  key: JWT_OIDC_WELL_KNOWN_CONFIG
-                  name: legal-api-e2e-config
-            - name: JWT_OIDC_ALGORITHMS
-              valueFrom:
-                configMapKeyRef:
-                  key: JWT_OIDC_ALGORITHMS
-                  name: legal-api-e2e-config
-            - name: JWT_OIDC_AUDIENCE
-              valueFrom:
-                configMapKeyRef:
-                  key: JWT_OIDC_AUDIENCE
-                  name: legal-api-e2e-config
-            - name: JWT_OIDC_CLIENT_SECRET
-              valueFrom:
-                configMapKeyRef:
-                  key: JWT_OIDC_CLIENT_SECRET
-                  name: legal-api-e2e-config
-            - name: PAYMENT_SVC_URL
-              valueFrom:
-                configMapKeyRef:
-                  key: PAYMENT_SVC_URL
-                  name: legal-api-e2e-config
+                  name: legal-api-${ENV_TAG}-config
             - name: COLIN_API
               valueFrom:
                 configMapKeyRef:
                   key: COLIN_URL
-                  name: legal-api-e2e-config
-            - name: REPORT_SVC_URL
+                  name: legal-api-${ENV_TAG}-config
+            - name: AUTH_USERNAME
               valueFrom:
-                configMapKeyRef:
-                  key: REPORT_SVC_URL
-                  name: legal-api-e2e-config
-            - name: SENTRY_DSN
+                secretKeyRef:
+                  key: AUTH_USERNAME
+                  name: updater-job
+            - name: AUTH_PASSWORD
               valueFrom:
-                configMapKeyRef:
-                  key: SENTRY_DSN
-                  name: legal-api-e2e-config
-            - name: NATS_SERVERS
-              valueFrom:
-                configMapKeyRef:
-                  key: NATS_SERVERS
-                  name: nats-e2e-config
-            - name: NATS_CLIENT_NAME
-              valueFrom:
-                configMapKeyRef:
-                  key: NATS_CLIENT_NAME
-                  name: nats-e2e-config
-            - name: NATS_CLUSTER_ID
-              valueFrom:
-                configMapKeyRef:
-                  key: NATS_CLUSTER_ID
-                  name: nats-e2e-config
-            - name: NATS_SUBJECT
-              valueFrom:
-                configMapKeyRef:
-                  key: NATS_SUBJECT
-                  name: nats-e2e-config
-            - name: NATS_QUEUE
-              valueFrom:
-                configMapKeyRef:
-                  key: NATS_QUEUE
-                  name: nats-e2e-config
-            - name: GO_LIVE_DATE
-              valueFrom:
-                configMapKeyRef:
-                  key: GO_LIVE_DATE
-                  name: legal-api-e2e-config
+                secretKeyRef:
+                  key: AUTH_PASSWORD
+                  name: updater-job
         restartPolicy: "Never"
         concurrencyPolicy: "Forbid"
 parameters: [
@@ -131,6 +71,6 @@ parameters: [
           "displayName": "ENV_TAG",
           "description": "the tag for the environment that the job image runs from.",
           "required": true,
-          "value": "dev"
+          "value": "e2e"
         },
 ]
