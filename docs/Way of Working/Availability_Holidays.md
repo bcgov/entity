@@ -14,6 +14,7 @@
 * Thor: Jan 23
 * Rich: Jan 13, Jan 27
 * Kial: Mondays in the morning, Wed all day, Thurdsays in the morning
+* Lekshmi: Feb 3 - Feb 28
 
 
 ----
