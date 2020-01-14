@@ -77,8 +77,16 @@ directory.
 
   - Install [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
   - Go to Docker Settings on Windows and tick "Expose daemon on tcp://localhost:2375 without TLS" 
-  - These instructions are based off of [this guide - Docker and WSL](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
-  - Update package last  
+  - These instructions are based off of:
+  [Docker and WSL](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
+  - Add the  Docker upstream repository
+  ```
+  sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+   ```
+  - Update package list  
       `sudo apt-get update -y`
   - Install package dependencies  
    `sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common`
