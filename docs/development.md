@@ -81,11 +81,7 @@ directory.
   - Update package last  
       `sudo apt-get update -y`
   - Install package dependencies  
-   `sudo apt-get install -y \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common`
+   `sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common`
     
   - Download and add Docker's official public PGP key  
   `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
