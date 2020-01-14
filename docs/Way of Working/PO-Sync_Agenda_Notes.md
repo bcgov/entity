@@ -14,9 +14,10 @@
 - Switch Account?
 - Discuss abut Business Contact Info - what is the source of truth? Does this info comes from Relationship dashboard and we consume it? or Should we get the information and publish it to Relationship? or Both?
 
+
 2. Dependencies 
 - Using Roadmap in ZenHub
-
+- Updated flow of value document
 
 
 3. 
