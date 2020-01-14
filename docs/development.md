@@ -100,8 +100,8 @@ directory.
   - Allow user to access Docker CLI without root  
   `sudo usermod -aG docker $USER`
   - Install Docker Compose  
-  `pip install --user docker-compose`
-  - Connect to remote Docker daemon  
+  `sudo apt install docker-compose`
+  - Set environement variable for remote Docker daemon  
   `echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashrc`
   - Verify everything with:
       - `docker info`
