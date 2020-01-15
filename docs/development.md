@@ -101,7 +101,7 @@ directory.
   `sudo usermod -aG docker $USER`
   - Install Docker Compose  
   `sudo apt install docker-compose`
-  - Set environement variable for remote Docker daemon  
+  - Set environment variable for remote Docker daemon  
   `echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashrc`
   - Verify everything with:
       - `docker info`
