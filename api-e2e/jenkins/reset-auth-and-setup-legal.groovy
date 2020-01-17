@@ -60,6 +60,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         args: '${computer.jnlpmac} ${computer.name}',
         echo: "check envVar",
         envVars:([
+            secretEnvVar(key: 'api_url', secretName: "postman-e2e-secret", secretKey: 'api_url'),
             secretEnvVar(key: 'token-url', secretName: "auth-reset-postman", secretKey: 'token-url'),
             secretEnvVar(key: 'service-account-id', secretName: "auth-reset-postman", secretKey: 'service-account-id'),
             secretEnvVar(key: 'service-account-secret', secretName: "auth-reset-postman", secretKey: 'service-account-secret'),
@@ -183,7 +184,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                         sh """./node_modules/newman/bin/newman.js run ./auth-api-load-entities.postman_collection.json \
                         --env-var auth_url=${auth_url} --env-var service-account-id=${service-account-id} \
                         --env-var service-account-secret=${service-account-secret} --env-var temp-password=${temp-password} \
-                    --data coops.csv
+                        --env-var api_url=${api_url} --data coops.csv
 
                         """
                     } catch (Exception e) {
