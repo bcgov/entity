@@ -60,7 +60,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         args: '${computer.jnlpmac} ${computer.name}',
         echo: "check envVar",
         envVars:([
-            secretEnvVar(key: 'api_url', secretName: "postman-e2e-secret", secretKey: 'api_url'),
+            secretEnvVar(key: 'api_url', secretName: "auth-reset-postman", secretKey: 'api_url'),
             secretEnvVar(key: 'token-url', secretName: "auth-reset-postman", secretKey: 'token-url'),
             secretEnvVar(key: 'service-account-id', secretName: "auth-reset-postman", secretKey: 'service-account-id'),
             secretEnvVar(key: 'service-account-secret', secretName: "auth-reset-postman", secretKey: 'service-account-secret'),
