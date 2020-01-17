@@ -68,138 +68,140 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
     )
 ])
 
-node (py3nodejs_label) {
-    stage("Connect to auth API pod and drop/re-create tables") {
-        script {
+{
+    node (py3nodejs_label) {
+        stage("Connect to auth API pod and drop/re-create tables") {
+            script {
 
-            openshift.withCluster() {
-                openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
+                openshift.withCluster() {
+                    openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
 
-                    def pg_deploy = openshift.selector('dc', "${POSTGRESQL}-${COMPONENT_TAG}")
+                        def pg_deploy = openshift.selector('dc', "${POSTGRESQL}-${COMPONENT_TAG}")
 
-                    for (api_name in DEPLOYMENTS_API_WITH_PG) {
-                        def api_deploy = openshift.selector("dc", "${api_name}-${COMPONENT_TAG}")
+                        for (api_name in DEPLOYMENTS_API_WITH_PG) {
+                            def api_deploy = openshift.selector("dc", "${api_name}-${COMPONENT_TAG}")
 
-                        // get db user + db name envs from api pod
-                        def api_version = api_deploy.object().status.latestVersion
-                        api_pod = openshift.selector('pod', [deployment: "${api_name}-${COMPONENT_TAG}-${api_version}"])
-                        def latest = api_pod.objects().size()
-                        if (latest) {
-                            latest--
+                            // get db user + db name envs from api pod
+                            def api_version = api_deploy.object().status.latestVersion
+                            api_pod = openshift.selector('pod', [deployment: "${api_name}-${COMPONENT_TAG}-${api_version}"])
+                            def latest = api_pod.objects().size()
+                            if (latest) {
+                                latest--
+                            }
+                            API_DB_USERNAME = openshift.exec(
+                                api_pod.objects()[latest].metadata.name,
+                                '--',
+                                "bash -c 'printenv DATABASE_USERNAME'"
+                            ).actions[0].out
+                            API_DB_NAME = openshift.exec(
+                                api_pod.objects()[latest].metadata.name,
+                                '--',
+                                "bash -c 'printenv DATABASE_NAME'"
+                            ).actions[0].out
+                            echo """
+                            - API_DB_USERNAME: ${API_DB_USERNAME}
+                            - API_DB_NAME: ${API_DB_NAME}
+                            """
+
+                            echo "Scaling down ${api_name}-${COMPONENT_TAG}"
+                            api_deploy.scale('--replicas=0')
+
+                            // reset auth db
+                            echo "Dropping ${API_DB_NAME} in ${POSTGRESQL}-${COMPONENT_TAG}"
+                            def pg_version = pg_deploy.object().status.latestVersion
+                            PG_POD = openshift.selector('pod', [deployment: "${POSTGRESQL}-${COMPONENT_TAG}-${pg_version}"])
+                            latest = PG_POD.objects().size()-1
+
+                            // execute as postgres user and drop db
+                            def output_disconnect_db = openshift.exec(
+                                PG_POD.objects()[latest].metadata.name,
+                                '--',
+                                "bash -c \"\
+                                    psql -c \\\"\
+                                        UPDATE pg_database SET datallowconn = 'false' WHERE datname = '${API_DB_NAME}'; \
+                                        SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = '${API_DB_NAME}'; \
+                                    \\\" \
+                                \""
+                            )
+                            echo "Temporary DB disconnect results: "+ output_disconnect_db.actions[0].out
+
+                            // execute as postgres user and drop db
+                            def output_drop_db = openshift.exec(
+                                PG_POD.objects()[latest].metadata.name,
+                                '--',
+                                "bash -c \"\
+                                    psql -c \\\"\
+                                        DROP DATABASE \\\\\\\"${API_DB_NAME}\\\\\\\"; \
+                                    \\\" \
+                                \""
+                            )
+                            echo "Temporary DB drop results: "+ output_drop_db.actions[0].out
+
+                            echo "Creating ${API_DB_NAME} in ${POSTGRESQL}-${COMPONENT_TAG}"
+                            // execute as postgres user and create test db
+                            def output_create_db = openshift.exec(
+                                PG_POD.objects()[latest].metadata.name,
+                                '--',
+                                "bash -c '\
+                                    psql -c \"CREATE DATABASE \\\"${API_DB_NAME}\\\";\" \
+                                '"
+                            )
+                            echo "Temporary DB create results: "+ output_create_db.actions[0].out
+
+                            def output_alter_role = openshift.exec(
+                                PG_POD.objects()[latest].metadata.name,
+                                '--',
+                                "bash -c '\
+                                    psql -c \"ALTER ROLE \\\"${API_DB_USERNAME}\\\" WITH superuser;\" \
+                                '"
+                            )
+                            echo "Temporary DB grant results: "+ output_alter_role.actions[0].out
+
+                            OLD_VERSIONS << "${api_name}-${api_version}"
+
+                            echo "Rolling out ${api_name}-${COMPONENT_TAG}"
+                            api_deploy.rollout().latest()
+                            api_deploy.scale('--replicas=1')
                         }
-                        API_DB_USERNAME = openshift.exec(
-                            api_pod.objects()[latest].metadata.name,
-                            '--',
-                            "bash -c 'printenv DATABASE_USERNAME'"
-                        ).actions[0].out
-                        API_DB_NAME = openshift.exec(
-                            api_pod.objects()[latest].metadata.name,
-                            '--',
-                            "bash -c 'printenv DATABASE_NAME'"
-                        ).actions[0].out
-                        echo """
-                        - API_DB_USERNAME: ${API_DB_USERNAME}
-                        - API_DB_NAME: ${API_DB_NAME}
-                        """
-
-                        echo "Scaling down ${api_name}-${COMPONENT_TAG}"
-                        api_deploy.scale('--replicas=0')
-
-                        // reset auth db
-                        echo "Dropping ${API_DB_NAME} in ${POSTGRESQL}-${COMPONENT_TAG}"
-                        def pg_version = pg_deploy.object().status.latestVersion
-                        PG_POD = openshift.selector('pod', [deployment: "${POSTGRESQL}-${COMPONENT_TAG}-${pg_version}"])
-                        latest = PG_POD.objects().size()-1
-
-                        // execute as postgres user and drop db
-                        def output_disconnect_db = openshift.exec(
-                            PG_POD.objects()[latest].metadata.name,
-                            '--',
-                            "bash -c \"\
-                                psql -c \\\"\
-                                    UPDATE pg_database SET datallowconn = 'false' WHERE datname = '${API_DB_NAME}'; \
-                                    SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = '${API_DB_NAME}'; \
-                                \\\" \
-                            \""
-                        )
-                        echo "Temporary DB disconnect results: "+ output_disconnect_db.actions[0].out
-
-                        // execute as postgres user and drop db
-                        def output_drop_db = openshift.exec(
-                            PG_POD.objects()[latest].metadata.name,
-                            '--',
-                            "bash -c \"\
-                                psql -c \\\"\
-                                    DROP DATABASE \\\\\\\"${API_DB_NAME}\\\\\\\"; \
-                                \\\" \
-                            \""
-                        )
-                        echo "Temporary DB drop results: "+ output_drop_db.actions[0].out
-
-                        echo "Creating ${API_DB_NAME} in ${POSTGRESQL}-${COMPONENT_TAG}"
-                        // execute as postgres user and create test db
-                        def output_create_db = openshift.exec(
-                            PG_POD.objects()[latest].metadata.name,
-                            '--',
-                            "bash -c '\
-                                psql -c \"CREATE DATABASE \\\"${API_DB_NAME}\\\";\" \
-                            '"
-                        )
-                        echo "Temporary DB create results: "+ output_create_db.actions[0].out
-
-                        def output_alter_role = openshift.exec(
-                            PG_POD.objects()[latest].metadata.name,
-                            '--',
-                            "bash -c '\
-                                psql -c \"ALTER ROLE \\\"${API_DB_USERNAME}\\\" WITH superuser;\" \
-                            '"
-                        )
-                        echo "Temporary DB grant results: "+ output_alter_role.actions[0].out
-
-                        OLD_VERSIONS << "${api_name}-${api_version}"
-
-                        echo "Rolling out ${api_name}-${COMPONENT_TAG}"
-                        api_deploy.rollout().latest()
-                        api_deploy.scale('--replicas=1')
+                        
                     }
-                    
                 }
             }
         }
-    }
 
-    stage('Load auth entities via newman') {
-        script {
+        stage('Load auth entities via newman') {
+            script {
 
-            checkout scm
+                checkout scm
 
-            dir("${TESTS_PATH}") {
-                all_passed = true
-                sh 'npm install newman'                
-                
-                try {
-                   
-                    sh """./node_modules/newman/bin/newman.js run ./auth-api-load-entities.postman_collection.json \
-                    --env-var auth_url=${auth_url} --env-var service-account-id=${service-account-id} \
-                    --env-var service-account-secret=${service-account-secret} --env-var temp-password=${temp-password} \
-                   --data coops.csv
+                dir("${TESTS_PATH}") {
+                    all_passed = true
+                    sh 'npm install newman'                
+                    
+                    try {
+                    
+                        sh """./node_modules/newman/bin/newman.js run ./auth-api-load-entities.postman_collection.json \
+                        --env-var auth_url=${auth_url} --env-var service-account-id=${service-account-id} \
+                        --env-var service-account-secret=${service-account-secret} --env-var temp-password=${temp-password} \
+                    --data coops.csv
 
-                    """
-                } catch (Exception e) {
-                    echo "One or more tests failed."
-                    echo "${e.getMessage()}"
-                    all_passed = false
-                    failed_components += name + ' '
-                }
-                
-                
-                stage("Result") {
-                    if (!all_passed) {
-                        echo "auth load failed"
-                        currentBuild.result = "FAILURE"
+                        """
+                    } catch (Exception e) {
+                        echo "One or more tests failed."
+                        echo "${e.getMessage()}"
+                        all_passed = false
+                        failed_components += name + ' '
                     }
-                }
-            } // end dir
-        } // end script
+                    
+                    
+                    stage("Result") {
+                        if (!all_passed) {
+                            echo "auth load failed"
+                            currentBuild.result = "FAILURE"
+                        }
+                    }
+                } // end dir
+            } // end script
+        }
     }
 }
