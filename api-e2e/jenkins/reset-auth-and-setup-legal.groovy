@@ -40,10 +40,35 @@ def DEPLOYMENTS_API_WITH_PG = [AUTH_API]
 // old version of deployments
 def OLD_VERSIONS = []
 
+// constant
+def TESTS_PATH = 'api-e2e/postman'
+
 // define groovy functions
 import groovy.json.JsonOutput
 
-node {
+def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
+podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenkins', cloud: 'openshift', containers: [
+    containerTemplate(
+        name: 'jnlp',
+        image: '172.50.0.2:5000/openshift/jenkins-slave-py3nodejs',
+        resourceRequestCpu: '500m',
+        resourceLimitCpu: '1000m',
+        resourceRequestMemory: '1Gi',
+        resourceLimitMemory: '2Gi',
+        workingDir: '/tmp',
+        command: '',
+        args: '${computer.jnlpmac} ${computer.name}',
+        echo: "check envVar",
+        envVars:([
+            secretEnvVar(key: 'token-url', secretName: "auth-reset-postman", secretKey: 'token-url'),
+            secretEnvVar(key: 'service-account-id', secretName: "auth-reset-postman", secretKey: 'service-account-id'),
+            secretEnvVar(key: 'service-account-secret', secretName: "auth-reset-postman", secretKey: 'service-account-secret'),
+            secretEnvVar(key: 'temp-password', secretName: "auth-reset-postman", secretKey: 'temp-password')
+        ])
+    )
+])
+
+node (py3nodejs_label) {
     stage("Connect to auth API pod and drop/re-create tables") {
         script {
 
@@ -145,48 +170,36 @@ node {
 
     stage('Load auth entities via newman') {
         script {
-            openshift.withCluster() {
-                openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
-                    checkout scm
-                    dir('api-e2e/openshift/templates') {
-                        try {
-                            delete_job = sh (
-                                script: """oc delete jobs/data-loader""",
-                                    returnStdout: true).trim()
-                            echo delete_job
-                        } catch (Exception e) {
-                            echo "${e.getMessage()}"
-                        }
-                        data_load_output = sh (
-                            script: """oc process -f data-loader.yml -p ENV_TAG=test | oc create -f -""",
-                                returnStdout: true).trim()
-                    }
-                    sleep 10
-                    def data_loader = openshift.selector('pod', [ "job-name":"data-loader" ])
-                    data_loader.untilEach {
-                        def pod = it.objects()[0].metadata.name
-                        echo "pod: ${pod}"
-                        if (it.objects()[0].status.phase == 'Succeeded') {
-                            echo "${pod} successfully loaded data."
-                            return true
-                        } else {
-                            return false;
-                            sleep 5
-                        }
-                    }
-                    echo "Setting postal codes in ${LEGAL_DB_NAME}"
-                    // execute as postgres user and create test db
-                    def output_set_postals = openshift.exec(
-                        PG_POD.objects()[0].metadata.name,
-                        '--',
-                        "bash -c \"\
-                            psql -d \\\"${LEGAL_DB_NAME}\\\" -c \\\"update addresses set postal_code='V8N4R7';\\\" \
-                        \""
-                    )
-                    echo "Temporary DB create results: "+ output_set_postals.actions[0].out
 
+            checkout scm
+
+            dir("${TESTS_PATH}") {
+                all_passed = true
+                sh 'npm install newman'                
+                
+                try {
+                   
+                    sh """./node_modules/newman/bin/newman.js run ./auth-api-load-entities.postman_collection.json \
+                    --env-var auth_url=${auth_url} --env-var service-account-id=${service-account-id} \
+                    --env-var service-account-secret=${service-account-secret} --env-var temp-password=${temp-password} \
+                   --data coops.csv
+
+                    """
+                } catch (Exception e) {
+                    echo "One or more tests failed."
+                    echo "${e.getMessage()}"
+                    all_passed = false
+                    failed_components += name + ' '
                 }
-            }
-        }
+                
+                
+                stage("Result") {
+                    if (!all_passed) {
+                        echo "auth load failed"
+                        currentBuild.result = "FAILURE"
+                    }
+                }
+            } // end dir
+        } // end script
     }
 }
