@@ -16,9 +16,9 @@
 7. PO make final decision: a) bring into current Sprint or b) put in Backlog 
 
 
-
+----
 ## Improvements & Ideas
-(1). Differentiate btw. bugs and defects (in PROD) 
-(2). Put defects in Sprint Backlog - pull - assign - In Progress - PO ...
-(3). We need a way to proceed on new high-priority (eg, blocking) bugs when PO is not available
-(4). Review no. 3 (decision making)?
+1. Differentiate btw. bugs and defects (in PROD) 
+2. Put defects in Sprint Backlog - pull - assign - In Progress - PO ...
+3. We need a way to proceed on new high-priority (eg, blocking) bugs when PO is not available
+4. Review no. 3 (decision making)?
