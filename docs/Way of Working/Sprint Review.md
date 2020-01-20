@@ -1,23 +1,25 @@
-Who wants to demo, and how long?
--- In Sprint Planning discuss & agree what US/ Feature should be demoed to Stakeholders - in (common) Sprint Review on Tuesdays. 
+## Who wants to demo, and how long?
 
-* Please use following format:       
-   Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&A) 
+### In Sprint Planning discuss & agree what US/ Feature should be demoed to Stakeholders - in (common) Sprint Review on Tuesdays. 
+
+#### Please use following format:       
+Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&A) 
 
 
 **Jan 21, 2020 - Sprint (Milestone) 21** 
-Assets (x min.)
+#### Assets (x min.)
 
 
-Entities (x min.)
+#### Entities (10 min.)
 Cameron -  
-Incorporations frontend framework
-Approch and value of framework
-Initial UI steps 1 & 5
+* Incorporations frontend framework
+* Approch and value of framework
+* Initial UI steps 1 & 5
 
-10mins
+#### Relationships (x min.)
 
-Relationships (x min.)
+
+
 
 
 
