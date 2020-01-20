@@ -1,4 +1,4 @@
-## Who wants to demo, and how long?
+## Sprint Review Who wants to demo, and how long?
 
 ### In Sprint Planning discuss & agree what US/ Feature should be demoed to Stakeholders - in (common) Sprint Review on Tuesdays. 
 
