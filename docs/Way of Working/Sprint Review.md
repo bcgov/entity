@@ -6,7 +6,7 @@
 Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&A) 
 
 
-**Jan 21, 2020 - Sprint (Milestone) 21** 
+### Jan 21, 2020 - Sprint (Milestone) 21
 #### Assets (x min.)
 
 
