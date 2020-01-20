@@ -10,7 +10,12 @@ Assets (x min.)
 
 
 Entities (x min.)
-Cameron - 
+Cameron -  
+Incorporations frontend framework
+Approch and value of framework
+Initial UI steps 1 & 5
+
+10mins
 
 Relationships (x min.)
 
