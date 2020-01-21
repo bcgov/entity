@@ -182,7 +182,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                     try {
                     
                         sh """./node_modules/newman/bin/newman.js run ./auth-api-load-entities.postman_collection.json \
-                        --env-var token_url=${token_url} --env-var service-account-id=${service-account-id} \
+                        --env-var token-url=${token-url} --env-var service-account-id=${service-account-id} \
                         --env-var service-account-secret=${service-account-secret} --env-var temp-password=${temp-password} \
                         --env-var api_url=${api_url} --data coops.csv
 
