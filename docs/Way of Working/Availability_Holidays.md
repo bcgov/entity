@@ -21,7 +21,7 @@
 **Relationships** 
 * Loren: Fr, Jan 10 
 * Meng: Jan 14 and Jan 16 
-* Patrick: Jan 20 (1 Flex day) 
+* Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3)
 * Waldemar: Fr Jan 10 - Wed
 * Jeremy: 25-27
 
