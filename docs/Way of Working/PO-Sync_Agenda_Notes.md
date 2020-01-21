@@ -1,17 +1,19 @@
 # PO-Sync. 
-**items for PO-Sync. to discuss between PO´s**
+**Topics for PO-Sync. to discuss between PO´s**
+Agenda and description re PO-Sync see here in Meetings overview:
+https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 
 ----
-Topics for PO Sync neeting on 23rd Jan 2020
+Jan, 23, 2020
 ----
-
-- Discuss abut Business Contact Info - what is the source of truth? Does this info comes from Relationship dashboard and we consume it? or Should we get the information and publish it to Relationship? or Both?
-- Impediments regarding EDB - How to best resolve that? Its impacting everyone.
-- Using Roadmap in ZenHub
-- Using Release tag in ZenHub
+1. Discuss abut Business Contact Info - what is the source of truth? Does this info comes from Relationship dashboard and we consume it? or Should we get the information and publish it to Relationship? or Both?
+2. Impediments regarding EDB - Decisions needed how to best resolve that? Its impacting everyone.
+3. Using Roadmap in ZenHub
+4. Using Release tag in ZenHub
+5. Follow-up on topics & action items below (last PO-Sync)
 
 ----
-Topics for PO Sync neeting on 16th Jan 2020
+Jan, 16, 2020
 ----
 
 1. Decisions needed
@@ -46,5 +48,3 @@ Topics for PO Sync neeting on 16th Jan 2020
         - Loren to book a check in meeting with IDIM
         - Circulate the solution architecture with THor/Sumesh
         - What is the Epic for this item?
-
-
