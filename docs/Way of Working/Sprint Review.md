@@ -17,7 +17,8 @@ Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&
 
 #### Relationships (x min.)
 ?
-* Loren: Sprint Goals next Sprint 22
+* Loren: Sprint Goals next Sprint 22 
+https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/milestones
 
 
 
