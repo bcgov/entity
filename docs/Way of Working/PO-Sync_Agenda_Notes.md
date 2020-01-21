@@ -2,7 +2,7 @@
 **items for PO-Sync. to discuss between PO´s**
 
 ----
-PO Sync neeting on 23rd Jan 2020
+Topics for PO Sync neeting on 23rd Jan 2020
 ----
 
 - Discuss abut Business Contact Info - what is the source of truth? Does this info comes from Relationship dashboard and we consume it? or Should we get the information and publish it to Relationship? or Both?
@@ -11,7 +11,7 @@ PO Sync neeting on 23rd Jan 2020
 - Using Release tag in ZenHub
 
 ----
-PO Sync neeting on 16th Jan 2020
+Topics for PO Sync neeting on 16th Jan 2020
 ----
 
 1. Decisions needed
