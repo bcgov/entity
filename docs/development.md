@@ -74,3 +74,37 @@ directory.
   - terminal.integrated.scrollback: you'll probably want more than 1000 lines of history
   - terminal.integrated.shell.windows: click the *Edit in settings.json* link and set the value
     `"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe"`
+    
+### 5. Docker
+
+  - Install [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+  - Go to Docker Settings on Windows and tick "Expose daemon on tcp://localhost:2375 without TLS" 
+  - These instructions are based off of:
+  [Docker and WSL](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
+  - Add the  Docker upstream repository
+  ```
+  sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+   ```
+  - Update package list  
+      `sudo apt-get update -y`
+  - Install package dependencies  
+   `sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common`
+    
+  - Download and add Docker's official public PGP key  
+  `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+  - Verify the fingerprint.  
+  `sudo apt-key fingerprint 0EBFCD88`
+  - Install Docker CE  
+  `sudo apt-get install -y docker-ce`
+  - Allow user to access Docker CLI without root  
+  `sudo usermod -aG docker $USER`
+  - Install Docker Compose  
+  `sudo apt install docker-compose`
+  - Set environment variable for remote Docker daemon  
+  `echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashrc`
+  - Verify everything with:
+      - `docker info`
+      - `docker-compose --version`
