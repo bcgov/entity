@@ -62,6 +62,8 @@ directory.
 
 - Install Visual Studio code.
 - Install the *Remote - WSL* extension.
+- Install the *ESLint* extension.
+- Install the *Jest* extension.
 - Install the *Python* extension.
 - Install the *Vetur* extension for working with Vue.js.
 - Go to File > Preferences > Settings and set the following:
