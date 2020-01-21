@@ -1,13 +1,13 @@
 var ArFilingsCommands = {
     verfifyInitialArState: function (coopObject) {
         return this
-            .assert.containsText('#AR-header', 'File 2019 Annual Report')
+            .assert.containsText('#AR-header', 'File 2018 Annual Report')
             .assert.containsText('#AR-step-1-header', '1. Annual General Meeting Date')
             .assert.containsText('#AR-step-2-header', '2. Registered Office Addresses')
             .assert.containsText('#AR-step-3-header', '3. Directors')
             .assert.containsText('#AR-step-4-header', '4. Certify Correct')
-            .assert.containsText('dd.incorp-number', coopObject.identifier)
-            .assert.containsText('div.entity-name', coopObject.legal_name)
+            .assert.containsText('#entity-incorporation-number', coopObject.identifier)
+            .assert.containsText('#entity-legal-name', coopObject.legal_name)
             .assert.visible('@saveDraftButton')
             .assert.visible('@saveAndResumeLaterButton')
             .assert.visible('@cancelFilingButton')
@@ -33,10 +33,8 @@ var ArFilingsCommands = {
             .assert.containsText('@officeMailingLine2', coopObject.mailing.line2)
             .assert.containsText('@officeMailingLine3', coopObject.mailing.line3);
     },
-    verifyDirectorCount: function (expectedDirectorCount) {
-        return this.expect.elements('div.director-info').count.to.equal(expectedDirectorCount);
-    },
-    startEditingOfficeAddresses: function () {
+
+ startEditingOfficeAddresses: function () {
         return this
             .waitForElementVisible('@changeOfficeAddressButton')
             .click('@changeOfficeAddressButton');
@@ -70,14 +68,14 @@ var ArFilingsCommands = {
             .waitForElementVisible('@newDirectorLastName')
             .setValue('@newDirectorLastName', 'Last')
             .setValue('@newDirectorStreetAddress', '123 test st')
-            .moveToElement('@newDirectorCity', 5, 5)
+           .waitForElementVisible('@newDirectorCity')
             .setValue('@newDirectorCity', 'Victoria')
-            .click('@newDirectorProvinceSelectBox')
-            .click('@newDirectorProvinceBC')
+            .setValue('@newDirectorProvinceBox','BC')
             .setValue('@newDirectorPostalCode', 'V9A 1A7')
-            .setValue('@newDirectorCountry', 'Canada')
+            .useCss()
+            .click('@newDirectorCountry')
+            .click('@NewDirectorCountrySelect')
             .click('@newDirectorDoneButton')
-            //.waitForElementVisible('@newDirectorChip');
     }
 };
 module.exports={
@@ -87,52 +85,37 @@ module.exports={
         feeValue: "div.fee-list__item-value",
         feeListItem: "li.fee-list__item",
         feeTotal: "div.fee-total__value",
-        officeDeliveryLine1: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(1)",
-        officeDeliveryLine2: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(3)",
-        officeDeliveryLine3: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > div > div > div:nth-child(4)",
-        officeMailingLine1: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div.meta-container__inner > div > div > div:nth-child(1)",
-        officeMailingLine2: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div.meta-container__inner > div > div > div:nth-child(3)",
-        officeMailingLine3: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div.meta-container__inner > div > div > div:nth-child(4)",
+        officeDeliveryLine1: "#office-addresses > div > ul > li:nth-child(1) > div > div > div.address-wrapper > div > div > div > div:nth-child(1)",
+        officeDeliveryLine2: "#office-addresses > div > ul > li:nth-child(1) > div > div > div.address-wrapper > div > div > div > div:nth-child(3)",
+        officeDeliveryLine3: "#office-addresses > div > ul > li:nth-child(1) > div > div > div.address-wrapper > div > div > div > div:nth-child(4)",
+        officeMailingLine1: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > div > div > div:nth-child(1)",
+        officeMailingLine2: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > div > div > div:nth-child(3)",
+        officeMailingLine3: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > div > div > div:nth-child(4)",
         changeOfficeAddressButton: "#reg-off-addr-change-btn",
-        sameAsDeliveryButton: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div:nth-child(1) > div > div > div.v-input__slot > div > div",
+        sameAsDeliveryButton: "#office-addresses > div > ul > li:nth-child(3) > div > div > div.form__row > div > div > div.v-input__slot > div > div",
         updateAddressesButton: "#reg-off-update-addr-btn",
         resetOfficeAddressButton: "#reg-off-addr-reset-btn > span",
-        officeDeliveryStreetAddress: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(1) > div > div > div.v-input__slot > div > input[type=text]",
-        officeDeliveryAdditional: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(2) > div > div > div.v-input__slot > div > input[type=text]",
-        officeDeliveryCity: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(1) > div > div.v-input__slot > div > input[type=text]",
-        officeDeliveryPostalCode: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div > input[type=text]",
-        officeDeliveryCountry: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(4) > div > div > div.v-input__slot > div > input",
-        officeDeliveryDeliveryInstructions: "#annual-report-article > div > section:nth-child(2) > div > ul > li:nth-child(1) > div > div > div.meta-container__inner > form > div:nth-child(5) > div > div > div.v-input__slot > div > textarea",
+        officeDeliveryStreetAddress: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div:nth-child(1) > div > div > div.v-input__slot > div> input[type=text]",
+        officeDeliveryAdditional: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div:nth-child(2) > div > div > div.v-input__slot > div > input[type=text]",
+        officeDeliveryCity: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div.form__row.three-column > div.v-input.item.address-city.v-input--is-label-active.v-input--is-dirty.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div > input[type=text]",
+        officeDeliveryPostalCode: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div.form__row.three-column > div.v-input.item.postal-code.v-input--is-label-active.v-input--is-dirty.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div > input[type=text]",
+        officeDeliveryDeliveryInstructions: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div:nth-child(5) > div > div > div.v-input__slot > div > textarea",
         appointDirectorButton: "#directors > div:nth-child(2) > button",
         newDirectorFirstName: "#new-director__first-name",
-        newDirectorMiddleInitial: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.form__row.three-column > div.v-input.item.director-initial.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div>input[type=text]",
-
-        newDirectorLastName:{
-            selector:"/html/body/div[1]/div/div[4]/main/div[2]/div[5]/div[2]/article/div/section[3]/div/div[3]/ul[1]/li/div/div/form/div[1]/div[3]/div/div[1]/div/input",
-            locateStrategy: "xpath"
-        },
-        newDirectorStreetAddress: {
-        selector:"/html/body/div/div/div[4]/main/div[2]/div[5]/div[2]/article/div/section[3]/div/div[3]/ul[1]/li/div/div/form/div[2]/div/form/div[1]/div/div/div[1]/div/input",
-        locateStrategy: "xpath"
-        },
-        newDirectorCity:{
-        selector:"/html/body/div[1]/div/div[4]/main/div[2]/div[5]/div[2]/article/div/section[3]/div/div[3]/ul[1]/li/div/div/form/div[2]/div/form/div[3]/div[1]/div/div[1]/div/input",
-        locateStrategy: "xpath"
-        },
+        newDirectorMiddleInitial: "#new-director__middle-initial",
+        newDirectorLastName:"#new-director__last-name",    
+        newDirectorStreetAddress:"#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.address-wrapper > div > form > div:nth-child(1) > div > div > div.v-input__slot > div>input[type=text]",
+        newDirectorCity:".address-city input",    
         newDirectorPostalCode: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.address-wrapper > div > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div>input[type=text]",
         newDirectorCountry: {
-            selector: "/html/body/div[1]/div/div[4]/main/div[2]/div[5]/div[2]/article/div/section[3]/div/div[3]/ul[1]/li/div/div/form/div[2]/div/form/div[4]/div/div/div[1]/div/input",
+            selector: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.address-wrapper > div > form > div:nth-child(4) > div > div > div.v-input__slot > div.v-select__slot > div.v-select__selections",
+            locateStrategy: "css selector"
+        },
+        NewDirectorCountrySelect:{
+            selector:"/html/body/div/div[1]/div/div/div[4]/div",
             locateStrategy: "xpath"
-
         },
-        newDirectorProvinceSelectBox:{
-         selector:"/html/body/div/div/div[4]/main/div[2]/div[5]/div[2]/article/div/section[3]/div/div[3]/ul[1]/li/div/div/form/div[2]/div/form/div[3]/div[2]/div/div[1]/div[1]/div[1]",
-         locateStrategy: "xpath"
-        },
-        newDirectorProvinceBC:{
-        selector:"/html/body/div[1]/div[1]/div/div/div[1]/div/div",
-        locateStrategy: "xpath"
-        },
+        newDirectorProvinceBox:"#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.address-wrapper > div > form > div.form__row.three-column > div.v-input.item.address-region.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div>input[type=text]",
         newDirectorDoneButton: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.form__row.form__btns > button.form-primary-btn.v-btn.v-btn--contained.theme--light.v-size--default.primary > span",
         newDirectorChip: "#director-9 > div > label > div > span:nth-child(1)",
         certifyLegalName: "#certified-by-textfield",
@@ -141,5 +124,4 @@ module.exports={
         saveDraftButton: "#ar-save-btn",
         fileAndPayButton: "#ar-file-pay-btn",
         cancelFilingButton: "#ar-cancel-btn"
-    }
-};
+    }};

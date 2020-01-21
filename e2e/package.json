@@ -4,14 +4,15 @@
   "description": "This is the e2e pipeline for testing realtionships and entity code (currently coops). It runs in the LEAR tools namespace.\r This pipeline uses the base BDDStack image + node with the specs being written/run using Nightwatch.js",
   "scripts": {
     "single": "nightwatch -c conf/single.conf.js",
+    "local": "node scripts/local.runner.js -c conf/local.conf.js --tag single",
     "local-test": "node scripts/local.runner.js -c conf/local.conf.js --tag single --env test",
     "local-dev": "node scripts/local.runner.js -c conf/local.conf.js --tag single --env dev",
     "parallel": "nightwatch -c conf/parallel.conf.js -e chrome,firefox,safari,ie",
     "parallel_local": "node scripts/local.runner.js -c conf/parallel_local.conf.js -e chrome,firefox,safari"
   },
   "dependencies": {
-    "dotenv": "8.0.0",
-    "nightwatch": "^1.2.4",
+    "dotenv": "^8.0.0",
+    "nightwatch": "^1.2.1",
     "nightwatch-xhr": "^0.4.6"
   },
   "devDependencies": {

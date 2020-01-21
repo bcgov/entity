@@ -1,4 +1,6 @@
 var browserstack = require('browserstack-local');
+var util = require('util');
+require('dotenv').config();
 
 nightwatch_config = {
   "src_folders": ["./tests"],
@@ -13,7 +15,7 @@ nightwatch_config = {
 
   test_settings: {
     default: {
-      globals_path: "globals.js",
+      globals_path: "test-globals.js",
       desiredCapabilities: {
         'build': 'nightwatch-browserstack',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
@@ -26,13 +28,13 @@ nightwatch_config = {
         'browser_version': '76.0',
         'resolution': '1920x1080',
         "chromeOptions" : {
-          "args" : ["start-fullscreen"]
-        }
+         "args" : ["start-fullscreen"]
+       }
       }
     },
     test: {
       globals_path: "test-globals.js"
-    }
+    },
     dev:{
       globals_path: "dev-globals.js"
     }
