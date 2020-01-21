@@ -184,7 +184,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                         sh """./node_modules/newman/bin/newman.js run ./auth-api-load-entities.postman_collection.json \
                         --env-var token-url=${tokenUrl} --env-var service-account-id=${serviceAccountId} \
                         --env-var service-account-secret=${serviceAccountSecret} --env-var temp-password=${tempPassword} \
-                        --env-var api_url=${apiUrl} --d coops.csv
+                        --env-var api_url=${apiUrl} -d coops.csv
                         """
                     } catch (Exception e) {
                         echo "One or more tests failed."
