@@ -24,7 +24,7 @@ module.exports = {
     dashboard = browser.page.dashboardPage();
     dashboard.verifyTombstone(browser.globals.CP0000019);
     dashboard.verifyAddresses(browser.globals.CP0000019);
-    dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count);
+    //dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count);
     dashboard.verifyTodolistandRecentFilings();
     dashboard.startArFiling();
   },
