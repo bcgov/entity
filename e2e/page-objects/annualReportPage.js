@@ -68,7 +68,7 @@ var ArFilingsCommands = {
             .waitForElementVisible('@newDirectorLastName')
             .setValue('@newDirectorLastName', 'Last')
             .setValue('@newDirectorStreetAddress', '123 test st')
-           .waitForElementVisible('@newDirectorCity')
+            .waitForElementVisible('@newDirectorCity')
             .setValue('@newDirectorCity', 'Victoria')
             .setValue('@newDirectorProvinceBox','BC')
             .setValue('@newDirectorPostalCode', 'V9A 1A7')
@@ -123,5 +123,6 @@ module.exports={
         saveAndResumeLaterButton: "#ar-save-resume-btn",
         saveDraftButton: "#ar-save-btn",
         fileAndPayButton: "#ar-file-pay-btn",
-        cancelFilingButton: "#ar-cancel-btn"
+        cancelFilingButton: "#ar-cancel-btn",
+        certifyBlock: "#AR-step-4-container > div > div.certifiedby-container"
     }};
