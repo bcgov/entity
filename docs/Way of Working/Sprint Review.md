@@ -21,7 +21,7 @@ Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/milestones
 
 #### Assets (x min.)
-???
+
 
 #### Upcoming Releases
 ##### January 30th 2020
