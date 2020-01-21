@@ -20,7 +20,10 @@ Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&
 * Loren: Sprint Goals next Sprint 22 
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/milestones
 
-
+#### Upcoming Releases
+##### January 30th 2020
+* Relationship team(Market Release): Navigation Menu - How people navigate back in the system
+* Entities team(Production Release): "Incorp Define my comany 2.0(Step 1)" + "Certify and Pay 1.0(Step 5)"
 
 ----
 **Sprint Review Jan 7, 2020 - Sprint (Milestone) 20** 
