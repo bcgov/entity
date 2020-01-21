@@ -56,7 +56,7 @@ import groovy.json.JsonOutput
                 echo "Running tests "
                 
                     sh '''
-                         cd e2e
+                    
                          npm install
 
                          npm run local-test
