@@ -17,7 +17,7 @@ Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&
 
 #### Relationships (x min.)
 ?
-
+* Loren: Sprint Goals next Sprint 22
 
 
 
