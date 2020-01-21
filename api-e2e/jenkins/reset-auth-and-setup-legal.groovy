@@ -185,13 +185,11 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                         --env-var token-url=${token-url} --env-var service-account-id=${service-account-id} \
                         --env-var service-account-secret=${service-account-secret} --env-var temp-password=${temp-password} \
                         --env-var api_url=${api_url} --data coops.csv
-
                         """
                     } catch (Exception e) {
                         echo "One or more tests failed."
                         echo "${e.getMessage()}"
                         all_passed = false
-                        failed_components += name + ' '
                     }
                     
                     
