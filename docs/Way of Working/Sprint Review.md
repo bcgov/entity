@@ -5,6 +5,8 @@
 #### Please use following format:       
 Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&A) 
 -----------------------------------------------------------------------------------------------------------------------
+
+
 ----
 ### Jan 21, 2020 - Sprint (Milestone) 21
 ----
@@ -21,7 +23,7 @@ Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/milestones
 
 #### Assets (15 min.)
-
+Roland (SonarCloud, GitHub actions), Liv about regulations 
 
 #### Upcoming Releases
 ##### January 30th 2020
@@ -29,8 +31,9 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/milestones
 * Entities team(Production Release): "Incorp Define my comany 2.0(Step 1)" + "Certify and Pay 1.0(Step 5)"
 
 #### Action Items
-* Legal name discussion - Whether the name from BC Services card can be treated as legal name as those can be preferred name as well. - Assigned to Loren
-* Future Sprint consideration is to have an activity log - Assigned to Loren
+- [ ] Loren: Legal name discussion - Whether the name from BC Services card can be treated as legal name as those can be preferred name as well.
+- [ ] Loren: Future Sprint consideration is to have an activity log - Assigned to Loren
+
 ----
 **Sprint Review Jan 7, 2020 - Sprint (Milestone) 20** 
 ----
