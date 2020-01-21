@@ -92,7 +92,7 @@ module.exports = {
     ArPage.assert.containsText('@officeDeliveryLine1', '123 test street');
     ArPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V8V 4K9');
     ArPage.assert.containsText('@officeDeliveryLine3', 'Canada');
-    ArPage.assert.valueContains('@certifyLegalName', 'Tester');
+    ArPage.assert.containsText('@certifyLegalName', 'Tester');
     ArPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
     ArPage.click('@saveAndResumeLaterButton');
   },
