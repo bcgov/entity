@@ -5,8 +5,11 @@
 
 
 *Entities*
-
-
+Room/ Space: 
+  *   Linda will have to sit in between myself and our designer
+  *   Roland will home base back at registries with Tendayi's team
+  *   Fresh Work Devs will have to work from their office more and drop in on our spaces when empty
+...
      
 
 *Relationships*
