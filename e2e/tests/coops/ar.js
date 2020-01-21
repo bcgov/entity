@@ -212,13 +212,9 @@ module.exports = {
     dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (56)');
     dashboard.assert.containsText('@topFilingInHistoryName', 'Annual Report');
    // dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count + 1);
-    dashboard.assert.containsText('@mailingAddressLabel', 'Mailing Address');
-    dashboard.assert.containsText('@mailingLine1', '123 test street');
-    dashboard.assert.containsText('@mailingLine2', 'Victoria BC V8V 4K9');
-    dashboard.assert.containsText('@mailingLine3', 'CA');
     dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
     dashboard.assert.containsText('@deliveryLine1', '123 test street');
     dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');
-    dashboard.assert.containsText('@deliveryLine3', 'CA');
+    dashboard.assert.containsText('@deliveryLine3', 'Canada');
   }
 };
