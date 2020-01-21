@@ -28,7 +28,7 @@ var setProfile={
         .waitForElementVisible('@manageBusinesses')
         .click('@manageBusinesses')
         .moveToElement('@businessesName',10,10)
-        .setValue('@businessesName','testteam131')
+        .setValue('@businessesName','testteam133')
         .click('@saveandcontinue')
     },
 
