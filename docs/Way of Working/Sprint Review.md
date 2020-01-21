@@ -16,7 +16,7 @@ Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&
 * Initial UI steps 1 & 5 - Cameron
 
 #### Relationships (15 min.) 
-2093, 1981, 2293, 2352 (Bug)
+* Jeremy: 2093, 1981, 2293, 2352 (Bug)
 * Loren: Sprint Goals next Sprint 22 
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/milestones
 
