@@ -8,20 +8,15 @@ Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&
 
 ### Jan 21, 2020 - Sprint (Milestone) 21
 #### Assets (x min.)
-
+???
 
 #### Entities (10 min.)
-Cameron -  
-* Incorporations frontend framework
-* Approch and value of framework
-* Initial UI steps 1 & 5
+* Incorporations frontend framework - Cameron
+* Approch and value of framework - Cameron
+* Initial UI steps 1 & 5 - Cameron
 
 #### Relationships (x min.)
-
-
-
-
-
+?
 
 
 
