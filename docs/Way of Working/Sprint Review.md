@@ -7,18 +7,21 @@ Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&
 
 
 ### Jan 21, 2020 - Sprint (Milestone) 21
-#### Assets (x min.)
-???
+
 
 #### Entities (10 min.)
 * Incorporations frontend framework - Cameron
 * Approch and value of framework - Cameron
 * Initial UI steps 1 & 5 - Cameron
+* Next Milestone : Kaine
 
 #### Relationships (15 min.) 
 * Jeremy: 2093, 1981, 2293, 2352 (Bug)
 * Loren: Sprint Goals next Sprint 22 
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/milestones
+
+#### Assets (x min.)
+???
 
 #### Upcoming Releases
 ##### January 30th 2020
