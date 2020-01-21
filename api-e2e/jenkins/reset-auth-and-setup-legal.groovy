@@ -60,11 +60,11 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         args: '${computer.jnlpmac} ${computer.name}',
         echo: "check envVar",
         envVars:([
-            secretEnvVar(key: 'api_url', secretName: "auth-reset-postman", secretKey: 'api_url'),
-            secretEnvVar(key: 'token-url', secretName: "auth-reset-postman", secretKey: 'token-url'),
-            secretEnvVar(key: 'service-account-id', secretName: "auth-reset-postman", secretKey: 'service-account-id'),
-            secretEnvVar(key: 'service-account-secret', secretName: "auth-reset-postman", secretKey: 'service-account-secret'),
-            secretEnvVar(key: 'temp-password', secretName: "auth-reset-postman", secretKey: 'temp-password')
+            secretEnvVar(key: 'apiUrl', secretName: "auth-reset-postman", secretKey: 'api_url'),
+            secretEnvVar(key: 'tokenUrl', secretName: "auth-reset-postman", secretKey: 'token-url'),
+            secretEnvVar(key: 'serviceAccountId', secretName: "auth-reset-postman", secretKey: 'service-account-id'),
+            secretEnvVar(key: 'serviceAccountSecret', secretName: "auth-reset-postman", secretKey: 'service-account-secret'),
+            secretEnvVar(key: 'tempPassword', secretName: "auth-reset-postman", secretKey: 'temp-password')
         ])
     )
 ])
@@ -182,9 +182,9 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                     try {
                     
                         sh """./node_modules/newman/bin/newman.js run ./auth-api-load-entities.postman_collection.json \
-                        --env-var token-url=${token-url} --env-var service-account-id=${service-account-id} \
-                        --env-var service-account-secret=${service-account-secret} --env-var temp-password=${temp-password} \
-                        --env-var api_url=${api_url} --data coops.csv
+                        --env-var token-url=${tokenUrl} --env-var service-account-id=${serviceAccountId} \
+                        --env-var service-account-secret=${serviceAccountSecret} --env-var temp-password=${tempPassword} \
+                        --env-var api_url=${apiUrl} --data coops.csv
                         """
                     } catch (Exception e) {
                         echo "One or more tests failed."
