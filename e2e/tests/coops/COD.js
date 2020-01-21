@@ -1,5 +1,5 @@
 module.exports = {
-  '@tags': ['COD'],
+  '@tags': ['COD','single'],
   'Verify initial login with bcsc': function (browser) {
       bcsc = browser.page.bcscPage();
       browser.url(browser.globals.launch_url)
@@ -108,8 +108,8 @@ module.exports = {
         .waitForElementVisible('#credit_payBtn')
         .click('#credit_payBtn')
         .waitForElementVisible('input[name=trnCardNumber]')
-        .setValue('input[name=trnCardNumber]', process.env.credit_card)
-        .setValue('input[name=trnCardCvd]', process.env.cvv_no)
+        .setValue('input[name=trnCardNumber]','4030000010001234')
+        .setValue('input[name=trnCardCvd]', '123')
         .moveToElement('input[name=submitButton]', 10, 10)
         .click('input[name=submitButton]');
     },
