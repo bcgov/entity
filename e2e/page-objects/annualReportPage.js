@@ -123,5 +123,6 @@ module.exports={
         saveAndResumeLaterButton: "#ar-save-resume-btn",
         saveDraftButton: "#ar-save-btn",
         fileAndPayButton: "#ar-file-pay-btn",
-        cancelFilingButton: "#ar-cancel-btn"
+        cancelFilingButton: "#ar-cancel-btn",
+        certifyBlock: "#AR-step-4-container > div > div.certifiedby-container"
     }};
