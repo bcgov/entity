@@ -16,7 +16,7 @@ var loginCommands={
        .assert.containsText('@serialCardHeader','Log in with BC Services Card')
        .assert.containsText('@virtualCardHeader','Virtual Card Testing')
        .waitForElementVisible('@bcscCardInput')
-       .setValue('@bcscCardInput','BCREG0006')
+       .setValue('@bcscCardInput',process.env.user_bcsc)
        .waitForElementVisible('@continueButton')
        .click('@continueButton')
        .assert.urlEquals(this.api.globals.idtest_url+'/identify')
