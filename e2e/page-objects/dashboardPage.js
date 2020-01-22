@@ -1,4 +1,4 @@
-var dashboardCommands = {
+var dashboardCommands = {  
     verifyTombstone: function (coopObject) {
         return this.waitForElementVisible('@entityName')
                .assert.containsText('@identifier', coopObject.identifier)
@@ -17,12 +17,22 @@ var dashboardCommands = {
                .assert.containsText('@deliveryLine3', coopObject.delivery.line3);
     },
     verifyDirectorCount: function (director_count) {
-        return this.assert.containsText('@currentDirectorsHeader','Current Directors')
-               .expect.elements('.v-expansion-panel-header.panel-header-btn').count.to.equal(director_count);
+        return this
+        .useCss()
+                .assert.containsText('@currentDirectorsHeader','Current Directors')
+              // .expect.elements('#dashboard-article > div > div.col-md-3.col-12 > section:nth-child(2) > div').count.to.equal(director_count);
+    },
+    verifyTodolistandRecentFilings:function(){
+        return this
+        .assert.containsText('@toDoListHeader', 'To Do (3)')
+        //.assert.cssClassNotPresent('@fileNowButton1', 'v-btn--disabled')
+        .expect.element('@fileNowButton2').to.not.be.enabled
+        //.assert.containsText('@recentHistory','Recent Filing History (55)')
     },
     startArFiling: function () {
-        return this.assert.containsText('@toDoListHeader', 'To Do (1)')
-                .click('@fileNowButton')
+        return this
+                .waitForElementVisible('@fileNowButton1')
+                .click('@fileNowButton1')
                 .assert.urlEquals(this.api.globals.launch_url + 'annual-report')
                 .waitForElementVisible('#AR-header', 'Annual Report Page Loaded');
     },
@@ -31,6 +41,7 @@ var dashboardCommands = {
                 .assert.cssClassNotPresent('@launchCOAButton', 'v-btn--disabled')
                 .click('@launchCOAButton')
                 .assert.urlEquals(this.api.globals.launch_url + 'standalone-addresses')
+                .useCss()
                 .waitForElementVisible('#filing-header', 'COA Page Loaded');
     },
     startCodFiling: function() {
@@ -38,6 +49,7 @@ var dashboardCommands = {
                    .assert.cssClassNotPresent('@launchCODButton','v-btn--disabled')
                    .click('@launchCODButton')
                    .assert.urlEquals(this.api.globals.launch_url + 'standalone-directors')
+                   .useCss()
                    .waitForElementVisible('#filing-header','COD Page Loaded')
     }           
     
@@ -48,32 +60,33 @@ module.exports={
         return this.api.globals.launch_url + '/dashboard';
     },
     elements:{
-        entityName: "div.entity-name",
-        identifier: "dd.incorp-number",
-        filingHistoryHeader: "#dashboardArticle > div > div > section:nth-child(2) > header > h2",
+        entityName: "#entity-legal-name",
+        identifier: "#entity-incorporation-number",
+        filingHistoryHeader: '[data-test-id="dashboard-filing-history-subtitle"]',
         noFilingsMessage: "#dashboardArticle > div > div > section:nth-child(2) > div > div.no-results.v-card.v-card--flat.v-sheet.theme--light > div > div.no-results__title",
-        topFilingInHistoryName: "#dashboardArticle > div > div > section:nth-child(2) > div > ul > li > div.v-expansion-panel__header > div.list-item > div.list-item__title",
+        topFilingInHistoryName: '#filing-history-list > div.v-item-group.theme--light.v-expansion-panels.v-expansion-panels--accordion > div.v-expansion-panel.align-items-top.filing-item.v-expansion-panel--active.v-item--active > button > div.list-item > div.filing-label > div.row > div > div',
         topFilingInHistoryStatus: "div.v-expansion-panel__header__status",
-        officeAddressHeader: "#dashboardArticle > div > aside > section:nth-child(1) > header > h2",
-        launchCOAButton: "#btn-standalone-addresses",
-        mailingAddressLabel: "#dashboardArticle > div > aside > section:nth-child(1) > div > div > div:nth-child(1) > div.v-list-item__content > div.v-list-item__title.mb-2",
-        deliveryAddressLabel: "#dashboardArticle > div > aside > section:nth-child(1) > div > div > div:nth-child(3) > div.v-list-item__content > div.v-list-item__title.mb-2",
-        mailingLine1: "#dashboardArticle > div > aside > section:nth-child(1) > div > div > div:nth-child(1) > div.v-list-item__content > div.v-list-item__subtitle > ul > li:nth-child(1)",
-        mailingLine2: "#dashboardArticle > div > aside > section:nth-child(1) > div > div > div:nth-child(1) > div.v-list-item__content > div.v-list-item__subtitle > ul > li:nth-child(2)",
-        mailingLine3: "#dashboardArticle > div > aside > section:nth-child(1) > div > div > div:nth-child(1) > div.v-list-item__content > div.v-list-item__subtitle > ul > li:nth-child(3)",
-        deliveryLine1: "#dashboardArticle > div > aside > section:nth-child(1) > div > div > div:nth-child(3) > div.v-list-item__content > div.v-list-item__subtitle > ul > li:nth-child(1)",
-        deliveryLine2: "#dashboardArticle > div > aside > section:nth-child(1) > div > div > div:nth-child(3) > div.v-list-item__content > div.v-list-item__subtitle > ul > li:nth-child(2)",
-        deliveryLine3: "#dashboardArticle > div > aside > section:nth-child(1) > div > div > div:nth-child(3) > div.v-list-item__content > div.v-list-item__subtitle > ul > li:nth-child(3)",
-        currentDirectorsHeader: "#dashboardArticle > div > aside > section:nth-child(2) > header > h2",
-        launchCODButton: "#btn-standalone-directors > span > span",
-        toDoListHeader: "#dashboardArticle > div > div > section:nth-child(1) > header > h2",
-        fileNowButton: "#dashboardArticle > div > div > section:nth-child(1) > div > div.v-item-group.theme--light.v-expansion-panels.v-expansion-panels--accordion > div > button > div.list-item > div.list-item__actions > button > span",
-        resumeDraftButton: "#btn-draft-resume",
+        officeAddressHeader: '[data-test-id="dashboard-addresses-subtitle"]',
+        launchCOAButton: "#standalone-addresses-button > span > span",
+        mailingAddressLabel: "#registered-office-panel > div > div > div > div.mailing-address-list-item.v-list-item.theme--light > div.v-list-item__content > div.v-list-item__title.mb-2.address-title",
+        deliveryAddressLabel: "#registered-office-panel > div > div > div > div.delivery-address-list-item.v-list-item.theme--light > div.v-list-item__content > div.v-list-item__title.mb-2.address-title",
+        mailingLine1: "#registered-office-panel > div > div > div > div.mailing-address-list-item.v-list-item.theme--light > div.v-list-item__content > div.v-list-item__subtitle > ul > li.address-line1",
+        mailingLine2: "#registered-office-panel > div > div > div > div.mailing-address-list-item.v-list-item.theme--light > div.v-list-item__content > div.v-list-item__subtitle > ul > li.address-line3",
+        mailingLine3: "#registered-office-panel > div > div > div > div.mailing-address-list-item.v-list-item.theme--light > div.v-list-item__content > div.v-list-item__subtitle > ul > li.address-line4 > span",
+        deliveryLine1: "#registered-office-panel > div > div > div > div.delivery-address-list-item.v-list-item.theme--light > div.v-list-item__content > div.v-list-item__subtitle > ul > li.address-line1",
+        deliveryLine2: "#registered-office-panel > div > div > div > div.delivery-address-list-item.v-list-item.theme--light > div.v-list-item__content > div.v-list-item__subtitle > ul > li.address-line3",
+        deliveryLine3: "#registered-office-panel > div > div > div > div.delivery-address-list-item.v-list-item.theme--light > div.v-list-item__content > div.v-list-item__subtitle > ul > li.address-line4 > span",
+        currentDirectorsHeader: '[data-test-id="dashboard-directors-subtitle"]',
+        launchCODButton: "#standalone-directors-button > span > span",
+        toDoListHeader: '[data-test-id="dashboard-todo-subtitle"]',
+        fileNowButton1: "#todo-list > div.v-item-group.theme--light.v-expansion-panels.v-expansion-panels--accordion > div:nth-child(1) > button > div.list-item > div.list-item__actions > div > button",
+        resumeDraftButton: "#todo-list > div.v-item-group.theme--light.v-expansion-panels.v-expansion-panels--accordion > div.v-expansion-panel.align-items-top.todo-item.draft > button > div.list-item > div.list-item__actions > div > button.btn-draft-resume.v-btn.v-btn--contained.theme--light.v-size--default.primary > span",
         toDoButtonMoreActionsArrow: "#menu-activator > span > i",
         deleteDraftButton: "#btn-delete-draft > div",
         confirmDeleteDraftButton: {
          selector: "#app > div.v-dialog__content.v-dialog__content--active > div > div > div.v-card__actions > button:nth-child(2) > span",
-        // locateStrategy: "xpath"
-        }
+        },
+        fileNowButton2:'[ type="button"] [disabled="disabled"]',
+        recentHistory:'#dashboardArticle > div > div > section:nth-child(2) > header > h2'
     }
 };
