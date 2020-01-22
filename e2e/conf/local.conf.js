@@ -15,7 +15,7 @@ nightwatch_config = {
 
   test_settings: {
     default: {
-      globals_path: "test-globals.js",
+      globals_path: "globals.js",
       desiredCapabilities: {
         'build': 'nightwatch-browserstack',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
