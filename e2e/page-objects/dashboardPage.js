@@ -31,6 +31,7 @@ var dashboardCommands = {
     },
     startArFiling: function () {
         return this
+                .waitForElementVisible('@fileNowButton1')
                 .click('@fileNowButton1')
                 .assert.urlEquals(this.api.globals.launch_url + 'annual-report')
                 .waitForElementVisible('#AR-header', 'Annual Report Page Loaded');
