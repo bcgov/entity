@@ -69,7 +69,10 @@ module.exports = {
       CoaPage.assert.containsText('@officeDeliveryLine1', '123 test street');
       CoaPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V8V 4K9');
       CoaPage.assert.containsText('@officeDeliveryLine3', 'Canada');
-      CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
+      CoaPage.waitForElementVisible('@certifyBlock')
+      CoaPage.waitForElementVisible('@certifyLegalName')
+      CoaPage.moveToElement('@certifyLegalName',5,5)
+      //CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
       CoaPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
       CoaPage.click('@saveAndResumeLaterButton');
     },
@@ -152,7 +155,10 @@ module.exports = {
       CoaPage.assert.containsText('@officeDeliveryLine1', '123 test street');
       CoaPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V8V 4K9');
       CoaPage.assert.containsText('@officeDeliveryLine3', 'Canada');
-      CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
+      CoaPage.waitForElementVisible('@certifyBlock')
+      CoaPage.waitForElementVisible('@certifyLegalName')
+      CoaPage.moveToElement('@certifyLegalName',5,5)
+     // CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
       CoaPage.click('@certifyCheckBox');
     },
   
