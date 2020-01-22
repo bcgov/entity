@@ -32,7 +32,7 @@ Roland (SonarCloud, GitHub actions), Liv about regulations
 
 #### Action Items
 - [ ] Loren: Legal name discussion - Whether the name from BC Services card can be treated as legal name as those can be preferred name as well.
-- [ ] Loren: Future Sprint consideration is to have an activity log - Assigned to Loren
+- [ ] Loren: Future Sprint consideration is to have an activity log
 
 ----
 **Sprint Review Jan 7, 2020 - Sprint (Milestone) 20** 
