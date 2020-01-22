@@ -20,7 +20,11 @@ xxxx
 Jan, 23, 2020
 ----
 1. Discuss abut Business Contact Info - what is the source of truth? Does this info comes from Relationship dashboard and we consume it? or Should we get the information and publish it to Relationship? or Both?
-2. Impediments regarding EDB - Decisions needed how to best resolve that? Its impacting everyone.
+2. Entities team needs to know where/how would the client start the incorporation process(timing in particular? Dependency on Relationship team. Some of the related things are: 
+    - What happens when payment is succeful where does the user lands?
+    - What happends when payment is unsuccesful? Does user gets Resume or cancel option on the Accounts dashboard
+    - How does client resume the flow? from which dashboard?
+3. Impediments regarding EDB - Decisions needed how to best resolve that? Its impacting everyone.
 3. Using Roadmap in ZenHub
 4. Using Release tag in ZenHub
 5. Follow-up on topics & action items below (last PO-Sync)
