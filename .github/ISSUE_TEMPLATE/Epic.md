@@ -5,7 +5,7 @@
 
 ----
 Enabler Epics:
-* <action> 
-* <result> 
-* <object>
+* action
+* result
+* object
 
