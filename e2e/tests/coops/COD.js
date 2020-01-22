@@ -91,7 +91,7 @@ module.exports = {
 
     '13.Certify who filed - POST DRAFT': function (browser) {
       CodPage = browser.page.CodPage();
-      //CodPage.setValue('@certifyLegalName', 'Tester');
+      CodPage.setValue('@certifyLegalName', 'Tester');
       CodPage.click('@certifyCheckBox');
       CodPage.click('@nextButton');
     },
