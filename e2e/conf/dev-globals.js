@@ -3,7 +3,7 @@ module.exports = {
 	waitForConditionTimeout : 30000,
 	retryAssertionTimeout: 30000,	
 	throwOnMultipleElementsReturned : false,
-	launch_url: "https://test.bcregistry.ca/cooperatives/",
+	launch_url: "https://dev.bcregistry.ca/cooperatives/",
     idtest_url: "https://idtest.gov.bc.ca/login",
 
 	CP0000019: {

@@ -1,3 +1,4 @@
+require('dotenv').config();
 module.exports={
   '@tags': ['staffsearch'],
 
@@ -5,8 +6,8 @@ module.exports={
       browser
       .url(browser.globals.launch_idirurl)
       .assert.visible('#login-to','Log in to sfstest7.gov.bc.ca')
-      .setValue('#user','johnstaf')
-      .setValue('#password','Automation5TheWin')
+      .setValue('#user', process.env.IDIRCredU)
+      .setValue('#password', process.env.IDIRCredP)
       .click('#login-form > section > div > div.col-sm-7.col-md-8 > div > div.panel-body > div.login-form-action > input')
   },
 
