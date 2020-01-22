@@ -1,6 +1,6 @@
 require('dotenv').config();
 module.exports = {
-  '@tags': ['bcsc','single'], 
+  '@tags': ['bcsc'], 
     'Verify initial login with bcsc': function (browser) {
         bcsc = browser.page.bcscPage();
         browser.url(browser.globals.launch_url)
