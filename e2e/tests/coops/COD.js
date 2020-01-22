@@ -56,7 +56,7 @@ module.exports = {
     },
 
    '8.Assert the directors are present': function (browser) {
-      CodPage.assert.valueContains('@certifyLegalName', 'Tester');
+      //CodPage.assert.valueContains('@certifyLegalName', 'Tester');
       CodPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
       CodPage.click('@saveAndResumeLaterButton');
     },
@@ -91,7 +91,7 @@ module.exports = {
 
     '13.Certify who filed - POST DRAFT': function (browser) {
       CodPage = browser.page.CodPage();
-      CodPage.setValue('@certifyLegalName', 'Tester');
+      //CodPage.setValue('@certifyLegalName', 'Tester');
       CodPage.click('@certifyCheckBox');
       CodPage.click('@nextButton');
     },
