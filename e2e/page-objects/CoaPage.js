@@ -3,8 +3,8 @@ var CoaFilingsCommands = {
       return this
         .assert.containsText('#filing-header', 'Address Change')
         .assert.containsText('#AR-step-4-header', 'Certify Correct')
-        .assert.containsText('dd.incorp-number', coopObject.identifier)
-        .assert.containsText('div.entity-name', coopObject.legal_name)
+        .assert.containsText('#entity-incorporation-number', coopObject.identifier)
+        .assert.containsText('#entity-legal-name', coopObject.legal_name)
         .assert.visible('@saveDraftButton')
         .assert.visible('@saveAndResumeLaterButton')
         .assert.visible('@cancelFilingButton')
@@ -79,19 +79,19 @@ module.exports={
         },        
         officeMailingLine1: {
             selector: "div.address-block__info-row",
-            index: 4
+            index: 5
         },
         officeMailingAdditional: {
             selector: "div.address-block__info-row",
-            index: 5
+            index: 6
         },
         officeMailingLine2: {
             selector: "div.address-block__info-row",
-            index: 6
+            index: 7
         },
         officeMailingLine3: {
             selector: "div.address-block__info-row",
-            index: 7
+            index: 8
         },
         changeOfficeAddressButton: "#reg-off-addr-change-btn",
         officeDeliveryStreetAddress: {
@@ -99,34 +99,14 @@ module.exports={
             index: 0
         },
         officeDeliveryCity: {
-            selector: 'input[name="address-city"]',
-            index: 0
+            selector: '#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div.form__row.three-column > div.v-input.item.address-city.v-input--is-label-active.v-input--is-dirty.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div >input[type=text]',
+            locateStrategy: "css selector"
         },
         officeDeliveryPostalCode: {
-            selector: 'input[name="postal-code"]',
-            index: 0
+            selector: '#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div.form__row.three-column > div.v-input.item.postal-code.v-input--is-label-active.v-input--is-dirty.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div >input[type=text]',
+            locateStrategy: "css selector" 
         },
-        officeDeliveryCountry: {
-            selector: 'input[name="address-country"]',
-            index: 0
-        },
-        officeMailingStreetAddress: {
-            selector: 'input[name="street-address"]',
-            index: 1
-        },
-        officeMailingCity: {
-            selector: 'input[name="address-city"]',
-            index: 1
-        },
-        officeMailingPostalCode: {
-            selector: 'input[name="postal-code"]',
-            index: 1
-        },
-        officeMailingCountry: {
-            selector: 'input[name="address-country"]',
-            index: 1
-        },
-        sameAsDeliveryButton: '#standalone-office-address-article > section:nth-child(2) > div > ul > li:nth-child(2) > div > div > div:nth-child(1) > div > div > div.v-input__slot > div > div',
+        sameAsDeliveryButton: '#office-addresses > div > ul > li:nth-child(3) > div > div > div.form__row > div > div > div.v-input__slot > div > div',
         updateAddressesButton: "#reg-off-update-addr-btn",
         resetOfficeAddressButton: "#reg-off-addr-reset-btn",
         certifyLegalName: "#certified-by-textfield",
@@ -134,6 +114,7 @@ module.exports={
         saveAndResumeLaterButton: "#coa-save-resume-btn",
         saveDraftButton: "#coa-save-btn",
         fileAndPayButton: "#coa-file-pay-btn",
-        cancelFilingButton: "#coa-cancel-btn"
+        cancelFilingButton: "#coa-cancel-btn",
+        certifyBlock: "#AR-step-4-container > div > div.certifiedby-container"
     }
 };
