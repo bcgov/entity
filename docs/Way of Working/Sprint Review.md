@@ -31,8 +31,8 @@ Roland (SonarCloud, GitHub actions), Liv about regulations
 * Entities team(Production Release): "Incorp Define my comany 2.0(Step 1)" + "Certify and Pay 1.0(Step 5)"
 
 #### Action Items
-- [ ] Loren: Legal name discussion - Whether the name from BC Services card can be treated as legal name as those can be preferred name as well.
-- [ ] Loren: Future Sprint consideration is to have an activity log
+- [ ] Loren: Legal name discussion - whether the name from BC Services card can be treated as legal name as those can be preferred name as well.
+- [x] Loren: Future Sprint consideration is to have an activity log
 
 ----
 **Sprint Review Jan 7, 2020 - Sprint (Milestone) 20** 
