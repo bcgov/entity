@@ -3,8 +3,19 @@
 ### In Sprint Planning discuss & agree what US/ Feature should be demoed to Stakeholders - in (common) Sprint Review on Tuesdays. 
 
 #### Please use following format:       
-Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&A) 
+Name - User Story/ Feature (link to ticket) - how long (demo incl. Q&A) 
 -----------------------------------------------------------------------------------------------------------------------
+
+
+----
+### Feb x, 2020 - Sprint (Milestone) 22
+----
+#### Assets (15 min.)
+* xx
+#### Entities (15 min.)
+* xx
+#### Relationships (15 min.) 
+* xx
 
 
 ----
