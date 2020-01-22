@@ -160,6 +160,7 @@ module.exports = {
       CoaPage.moveToElement('@certifyLegalName',5,5)
      // CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
       CoaPage.click('@certifyCheckBox');
+      CoaPage.click('@fileAndPayButton');
     },
   
   
