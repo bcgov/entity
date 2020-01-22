@@ -117,14 +117,14 @@ module.exports = {
       CoaPage.assert.containsText('@officeDeliveryLine3', 'Canada');
     },
   
-    '12.Certify who filed - POST DRAFT': function (browser) {
+    12.'Certify who filed - POST DRAFT': function (browser) {
       CoaPage = browser.page.CoaPage();
       CoaPage.setValue('@certifyLegalName', 'Tester');
       CoaPage.click('@certifyCheckBox');
       CoaPage.assert.cssClassNotPresent('@fileAndPayButton', 'v-btn--disabled');
     },
   
-    '13.Check with Resume Payment/Cancel Payment': function(browser){
+    13.'Check with Resume Payment/Cancel Payment': function(browser){
       CoaPage.click('@fileAndPayButton')
       .assert.containsText('#main-content > h1','Add Invoice(s) to your Cart to make payment')
       .waitForElementVisible('#searchForm > div.panel-footer > a')
@@ -140,13 +140,13 @@ module.exports = {
       .click('#dialog-yes-button > span')
     },
   
-    '14.Resume draft from Dashboard after Cancel Payment': function (browser) {
+    14.'Resume draft from Dashboard after Cancel Payment': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.waitForElementVisible('@resumeDraftButton');
       dashboard.click('@resumeDraftButton');
     },
   
-    '15.Verify draft resumed correctly after Cancel Payment': function (browser) {
+    15.'Verify draft resumed correctly after Cancel Payment': function (browser) {
       CoaPage = browser.page.CoaPage();
       CoaPage.checkFeeCount(1);
       CoaPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 0);
@@ -165,7 +165,7 @@ module.exports = {
   
   
   
-    '16.PayBC': function (browser) {
+    16.'PayBC': function (browser) {
       browser
         .waitForElementVisible('#paylistbutton')
         .click('#paylistbutton')
@@ -178,16 +178,12 @@ module.exports = {
         .click('input[name=submitButton]');
     },
   
-    '17.Verify Dashboard after filing': function (browser) {
+    17.'Verify Dashboard after filing': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.assert.containsText('@toDoListHeader', 'To Do (1)');
       dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (57)');
       dashboard.assert.containsText('@topFilingInHistoryName', 'Address Change');
      // dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count);
-      //dashboard.assert.containsText('@mailingAddressLabel', 'Mailing Address');
-     // dashboard.assert.containsText('@mailingLine1', '123 test street');
-     // dashboard.assert.containsText('@mailingLine2', 'Victoria BC V8V 4K9');
-     // dashboard.assert.containsText('@mailingLine3', 'CA');
       dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
       dashboard.assert.containsText('@deliveryLine1', '123 test street');
       dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');
