@@ -1,0 +1,14 @@
+#=========================================================
+# Template parameters for:
+# Project: 
+# Component: pipeline
+# Action: 
+# Template File: api-e2e/openshift/templates/data-pipeline.json
+# Hint: oc process -n d7eovc-tools --param-file=reload-legal-from-oracle-pipeline.param -f data-pipeline.json | oc create -n d7eovc-tools -f -
+#=========================================================
+NAME="reload-legal-from-oracle"
+PIPELINE_PURPOSE="data"
+GIT_REPO_URL="https://github.com/bcgov/entity.git"
+GIT_REF="master"
+SOURCE_CONTEXT_DIR="api-e2e"
+JENKINS_FILE="jenkins/reload-legal-from-oracle.groovy"
