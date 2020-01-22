@@ -17,7 +17,7 @@
 * Lekshmi: Feb 3 - Feb 28
 * Peter: Feb 12 - 17
 * Sienna: Feb 17 - 21
-* Nitin: Mid Feb  - Mid Mar 
+* Nitin: Feb 18 - Mar 13
 
 
 ----
