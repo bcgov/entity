@@ -114,6 +114,7 @@ module.exports={
         saveAndResumeLaterButton: "#coa-save-resume-btn",
         saveDraftButton: "#coa-save-btn",
         fileAndPayButton: "#coa-file-pay-btn",
-        cancelFilingButton: "#coa-cancel-btn"
+        cancelFilingButton: "#coa-cancel-btn",
+        certifyBlock: "#AR-step-4-container > div > div.certifiedby-container"
     }
 };
