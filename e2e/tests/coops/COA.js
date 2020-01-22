@@ -180,8 +180,8 @@ module.exports = {
   
     '17.Verify Dashboard after filing': function (browser) {
       dashboard = browser.page.dashboardPage();
-      dashboard.assert.containsText('@toDoListHeader', 'To Do (1)');
-      dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (57)');
+      dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
+      dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (56)');
       dashboard.assert.containsText('@topFilingInHistoryName', 'Address Change');
      // dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count);
       dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
