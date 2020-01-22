@@ -15,6 +15,9 @@
 * Rich: Jan 13, Jan 27
 * Kial: Mondays in the morning, Wed all day, Thurdsays in the morning
 * Lekshmi: Feb 3 - Feb 28
+* Peter: Feb 12 - 17
+* Sienna: Feb 17 - 21
+* Nitin: Mid Feb  - Mid Mar 
 
 
 ----
