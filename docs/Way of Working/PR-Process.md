@@ -12,11 +12,13 @@ Goals:  Merge code ASAP, not letting it languish
 5) PRs must be looked at by reviewers within 24hrs or receieving them.
 6) Last reviewer must squash and merge.
 
+
+---
 **PR-Process Assets Team**
-(1) @mention the reviewers on rocket
-(2) chat and include a link to the PR
-(3) It should be reviewed within an hour
-(3) We've been reviewing in 5-10 minutes
+1) @mention the reviewers on rocket
+2) chat and include a link to the PR
+3) It should be reviewed within an hour
+4) We've been reviewing in 5-10 minutes
 
 
 
