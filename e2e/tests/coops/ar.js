@@ -1,6 +1,6 @@
 require('dotenv').config();
 module.exports = {
-  '@tags': ['bcsc','single'], 
+  '@tags': ['bcsc'], 
     'Verify initial login with bcsc': function (browser) {
         bcsc = browser.page.bcscPage();
         browser.url(browser.globals.launch_url)
@@ -209,14 +209,10 @@ module.exports = {
 
   '19.Verify Dashboard after filing': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.assert.containsText('@toDoListHeader', 'To Do (2)');
+    dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
     dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (56)');
     dashboard.assert.containsText('@topFilingInHistoryName', 'Annual Report');
    // dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count + 1);
-    dashboard.assert.containsText('@mailingAddressLabel', 'Mailing Address');
-    dashboard.assert.containsText('@mailingLine1', '123 test street');
-    dashboard.assert.containsText('@mailingLine2', 'Victoria BC V8V 4K9');
-    dashboard.assert.containsText('@mailingLine3', 'CA');
     dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
     dashboard.assert.containsText('@deliveryLine1', '123 test street');
     dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');

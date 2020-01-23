@@ -20,7 +20,8 @@ module.exports = {
 		delivery: {
 			line1: "175 1ST STREET",
 			line2: "SOINTULA BC V0N 3E0",
-			line3: "Canada"
+			line3: "Canada" 
+			
 		},
 		director7:{
 			firstname:"test",
