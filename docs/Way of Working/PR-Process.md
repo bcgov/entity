@@ -9,7 +9,7 @@ Goals:  Merge code ASAP, not letting it languish
     a) Reviewers can refuse due to load 
     b) Team can suggest others
 4)  Only the person starting a conversation can resolve it. 
-5) PRs must be looked at by reviewers within 24hrs or receieving them.
+5) PRs must be looked at by reviewers within 24hrs of receieving the PR.
 6) Last reviewer must squash and merge.
 
 
