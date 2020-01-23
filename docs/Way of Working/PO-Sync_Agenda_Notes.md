@@ -24,10 +24,13 @@ Jan, 23, 2020
     - What happens when payment is succeful where does the user lands?
     - What happends when payment is unsuccesful? Does user gets Resume or cancel option on the Accounts dashboard
     - How does client resume the flow? from which dashboard?
-3. Impediments regarding EDB - Decisions needed how to best resolve that? Its impacting everyone.
-3. Using Roadmap in ZenHub
-4. Using Release tag in ZenHub
-5. Follow-up on topics & action items below (last PO-Sync)
+3. BN Messaging decission
+    - Carol Direction is to have BN messaging have no duplication of work across teams
+4. Impediments regarding EDB - Decisions needed how to best resolve that? Its impacting everyone.
+    - I think we briefly touched upon this in PI planning meeting. There is some dollars approved to have EDB folks working on this to stabilize. But we can quickly disucss that.
+5. Using Roadmap in ZenHub
+6. Using Release tag in ZenHub
+7. Follow-up on topics & action items below (last PO-Sync)
 
 ----
 Jan, 16, 2020
