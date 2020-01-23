@@ -12,7 +12,7 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 @Jyoti: invite Thor to that session (see ticket)  
 
 ----
-Jan, xx, 2020
+Jan, 30, 2020
 ----
 xxxx
 
@@ -20,17 +20,39 @@ xxxx
 Jan, 23, 2020
 ----
 1. Discuss abut Business Contact Info - what is the source of truth? Does this info comes from Relationship dashboard and we consume it? or Should we get the information and publish it to Relationship? or Both?
+    - Jeremy and Scott agreed that Entities is the currently gettting this information during incorporation and Relationship will ingest it. Relation is currently the record holder. 
+    - R will create a task to take this information into their system. This would be a research task
 2. Entities team needs to know where/how would the client start the incorporation process(timing in particular? Dependency on Relationship team. Some of the related things are: 
     - What happens when payment is succeful where does the user lands?
     - What happends when payment is unsuccesful? Does user gets Resume or cancel option on the Accounts dashboard
     - How does client resume the flow? from which dashboard?
+        - Jeremy has showed the design
+        - Scott needs to provide the User Story for Jeremy. User stories would be better. Linda, Scott and Jyoti will provide the requirement in form of user stories
+        - Liv will follow up with Scott and Jeremy on the common login
 3. BN Messaging decission
     - Carol Direction is to have BN messaging have no duplication of work across teams
+    - Calrify with Carol what this is about? - Loren to follow up with Carol(Next week)
 4. Impediments regarding EDB - Decisions needed how to best resolve that? Its impacting everyone.
     - I think we briefly touched upon this in PI planning meeting. There is some dollars approved to have EDB folks working on this to stabilize. But we can quickly disucss that.
+    - Five days of approval for EDB guys to stabilize the EDB solution. Tendayi's team(Bob/walter) needs to be involved. 
+    - SHould we have someone from back office? - David Roberts
+    - Thor is the point of contact. 
+    - Patrick would be available from R team
+    - Richard from K's team
+    - Pay this company 30K/year - 24/7 availability.
 5. Using Roadmap in ZenHub
+    - End of February is the target to have all the teams aligned
+    - All the three PO's agree to use this Road map feature
+    - Can Asset team use the same repoisotory?
+        - W and J to work with Bryce
 6. Using Release tag in ZenHub
-7. Follow-up on topics & action items below (last PO-Sync)
+    - All the three PO's agree to use the Release Tagging feature
+    - What kind of naming convention are we going to use for Release across 3 teams? - Jyoti to put some options
+7. What does it mean that Relationship team is responsible for UI?
+        - Loren to check with Carol and reflect to the team what does it mean for the other team.
+8. Staff dashboard to manage their work - All the three teams are involved but its not decided who will do it
+    - It has to be discussed within PO's. 
+9. Follow-up on topics & action items below (last PO-Sync)
 
 ----
 Jan, 16, 2020
