@@ -1,13 +1,16 @@
 **PR Process for Entities Team**
-**The team agreed on Dec. 11 on the following process for PR´s**:
-1.	2 Assignees, any no. of reviewers 
-- Assignees must approve 
-- Reviewers are just for code sharing 
-2.	Check-in/ ask for update/ mention the PR in our Daily Scrum
-3.	Assignees will review within 2 days 
-4.	PR doesn´t get assigned, if int or unit tests fail 
----
+**Drafted by Severin & Shahriar on the following process for PR´s**:
+Goals:  Merge code ASAP, not letting it languish 
 
+1) When creating PRs wait to make sure github actions run lint and unit tests successfully before assigning reviewers.
+	a) If tests don’t run automatically, dev must run them manually before assigning reviewers. 
+2) Assign 2 reviewers 
+3) Send a message in the registries-Entities rocketchat channel, tagging the 2 reviewers & including a link to the PR
+    a) Reviewers can refuse due to load 
+    b) Team can suggest others
+4)  Only the person starting a conversation can resolve it. 
+5) PRs must be looked at by reviewers within 24hrs or receieving them.
+6) Last reviewer must squash and merge.
 
 **PR-Process Assets Team**
 (1) @mention the reviewers on rocket
