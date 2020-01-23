@@ -1,12 +1,12 @@
 var loginCommands={
-    verifyCoperativesPage : function(browser){
+    verifyLandingPage : function(browser){
         return this
        .waitForElementVisible('@HeaderLogin')
        .assert.containsText('@mainHeader','Welcome to Cooperatives Online')
        .waitForElementVisible('@loginButton')
        .click('@loginButton')
     },
-      verifyBcscLogin: function(){
+      loginWithBCSC: function(username, password){
        return this.
         assert.urlEquals(this.api.globals.idtest_url + '/entry#start')
        .assert.containsText('@header','Choose how to log in with your card')
@@ -16,13 +16,13 @@ var loginCommands={
        .assert.containsText('@serialCardHeader','Log in with BC Services Card')
        .assert.containsText('@virtualCardHeader','Virtual Card Testing')
        .waitForElementVisible('@bcscCardInput')
-       .setValue('@bcscCardInput','BCREG0006')
+       .setValue('@bcscCardInput', username)
        .waitForElementVisible('@continueButton')
        .click('@continueButton')
        .assert.urlEquals(this.api.globals.idtest_url+'/identify')
        .assert.containsText('@passCodeHeader','Enter Your Passcode:')
        .waitForElementVisible('@passCodeInput') 
-       .setValue('@passCodeInput','98906')
+       .setValue('@passCodeInput', password)
        .useXpath()
        .waitForElementVisible('//*[@id="btnSubmit"]')
        .click('//*[@id="btnSubmit"]')
