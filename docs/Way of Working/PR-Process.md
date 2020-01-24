@@ -2,7 +2,7 @@
 **Drafted by Severin & Shahriar on the following process for PR´s**:
 Goals:  Merge code ASAP, not letting it languish 
 
-1) When creating PRs wait to make sure github actions run lint and unit tests successfully before assigning reviewers.
+1) When creating PRs, Assign it to yourself & wait to make sure github actions run lint and unit tests successfully before assigning reviewers.
 	a) If tests don’t run automatically, dev must run them manually before assigning reviewers. 
 2) Assign 2 reviewers 
 3) Send a message in the registries-Entities rocketchat channel, tagging the 2 reviewers & including a link to the PR
