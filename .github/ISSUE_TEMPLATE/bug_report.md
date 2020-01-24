@@ -3,17 +3,19 @@ name: Bug report
 about: Create a report to help us improve
 
 ---
-**Describe the bug in the current situation**
+**Describe the bug in current/ actual behavior/ situation**
 A clear and concise description of what the bug is.
-* observed behaviour
+* observed/ actual behaviour
 * is there a specific platform? (if yes, please name here)
 * what environment?
 
-**Impact**
+**Impact of this bug**
 Describe the impact, i.e. what the impact is, and number of users impacted. 
 
+**Pre Conditions**
+
 **Expected behavior**
-A clear and concise description of what you expected to happen. Use the gherking language: 
+A clear and concise description of what you expected to happen. Use the gherking language. 
 
 **Steps to Reproduce**
 Steps to reproduce the behavior:
@@ -22,5 +24,5 @@ Steps to reproduce the behavior:
 3. Scroll down to '....'
 4. See error
 
-**Screenshots**
+**Screenshots/ Visual Reference**
 If applicable, add screenshots to help explain your problem. You an use screengrab. 
