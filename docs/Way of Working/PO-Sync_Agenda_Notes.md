@@ -14,8 +14,9 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 ----
 Jan, 30, 2020
 ----
-xxxx
-
+1.  Entities dependency on Lorna team to understand what we are getting from NRO, what kind of validation has been done and passed to Entities and what happens when NR status changes mid-flight, how it needs to be handled.
+2.  Staff dashboard to manage their work - All the three teams are involved but its not decided who will do it
+    
 ----
 Jan, 23, 2020
 ----
@@ -50,9 +51,7 @@ Jan, 23, 2020
     - What kind of naming convention are we going to use for Release across 3 teams? - Jyoti to put some options
 7. What does it mean that Relationship team is responsible for UI?
         - Loren to check with Carol and reflect to the team what does it mean for the other team.
-8. Staff dashboard to manage their work - All the three teams are involved but its not decided who will do it
-    - It has to be discussed within PO's. 
-9. Follow-up on topics & action items below (last PO-Sync)
+8. Follow-up on topics & action items below (last PO-Sync)
 
 ----
 Jan, 16, 2020
