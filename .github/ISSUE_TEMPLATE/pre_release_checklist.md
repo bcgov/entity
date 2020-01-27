@@ -22,6 +22,10 @@ Prior to moving into production, the following steps should be completed or conf
 Dev:
 - [ ] config map changes
   - list here, copy to test and prod
+- [ ] are there any dependencies, such as an auth/pay deployment or keycloak changes?
+  - list here, copy to test and prod
+- [ ] are there any one-time scripts to be run, such as for data migration? 
+  - list here, copy to test and prod
 
 Test:
 
