@@ -6,6 +6,7 @@ about: Complete one of these for each release. Designed to catch small mistakes 
 
 Prior to moving into production, the following steps should be completed or confirmed:
 - [ ] Update version number in the code being released
+- [ ] Ensure deployment steps are filled in - remove/replace placeholders
 - [ ] Create a draft release in GitHub and confirm the correct commits are present
 - [ ] Add version # and release # to this ticket
 - [ ] Dev to send commit list to QA (or otherwise publish changelog)
