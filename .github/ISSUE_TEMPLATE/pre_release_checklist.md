@@ -12,9 +12,20 @@ Prior to moving into production, the following steps should be completed or conf
 - [ ] QA to schedule the release with staff/clients (daytime's best or when staff are available for rollback)
 - [ ] All dev/test pipeline test suites green
 - [ ] Dev/QA chat to plan prod verification testing (unless already automated)
-- [ ] Release the code to production and complete smoke test
+- [ ] Release the code to production and complete smoke test (STEPS BELOW)
 - [ ] Finalise/publish the release in GitHub, tagging it
+- [ ] Merge release branch back to master (if applicable)
+- [ ] Change openshift builds/pipelines back to master (if applicable)
 
+**Deployment Steps**
+
+Dev:
+- [ ] config map changes
+  - list here, copy to test and prod
+
+Test:
+
+Prod:
 
 **NameX Smoke Test Script**
 - [ ] Log in
