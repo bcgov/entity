@@ -9,4 +9,5 @@ Jan 28
 ** Topics to discuss **
 - How to use the Release feature and embed that in the way of working? 
 - Label "Release" has the same red color as Entity 
+- use Release label in all teams (see Email from Trish) 
 - how to manage dependencies across teams 
