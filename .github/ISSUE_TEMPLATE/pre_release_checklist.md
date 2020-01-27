@@ -28,18 +28,7 @@ Test:
 Prod:
 
 **Smoke Test Script**
-- [ ] Log in
-- [ ] Go to search
-- [ ] Filter for last 30 days
-- [ ] Go to ZZZ record (usually on Hold)
-- [ ] edit name 1, click save
-- [ ] edit address line 1 + comment, click save
-- [ ] check NRO for changes
-- [ ] reject name 1 with a conflict
-- [ ] approve name 2 with quick approve
-- [ ] wait 2 minutes, then check in NRO
-- [ ] reload NR in namex
-- [ ] reset NR
-- [ ] undo all decisions
-- [ ] change name 1 and address line 1 back to original values
+- [ ] 
+- [ ] 
+- [ ] 
 - [ ] watch [Kibana](https://kibana.pathfinder.gov.bc.ca/) logs for 5 minutes
