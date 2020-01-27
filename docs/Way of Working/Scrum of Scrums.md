@@ -7,5 +7,6 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Jan 28
 ----
 ** Topics to discuss **
-- How to use the Release feature and embed that in the way of working?
-- ...
+- How to use the Release feature and embed that in the way of working? 
+- Label "Release" has the same red color as Entity 
+- how to manage dependencies across teams 
