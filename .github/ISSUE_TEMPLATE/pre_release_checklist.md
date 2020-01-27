@@ -27,7 +27,7 @@ Test:
 
 Prod:
 
-**NameX Smoke Test Script**
+**Smoke Test Script**
 - [ ] Log in
 - [ ] Go to search
 - [ ] Filter for last 30 days
