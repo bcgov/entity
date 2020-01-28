@@ -2,8 +2,8 @@
 name: Feature request
 * about: Describe a feature in user story format that will be estimated and considered for implementation	
 * title: use a short title, and in the description below appply user story format
----
 
+---
 
 ## Description:	
 * As a (type of user)
