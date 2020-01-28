@@ -68,7 +68,7 @@ var ArFilingsCommands = {
             .waitForElementVisible('@newDirectorLastName')
             .setValue('@newDirectorLastName', 'Last')
             .setValue('@newDirectorStreetAddress', '123 test st')
-           .waitForElementVisible('@newDirectorCity')
+            .waitForElementVisible('@newDirectorCity')
             .setValue('@newDirectorCity', 'Victoria')
             .setValue('@newDirectorProvinceBox','BC')
             .setValue('@newDirectorPostalCode', 'V9A 1A7')
