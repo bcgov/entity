@@ -12,5 +12,6 @@ Jan 28
 - Label "Release" has the same red color as Entity 
 - use Release label in all teams (see Email from Trish) 
 - how to manage dependencies across teams 
-- Done Done 
 - Do we have all the Epics for this quarter in ZenHub Roadmap?
+- Document Repository - Where does all the document sits?
+-
