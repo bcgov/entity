@@ -136,6 +136,7 @@ module.exports={
     },
   
     '13.Appoint a Director - POST DRAFT': function (browser) {
+      browser
       .setValue('#user', process.env.IDIRCredU)
       .setValue('#password', process.env.IDIRCredP)
       .click('#login-form > section > div > div.col-sm-7.col-md-8 > div > div.panel-body > div.login-form-action > input')
@@ -154,7 +155,7 @@ module.exports={
       .click('#ar-file-pay-btn')
     },
 
-    '16.Verify Dashboard after filing': function (browser) {
+    '16.Verify Dashboard after filing': function(browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.assert.containsText('@toDoListHeader', 'To Do (2)');
       dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (9)');
