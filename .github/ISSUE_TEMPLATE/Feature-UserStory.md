@@ -13,8 +13,8 @@
 * WHEN ... (what you do) 
 * THEN ... (what you see) 
 
-**Dependencies? (If so, link dependency in the ticket, make it visible in a team´s backlog)**	
-
+**Dependencies? What is the impact of this dependency? (If so, link dependency in the ticket, make it visible in a team´s backlog)**
+* Do you know a possible contact person to reach out (from the other team)?
 
 **Validation Rules? (If yes, list here)**	
 
