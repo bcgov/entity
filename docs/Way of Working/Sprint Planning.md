@@ -29,7 +29,7 @@ https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Availability
 
 ----
 **Relationships**
-* Capacity: 
+* Capacity: see availability here:     https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Availability_Holidays.md 
 - Team will bring in 25% Bugs & Tech Debt into future sprints. SM to remind team to do this at Sprint Planning.
 - Team Calendar (off/ holidays): on the door (use it as input for Sprint Planning) 
 * Estimation w. SP (Planning Poker, Fibonacci) – Referenz Story: 1799 

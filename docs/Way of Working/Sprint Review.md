@@ -3,28 +3,47 @@
 ### In Sprint Planning discuss & agree what US/ Feature should be demoed to Stakeholders - in (common) Sprint Review on Tuesdays. 
 
 #### Please use following format:       
-Name - User Story/ Feature (ticket no. link) - how long/ time-box (demo incl. Q&A) 
+Name - User Story/ Feature (link to ticket) - how long (demo incl. Q&A) 
+-----------------------------------------------------------------------------------------------------------------------
 
 
+----
+### Feb x, 2020 - Sprint (Milestone) 22
+----
+#### Assets (15 min.)
+* xx
+#### Entities (15 min.)
+* xx
+#### Relationships (15 min.) 
+* xx
+
+
+----
 ### Jan 21, 2020 - Sprint (Milestone) 21
-#### Assets (x min.)
+----
 
+#### Entities (15 min.)
+* Incorporations frontend framework - Cameron
+* Approch and value of framework - Cameron
+* Initial UI steps 1 & 5 - Cameron
+* Next Milestone : Kaine
 
-#### Entities (10 min.)
-Cameron -  
-* Incorporations frontend framework
-* Approch and value of framework
-* Initial UI steps 1 & 5
+#### Relationships (15 min.) 
+* Jeremy: 2093, 1981, 2293, 2352 (Bug)
+* Loren: Sprint Goals next Sprint 22 
+https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/milestones
 
-#### Relationships (x min.)
+#### Assets (15 min.)
+Roland (SonarCloud, GitHub actions), Liv about regulations 
 
+#### Upcoming Releases
+##### January 30th 2020
+* Relationship team(Market Release): Navigation Menu - How people navigate back in the system
+* Entities team(Production Release): "Incorp Define my comany 2.0(Step 1)" + "Certify and Pay 1.0(Step 5)"
 
-
-
-
-
-
-
+#### Action Items
+- [ ] Loren: Legal name discussion - whether the name from BC Services card can be treated as legal name as those can be preferred name as well.
+- [x] Loren: Future Sprint consideration is to have an activity log
 
 ----
 **Sprint Review Jan 7, 2020 - Sprint (Milestone) 20** 

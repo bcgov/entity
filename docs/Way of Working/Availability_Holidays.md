@@ -15,15 +15,20 @@
 * Rich: Jan 13, Jan 27
 * Kial: Mondays in the morning, Wed all day, Thurdsays in the morning
 * Lekshmi: Feb 3 - Feb 28
+* Peter: Feb 12 - 17
+* Sienna: Feb 17 - 21
+* Nitin: Feb 18 - Mar 13
 
 
 ----
 **Relationships** 
 * Loren: Fr, Jan 10 
-* Meng: Jan 14 and Jan 16 
-* Patrick: Jan 20 (1 Flex day) 
-* Waldemar: Fr Jan 10 - Wed
-* Jeremy: 25-27
+* Amit: Feb 13 - Feb 28
+* Meng: Sprint 22 away (and longer eventually) 
+* Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3), Jan 24 (?) (half day)
+* Waldemar: 
+* Jeremy: Jan 29, 30, 31
+* Nitin: Feb 18 - Mar 13
 
 
 ----

@@ -1,24 +1,34 @@
-# Bug Triage 
+# Bug Triage BC Registries 
 
-## Steps
-1. QA, or user identify a bug or dev team member raise a Bug
-   - can it be linked to a Story???
-2. QA creates issue and label it as "bug"
-3. Based on the Sprint Goal and the severity of the bug, the developer decides if this bug should be fixed immediatetly 
-   - If yes, inform (in-person or RocketChat) the PO about the amount of effor to fix the bug, and the impact on the committed work
-   * Decision: High Priority = high severity + high criticality (low, medium or high) is based on
-   * User Impact (what impact is), Volume of users, Data impact  
-   * Define Priority 1, 2, 3 and meaning 
-4. If bug is not relevant for this Sprint, assign it to the BA
-5. BA analyses the Bug - what impact, risk or dependency, etc. 
-6. BA discuss with PO about "Priority" 
-   * Decision? 
-7. PO make final decision: a) bring into current Sprint or b) put in Backlog 
+## Steps internal in team
+1. QA or dev team member identifies a bug
+2. QA or dev team member creates issue by using "Bug Templpate", and label it as "bug" and mark "New Issues" in the ZenHub Pipeline
+* link the bug to a User Story
+3. Based on the Sprint Goal and the severity of the bug, the developer decides if this bug should be fixed immediatetly
+   - If yes, inform (in-person or RocketChat) the PO about the amount of effort to fix the bug, and the impact on the committed work
+   * Decision: High Priority = high severity + high criticality (low, medium or high) is based on 
+   * Decision Criteria: User Impact, Volume of users, Data impact  
+   * Priority 1: In order to complete the story 
+   * All others are not labeled with "Priority"; they are placed in column "Bugs" for future prioritization
+4. "Bugs" column: PO reviews with team members and order the bugs to the Sprint Goals accordingly 
+* Bug Triage Meeting needed: PO, QA and eventually one dev team member - bi-weekly for half hour
+* Preparation for this Bug Triage Meeting: QA check if there is a duplicate of this issue (remove duplicates) and confirms if all bugs are reproducable (some bugs could be fixed already) 
+
+----
+**Usability Gaps or missed requirements**
+* Based on the Bug Triage Meeting the PO has to decide where this work fits into? - assign to a BA?
+----
+
+
+## Steps external by a user/ client
+1. A user identifies a bug (in UAT or PROD)
 
 
 ----
 ## Improvements & Ideas
-1. Differentiate btw. bugs and defects (in PROD) 
-2. Put defects in Sprint Backlog - pull - assign - In Progress - PO ...
-3. We need a way to proceed on new high-priority (eg, blocking) bugs when PO is not available
-4. Review no. 3 (decision making)?
+1. We need a way to proceed on new high-priority (e.g. blocking) bugs when PO is not available
+2. Clear definition of priority levels (Prio 1, 2, 3) 
+3. Treshold for Releases (e.g. do we move bugs into next Sprint?!) 
+
+----
+Last update: 2020-01-21: W + John + S
