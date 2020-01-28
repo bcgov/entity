@@ -28,6 +28,7 @@ var setProfile={
         .waitForElementVisible('@manageBusinesses')
         .click('@manageBusinesses')
         .moveToElement('@businessesName',10,10)
+        .setValue('@businessesName','testteam149')
         .setValue('@businessesName','testteam141')
         .click('@saveandcontinue')
     },
@@ -41,13 +42,13 @@ var setProfile={
         .assert.containsText('@checkApproval','No Pending Approvals')
     },
 
-    AddBusinesses:function(coops){
+    AddBusinesses:function(coopObject){
         return this
         .click('@manageBusinessesNav')
         .waitForElementVisible('@addBusinesses')
         .click('@addBusinesses')
-        .setValue('@enterIncorporation','CP0000019')
-        .setValue('@enterPasscode','111111111')
+        .setValue('@enterIncorporation',coopObject.identifier)
+        .setValue('@enterPasscode',coopObject.passcode)
         .click('@forgotPassword')
         .assert.containsText('@forgotPageHeader','Need Assistance?')
         .click('@ok')

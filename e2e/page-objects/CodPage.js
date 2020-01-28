@@ -57,6 +57,7 @@ var CodFilingsCommands = {
 
     validateDirectorByNumber: function (directorObject, number) {
            return this
+                    .waitForElementVisible('#director-4> div > label > span:nth-child(1)')
                     .assert.containsText(this.getDynamicElement('dynamicFirstName', number), directorObject.firstName)
                     .assert.containsText(this.getDynamicElement('dynamicLastName', number), directorObject.lastName)
                     .assert.containsText(this.getDynamicElement('dynamicStreet', number), directorObject.street)
@@ -76,7 +77,8 @@ var CodFilingsCommands = {
 
        },
     editChangeOfAddress: function(directorObject,number) {
-        return this
+
+        return this 
                    .assert.containsText(this.getDynamicElement('dynamicFirstName',number),directorObject.firstName)
                    .assert.containsText(this.getDynamicElement('dynamicLastName',number),directorObject.lastName)
                    .assert.containsText(this.getDynamicElement('dynamicStreet',number),directorObject.street)
