@@ -29,11 +29,7 @@ var setProfile={
         .waitForElementVisible('@manageBusinesses')
         .click('@manageBusinesses')
         .moveToElement('@businessesName',10,10)
-<<<<<<< HEAD
         .setValue('@businessesName','testteam149')
-=======
-        .setValue('@businessesName','testteam141')
->>>>>>> 612a6a8408dccf80655ad69a925ee747d182693a
         .click('@saveandcontinue')
     },
 
@@ -59,8 +55,7 @@ var setProfile={
         .click('@affliateBusinesses')
     },
 
-    check
-	AddBusinessesSuccess:function(browser){
+    checkAddBusinessesSuccess:function(browser){
         return this
         .waitForElementVisible('@BusinessAdded')
         .assert.containsText('@BusinessAdded','Business Added')

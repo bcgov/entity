@@ -94,10 +94,7 @@ module.exports = {
     ArPage.assert.containsText('@officeDeliveryLine3', 'Canada');
     ArPage.waitForElementVisible('@certifyBlock')
     ArPage.waitForElementVisible('@certifyLegalName')
-<<<<<<< HEAD
    // ArPage.expect.element('@certifyLegalName').text.to.equal('Tester');
-=======
->>>>>>> 612a6a8408dccf80655ad69a925ee747d182693a
     //ArPage.assert.containsText('@certifyLegalName', 'Tester');
     ArPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
     ArPage.click('@saveAndResumeLaterButton');
@@ -192,11 +189,7 @@ module.exports = {
     ArPage.assert.containsText('@officeDeliveryLine1', '123 test street');
     ArPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V8V 4K9');
     ArPage.assert.containsText('@officeDeliveryLine3', 'Canada');
-<<<<<<< HEAD
    // ArPage.assert.valueContains('@certifyLegalName', 'Tester');
-=======
-    //ArPage.assert.valueContains('@certifyLegalName', 'Tester');
->>>>>>> 612a6a8408dccf80655ad69a925ee747d182693a
     ArPage.click('@certifyCheckBox');
     ArPage.click('@fileAndPayButton');
   },
@@ -208,8 +201,8 @@ module.exports = {
       .waitForElementVisible('#credit_payBtn')
       .click('#credit_payBtn')
       .waitForElementVisible('input[name=trnCardNumber]')
-      .setValue('input[name=trnCardNumber]', '4030000010001234')
-      .setValue('input[name=trnCardCvd]', '123')
+      .setValue('input[name=trnCardNumber]', process.env.credit_card)
+      .setValue('input[name=trnCardCvd]', process.cvv_no)
       .moveToElement('input[name=submitButton]', 10, 10)
       .click('input[name=submitButton]');
   },

@@ -72,11 +72,7 @@ module.exports = {
       CoaPage.waitForElementVisible('@certifyBlock')
       CoaPage.waitForElementVisible('@certifyLegalName')
       CoaPage.moveToElement('@certifyLegalName',5,5)
-<<<<<<< HEAD
      // CoaPage.assert.containsText('@certifyLegalName', 'Tester');
-=======
-      //CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
->>>>>>> 612a6a8408dccf80655ad69a925ee747d182693a
       CoaPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
       CoaPage.click('@saveAndResumeLaterButton');
     },
@@ -164,12 +160,7 @@ module.exports = {
       CoaPage.assert.containsText('@officeDeliveryLine3', 'Canada');
       CoaPage.waitForElementVisible('@certifyBlock')
       CoaPage.waitForElementVisible('@certifyLegalName')
-<<<<<<< HEAD
       //CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
-=======
-      CoaPage.moveToElement('@certifyLegalName',5,5)
-     // CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
->>>>>>> 612a6a8408dccf80655ad69a925ee747d182693a
       CoaPage.click('@certifyCheckBox');
       CoaPage.click('@fileAndPayButton');
     },
@@ -183,8 +174,8 @@ module.exports = {
         .waitForElementVisible('#credit_payBtn')
         .click('#credit_payBtn')
         .waitForElementVisible('input[name=trnCardNumber]')
-        .setValue('input[name=trnCardNumber]','4030000010001234')
-        .setValue('input[name=trnCardCvd]', '123')
+        .setValue('input[name=trnCardNumber]',process.env.credit_card)
+        .setValue('input[name=trnCardCvd]', process.env.cvv_no)
         .moveToElement('input[name=submitButton]', 10, 10)
         .click('input[name=submitButton]');
     },

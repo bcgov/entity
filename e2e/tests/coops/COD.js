@@ -108,8 +108,8 @@ module.exports = {
         .waitForElementVisible('#credit_payBtn')
         .click('#credit_payBtn')
         .waitForElementVisible('input[name=trnCardNumber]')
-        .setValue('input[name=trnCardNumber]','4030000010001234')
-        .setValue('input[name=trnCardCvd]', '123')
+        .setValue('input[name=trnCardNumber]',process.credit_card)
+        .setValue('input[name=trnCardCvd]', process.cvv_no)
         .moveToElement('input[name=submitButton]', 10, 10)
         .click('input[name=submitButton]');
     },
