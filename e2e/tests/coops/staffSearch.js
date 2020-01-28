@@ -1,5 +1,5 @@
 module.exports={
-  '@tags': ['staffsearch','single'],
+  '@tags': ['staffsearch'],
 
   'Login with IDIR':function (browser){
       browser
@@ -152,9 +152,10 @@ module.exports={
     '15.Entering RoutingSlip Number':function(browser){
       dashboard = browser.page.dashboardPage();
       dashboard.enterRoutingSlipNumber()
+      .click('#ar-file-pay-btn')
     },
 
-    '19.Verify Dashboard after filing': function (browser) {
+    '16.Verify Dashboard after filing': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.assert.containsText('@toDoListHeader', 'To Do (2)');
       dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (9)');

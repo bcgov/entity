@@ -1,5 +1,5 @@
 module.exports = {
-  '@tags': ['COD','single'],
+  '@tags': ['COD'],
   'Verify initial login with bcsc': function (browser) {
       bcsc = browser.page.bcscPage();
       browser.url(browser.globals.launch_url)
@@ -26,8 +26,8 @@ module.exports = {
     
     '3.Appoint New Director': function (browser) {
       CodPage = browser.page.CodPage()
-      //CodPage.startAppointingNewDirector()
-      //CodPage.AddNewDirector(browser.globals.CP0000019.director7,7);
+      CodPage.startAppointingNewDirector()
+      CodPage.AddNewDirector(browser.globals.CP0000019.director7,7);
       CodPage.validateDirectorByNumber(browser.globals.CP0000019.director4,4)
     },
 

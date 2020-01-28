@@ -56,9 +56,7 @@ var dashboardCommands = {
     enterRoutingSlipNumber:function(){
         return this.waitForElementVisible('@paymentHeader')
                    .assert.containsText('@paymentHeader','Staff Payment')
-                  // .assert.cssClassPresent('v-form staff-payment-container')
                    .setValue('#routing-slip-number-textfield',process.env.routing_slip)
-                   .click('#ar-file-pay-btn')
     }
 
     
