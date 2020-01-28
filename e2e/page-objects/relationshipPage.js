@@ -1,4 +1,3 @@
-
 var setProfile={
     enterContactInformation:function(browser){
         return this
@@ -30,6 +29,7 @@ var setProfile={
         .click('@manageBusinesses')
         .moveToElement('@businessesName',10,10)
         .setValue('@businessesName','testteam149')
+        .setValue('@businessesName','testteam141')
         .click('@saveandcontinue')
     },
 
@@ -114,8 +114,3 @@ module.exports={
 
     }
 }
-
-
-
-
-

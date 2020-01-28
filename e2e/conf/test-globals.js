@@ -5,6 +5,7 @@ module.exports = {
 	throwOnMultipleElementsReturned : false,
 
 	launch_url: "https://test.bcregistry.ca/cooperatives/",
+
 	idtest_url: "https://idtest.gov.bc.ca/login",
 	launch_idirurl:"https://test.bcregistry.ca/cooperatives/auth/signin/idir",
 	launch_url1: "https://test.bcregistry.ca/cooperatives/auth/",
@@ -23,7 +24,6 @@ module.exports = {
 			line1: "175 1ST STREET",
 			line2: "SOINTULA BC V0N 3E0",
 			line3: "Canada" 
-			
 		},
 		director7:{
 			firstname:"test",
@@ -35,6 +35,7 @@ module.exports = {
 			postalcode: "V1V1V1",
 			country: "CA"
 		},
+
 		director4:{
 			dynamicFirstName:"JENNIFER",
 			dynamicLastName:"LASH",
@@ -62,4 +63,5 @@ module.exports = {
 			line3: "Canada"
 		}
 	}
+
 }

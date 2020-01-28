@@ -96,5 +96,6 @@ module.exports={
         fileNowButton2:'[ type="button"] [disabled="disabled"]',
         recentHistory:'#dashboardArticle > div > div > section:nth-child(2) > header > h2',
         paymentHeader:'#AR-step-5-header'
+
     }
 };

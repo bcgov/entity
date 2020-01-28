@@ -1,12 +1,12 @@
 var loginCommands={
-    verifyCoperativesPage : function(browser){
+    verifyLandingPage : function(browser){
         return this
        .waitForElementVisible('@HeaderLogin')
        .assert.containsText('@mainHeader','Welcome to Cooperatives Online')
        .waitForElementVisible('@loginButton')
        .click('@loginButton')
     },
-      verifyBcscLogin: function(){
+      loginWithBCSC: function(username, password){
        return this.
         assert.urlEquals(this.api.globals.idtest_url + '/entry#start')
        .assert.containsText('@header','Choose how to log in with your card')

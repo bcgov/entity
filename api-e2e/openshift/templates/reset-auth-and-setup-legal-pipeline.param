@@ -1,0 +1,14 @@
+#=========================================================
+# Template parameters for:
+# Project: 
+# Component: pipeline
+# Action: 
+# Template File: api-e2e/openshift/templates/data-pipeline.json
+# Hint: oc process -n d7eovc-tools --param-file=reset-auth-and-setup-legal-pipeline.param -f data-pipeline.json | oc create -n d7eovc-tools -f -
+#=========================================================
+NAME="reset-auth-and-setup-legal"
+PIPELINE_PURPOSE="data"
+GIT_REPO_URL="https://github.com/bcgov/entity.git"
+GIT_REF="master"
+SOURCE_CONTEXT_DIR="api-e2e"
+JENKINS_FILE="jenkins/reset-auth-and-setup-legal.groovy"

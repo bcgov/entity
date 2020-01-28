@@ -77,6 +77,7 @@ var CodFilingsCommands = {
 
        },
     editChangeOfAddress: function(directorObject,number) {
+
         return this 
                    .assert.containsText(this.getDynamicElement('dynamicFirstName',number),directorObject.firstName)
                    .assert.containsText(this.getDynamicElement('dynamicLastName',number),directorObject.lastName)
