@@ -1,5 +1,5 @@
 module.exports = {
-    '@tags': ['COA','single'], 
+    '@tags': ['COA'], 
       'Verify initial login with bcsc': function (browser) {
           bcsc = browser.page.bcscPage();
           browser.url(browser.globals.launch_url)

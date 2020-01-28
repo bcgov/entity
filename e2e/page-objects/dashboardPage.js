@@ -31,6 +31,7 @@ var dashboardCommands = {
     },
     startArFiling: function () {
         return this
+                .waitForElementVisible('@fileNowButton1')
                 .click('@fileNowButton1')
                 .assert.urlEquals(this.api.globals.launch_url + 'annual-report')
                 .waitForElementVisible('#AR-header', 'Annual Report Page Loaded');
@@ -50,7 +51,16 @@ var dashboardCommands = {
                    .assert.urlEquals(this.api.globals.launch_url + 'standalone-directors')
                    .useCss()
                    .waitForElementVisible('#filing-header','COD Page Loaded')
-    }           
+    },
+
+    enterRoutingSlipNumber:function(){
+        return this.waitForElementVisible('@paymentHeader')
+                   .assert.containsText('@paymentHeader','Staff Payment')
+                  // .assert.cssClassPresent('v-form staff-payment-container')
+                   .setValue('#routing-slip-number-textfield',process.env.routing_slip)
+                   .click('#ar-file-pay-btn')
+    }
+
     
 };
 module.exports={
@@ -86,6 +96,7 @@ module.exports={
          selector: "#app > div.v-dialog__content.v-dialog__content--active > div > div > div.v-card__actions > button:nth-child(2) > span",
         },
         fileNowButton2:'[ type="button"] [disabled="disabled"]',
-        recentHistory:'#dashboardArticle > div > div > section:nth-child(2) > header > h2'
+        recentHistory:'#dashboardArticle > div > div > section:nth-child(2) > header > h2',
+        paymentHeader:'#AR-step-5-header'
     }
 };

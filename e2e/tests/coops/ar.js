@@ -11,11 +11,11 @@ module.exports = {
     
     'Enter contact information': function (browser) {
         relationship = browser.page.relationshipPage();
-        //relationship.enterContactInformation()
-        //relationship.createTeam()
-        //relationship.manageTeamPage()
-        //relationship.AddBusinesses()
-        // relationship.checkAddBusinessesSuccess()
+        relationship.enterContactInformation()
+        relationship.createTeam()
+        relationship.manageTeamPage()
+        relationship.AddBusinesses(browser.globals.CP0000019)
+        relationship.checkAddBusinessesSuccess()
         relationship.checkForAffliatedBusinesses()
     },
 

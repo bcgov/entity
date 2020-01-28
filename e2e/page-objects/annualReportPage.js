@@ -100,7 +100,7 @@ module.exports={
         officeDeliveryCity: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div.form__row.three-column > div.v-input.item.address-city.v-input--is-label-active.v-input--is-dirty.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div > input[type=text]",
         officeDeliveryPostalCode: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div.form__row.three-column > div.v-input.item.postal-code.v-input--is-label-active.v-input--is-dirty.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div > input[type=text]",
         officeDeliveryDeliveryInstructions: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div:nth-child(5) > div > div > div.v-input__slot > div > textarea",
-        appointDirectorButton: "#directors > div:nth-child(2) > button",
+        appointDirectorButton: "#wrapper-add-director > div > div > div.col.col-3 > button > span > span",
         newDirectorFirstName: "#new-director__first-name",
         newDirectorMiddleInitial: "#new-director__middle-initial",
         newDirectorLastName:"#new-director__last-name",    
@@ -112,7 +112,7 @@ module.exports={
             locateStrategy: "css selector"
         },
         NewDirectorCountrySelect:{
-            selector:"/html/body/div/div[1]/div/div/div[4]/div",
+            selector:"/html/body/div/div[2]/div/div/div[4]/div",
             locateStrategy: "xpath"
         },
         newDirectorProvinceBox:"#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.address-wrapper > div > form > div.form__row.three-column > div.v-input.item.address-region.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div>input[type=text]",

@@ -5,7 +5,9 @@ module.exports = {
 	throwOnMultipleElementsReturned : false,
 
 	launch_url: "https://test.bcregistry.ca/cooperatives/",
-    idtest_url: "https://idtest.gov.bc.ca/login",
+	idtest_url: "https://idtest.gov.bc.ca/login",
+	launch_idirurl:"https://test.bcregistry.ca/cooperatives/auth/signin/idir",
+	launch_url1: "https://test.bcregistry.ca/cooperatives/auth/",
 
 	CP0000019: {
 		identifier: "CP0000019",
@@ -33,6 +35,31 @@ module.exports = {
 			postalcode: "V1V1V1",
 			country: "CA"
 		},
+		director4:{
+			dynamicFirstName:"JENNIFER",
+			dynamicLastName:"LASH",
+			dynamicStreet:"265-2ND STREET",
+			dynamicCity:"SOINTULA",
+			dynamicProvince:"BC",
+			dynamicPostalCode:"V0N3E0",
+			dynamicCountry:"Canada",
+			dynamicAppointedDate:"2018-12-21",
+		},
 		
 	},
+
+	CP0002148:{
+		identifier:"CP0002148",
+		legal_name: "ARC COMMUNITY COOPERATIVE ASSOCIATION",
+		delivery: {
+			line1: "#5 BARTEN RD",
+			line2: "LILLOOET BC V0K 1V0",
+			line3: "Canada"
+		},
+		mailing:{
+			line1: "PO BOX 1599",
+			line2: "LILLOOET BC V0K 1V0",
+			line3: "Canada"
+		}
+	}
 }

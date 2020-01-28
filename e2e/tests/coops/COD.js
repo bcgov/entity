@@ -26,9 +26,9 @@ module.exports = {
     
     '3.Appoint New Director': function (browser) {
       CodPage = browser.page.CodPage()
-      CodPage.startAppointingNewDirector()
-      CodPage.AddNewDirector(browser.globals.CP0000019.director7,7);
-      //CodPage.validateDirectorByNumber(browser.globals.CP0000019.director3,3)
+      //CodPage.startAppointingNewDirector()
+      //CodPage.AddNewDirector(browser.globals.CP0000019.director7,7);
+      CodPage.validateDirectorByNumber(browser.globals.CP0000019.director4,4)
     },
 
     '4.Certify who filed': function (browser) {
