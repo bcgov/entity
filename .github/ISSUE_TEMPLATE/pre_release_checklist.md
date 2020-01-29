@@ -1,6 +1,10 @@
 ---
 name: Pre-release checklist
-about: Complete one of these for each release. Designed to catch small mistakes and increase repeat-ability of our process.
+about: Complete one of these for each release. Designed to catch small mistakes and
+  increase repeat-ability of our process.
+title: ''
+labels: ''
+assignees: ''
 
 ---
 

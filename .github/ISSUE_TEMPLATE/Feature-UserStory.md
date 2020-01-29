@@ -1,6 +1,10 @@
 ---
 name: Feature-UserStory
-about: Describe a feature in user story format that will be estimated and considered for implementation	
+about: Describe a feature in user story format that will be estimated and considered
+  for implementation
+title: ''
+labels: STORY
+assignees: ''
 
 ---
 
@@ -53,5 +57,3 @@ about: Describe a feature in user story format that will be estimated and consid
 9)	[ ] UX Approved
 10)	[ ] Can be demoed in Sprint Review 
 11)	[ ] Release ticket is created and this US is linked to it
-
-

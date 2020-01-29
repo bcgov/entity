@@ -1,6 +1,9 @@
----	
-name: DoR - Relationships	
+---
+name: DoR - Relationships
 about: DoR - Relationships
+title: ''
+labels: ''
+assignees: ''
 
 ---
 
@@ -11,4 +14,4 @@ about: DoR - Relationships
 5.	[ ] If there are validation rules, are they defined (UI, Data, Role-Action)?
 6. [ ] Does this User Story needs stakeholder approval?
 7.	[ ] Is this user story small enough to be completed in a Sprint?
-8.	[ ] What do we possibly have to do re Change Management? - e.g. GCPE, do we know who is impacted and what that impact is? 
+8.	[ ] What do we possibly have to do re Change Management? - e.g. GCPE, do we know who is impacted and what that impact is?

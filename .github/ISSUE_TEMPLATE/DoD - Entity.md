@@ -1,8 +1,11 @@
----	
+---
 name: DoD - Entity
 about: DoD - Entity
+title: ''
+labels: ''
+assignees: ''
 
----	
+---
 
 At the PR:
 
@@ -30,4 +33,3 @@ what we did take out from above:
 - [ ] Design/ Solution accepted by Product Owner - what do you mean by that? 
 - [ ] Must include automated unit tests 
 - [ ] Must include integration tests that run in a pipeline
-

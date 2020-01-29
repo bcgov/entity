@@ -1,8 +1,12 @@
 ---
 name: Task or Ops
 about: Small tasks that are added to the Sprints that requires a change to any repos
+title: ''
+labels: ''
+assignees: ''
 
 ---
+
 ## Description:
 
 

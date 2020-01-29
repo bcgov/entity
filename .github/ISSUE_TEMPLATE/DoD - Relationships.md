@@ -1,8 +1,11 @@
----	
-name: DOD - Relationships	
+---
+name: DOD - Relationships
 about: DOD - Relationships
+title: ''
+labels: ''
+assignees: ''
 
----	
+---
 
 1)	[ ] Check Requirements against completed tasks
 2)	[ ] Completed stories verified in Dev and Test
@@ -17,5 +20,3 @@ about: DOD - Relationships
 11)	[ ] Release ticket is created and this US is linked to it
 12) [ ] Change Management activities done? 
 13) [ ] Schedule a Release w. Change Management
-
-
