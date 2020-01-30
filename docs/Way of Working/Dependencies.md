@@ -19,7 +19,7 @@ A dependency can be identified either via:
 When a dependency is identified, it needs to be documented and made visible in ZenHub
 
 **Write the description in a user story format**
-- 
+
 As a ..Team..,
   we Want <something> to be done by other ..team..
     so that ...
