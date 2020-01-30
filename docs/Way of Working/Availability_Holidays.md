@@ -34,7 +34,7 @@
 
 ----
 Other Team Members:
-* Carol: 
+* Carol: Mar 16 - Mar 27
 * Karla-Maria:
 * Simona:
 * ... please add
