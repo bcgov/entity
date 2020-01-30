@@ -3,16 +3,23 @@
 Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 
+
 ---
-Jan 28
+Feb 11
 ----
 ** Topics to discuss **
 - Epic template: OK? 
 - How to use the Release feature and embed that in the way of working? 
 - Label "Release" has the same red color as Entity 
-- use Release label in all teams (see Email from Trish) 
+- use Release label in all teams 
 - how to manage dependencies across teams 
 - Do we have all the Epics for this quarter in ZenHub Roadmap?
+
+---
+Jan 28
+----
+** Topics to discuss **
+
 - Document Repository - Where does all the document sits?
 - How do document the dependencies and have it visible? When? Where do I discuss the dependencies on other teams?
-- 
+
