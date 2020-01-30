@@ -6,17 +6,17 @@ Topics covered -
 - How to identify dependencies across team(make them visible)
 - Communication for Dependencies across team
 
-#### When a dependency can be identified
 ----
+#### When a dependency can be identified
 A dependency can be identified either via:
 - PI planning process when an intra-team/external dependency identified
 - or it can be identified on an adhoc basis
 
 ----
 
-When a dependency is identified, it needs to be documented and made visible in ZenHub-
-#### Dependency template
 ----
+#### Dependency template
+When a dependency is identified, it needs to be documented and made visible in ZenHub-
 **Write the description in a user story format**
 As a ..Team..,
   We Want <something> to be done by other ..team..
@@ -36,8 +36,8 @@ In case, more information is required, please contact ..First Name, LAst Name.. 
 
 ----
 
-----
 #### How to identify dependencies across team(make them visible)
+----
 - When a dependency is identified, team with the help of Scrum Master should create a ticket(Story) in ZenHub.
 - This story ticket should be linked to the Parent Epic of the respective team by using the "Blocked By" label in ZenHub
 - This ticket initially might have high level details, but over period of time or near to deadline, this should have all the details needed for the other team to action upon
@@ -47,8 +47,8 @@ In case, more information is required, please contact ..First Name, LAst Name.. 
 
 ----
 
-----
 #### Communication for Dependencies across team
+----
 - Once a ticket is created and has below information:
   - Assigned to BA
   - Have the label "Dependency"
