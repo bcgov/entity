@@ -14,4 +14,5 @@ Jan 28
 - how to manage dependencies across teams 
 - Do we have all the Epics for this quarter in ZenHub Roadmap?
 - Document Repository - Where does all the document sits?
--
+- How do document the dependencies and have it visible? When? Where do I discuss the dependencies on other teams?
+- 
