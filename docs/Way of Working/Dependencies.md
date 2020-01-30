@@ -8,14 +8,14 @@ Topics covered -
 
 ----
 #### When a dependency can be identified
+----
 A dependency can be identified either via:
 - PI planning process when an intra-team/external dependency identified
 - or it can be identified on an adhoc basis
 
 ----
-
-----
 #### Dependency template
+----
 When a dependency is identified, it needs to be documented and made visible in ZenHub-
 **Write the description in a user story format**
 As a ..Team..,
