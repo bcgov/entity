@@ -17,9 +17,16 @@ Jan, 30, 2020
 1.  Follow up on Action item from last 2 week
     - BN Messaging - Loren to follow up with Carol
     - Loren to check with Carol and reflect to the team what does it mean that Relationship team is responsible for overall UI
-    - 
+        - This will be followed up in next sync with Carol(Feb 10th)
 2.  Entities dependency on Lorna team to understand what we are getting from NRO, what kind of validation has been done and passed to Entities and what happens when NR status changes mid-flight, how it needs to be handled.
+    - Action tasks has been identified for the team.
+    - Working with an assumption that users are logged in to do the incorporation.
+        - Work flow diagram for Name request flow - BA's can take that responsibilityt. 
+        - Jyoti to check with Sumesh if he has any workflow.
 3.  Staff dashboard to manage their work - All the three teams are involved but its not decided who will do it
+    - Design/research action item on Jeremy. This is currenty the discovery phase. This is on back radar for now.
+    - Jyoti will confirm with Scott
+    - Jyoti to check with Kaine if this is going to be in Service Now.
 4.  Process for identifying dependencies across teams
     
 ----
@@ -57,6 +64,9 @@ Jan, 23, 2020
 7. What does it mean that Relationship team is responsible for UI?
         - Loren to check with Carol and reflect to the team what does it mean for the other team.
 8. Follow-up on topics & action items below (last PO-Sync)
+
+## Decission's made:
+a. Jeremy showed the Navigation structure design to all PO's and there was no concern raised in taking that forward.
 
 ----
 Jan, 16, 2020
