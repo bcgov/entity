@@ -29,8 +29,9 @@ Jan, 30, 2020
     - Jyoti to check with Kaine if this is going to be in Service Now.
 4.  Process for identifying dependencies across teams
   
-  ## Action Ite:
+  ## Action Item:
   - Jyoti to create a dependency template in ZenHub
+  - Can we have a informal meet-up at the end of the month? Social meet up 
   
   ## Decission:-
   - PO's agreed in this meeting to use the Dependency process for this Program Iteration.
