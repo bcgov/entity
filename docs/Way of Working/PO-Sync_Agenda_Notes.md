@@ -28,7 +28,12 @@ Jan, 30, 2020
     - Jyoti will confirm with Scott
     - Jyoti to check with Kaine if this is going to be in Service Now.
 4.  Process for identifying dependencies across teams
-    
+  
+  ## Action Ite:
+  - Jyoti to create a dependency template in ZenHub
+  
+  ## Decission:-
+  - PO's agreed in this meeting to use the Dependency process for this Program Iteration.
 ----
 Jan, 23, 2020
 ----
@@ -67,6 +72,7 @@ Jan, 23, 2020
 
 ## Decission's made:
 a. Jeremy showed the Navigation structure design to all PO's and there was no concern raised in taking that forward.
+https://preview.uxpin.com/ec5725a91e5ed646c9217e6295f9b87b3b6a7bfc#/pages/121718326/simulate/sitemap
 
 ----
 Jan, 16, 2020
