@@ -72,8 +72,10 @@ Jan, 23, 2020
 8. Follow-up on topics & action items below (last PO-Sync)
 
 ## Decission's made:
-a. Jeremy showed the Navigation structure design to all PO's and there was no concern raised in taking that forward.
+- Jeremy showed the Navigation structure design to all PO's and there was no concern raised in taking that forward.
 https://preview.uxpin.com/ec5725a91e5ed646c9217e6295f9b87b3b6a7bfc#/pages/121718326/simulate/sitemap
+- All the three PO's agree to use the Release Tagging feature for any release they are deploying to Production/Market
+- All the three PO's agree to use the Road map feature in ZenHub to layout their Epics as per the discussion in the PI planning meeting. The Roadmap needs to be maintained/updated in ZenHub going forward. Any changes to priorities needs to be reflected in ZenHub RoadMap
 
 ----
 Jan, 16, 2020
