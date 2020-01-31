@@ -1,5 +1,5 @@
 **Overview of Team availability BC Registries**
-- When are you away?  
+- When are you unavailable (booked into workshops, conferences, heads-down & undisturbed, working remotely with intermitten connectivity, etc)?  
 ----
 
 **Assets**
@@ -11,7 +11,7 @@
 * Kaine: Jan 27 - Feb 13 - deputy: Linda (and Jyoti, Sienna)
 * Shahriar: Jan 27 - Feb 4 
 * Katie: Jan 9, Jan 16, Jan 23, Jan 30
-* Thor: Jan 23
+* Thor: Jan 23, Feb 20,21, May 11-15, June 19,22-26, Oct 14
 * Rich: Jan 13, Jan 27
 * Kial: Mondays in the morning, Wed all day, Thurdsays in the morning
 * Lekshmi: Feb 3 - Feb 28
