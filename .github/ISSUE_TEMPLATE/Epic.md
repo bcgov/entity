@@ -1,11 +1,15 @@
 ---
-name: Epic
-about: Suggest an idea for this project
+name: Feature-UserStory
+about: Describe a feature in user story format that will be estimated and considered
+  for implementation
 title: ''
-labels: ''
+labels: STORY
 assignees: ''
 
 ---
+
+## Description:	
+
 
 * As a (who/ person) 
 * I want (what/ goal)
