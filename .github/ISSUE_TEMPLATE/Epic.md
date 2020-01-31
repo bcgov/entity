@@ -1,3 +1,11 @@
+---
+name: Feature request
+about: Suggest an idea for this project
+title: ''
+labels: ''
+assignees: ''
+
+
 * As a (who/ person) 
 * I want (what/ goal)
 * so that (why/ reason) 
