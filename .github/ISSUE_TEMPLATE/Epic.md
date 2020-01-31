@@ -3,7 +3,7 @@ name: Feature-UserStory
 about: Describe a feature in user story format that will be estimated and considered
   for implementation
 title: ''
-labels: STORY
+labels: 
 assignees: ''
 
 ---
