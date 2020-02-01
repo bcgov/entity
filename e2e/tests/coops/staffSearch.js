@@ -83,7 +83,6 @@ module.exports={
       //Note fees re-ordered on resume
       ArPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 2);
       ArPage.checkTotalFees('$70.00');
-     // ArPage.assert.visible('@newDirectorChip');
       ArPage.assert.visible('@resetOfficeAddressButton');
       ArPage.assert.containsText('@officeDeliveryLine1', '123 test street');
       ArPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V1V1V1');

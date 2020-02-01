@@ -61,7 +61,30 @@ module.exports = {
 			line1: "PO BOX 1599",
 			line2: "LILLOOET BC V0K 1V0",
 			line3: "Canada"
-		}
-	}
+		},
+
+	director4:{
+		firstname:"test",
+		lastname:"test2",
+		street: "123 test st",
+		optionalfield: "I am an optional field",
+		city:"victoria",
+		province:"BC",
+		postalcode: "V1V1V1",
+		country: "CA"
+	},
+
+	director2:{
+		dynamicFirstName:"ALPHRED",
+		dynamicLastName:"LGAEDE",
+		dynamicStreet:"3 BARTON RD",
+		dynamicCity:"LILLOOET",
+		dynamicProvince:"BC",
+		dynamicPostalCode:"VV0K1V0",
+		dynamicCountry:"Canada",
+		dynamicAppointedDate:"2017-11-24",
+	},
+
+}
 
 }

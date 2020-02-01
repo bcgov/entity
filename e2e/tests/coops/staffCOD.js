@@ -1,92 +1,123 @@
 require('dotenv').config();
 module.exports={
-  '@tags': ['staffsearch'],
+  '@tags': ['staffsearch','single'],
 
   'Login with IDIR':function (browser){
-      browser
-      .url(browser.globals.launch_idirurl)
-      .assert.visible('#login-to','Log in to sfstest7.gov.bc.ca')
-      .setValue('#user',process.env.IDIRCredU)
-      .setValue('#password',process.env.IDIRCredP)
-      .click('#login-form > section > div > div.col-sm-7.col-md-8 > div > div.panel-body > div.login-form-action > input')
-  },
-
-  'Login To Dashboard':function(browser){
-      browser
-      .assert.visible('#app > div > div.app-body > div > div > article > h1','Search Co-operatives')
-      .assert.visible('#app > div > div.app-body > div > div > article > h2','Incorporation Number')
-      .setValue('#txtBusinessNumber', browser.globals.CP0001496.identifier)
-      .click('#app > div > div.app-body > div > div > article > div > form > div.layout.align-end.justify-end > button > span')
-  },
-
-  'Verify initial state of dashboard, then start AR filing': function (browser) {
-      dashboard = browser.page.dashboardPage();
-      dashboard.verifyTombstone(browser.globals.CP0001496);
-      dashboard.verifyAddresses(browser.globals.CP0001496);
-      dashboard.verifyDirectorCount(browser.globals.CP0001496.director_count);
-      dashboard.startCoaFiling();
-    },
-
-    'Confirm initial state of COA filing': function (browser) {
-      CoaPage = browser.page.CoaPage();
-      CoaPage.verfifyInitialCoaState(browser.globals.CP0001496);
-      CoaPage.checkTotalFees('$0.00');
-      CoaPage.verifyOfficeAddresses(browser.globals.CP0001496);
-    },
-    
-'Edit the Office Addresses': function (browser) {
-  CoaPage = browser.page.CoaPage();
-  CoaPage.startEditingOfficeAddresses();
-  CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryStreetAddress.selector, '123 test street', browser);
-  CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryCity.selector, 'Victoria', browser);
-  CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryPostalCode.selector, 'V1V1V1', browser);
-  CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryCountry.selector, 'CANADA', browser);
-  CoaPage.click('@sameAsDeliveryButton');
-  CoaPage.moveToElement('@updateAddressesButton', 5, 5);
-  CoaPage.click('@updateAddressesButton');
-  CoaPage.checkFeeCount(1);
-  CoaPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 0);
-  CoaPage.checkTotalFees('$20.00');
-  CoaPage.assert.visible('@resetOfficeAddressButton');
-  CoaPage.assert.containsText('@officeDeliveryLine1', '123 test street');
-  CoaPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V1V1V1');
-  CoaPage.assert.containsText('@officeDeliveryLine3', 'CANADA');
-  CoaPage.assert.containsText('@officeMailingLine1', '123 test street');
-  CoaPage.assert.containsText('@officeMailingLine2', 'Victoria BC V1V1V1');
-  CoaPage.assert.containsText('@officeMailingLine3', 'CANADA');
+    browser
+    .url(browser.globals.launch_idirurl)
+    .assert.visible('#login-to','Log in to sfstest7.gov.bc.ca')
+    .setValue('#user',process.env.IDIRCredU)
+    .setValue('#password',process.env.IDIRCredP)
+    .click('#login-form > section > div > div.col-sm-7.col-md-8 > div > div.panel-body > div.login-form-action > input')
 },
 
-'Certify who filed': function (browser) {
-  CoaPage = browser.page.CoaPage();
-  CoaPage.setValue('@certifyLegalName', 'Tester');
-  CoaPage.click('@certifyCheckBox');
+'Login To Dashboard':function(browser){
+    browser
+    .assert.visible('#app > div > div.app-body > div > h1','Search Co-operatives') 
+    .setValue('#txtBusinessNumber', browser.globals.CP0002148.identifier)
+    .click('#app > div > div.app-body > div > form > button')
 },
 
-'Save draft and resume later': function (browser) {
-  CoaPage = browser.page.CoaPage();
-  CoaPage.click('@saveAndResumeLaterButton');
+
+'1.Verify initial state of dashboard, then start COD filing': function (browser) {
+  dashboard = browser.page.dashboardPage();
+  dashboard.verifyTombstone(browser.globals.CP0002148);
+  dashboard.verifyAddresses(browser.globals.CP0002148);
+ // dashboard.verifyDirectorCount(browser.globals.CP0002148.director_count)
+  dashboard.startCodFiling()
 },
 
-'Resume draft from Dashboard': function (browser) {
+'2.Confirm initial state of COD filing': function (browser) {
+  CodPage = browser.page.CodPage();
+  CodPage.verfifyInitialCodState(browser.globals.CP0002148);
+  CodPage.checkTotalFees('$0.00');
+},
+
+'3.Appoint New Director': function (browser) {
+  CodPage = browser.page.CodPage()
+  CodPage.startAppointingNewDirector()
+  CodPage.AddNewDirector(browser.globals.CP0002148.director4,4);
+ // CodPage.validateDirectorByNumber(browser.globals.CP0002148.director2,2)
+},
+
+'4.Certify who filed': function (browser) {
+  CodPage = browser.page.CodPage();
+  CodPage.setValue('@certifyLegalName', 'Tester');
+  CodPage.click('@certifyCheckBox')
+},
+
+'5.Save draft and resume later': function (browser) {
+  CodPage = browser.page.CodPage()
+  CodPage.click('@saveAndResumeLaterButton')
+},
+
+'6.Resume draft from Dashboard': function (browser) {
+  dashboard = browser.page.dashboardPage()
+  dashboard.waitForElementVisible('@resumeDraftButton')
+  dashboard.click('@resumeDraftButton')
+},
+
+'7.Verify draft resumed correctly then return to dashoard': function (browser) {
+  CodPage = browser.page.CodPage()
+  CodPage.checkFeeCount
+  CodPage.checkFeeByIndex('Change of Director', '$20.00', 0)
+  CodPage.checkTotalFees('$20.00')
+},
+
+'8.Assert the directors are present': function (browser) {
+  //CodPage.assert.valueContains('@certifyLegalName', 'Tester');
+  CodPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
+  CodPage.click('@saveAndResumeLaterButton');
+},
+
+'9.Delete draft': function (browser) {
   dashboard = browser.page.dashboardPage();
   dashboard.waitForElementVisible('@resumeDraftButton');
-  dashboard.click('@resumeDraftButton');
+  dashboard.click('@toDoButtonMoreActionsArrow');
+  dashboard.click('@deleteDraftButton');
+  dashboard.waitForElementVisible('@confirmDeleteDraftButton');
+  dashboard.click('@confirmDeleteDraftButton');
+  dashboard.waitForElementVisible('@fileNowButton1');   
 },
 
-'Verify draft resumed correctly then return to dashoard': function (browser) {
-  CoaPage = browser.page.CoaPage();
-  CoaPage.checkFeeCount(1);
-  CoaPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 0);
-  CoaPage.checkTotalFees('$20.00');
-  CoaPage.assert.visible('@resetOfficeAddressButton');
-  CoaPage.assert.containsText('@officeDeliveryLine1', '123 test street');
-  CoaPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V1V1V1');
-  CoaPage.assert.containsText('@officeDeliveryLine3', 'CANADA');
-  CoaPage.assert.containsText('@officeMailingLine1', '123 test street');
-  CoaPage.assert.containsText('@officeMailingLine2', 'Victoria BC V1V1V1');
-  CoaPage.assert.containsText('@officeMailingLine3', 'CANADA');
-  CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
-  CoaPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
-  CoaPage.click('@saveAndResumeLaterButton');
+'10.Start COD filing after deleting draft': function (browser) {
+  dashboard = browser.page.dashboardPage();
+  dashboard.startCodFiling();
 },
+
+'11.Confirm initial state of COD filing - POST DRAFT': function (browser) {
+  CodPage = browser.page.CodPage();
+  CodPage.verfifyInitialCodState(browser.globals.CP0002148);
+  CodPage.checkTotalFees('$0.00');
+},
+
+'12.Appoint New DIRECTOR - POST DRAFT': function (browser) {
+  CodPage = browser.page.CodPage();
+  CodPage.startAppointingNewDirector()
+  CodPage.AddNewDirector(browser.globals.CP0002148.director4,4);
+ // CodPage.validateDirectorByNumber(browser.globals.CP0002148.director3,3)
+},
+
+'13.Certify who filed - POST DRAFT': function (browser) {
+  CodPage = browser.page.CodPage();
+  CodPage.setValue('@certifyLegalName', 'Tester');
+  CodPage.click('@certifyCheckBox');
+  CodPage.click('@nextButton');
+},
+
+'14.Review Page':function(browser) {
+  
+},
+'15.Verify Dashboard after filing': function (browser) {
+  dashboard = browser.page.dashboardPage();
+  dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
+  dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (10)');
+  dashboard.assert.containsText('@topFilingInHistoryName', 'Addresses Change');
+ // dashboard.verifyDirectorCount(browser.globals.CP0002148.new_director_count);
+ dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
+ dashboard.assert.containsText('@deliveryLine1', '123 test street');
+ dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');
+ dashboard.assert.containsText('@deliveryLine3', 'CA');
+}
+
 }

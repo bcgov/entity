@@ -1,6 +1,6 @@
 require('dotenv').config();
 module.exports={
-  '@tags': ['staffsearch','single'],
+  '@tags': ['staffsearch'],
 
   'Login with IDIR':function (browser){
       browser
@@ -143,7 +143,7 @@ module.exports={
   dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
   dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (9)');
   dashboard.assert.containsText('@topFilingInHistoryName', 'Address Change');
- // dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count + 1);
+ // dashboard.verifyDirectorCount(browser.globals.CP0002148.director_count + 1);
   dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
   dashboard.assert.containsText('@deliveryLine1', '123 test street');
   dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');

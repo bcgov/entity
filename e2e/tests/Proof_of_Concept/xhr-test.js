@@ -2,7 +2,7 @@ const fs = require('fs');
 const request = require('request');
 
 module.exports = {
-    '@tags': ['single'],
+    '@tags': [],
 
     'call POST from NightWatch': function (browser) {
         var path = './lear-data/CP0000019.xls';
