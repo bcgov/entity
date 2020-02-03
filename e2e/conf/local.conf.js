@@ -4,7 +4,7 @@ require('dotenv').config();
 
 nightwatch_config = {
   "src_folders": ["./tests"],
-  "custom_commands_path": ["./node_modules/nightwatch-xhr/es5/commands"],
+  "custom_commands_path": ["./node_modules/nightwatch-xhr/es5/commands", "./custom-commands"],
   "page_objects_path": ["./page-objects"],
 
   selenium : {
