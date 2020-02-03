@@ -12,23 +12,23 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 ### Month xx, 2020 - Sprint (Milestone) xx
 ----
 #### Assets (15 min.)
-* xx
+* xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Entities (15 min.)
-* xx
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships (15 min.) 
-* Navigation Structure - xxxx - Jermey - 6 min 
-* Switch Accounts ... - xxxx - Jermey - ? min 
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 
 
 ----
 ### Feb 4, 2020 - Sprint (Milestone) 22
 ----
 #### Assets (15 min.)
-* xx
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Entities (15 min.)
-* xx
+* xxxxxxxxxxxxx xxxxxxx - xxxx - Cameron - x min 
 #### Relationships (15 min.) 
-* xx
+* Navigation Structure - xxxx - Jermey - 6 min 
+* Switch Accounts ... - xxxx - Jermey - ? min 
 
 
 ----
