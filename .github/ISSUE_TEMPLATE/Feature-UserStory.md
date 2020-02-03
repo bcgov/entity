@@ -13,6 +13,13 @@ assignees: ''
 * I want (goal) 
 * so that (reason/ why/ value) 
 
+**Scenario 1: xxxxxx (happy pa
+**Acceptance Criteria**	
+* GIVEN ... (you or your condition)
+* WHEN ... (what you do) 
+* THEN ... (what you see) 
+
+**Scenario 2: xxxxxx?
 **Acceptance Criteria**	
 * GIVEN ... (you or your condition)
 * WHEN ... (what you do) 
