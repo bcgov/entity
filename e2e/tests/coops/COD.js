@@ -26,8 +26,8 @@ module.exports = {
     
     '3.Appoint New Director': function (browser) {
       CodPage = browser.page.CodPage()
-      //CodPage.startAppointingNewDirector()
-      //CodPage.AddNewDirector(browser.globals.CP0000019.director7,7);
+      CodPage.startAppointingNewDirector()
+      CodPage.AddNewDirector(browser.globals.CP0000019.director7,7);
       CodPage.validateDirectorByNumber(browser.globals.CP0000019.director4,4)
     },
 
@@ -50,7 +50,7 @@ module.exports = {
 
     '7.Verify draft resumed correctly then return to dashoard': function (browser) {
       CodPage = browser.page.CodPage()
-      CodPage.checkFeeCouncls
+      CodPage.checkFeeCount(1)
       CodPage.checkFeeByIndex('Change of Director', '$20.00', 0)
       CodPage.checkTotalFees('$20.00')
     },
@@ -78,14 +78,14 @@ module.exports = {
 
     '11.Confirm initial state of COD filing - POST DRAFT': function (browser) {
       CodPage = browser.page.CodPage();
-      CodPage.verfifyInitialCodState(browser.globals.CP0000019);
+      CodPage.verfifyInitialCodState(browser.globals.CP0002148);
       CodPage.checkTotalFees('$0.00');
     },
 
     '12.Appoint New DIRECTOR - POST DRAFT': function (browser) {
       CodPage = browser.page.CodPage();
       CodPage.startAppointingNewDirector()
-      CodPage.AddNewDirector(browser.globals.CP0000019.director7,7);
+      CodPage.AddNewDirector(browser.globals.CP0002148.director7,7);
      // CodPage.validateDirectorByNumber(browser.globals.CP0000019.director3,3)
     },
 
@@ -100,7 +100,7 @@ module.exports = {
       CodPage = browser.page.CodPage();
       CodPage.reviewPage()
     },
-
+    
     '14.PayBC': function (browser) {
       browser
         .waitForElementVisible('#paylistbutton')
@@ -114,12 +114,13 @@ module.exports = {
         .click('input[name=submitButton]');
     },
 
+
     '15.Verify Dashboard after filing': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
       dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (57)');
       dashboard.assert.containsText('@topFilingInHistoryName', 'Director Change');
-     // dashboard.verifyDirectorCount(browser.globals.CP0000019.new_director_count);
+     // dashboard.verifyDirectorCount(browser.globals.CP0002148.new_director_count);
      dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
      dashboard.assert.containsText('@deliveryLine1', '123 test street');
      dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');

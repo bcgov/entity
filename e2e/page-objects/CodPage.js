@@ -28,22 +28,22 @@ var CodFilingsCommands = {
         .waitForElementVisible('@AppointNewDirectorButton')
         .click('@AppointNewDirectorButton')
     },
-    AddNewDirector: function (directorObject7,number) {
+    AddNewDirector: function (directorObject,number) {
         var _this = this;
         return this
         .waitForElementVisible('@firstname')
         .waitForElementNotVisible('button.new-director-btn')
-        .setValue('@firstname',directorObject7.firstname)
+        .setValue('@firstname',directorObject.firstname)
         .waitForElementVisible('@lastname')
-        .setValue('@lastname',directorObject7.lastname)
+        .setValue('@lastname',directorObject.lastname)
         .waitForElementVisible('@streetaddress')
-        .setValue('@streetaddress',directorObject7.street)
+        .setValue('@streetaddress',directorObject.street)
         .waitForElementVisible('@City')
-        .setValue('@City',directorObject7.city)
+        .setValue('@City',directorObject.city)
         .waitForElementVisible('@Province')
-        .setValue('@Province',directorObject7.province)
+        .setValue('@Province',directorObject.province)
         .waitForElementVisible('@postalcode')
-        .setValue('@postalcode',directorObject7.postalcode)
+        .setValue('@postalcode',directorObject.postalcode)
         .waitForElementVisible('@country')
         .click('@country')
         .click('@NewDirectorCountry')
@@ -57,8 +57,7 @@ var CodFilingsCommands = {
 
     validateDirectorByNumber: function (directorObject, number) {
            return this
-                    .waitForElementVisible('#director-4> div > label > span:nth-child(1)')
-                    .assert.containsText(this.getDynamicElement('dynamicFirstName', number), directorObject.firstName)
+                   // .assert.containsText(this.getDynamicElement('dynamicFirstName', number), directorObject.firstName)
                     .assert.containsText(this.getDynamicElement('dynamicLastName', number), directorObject.lastName)
                     .assert.containsText(this.getDynamicElement('dynamicStreet', number), directorObject.street)
                     .assert.containsText(this.getDynamicElement('dynamicCity', number), directorObject.city)
@@ -98,7 +97,7 @@ module.exports={
         feeValue: "div.fee-list__item-value",
         feeListItem: "li.fee-list__item",
         feeTotal: "div.fee-total__value",
-        AppointNewDirectorButton: "#directors > div:nth-child(2) > button",
+        AppointNewDirectorButton: "#wrapper-add-director > div > div > div.col.col-3 > button > span > span",
         firstname: "#new-director__first-name",
         initial:"#new-director__middle-initial",
         lastname: "#new-director__last-name",
@@ -111,7 +110,7 @@ module.exports={
             locateStrategy: "css selector",
         },
         NewDirectorCountry:{
-            selector:"/html/body/div/div[1]/div/div/div[4]/div",
+            selector:"/html/body/div[1]/div[2]/div/div/div[4]/div",
             locateStrategy: "xpath"
         },    
         chevron: "#director-%s > div > div > div > div.actions > span:nth-child(2) > span > button > span > i",

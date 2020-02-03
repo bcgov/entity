@@ -83,7 +83,6 @@ module.exports={
       //Note fees re-ordered on resume
       ArPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 2);
       ArPage.checkTotalFees('$70.00');
-     // ArPage.assert.visible('@newDirectorChip');
       ArPage.assert.visible('@resetOfficeAddressButton');
       ArPage.assert.containsText('@officeDeliveryLine1', '123 test street');
       ArPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V1V1V1');
@@ -136,9 +135,11 @@ module.exports={
     },
   
     '13.Appoint a Director - POST DRAFT': function (browser) {
-      .setValue('#user', process.env.IDIRCredU)
-      .setValue('#password', process.env.IDIRCredP)
-      .click('#login-form > section > div > div.col-sm-7.col-md-8 > div > div.panel-body > div.login-form-action > input')
+      ArPage = browser.page.annualReportPage();
+      ArPage.appointDirector();
+      ArPage.checkFeeCount(3);
+      ArPage.checkFeeByIndex('Change of Director', '$20.00', 2);
+      ArPage.checkTotalFees('$70.00');
   },
 
     '14.Certify who filed - POST DRAFT': function (browser) {
