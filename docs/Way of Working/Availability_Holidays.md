@@ -24,14 +24,14 @@
 
 ----
 **Relationships** 
-* Loren: Fr, Jan 10 
+* Loren:
 * Amit: Feb 12 - Feb 28
 * Meng: Sprint 22 away (and longer eventually) 
 * Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3), Jan 24 (?) (half day)
 * Waldemar: 
-* Jeremy: Jan 29, 30, 31
+* Jeremy: 
 * Nitin: Feb 18 - Mar 13
-* Sumesh: Friday Jan 31
+* Sumesh:
 
 
 ----
