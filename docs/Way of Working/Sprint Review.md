@@ -1,14 +1,27 @@
-## Sprint Review Who wants to demo, and how long?
+## Sprint Review - Who wants to demo, and how long?
 
 ### In Sprint Planning discuss & agree what US/ Feature should be demoed to Stakeholders - in (common) Sprint Review on Tuesdays. 
 
 #### Please use following format:       
-Name - User Story/ Feature (link to ticket) - how long (demo incl. Q&A) 
+Name - User Story/ Feature (link to ticket) - how long (demo incl. Q&A)
+
 -----------------------------------------------------------------------------------------------------------------------
 
 
 ----
-### Feb x, 2020 - Sprint (Milestone) 22
+### Month xx, 2020 - Sprint (Milestone) xx
+----
+#### Assets (15 min.)
+* xx
+#### Entities (15 min.)
+* xx
+#### Relationships (15 min.) 
+* xx
+
+
+
+----
+### Feb 4, 2020 - Sprint (Milestone) 22
 ----
 #### Assets (15 min.)
 * xx
