@@ -2,7 +2,7 @@
 name: Epic
 about: xxx
 title: ''
-labels: 
+labels: ''
 assignees: ''
 
 ---
@@ -31,4 +31,3 @@ Enabler Epics:
 * action
 * result
 * object
-
