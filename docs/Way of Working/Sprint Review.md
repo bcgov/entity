@@ -26,6 +26,7 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 * PPR Authentication/Search Workflow - xxxx - Tendayi - 20 min 
 #### Entities (15 min.)
 * Business Contact Information - xxxx - Cameron - 15 min 
+* GitHub Actions (short overview) - Cameron - 5 min
 #### Relationships (15 min.) 
 * Navigation Structure - xxxx - Jermey - 10 min 
 * ??? Switch Accounts ... - xxxx - Jermey - ? min 
