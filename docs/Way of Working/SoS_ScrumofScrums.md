@@ -4,8 +4,6 @@ Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 
 
-
-
 ---
 Feb 11
 ----
@@ -16,6 +14,7 @@ Feb 11
 - "Release Process - when completed --> notify Change team" (Email from Trish) 
 - how to manage dependencies across teams 
 - Do we have all the Epics for this quarter in ZenHub Roadmap?
+- Update Sprint Review to 11AM - What does it mean for the team to change(ex. any scheduled invites which needs to be moved)?
 
 ---
 Jan 28
