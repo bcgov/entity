@@ -33,6 +33,13 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what g
 * Remove button enabled when the user is logged in as a Member #2180 - Nitin - 2 min
 * Only owner is allowed to change the account Name #2497  - Nitin - 2 min
 * API change that we made - Affiliate incorporation of new business to account # 2412 - Loren
+
+## Feedback/Action Items
+* Carol suggested to see if it makes more value to capture the Directors cell phone number in the incorporation process. It can be used for text notification(Ex Your AR is due in <> days). Linda/Kaine to look into this.
+* Socialize Production vs Market Release to the Development team members. Jyoti to work with Scrum Masters and OCM team for socializing the definition
+* Suggestion to move the meeting from 2-3 PM Tuesday to 11AM Tuesday to better accomodate stakeholders. Jyoti to look into this and update the calendar invite
+* Some stakeholders need to be added to this invite. Sinead to send the list to Jyoti and Jyoti to add it to their calendar.
+* Simona suggested that it would be more valuable to mention the stage of the development work when the application is being demoed to stakeholders(Ex. This is currently in Dev vs Test and will be in Production on < > date)
 ----
 ### Jan 21, 2020 - Sprint (Milestone) 21
 ----
