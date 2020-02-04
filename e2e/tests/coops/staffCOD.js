@@ -14,30 +14,30 @@ module.exports={
 'Login To Dashboard':function(browser){
     browser
     .assert.visible('#app > div > div.app-body > div > h1','Search Co-operatives') 
-    .setValue('#txtBusinessNumber', browser.globals.CP0002148.identifier)
+    .setValue('#txtBusinessNumber', browser.globals.CP0001403.identifier)
     .click('#app > div > div.app-body > div > form > button')
 },
 
 
 '1.Verify initial state of dashboard, then start COD filing': function (browser) {
   dashboard = browser.page.dashboardPage();
-  dashboard.verifyTombstone(browser.globals.CP0002148);
-  dashboard.verifyAddresses(browser.globals.CP0002148);
- // dashboard.verifyDirectorCount(browser.globals.CP0002148.director_count)
+  dashboard.verifyTombstone(browser.globals.CP0001403);
+  dashboard.verifyAddresses(browser.globals.CP0001403);
+ // dashboard.verifyDirectorCount(browser.globals.CP0001403.director_count)
   dashboard.startCodFiling()
 },
 
 '2.Confirm initial state of COD filing': function (browser) {
   CodPage = browser.page.CodPage();
-  CodPage.verfifyInitialCodState(browser.globals.CP0002148);
+  CodPage.verfifyInitialCodState(browser.globals.CP0001403);
   CodPage.checkTotalFees('$0.00');
 },
 
 '3.Appoint New Director': function (browser) {
   CodPage = browser.page.CodPage()
   CodPage.startAppointingNewDirector()
-  CodPage.AddNewDirector(browser.globals.CP0002148.director4,4);
- // CodPage.validateDirectorByNumber(browser.globals.CP0002148.director2,2)
+  CodPage.AddNewDirector(browser.globals.CP0001403.director4,4);
+ // CodPage.validateDirectorByNumber(browser.globals.CP0001403.director2,2)
 },
 
 '4.Certify who filed': function (browser) {
@@ -95,7 +95,7 @@ module.exports={
   CodPage = browser.page.CodPage();
   CodPage.startAppointingNewDirector()
   CodPage.AddNewDirector(browser.globals.CP0002148.director4,4);
- // CodPage.validateDirectorByNumber(browser.globals.CP0002148.director3,3)
+ // CodPage.validateDirectorByNumber(browser.globals.CP0001403.director3,3)
 },
 
 '13.Certify who filed - POST DRAFT': function (browser) {
@@ -113,7 +113,7 @@ module.exports={
   dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
   dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (10)');
   dashboard.assert.containsText('@topFilingInHistoryName', 'Addresses Change');
- // dashboard.verifyDirectorCount(browser.globals.CP0002148.new_director_count);
+ // dashboard.verifyDirectorCount(browser.globals.CP0001403.new_director_count);
  dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
  dashboard.assert.containsText('@deliveryLine1', '123 test street');
  dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');

@@ -12,17 +12,17 @@ module.exports = {
       },
     '1.Verify initial state of dashboard, then start COA filing': function (browser) {
       dashboard = browser.page.dashboardPage();
-      dashboard.verifyTombstone(browser.globals.CP0000019);
-      dashboard.verifyAddresses(browser.globals.CP0000019);
-      //dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count);
+      dashboard.verifyTombstone(browser.globals.CP0002111);
+      dashboard.verifyAddresses(browser.globals.CP0002111);
+      //dashboard.verifyDirectorCount(browser.globals.CP0002111.director_count);
       dashboard.startCoaFiling();
     },
   
     '2.Confirm initial state of COA filing': function (browser) {
       CoaPage = browser.page.CoaPage();
-      CoaPage.verfifyInitialCoaState(browser.globals.CP0000019);
+      CoaPage.verfifyInitialCoaState(browser.globals.CP0002111);
       CoaPage.checkTotalFees('$0.00');
-      CoaPage.verifyOfficeAddresses(browser.globals.CP0000019);
+      CoaPage.verifyOfficeAddresses(browser.globals.CP0002111);
     },
   
     '3.Edit the Office Addresses': function (browser) {
@@ -94,9 +94,9 @@ module.exports = {
   
     '10.Confirm initial state of COA filing - POST DRAFT': function (browser) {
       CoaPage = browser.page.CoaPage();
-      CoaPage.verfifyInitialCoaState(browser.globals.CP0000019);
+      CoaPage.verfifyInitialCoaState(browser.globals.CP0002111);
       CoaPage.checkTotalFees('$0.00');
-      CoaPage.verifyOfficeAddresses(browser.globals.CP0000019);
+      CoaPage.verifyOfficeAddresses(browser.globals.CP0002111);
     },
   
     '11.Edit the Office Addresses - POST DRAFT': function (browser) {
@@ -185,7 +185,7 @@ module.exports = {
       dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
       dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (56)');
       dashboard.assert.containsText('@topFilingInHistoryName', 'Address Change');
-     // dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count);
+     // dashboard.verifyDirectorCount(browser.globals.CP0002111.director_count);
       dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
       dashboard.assert.containsText('@deliveryLine1', '123 test street');
       dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');

@@ -14,23 +14,23 @@ module.exports={
   'Login To Dashboard':function(browser){
       browser
       .assert.visible('#app > div > div.app-body > div > h1','Search Co-operatives')
-      .setValue('#txtBusinessNumber', browser.globals.CP0002148.identifier)
+      .setValue('#txtBusinessNumber', browser.globals.CP0001188.identifier)
       .click('#app > div > div.app-body > div > form > button')
   },
 
   '1.Verify initial state of dashboard, then start COA filing': function (browser) {
       dashboard = browser.page.dashboardPage();
-      dashboard.verifyTombstone(browser.globals.CP0002148);
-      dashboard.verifyAddresses(browser.globals.CP0002148);
-     // dashboard.verifyDirectorCount(browser.globals.CP0002148.director_count);
+      dashboard.verifyTombstone(browser.globals.CP0001188);
+      dashboard.verifyAddresses(browser.globals.CP0001188);
+     // dashboard.verifyDirectorCount(browser.globals.CP0001188.director_count);
       dashboard.startCoaFiling();
     },
 
 '2.Confirm initial state of COA filing': function (browser) {
    CoaPage = browser.page.CoaPage();
-   CoaPage.verfifyInitialCoaState(browser.globals.CP0002148);
+   CoaPage.verfifyInitialCoaState(browser.globals.CP0001188);
    CoaPage.checkTotalFees('$0.00');
-   CoaPage.verifyOfficeAddresses(browser.globals.CP0002148);
+   CoaPage.verifyOfficeAddresses(browser.globals.CP0001188);
   },
     
 '3.Edit the Office Addresses': function (browser) {
@@ -99,9 +99,9 @@ module.exports={
 
 '10.Confirm initial state of COA filing - POST DRAFT': function (browser) {
   CoaPage = browser.page.CoaPage();
-  CoaPage.verfifyInitialCoaState(browser.globals.CP0002148);
+  CoaPage.verfifyInitialCoaState(browser.globals.CP0001188);
   CoaPage.checkTotalFees('$0.00');
-  CoaPage.verifyOfficeAddresses(browser.globals.CP0002148);
+  CoaPage.verifyOfficeAddresses(browser.globals.CP0001188);
 },
 
 '11.Edit the Office Addresses - POST DRAFT': function (browser) {
@@ -143,7 +143,7 @@ module.exports={
   dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
   dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (9)');
   dashboard.assert.containsText('@topFilingInHistoryName', 'Address Change');
- // dashboard.verifyDirectorCount(browser.globals.CP0002148.director_count + 1);
+ // dashboard.verifyDirectorCount(browser.globals.CP0001188.director_count + 1);
   dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
   dashboard.assert.containsText('@deliveryLine1', '123 test street');
   dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');
