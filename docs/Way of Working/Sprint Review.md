@@ -9,13 +9,13 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 
 
 ----
-### Month xx, 2020 - Sprint (Milestone) xx
+### Month xx, 2020 - Sprint (Milestone) xx - 55 min. total 
 ----
-#### Assets (15 min.)
+#### Assets
 * xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
-#### Entities (15 min.)
+#### Entities
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
-#### Relationships (15 min.) 
+#### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 
 
@@ -23,12 +23,12 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 ### Feb 4, 2020 - Sprint (Milestone) 22
 ----
 #### Assets (15 min.)
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* PPR Authentication/Search Workflow - xxxx - Tendayi - 20 min 
 #### Entities (15 min.)
-* xxxxxxxxxxxxx xxxxxxx - xxxx - Cameron - x min 
+* Business Contact Information - xxxx - Cameron - 15 min 
 #### Relationships (15 min.) 
-* Navigation Structure - xxxx - Jermey - 6 min 
-* Switch Accounts ... - xxxx - Jermey - ? min 
+* Navigation Structure - xxxx - Jermey - 10 min 
+* ??? Switch Accounts ... - xxxx - Jermey - ? min 
 
 
 ----
