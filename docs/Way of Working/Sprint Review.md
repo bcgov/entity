@@ -30,9 +30,9 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what g
 * GitHub Actions (short overview) - Cameron - 5 min
 #### Relationships (15 min.) 
 * Navigation Structure - xxxx - Jermey - 10 min 
-* ??? Switch Accounts ... - xxxx - Jermey - ? min 
-
-
+* Remove button enabled when the user is logged in as a Member #2180 - Nitin - 2 min
+* Only owner is allowed to change the account Name #2497  - Nitin - 2 min
+* API change that we made - Affiliate incorporation of new business to account # 2412 - Loren
 ----
 ### Jan 21, 2020 - Sprint (Milestone) 21
 ----
