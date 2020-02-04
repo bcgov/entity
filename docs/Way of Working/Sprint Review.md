@@ -11,13 +11,28 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 ----
 ### Month xx, 2020 - Sprint (Milestone) xx - 55 min. total 
 ----
-PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what got not completely done this Sprint.
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 #### Assets
 * xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Entities
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
+
+----
+### Feb 18, 2020 - Sprint 23 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+* xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
+#### Entities
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
+#### NRO
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
+#### Relationships
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
 
 
 ----
