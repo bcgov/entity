@@ -1,6 +1,6 @@
 ---
 name: tech debt
-about: Describe tech debt and why we need to do solve it 
+about: Describe tech debt & why we need to solve it 
 title: ''
 assignees: ''
 
