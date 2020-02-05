@@ -12,23 +12,23 @@ module.exports = {
   },
   '1.Verify initial state of dashboard, then start COD filing': function (browser) {
       dashboard = browser.page.dashboardPage();
-      dashboard.verifyTombstone(browser.globals.CP0000019);
-      dashboard.verifyAddresses(browser.globals.CP0000019);
-     // dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count)
+      dashboard.verifyTombstone(browser.globals.CP0001171);
+      dashboard.verifyAddresses(browser.globals.CP0001171);
+     // dashboard.verifyDirectorCount(browser.globals.CP0001171.director_count)
       dashboard.startCodFiling()
   },
 
   '2.Confirm initial state of COD filing': function (browser) {
       CodPage = browser.page.CodPage();
-      CodPage.verfifyInitialCodState(browser.globals.CP0000019);
+      CodPage.verfifyInitialCodState(browser.globals.CP0001171);
       CodPage.checkTotalFees('$0.00');
     },
     
     '3.Appoint New Director': function (browser) {
       CodPage = browser.page.CodPage()
       CodPage.startAppointingNewDirector()
-      CodPage.AddNewDirector(browser.globals.CP0000019.director7,7);
-      CodPage.validateDirectorByNumber(browser.globals.CP0000019.director4,4)
+      CodPage.AddNewDirector(browser.globals.CP0001171.director7,7);
+      CodPage.validateDirectorByNumber(browser.globals.CP0001171.director4,4)
     },
 
     '4.Certify who filed': function (browser) {
@@ -78,7 +78,7 @@ module.exports = {
 
     '11.Confirm initial state of COD filing - POST DRAFT': function (browser) {
       CodPage = browser.page.CodPage();
-      CodPage.verfifyInitialCodState(browser.globals.CP0002148);
+      CodPage.verfifyInitialCodState(browser.globals.CP0001171);
       CodPage.checkTotalFees('$0.00');
     },
 
@@ -86,7 +86,7 @@ module.exports = {
       CodPage = browser.page.CodPage();
       CodPage.startAppointingNewDirector()
       CodPage.AddNewDirector(browser.globals.CP0002148.director7,7);
-     // CodPage.validateDirectorByNumber(browser.globals.CP0000019.director3,3)
+     // CodPage.validateDirectorByNumber(browser.globals.CP0001171.director3,3)
     },
 
     '13.Certify who filed - POST DRAFT': function (browser) {
