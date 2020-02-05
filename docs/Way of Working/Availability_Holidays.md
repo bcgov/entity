@@ -10,7 +10,7 @@
 **Entities** 
 * Kaine: Jan 27 - Feb 13 - deputy: Linda (and Jyoti, Sienna)
 * Shahriar: Jan 27 - Feb 4 
-* Katie: Jan 9, Jan 16, Jan 23, Jan 30
+* Katie: Feb 15, 20, 27
 * Thor: Jan 23, Feb 20,21, May 11-15, June 19,22-26, Oct 14
 * Rich: Jan 13, Jan 27
 * Kial: Mondays in the morning, Wed all day, Thurdsays in the morning
