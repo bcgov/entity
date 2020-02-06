@@ -37,8 +37,8 @@ THEN ...
 In case, more information is required, please contact ..First Name, Last Name.. from our ..Team...
 
 **Template link**
-https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/Dependency.md
-This is live in ZenHub so can be used by anyone
+- https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/Dependency.md
+- This is live in ZenHub so can be used by anyone
 ----
 
 #### How to identify dependencies across teams (make them visible)
