@@ -33,6 +33,9 @@ Feb, 6, 2020
     - Priority filing(dependency from Entity to Relationship)
     - BCOL dependency
         - Needs ticket from Entity team. Currently there is no design
+5. How to track items from issues from Actual end users
+    - Can we use certain labels for items which involve LAB
+    - Can the user group be identified? Like - CO-HO?
 5. Update on Action items?
   - Jyoti to create a dependency template in ZenHub - This has been done
 
@@ -42,6 +45,7 @@ Feb, 6, 2020
 -   Loren to check with Carol on
     - Overall UI ownership
     - BN Messaging
+- Linda to talk to operations team for changing some of the criterio for documenting issues(IT Ops)
  
 
 ----
