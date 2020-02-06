@@ -33,8 +33,8 @@ Jan, 30, 2020
   - Jyoti to create a dependency template in ZenHub
   - Can we have a informal meet-up at the end of the month? Social meet up 
   
-  ## Decission:-
-  - PO's agreed in this meeting to use the Dependency process for this Program Iteration.
+  ## Decisions made:
+  - PO's agreed in this meeting to use the Dependency process for this Program Iteration (i.e. nex three Sprints).
 ----
 Jan, 23, 2020
 ----
@@ -71,7 +71,7 @@ Jan, 23, 2020
         - Loren to check with Carol and reflect to the team what does it mean for the other team.
 8. Follow-up on topics & action items below (last PO-Sync)
 
-## Decission's made:
+## Decisions made:
 - Jeremy showed the Navigation structure design to all PO's and there was no concern raised in taking that forward.
 https://preview.uxpin.com/ec5725a91e5ed646c9217e6295f9b87b3b6a7bfc#/pages/121718326/simulate/sitemap
 - All the three PO's agree to use the Release Tagging feature for any release they are deploying to Production/Market
