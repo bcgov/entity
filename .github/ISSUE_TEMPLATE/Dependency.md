@@ -1,11 +1,10 @@
 ---
 name: Dependency
-about: Describe dependency as a story incl more details below
+about: Describe as a story incl. more details below
 labels: ''
 assignees: ''
 
 ---
-## Description:	
 
 * As a (type of user)
 * I want (goal) 
