@@ -36,10 +36,10 @@ Feb, 6, 2020
 5. Update on Action items?
   - Jyoti to create a dependency template in ZenHub - This has been done
 
-Action Item:
-a. PO's to create Epics and depdendencies in ZenHub(all what was discussed in PI planning) by end of Feb 12th
-b. Linda to have a poster in team spaces for Social meet up by end of Feb 12th
-c. Loren to check with Carol on
+## Action Item:
+-   PO's to create Epics and depdendencies in ZenHub(all what was discussed in PI planning) by end of Feb 12th
+-   Linda to have a poster in team spaces for Social meet up by end of Feb 12th
+-   Loren to check with Carol on
     - Overall UI ownership
     - BN Messaging
  
