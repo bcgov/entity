@@ -37,7 +37,7 @@ Feb, 6, 2020
     - Can we use certain labels for items which involve LAB
     - Can the user group be identified? Like - CO-HO?
 5. Update on Action items?
-  - Jyoti to create a dependency template in ZenHub - This has been done
+    - Jyoti to create a dependency template in ZenHub - This has been done
 
 ## Action Item:
 -   PO's to create Epics and depdendencies in ZenHub(all what was discussed in PI planning) by end of Feb 12th
@@ -46,7 +46,7 @@ Feb, 6, 2020
     - Overall UI ownership
     - BN Messaging
 - Linda to talk to operations team for changing some of the criterio for documenting issues(IT Ops)
- 
+
 
 ----
 Jan, 30, 2020
