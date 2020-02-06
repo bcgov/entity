@@ -12,7 +12,7 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 @Jyoti: invite Thor to that session (see ticket)  - Invited
 
 2. Staff dashboard to manage their work.
-3. Can correction framework be reused for authorizing an account to manage a business? If yes, then its a dependency on Entities team to do this work for relationship team.
+3. Can correction framework be reused for authorizing an account to manage a business(Ex: If a client wants to get the ownership of their business back, they submit a request(using digital form) to Staff)? If yes, then its a dependency on Entities team to do this work for relationship team.
 
 ----
 Feb, 6, 2020
