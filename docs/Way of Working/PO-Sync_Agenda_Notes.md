@@ -12,6 +12,15 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 @Jyoti: invite Thor to that session (see ticket)  
 
 ----
+Feb, 6, 2020
+----
+1. Update on Roadmap in ZenHub
+2. Update on Epics across team in ZenHub
+3. Any Shift in priorities for the team?
+4. Any new dependency identifies across teams?
+5. Update on Action items?
+
+----
 Jan, 30, 2020
 ----
 1.  Follow up on Action item from last 2 week
