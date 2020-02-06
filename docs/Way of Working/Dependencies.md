@@ -1,4 +1,4 @@
-## Dependencies Process
+## Dependency Process
 
 **Topics covered**
 - When a dependency can be identified
