@@ -9,7 +9,7 @@ Feb, 13, 2020
 ----
 1. Refine ideas for "API Gateway": 
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/1088
-@Jyoti: invite Thor to that session (see ticket)  
+@Jyoti: invite Thor to that session (see ticket)  - Invited
 
 ----
 Feb, 6, 2020
@@ -17,8 +17,32 @@ Feb, 6, 2020
 1. Update on Roadmap in ZenHub
 2. Update on Epics across team in ZenHub
 3. Any Shift in priorities for the team?
+    - Entity team has to pick Correction 1.0 as priority. 
+    - Incorporation work needs to be put on hold for now till 1.0 is deployed to production
+        - This might move out of June. Needs to be discussed in the upcoming sprint planning meeting.
+    - Corrections 2.0 doesnt have to be done necessarily after 1.0
+    - Deadline is Feb 28th to deliver Corrections 1.0
+    - Relationship team needs to re-evaluate the work for current sprint and next based upon the work which they need to do for Entities.
+        - Jeremy might be helping on design stuff
+    - Update the release plan with two releases
+        - AGM Picker 
+        - Comments field for ledger(corrections 1.0)
+        - Corrections 1.0
+    - Update OCM - Formal communication might has to be done
 4. Any new dependency identifies across teams?
+    - Priority filing(dependency from Entity to Relationship)
+    - BCOL dependency
+        - Needs ticket from Entity team. Currently there is no design
 5. Update on Action items?
+  - Jyoti to create a dependency template in ZenHub - This has been done
+
+Action Item:
+a. PO's to create Epics and depdendencies in ZenHub(all what was discussed in PI planning) by end of Feb 12th
+b. Linda to have a poster in team spaces for Social meet up by end of Feb 12th
+c. Loren to check with Carol on
+    - Overall UI ownership
+    - BN Messaging
+ 
 
 ----
 Jan, 30, 2020
