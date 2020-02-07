@@ -67,6 +67,16 @@ import groovy.json.JsonOutput
                             {
                               npm run pipeline
                             }
+                            else (name =='firefox'){
+                                npm run pipeline
+                            }
+                            else(name=='edge'){
+                                npm run pipeline
+                            }
+                            else(name=='ie'){
+                                npm run pipeline
+                            }
+                            }
                             }
                             catch (Exception e)
                              {
