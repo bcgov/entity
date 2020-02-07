@@ -2,6 +2,10 @@ module.exports = {
 	waitForConditionTimeout : 30000,
 	retryAssertionTimeout: 30000,		
 	throwOnMultipleElementsReturned : true,
+	launch_url: "https://test.bcregistry.ca/cooperatives/",
+	idtest_url: "https://idtest.gov.bc.ca/login",
+	launch_idirurl:"https://test.bcregistry.ca/cooperatives/auth/signin/idir",
+	launch_url1: "https://test.bcregistry.ca/cooperatives/auth/", 
 
 	CP0002111: {
 		identifier: "CP0002111",
@@ -85,17 +89,17 @@ module.exports = {
 		country: "CA"
 	},
 	
-	CP0002148:{
-		identifier:"CP0002148",
-		legal_name: "ARC COMMUNITY COOPERATIVE ASSOCIATION",
+	CP0000992:{
+		identifier:"CP0000992",
+		legal_name: "KLAHANIE CO-OPERATIVE HOUSING ASSOCIATION",
 		delivery: {
-			line1: "#5 BARTEN RD",
-			line2: "LILLOOET BC V0K 1V0",
+			line1: "18 Richmond St",
+			line2: "RICHMOND BC V8Z 7H4",
 			line3: "Canada"
 		},
 		mailing:{
-			line1: "PO BOX 1599",
-			line2: "LILLOOET BC V0K 1V0",
+			line1: "71 - 4340 STEVESTON",
+			line2: "RICHMOND BC V7E 4M5",
 			line3: "Canada"
 		},
 
@@ -111,14 +115,14 @@ module.exports = {
 	},
 
 	director2:{
-		dynamicFirstName:"ALPHRED",
-		dynamicLastName:"LGAEDE",
-		dynamicStreet:"3 BARTON RD",
-		dynamicCity:"LILLOOET",
+		dynamicFirstName:"JOHN",
+		dynamicLastName:"CROCKER",
+		dynamicStreet:"70 - 4340 STEVESTON HWY",
+		dynamicCity:"RICHMOND",
 		dynamicProvince:"BC",
-		dynamicPostalCode:"VV0K1V0",
+		dynamicPostalCode:"VV7E4M5",
 		dynamicCountry:"Canada",
-		dynamicAppointedDate:"2017-11-24",
+		dynamicAppointedDate:"2017-01-06",
 	},
 	},
 
@@ -160,6 +164,17 @@ module.exports = {
 			postalcode: "V1V1V1",
 			country: "CA"
 		},
+
+		director2:{
+			firstname: "NORMAN",
+			lastname: "KIRBY",
+			street: "202-1961 DUNN ST",
+			city: "KELOWNA",
+			provience:"BC",
+			postalcode: "V1Y4C4",
+			country: "CA",
+			appointedDate: "2018-12-20"
+		}
 
 
 	},

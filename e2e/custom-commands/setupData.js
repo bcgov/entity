@@ -17,7 +17,7 @@ setupData.prototype.command = function (identifier, callback) {
         setTimeout(function () {
             var options = {
                 'method': 'POST',
-                'url': 'https://data-reset-tool-dev.pathfinder.gov.bc.ca/api/fixture/import',
+                'url': 'https://data-reset-tool-test.pathfinder.gov.bc.ca/api/fixture/import',
                 'headers': {
                     'Content-Type': 'multipart/form-data'
                 },
@@ -31,7 +31,6 @@ setupData.prototype.command = function (identifier, callback) {
                     }
                 }
             };
-
             request(options, function (error, response) {
                 if (error) {
                     console.error(error);

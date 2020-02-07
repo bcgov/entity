@@ -95,8 +95,8 @@ module.exports={
         },
         changeOfficeAddressButton: "#reg-off-addr-change-btn",
         officeDeliveryStreetAddress: {
-            selector: 'input[name="street-address"]',
-            index: 0
+            selector: "#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div:nth-child(1) > div > div > div.v-input__slot > div>input[type=text]",
+            index: 1
         },
         officeDeliveryCity: {
             selector: '#office-addresses > div > ul > li:nth-child(2) > div > div > div.address-wrapper > div > form > div.form__row.three-column > div.v-input.item.address-city.v-input--is-label-active.v-input--is-dirty.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div >input[type=text]',

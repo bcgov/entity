@@ -1,5 +1,10 @@
 module.exports = {
-  '@tags': ['COD'],
+  '@tags': [''],
+  before:function(browser ){
+    browser.setupData('CP0001171', function(busObject){
+         console.log(busObject);
+    });
+},
   'Verify initial login with bcsc': function (browser) {
       bcsc = browser.page.bcscPage();
       browser.url(browser.globals.launch_url)
@@ -99,6 +104,7 @@ module.exports = {
     '14.Review Page':function(browser) {
       CodPage = browser.page.CodPage();
       CodPage.reviewPage()
+      .click('@fileAndPayButton')
     },
     
     '14.PayBC': function (browser) {
@@ -121,10 +127,6 @@ module.exports = {
       dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (57)');
       dashboard.assert.containsText('@topFilingInHistoryName', 'Director Change');
      // dashboard.verifyDirectorCount(browser.globals.CP0002148.new_director_count);
-     dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
-     dashboard.assert.containsText('@deliveryLine1', '123 test street');
-     dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');
-     dashboard.assert.containsText('@deliveryLine3', 'CA');
     }
   
   }
