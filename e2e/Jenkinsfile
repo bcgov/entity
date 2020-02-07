@@ -77,8 +77,7 @@ import groovy.json.JsonOutput
                                 npm run pipeline
                             }
                             }
-                            }
-                            catch (Exception e)
+                              catch (Exception e)
                              {
                             echo "Something Fishy"
                             all_passed = false
