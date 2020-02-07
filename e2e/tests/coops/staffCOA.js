@@ -1,6 +1,11 @@
 require('dotenv').config();
 module.exports={
-  '@tags': ['staffsearch'],
+  '@tags': ['Regression'],
+  before:function(browser ){
+    browser.setupData('CP0001188', function(busObject){
+         console.log(busObject);
+    });
+},
 
   'Login with IDIR':function (browser){
       browser
@@ -141,7 +146,7 @@ module.exports={
 '14.Verify Dashboard after filing': function (browser) {
   dashboard = browser.page.dashboardPage();
   dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
-  dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (9)');
+  dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (38)');
   dashboard.assert.containsText('@topFilingInHistoryName', 'Address Change');
  // dashboard.verifyDirectorCount(browser.globals.CP0001188.director_count + 1);
   dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');

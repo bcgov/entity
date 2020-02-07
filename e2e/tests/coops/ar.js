@@ -1,7 +1,12 @@
 require('dotenv').config();
 module.exports = {
 
-  '@tags': ['bcsc'], 
+  '@tags': [''], 
+  before:function(browser ){
+    browser.setupData('CP0000019', function(busObject){
+         console.log(busObject);
+    });
+},
     'Verify initial login with bcsc': function (browser) {
         bcsc = browser.page.bcscPage();
         browser.url(browser.globals.launch_url)

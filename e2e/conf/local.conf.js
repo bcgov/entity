@@ -6,7 +6,10 @@ nightwatch_config = {
   "src_folders": ["./tests"],
   "custom_commands_path": ["./node_modules/nightwatch-xhr/es5/commands", "./custom-commands"],
   "page_objects_path": ["./page-objects"],
-
+   //"test_workers":{
+    // "enabled":true,
+     //"workers":5
+  // },
   selenium : {
     "start_process" : false,
     "host" : "hub-cloud.browserstack.com",
@@ -16,7 +19,8 @@ nightwatch_config = {
   test_settings: {
     default: {
       globals_path: "globals.js",
-      desiredCapabilities: {
+
+     desiredCapabilities: {
         'build': 'nightwatch-browserstack',
         'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
         'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
@@ -24,22 +28,53 @@ nightwatch_config = {
         'browserstack.local': true,
         'os': 'Windows',
         'os_version': '10',
-        'browser': 'Chrome',
+        'browser': 'chrome',
         'browser_version': '76.0',
         'resolution': '1920x1080',
-        "chromeOptions" : {
-         "args" : ["start-fullscreen"]
-       }
-      }
-    },
+        'chromeOptions':{
+          'args':['start-fullscreen']
+        }
+     },
+       
+     /*  desiredCapabilities: {
+       "build" : "Build:4",
+       'browserstack.debug': true,
+       "browserstack.local": true,
+       "os" : "Windows",
+       "os_version" : "10",
+       "browserName" : "Firefox",
+       "browser_version" : "72.0",
+       "browserstack.user" : process.env.BROWSERSTACK_USERNAME,
+       "browserstack.key" : process.env.BROWSERSTACK_ACCESS_KEY,
+       'acceptSslCerts' : true,
+       'acceptInsecureCerts':true,
+       "browserstack.console" : "verbose",
+       "browserstack.networkLogs" : "true",
+       "resolution":"1920x1080"
+       },
+
+        desiredCapabilities: {
+        "os" : "Windows",
+        "os_version" : "10",
+        "browserName" : "Edge",
+        "browser_version" : "79.0",
+        "browserstack.local" : "true",
+        "browserstack.selenium_version" : "3.5.2",
+        "browserstack.user" : process.env.BROWSERSTACK_USERNAME,
+        "browserstack.key" : process.env.BROWSERSTACK_ACCESS_KEY,
+        "resolution": '1600x1400',
+        "resolution":"1920x1080"
+      }*/
+   },
     test: {
       globals_path: "test-globals.js"
     },
     dev:{
       globals_path: "dev-globals.js"
-    }
+    },
   }
-};
+}
+  
 
 // Code to copy seleniumhost/port into test settings
 for(var i in nightwatch_config.test_settings){
