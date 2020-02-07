@@ -1,5 +1,10 @@
 module.exports = {
-    '@tags': ['COA'], 
+    '@tags': [''], 
+    before:function(browser ){
+      browser.setupData('CP0002111', function(busObject){
+           console.log(busObject);
+      });
+},
       'Verify initial login with bcsc': function (browser) {
           bcsc = browser.page.bcscPage();
           browser.url(browser.globals.launch_url)

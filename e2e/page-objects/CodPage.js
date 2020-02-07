@@ -57,7 +57,7 @@ var CodFilingsCommands = {
 
     validateDirectorByNumber: function (directorObject, number) {
            return this
-                   // .assert.containsText(this.getDynamicElement('dynamicFirstName', number), directorObject.firstName)
+                    .assert.containsText(this.getDynamicElement('dynamicFirstName', number), directorObject.firstName)
                     .assert.containsText(this.getDynamicElement('dynamicLastName', number), directorObject.lastName)
                     .assert.containsText(this.getDynamicElement('dynamicStreet', number), directorObject.street)
                     .assert.containsText(this.getDynamicElement('dynamicCity', number), directorObject.city)
@@ -71,8 +71,6 @@ var CodFilingsCommands = {
            return this
            .waitForElementVisible('@header')
            .assert.containsText('@header','Review: Director Change')
-           //scripts to be added
-           .click('@fileAndPayButton')
 
        },
     editChangeOfAddress: function(directorObject,number) {
@@ -88,7 +86,8 @@ var CodFilingsCommands = {
                    .waitForElementVisible('@changeofaddress')
                    .click('@changeofaddress')
 
-    }
+    },
+     
 };
 module.exports={
     commands:[CodFilingsCommands],
@@ -96,19 +95,16 @@ module.exports={
         feeName: "div.fee-list__item-name",
         feeValue: "div.fee-list__item-value",
         feeListItem: "li.fee-list__item",
-        feeTotal: "div.fee-total__value",
+        feeTotal: "#standalone-directors-container > div > div.col-lg-3.col-12 > aside > div > div > div.container.fee-total > div.fee-total__value",
         AppointNewDirectorButton: "#wrapper-add-director > div > div > div.col.col-3 > button > span > span",
         firstname: "#new-director__first-name",
         initial:"#new-director__middle-initial",
         lastname: "#new-director__last-name",
-        streetaddress: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.address-wrapper > div > form > div:nth-child(1) > div > div > div.v-input__slot > div>input[type=text]",
-        postalcode: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.address-wrapper > div > form > div.form__row.three-column > div:nth-child(3) > div > div.v-input__slot > div>input[type=text]",
+        streetaddress: '[name="address-form"] .street-address input',
+        postalcode: '[name="address-form"] .postal-code input',
         City: ".address-city input",
-        Province: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.address-wrapper > div > form > div.form__row.three-column > div.v-input.item.address-region.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div>input[type=text]",
-        country:{
-            selector:"#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.address-wrapper > div > form > div:nth-child(4) > div > div > div.v-input__slot > div.v-select__slot > div.v-select__selections",
-            locateStrategy: "css selector",
-        },
+        Province:'[name="address-form"] .address-region input',
+        country:'[name="address-form"] .address-country',
         NewDirectorCountry:{
             selector:"/html/body/div[1]/div[2]/div/div/div[4]/div",
             locateStrategy: "xpath"
@@ -116,14 +112,17 @@ module.exports={
         chevron: "#director-%s > div > div > div > div.actions > span:nth-child(2) > span > button > span > i",
         changeofaddress: "#app > div.v-menu__content.theme--light.menuable__content__active > div > div:nth-child(1) > div",
         certifyLegalName: "#certified-by-textfield",
-        certifyCheckBox: "#AR-step-4-container > div > div.v-input.v-input--selection-controls.v-input--checkbox.theme--light > div > div.v-input__slot > div > div",
+        certifyCheckBox: '#AR-step-4-container > div > div.v-input.theme--light.v-input--selection-controls.v-input--checkbox > div > div.v-input__slot > div',
         saveAndResumeLaterButton: "#cod-save-resume-btn",
         saveDraftButton: "#cod-save-btn",
         fileAndPayButton: "#cod-file-pay-btn",
         cancelFilingButton: "#cod-cancel-btn",
         edit:"#director-%s-change-btn > div > span",
         completeAppointingDirector: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.form__row.form__btns > button.form-primary-btn.v-btn.v-btn--contained.theme--light.v-size--default.primary > span",
-        dynamicFirstName: "#director-%s> div > label > span:nth-child(1)",
+        dynamicFirstName: {
+        selector:"#director-%s> div > label > span:nth-child(1)",
+         index: 1
+        },
         dynamicLastName: "#director-%s > div > label > span:nth-child(3)",
         dynamicStreet: "#director-%s > div > div > div > div.address > div > div > div > div:nth-child(1)",
         dynamicCity: "#director-%s > div > div > div > div.address > div > div > div > div:nth-child(3) > span:nth-child(1)",
@@ -137,3 +136,5 @@ module.exports={
         header:"#filing-header-review"
     },
 }
+
+
