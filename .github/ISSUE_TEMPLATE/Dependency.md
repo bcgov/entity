@@ -1,7 +1,8 @@
 ---
 name: Dependency
 about: Describe as a story incl. more details below
-labels: ''
+title: ''
+labels: Dependency
 assignees: ''
 
 ---
