@@ -65,6 +65,11 @@ import groovy.json.JsonOutput
                             if (name== 'chrome'){
                               npm run pipeline
                             }
+                            catch (Exception e)
+                             {
+                            echo "Something Fishy"
+                            all_passed = false
+                            }
 
                     '''
             }
