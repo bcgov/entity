@@ -58,17 +58,21 @@ import groovy.json.JsonOutput
                     sh '''
                          cd e2e
                          npm install
-                         for (browser in browsers.split(';')) {
+                         {
+                         for (browser in browsers.split('')) {
                          stage("Running ${chrome} regression tests") {
                          try {
                             echo "Running ${chrome} browser tests"   
-                            if (name== 'chrome'){
+                            if (name== 'chrome')
+                            {
                               npm run pipeline
+                            }
                             }
                             catch (Exception e)
                              {
                             echo "Something Fishy"
                             all_passed = false
+                            }
                             }
 
                     '''
