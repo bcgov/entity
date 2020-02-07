@@ -67,10 +67,10 @@ import groovy.json.JsonOutput
                             {
                               npm run pipeline
                             }
-                            else (name =='firefox'){
+                            if (name =='firefox'){
                                 npm run pipeline
                             }
-                            else(name=='edge'){
+                            if (name=='edge'){
                                 npm run pipeline
                             }
                             else(name=='ie'){
