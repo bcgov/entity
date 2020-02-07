@@ -1,6 +1,6 @@
 require('dotenv').config();
 module.exports={
-  '@tags': [''],
+  '@tags': ['Regression'],
   before:function(browser ){
     browser.setupData('CP0000992', function(busObject){
          console.log(busObject);
@@ -157,6 +157,7 @@ module.exports={
     '15.Entering RoutingSlip Number':function(browser){
       dashboard = browser.page.dashboardPage();
       dashboard.enterRoutingSlipNumber()
+      .click('#ar-file-pay-btn > span')
     },
 
     '19.Verify Dashboard after filing': function (browser) {

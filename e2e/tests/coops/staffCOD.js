@@ -12,7 +12,7 @@ module.exports={
   'Login with IDIR':function (browser){
     browser
     .maximizeWindow()
-    //.url(browser.globals.launch_idirurl)
+    .url(browser.globals.launch_idirurl)
     .assert.visible('#login-to','Log in to sfstest7.gov.bc.ca')
     .setValue('#user',process.env.IDIRCredU)
     .setValue('#password',process.env.IDIRCredP)
