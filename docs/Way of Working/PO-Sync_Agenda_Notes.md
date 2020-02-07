@@ -20,27 +20,27 @@ Feb, 6, 2020
 1. Update on Roadmap in ZenHub
 2. Update on Epics across team in ZenHub
 3. Any Shift in priorities for the team?
-    - Entity team has to pick Correction 1.0 as priority. 
+    - Entity team has to pick Correction 1.0 as priority. - DONE
     - Incorporation work needs to be put on hold for now till 1.0 is deployed to production
         - This might move out of June. Needs to be discussed in the upcoming sprint planning meeting.
     - Corrections 2.0 doesnt have to be done necessarily after 1.0
     - Deadline is Feb 28th to deliver Corrections 1.0
-    - Relationship team needs to re-evaluate the work for current sprint and next based upon the work which they need to do for Entities.
-        - Jeremy might be helping on design stuff
+    - Relationships needs to re-evaluate the work for current Sprint and next based upon the work which they need to do for Entities.
+        - Jeremy might be helping on design stuff - issues created and linked (WS, 2020-02-07)
     - Update the release plan with two releases
         - AGM Picker 
         - Comments field for ledger(corrections 1.0)
         - Corrections 1.0
     - Update OCM - Formal communication might has to be done
 4. Any new dependency identifies across teams?
-    - Priority filing(dependency from Entity to Relationship)
+    - Priority filing (dependency from Entity to Relationship)
     - BCOL dependency
         - Needs ticket from Entity team. Currently there is no design
 5. How to track items from issues from Actual end users
     - Can we use certain labels for items which involve LAB
     - Can the user group be identified? Like - CO-HO?
 5. Update on Action items?
-    - Jyoti to create a dependency template in ZenHub - This has been done
+    - Jyoti to create a dependency template in ZenHub - DONE
 
 ## Action Item:
 -   PO's to create Epics and depdendencies in ZenHub(all what was discussed in PI planning) by end of Feb 12th
