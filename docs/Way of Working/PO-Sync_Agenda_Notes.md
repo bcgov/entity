@@ -2,7 +2,7 @@
 **Topics for PO-Sync. to discuss between PO´s**
 Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
-* if we discuss content, let´s open the roadmap or Epic to discuss the item
+* if we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 
 ----
 Feb, 13, 2020
@@ -42,7 +42,7 @@ Feb, 6, 2020
 5. Update on Action items?
     - Jyoti to create a dependency template in ZenHub - DONE
 
-## Action Item:
+## Action Items:
 -   PO's to create Epics and depdendencies in ZenHub(all what was discussed in PI planning) by end of Feb 12th
 -   Linda to have a poster in team spaces for Social meet up by end of Feb 12th
 -   Loren to check with Carol on
@@ -69,8 +69,8 @@ Jan, 30, 2020
     - Jyoti to check with Kaine if this is going to be in Service Now.
 4.  Process for identifying dependencies across teams
   
-  ## Action Item:
-  - Jyoti to create a dependency template in ZenHub
+  ## Action Items:
+  - Jyoti to create a dependency template in ZenHub - DONE
   - Can we have a informal meet-up at the end of the month? Social meet up 
   
   ## Decisions made:
