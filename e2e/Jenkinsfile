@@ -12,7 +12,7 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-def browsers = "chrome,edge,ie11,firefox"
+def browsers = ['chrome','edge','ie11','firefox']
 def COMPONENT_TAG = ''
 
 // define groovy functions
@@ -59,33 +59,18 @@ import groovy.json.JsonOutput
                          cd e2e
                          npm install
                          '''
-                         for (browser in browsers.split('')) {
-                         stage("Running ${chrome} regression tests") {
-                         try {
-                            echo "Running ${chrome} browser tests"   
-                            if (name== 'chrome')
-                            {
-                              npm run pipeline
-                            }
-                            if (name =='firefox'){
-                                npm run pipeline
-                            }
-                            if (name=='edge'){
-                                npm run pipeline
-                            }
-                            else(name=='ie'){
-                                npm run pipeline
+                         for (browser in browsers) {
+                                stage("Running ${browser} regression tests") {
+                                    try {
+                                  npm run pipeline --env ${browser}
+                                }
+                                catch (Exception e)
+                                {
+                                echo "Something Fishy"
+                                all_passed = false
+                                }
                             }
                             }
-                              catch (Exception e)
-                             {
-                            echo "Something Fishy"
-                            all_passed = false
-                            }
-                            }
-                            }
-
-                
             }
 
     } 
