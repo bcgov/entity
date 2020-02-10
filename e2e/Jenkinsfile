@@ -62,7 +62,10 @@ import groovy.json.JsonOutput
                          for (browser in browsers) {
                                 stage("Running ${browser} regression tests") {
                                     try {
+
+                                        sh '''
                                   npm run pipeline --env ${browser}
+                                  '''
                                 }
                                 catch (Exception e)
                                 {
