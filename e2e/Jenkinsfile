@@ -70,6 +70,7 @@ import groovy.json.JsonOutput
                                 catch (Exception e)
                                 {
                                 echo "Something Fishy"
+                                echo "${e.getMessage()}
                                 all_passed = false
                                 }
                             }
