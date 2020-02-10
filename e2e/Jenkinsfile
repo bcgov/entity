@@ -58,7 +58,6 @@ import groovy.json.JsonOutput
                     sh '''
                          cd e2e
                          npm install
-                         npm init
                          '''
                          for (browser in browsers) {
                                 stage("Running ${browser} regression tests") {
