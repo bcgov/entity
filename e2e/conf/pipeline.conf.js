@@ -16,7 +16,6 @@ nightwatch_config = {
   },
 
   common_capabilities: {
-    'build': 'nightwatch-browserstack',
     'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
     'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
     'browserstack.debug': true,
@@ -33,51 +32,46 @@ nightwatch_config = {
 
     chrome: {
         desiredCapabilities: {
-        'browser': 'chrome',
+        'browserName': 'Chrome',
         'browser_version': '76.0',
         'resolution': '1920x1080',
-        'chromeOptions':{
-          'args':['start-fullscreen']
-        }
-    }
      },
+    },
        
-     firefox: {
+    edge: {
         desiredCapabilities: {
+        "browserName" : "Edge",
+        "browser_version" : "18",
+        "browserstack.local" : "true",
+        "browserstack.selenium_version" : "3.5.2",
+        "resolution":"1920x1080"
+      },
+    },
+    firefox: {
+      desiredCapabilities: {
        "browserName" : "Firefox",
        "browser_version" : "72.0",
        'acceptSslCerts' : true,
        'acceptInsecureCerts':true,
        "resolution":"1920x1080"
        },
-    },
-
-       edge: {
-        desiredCapabilities: {
-        "browserName" : "Edge",
-        "browser_version" : "79.0",
-        "browserstack.local" : "true",
-        "browserstack.selenium_version" : "3.5.2",
-        "resolution":"1920x1080"
       },
-    },
-      ie: {
+    ie: {
         desiredCapabilities: {
         "browserName" : "IE",
         "resolution":"1920x1080",
         "browser_version" : "11.0"
       }
    },
-},
     test: {
       globals_path: "test-globals.js"
     },
     dev:{
       globals_path: "dev-globals.js"
     },
-  }
   
-
+  },
+}
 // Code to support common capabilites
 for(var i in nightwatch_config.test_settings){
     var config = nightwatch_config.test_settings[i];
