@@ -64,7 +64,7 @@ import groovy.json.JsonOutput
                                     try {
 
                                         sh '''
-                                    echo $(pwd)
+                                    cd e2e
                                   npm run pipeline --env ${browser}
 
                                   '''
