@@ -5,7 +5,7 @@
   "scripts": {
     "single": "nightwatch -c conf/single.conf.js",
     "local": "node scripts/local.runner.js -c conf/local.conf.js --tag Regression",
-    "pipeline": "node scripts/local.runner.js -c conf/pipeline.conf.js --tag Regression",
+    "pipeline": "node scripts/local.runner.js -c conf/pipeline.conf.js --tag Regression -env $(browser)",
     "local-test": "node scripts/local.runner.js -c conf/local.conf.js --tag single --env test",
     "local-dev": "node scripts/local.runner.js -c conf/local.conf.js --tag single --env dev",
     "parallel": "nightwatch -c conf/parallel.conf.js -e chrome,firefox,safari,ie",
