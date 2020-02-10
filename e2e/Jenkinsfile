@@ -65,7 +65,7 @@ import groovy.json.JsonOutput
 
                                         sh '''
                                     cd e2e
-                                  npm run pipeline ${browser}
+                                  npm run pipeline edge
 
                                   '''
                                 }
