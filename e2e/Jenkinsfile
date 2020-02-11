@@ -66,7 +66,6 @@ import groovy.json.JsonOutput
                                         sh '''
                                     cd e2e
                                   npm run pipeline '''+browser+'''
-
                                   '''
                                 }
                                 catch (Exception e)

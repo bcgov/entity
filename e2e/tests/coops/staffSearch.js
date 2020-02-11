@@ -1,7 +1,6 @@
 require('dotenv').config();
 module.exports={
   '@tags': [],
-  
   before:function(browser ){
     browser.setupData('CP0000992', function(busObject){
          console.log(busObject);

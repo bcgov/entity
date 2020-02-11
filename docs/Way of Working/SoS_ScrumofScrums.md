@@ -4,18 +4,35 @@ Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 
 
-
-
 ---
 Feb 11
 ----
-- Epic template: OK? 
 - How to use the Release feature and embed that in the way of working? 
-- Label "Release" has the same red color as Entity 
-- use Release label in all teams 
-- "Release Process - when completed --> notify Change team" (Email from Trish) 
+  - Label "Release" has the same red color as Entity. Do we need to change it? If color confuses people then we can.
+  - use Release label in all teams
+- "Release Process - 
+   - when completed --> notify Change team" (Email from Trish) 
+   - Standarize the template which can be used across teams.
+   - Template is already published here
+    - https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Release_steps 
 - how to manage dependencies across teams 
+  - Jyoti to show an exmaple
 - Do we have all the Epics for this quarter in ZenHub Roadmap?
+- Stakeholder Engagement and feedback process across teams.
+  - Trish is working on this
+- Update Sprint Review to 9AM - What does it mean for the team to change(ex. any scheduled invites which needs to be moved)?
+- Are we closing our milestones once they are done?
+  - Should this be part of team sprint review meeting? Can SM's ensure by working with PO's that they close the milestone when they move to the new one
+- program increment planning?  
+  - SM's to work with their team to start plannig the epics for the next quarter. We are 4 weeks away from the next planning meeting.
+   - What are we trying to achieve? 
+      - Are we ready to have the entire team for sprint planning?
+      - Is the goal same as last Prgoram increment to have the Epics outlined and Sprint goals defined for the next quarter?
+      - If we need to do more, then we need to plan from now
+      - This will decide to determine the length of the meeting
+   - Jyoti to setup the workshop with SM's to finalize the Agenda
+   - Jyoti to work with THor to present an Architectural overview
+   
 
 ---
 Jan 28

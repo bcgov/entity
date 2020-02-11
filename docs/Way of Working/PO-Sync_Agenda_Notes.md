@@ -2,14 +2,54 @@
 **Topics for PO-Sync. to discuss between PO´s**
 Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
-* if we discuss content, let´s open the roadmap or Epic to discuss the item
+* if we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 
 ----
 Feb, 13, 2020
 ----
 1. Refine ideas for "API Gateway": 
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/1088
-@Jyoti: invite Thor to that session (see ticket)  
+@Jyoti: invite Thor to that session (see ticket)  - Invited
+
+2. Staff dashboard to manage their work.
+3. Can correction framework be reused for authorizing an account to manage a business(Ex: If a client wants to get the ownership of their business back, they submit a request(using digital form) to Staff)? If yes, then its a dependency on Entities team to do this work for relationship team.
+
+----
+Feb, 6, 2020
+----
+1. Update on Roadmap in ZenHub
+2. Update on Epics across team in ZenHub
+3. Any Shift in priorities for the team?
+    - Entity team has to pick Correction 1.0 as priority. - DONE
+    - Incorporation work needs to be put on hold for now till 1.0 is deployed to production
+        - This might move out of June. Needs to be discussed in the upcoming sprint planning meeting.
+    - Corrections 2.0 doesnt have to be done necessarily after 1.0
+    - Deadline is Feb 28th to deliver Corrections 1.0
+    - Relationships needs to re-evaluate the work for current Sprint and next based upon the work which they need to do for Entities.
+        - Jeremy might be helping on design stuff - issues created and linked (WS, 2020-02-07)
+    - Update the release plan with two releases
+        - AGM Picker 
+        - Comments field for ledger(corrections 1.0)
+        - Corrections 1.0
+    - Update OCM - Formal communication might has to be done
+4. Any new dependency identifies across teams?
+    - Priority filing (dependency from Entity to Relationship)
+    - BCOL dependency
+        - Needs ticket from Entity team. Currently there is no design
+5. How to track items from issues from Actual end users
+    - Can we use certain labels for items which involve LAB
+    - Can the user group be identified? Like - CO-HO?
+5. Update on Action items?
+    - Jyoti to create a dependency template in ZenHub - DONE
+
+## Action Items:
+-   PO's to create Epics and depdendencies in ZenHub(all what was discussed in PI planning) by end of Feb 12th
+-   Linda to have a poster in team spaces for Social meet up by end of Feb 12th
+-   Loren to check with Carol on
+    - Overall UI ownership
+    - BN Messaging
+- Linda to talk to operations team for changing some of the criterio for documenting issues(IT Ops)
+
 
 ----
 Jan, 30, 2020
@@ -29,12 +69,12 @@ Jan, 30, 2020
     - Jyoti to check with Kaine if this is going to be in Service Now.
 4.  Process for identifying dependencies across teams
   
-  ## Action Item:
-  - Jyoti to create a dependency template in ZenHub
+  ## Action Items:
+  - Jyoti to create a dependency template in ZenHub - DONE
   - Can we have a informal meet-up at the end of the month? Social meet up 
   
-  ## Decission:-
-  - PO's agreed in this meeting to use the Dependency process for this Program Iteration.
+  ## Decisions made:
+  - PO's agreed in this meeting to use the Dependency process for this Program Iteration (i.e. nex three Sprints).
 ----
 Jan, 23, 2020
 ----
@@ -71,7 +111,7 @@ Jan, 23, 2020
         - Loren to check with Carol and reflect to the team what does it mean for the other team.
 8. Follow-up on topics & action items below (last PO-Sync)
 
-## Decission's made:
+## Decisions made:
 - Jeremy showed the Navigation structure design to all PO's and there was no concern raised in taking that forward.
 https://preview.uxpin.com/ec5725a91e5ed646c9217e6295f9b87b3b6a7bfc#/pages/121718326/simulate/sitemap
 - All the three PO's agree to use the Release Tagging feature for any release they are deploying to Production/Market

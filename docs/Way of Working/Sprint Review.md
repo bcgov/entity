@@ -9,28 +9,52 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 
 
 ----
-### Month xx, 2020 - Sprint (Milestone) xx
+### Month xx, 2020 - Sprint (Milestone) xx - 55 min. total 
 ----
-#### Assets (15 min.)
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+#### Assets
 * xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
-#### Entities (15 min.)
+#### Entities
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
-#### Relationships (15 min.) 
+#### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
+
+----
+### Feb 18, 2020 - Sprint 23 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+* xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
+#### Entities
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
+#### NRO
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
+#### Relationships
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
 
 
 ----
 ### Feb 4, 2020 - Sprint (Milestone) 22
 ----
 #### Assets (15 min.)
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* PPR Authentication/Search Workflow - xxxx - Tendayi - 20 min 
 #### Entities (15 min.)
-* xxxxxxxxxxxxx xxxxxxx - xxxx - Cameron - x min 
+* Business Contact Information - xxxx - Cameron - 15 min 
+* GitHub Actions (short overview) - Cameron - 5 min
 #### Relationships (15 min.) 
-* Navigation Structure - xxxx - Jermey - 6 min 
-* Switch Accounts ... - xxxx - Jermey - ? min 
+* Navigation Structure - xxxx - Jermey - 10 min 
+* Remove button enabled when the user is logged in as a Member #2180 - Nitin - 2 min
+* Only owner is allowed to change the account Name #2497  - Nitin - 2 min
+* API change that we made - Affiliate incorporation of new business to account # 2412 - Loren
 
-
+## Feedback/Action Items
+* Carol suggested to see if it makes more value to capture the Directors cell phone number in the incorporation process. It can be used for text notification(Ex Your AR is due in <> days). Linda/Kaine to look into this.
+* Socialize Production vs Market Release to the Development team members. Jyoti to work with Scrum Masters and OCM team for socializing the definition
+* Suggestion to move the meeting from 2-3 PM Tuesday to 11AM Tuesday to better accomodate stakeholders. Jyoti to look into this and update the calendar invite
+* Some stakeholders need to be added to this invite. Sinead to send the list to Jyoti and Jyoti to add it to their calendar.
+* Simona suggested that it would be more valuable to mention the stage of the development work when the application is being demoed to stakeholders(Ex. This is currently in Dev vs Test and will be in Production on < > date)
 ----
 ### Jan 21, 2020 - Sprint (Milestone) 21
 ----

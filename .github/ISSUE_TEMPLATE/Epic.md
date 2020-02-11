@@ -1,8 +1,8 @@
 ---
 name: Epic
-about: xxx
+about: Describe the Epic
 title: ''
-labels: 
+labels: ''
 assignees: ''
 
 ---
@@ -18,7 +18,7 @@ assignees: ''
 ----
 * Start date when team will start to work on: 
 * End date Epic will be delivered: 
-* T-shirt size: X (S, M, L, or XL) 
+* T-shirt size: X (S, M, L, or XL) (S=1-2 Sprints, M=2-3 Sprints, L=4-5 Sprints, XL=not sure, probably more than 5 Sprints)
 * Process Flow (if applicable)
 * Design/ UX or UI tasks needed (should be linked to the user stories, eventually a SPIKE or DESIGN for that Epic is needed)? 
 * OCM/ CM considerations? 
@@ -31,4 +31,3 @@ Enabler Epics:
 * action
 * result
 * object
-

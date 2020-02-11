@@ -7,19 +7,13 @@ assignees: ''
 
 ---
 
-**Describe the bug in current/ actual behavior/ situation**
+**Describe the bug in current/ situation**
 A clear and concise description of what the bug is.
-* observed/ actual behaviour
-* is there a specific platform? (if yes, please name here)
-* what environment?
 
 **Impact of this bug**
 Describe the impact, i.e. what the impact is, and number of users impacted. 
 
-**Pre Conditions**
-
-**Expected behavior**
-A clear and concise description of what you expected to happen. Use the gherking language. 
+**Pre Conditions (which Env, any pre-requesites or assumptions to execute steps?**
 
 **Steps to Reproduce**
 Steps to reproduce the behavior:
@@ -28,5 +22,10 @@ Steps to reproduce the behavior:
 3. Scroll down to '....'
 4. See error
 
-**Screenshots/ Visual Reference**
+**Actual/ observed behavior/ results**
+
+**Expected behavior**
+A clear and concise description of what you expected to happen. Use the gherking language. 
+
+**Screenshots/ Visual Reference/ Source**
 If applicable, add screenshots to help explain your problem. You an use screengrab.
