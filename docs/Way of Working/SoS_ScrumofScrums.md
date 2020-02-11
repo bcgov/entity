@@ -22,15 +22,16 @@ Feb 11
   - Trish is working on this
 - Update Sprint Review to 9AM - What does it mean for the team to change(ex. any scheduled invites which needs to be moved)?
 - program increment planning?
-  - Are we ready to have the entire team for sprint planning?
+  
   - SM's to work with their team to start plannig the epics for the next quarter. We are 4 weeks away from the next planning meeting.
-   - What are we trying to achieve? - 
-    - Is the goal same as last Prgoram increment to have the Epics outlined and Sprint goals defined for the next quarter?
-    - If we need to do more, then we need to plan from now
-    - This will decide to determine the length of the meeting
+   - What are we trying to achieve? 
+      - Are we ready to have the entire team for sprint planning?
+      - Is the goal same as last Prgoram increment to have the Epics outlined and Sprint goals defined for the next quarter?
+      - If we need to do more, then we need to plan from now
+      - This will decide to determine the length of the meeting
    - Jyoti to setup the workshop with SM's to finalize the Agenda
    - Jyoti to work with THor to present an Architectural overview
-   - 
+   
 
 ---
 Jan 28
