@@ -21,8 +21,9 @@ Feb 11
 - Stakeholder Engagement and feedback process across teams.
   - Trish is working on this
 - Update Sprint Review to 9AM - What does it mean for the team to change(ex. any scheduled invites which needs to be moved)?
-- program increment planning?
-  
+- Are we closing our milestones once they are done?
+  - Should this be part of team sprint review meeting? Can SM's ensure by working with PO's that they close the milestone when they move to the new one
+- program increment planning?  
   - SM's to work with their team to start plannig the epics for the next quarter. We are 4 weeks away from the next planning meeting.
    - What are we trying to achieve? 
       - Are we ready to have the entire team for sprint planning?
