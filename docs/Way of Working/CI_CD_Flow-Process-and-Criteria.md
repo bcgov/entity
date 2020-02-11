@@ -1,10 +1,10 @@
 Goal:		We need items faster into TEST
 
 **ENVIRONEMNTS: 	Tools – DEV – TEST – PROD**
-PROD		
-Staging		    not existing
-TEST		       move button to push to PROD, we have feature flags
-DEV		        Unit Testing with GitHub actions, move to TEST when … ???
+- PROD		
+- Staging		    not existing
+- TEST		       move button to push to PROD, we have feature flags
+- DEV		        Unit Testing with GitHub actions, move to TEST when … ???
 
 ----
 
