@@ -24,6 +24,7 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 
 **John Lane in CC**
 - if a person mentioned above is not here, John will ask another team member to fix it
+- John, you can see if Richard and Kial are not here ... then it´s a sign to probably help out
 
 **Ask/ Question**
 * we need one more person to be in the Emails: John Lane (he would make sure that the issue gets fixed)
