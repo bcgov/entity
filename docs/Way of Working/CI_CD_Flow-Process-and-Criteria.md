@@ -10,7 +10,7 @@ DEV		        Unit Testing with GitHub actions, move to TEST when … ???
 
 **CI CD Flow Process and Criteria**
 **Developer is responsible to bring a story to Done**
-*Role/ Skill 	Env/tool		Action item
+* Role/ Skill 	Env/tool		Action item
 - Dev		       GitHub			GH Actions passed
 - Dev		       DEV			Build verified by DEV (whole app) (smoke test)
 - Dev		       TEST			Push to TEST coordinated w. QA (cross-team) (i.e. post on RocketChat channel that you are going to move it into TEST in 0.5 hrs: https://chat.pathfinder.gov.bc.ca/channel/registries 
