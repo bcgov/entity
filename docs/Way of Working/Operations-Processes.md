@@ -28,3 +28,4 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 **Ask/ Question**
 * we need one more person to be in the Emails: John Lane (he would make sure that the issue gets fixed)
 * where is Steven, and what is his role?
+* For Future??? - Richard will ask if Ops can use RocketChat to post the issue
