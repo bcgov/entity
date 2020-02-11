@@ -22,6 +22,7 @@ Feb 11
   - Use Release label in all teams
     - Bryce to update the release plan in the Release planning document. Next two releases planned for Assests in the Release planning document are out of date
     - Release Plan document link: https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/Modernization%20Docs/Forms/AllItems.aspx?RootFolder=%2fsites%2fSBC%2fREG%2fProjects%2fMVSM%2fModernization%20Docs%2fPortfolio%20and%20Project%20Management%2fRoadmapping%20%26%20Release%20Planning&FolderCTID=0x012000B818EF4733FA1245879E82E0E935EF33
+    - Shahriar to work with Kaine to adjust the Release plan in the above link
 - "Release Process - 
    - when completed --> notify Change team" (Email from Trish) 
    - Standarize the template which can be used across teams.
