@@ -6,7 +6,7 @@
     "single": "nightwatch -c conf/single.conf.js",
     "local": "node scripts/local.runner.js -c conf/local.conf.js --tag Regression",
 
-    "pipeline": "nightwatch -c conf/pipeline.conf.js --tag Regression -e",
+    "pipeline": "node scripts/local.runner.js -c conf/pipeline.conf.js --tag Regression -e",
 
     "local-test": "node scripts/local.runner.js -c conf/local.conf.js --tag single --env test",
     "local-dev": "node scripts/local.runner.js -c conf/local.conf.js --tag single --env dev",
