@@ -35,6 +35,9 @@ nightwatch_config = {
         'browserName': 'Chrome',
         'browser_version': '76.0',
         'resolution': '1920x1080',
+        'chromeOptions':{
+          'args':['start-fullscreen']
+        }
      },
     },
        
@@ -44,7 +47,6 @@ nightwatch_config = {
         "browser_version" : "18",
         "browserstack.local" : "true",
         "browserstack.selenium_version" : "3.5.2",
-        "resolution":"1920x1080"
       },
     },
     firefox: {
@@ -59,7 +61,6 @@ nightwatch_config = {
     ie: {
         desiredCapabilities: {
         "browserName" : "IE",
-        "resolution":"1920x1080",
         "browser_version" : "11.0"
       }
    },

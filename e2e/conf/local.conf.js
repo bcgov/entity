@@ -35,36 +35,6 @@ nightwatch_config = {
           'args':['start-fullscreen']
         }
      },
-       
-     /*  desiredCapabilities: {
-       "build" : "Build:4",
-       'browserstack.debug': true,
-       "browserstack.local": true,
-       "os" : "Windows",
-       "os_version" : "10",
-       "browserName" : "Firefox",
-       "browser_version" : "72.0",
-       "browserstack.user" : process.env.BROWSERSTACK_USERNAME,
-       "browserstack.key" : process.env.BROWSERSTACK_ACCESS_KEY,
-       'acceptSslCerts' : true,
-       'acceptInsecureCerts':true,
-       "browserstack.console" : "verbose",
-       "browserstack.networkLogs" : "true",
-       "resolution":"1920x1080"
-       },
-
-        desiredCapabilities: {
-        "os" : "Windows",
-        "os_version" : "10",
-        "browserName" : "Edge",
-        "browser_version" : "79.0",
-        "browserstack.local" : "true",
-        "browserstack.selenium_version" : "3.5.2",
-        "browserstack.user" : process.env.BROWSERSTACK_USERNAME,
-        "browserstack.key" : process.env.BROWSERSTACK_ACCESS_KEY,
-        "resolution": '1600x1400',
-        "resolution":"1920x1080"
-      }*/
    },
     test: {
       globals_path: "test-globals.js"
