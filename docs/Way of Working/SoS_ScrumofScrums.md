@@ -19,10 +19,9 @@ Feb 11
     - Thor needs to be involved for decision making
     - Action item on Bryce to have Thor involved in the decission making before it goes to Carol
 - How to use the Release feature and embed that in the way of working? 
-  - use Release label in all teams
+  - Use Release label in all teams
     - Bryce to update the release plan in the Release planning document. Next two releases planned for Assests in the Release planning document are out of date
     - Release Plan document link: https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/Modernization%20Docs/Forms/AllItems.aspx?RootFolder=%2fsites%2fSBC%2fREG%2fProjects%2fMVSM%2fModernization%20Docs%2fPortfolio%20and%20Project%20Management%2fRoadmapping%20%26%20Release%20Planning&FolderCTID=0x012000B818EF4733FA1245879E82E0E935EF33
- 
 - "Release Process - 
    - when completed --> notify Change team" (Email from Trish) 
    - Standarize the template which can be used across teams.
