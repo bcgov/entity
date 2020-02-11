@@ -12,7 +12,8 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
+def browsers = ['chrome','edge','ie','firefox']
+def COMPONENT_TAG = ''
 
 // define groovy functions
 import groovy.json.JsonOutput
@@ -46,10 +47,9 @@ import groovy.json.JsonOutput
         node (e2e_label) {
         
             stage('Checkout') {
-                
-                    echo "checking out source"
+               echo "checking out source"
                     echo "Build: ${BUILD_ID}"
-                    checkout scm              
+                    checkout scm             
             }
 
             stage ('Running e2e Tests') {
@@ -57,12 +57,26 @@ import groovy.json.JsonOutput
                 
                     sh '''
                          cd e2e
-                         npm install
-                        
-                         npm run local-test
+                         npm install 
+                         '''
+                         for (browser in browsers) {
+                                stage("Running ${browser} regression tests") {
+                                    try {
 
-                    '''
+                                        sh '''
+                                    cd e2e
+                                  npm run pipeline '''+browser+'''
+                                  '''
+                                }
+                                catch (Exception e)
+                                {
+                                echo "Something Fishy"
+                                echo "${e.getMessage()}"
+                                all_passed = false
+                                }
+                            }
+                            }
             }
 
-    }
+    } 
 }
