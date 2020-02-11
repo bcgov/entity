@@ -1,3 +1,4 @@
+require('dotenv').config();
 var dashboardCommands = {  
     verifyTombstone: function (coopObject) {
         return this.waitForElementVisible('@entityName')
