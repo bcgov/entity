@@ -13,6 +13,9 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 
 2. Staff dashboard to manage their work.
 3. Can correction framework be reused for authorizing an account to manage a business(Ex: If a client wants to get the ownership of their business back, they submit a request(using digital form) to Staff)? If yes, then its a dependency on Entities team to do this work for relationship team.
+4. MRAS and name Request
+5. Credit Card Payments and Name Request
+6. Benefit Company Incorporation and Name Request
 
 ----
 Feb, 6, 2020
