@@ -1,6 +1,6 @@
 require('dotenv').config();
 module.exports={
-  '@tags': [''],
+  '@tags': ['Regression'],
   before:function(browser ){
     browser.setupData('CP0000992', function(busObject){
          console.log(busObject);
@@ -27,8 +27,9 @@ module.exports={
       dashboard = browser.page.dashboardPage();
       dashboard.verifyTombstone(browser.globals.CP0000992);
       dashboard.verifyAddresses(browser.globals.CP0000992);
-     // dashboard.verifyDirectorCount(browser.globals.CP0000992.director_count);
       dashboard.startArFiling();
+      dashboard.selectAGMDate()
+     // dashboard.verifyDirectorCount(browser.globals.CP0000992.director_count);
     },
 
     '2.Confirm initial state of Annual Report': function (browser) {
@@ -86,7 +87,7 @@ module.exports={
       ArPage = browser.page.annualReportPage();
       ArPage.checkFeeCount(3);
       //Note fees re-ordered on resume
-      ArPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 2);
+      ArPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 1);
       ArPage.checkTotalFees('$70.00');
       ArPage.assert.visible('@resetOfficeAddressButton');
       ArPage.assert.containsText('@officeDeliveryLine1', '123 test street');
@@ -109,6 +110,7 @@ module.exports={
     '10.Start AR filing after deleting draft': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.startArFiling();
+      dashboard.selectAGMDate()
     },
   
     '11.Confirm initial state of Annual Report - POST DRAFT': function (browser) {
@@ -163,7 +165,7 @@ module.exports={
 
     '19.Verify Dashboard after filing': function (browser) {
       dashboard = browser.page.dashboardPage();
-      dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
+      dashboard.assert.containsText('@toDoListHeader', 'To Do (2)');
       dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (77)');
       dashboard.assert.containsText('@topFilingInHistoryName', 'Annual Report');
      // dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count + 1);

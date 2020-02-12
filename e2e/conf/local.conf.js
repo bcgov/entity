@@ -6,14 +6,10 @@ nightwatch_config = {
   "src_folders": ["./tests"],
   "custom_commands_path": ["./node_modules/nightwatch-xhr/es5/commands", "./custom-commands"],
   "page_objects_path": ["./page-objects"],
-   //"test_workers":{
-    // "enabled":true,
-     //"workers":5
-  // },
   selenium : {
     "start_process" : false,
     "host" : "hub-cloud.browserstack.com",
-    "port" : 80
+    "port" : 81
   },
 
   test_settings: {

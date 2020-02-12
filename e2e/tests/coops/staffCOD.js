@@ -1,7 +1,7 @@
 require('dotenv').config();
 module.exports={
 
-  '@tags': ['Regression'],
+  '@tags': [''],
 
 
   before:function(browser){
