@@ -1,7 +1,7 @@
 require('dotenv').config();
 module.exports={
 
-  '@tags': [''],
+  '@tags': ['Regression'],
 
 
   before:function(browser){
@@ -117,7 +117,7 @@ module.exports={
 '14.Entering RoutingSlip Number':function(browser){
   dashboard = browser.page.dashboardPage();
   dashboard.enterRoutingSlipNumber()
-  .setValue('#routing-slip-number-textfield',process.env.routing_slip)
+  .setValue('#routing-slip-number-textfield',111111111)
   .click('#cod-next-btn > span')
  },
 

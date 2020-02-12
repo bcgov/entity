@@ -1,6 +1,6 @@
 require('dotenv').config();
 module.exports={
-  '@tags': [''],
+  '@tags': ['Regression'],
   before:function(browser ){
     browser.setupData('CP0001188', function(busObject){
          console.log(busObject);
@@ -140,7 +140,7 @@ module.exports={
 '13.Entering RoutingSlip Number':function(browser){
   dashboard = browser.page.dashboardPage();
   dashboard.enterRoutingSlipNumber()
-  .setValue('#routing-slip-number-textfield',process.env.routing_slip)
+  .setValue('#routing-slip-number-textfield','111111111')
   .click('#coa-file-pay-btn')
 },
 

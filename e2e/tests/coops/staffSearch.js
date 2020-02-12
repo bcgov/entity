@@ -9,6 +9,7 @@ module.exports={
 
   'Login with IDIR':function (browser){
       browser
+      .maximizeWindow()
       .url(browser.globals.launch_idirurl)
       .assert.visible('#login-to','Log in to sfstest7.gov.bc.ca')
       .setValue('#user',process.env.IDIRCredU)
@@ -159,11 +160,11 @@ module.exports={
     '15.Entering RoutingSlip Number':function(browser){
       dashboard = browser.page.dashboardPage();
       dashboard.enterRoutingSlipNumber()
-      .setValue('#routing-slip-number-textfield',process.env.routing_slip)
+      .setValue('#routing-slip-number-textfield',111111111)
       .click('#ar-file-pay-btn > span')
     },
 
-    '19.Verify Dashboard after filing': function (browser) {
+    '16.Verify Dashboard after filing': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.assert.containsText('@toDoListHeader', 'To Do (2)');
       dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (77)');
