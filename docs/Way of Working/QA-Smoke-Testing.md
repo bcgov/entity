@@ -4,7 +4,7 @@
 
 ### Goals
 
-Starting now, the QA team will be creating a smoke test for each high-level business feature as it completes development. In terms of ZenHub, a high-level business feature translates to either a story or an epic. These positive smoke tests aim to prove that a feature is working as expected without delving into edge cases or challenging scenarios.
+Starting now (2020-02-12), the QA team will be creating a smoke test for each high-level business feature as it completes development. In terms of ZenHub, a high-level business feature translates to either a story or an epic. These positive smoke tests aim to prove that a feature is working as expected without delving into edge cases or challenging scenarios.
 These smoke test snippets will later be enhanced and rolled into the broader automated browser regression suite. The smoke tests should be identified using tags that relate to the issue # in ZenHub so that they can be invoked in isolation from the rest of the regression suite.
 
 ### What should be covered in a smoke test
@@ -43,3 +43,10 @@ As our automated test suite expands, a document will be created to establish the
 - Which repo will store the functional tests for each application
 - Configuration needed for local development
 - Configurations needed to run in the correct browser/platform in BrowserStack
+
+
+----
+It's a test process document for QA role to follow.
+Also, it can be review by others to see what we're up to. 
+* created by John Lane, 2020-02-12
+
