@@ -117,6 +117,7 @@ module.exports={
 '14.Entering RoutingSlip Number':function(browser){
   dashboard = browser.page.dashboardPage();
   dashboard.enterRoutingSlipNumber()
+  .setValue('#routing-slip-number-textfield',process.env.routing_slip)
   .click('#cod-next-btn > span')
  },
 

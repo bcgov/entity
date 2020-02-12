@@ -26,9 +26,8 @@ var dashboardCommands = {
     verifyTodolistandRecentFilings:function(){
         return this
         .assert.containsText('@toDoListHeader', 'To Do (3)')
-        //.assert.cssClassNotPresent('@fileNowButton1', 'v-btn--disabled')
+        .assert.cssClassNotPresent('@fileNowButton1', 'v-btn--disabled')
         .expect.element('@fileNowButton2').to.not.be.enabled
-        //.assert.containsText('@recentHistory','Recent Filing History (55)')
     },
     startArFiling: function () {
         return this
@@ -57,7 +56,6 @@ var dashboardCommands = {
     enterRoutingSlipNumber:function(){
         return this.waitForElementVisible('@paymentHeader')
                    .assert.containsText('@paymentHeader','Staff Payment')
-                   .setValue('#routing-slip-number-textfield',process.env.routing_slip)
     }
 
     
