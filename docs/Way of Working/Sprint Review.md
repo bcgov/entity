@@ -8,7 +8,7 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 -----------------------------------------------------------------------------------------------------------------------
 
 
-----
+---- TEMPLATE ----
 ### Month xx, 2020 - Sprint (Milestone) xx - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
