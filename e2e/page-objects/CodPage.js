@@ -106,7 +106,7 @@ module.exports={
         Province:'[name="address-form"] .address-region input',
         country:'[name="address-form"] .address-country',
         NewDirectorCountry:{
-            selector:"/html/body/div[1]/div[2]/div/div/div[4]/div",
+            selector:"//html/body/div/div[2]/div/div[4]",
             locateStrategy: "xpath"
         },    
         chevron: "#director-%s > div > div > div > div.actions > span:nth-child(2) > span > button > span > i",

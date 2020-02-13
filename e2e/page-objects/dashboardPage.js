@@ -17,6 +17,17 @@ var dashboardCommands = {
                .assert.containsText('@deliveryLine2', coopObject.delivery.line2)
                .assert.containsText('@deliveryLine3', coopObject.delivery.line3);
     },
+
+    selectAGMDate: function(){
+        return this.
+         assert.containsText('@arHeader','File 2018 Annual Report')
+        .assert.containsText('@AGMDate','1. Annual General Meeting Date')
+        .waitForElementVisible('@datePicker')
+        .assert.cssClassNotPresent('@noAGMButton', 'v-btn--disabled')
+        .click('@datePicker')
+        .waitForElementVisible('@choosenDate')
+        .click('@choosenDate')
+    },
     verifyDirectorCount: function (director_count) {
         return this
         .useCss()
@@ -26,9 +37,8 @@ var dashboardCommands = {
     verifyTodolistandRecentFilings:function(){
         return this
         .assert.containsText('@toDoListHeader', 'To Do (3)')
-        //.assert.cssClassNotPresent('@fileNowButton1', 'v-btn--disabled')
+        .assert.cssClassNotPresent('@fileNowButton1', 'v-btn--disabled')
         .expect.element('@fileNowButton2').to.not.be.enabled
-        //.assert.containsText('@recentHistory','Recent Filing History (55)')
     },
     startArFiling: function () {
         return this
@@ -57,7 +67,6 @@ var dashboardCommands = {
     enterRoutingSlipNumber:function(){
         return this.waitForElementVisible('@paymentHeader')
                    .assert.containsText('@paymentHeader','Staff Payment')
-                   .setValue('#routing-slip-number-textfield',process.env.routing_slip)
     }
 
     
@@ -96,7 +105,12 @@ module.exports={
         },
         fileNowButton2:'[ type="button"] [disabled="disabled"]',
         recentHistory:'#dashboardArticle > div > div > section:nth-child(2) > header > h2',
-        paymentHeader:'#AR-step-5-header'
+        paymentHeader:'#AR-step-5-header',
+        arHeader:'#AR-header',
+        AGMDate:'#AR-step-1-header',
+        datePicker: '[data-test-id="agm-date-text"]',
+        choosenDate: '#app > div.v-menu__content.theme--light.menuable__content__active > div > div > div > div.v-date-picker-table.v-date-picker-table--date.theme--light > table > tbody > tr:nth-child(1) > td:nth-child(7) > button > div',
+        noAGMButton: '#agm-checkbox'
 
     }
 };

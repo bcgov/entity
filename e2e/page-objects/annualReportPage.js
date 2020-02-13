@@ -112,7 +112,7 @@ module.exports={
             locateStrategy: "css selector"
         },
         NewDirectorCountrySelect:{
-            selector:"/html/body/div/div[2]/div/div/div[4]/div",
+            selector:"/html/body/div/div[3]/div/div[4]/div",
             locateStrategy: "xpath"
         },
         newDirectorProvinceBox:"#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.address-wrapper > div > form > div.form__row.three-column > div.v-input.item.address-region.theme--light.v-text-field.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed > div > div.v-input__slot > div>input[type=text]",
