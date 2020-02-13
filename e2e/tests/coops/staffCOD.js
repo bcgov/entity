@@ -124,12 +124,14 @@ module.exports={
 '15.Review Page':function(browser) {
   CodPage= browser.page.CodPage();
   CodPage.reviewPage()
- },
+ .click('#cod-file-pay-btn')
+},
+
 '16.Verify Dashboard after filing': function (browser) {
   dashboard = browser.page.dashboardPage();
   dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
   dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (58)');
-  dashboard.assert.containsText('@topFilingInHistoryName', 'Change Of Directors');
+  dashboard.assert.containsText('@topFilingInHistoryName', 'Director Change');
  // dashboard.verifyDirectorCount(browser.globals.CP0001403.new_director_count)
  }
 }
