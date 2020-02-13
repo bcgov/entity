@@ -10,8 +10,8 @@
 #### When a dependency can be identified
 ----
 A dependency can be identified either via:
-- PI Planning: When an intra-team/ external dependency identified
-- or it can be identified on an adhoc basis
+- PI Planning (BRP): When an intra-team/ external dependency identified
+- or it can be identified on an ad-hoc basis
 
 ----
 #### Dependency template
@@ -45,7 +45,7 @@ In case, more information is required, please contact ..First Name, Last Name.. 
 ----
 - When a dependency is identified, the team - with the help of Scrum Master - should create a ticket (label as Story) in ZenHub.
 - This story should be linked to the Parent Epic of the respective team by using the "Blocked By" label in ZenHub
-- This ticket initially might have high level details, but over period of time or near to deadline, this should have all the details needed for the other team to action upon
+- This ticket initially might have high level details, but over period of time or near to deadline, this should have all the details needed for the other team to action upon.
 - Label this ticket with "Dependency". This will help the PO's to pick this dependency up in a PO Sync. to discuss.
 - Assign this ticket to the BA of the respective ..team.. whom its dependent on
 - If you are aware about the Epic of the other team, where this dependency is going to be delivered, tag the Epic as well
