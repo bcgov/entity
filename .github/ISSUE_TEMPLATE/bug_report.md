@@ -29,3 +29,5 @@ A clear and concise description of what you expected to happen. Use the gherking
 
 **Screenshots/ Visual Reference/ Source**
 If applicable, add screenshots to help explain your problem. You an use screengrab.
+
+* Link to the User Story (that relates to the bug)
