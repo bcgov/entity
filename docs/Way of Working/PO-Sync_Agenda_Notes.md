@@ -52,8 +52,11 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
     - Loren to send an email to Carol about BN messaging and clarify
     - PO's to check and update the release plan document to reflect the current status
     - Lorna to have her items updated in the Release planning document here
-    - Lorna to have all the Epics planned in "Roadmap" in Zenhub
-    
+    - Lorna to have all the Epics planned(till end of March) in "Roadmap" section of Zenhub
+    - Linda to have a poster in team spaces for Social meet up by end of Feb 12th
+    - Linda to talk to operations team for changing some of the criterio for documenting issues(IT Ops)
+    - Shahriar to set up a meeting for discussin the dependency ticket 2485
+    - 
 ----
 Feb, 6, 2020
 ----
