@@ -33,7 +33,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### NRO
 Name Analysis for Auto-Approval - Lorna - 10 min 
 #### Relationships
-* Account is switched - 1918, 2379, 2382, 2661 - Andrew - 6 min 
+* Account is switched - 1918, 2379, 2382, 2661 - Andrew - 8 min 
 * seperate out error message for invalid passcode - 2502 - Andrew - 1 min
 * Coop filings in BCOL reports - 2413 - Loren - 2 min 
 
