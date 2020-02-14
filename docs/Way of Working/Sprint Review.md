@@ -16,6 +16,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Entities
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+Name Request Analysis - 15 min.
 #### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 
