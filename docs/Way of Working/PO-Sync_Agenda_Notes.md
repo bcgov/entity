@@ -10,24 +10,28 @@ Feb, 13, 2020
 1. Refine ideas for "API Gateway": 
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/1088
 @Jyoti: invite Thor to that session (see ticket)  - Invited
+    - Thor didnt join this meeting, so we will bring it again as part of next PO sync
 
 2. Staff dashboard to manage their work.
-- Shoud be prioritized i next PI planning meeting
-- Would Name request items be part of this dashboard?
+    - Shoud be prioritized in next PI planning meeting
+    - Some of the things to consider while scoping as part of Next PI planning: Would Name request items be part of this dashboard?
+
 3. Can correction framework be reused for authorizing an account to manage a business(Ex: If a client wants to get the ownership of their business back, they submit a request(using digital form) to Staff)? If yes, then its a dependency on Entities team to do this work for relationship team.
 - Requesting access to Business
-- Can be used as discussed
+- The same framework can be used, however there is no urgency to build this piece for relationship team
 - When it has to be built : Not prioritized for current quarter
-- 
 
-Dependency from Assets
+4. Dependencies
+*Dependency from Assets to relationship*
 a. Redirect for authentification
-b. RFC for seeking changes CI/CD - feedback is pending
+b. RFC for seeking changes to CI/CD pipeline- feedback is pending. Please ask RFC submitter to follow up with reviewers
+*Dependency from Relationship to Entities*
+a. BCOL payment scenario in case of failures
+*Dependency from Entities to Relationship *
+a. Affiliate NR : NR/Entity/Relationship
+b. BCOL Error messages
 
-BCOL - Entitie to Relationship
-
-Affiliate NR : NR/Entity/Relationship
-4. MRAS and name Request
+*MRAS and name Request*
 Check with MRAS team their dependency with BC REg - who is doing this?
 Two workarpunds
 a. Use legacy NRO in terms of using CORP/Benefit complanies
