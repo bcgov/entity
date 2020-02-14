@@ -12,46 +12,43 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 @Jyoti: invite Thor to that session (see ticket)  - Invited
     - Thor didnt join this meeting, so we will bring it again as part of next PO sync
 
-2. Staff dashboard to manage their work.
+1. Staff dashboard to manage their work.
     - Shoud be prioritized in next PI planning meeting
     - Some of the things to consider while scoping as part of Next PI planning: Would Name request items be part of this dashboard?
 
-3. Can correction framework be reused for authorizing an account to manage a business(Ex: If a client wants to get the ownership of their business back, they submit a request(using digital form) to Staff)? If yes, then its a dependency on Entities team to do this work for relationship team.
-- Requesting access to Business
-- The same framework can be used, however there is no urgency to build this piece for relationship team
-- When it has to be built : Not prioritized for current quarter
+1. Can correction framework be reused for authorizing an account to manage a business(Ex: If a client wants to get the ownership of their business back, they submit a request(using digital form) to Staff)? If yes, then its a dependency on Entities team to do this work for relationship team.
+    - Requesting access to Business
+    - The same framework can be used, however there is no urgency to build this piece for relationship team
+    - When it has to be built : Not prioritized for current quarter
 
-4. Dependencies
-**Dependency from Assets to relationship**
-* Redirect for authentification
-* RFC for seeking changes to CI/CD pipeline- feedback is pending. Please ask RFC submitter to follow up with reviewers
-**Dependency from Relationship to Entities**
-* BCOL payment scenario in case of failures
-**Dependency from Entities to Relationship**
-* Affiliate NR : NR/Entity/Relationship
-* BCOL Error messages
-
-**MRAS and name Request**
-Check with MRAS team their dependency with BC REg - who is doing this?
-Two workarpunds
-a. Use legacy NRO in terms of using CORP/Benefit complanies
-    THis may start in one month
-    We need the Stakeholder to be aware
+1. Dependencies
+    1. **Dependency from Assets to relationship**
+        * Redirect for authentification
+        * RFC for seeking changes to CI/CD pipeline- feedback is pending. Please ask RFC submitter to follow up with reviewers
+    1. **Dependency from Relationship to Entities**
+        * BCOL payment scenario in case of failures
+    1. **Dependency from Entities to Relationship**
+        * Affiliate NR : NR/Entity/Relationship
+        * BCOL Error messages
+    1. **MRAS and Name Request**
+        Check with MRAS team their dependency with BC REg - who is doing this?
+        Two workarpunds
+        a. 
+        b. Once BCOMP incorporates it has to be updated in MRAS
+    1. **Credit Card Payments and Name Request**
+        * Paybc is offline from Sat 6 to Noon of Sunday
+        * Weekend submission of more an issues
+        * NR is up on 6AM to 10PM
+        * Loren to send the putage timings of PayBC
+        * How many Outages are there for PayBC which is unknown
+        * There are three projects going together - MRAS, NR and BCOMP, how do we stagger UAT?
+        * KArla maria to be aware
+    1. **Benefit Company Incorporation and Name Request**
+        * Connecting bcol and NRO - After June
+        * Use legacy NRO in terms of using CORP/Benefit complanies
+        * This may start in one month
+        * We need the Stakeholder to be aware
     
-b. Once BCOMP incorporates it has to be updated in MRAS
-
-**Credit Card Payments and Name Request**
-Paybc is offline from Sat 6 to Noon of Sunday
-Weekend submission of more an issues
-NR is up on 6AM to 10PM
-Loren to send the putage timings of PayBC
-How many Outages are there for PayBC which is unknown
-There are three projects going together - MRAS, NR and BCOMP, how do we stagger UAT?
-KArla maria to be aware
-Use 
-**Benefit Company Incorporation and Name Request**
-Connecting bcol and NRO - After June
-
 ----
 Feb, 6, 2020
 ----
