@@ -22,16 +22,16 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 - When it has to be built : Not prioritized for current quarter
 
 4. Dependencies
-*Dependency from Assets to relationship*
-a. Redirect for authentification
-b. RFC for seeking changes to CI/CD pipeline- feedback is pending. Please ask RFC submitter to follow up with reviewers
-*Dependency from Relationship to Entities*
-a. BCOL payment scenario in case of failures
-*Dependency from Entities to Relationship *
-a. Affiliate NR : NR/Entity/Relationship
-b. BCOL Error messages
+**Dependency from Assets to relationship**
+* Redirect for authentification
+* RFC for seeking changes to CI/CD pipeline- feedback is pending. Please ask RFC submitter to follow up with reviewers
+**Dependency from Relationship to Entities**
+* BCOL payment scenario in case of failures
+**Dependency from Entities to Relationship**
+* Affiliate NR : NR/Entity/Relationship
+* BCOL Error messages
 
-*MRAS and name Request*
+**MRAS and name Request**
 Check with MRAS team their dependency with BC REg - who is doing this?
 Two workarpunds
 a. Use legacy NRO in terms of using CORP/Benefit complanies
@@ -40,8 +40,7 @@ a. Use legacy NRO in terms of using CORP/Benefit complanies
     
 b. Once BCOMP incorporates it has to be updated in MRAS
 
-
-5. Credit Card Payments and Name Request
+**Credit Card Payments and Name Request**
 Paybc is offline from Sat 6 to Noon of Sunday
 Weekend submission of more an issues
 NR is up on 6AM to 10PM
@@ -50,7 +49,7 @@ How many Outages are there for PayBC which is unknown
 There are three projects going together - MRAS, NR and BCOMP, how do we stagger UAT?
 KArla maria to be aware
 Use 
-6. Benefit Company Incorporation and Name Request
+**Benefit Company Incorporation and Name Request**
 Connecting bcol and NRO - After June
 
 ----
