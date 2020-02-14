@@ -62,6 +62,19 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
     - Linda to talk to operations team for changing some of the criterio for documenting issues(IT Ops)
     - Shahriar to set up a meeting for discussin the dependency ticket 2485
     - Jyoti to post the picture in roclket channel for Name request discussion
+    - Lorna to setup a meeting with NRAS(Nisha) to help us answer below
+        - Are we delivering XPRO-BC?(Any redirect)
+        - What does MRAS redirect?
+        - What is available in MRAS test Env?
+        - NRO - BComp workaround
+    - Loren needs to action on the below
+        - Name Request(Pay BC Issues)
+        - Carol needs info
+        - Stats on Current Outages
+        - Impact on Credit card payments because of the Outages
+    - Kaine needs to work on Conversion Corp- BC(not priority)
+  
+        
 ----
 Feb, 6, 2020
 ----
