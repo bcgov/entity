@@ -56,7 +56,7 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
     - Linda to have a poster in team spaces for Social meet up by end of Feb 12th
     - Linda to talk to operations team for changing some of the criterio for documenting issues(IT Ops)
     - Shahriar to set up a meeting for discussin the dependency ticket 2485
-    - 
+    - Jyoti to post the picture in roclket channel for Name request discussion
 ----
 Feb, 6, 2020
 ----
