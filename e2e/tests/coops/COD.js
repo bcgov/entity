@@ -1,7 +1,7 @@
 module.exports = {
   '@tags': [''],
   before:function(browser ){
-    browser.setupData('CP0001171', function(busObject){
+    browser.setupData('CP1001171', function(busObject){
          console.log(busObject);
     });
 },
@@ -17,23 +17,23 @@ module.exports = {
   },
   '1.Verify initial state of dashboard, then start COD filing': function (browser) {
       dashboard = browser.page.dashboardPage();
-      dashboard.verifyTombstone(browser.globals.CP0001171);
-      dashboard.verifyAddresses(browser.globals.CP0001171);
-     // dashboard.verifyDirectorCount(browser.globals.CP0001171.director_count)
+      dashboard.verifyTombstone(browser.globals.CP1001171);
+      dashboard.verifyAddresses(browser.globals.CP1001171);
+     // dashboard.verifyDirectorCount(browser.globals.CP1001171.director_count)
       dashboard.startCodFiling()
   },
 
   '2.Confirm initial state of COD filing': function (browser) {
       CodPage = browser.page.CodPage();
-      CodPage.verfifyInitialCodState(browser.globals.CP0001171);
+      CodPage.verfifyInitialCodState(browser.globals.CP1001171);
       CodPage.checkTotalFees('$0.00');
     },
     
     '3.Appoint New Director': function (browser) {
       CodPage = browser.page.CodPage()
       CodPage.startAppointingNewDirector()
-      CodPage.AddNewDirector(browser.globals.CP0001171.director7,7);
-      CodPage.validateDirectorByNumber(browser.globals.CP0001171.director4,4)
+      CodPage.AddNewDirector(browser.globals.CP1001171.director7,7);
+      CodPage.validateDirectorByNumber(browser.globals.CP1001171.director4,4)
     },
 
     '4.Certify who filed': function (browser) {
@@ -83,15 +83,15 @@ module.exports = {
 
     '11.Confirm initial state of COD filing - POST DRAFT': function (browser) {
       CodPage = browser.page.CodPage();
-      CodPage.verfifyInitialCodState(browser.globals.CP0001171);
+      CodPage.verfifyInitialCodState(browser.globals.CP1001171);
       CodPage.checkTotalFees('$0.00');
     },
 
     '12.Appoint New DIRECTOR - POST DRAFT': function (browser) {
       CodPage = browser.page.CodPage();
       CodPage.startAppointingNewDirector()
-      CodPage.AddNewDirector(browser.globals.CP0002148.director7,7);
-     // CodPage.validateDirectorByNumber(browser.globals.CP0001171.director3,3)
+      CodPage.AddNewDirector(browser.globals.CP1002148.director7,7);
+     // CodPage.validateDirectorByNumber(browser.globals.CP1001171.director3,3)
     },
 
     '13.Certify who filed - POST DRAFT': function (browser) {
@@ -126,7 +126,7 @@ module.exports = {
       dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
       dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (57)');
       dashboard.assert.containsText('@topFilingInHistoryName', 'Director Change');
-     // dashboard.verifyDirectorCount(browser.globals.CP0002148.new_director_count);
+     // dashboard.verifyDirectorCount(browser.globals.CP1002148.new_director_count);
     }
   
   }

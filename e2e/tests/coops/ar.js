@@ -3,7 +3,7 @@ module.exports = {
 
   '@tags': [''], 
   before:function(browser ){
-    browser.setupData('CP0000019', function(busObject){
+    browser.setupData('CP1000019', function(busObject){
          console.log(busObject);
     });
 },
@@ -20,7 +20,7 @@ module.exports = {
         relationship.enterContactInformation()
         relationship.createTeam()
         relationship.manageTeamPage()
-        relationship.AddBusinesses(browser.globals.CP0000019)
+        relationship.AddBusinesses(browser.globals.CP1000019)
         relationship.checkAddBusinessesSuccess()
         relationship.checkForAffliatedBusinesses()
     },
@@ -28,21 +28,21 @@ module.exports = {
       
   '1.Verify initial state of dashboard, then start AR filing': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.verifyTombstone(browser.globals.CP0000019);
-    dashboard.verifyAddresses(browser.globals.CP0000019);
-    //dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count);
+    dashboard.verifyTombstone(browser.globals.CP1000019);
+    dashboard.verifyAddresses(browser.globals.CP1000019);
+    //dashboard.verifyDirectorCount(browser.globals.CP1000019.director_count);
     dashboard.verifyTodolistandRecentFilings();
     dashboard.startArFiling();
   },
 
   '2.Confirm initial state of Annual Report': function (browser) {
     ArPage = browser.page.annualReportPage();
-    ArPage.verfifyInitialArState(browser.globals.CP0000019);
+    ArPage.verfifyInitialArState(browser.globals.CP1000019);
     ArPage.checkFeeByIndex('Annual Report', '$30.00', 0);
     ArPage.checkFeeCount(1);
     ArPage.checkTotalFees('$30.00');
-    ArPage.verifyOfficeAddresses(browser.globals.CP0000019);
-    //ArPage.verifyDirectorCount(browser.globals.CP0000019.director_count);
+    ArPage.verifyOfficeAddresses(browser.globals.CP1000019);
+    //ArPage.verifyDirectorCount(browser.globals.CP1000019.director_count);
   },
 
   '3.Edit the Office Addresses': function (browser) {
@@ -123,12 +123,12 @@ module.exports = {
 
   '11.Confirm initial state of Annual Report - POST DRAFT': function (browser) {
     ArPage = browser.page.annualReportPage();
-    ArPage.verfifyInitialArState(browser.globals.CP0000019);
+    ArPage.verfifyInitialArState(browser.globals.CP1000019);
     ArPage.checkFeeByIndex('Annual Report', '$30.00', 0);
     ArPage.checkFeeCount(1);
     ArPage.checkTotalFees('$30.00');
-    ArPage.verifyOfficeAddresses(browser.globals.CP0000019);
-    //ArPage.verifyDirectorCount(browser.globals.CP0000019.director_count);
+    ArPage.verifyOfficeAddresses(browser.globals.CP1000019);
+    //ArPage.verifyDirectorCount(browser.globals.CP1000019.director_count);
   },
 
   '12.Edit the Office Addresses - POST DRAFT': function (browser) {
@@ -218,7 +218,7 @@ module.exports = {
     dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
     dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (56)');
     dashboard.assert.containsText('@topFilingInHistoryName', 'Annual Report');
-   // dashboard.verifyDirectorCount(browser.globals.CP0000019.director_count + 1);
+   // dashboard.verifyDirectorCount(browser.globals.CP1000019.director_count + 1);
     dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
     dashboard.assert.containsText('@deliveryLine1', '123 test street');
     dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');
