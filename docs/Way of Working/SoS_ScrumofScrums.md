@@ -7,6 +7,8 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Feb 28
 ---
 - Release Cadence discussion
+- Program monitoring and controlling. What are the metrics which we can achieve?
+- 
 
 ---
 Feb 11
