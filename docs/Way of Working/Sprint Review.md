@@ -31,7 +31,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
 #### NRO
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
+Name Analysis for Auto-Approval - Lorna - 10 min 
 #### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
 
