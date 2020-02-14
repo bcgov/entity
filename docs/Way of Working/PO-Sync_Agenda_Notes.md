@@ -48,6 +48,11 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
         * Use legacy NRO in terms of using CORP/Benefit complanies
         * This may start in one month
         * We need the Stakeholder to be aware
+1. Action items:-
+    - Loren to send an email to Carol about BN messaging and clarify
+    - PO's to check and update the release plan document to reflect the current status
+    - Lorna to have her items updated in the Release planning document here
+    - Lorna to have all the Epics planned in "Roadmap" in Zenhub
     
 ----
 Feb, 6, 2020
