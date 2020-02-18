@@ -52,18 +52,18 @@ Name Analysis for Auto-Approval - Lorna - 10 min
 * Assets: 
   - Search By Document Registration Number - Feb 18
 
-Action Items:
+#### Action Items:
 |#|	Description|	Suggested by|	Action Item Assigned to|
-|--------------|-------------|------------------------|
+|-| ---------- | ----------- | ---------------------- |
 |1|	Can the “Comment feature” being built up by Entities team be used as common component(re-usable)?|	Loren	|Kaine/Linda|
-|2|	Can the staff Edit/delete comments?	|Jennifer	|Kaine/Linda
-3	To see if there could be some coding made available for Comments in Corrections filing	Carol	Kaine/Linda
-4	While the user is on selecting the Business/Entity type, update the CCC and Society to appropriate section or change the verbiage	Carol	Lorna
-5	Change the “Star” color to Green(instead of Red) in case of success result	Ian	Lorna
-6	Review the content of the Assets homepage. This is not a priority, however needs to be included before releasing it to market		Bryce/Sandra
-7	Sandra to have a discussion with Change Management about the “Market Date” of releasing the Search feature	Karla Maria	Sandra
-8	“Welcome to Corporate Online” heading in the landing page should be changed	Carol	Loren
-9	Passcode Error Message “ Can it be more user friendly that business is already associate to another account” Right now it says, Passcode is already consumed	Janice	Loren
+|2|	Can the staff Edit/delete comments?	|Jennifer	|Kaine/Linda|
+|3|	To see if there could be some coding made available for Comments in Corrections filing	|Carol|	Kaine/Linda|
+|4|While the user is on selecting the Business/Entity type, update the CCC and Society to appropriate section or change the verbiage	|Carol	|Lorna|
+|5|	Change the “Star” color to Green(instead of Red) in case of success result|	Ian|	Lorna|
+|6|	Review the content of the Assets homepage. This is not a priority, however needs to be included before releasing it to market|		|Bryce/Sandra|
+|7|	Sandra to have a discussion with Change Management about the “Market Date” of releasing the Search feature|	Karla Maria|	Sandra|
+|8|	“Welcome to Corporate Online” heading in the landing page should be changed	|Carol|	Loren|
+|9|	Passcode Error Message “ Can it be more user friendly that business is already associate to another account” Right now it says, Passcode is already consumed	|Janice|	Loren|
 
 ----
 ### Feb 4, 2020 - Sprint (Milestone) 22
