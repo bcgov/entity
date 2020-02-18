@@ -26,17 +26,26 @@ Name Request Analysis - 15 min.
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
-#### Assets
-* xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
-#### Entities
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - 10 min 
+
+#### Entities - 10 Min
+* Corrections – Add Detail
+* AGM Date Issue 
+
 #### NRO
 Name Analysis for Auto-Approval - Lorna - 10 min 
+
 #### Relationships
 * Account is switched - 1918, 2379, 2382, 2661 - Andrew - 8 min 
 * seperate out error message for invalid passcode - 2502 - Andrew - 1 min
 * Coop filings in BCOL reports - 2413 - Loren - 2 min 
 
+#### Assets
+* xxxxxxxxxxxx xxxxxxx - xxxx - ? - 10 min 
+
+#### Upcoming Releases
+* Entity : Corrections 1.0(part 1) - Add Details - Feb 18
+* RelationShip: Switch Accounts - Feb 18
+* Assets: Search By Document Registration Number - Feb 18
 
 ----
 ### Feb 4, 2020 - Sprint (Milestone) 22
