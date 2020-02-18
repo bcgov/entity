@@ -30,6 +30,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities - 10 Min
 * Corrections – Add Detail
 * AGM Date Issue 
+* File now Button text change to File AR
 
 #### NRO
 Name Analysis for Auto-Approval - Lorna - 10 min 
