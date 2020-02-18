@@ -8,7 +8,7 @@ Feb 28
 ---
 - Release Cadence discussion
 - Program monitoring and controlling. What are the metrics which we can achieve?
-- 
+- Bug Triage process across teams - Shariar to bring up
 
 ---
 Feb 11
