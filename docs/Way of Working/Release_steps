@@ -1,3 +1,9 @@
+- Note: This release notes are currently used by Entity team only. 
+
+- We work with Relationships team to document/ update their release process. Here an example: 
+https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2485 
+
+
 **Prior to moving into production, the following steps should be completed or confirmed:**
 - [ ] Update version number in the code being released
 - [ ] Ensure deployment steps are filled in - remove/replace placeholders
