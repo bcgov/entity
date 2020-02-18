@@ -41,7 +41,7 @@ Name Analysis for Auto-Approval - Lorna - 10 min
 * Coop filings in BCOL reports - 2413 - Loren - 2 min 
 
 #### Assets
-* Search by Document Registration Number- ? - 10 min 
+* Integrating with Payment - 10 min 
 
 #### Upcoming Releases
 * Entity : 
