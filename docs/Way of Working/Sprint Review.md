@@ -44,9 +44,13 @@ Name Analysis for Auto-Approval - Lorna - 10 min
 * xxxxxxxxxxxx xxxxxxx - xxxx - ? - 10 min 
 
 #### Upcoming Releases
-* Entity : Corrections 1.0(part 1) - Add Details - Feb 18
-* RelationShip: Switch Accounts - Feb 18
-* Assets: Search By Document Registration Number - Feb 18
+* Entity : 
+ -  Corrections 1.0(part 1) - Add Details - Feb 18
+ -  Corrections 1.0(part 2) - Generic Filing - MAr 4
+* RelationShip: 
+  - Switch Accounts - Feb 18
+* Assets: 
+  - Search By Document Registration Number - Feb 18
 
 ----
 ### Feb 4, 2020 - Sprint (Milestone) 22
