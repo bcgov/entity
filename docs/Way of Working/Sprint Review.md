@@ -20,6 +20,18 @@ Name Request Analysis - 15 min.
 #### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 
+----
+### Mar 3, 2020 - Sprint 24 - 55 min. total
+----
+#### Assets
+* xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Entities
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+Name Request Analysis - 15 min.
+#### Relationships
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Name Request
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 
 ----
 ### Feb 18, 2020 - Sprint 23 - 55 min. total 
