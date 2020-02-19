@@ -15,6 +15,7 @@ Goal:		We need items faster into TEST
 - Dev		       DEV			Build verified by DEV (whole app) (smoke test)
 - Dev		       TEST			Push to TEST coordinated w. QA (cross-team) (i.e. post on RocketChat channel that you are going to move it into TEST in 0.5 hrs: https://chat.pathfinder.gov.bc.ca/channel/registries 
  “Our intention is to move xxxx (add Ticket No., GH version number and the service name (e.g. auth, pay, etc.) to TEST”
+- INFO: Testing in TEST (developer deployed to TEST before this step)
 - QA		        TEST			1st Auto regression run
 - QA		        TEST			1st Manual exploratory testing – by QA – 2-3 hrs
 ------- ticket closed ----
