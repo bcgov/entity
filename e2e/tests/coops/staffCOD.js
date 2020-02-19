@@ -111,7 +111,6 @@ module.exports={
   CodPage = browser.page.CodPage();
   CodPage.setValue('@certifyLegalName', 'Tester');
   CodPage.click('@certifyCheckBox');
-  CodPage.click('@nextButton');
  },
 
 '14.Entering RoutingSlip Number':function(browser){
