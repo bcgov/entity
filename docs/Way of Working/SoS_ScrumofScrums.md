@@ -4,12 +4,13 @@ Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 
 ---
-Feb 28
+Feb 25
 ---
 - Release Cadence discussion
 - Program monitoring and controlling. What are the metrics which we can achieve?
 - Bug Triage process across teams - Shariar to bring up
 - Stakeholder Feedback loop process - Trish to bring up
+- Tech Review across teams - Shahriar
 
 ---
 Feb 11
