@@ -81,8 +81,14 @@ module.exports={
         identifier: "#entity-incorporation-number",
         filingHistoryHeader: '[data-test-id="dashboard-filing-history-subtitle"]',
         noFilingsMessage: "#dashboardArticle > div > div > section:nth-child(2) > div > div.no-results.v-card.v-card--flat.v-sheet.theme--light > div > div.no-results__title",
-        topFilingInHistoryName: '#filing-history-list > div.v-item-group.theme--light.v-expansion-panels.v-expansion-panels--accordion > div.v-expansion-panel.align-items-top.filing-item.v-expansion-panel--active.v-item--active > button > div.list-item > div.filing-label > div.row > div > div',
-        topFilingInHistoryStatus: "div.v-expansion-panel__header__status",
+        topFilingInHistoryName: {
+            selector: "div.filing-label h3",
+            index: 0
+        },
+        topFilingInHistoryStatus: {
+            selector: "div.filing-label span",
+            index: 0
+        },
         officeAddressHeader: '[data-test-id="dashboard-addresses-subtitle"]',
         launchCOAButton: "#standalone-addresses-button > span > span",
         mailingAddressLabel: "#registered-office-panel > div > div > div > div.mailing-address-list-item.v-list-item.theme--light > div.v-list-item__content > div.v-list-item__title.mb-2.address-title",

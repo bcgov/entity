@@ -4,7 +4,8 @@ module.exports = {
 	retryAssertionTimeout: 30000,	
 	throwOnMultipleElementsReturned : false,
 	launch_url: "https://dev.bcregistry.ca/cooperatives/",
-    idtest_url: "https://idtest.gov.bc.ca/login",
+	idtest_url: "https://idtest.gov.bc.ca/login",
+	launch_idirurl: "https://dev.bcregistry.ca/cooperatives/auth/signin/idir",
 
 	CP1002111: {
 		identifier: "CP1002111",
@@ -129,12 +130,12 @@ module.exports = {
 		identifier:"CP1001188",
 		legal_name: "SOUTH COMMUNITY CO-OPERATIVE",
 		delivery: {
-			line1:"123 MAIN ST",
+			line1:"321 MAIN ST",
 			line2: "Victoria BC V8Z 5H4",
 			line3: "Canada",
 		},
 		mailing: {
-			line1 :"321 MAIN ST",
+			line1 :"123 MAIN ST",
 			line2 :"HONBY ISLAND BC V0R 1Z0",
 			line3: "Canada",
 		},
@@ -144,12 +145,12 @@ module.exports = {
 		identifier:"CP1001403",
 		legal_name: "WINDY CO-OPERATIVE ASSOCIATION",
 		delivery: {
-			line1:"123 MAIN ST",
+			line1:"321 MAIN ST",
 			line2: "VICTORIA BC V8G 5H6",
 			line3: "Canada",
 		},
 		mailing: {
-			line1 :"321 MAIN ST",
+			line1 :"123 MAIN ST",
 			line2 :"KELOWNA BC V1Y 4C4",
 			line3: "Canada",
 		},
