@@ -26,7 +26,7 @@
 * Meng: Sprint 22 away (and longer eventually) - away for 8 weeks
 * Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3)
 * Waldemar: 
-* Jeremy: 
+* Jeremy: Thurs Feb 27, Frid Feb 28
 * Nitin: Fr, Feb 14 (last day) - Feb 17 - Mar 13
 * Sumesh:
 * Millan 
