@@ -4,10 +4,15 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * if we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Feb, 27, 2020
+----
+1. User Feedback loop process - trish to present it
+----
 Feb, 20, 2020
 ----
 1. Refine ideas for "API Gateway": 
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/1088
+
 
 ----
 Feb, 13, 2020
