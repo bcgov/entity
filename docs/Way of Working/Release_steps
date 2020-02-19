@@ -51,6 +51,7 @@ Merge release branch back to master (if applicable)
   - [ ] build colin-updater
   - [ ] rebuild legal-updater
 
-**Notify CM**
-- [ ] Send Trish a message if a release was successfully implemented: Trish.Reimer@gov.bc.ca - and   karla.maria.ramirez@gov.bc.ca
+**Notify PO and CM**
+- [ ] Send the PO a message in RocketChat if a release was successfully implemented
+- [ ] PO will send Trish a message if a release was successfully implemented: Trish.Reimer@gov.bc.ca - and   karla.maria.ramirez@gov.bc.ca
 
