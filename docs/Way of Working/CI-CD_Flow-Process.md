@@ -21,7 +21,7 @@ Goal:		We need items faster into TEST
 ------- ticket closed ----
 - QA		        TEST			Automated regression suite enhancement/ refactoring 
 - QA					            Create bugs as needed – using the Bug Template 
-- QA					            Release to PROD
+- Dev coordinated with QA					            Release to PROD - follow release steps 
 
 **Actions**
 1.	Patrick & W – Rel in RocketChat & daily, follow-up in Retro
