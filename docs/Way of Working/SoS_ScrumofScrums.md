@@ -11,6 +11,7 @@ Feb 25
 - Bug Triage process across teams - Shariar to bring up
 - Stakeholder Feedback loop process - Trish to bring up
 - Tech Review across teams - Shahriar
+- ZenHub Pipeline - Defining exit criteria
 
 ---
 Feb 11
