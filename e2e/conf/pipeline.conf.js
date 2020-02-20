@@ -19,7 +19,7 @@ nightwatch_config = {
     'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
     'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
     'browserstack.debug': true,
-    'browserstack.local': true,
+    'browserstack.local': false,
     'os': 'Windows',
     'os_version': '10'
   },
