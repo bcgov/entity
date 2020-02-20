@@ -45,7 +45,6 @@ nightwatch_config = {
         desiredCapabilities: {
         "browserName" : "Edge",
         "browser_version" : "18",
-        "browserstack.local" : "true",
         "browserstack.selenium_version" : "3.5.2",
         "resolution":"1920x1080"
 
