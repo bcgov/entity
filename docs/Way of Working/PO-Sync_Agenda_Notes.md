@@ -13,7 +13,7 @@ Feb, 20, 2020
 1. Refine ideas for "API Gateway": 
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/1088
 2. Force the user to set-up an account when they create a user account (Loren, Trish) - this point come from the discussion and understanding of this story: https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2689
-
+3. URL Disucssion between team
 
 ----
 Feb, 13, 2020
