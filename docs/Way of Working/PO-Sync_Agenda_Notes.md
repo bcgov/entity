@@ -12,10 +12,23 @@ Feb, 20, 2020
 ----
 1. Refine ideas for "API Gateway": 
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/1088
+    - For Assets team(in order to engage with customer), if they want to use the API gateway by end of June they need to publish design by end of March
+    - Sandra to invite Thor and Kaine to the next Assets Sprint planning meeting
+    - Sandra to invite Thor and Kaine/Loren to Epic planning meeting.
+    - First customer user gateway by end of June
 2. Force the user to set-up an account when they create a user account (Loren, Trish) - this point come from the discussion and understanding of this story: https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2689
+- Jyoti Sumesha nd Andrew.
+- April'ish date as deadline. 2nd  Stprint of April
+- Bring the estimation topic for ANdrew
 3. URL Disucssion between team
+- bcregistry.gov.bc.ca is approved URL
+- Assets team can use the Co-OP url appended with PPR
+- New process to get the domain. Thor is working with Assets and Relationship team, Already approved by LAB
 4. Assets team dependency on Relationship
+- Assets team to sync up with Thor to get this going.
 5. On Accounts dashboard, clarify about the dependency on "File Now" option. Is there anything which is needed by entities team?
+- This has been decided. File now button will not be there in banner.
+6. 
 
 ----
 Feb, 13, 2020
