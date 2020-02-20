@@ -35,8 +35,7 @@ setupData.prototype.command = function (identifier, callback) {
                 if (error) {
                     console.error(error);
                     return;
-                }
-                if (callback){
+                } else if (callback){
                     var busObject = JSON.parse(response.body);
                     callback(busObject);
                 }             
