@@ -14,6 +14,8 @@ Feb, 20, 2020
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/1088
 2. Force the user to set-up an account when they create a user account (Loren, Trish) - this point come from the discussion and understanding of this story: https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2689
 3. URL Disucssion between team
+4. Assets team dependency on Relationship
+5. On Accounts dashboard, clarify about the dependency on "File Now" option. Is there anything which is needed by entities team?
 
 ----
 Feb, 13, 2020
