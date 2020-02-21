@@ -36,6 +36,7 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
     - Sandra to invite Thor and Kaine to the next Assets Sprint planning meeting
     - Sandra to invite Thor and Kaine/Loren to Epic planning meeting.
     - All three SM's to introduce the topic of estimation(Fibonacci) in their next planning meeting. Jyoti to bring this in SoS.
+    - Jyoti to setup a meeting with Entities and relationship team on dependency ticket 2689
 
 ----
 Feb, 13, 2020
