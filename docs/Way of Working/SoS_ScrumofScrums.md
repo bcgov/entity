@@ -12,6 +12,7 @@ Feb 25
 - Stakeholder Feedback loop process - Trish to bring up
 - Tech Review across teams - Shahriar
 - ZenHub Pipeline - Defining exit criteria
+- Estimation across team. Align all the teams
 
 ---
 Feb 11
