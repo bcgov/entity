@@ -16,26 +16,26 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
     - Sandra to invite Thor and Kaine to the next Assets Sprint planning meeting
     - Sandra to invite Thor and Kaine/Loren to Epic planning meeting.
     - First customer user gateway by end of June
-2. Force the user to set-up an account when they create a user account (Loren, Trish) - this point come from the discussion and understanding of this story: https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2689
-- Jyoti will setup a meeting with Sumesh, Severan and Andrew.
+1. Force the user to set-up an account when they create a user account (Loren, Trish) - this point come from the discussion and understanding of this story: https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/2689
+    - Jyoti will setup a meeting with Sumesh, Severan and Andrew.
     - Bring the estimation topic for Andrew
-- Deadline for this is 28th April
-3. URL Disucssion between team
-- bcregistry.gov.bc.ca is approved URL
-- Assets team can use the Co-OP url appended with PPR
-- New process to get the domain. Thor is working with Assets and Relationship team, Already approved by LAB
-4. Assets team dependency on Relationship
-- Assets team to sync up with Thor to get this going.
-5. On Accounts dashboard, clarify about the dependency on "File Now" option. Is there anything which is needed by entities team?
-- This has been decided. File now button will not be there in banner for now.
+    - Deadline for this is 28th April
+1. URL Disucssion between team
+    - bcregistry.gov.bc.ca is approved URL
+    - Assets team can use the Co-OP url appended with PPR
+    - New process to get the domain. Thor is working with Assets and Relationship team, Already approved by LAB
+1. Assets team dependency on Relationship
+    - Assets team to sync up with Thor to get this going.
+1. On Accounts dashboard, clarify about the dependency on "File Now" option. Is there anything which is needed by entities team?
+    - This has been decided. File now button will not be there in banner for now.
 
 #### Decission:
-- All three PO's decided to go with relative estimation i.e. Using Fibonacci
+    - All three PO's decided to go with relative estimation i.e. Using Fibonacci
 
 ##### Action Items:
-- Sandra to invite Thor and Kaine to the next Assets Sprint planning meeting
-- Sandra to invite Thor and Kaine/Loren to Epic planning meeting.
-- All three SM's to introduce the topic of estimation(Fibonacci) in their next planning meeting. Jyoti to bring this in SoS.
+    - Sandra to invite Thor and Kaine to the next Assets Sprint planning meeting
+    - Sandra to invite Thor and Kaine/Loren to Epic planning meeting.
+    - All three SM's to introduce the topic of estimation(Fibonacci) in their next planning meeting. Jyoti to bring this in SoS.
 
 ----
 Feb, 13, 2020
