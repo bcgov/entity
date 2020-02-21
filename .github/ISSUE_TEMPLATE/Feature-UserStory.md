@@ -13,17 +13,20 @@ assignees: ''
 * I want (goal) 
 * so that (reason/ why/ value) 
 
-**Scenario 1: xxxxxx (happy path)
 **Acceptance Criteria**	
+
+*Scenario 1: xxxxxx (happy path)
 * GIVEN ... (you or your condition)
 * WHEN ... (what you do) 
 * THEN ... (what you see) 
 
-**Scenario 2: xxxxxx?
-**Acceptance Criteria**	
+*Scenario 2: xxxxxx (path 2?)
 * GIVEN ... (you or your condition)
 * WHEN ... (what you do) 
 * THEN ... (what you see) 
+
+*Scenario 3: xxxxxx (path 3?)
+...
 
 **Dependencies? What is the impact of this dependency? (If so, link dependency in the ticket, make it visible in a team´s backlog)**
 * Do you know a possible contact person to reach out (from the other team)?
