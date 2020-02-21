@@ -21,7 +21,7 @@
 
 ----
 **Relationships** 
-* Loren: 
+* Loren: Mo, Feb 24 (Loren in Vancouver) 
 * Amit: Feb 12 - Feb 28
 * Meng: Sprint 22 away (and longer eventually) - away for 8 weeks
 * Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3)
