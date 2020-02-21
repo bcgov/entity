@@ -8,7 +8,6 @@ assignees: ''
 
 ---
 
-## Description:	
 * As a (type of user)
 * I want (goal) 
 * so that (reason/ why/ value) 
