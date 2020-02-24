@@ -13,6 +13,8 @@ Feb 25
 - Tech Review across teams - Shahriar
 - ZenHub Pipeline - Defining exit criteria
 - Estimation across team. Align all the teams
+- Incorporating feedback from Release Management team. Update Release Link and should be updated in Release document.
+- Track the releases with respect to Anticipated date vs Actual date.
 
 ---
 Feb 11
