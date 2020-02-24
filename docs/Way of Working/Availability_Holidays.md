@@ -15,7 +15,7 @@
 * Peter: Feb 12 - 17
 * Sienna: Feb 17 - 21
 * Nitin: Feb 18 - Mar 13
-* Jyoti: Feb 3rd, Jun 29, Jun 30, Jul 31, Sep 4, Sep 18
+* Jyoti: Feb 3rd, Feb 28, Jun 29, Jun 30, Jul 31, Sep 4, Sep 18
 * Cameron: Feb 12 to 19
 
 
