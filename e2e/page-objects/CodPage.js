@@ -94,7 +94,10 @@ module.exports={
     elements:{
         feeName: "div.fee-list__item-name",
         feeValue: "div.fee-list__item-value",
-        feeListItem: "li.fee-list__item",
+        feeListItem:{
+        selector: "li.fee-list__item",
+        index :1
+        },
         feeTotal: "#standalone-directors-container > div > div.col-lg-3.col-12 > aside > div > div > div.container.fee-total > div.fee-total__value",
         AppointNewDirectorButton: "#wrapper-add-director > div > div > div.col.col-3 > button > span > span",
         firstname: "#new-director__first-name",

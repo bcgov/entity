@@ -18,9 +18,9 @@ var dashboardCommands = {
                .assert.containsText('@deliveryLine3', coopObject.delivery.line3);
     },
 
-    selectAGMDate: function(){
+    selectAGMDate: function(annualReportYear){
         return this.
-         assert.containsText('@arHeader','File 2018 Annual Report')
+         assert.containsText('@arHeader',annualReportYear)
         .assert.containsText('@AGMDate','1. Annual General Meeting Date')
         .waitForElementVisible('@datePicker')
         .assert.cssClassNotPresent('@noAGMButton', 'v-btn--disabled')
@@ -31,27 +31,28 @@ var dashboardCommands = {
     verifyDirectorCount: function (director_count) {
         return this
         .useCss()
-                .assert.containsText('@currentDirectorsHeader','Current Directors')
-              // .expect.elements('#dashboard-article > div > div.col-md-3.col-12 > section:nth-child(2) > div').count.to.equal(director_count);
+               .assert.containsText('@currentDirectorsHeader','Current Directors')
+               .expect.elements('v-expansion-panel-header address-panel-toggle').count.to.equal(director_count);
     },
-    verifyTodolistandRecentFilings:function(){
+    verifyTodolistandRecentFilings:function(noOfFilings){
         return this
-        .assert.containsText('@toDoListHeader', 'To Do (3)')
+        .assert.containsText('@toDoListHeader',noOfFilings )
         .assert.cssClassNotPresent('@fileNowButton1', 'v-btn--disabled')
         .expect.element('@fileNowButton2').to.not.be.enabled
     },
     startArFiling: function () {
         return this
+                .useCss()
                 .waitForElementVisible('@fileNowButton1')
                 .click('@fileNowButton1')
-                .assert.urlEquals(this.api.globals.launch_url + 'annual-report')
+                .assert.urlEquals(this.api.globals.launch_url1 + 'annual-report')
                 .waitForElementVisible('#AR-header', 'Annual Report Page Loaded');
     },
     startCoaFiling: function () {
         return this.waitForElementVisible('@launchCOAButton')
                 .assert.cssClassNotPresent('@launchCOAButton', 'v-btn--disabled')
                 .click('@launchCOAButton')
-                .assert.urlEquals(this.api.globals.launch_url + 'standalone-addresses')
+                .assert.urlEquals(this.api.globals.launch_url1 + 'standalone-addresses')
                 .useCss()
                 .waitForElementVisible('#filing-header', 'COA Page Loaded');
     },
@@ -59,7 +60,7 @@ var dashboardCommands = {
         return this.waitForElementVisible('@launchCODButton')
                    .assert.cssClassNotPresent('@launchCODButton','v-btn--disabled')
                    .click('@launchCODButton')
-                   .assert.urlEquals(this.api.globals.launch_url + 'standalone-directors')
+                   .assert.urlEquals(this.api.globals.launch_url1 + 'standalone-directors')
                    .useCss()
                    .waitForElementVisible('#filing-header','COD Page Loaded')
     },
@@ -82,13 +83,10 @@ module.exports={
         filingHistoryHeader: '[data-test-id="dashboard-filing-history-subtitle"]',
         noFilingsMessage: "#dashboardArticle > div > div > section:nth-child(2) > div > div.no-results.v-card.v-card--flat.v-sheet.theme--light > div > div.no-results__title",
         topFilingInHistoryName: {
-            selector: "div.filing-label h3",
-            index: 0
+                selector: "div.filing-label h3",
+                index: 0
         },
-        topFilingInHistoryStatus: {
-            selector: "div.filing-label span",
-            index: 0
-        },
+        topFilingInHistoryStatus: "div.v-expansion-panel__header__status",
         officeAddressHeader: '[data-test-id="dashboard-addresses-subtitle"]',
         launchCOAButton: "#standalone-addresses-button > span > span",
         mailingAddressLabel: "#registered-office-panel > div > div > div > div.mailing-address-list-item.v-list-item.theme--light > div.v-list-item__content > div.v-list-item__title.mb-2.address-title",

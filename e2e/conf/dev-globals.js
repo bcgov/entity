@@ -76,8 +76,7 @@ module.exports = {
 			line1: "321 MAIN ST",
 			line2: "VICTORIA BC V8Z 6H4",
 			line3: "Canada"
-		}
-	},
+		},
 	director7:{
 		firstname:"test",
 		lastname:"test2",
@@ -88,6 +87,7 @@ module.exports = {
 		postalcode: "V1V1V1",
 		country: "CA"
 	},
+},
 	
 	CP1000992:{
 		identifier:"CP1000992",

@@ -7,37 +7,40 @@ module.exports = {
          console.log(busObject);
     });
 },
-    'Verify initial login with bcsc': function (browser) {
+    '1.Verify initial login with bcsc': function (browser) {
         bcsc = browser.page.bcscPage();
         browser.url(browser.globals.launch_url)
         bcsc.verifyLandingPage()
-        bcsc.loginWithBCSC(process.env.ServiceCard6, process.env.ServiceCard6Pw)
-    },
-
-    
-    'Enter contact information': function (browser) {
+        bcsc.moveToBCSC()
+        bcsc.enterBCSCCardUser(process.env.ServiceCard6)
+        bcsc.enterBCSCPassword(process.env.ServiceCard6Pw)
+    }, 
+    '2.Enter contact information': function (browser) {
         relationship = browser.page.relationshipPage();
         relationship.enterContactInformation()
-        relationship.createTeam()
-        relationship.manageTeamPage()
+        relationship.scrollToTerms(browser.execute(function() { window.scrollBy(0, 5500); }, []))
+        relationship.clickOnAcceptButton()
+        relationship.createAccount('bossbaby24') 
+        //relationship.manageTeamPage()
         relationship.AddBusinesses(browser.globals.CP1000019)
         relationship.checkAddBusinessesSuccess()
-        relationship.checkForAffliatedBusinesses()
+        relationship.checkForAffliatedBusinesses(browser.globals.CP1000019)
     },
 
       
-  '1.Verify initial state of dashboard, then start AR filing': function (browser) {
+  '3.Verify initial state of dashboard, then start AR filing': function (browser) {
     dashboard = browser.page.dashboardPage();
     dashboard.verifyTombstone(browser.globals.CP1000019);
     dashboard.verifyAddresses(browser.globals.CP1000019);
     //dashboard.verifyDirectorCount(browser.globals.CP1000019.director_count);
-    dashboard.verifyTodolistandRecentFilings();
-    dashboard.startArFiling();
+    dashboard.verifyTodolistandRecentFilings('To Do (3)');
+    dashboard.startArFiling()
+    dashboard.selectAGMDate('File 2018 Annual Report')
   },
 
-  '2.Confirm initial state of Annual Report': function (browser) {
+  '4.Confirm initial state of Annual Report': function (browser) {
     ArPage = browser.page.annualReportPage();
-    ArPage.verfifyInitialArState(browser.globals.CP1000019);
+    ArPage.verfifyInitialArState(browser.globals.CP1000019,'File 2018 Annual Report');
     ArPage.checkFeeByIndex('Annual Report', '$30.00', 0);
     ArPage.checkFeeCount(1);
     ArPage.checkTotalFees('$30.00');
@@ -45,7 +48,7 @@ module.exports = {
     //ArPage.verifyDirectorCount(browser.globals.CP1000019.director_count);
   },
 
-  '3.Edit the Office Addresses': function (browser) {
+  '5.Edit the Office Addresses': function (browser) {
     ArPage = browser.page.annualReportPage();
     ArPage.startEditingOfficeAddresses();
     ArPage.fillInAddressField(ArPage.elements.officeDeliveryStreetAddress.selector, '123 test street', browser);
@@ -63,7 +66,7 @@ module.exports = {
     ArPage.assert.containsText('@officeDeliveryLine3', 'Canada');
   },
 
-  '4.Appoint a Director': function (browser) {
+  '6.Appoint a Director': function (browser) {
     ArPage = browser.page.annualReportPage();
     ArPage.appointDirector();
     ArPage.checkFeeCount(3);
@@ -71,28 +74,28 @@ module.exports = {
     ArPage.checkTotalFees('$70.00');
   },
 
-  '5.Certify who filed': function (browser) {
+  '7.Certify who filed': function (browser) {
     ArPage = browser.page.annualReportPage();
     ArPage.setValue('@certifyLegalName', 'Tester');
     ArPage.click('@certifyCheckBox');
   },
 
-  '6.Save draft and resume later': function (browser) {
+  '8.Save draft and resume later': function (browser) {
     ArPage = browser.page.annualReportPage();
     ArPage.click('@saveAndResumeLaterButton');
   },
 
-  '7.Resume draft from Dashboard': function (browser) {
+  '9.Resume draft from Dashboard': function (browser) {
     dashboard = browser.page.dashboardPage();
     dashboard.waitForElementVisible('@resumeDraftButton');
     dashboard.click('@resumeDraftButton');
   },
 
-  '8.Verify draft resumed correctly then return to dashoard': function (browser) {
+  '10.Verify draft resumed correctly then return to dashoard': function (browser) {
     ArPage = browser.page.annualReportPage();
     ArPage.checkFeeCount(3);
     //Note fees re-ordered on resume
-    ArPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 2);
+    ArPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 1);
     ArPage.checkTotalFees('$70.00');
     ArPage.assert.visible('@resetOfficeAddressButton');
     ArPage.assert.containsText('@officeDeliveryLine1', '123 test street');
@@ -106,7 +109,7 @@ module.exports = {
     ArPage.click('@saveAndResumeLaterButton');
   },
 
-  '9.Delete draft': function (browser) {
+  '11.Delete draft': function (browser) {
     dashboard = browser.page.dashboardPage();
     dashboard.waitForElementVisible('@resumeDraftButton');
     dashboard.click('@toDoButtonMoreActionsArrow');
@@ -116,14 +119,15 @@ module.exports = {
     dashboard.waitForElementVisible('@fileNowButton1');
   },
 
-  '10.Start AR filing after deleting draft': function (browser) {
+  '12.Start AR filing after deleting draft': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.startArFiling();
+    dashboard.startArFiling()
+    dashboard.selectAGMDate('File 2018 Annual Report')
   },
 
-  '11.Confirm initial state of Annual Report - POST DRAFT': function (browser) {
+  '13.Confirm initial state of Annual Report - POST DRAFT': function (browser) {
     ArPage = browser.page.annualReportPage();
-    ArPage.verfifyInitialArState(browser.globals.CP1000019);
+    ArPage.verfifyInitialArState(browser.globals.CP1000019, 'File 2018 Annual Report');
     ArPage.checkFeeByIndex('Annual Report', '$30.00', 0);
     ArPage.checkFeeCount(1);
     ArPage.checkTotalFees('$30.00');
@@ -131,7 +135,7 @@ module.exports = {
     //ArPage.verifyDirectorCount(browser.globals.CP1000019.director_count);
   },
 
-  '12.Edit the Office Addresses - POST DRAFT': function (browser) {
+  '14.Edit the Office Addresses - POST DRAFT': function (browser) {
     ArPage = browser.page.annualReportPage();
     ArPage.startEditingOfficeAddresses();
     ArPage.fillInAddressField(ArPage.elements.officeDeliveryStreetAddress.selector, '123 test street', browser);
@@ -149,7 +153,7 @@ module.exports = {
     ArPage.assert.containsText('@officeDeliveryLine3', 'Canada');
   },
 
-  '13.Appoint a Director - POST DRAFT': function (browser) {
+  '15.Appoint a Director - POST DRAFT': function (browser) {
     ArPage = browser.page.annualReportPage();
     ArPage.appointDirector();
     ArPage.checkFeeCount(3);
@@ -157,14 +161,14 @@ module.exports = {
     ArPage.checkTotalFees('$70.00');
   },
 
-  '14.Certify who filed - POST DRAFT': function (browser) {
+  '16.Certify who filed - POST DRAFT': function (browser) {
     ArPage = browser.page.annualReportPage();
     ArPage.setValue('@certifyLegalName', 'Tester');
     ArPage.click('@certifyCheckBox');
     ArPage.assert.cssClassNotPresent('@fileAndPayButton', 'v-btn--disabled');
   },
 
-  '15.Check with Resume Payment/Cancel Payment': function(browser){
+  '17.Check with Resume Payment/Cancel Payment': function(browser){
     ArPage.click('@fileAndPayButton')
     .assert.containsText('#main-content > h1','Add Invoice(s) to your Cart to make payment')
     .waitForElementVisible('#searchForm > div.panel-footer > a')
@@ -180,27 +184,26 @@ module.exports = {
     .click('#dialog-yes-button > span')
   },
 
-  '16.Resume draft from Dashboard after Cancel Payment': function (browser) {
+  '18.Resume draft from Dashboard after Cancel Payment': function (browser) {
     dashboard = browser.page.dashboardPage();
     dashboard.waitForElementVisible('@resumeDraftButton');
     dashboard.click('@resumeDraftButton');
   },
 
-  '17.Verify draft resumed correctly then return to dashoard': function (browser) {
+  '19.Verify draft resumed correctly then return to dashoard': function (browser) {
     ArPage = browser.page.annualReportPage();
     ArPage.checkFeeCount(3);
-    ArPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 2);
+    ArPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 1);
     ArPage.checkTotalFees('$70.00');
     ArPage.assert.visible('@resetOfficeAddressButton');
     ArPage.assert.containsText('@officeDeliveryLine1', '123 test street');
     ArPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V8V 4K9');
     ArPage.assert.containsText('@officeDeliveryLine3', 'Canada');
-   // ArPage.assert.valueContains('@certifyLegalName', 'Tester');
     ArPage.click('@certifyCheckBox');
     ArPage.click('@fileAndPayButton');
   },
 
-  '18.PayBC': function (browser) {
+  '20.PayBC': function (browser) {
     browser
       .waitForElementVisible('#paylistbutton')
       .click('#paylistbutton')
@@ -208,16 +211,16 @@ module.exports = {
       .click('#credit_payBtn')
       .waitForElementVisible('input[name=trnCardNumber]')
       .setValue('input[name=trnCardNumber]', process.env.credit_card)
-      .setValue('input[name=trnCardCvd]', process.cvv_no)
+      .setValue('input[name=trnCardCvd]', process.env.cvv_no)
       .moveToElement('input[name=submitButton]', 10, 10)
       .click('input[name=submitButton]');
   },
 
-  '19.Verify Dashboard after filing': function (browser) {
+  '21.Verify Dashboard after filing': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
-    dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (56)');
-    dashboard.assert.containsText('@topFilingInHistoryName', 'Annual Report');
+    dashboard.assert.containsText('@toDoListHeader', 'To Do (2)');
+    dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (2)');
+    dashboard.assert.containsText('@topFilingInHistoryName', '>Annual Report (2018)');
    // dashboard.verifyDirectorCount(browser.globals.CP1000019.director_count + 1);
     dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
     dashboard.assert.containsText('@deliveryLine1', '123 test street');
