@@ -1,7 +1,7 @@
 var setProfile={
     enterContactInformation:function(browser){
         return this
-        .assert.urlEquals(this.api.globals.launch_url + 'auth/userprofile')
+        .assert.urlEquals(this.api.globals.launch_url + '/userprofile')
         .assert.containsText('@completeProfile','Complete Profile')
         .waitForElementVisible('@email')
         .setValue('@email','test@gmail.com')
@@ -13,12 +13,28 @@ var setProfile={
         .setValue('@extension','1234')
         .click('@checkbox')
         .pause(10000)
-        .useCss()
-        .moveToElement('#scroll-target > div > p > article > section:nth-child(12) > div > p:nth-child(7) > span',50,50)
-        .waitForElementVisible('#scroll-target > div > p > article > section:nth-child(12) > div > p:nth-child(7) > span')
+    },
+    scrollToTerms:function(browser ){
+        browser.execute(function () {
+            document.getElementById("scroll-target").scrollTo(0,5500);
+        }, []);},
+    clickOnAcceptButton:function(browser){
+return this
         .waitForElementVisible('@accept')
         .click('@accept')
         .click('@save')
+},
+    createAccount:function(name){
+        return this
+        .assert.urlEquals(this.api.globals.launch_url + '/createaccount')
+        .assert.containsText('@createAccountHeader','Create a New Account')
+        .assert.cssClassPresent('@saveandcontinueButton', 'v-btn--disabled')
+        .assert.elementPresent('@ownBusinesses:checked')
+        .moveToElement('@manageMultipleBusinesses',10,10)
+        .click('@manageMultipleBusinesses')
+        .waitForElementVisible('@accountName')
+        .setValue('@accountName',name)
+        .click('@saveandcontinueButton')
     },
     createTeam:function(browser){
         return this
@@ -52,6 +68,8 @@ var setProfile={
         .click('@forgotPassword')
         .assert.containsText('@forgotPageHeader','Need Assistance?')
         .click('@ok')
+        .pause(10000)
+        .waitForElementVisible('@affliateBusinesses')
         .click('@affliateBusinesses')
     },
 
@@ -62,10 +80,10 @@ var setProfile={
         .click('@OK')
     },
 
-    checkForAffliatedBusinesses:function(browser){
+    checkForAffliatedBusinesses:function(coopObject){
         return this
         .waitForElementVisible('@businessesDashboard')
-        .assert.containsText('@businesses1','THE SOINTULA CO-OPERATIVE STORE ASSOCIATION')
+        .assert.containsText('@businesses1', coopObject.legal_name)
         .assert.cssClassNotPresent('@dashboard1', 'v-btn--disabled')
         .assert.cssClassNotPresent('@edit1', 'v-btn--disabled')
         .assert.cssClassNotPresent('@remove1', 'v-btn--disabled')
@@ -76,7 +94,7 @@ var setProfile={
 module.exports={
     commands:[setProfile],
     elements:{
-        completeProfile:"#app > div > div.app-body > div > div > article > div > div > div:nth-child(1) > h1",
+        completeProfile:"#app > div > div.app-body > div > div > div > div > div.view-header.user-profile-header > h1",
         email:'[data-test="email"]',
         confirmEmail:'[data-test="confirm-email"]',
         phoneNumber:'[data-test="phone"]',
@@ -100,17 +118,36 @@ module.exports={
         enterPasscode:'[data-test="business-passcode"]',
         enterIncorporation:'[data-test="business-identifier"]',
         forgotPassword:'#app > div.v-dialog__content.v-dialog__content--active > div > div > div.v-card__text > div > form > div.form__btns.mt-8 > button > span > span',
-        forgotPageHeader:'#app > div:nth-child(1) > div > div > div.v-card__title',
-        ok:' #app > div:nth-child(1) > div > div > div.v-card__actions > button',
+        forgotPageHeader:'#app > div:nth-child(4) > div > div > div.v-card__title',
+        ok:'#app > div:nth-child(4) > div > div > div.v-card__actions > button > span',
         manageBusinessesNav:'[data-test="manage-business-nav"]',
-        affliateBusinesses:'[data-test="add-business-button"]',
-        businessesDashboard:'#app > div > div.app-body > div > article > div > div.entity-list-component > div > div > div > div > table > tbody > tr',
-        businesses1:'#app > div > div.app-body > div > article > div > div.entity-list-component > div > div > div > div > table > tbody > tr > td:nth-child(1) > div > div.v-list-item__title',
+        affliateBusinesses:{
+            selector:'//*[@id="app"]/div[3]/div/div/div[2]/div/form/div[4]/div/button[1]/span',
+            locateStrategy:'xpath'
+        },
+        businessesDashboard:'#app > div > div.app-body > div > article > div > div.container.view-container > div.view-header.align-center > h1',
+        businesses1:{
+           selector:'//*[@id="app"]/div[1]/div[2]/div/article/div/div[2]/div[2]/div/div/div/div/table/tbody/tr/td[1]/div/div[1]',
+           locateStrategy:'xpath'
+        },
         dashboard1:'[data-test="goto-dashboard-button"]',
         edit1:'[data-test="edit-contact-button"]',
         remove1:'[data-test="remove-button"]',
         BusinessAdded:'#app > div.v-dialog__content.v-dialog__content--active > div > div > div.v-card__title > span',
-        OK:'#app > div.v-dialog__content.v-dialog__content--active > div > div > div.v-card__actions > button > span'
+        OK:'#app > div.v-dialog__content.v-dialog__content--active > div > div > div.v-card__actions > button > span',
+        createAccountHeader:'h1.mb-5',
+        saveandcontinueButton:'[data-test="save-button"]',
+        ownBusinesses:'[data-test="select-manage-own-business"]',
+        manageMultipleBusinesses:{
+           selector:'//*[@id="app"]/div/div[2]/div/div/article/div/div/div[2]/div/div/form/div[1]/div/div[1]/div/div[2]/div/div',
+           locateStrategy: 'xpath'
+        },
+        accountName:{
+        selector:'//*[@id="app"]/div/div[2]/div/div/article/div/div/div[2]/div/div/form/div[3]/div/div[1]/div/input',
+        locateStrategy:'xpath'
+        },
+        manageBusinessesHeader: 'h1.mb-6',
+        manageBusinessesButton:'#app > div > div.app-body > div > article > header > div > div > div > a > span'
 
     }
 }

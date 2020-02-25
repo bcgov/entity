@@ -1,7 +1,7 @@
 var ArFilingsCommands = {
-    verfifyInitialArState: function (coopObject) {
+    verfifyInitialArState: function (coopObject,annualReportYear) {
         return this
-            .assert.containsText('#AR-header', 'File 2018 Annual Report')
+            .assert.containsText('#AR-header', annualReportYear)
             .assert.containsText('#AR-step-1-header', '1. Annual General Meeting Date')
             .assert.containsText('#AR-step-2-header', '2. Registered Office Addresses')
             .assert.containsText('#AR-step-3-header', '3. Directors')

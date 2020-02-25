@@ -3,10 +3,10 @@ module.exports = {
 	waitForConditionTimeout : 30000,
 	retryAssertionTimeout: 30000,	
 	throwOnMultipleElementsReturned : false,
-	launch_url: "https://test.bcregistry.ca/cooperatives/",
+	launch_url: "https://test.bcregistry.ca/cooperatives/auth",
 	idtest_url: "https://idtest.gov.bc.ca/login",
 	launch_idirurl:"https://test.bcregistry.ca/cooperatives/auth/signin/idir",
-	launch_url1: "https://test.bcregistry.ca/cooperatives/auth/",
+	launch_url1: "https://test.bcregistry.ca/cooperatives/",
 	CP1002111: {
 		identifier: "CP1002111",
 		passcode:"111111111",
@@ -66,6 +66,7 @@ module.exports = {
 		identifier: "CP1001171",
 		passcode: "111111111",
 		dierctor_count: 6,
+		new_director_count:7,
 		legal_name: "NICE CO-OPERATIVE HOUSING ASSOCIATION",
 		mailing : {
 			line1: "123 MAIN ST",
@@ -76,8 +77,7 @@ module.exports = {
 			line1: "321 MAIN ST",
 			line2: "VICTORIA BC V8Z 6H4",
 			line3: "Canada"
-		}
-	},
+		},
 	director7:{
 		firstname:"test",
 		lastname:"test2",
@@ -87,6 +87,7 @@ module.exports = {
 		province:"BC",
 		postalcode: "V1V1V1",
 		country: "CA"
+	},
 	},
 	
 	CP1000992:{

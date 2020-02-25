@@ -5,17 +5,30 @@ module.exports = {
            console.log(busObject);
       });
 },
-      'Verify initial login with bcsc': function (browser) {
+
+    after: function(browser) {
+     browser.authReset();  
+},
+   '1.Verify initial login with bcsc': function (browser) {
           bcsc = browser.page.bcscPage();
           browser.url(browser.globals.launch_url)
-          bcsc.verifyCoperativesPage()
-          bcsc.verifyBcscLogin()
+          bcsc.verifyLandingPage()
+          bcsc.moveToBCSC()
+          bcsc.enterBCSCCardUser(process.env.ServiceCard2)
+          bcsc.enterBCSCPassword(process.env.ServiceCard2Pw)
       },
-      'Enter contact information': function (browser) {
-          relationship = browser.page.relationshipPage();
-          relationship.checkForAffliatedBusinesses()
+    '2.Enter contact information': function (browser) {
+          relationship = browser.page.relationshipPage()
+          relationship.enterContactInformation()
+          relationship.scrollToTerms(browser.execute(function() { window.scrollBy(0, 5500); }, []))
+          relationship.clickOnAcceptButton()
+          relationship.createAccount('bossbaby21')
+         // relationship.manageTeamPage()
+          relationship.AddBusinesses(browser.globals.CP1002111)
+          relationship.checkAddBusinessesSuccess()
+          relationship.checkForAffliatedBusinesses(browser.globals.CP1002111)
       },
-    '1.Verify initial state of dashboard, then start COA filing': function (browser) {
+    '3.Verify initial state of dashboard, then start COA filing': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.verifyTombstone(browser.globals.CP1002111);
       dashboard.verifyAddresses(browser.globals.CP1002111);
@@ -23,14 +36,14 @@ module.exports = {
       dashboard.startCoaFiling();
     },
   
-    '2.Confirm initial state of COA filing': function (browser) {
+    '4.Confirm initial state of COA filing': function (browser) {
       CoaPage = browser.page.CoaPage();
       CoaPage.verfifyInitialCoaState(browser.globals.CP1002111);
       CoaPage.checkTotalFees('$0.00');
       CoaPage.verifyOfficeAddresses(browser.globals.CP1002111);
     },
   
-    '3.Edit the Office Addresses': function (browser) {
+    '5.Edit the Office Addresses': function (browser) {
       CoaPage = browser.page.CoaPage();
       CoaPage.startEditingOfficeAddresses();
       CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryStreetAddress.selector, '123 test street', browser);
@@ -48,24 +61,24 @@ module.exports = {
       CoaPage.assert.containsText('@officeDeliveryLine3', 'Canada');
     },
   
-    '4.Certify who filed': function (browser) {
+    '6.Certify who filed': function (browser) {
       CoaPage = browser.page.CoaPage();
       CoaPage.setValue('@certifyLegalName', 'Tester');
       CoaPage.click('@certifyCheckBox');
     },
   
-    '5.Save draft and resume later': function (browser) {
+    '7.Save draft and resume later': function (browser) {
       CoaPage = browser.page.CoaPage();
       CoaPage.click('@saveAndResumeLaterButton');
     },
   
-    '6.Resume draft from Dashboard': function (browser) {
+    '8.Resume draft from Dashboard': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.waitForElementVisible('@resumeDraftButton');
       dashboard.click('@resumeDraftButton');
     },
   
-    '7.Verify draft resumed correctly then return to dashoard': function (browser) {
+    '9.Verify draft resumed correctly then return to dashoard': function (browser) {
       CoaPage = browser.page.CoaPage();
       CoaPage.checkFeeCount(1);
       CoaPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 0);
@@ -77,12 +90,11 @@ module.exports = {
       CoaPage.waitForElementVisible('@certifyBlock')
       CoaPage.waitForElementVisible('@certifyLegalName')
       CoaPage.moveToElement('@certifyLegalName',5,5)
-     // CoaPage.assert.containsText('@certifyLegalName', 'Tester');
       CoaPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
       CoaPage.click('@saveAndResumeLaterButton');
     },
   
-    '8.Delete draft': function (browser) {
+    '10.Delete draft': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.waitForElementVisible('@resumeDraftButton');
       dashboard.click('@toDoButtonMoreActionsArrow');
@@ -92,19 +104,19 @@ module.exports = {
       dashboard.waitForElementVisible('@fileNowButton1');
     },
   
-    '9.Start COA filing after deleting draft': function (browser) {
+    '11.Start COA filing after deleting draft': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.startCoaFiling();
     },
   
-    '10.Confirm initial state of COA filing - POST DRAFT': function (browser) {
+    '12.Confirm initial state of COA filing - POST DRAFT': function (browser) {
       CoaPage = browser.page.CoaPage();
       CoaPage.verfifyInitialCoaState(browser.globals.CP1002111);
       CoaPage.checkTotalFees('$0.00');
       CoaPage.verifyOfficeAddresses(browser.globals.CP1002111);
     },
   
-    '11.Edit the Office Addresses - POST DRAFT': function (browser) {
+    '13.Edit the Office Addresses - POST DRAFT': function (browser) {
       CoaPage = browser.page.CoaPage();
       CoaPage.startEditingOfficeAddresses();
       CoaPage.fillInAddressField(CoaPage.elements.officeDeliveryStreetAddress.selector, '123 test street', browser);
@@ -122,7 +134,7 @@ module.exports = {
       CoaPage.assert.containsText('@officeDeliveryLine3', 'Canada');
     },
   
-    '12.Certify who filed - POST DRAFT': function (browser) {
+    '14.Certify who filed - POST DRAFT': function (browser) {
       CoaPage = browser.page.CoaPage();
       CoaPage.waitForElementVisible('@certifyBlock')
       CoaPage.waitForElementVisible('@certifyLegalName')
@@ -132,7 +144,7 @@ module.exports = {
       CoaPage.assert.cssClassNotPresent('@fileAndPayButton', 'v-btn--disabled');
     },
   
-    '13.Check with Resume Payment/Cancel Payment': function(browser){
+    '15.Check with Resume Payment/Cancel Payment': function(browser){
       CoaPage.click('@fileAndPayButton')
       .assert.containsText('#main-content > h1','Add Invoice(s) to your Cart to make payment')
       .waitForElementVisible('#searchForm > div.panel-footer > a')
@@ -148,13 +160,13 @@ module.exports = {
       .click('#dialog-yes-button > span')
     },
   
-    '14.Resume draft from Dashboard after Cancel Payment': function (browser) {
+    '16.Resume draft from Dashboard after Cancel Payment': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.waitForElementVisible('@resumeDraftButton');
       dashboard.click('@resumeDraftButton');
     },
   
-    '15.Verify draft resumed correctly after Cancel Payment': function (browser) {
+    '17.Verify draft resumed correctly after Cancel Payment': function (browser) {
       CoaPage = browser.page.CoaPage();
       CoaPage.checkFeeCount(1);
       CoaPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 0);
@@ -165,14 +177,13 @@ module.exports = {
       CoaPage.assert.containsText('@officeDeliveryLine3', 'Canada');
       CoaPage.waitForElementVisible('@certifyBlock')
       CoaPage.waitForElementVisible('@certifyLegalName')
-      //CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
       CoaPage.click('@certifyCheckBox');
       CoaPage.click('@fileAndPayButton');
     },
   
   
   
-    '16.PayBC': function (browser) {
+    '18.PayBC': function (browser) {
       browser
         .waitForElementVisible('#paylistbutton')
         .click('#paylistbutton')
@@ -185,15 +196,15 @@ module.exports = {
         .click('input[name=submitButton]');
     },
   
-    '17.Verify Dashboard after filing': function (browser) {
+    '19 .Verify Dashboard after filing': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
-      dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (56)');
+      dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (13)');
       dashboard.assert.containsText('@topFilingInHistoryName', 'Address Change');
      // dashboard.verifyDirectorCount(browser.globals.CP1002111.director_count);
       dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
       dashboard.assert.containsText('@deliveryLine1', '123 test street');
       dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');
-      dashboard.assert.containsText('@deliveryLine3', 'CA');
+      dashboard.assert.containsText('@deliveryLine3', 'Canada');
     }
   };
