@@ -29,13 +29,13 @@ module.exports={
       dashboard.verifyTombstone(browser.globals.CP1000992);
       dashboard.verifyAddresses(browser.globals.CP1000992);
       dashboard.startArFiling();
-      dashboard.selectAGMDate()
+      dashboard.selectAGMDate('File 2018 Annual Report')
      // dashboard.verifyDirectorCount(browser.globals.CP1000992.director_count);
     },
 
     '2.Confirm initial state of Annual Report': function (browser) {
       ArPage = browser.page.annualReportPage();
-      ArPage.verfifyInitialArState(browser.globals.CP1000992);
+      ArPage.verfifyInitialArState(browser.globals.CP1000992,'File 2018 Annual Report');
       ArPage.checkFeeByIndex('Annual Report', '$30.00', 0);
       ArPage.checkFeeCount(1);
       ArPage.checkTotalFees('$30.00');
@@ -111,12 +111,12 @@ module.exports={
     '10.Start AR filing after deleting draft': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.startArFiling();
-      dashboard.selectAGMDate()
+      dashboard.selectAGMDate('File 2018 Annual Report')
     },
   
     '11.Confirm initial state of Annual Report - POST DRAFT': function (browser) {
       ArPage = browser.page.annualReportPage();
-      ArPage.verfifyInitialArState(browser.globals.CP1000992);
+      ArPage.verfifyInitialArState(browser.globals.CP1000992,'File 2018 Annual Report');
       ArPage.checkFeeByIndex('Annual Report', '$30.00', 0);
       ArPage.checkFeeCount(1);
       ArPage.checkTotalFees('$30.00');
