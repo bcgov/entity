@@ -4,17 +4,32 @@ Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 
 ---
+Mar 10
+---
+- Stakeholder Feedback loop process - Trish to bring up
+- Change Management activites for "what they are"
+- Test Environment availability for Business owners
+
+---
 Feb 25
 ---
+
 - Release Cadence discussion
+  - Incorporating feedback from Release Management team. Update Release Link and should be updated in Release document.
+  - Track the releases with respect to Anticipated date vs Actual date.
+  - Is it possible to deliver releases in a particular cadence?
 - Program monitoring and controlling. What are the metrics which we can achieve?
+  - We can track the estimation at Epic level in story points(tshirt sizing + Sprint size can hep with story points)
 - Bug Triage process across teams - Shariar to bring up
-- Stakeholder Feedback loop process - Trish to bring up
+  - Definition of Bugs need to be updated by Shahriar
 - Tech Review across teams - Shahriar
+  - Check with PO's 
+  - Jyoti to book the meeting
 - ZenHub Pipeline - Defining exit criteria
+  - Jyoti to share the link for updating.
 - Estimation across team. Align all the teams
-- Incorporating feedback from Release Management team. Update Release Link and should be updated in Release document.
-- Track the releases with respect to Anticipated date vs Actual date.
+  - Use Fibonacci across teams. 8 points per person per sprint.
+- Quick update on PI planning
 
 ---
 Feb 11
