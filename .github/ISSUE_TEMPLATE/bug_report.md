@@ -7,11 +7,13 @@ assignees: ''
 
 ---
 
-**Describe the bug in current/ situation**
+**Describe the bug in current situation**
 A clear and concise description of what the bug is.
 
 **Impact of this bug**
 Describe the impact, i.e. what the impact is, and number of users impacted. 
+
+**Chance of Occurring (high/medium/low/very low)**
 
 **Pre Conditions (which Env, any pre-requesites or assumptions to execute steps?**
 
