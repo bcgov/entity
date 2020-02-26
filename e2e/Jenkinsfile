@@ -40,7 +40,14 @@ import groovy.json.JsonOutput
                 secretEnvVar(key: 'IDIRCredP', secretName: 'browserstack-secret', secretKey: 'IDIRCredP'),
                 secretEnvVar(key: 'KeycloakCredU', secretName: 'browserstack-secret', secretKey: 'KeycloakCredU'),
                 secretEnvVar(key: 'KeycloakCredP', secretName: 'browserstack-secret', secretKey: 'KeycloakCredP'),
-                secretEnvVar(key: 'routing_slip', secretName: 'browserstack-secret', secretKey: 'routing_slip')
+                secretEnvVar(key: 'routing_slip', secretName: 'browserstack-secret', secretKey: 'routing_slip'),
+                secretEnvVar(key: 'ServiceCard6', secretName: 'browserstack-secret', secretKey: 'ServiceCard6'),
+                secretEnvVar(key: 'ServiceCard6Pw', secretName: 'browserstack-secret', secretKey: 'ServiceCard6Pw'),
+                secretEnvVar(key: 'ServiceCard2', secretName: 'browserstack-secret', secretKey: 'ServiceCard2'),
+                secretEnvVar(key: 'ServiceCard2Pw', secretName: 'browserstack-secret', secretKey: 'ServiceCard2Pw'),
+                secretEnvVar(key: 'ServiceCard3', secretName: 'browserstack-secret', secretKey: 'ServiceCard3'),
+                secretEnvVar(key: 'ServiceCard3Pw', secretName: 'browserstack-secret', secretKey: 'ServiceCard3Pw'),
+
             ]
         )
     ])
