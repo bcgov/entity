@@ -52,6 +52,7 @@ var dashboardCommands = {
         return this.waitForElementVisible('@launchCOAButton')
                 .assert.cssClassNotPresent('@launchCOAButton', 'v-btn--disabled')
                 .click('@launchCOAButton')
+                .pause(10000)
                 .assert.urlEquals(this.api.globals.launch_url1 + 'standalone-addresses')
                 .useCss()
                 .waitForElementVisible('#filing-header', 'COA Page Loaded');
@@ -60,6 +61,7 @@ var dashboardCommands = {
         return this.waitForElementVisible('@launchCODButton')
                    .assert.cssClassNotPresent('@launchCODButton','v-btn--disabled')
                    .click('@launchCODButton')
+                   .pause(10000)
                    .assert.urlEquals(this.api.globals.launch_url1 + 'standalone-directors')
                    .useCss()
                    .waitForElementVisible('#filing-header','COD Page Loaded')
@@ -68,6 +70,20 @@ var dashboardCommands = {
     enterRoutingSlipNumber:function(){
         return this.waitForElementVisible('@paymentHeader')
                    .assert.containsText('@paymentHeader','Staff Payment')
+    },
+
+    deactivateProfile: function(){
+        return this 
+        .waitForElementVisible('@navBar')
+        .click('@navBar')
+        .waitForElementVisible('@editProfile')
+        .click('@editProfile')
+        .assert.containsText('@editPage','Edit Profile')
+        .waitForElementVisible('@deactivateProfile')
+        .click('@deactivateProfile')
+        .waitForElementVisible('@confirmDeactivate')
+        .assert.containsText('@confirmDeactivate','Deactivate your Profile')
+        .click('@deactivateConfirmButton')
     }
 
     
@@ -114,7 +130,13 @@ module.exports={
         AGMDate:'#AR-step-1-header',
         datePicker: '[data-test-id="agm-date-text"]',
         choosenDate: '#app > div.v-menu__content.theme--light.menuable__content__active > div > div > div > div.v-date-picker-table.v-date-picker-table--date.theme--light > table > tbody > tr:nth-child(1) > td:nth-child(7) > button > div',
-        noAGMButton: '#agm-checkbox'
+        noAGMButton: '#agm-checkbox',
+        navBar:'#app > div > div.header-group > header > div > div > button.user-account-btn.v-btn.v-btn--flat.v-btn--text.theme--light.v-size--large > span',
+        editProfile:'#app > div.v-menu__content.theme--light.menuable__content__active.account-menu > div:nth-child(1) > div:nth-child(2)',
+        deactivateProfile:'#app > div.v-application--wrap > div.app-body > div > div > div > div > div.profile-card.v-card.v-sheet.theme--light > div > div.v-card__text > form > div:nth-child(7) > div > button',
+        editPage: '#app > div.v-application--wrap > div.app-body > div > div > div > div > div.view-header > div > h1',
+        confirmDeactivate: '#app > div.v-dialog__content.v-dialog__content--active > div > div > div.v-card__title > span',
+        deactivateConfirmButton: '[data-test="deactivate-confirm-button"]'
 
     }
 };

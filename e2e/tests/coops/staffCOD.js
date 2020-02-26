@@ -1,7 +1,7 @@
 require('dotenv').config();
 module.exports={
 
-  '@tags': [''],
+  '@tags': ['Regression'],
   before:function(browser){
 
       browser.setupData('CP1001403', function(busObject){

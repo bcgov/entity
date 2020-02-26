@@ -1,5 +1,5 @@
 module.exports = {
-    '@tags': [''], 
+    '@tags': ['Regression'], 
     before:function(browser ){
       browser.setupData('CP1002111', function(busObject){
            console.log(busObject);
@@ -22,7 +22,7 @@ module.exports = {
           relationship.enterContactInformation()
           relationship.scrollToTerms(browser.execute(function() { window.scrollBy(0, 5500); }, []))
           relationship.clickOnAcceptButton()
-          relationship.createAccount('bossbaby21')
+          relationship.createAccount('bossbaby36')
          // relationship.manageTeamPage()
           relationship.AddBusinesses(browser.globals.CP1002111)
           relationship.checkAddBusinessesSuccess()

@@ -1,7 +1,7 @@
 require('dotenv').config();
 module.exports = {
 
-  '@tags': [''], 
+  '@tags': ['Regression'], 
   before:function(browser ){
     browser.setupData('CP1000019', function(busObject){
          console.log(busObject);
@@ -20,14 +20,15 @@ module.exports = {
         relationship.enterContactInformation()
         relationship.scrollToTerms(browser.execute(function() { window.scrollBy(0, 5500); }, []))
         relationship.clickOnAcceptButton()
-        relationship.createAccount('bossbaby24') 
+        relationship.createAccount('bossbaby35') 
         //relationship.manageTeamPage()
         relationship.AddBusinesses(browser.globals.CP1000019)
         relationship.checkAddBusinessesSuccess()
         relationship.checkForAffliatedBusinesses(browser.globals.CP1000019)
     },
 
-      
+       
+
   '3.Verify initial state of dashboard, then start AR filing': function (browser) {
     dashboard = browser.page.dashboardPage();
     dashboard.verifyTombstone(browser.globals.CP1000019);
@@ -220,12 +221,14 @@ module.exports = {
     dashboard = browser.page.dashboardPage();
     dashboard.assert.containsText('@toDoListHeader', 'To Do (2)');
     dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (2)');
-    dashboard.assert.containsText('@topFilingInHistoryName', '>Annual Report (2018)');
+    dashboard.assert.containsText('@topFilingInHistoryName', 'Annual Report (2018)');
    // dashboard.verifyDirectorCount(browser.globals.CP1000019.director_count + 1);
     dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
     dashboard.assert.containsText('@deliveryLine1', '123 test street');
     dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');
     dashboard.assert.containsText('@deliveryLine3', 'Canada');
-  }
+  },
+
+  
 };
 
