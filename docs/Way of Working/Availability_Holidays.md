@@ -3,8 +3,7 @@
 ----
 
 **Assets**
-
-
+* ...?
 
 ----
 **Entities** 
@@ -14,22 +13,21 @@
 * Lekshmi: Feb 3 - Feb 28
 * Peter: Feb 12 - 17
 * Sienna: Feb 17 - 21
-* Nitin: Feb 18 - Mar 13
 * Jyoti: Feb 3rd, Feb 28, Jun 29, Jun 30, Jul 31, Sep 4, Sep 18
-* Cameron: Feb 12 to 19
+* Cameron:
 
 
 ----
 **Relationships** 
-* Loren: Mo, Feb 24 (Loren in Vancouver) 
 * Amit: Feb 12 - Feb 28
-* Meng: Sprint 22 away (and longer eventually) - away for 8 weeks
-* Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3)
-* Waldemar: 
 * Jeremy: Thurs Feb 27, Frid Feb 28
-* Nitin: Fr, Feb 14 (last day) - Feb 17 - Mar 13
+* Loren: Mo, Feb 24 (Loren in Vancouver) 
+* Meng: Sprint 22 onwards - away for 8 weeks - and longer eventually
+* Milan: 
+* Nitin: Feb 17 - Mar 13
+* Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3, ...)
+* Waldemar: March 6 - March 11
 * Sumesh:
-* Millan 
 
 
 ----

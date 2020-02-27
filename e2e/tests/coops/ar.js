@@ -27,8 +27,6 @@ module.exports = {
         relationship.checkForAffliatedBusinesses(browser.globals.CP1000019)
     },
 
-       
-
   '3.Verify initial state of dashboard, then start AR filing': function (browser) {
     dashboard = browser.page.dashboardPage();
     dashboard.verifyTombstone(browser.globals.CP1000019);
