@@ -6,7 +6,8 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Feb, 27, 2020
 ----
-1. User Feedback loop process - trish to present it
+1. Loren: 2691 (BC Reg Nav Bar) - recommendation from team not to release it later for user; ready for Entity team this Sprint
+2. User Feedback loop process - trish to present it
 ----
 Feb, 20, 2020
 ----
