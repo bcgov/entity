@@ -8,7 +8,16 @@ Feb, 27, 2020
 ----
 1. Loren: 2691 (BC Reg Nav Bar) - recommendation from team not to release it later for user; ready for Entity team this Sprint
 2. User Feedback loop process - trish to present it
+    1. Use the OCM Checkpoint to have the team present the Woreframes
+    2. Provide the oppurtunity to Staff of using Test Environment before the release going live.
+    3. Trish to work with Business on setting the expectation 
+    4. Feedback Loop - Create a bugs and use label as per the team - In OCM Check point
+                        - Label them with Feedback label(Client/Staff Feedback - Purple)
+                        - Put the ticket in Bug Column
+                        - POs to look into bug triage meeting
+                        - Trish to go through with Staff on all those Bugs
 3. Epic Template
+    1. 
 
 ----
 Feb, 20, 2020
