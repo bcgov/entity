@@ -8,6 +8,8 @@ Feb, 27, 2020
 ----
 1. Loren: 2691 (BC Reg Nav Bar) - recommendation from team not to release it later for user; ready for Entity team this Sprint
 2. User Feedback loop process - trish to present it
+3. Epic Template
+
 ----
 Feb, 20, 2020
 ----
