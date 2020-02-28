@@ -14,23 +14,26 @@ assignees: ''
 
 **Acceptance Criteria**	
 
-*Scenario 1: xxxxxx (happy path)
+**Scenario 1: xxxxxx**
 * GIVEN ... (you or your condition)
 * WHEN ... (what you do) 
 * THEN ... (what you see) 
 
-*Scenario 2: xxxxxx (path 2?)
+**Scenario 2: xxxxxx**
 * GIVEN ... (you or your condition)
 * WHEN ... (what you do) 
 * THEN ... (what you see) 
 
-*Scenario 3: xxxxxx (path 3?)
+**Scenario 3: xxxxxx**
 ...
 
 **Dependencies? What is the impact of this dependency? (If so, link dependency in the ticket, make it visible in a team´s backlog)**
 * Do you know a possible contact person to reach out (from the other team)?
 
 **Validation Rules? (If yes, list here)**	
+
+**Design**
+@xxx - please link the Design here
 
 ----
 
