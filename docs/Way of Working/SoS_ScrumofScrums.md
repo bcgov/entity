@@ -8,7 +8,9 @@ Mar 10
 ---
 - Stakeholder Feedback loop process - Trish to bring up
 - Change Management activites for "what they are"
-- Test Environment availability for Business owners
+- Test Environment availability for Business owners 
+- Process to move to TEST (see WoW in GitHub) - discuss how it works
+- review & discuss Meetings & Events (see xls on SharePoint)
 
 ---
 Feb 25
