@@ -4,6 +4,12 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * if we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Mar, 05, 2020
+----
+1. Actions items from Sprint review - if there is anything which we need to action.
+1. 
+
+----
 Feb, 27, 2020
 ----
 1. Loren: 2691 (BC Reg Nav Bar) - recommendation from team not to release it later for user; ready for Entity team this Sprint
