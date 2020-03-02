@@ -7,17 +7,20 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Feb, 27, 2020
 ----
 1. Loren: 2691 (BC Reg Nav Bar) - recommendation from team not to release it later for user; ready for Entity team this Sprint
-2. User Feedback loop process - trish to present it
-    1. Use the OCM Checkpoint to have the team present the Woreframes
-    2. Provide the oppurtunity to Staff of using Test Environment before the release going live.
-    3. Trish to work with Business on setting the expectation 
-    4. Feedback Loop - Create a bugs and use label as per the team - In OCM Check point
+    - This was no longer needed to discuss in this meeting
+1. User Feedback loop process - trish to present it
+    1. Use the OCM Checkpoint to have the team present the Wireframes
+    1. Provide the oppurtunity to Staff of using Test Environment before the release going live.
+    1. Trish to work with Business on setting the expectation 
+    1. Feedback Loop - Create a bugs and use label as per the team - In OCM Check point
                         - Label them with Feedback label(Client/Staff Feedback - Purple)
                         - Put the ticket in Bug Column
                         - POs to look into bug triage meeting
                         - Trish to go through with Staff on all those Bugs
-3. Epic Template
-    1. 
+1. Epic Template
+    1. The template was discussed in the meeting and team will create/update all the future epics as per the template.
+
+- Note: There were few dependencies which were not discussed in the meeting as we overrun on time. PO's/SM's to update the agenda as much as possible before the event, so that its easier to facilitate. Jyoti to make sure to check with PO's before the start of the meeting if the Agenda needs to be updated. Priority should be to disucss the dependencies/prioritization followed by other topics.
 
 ----
 Feb, 20, 2020
