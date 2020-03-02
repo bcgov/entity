@@ -31,6 +31,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
 * Bus. Reg. Navigation Bar - Andrew - 5 min ?
+* Loren: Sprint Goal, any decisions we made, what is coming up
 
 ----
 ### Feb 18, 2020 - Sprint 23 - 55 min. total 
