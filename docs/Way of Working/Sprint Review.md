@@ -26,7 +26,8 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Assets
 * xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Entities
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* Corrections 1.2 : Staff filing corrections #2643 - Cameron - 10 mins
+
 #### Name Request
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
