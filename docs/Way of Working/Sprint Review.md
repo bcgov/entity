@@ -30,7 +30,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * Corrections 1.2 : Staff filing corrections #2643 - Cameron - 10 mins
 
 #### Relationships
-* Bus. Reg. Navigation Bar - Andrew - 5 min ?
+* Bus. Reg. Navigation Bar - ~~Andrew~~ - 5 min ?
 * Loren: Sprint Goal, any decisions we made, what is coming up
 
 #### Upcoming Releases
