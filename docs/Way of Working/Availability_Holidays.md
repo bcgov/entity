@@ -3,7 +3,7 @@
 ----
 
 **Assets**
-* ...?
+* Roland: May 18-22
 
 ----
 **Entities** 
