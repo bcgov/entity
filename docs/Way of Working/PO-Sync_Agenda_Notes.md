@@ -15,7 +15,7 @@ Feb, 27, 2020
 1. Loren: 2691 (BC Reg Nav Bar) - recommendation from team not to release it later for user; ready for Entity team this Sprint
     - This was no longer needed to discuss in this meeting
 1. User Feedback loop process - trish to present it
-    1. Use the OCM Checkpoint to have the team present the Wireframes
+    1. The product team will share the wireframes with staff before the release. There is no time in the OCM checkpoint meeting to review the wireframes.
     1. Provide the oppurtunity to Staff of using Test Environment before the release going live.
     1. Trish to work with Business on setting the expectation 
     1. Feedback Loop - Create a bugs and use label as per the team - In OCM Check point
