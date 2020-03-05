@@ -2,6 +2,8 @@
 |----|----------|
 |CC|Credit Card|
 |e2e|End-to-end|
+|PIA|Privacy Impact Assesment|
+|PCT|???|
 |EFT|Electronic Funds Transfer|
 |PAD|Pre-authorized Deduction|
 |PPR|Personal Property Registry|
