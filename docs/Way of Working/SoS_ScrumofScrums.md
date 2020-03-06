@@ -11,6 +11,7 @@ Mar 10
 - UAT and time for UAT - Test Environment availability for Business Owners
 - Process to move to TEST: Inform Trish (for UAT) and see WoW in GitHub - discuss how it works
 - review & discuss Meetings & Events (see xls on SharePoint)
+- walkthrough Vision document which we will be using for PI planning
 
 ---
 Feb 25
