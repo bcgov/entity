@@ -4,9 +4,10 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * if we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
-Mar, 05, 2020
+Mar, 09, 2020
 ----
 1. Actions items from Sprint review - if there is anything which we need to action.
+1. Review of the vision document which we are going to present in PI meeting.
 1. Review of the Roadmap - There are some changes to the roadmap from Relationship team, so we will quickly go through them.
 
 ----
