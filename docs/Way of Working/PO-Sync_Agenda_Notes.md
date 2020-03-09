@@ -7,13 +7,17 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Mar, 09, 2020
 ----
 1. Dependency on common components- From Entities to Relationship
-    - Update on common components - there has to be a ticket(dependency) created from Relationship side if they are changing something
-    - Discussion about Architecture standpoint as well. Devs to chat about it. Jyoti to setup the meeting.
+    - If there is an update on common components - there has to be a ticket(dependency) created from Relationship side to let the others team be aware. This is to avoid rework from other teams using those components.
+    - There also needs to have some discussion about using these common components in future. From architecture side, Thor was consulted, however DEV’s need to chat about it. Action item is on Jyoti to setup the meeting for Devs.
 1. Actions items from Sprint review - if there is anything which we need to action. Jyoti to setup the meeting with Key devs to take up before PI planning
 1. Review of the vision document which we are going to present in PI meeting.
+    - PO’s to review the Vision document if possible and provide feedback in the PI meeting
 1. Review of the Roadmap - There are some changes to the roadmap from Relationship team, so we will quickly go through them.
-    - Jyoti to setup meeting with Thor and Bob for COBRS
-    - Kaine is taking the charge on CRM/CXM. It needs to span out till end of the year.
+    - Authentication changed to User Accounts – Since User accounts scope has increased, timelines have been shifted accordingly.
+    - Discussion needs to happen around search functionality(Staff search in particular). Kaine/Linda to ask BA’s to figure out the minimum requirement for Staff search for end of Sept(this is considering that COLIN has to be replaced by that time)
+    - Jyoti to setup meeting with Thor and Bob for COBRS. There needs to be a plan in order to shut down COBRS.
+    - Kaine is taking the charge on CRM/CXM. It needs to span out till end of the year. More discussion in PI planning meeting.
+   
 
 ----
 Feb, 27, 2020
