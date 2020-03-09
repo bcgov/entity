@@ -69,15 +69,16 @@ Name Analysis for Auto-Approval - Lorna - 10 min
 #### Action Items:
 |#|	Description|	Suggested by|	Action Item Assigned to|
 |-| ---------- | ----------- | ---------------------- |
-|1|	Can the “Comment feature” being built up by Entities team be used as common component(re-usable)?|	Loren	|Kaine/Linda|
-|2|	Can the staff Edit/delete comments?	|Jennifer	|Kaine/Linda|
-|3|	To see if there could be some coding made available for Comments in Corrections filing	|Carol|	Kaine/Linda|
+|1|	Can the “Comment feature” being built up by Entities team be used as common component(re-usable)?
+- There is no work required for now. There might be other use cases where "Comments" feature can be used.|	Loren	|Kaine/Linda|
+|2|	Can the staff Edit/delete comments?	NO - Business dont need the ability to delete and Edits |Jennifer	|Kaine/Linda|
+|3|	To see if there could be some coding made available for Comments in Corrections filing	- - As per business, we are not doing it in the upcoming sprint|Carol|	Kaine/Linda|
 |4|While the user is on selecting the Business/Entity type, update the CCC and Society to appropriate section or change the verbiage	|Carol	|Lorna|
 |5|	Change the “Star” color to Green(instead of Red) in case of success result|	Ian|	Lorna|
-|6|	Review the content of the Assets homepage. This is not a priority, however needs to be included before releasing it to market|		|Bryce/Sandra|
-|7|	Sandra to have a discussion with Change Management about the “Market Date” of releasing the Search feature|	Karla Maria|	Sandra|
-|8|	“Welcome to Corporate Online” heading in the landing page should be changed	|Carol|	Loren|
-|9|	Passcode Error Message “ Can it be more user friendly that business is already associate to another account” Right now it says, Passcode is already consumed	|Janice|	Loren|
+|6|	Review the content of the Assets homepage. This is not a priority, however needs to be included before releasing it to market - All the team needs to review their homepage. This needs to be prioritized in the upcoming PI|		|Bryce/Sandra|
+|7|	Sandra to have a discussion with Change Management about the “Market Date” of releasing the Search feature. Assets team is focusing on Registration first.|	Karla Maria|	Sandra|
+|8|	“Welcome to Coperatives Online” heading in the landing page should be changed	- This will be clarified in the PI planning meeting. WE need to chat with Dev about using the URl and reusing the pages which are created.|Carol|	Loren|
+|9|	Passcode Error Message “ Can it be more user friendly that business is already associate to another account” Right now it says, Passcode is already claimed - There is a ticket to change the message.	|Janice|	Loren|
 
 ----
 ### Feb 4, 2020 - Sprint (Milestone) 22
