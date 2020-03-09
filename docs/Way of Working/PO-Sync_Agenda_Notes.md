@@ -6,6 +6,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Mar, 09, 2020
 ----
+1. Dependency on common components.
 1. Actions items from Sprint review - if there is anything which we need to action.
 1. Review of the vision document which we are going to present in PI meeting.
 1. Review of the Roadmap - There are some changes to the roadmap from Relationship team, so we will quickly go through them.
