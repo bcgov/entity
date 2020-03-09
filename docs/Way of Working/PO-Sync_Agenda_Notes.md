@@ -6,10 +6,14 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Mar, 09, 2020
 ----
-1. Dependency on common components.
-1. Actions items from Sprint review - if there is anything which we need to action.
+1. Dependency on common components- From Entities to Relationship
+    - Update on common components - there has to be a ticket(dependency) created from Relationship side if they are changing something
+    - Discussion about Architecture standpoint as well. Devs to chat about it. Jyoti to setup the meeting.
+1. Actions items from Sprint review - if there is anything which we need to action. Jyoti to setup the meeting with Key devs to take up before PI planning
 1. Review of the vision document which we are going to present in PI meeting.
 1. Review of the Roadmap - There are some changes to the roadmap from Relationship team, so we will quickly go through them.
+    - Jyoti to setup meeting with Thor and Bob for COBRS
+    - Kaine is taking the charge on CRM/CXM. It needs to span out till end of the year.
 
 ----
 Feb, 27, 2020
