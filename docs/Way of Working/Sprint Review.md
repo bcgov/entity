@@ -69,8 +69,7 @@ Name Analysis for Auto-Approval - Lorna - 10 min
 #### Action Items:
 |#|	Description|	Suggested by|	Action Item Assigned to|
 |-| ---------- | ----------- | ---------------------- |
-|1|	Can the “Comment feature” being built up by Entities team be used as common component(re-usable)?
-- There is no work required for now. There might be other use cases where "Comments" feature can be used.|	Loren	|Kaine/Linda|
+|1|	Can the “Comment feature” being built up by Entities team be used as common component(re-usable)?. There is no work required for now. There might be other use cases where "Comments" feature can be used.|	Loren	|Kaine/Linda|
 |2|	Can the staff Edit/delete comments?	NO - Business dont need the ability to delete and Edits |Jennifer	|Kaine/Linda|
 |3|	To see if there could be some coding made available for Comments in Corrections filing	- - As per business, we are not doing it in the upcoming sprint|Carol|	Kaine/Linda|
 |4|While the user is on selecting the Business/Entity type, update the CCC and Society to appropriate section or change the verbiage	|Carol	|Lorna|
