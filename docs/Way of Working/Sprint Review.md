@@ -69,10 +69,10 @@ Name Analysis for Auto-Approval - Lorna - 10 min
 #### Action Items:
 |#|	Description|	Suggested by|	Action Item Assigned to|
 |-| ---------- | ----------- | ---------------------- |
-|1|	Can the “Comment feature” being built up by Entities team be used as common component(re-usable)? [JK]: There is no work required for now. There might be other use cases where "Comments" feature can be used.|	Loren	|Kaine/Linda|
-|2|	Can the staff Edit/delete comments?[JK]: NO - Business dont need the ability to delete and Edits |Jennifer	|Kaine/Linda|
-|3|	To see if there could be some coding made available for Comments in Corrections filing	[JK]: - As per business, we are not doing it in the upcoming sprint|Carol|	Kaine/Linda|
-|4|While the user is on selecting the Business/Entity type, update the CCC and Society to appropriate section or change the verbiage	|Carol	|Lorna|
+|1|	Can the “Comment feature” being built up by Entities team be used as common component(re-usable)? [JK]: There is no work required for now on this. There might be other use cases where "Comments" feature can be used which the team is not aware as of now|	Loren	|Kaine/Linda|
+|2|	Can the staff Edit/delete comments?[JK]: NO - As per discussion with business, they dont need the ability to delete and Edits |Jennifer	|Kaine/Linda|
+|3|	To see if there could be some coding made available for Comments in Corrections filing	[JK]: - As per business, we are not doing it in the upcoming sprints for comments feature|Carol|	Kaine/Linda|
+|4| While the user is on selecting the Business/Entity type, update the CCC and Society to appropriate section or change the verbiage	|Carol	|Lorna|
 |5|	Change the “Star” color to Green(instead of Red) in case of success result|	Ian|	Lorna|
 |6|	Review the content of the Assets homepage. This is not a priority, however needs to be included before releasing it to market.[JK]:  All the team needs to review their homepage. This needs to be prioritized in the upcoming PI|		|Bryce/Sandra|
 |7|	Sandra to have a discussion with Change Management about the “Market Date” of releasing the Search feature.[JK]: Assets team is focusing on Registration first.|	Karla Maria|	Sandra|
