@@ -3,7 +3,6 @@
 ## Steps internal in team
 1. A dev team member (QA or dev) identifies a bug
 2. Create issue by using the Bug Templpate ("bug report"), and label it as "bug" and mark "New Issues" in the ZenHub Pipeline
-* provide the link to a User Story 
 3. Based on the Sprint Goal and the severity of the bug, decide if this bug should be fixed immediately
    - YES, fix now? Inform (in-person/ RocketChat) PO about the amount of effort to fix the bug & the impact on the committed work
    * Decision: High Priority = high severity + high criticality (low, medium or high) is based on 
@@ -15,10 +14,9 @@
 
    a) PO reviews - the bugs in "New Issues" column - with team members (1 dev, 1 QA, 1 BA & SM)  
    b) Set Priority according to the following definition:
-
-   P1 - Immediate must fix.  Internal QA catches and Reported from Prod. 
-   P2 - Major defect/ bug with an intended feature, but has a workaround that can wait till the next release. 
-   P3 - Minor defect with a workaround, may relate to usability. Must be fixed in some future release. 
+      P1 - Immediate must fix.  Internal QA catches and Reported from Prod. 
+      P2 - Major defect/ bug with an intended feature, but has a workaround that can wait till the next release. 
+      P3 - Minor defect with a workaround, may relate to usability. Must be fixed in some future release. 
 
    c) Dev provides estimate for the bug.
    d) Set release version:
@@ -44,11 +42,8 @@ Bi-weekly for 30 min. (see xls "Cadencce & Meeting overview").
 ----
 ## Improvements & Ideas
 1. We need a way to proceed on new high-priority (e.g. blocking) bugs when PO is not available
-2. Clear definition of priority levels (Prio 1, 2, 3) 
-3. Treshold for Releases (e.g. do we move bugs into next Sprint?!) 
-4. Use Prio 2 and Prio 3 label as well?
-   - Prio 2: Should be done soon - next Sprint?
-   - Prio 3: Can be done some time later
+2. Treshold for Releases (e.g. do we move bugs into next Sprint?!) 
+
    
    
    
