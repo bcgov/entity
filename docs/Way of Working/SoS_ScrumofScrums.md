@@ -6,7 +6,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ---
 Mar 10
 ---
-- Stakeholder Feedback loop process - Trish to bring up
+- Stakeholder Feedback loop process - Trish to bring up.
 - Change Management activites for "what they are"
 - UAT and time for UAT - Test Environment availability for Business Owners
 - Process to move to TEST: Inform Trish (for UAT) and see WoW in GitHub - discuss how it works
