@@ -7,7 +7,7 @@
    - YES, fix now? Inform (in-person/ RocketChat) PO about the amount of effort to fix the bug & the impact on the committed work
    * Decision: High Priority = high severity + high criticality (low, medium or high) is based on 
    * Decision Criteria: User Impact, Volume of users, Data impact  
-   * Priority 1: In order to complete the story this bug has to be fixed asap, or Customer is Blocked wihtout a workaround. 
+   * Priority 1: In order to complete the story this bug has to be fixed asap, or Customer is Blocked without a workaround. 
    * All others are not labeled with "Priority"; they are placed in column "Bugs" for future prioritization
 4. Bugs, that are not fixed in the current Sprint move to "New Issues"
 5. At the bi weekly bug triage Meeting: 
