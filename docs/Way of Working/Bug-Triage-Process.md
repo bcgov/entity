@@ -8,10 +8,27 @@
    - YES, fix now? Inform (in-person/ RocketChat) PO about the amount of effort to fix the bug & the impact on the committed work
    * Decision: High Priority = high severity + high criticality (low, medium or high) is based on 
    * Decision Criteria: User Impact, Volume of users, Data impact  
-   * Priority 1: In order to complete the story this bug has to be fixed asap
+   * Priority 1: In order to complete the story this bug has to be fixed asap, or Customer is Blocked wihtout a workaround. 
    * All others are not labeled with "Priority"; they are placed in column "Bugs" for future prioritization
 4. Bugs, that are not fixed in the current Sprint move to "New Issues"
-5. Bug Triage Meeting: PO reviews - the bugs in "New Issues" column - with team members (1 dev, 1 QA, 1 BA) - and move them into the right order in the "Bugs" column. Sprint Goal, priorities, risks, dependencies of the upcoming Sprints help for orientation how to handle bugs. Bi-weekly for 30 min. (see xls "Cadencce & Meeting overview"). 
+5. At the bi weekly bug triage Meeting: 
+
+   a) PO reviews - the bugs in "New Issues" column - with team members (1 dev, 1 QA, 1 BA & SM)  
+   b) Set Priority according to the following definition:
+
+   P1 - Immediate must fix.  Internal QA catches and Reported from Prod. 
+   P2 - Major defect/ bug with an intended feature, but has a workaround that can wait till the next release. 
+   P3 - Minor defect with a workaround, may relate to usability. Must be fixed in some future release. 
+
+   c) Dev provides estimate for the bug.
+   d) Set release version:
+    i) P2s next release
+    ii) P3s any of the next 3 releases. 
+      
+   e) Place into the Bug Column/Pipeline in priority order.
+   
+
+Bi-weekly for 30 min. (see xls "Cadencce & Meeting overview"). 
 * Preparation for this Bug Triage Meeting: QA check if there is a duplicate of this issue (remove duplicates) and confirms if all bugs are reproducable (some bugs could be fixed already) 
 
 ----
@@ -32,4 +49,10 @@
 4. Use Prio 2 and Prio 3 label as well?
    - Prio 2: Should be done soon - next Sprint?
    - Prio 3: Can be done some time later
+   
+   
+   
+   
+
+
 
