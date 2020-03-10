@@ -14,9 +14,9 @@
 
    a) PO reviews - the bugs in "New Issues" column - with team members (1 dev, 1 QA, 1 BA & SM)  
    b) Set Priority according to the following definition:
-      P1 - Immediate must fix.  Internal QA catches and Reported from Prod. 
-      P2 - Major defect/ bug with an intended feature, but has a workaround that can wait till the next release. 
-      P3 - Minor defect with a workaround, may relate to usability. Must be fixed in some future release. 
+    -  __P1__ - Immediate must fix.  Internal QA catches and Reported from Prod. 
+    -  __P2__ - Major defect/ bug with an intended feature, but has a workaround that can wait till the next release. 
+    -  __P3__ - Minor defect with a workaround, may relate to usability. Must be fixed in some future release. 
 
    c) Dev provides estimate for the bug.
    d) Set release version:
