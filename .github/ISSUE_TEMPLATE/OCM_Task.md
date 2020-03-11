@@ -5,20 +5,21 @@
 - [ ] Stakeholder consult - requirements
 - [ ] Stakeholder consult - design
 ---
-- [ ] Website content updates identified and communicated to those that update it
+- [ ] Website content updates or FAQs identified during OCM meeting
 - [ ] FAQs Drafted
 - [ ] FAQs reviewed by **SMEs** (Cameron, Amber, etc.)
-- [ ] FAQs reviewed & approved by **Sinead**
+- [ ] FAQs reviewed & approved by **Sinead** 
 - [ ] FAQs regarding BC Services Card reviewed & approved by **Karla Maria**
 ---
 - [ ] Stakeholder demo before sprint review
 --- 
+- [ ] [Communication Message](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/WopiFrame.aspx?sourcedoc={E8A83D3C-7DC6-46C9-82FA-27FAE2D0BEAD}&file=Release%20%26%20Project%20Communications.docx&action=default) to team lead and SMEs (always)
 - [ ] Communication message to GCPE (if regarding _??)
-- [ ] Communication message to IDIM (if regarding _??)
-- [ ] Communication message to contact centres (Maximus, BC Online, Service BC, Internal Help Desk) (if regarding _??)
+- [ ] Communication message to IDIM (if regarding BC Services Card)
+- [ ] Communication message/demo to contact centres (Maximus, BC Online, Service BC, Internal Help Desk) (if there is impact to their teams)
 ---
-- [ ] [Communication Message](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/WopiFrame.aspx?sourcedoc={E8A83D3C-7DC6-46C9-82FA-27FAE2D0BEAD}&file=Release%20%26%20Project%20Communications.docx&action=default) to _?? for **test** release
 - [ ] Stakeholder access to test/staging environment
+- [ ] Organize practice workshop
 ---
 - [ ] FAQs updated after questions
 ---
