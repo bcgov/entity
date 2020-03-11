@@ -6,12 +6,19 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ---
 Mar 10
 ---
-- Stakeholder Feedback loop process - Trish to bring up.
+- Stakeholder Feedback loop process.
+  - The process have now been socialized with SM's and all PO's
 - Change Management activites for "what they are"
+  - This was specific to Relationship team, Amit can get in touch with Trish to understand the activities
 - UAT and time for UAT - Test Environment availability for Business Owners
 - Process to move to TEST: Inform Trish (for UAT) and see WoW in GitHub - discuss how it works
+  - The above two points were discussed in the meeting. UAT process document has been updated here
+  - https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/UAT-Process.md
+  - Action item: The term UAT doesnt corelates to the actual testing work. Team to agree upon one common terminology. CUrrent options are : BEta testing, Exploratoty testing. Jyoti to bring this up with PO's to get a recommendation.
 - review & discuss Meetings & Events (see xls on SharePoint)
-- walkthrough Vision document which we will be using for PI planning
+  - Tech review has been added. Bryce provided his scrum ceremonies to Jyoti, jyoti to update the meeting event
+- Walkthrough Vision document which we will be using for PI planning
+  - highlevel walkthrough was done in the meeting.
 
 ---
 Feb 25
