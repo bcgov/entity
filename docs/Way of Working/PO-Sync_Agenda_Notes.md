@@ -4,6 +4,16 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * if we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Mar, 13, 2020
+----
+1. COVID-19 Impact to team's way of working
+    1. How do we perform the Sprint review? Remotely?
+    2. If anyone is coming back from Vacation(from abroad), are we asking them to quarintine themselves for 2 weeks and then join office?
+1. Discuss options for X-PRO Solution
+1. Discuss notification delivery dependency
+1. OXD Research
+
+----
 Mar, 09, 2020
 ----
 1. Dependency on common components- From Entities to Relationship
