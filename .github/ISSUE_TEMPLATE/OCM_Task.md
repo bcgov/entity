@@ -69,6 +69,6 @@
 
 - [ ] Save all relevant documents to the SharePoint
 
---
+---
 - [ ] update Trish when activities completed & keep her informed on progress
 
