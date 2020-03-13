@@ -8,10 +8,35 @@ Mar, 13, 2020
 ----
 1. COVID-19 Impact to team's way of working
     1. How do we perform the Sprint review? Remotely?
-    2. If anyone is coming back from Vacation(from abroad), are we asking them to quarintine themselves for 2 weeks and then join office?
-1. Discuss options for X-PRO Solution
+        - Yes, Jyoti to send the Skype invite.
+    1. If anyone is coming back from Vacation(from abroad), as per the recommendation from Government of Canada, its recommended to self-quarintine themselves for 2 weeks and then join work
+1. Discuss options for X-PRO Solution. This is for delegate authentification
+    1. Social Sign In
+    1. One time password
+    Loren is working with Thor, Andrew and Sumesh to have the recommendations drafted. This draft has to goto Bev and Carol by EOD today.
 1. Discuss notification delivery dependency
+    - For Entity, sending the Output and BN number through email after incorporation.
+    - Which email are we using? - User Profile, Business contact info?
+    - Modify the template which Loren has. The email template has to be updated by Entities team.
+    - To have a technical meeting, to udnerstand the notification flow. Jyoti to setup that(Use the Tech Review Meeting. Send the Agenda)
+    - Sending the document along with email needs more work from Loren's team
+    - Linda/Jyoti to have the flow ready for how are we using the notification?
+    - There could be a possibility of "In-App" notification but in the next PI.
 1. OXD Research
+    - Sandra to put the list of things by Monday EOD to send it to Claire for research work.
+    - Loren and Sandra to sync up on this topic.
+    - 55 hours for last week of March
+    - 55 hours for first two weeks of April
+    - 70 hours for last two weeks of April
+        - Loren to confirm the hours.
+1. Working Group for Regualtion change
+    - Sandra, Bryce, Carol and Kevin met and recommended for a working group for Regulation change
+    - Sandra and Kaine to have a chat about engaging different groups.
+1. Documentation
+    - Use the G-Suite for documentation till the time there is any other recommendation from other team
+    - Jyoti to invite Assets team for starting the documentation work.
+1. Commom Components 
+    - Jyoti has this topic for Tech Review
 
 ----
 Mar, 09, 2020
