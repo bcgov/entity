@@ -20,6 +20,19 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 
+### March 17, 2020 - Sprint (Milestone) 25 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+#### Assets
+* xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Entities
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Name Request
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Relationships
+* Director Search - xx- Clark & Julie (countable) - x min 
+* Enter different formats for CP numbers - 2812 - Niteesh - 3 min
+
 ----
 ### Mar 3, 2020 - Sprint 24 - 55 min. total
 ----
