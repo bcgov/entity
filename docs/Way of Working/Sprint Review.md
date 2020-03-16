@@ -28,9 +28,9 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Name Request
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* will not be presenting on March 17
 #### Relationships
-* Director Search - Clark (countable) - ~20mins + 5mins Q&A?
+* Director Search - Clark (countable) - ~20 min + 5mins Q&A
 * Enter different formats for CP numbers - 2812 - Niteesh - 3 min
 
 ----
