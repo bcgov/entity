@@ -25,10 +25,11 @@ Mar, 13, 2020
 1. OXD Research
     - Sandra to put the list of things by Monday EOD to send it to Claire for research work.
     - Loren and Sandra to sync up on this topic.
-    - 55 hours for last week of March
-    - 55 hours for first two weeks of April
-    - 70 hours for last two weeks of April
-        - Loren to confirm the hours.
+    - Hours allocated as of now:
+        - 55 hours for last week of March
+        - 55 hours for first two weeks of April
+        - 70 hours for last two weeks of April
+            - Loren to confirm the hours.
 1. Working Group for Regualtion change
     - Sandra, Bryce, Carol and Kevin met and recommended for a working group for Regulation change
     - Sandra and Kaine to have a chat about engaging different groups.
