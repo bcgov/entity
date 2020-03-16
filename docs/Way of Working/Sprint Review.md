@@ -30,7 +30,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Name Request
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
-* Director Search - xx- Clark & Julie (countable) - x min 
+* Director Search - Clark (countable) - ~20mins + 5mins Q&A?
 * Enter different formats for CP numbers - 2812 - Niteesh - 3 min
 
 ----
