@@ -24,7 +24,8 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 #### Assets
-* xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* Registering a Financing statement - Bryan - 7 min 
+* API Flow - Justin - 3 min
 #### Entities
 * Add People And Roles ( Step 2 & Step 5 ) Epic#2151 - Cameron - 10 min 
 #### Name Request
