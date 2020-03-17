@@ -34,6 +34,15 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * Director Search - Clark (countable) - ~20 min + 5mins Q&A
 * Enter different formats for CP numbers - 2812 - Niteesh - 3 min
 
+#### Feedback Captured
+
+| # | Feedback | Provided by | Updates shared from team |
+|---|----------|-------------| ------------------------ |
+| 1 | Overall look and feel of UI for "registering a financing statement" should follow the same standards which the other teams are following |  Kaine | Yes, the intent/direction is that the look and feel of the application would be similar across apps. These changes would be visible in the upcoming sprint |
+| 2 | Switching between Business and Person should be similar to other apps | Kaine | This would require some co-ordination between the teams |
+| 3 | Validation of Business/Corporation through Org Book for both Entities and Assets team | Ian |This is currently not on the Roadmap and hence not part of the minimum viable product  |
+| 4 | Auditability of Director Search Results | Kevin | Yes, there would be audit on search results, however |
+| 5 |  |   |
 ----
 ### Mar 3, 2020 - Sprint 24 - 55 min. total
 ----
