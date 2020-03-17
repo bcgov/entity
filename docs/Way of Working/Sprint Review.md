@@ -26,7 +26,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Assets
 * xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Entities
-* BComp Step 2 - People and Roles and Setp 5 - Cameron - 10 min 
+* BComp Step 2 - People and Roles and Step 5 - Cameron - 10 min 
 #### Name Request
 * will not be presenting on March 17
 #### Relationships
