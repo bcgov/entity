@@ -62,4 +62,8 @@ In case, more information is required, please contact ..First Name, Last Name.. 
     - If the ticket is technical in nature, this can be brought up in SoS as well so that we can RTE/SM's can cordinate the discussion
     - These tickets gets eventually discussed in PO Sync for prioritization and scheduling
     
+
 ----
+ideas for future:
+- open step is - that it doesn´t go to/ through the PO´s and their Sprint Planning?!
+- it doesn't go through the BAs and goes directly to devs...under the table
