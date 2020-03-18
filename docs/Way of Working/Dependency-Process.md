@@ -67,3 +67,4 @@ In case, more information is required, please contact ..First Name, Last Name.. 
 ideas for future:
 - open step is - that it doesn´t go to/ through the PO´s and their Sprint Planning?!
 - it doesn't go through the BAs and goes directly to devs...under the table
+- Other teams create a Dependency ticket with us, socialize with PO and then decide to do it in current sprint or not
