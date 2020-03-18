@@ -7,4 +7,4 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Mar, 18, 2020
 ----
 - Usage of Common componetns. When there is a change made to common components, how it needs to be communicated etc.?
-- 
+- Technical Demo - Notification Flow
