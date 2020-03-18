@@ -14,6 +14,37 @@ A dependency can be identified either via:
 - or it can be identified on an ad-hoc basis
 
 ----
+
+#### How to identify dependencies across teams (make them visible)
+----
+- When a dependency is identified, the team - with the help of Scrum Master - should create a ticket (label as Story) in ZenHub.
+- This story should be linked to the Parent Epic of the respective team by using the "Blocked By" label in ZenHub
+- Provide details using the Dependency template. 
+- Label this ticket with "Dependency". 
+- The PO's need to pick this dependency up in a PO Sync. to discuss.
+- Assign this ticket to the BA of the respective ..team.. whom its dependent on
+- If you are aware about the Epic of the other team, where this dependency is going to be delivered, tag the Epic as well
+- Make sure the PO is informed/involved and decides if this item will be worked on.
+- The PO brings this item into refinement or Planning session.
+
+----
+
+#### Communication for Dependencies across team
+----
+- Once a ticket is created using the dependency template and and following the steps:
+  - Assigned to BA
+  - Have the label "Dependency"
+  - Story is linked to the Epic (if you know which Epic it is) 
+  then
+    - BA's pick these tickets and discuss in the BA guild to clarify the requirements 
+    - BA of the respective team brings this item into daily standup meeting and assign the right person
+    - The team estimates the work, agrees on timelines and update in the ticket
+    - The BA comments and updates the other BA on timeline
+    - If the ticket is technical in nature, this can be brought up in SoS as well so that we can RTE/SM's can cordinate the discussion
+    - These tickets gets eventually discussed in PO Sync for prioritization and scheduling
+    
+----
+
 #### Dependency template
 ----
 When a dependency is identified, it needs to be documented and made visible in ZenHub
@@ -41,30 +72,5 @@ In case, more information is required, please contact ..First Name, Last Name.. 
 - This is live in ZenHub so can be used by anyone
 ----
 
-#### How to identify dependencies across teams (make them visible)
-----
-- When a dependency is identified, the team - with the help of Scrum Master - should create a ticket (label as Story) in ZenHub.
-- This story should be linked to the Parent Epic of the respective team by using the "Blocked By" label in ZenHub
-- This ticket initially might have high level details, but over period of time or near to deadline, this should have all the details needed for the other team to action upon.
-- Label this ticket with "Dependency". This will help the PO's to pick this dependency up in a PO Sync. to discuss.
-- Assign this ticket to the BA of the respective ..team.. whom its dependent on
-- If you are aware about the Epic of the other team, where this dependency is going to be delivered, tag the Epic as well
-
-----
-
-#### Communication for Dependencies across team
-----
-- Once a ticket is created and has below information:
-  - Assigned to BA
-  - Have the label "Dependency"
-  - Story is linked to the Epic (if you know which Epic it is) 
-    - BA's can pick these tickets and start discussing in the BA guild meeting to clarify the requirements
-    - If the ticket is technical in nature, this can be brought up in SoS as well so that we can RTE/SM's can cordinate the discussion
-    - These tickets gets eventually discussed in PO Sync for prioritization and scheduling
-    
-
-----
 ideas for future:
-- open step is - that it doesn´t go to/ through the PO´s and their Sprint Planning?!
-- it doesn't go through the BAs and goes directly to devs...under the table
-- Other teams create a Dependency ticket with us, socialize with PO and then decide to do it in current sprint or not
+- The SM checks in with team about this process
