@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-* As a (type of user)
-* I want (goal) 
+* As the xxx team - for (user)
+* we want (goal) - by the other team 
 * so that (reason/ why/ value) 
 
 **Expected Behavoir - Acceptance Criteria**	
@@ -20,8 +20,9 @@ assignees: ''
 
 *Scenario 2???
 
-* Impact if you do not get this input 
-* When do you need it delivered (what Sprint/ Milestone or date) 
-* Contact Person to get more information when needed re this Story: 
+* Impact if you do not get this item
+* Deadline - This item needs to be delivered/ done by Sprint <#>
+* Contact Person In case, more information is required, please contact ... (First Name, Last Name)
 
 ----
+
