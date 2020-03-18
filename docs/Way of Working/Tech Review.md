@@ -8,7 +8,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 - Usage of Common componetns. When there is a change made to common components, how it needs to be communicated etc.?
   - Ideas?
-    1. Can we use release notes? Something like NPM packages?
+   1. Can we use release notes? Something like NPM packages?
       - A release note might contain a list of PR with their links by version of what has changed
         - Create a PR template to help understand what needs to be documented in the PR
       - It could be just a text document, wiki page etc.
