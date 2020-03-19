@@ -7,8 +7,10 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Mar, 19, 2020
 ----
-a.	Upcoming Dependencies discussion. I don’t have the list of dependencies, so would look up to PO’s to bring anything up where there is a dependency else we can go through what we have from PI planning.
-b.	Updates from myself RE: COBRS discussion and Tech Review
+1.	Upcoming Dependencies discussion. I don’t have the list of dependencies, so would look up to PO’s to bring anything up where there is a dependency else we can go through what we have from PI planning.
+1. Static Text - Help Text in the application - common approach & design
+1. Formal process for triaging requests between teams
+1.	Updates from myself RE: COBRS discussion and Tech Review
 
 ----
 Mar, 13, 2020
