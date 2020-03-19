@@ -9,8 +9,20 @@ Mar, 19, 2020
 ----
 1.	Upcoming Dependencies discussion. I don’t have the list of dependencies, so would look up to PO’s to bring anything up where there is a dependency else we can go through what we have from PI planning.
 1. Static Text - Help Text in the application - common approach & design
+   -  ensuring a consistent design/UI for displaying help text in the application, across all Registry products (other than tool tips),
+        - Relationship team overall ownership of UI including help
+        - Little study on information structure.(Tools like Jamstack)
+        - Linda and team to discuss to comeup with a proposal. Proposal might include - What problem are we trying to solve? and how are we going to solve it? Interactions and help text across teams.
+        - Usability testin is an important aspect of providing help information.
+        - 2 Weeks from now - 
+            - And then discuss with other PO's.
+    - ensuring the use of plain language and tone,
+    - the process to update/review/approve content is efficient, and
+    - we’ve considered what static content will live on the website vs. the application.
 1. Formal process for triaging requests between teams
-1.	Updates from myself RE: COBRS discussion and Tech Review
+    - Remote working - this is working well
+    - Scrum Masters to discuss this and take another crack to see what works best for three teams.
+1. Updates from myself RE: COBRS discussion and Tech Review
 
 ----
 Mar, 13, 2020
