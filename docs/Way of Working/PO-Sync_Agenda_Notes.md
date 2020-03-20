@@ -28,6 +28,8 @@ Mar, 19, 2020
     - Remote working - this is working well
     - Scrum Masters to discuss this and take another crack to see what works best for three teams.
 1. Updates from myself RE: COBRS discussion and Tech Review
+   - Include Ian B in the upcoming meetings
+   - Tech Review: Jyoti to run the tech review for few more instances and then see if the frequency needs to be increased.
 
 ----
 Mar, 13, 2020
