@@ -1,8 +1,9 @@
 This document is to record our agreements we made for the logistics of working from home
 
 ## common:
-#### Team Estimations using FirePoker.io
-#### Retrospectives using FunRetro.io
+#### Estimation in Refinement and Planning:   FirePoker.io
+#### Retrospective:   FunRetro.io
+#### Sprint Review:   Skype for Business
 
 ----
 
