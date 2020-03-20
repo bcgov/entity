@@ -6,7 +6,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Mar 24
 ---
 - Scrum Masters to discuss the process to improve the adhoc requests from developers.
-- De brief of PI meeting
+- De brief of PIP 2
 - Remote working plan discussion - if required
 
 ---
