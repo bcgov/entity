@@ -2,6 +2,12 @@
 **Topics for Scrum of Scrums are listed below - to the date**
 Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
+---
+Mar 24
+---
+- Scrum Masters to discuss the process to improve the adhoc requests from developers.
+- De brief of PI meeting
+- Remote working plan discussion - if required
 
 ---
 Mar 10
