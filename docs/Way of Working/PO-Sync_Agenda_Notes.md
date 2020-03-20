@@ -3,6 +3,11 @@
 Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * if we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
+----
+Mar, 26, 2020
+----
+1. UAT testing for Staff. UAT process was discussed in SOS and there are some inputs required.UAT process is documented here:-  https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/UAT-Process.md
+1.  
 
 ----
 Mar, 19, 2020
