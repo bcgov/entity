@@ -1,5 +1,11 @@
 This document is to record our agreements we made for the logistics of working from home
 
+## common:
+#### Team Estimations using FirePoker.io
+#### Retrospectives using FunRetro.io
+
+----
+
 ## Entities:
 ### Tools:
 #### Team Meetings using Google Meet : 
@@ -8,9 +14,6 @@ This document is to record our agreements we made for the logistics of working f
   * When joining the meeting, ask **Google Meet** to call your phone and use your phone for audio. 
   * Please turn off your camera/video sharing. **Tip** Turn on or off camera	⌘/Ctrl + e
 * Please stay on mute unless your are speaking. **Tip** Mute or unmute your microphone	⌘/Ctrl + d
-
-#### Team Estimations using FirePoker.io
-#### Retrospectives using FunRetro.io
 
 ----
 
