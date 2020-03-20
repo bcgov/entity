@@ -1,28 +1,26 @@
 UAT - This needs to change
 ----
 
-
 **Note**
 - Staff has access to ZenHub
 - Users Stories contain business language and staff should be able to understand stories (Ideally)
 - only ask staff to " UAT" changes that impact them directly. This can be Staff filing. 
 - UAT implies that there is an 'acceptance/sign-off' before going to market. 
-  - This is not true
-- We don't need acceptance for all changes with staff, but what they need is awareness and understanding so they can support the client. 
-  - 
-- Staff needs to be engaged early on, so staff feel a part of the process and have an opportunity to provide insight and business knowledge that may be needed for the design
-- If a change is more complex and impacts the client, staff may need a "hands-on" opportunity to preview the changes prior to going live (not UAT) to ensure they understand how it will be used so they can support the client. 
+  - This is not true for BC ROS.
+- What UAT means for Staff in BC ROS:-
+  - We don't need acceptance for all changes with staff, but what they need is awareness and understanding so they can support the client. 
+  - Staff needs to be engaged early on, so staff feel a part of the process and have an opportunity to provide insight and business knowledge that may be needed for the design
+  - If a change is more complex and impacts the client, staff may need a "hands-on" opportunity to preview the changes prior to going live (not UAT) to ensure they understand how it will be used so they can support the client. 
+- Since the above is not actual sign off/acceptance from staff, we are calling this activity as "Exploratory testing".
 - During the OCM checkpoint, we review upcoming releases and work on the change plan...part of that planning is asking staff if they would like some hands-on time to preview the changes or UAT (e.g., for a staff filing like Corrections) before going live. 
 
 **Process**
-
-
 
 **Entities: - We understand that for Entities:**
 - This has to be confirmed
 PO or BA labels the relevant stories/ ZenHub items to for the appropriate release 
 Decision is made which stories/ items are relevant for UAT(Exploratory testing)
-John approves going to UAT (Exploratory testing)
+John approves going to Exploratory testing
 
 
 **Questions**
