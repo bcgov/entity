@@ -1,6 +1,6 @@
-This document is to record our agreements we made for the logistics of working from home, for the Entities team. 
+This document is to record our agreements we made for the logistics of working from home
 
-## General agreements:
+## Entities:
 ### Tools:
 #### Team Meetings using Google Meet : 
 * Can be initiated by any of the Freshworks team members (Shahriar, Cameron, Peter or Sienna).
@@ -12,3 +12,8 @@ This document is to record our agreements we made for the logistics of working f
 #### Team Estimations using FirePoker.io
 #### Retrospectives using FunRetro.io
 
+----
+
+## Relationships:
+- Tool: Zoom - Jeremy has a licence and shares the link in the Rocket Chat team group with all a few min before 
+- Everyone is welcome to chat or call with the other team member using any tool you have installed 
