@@ -5,9 +5,10 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ---
 Mar 24
 ---
-- Scrum Masters to discuss the process to improve the adhoc requests from developers.
+- Scrum Masters to discuss the process to improve the ad-hoc requests from developers (to other teams)
 - De brief of PIP 2
-- Remote working plan discussion - if required
+- Remote working plan discussion - if required, exist. doc see here:
+https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Remote-work.md
 
 ---
 Mar 10
