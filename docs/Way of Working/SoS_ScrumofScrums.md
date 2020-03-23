@@ -9,6 +9,8 @@ Mar 24
 - De brief of PIP 2
 - Remote working plan discussion - if required, exist. doc see here:
 https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Remote-work.md
+- Shahriar on progress re Test-Automation that he wanted to drive:
+https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/DevOps%20%26%20Test-Automation.md
 
 ---
 Mar 10
