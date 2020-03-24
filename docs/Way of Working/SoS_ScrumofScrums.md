@@ -6,12 +6,26 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Mar 24
 ---
 - Scrum Masters to discuss the process to improve the ad-hoc requests from developers (to other teams)
-- De brief of PIP 2
+  - Block of time in the Sprint planning for team for cross dependency.
+  - Use the dependency process
+  - Add more documentation to the common components
+  - Use Tech Review for demoing Common Components
+  - Jyoti to have a discussion with Thor about:
+    - What are the common components? List of all the common components
+       - https://github.com/bcgov/sbc-common-components/tree/master/vue/sbc-common-components
+    - Common components vs Components
+    - how is it being decided a components has to be converted to common components?
+    - Is there a process, if not, can we implement someone?
+
 - Remote working plan discussion - if required, exist. doc see here:
 https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Remote-work.md
 - Shahriar on progress re Test-Automation that he wanted to drive:
 https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/DevOps%20%26%20Test-Automation.md
+  -  Jyoti to take this ownership. and work with Thor/John/Roland
+- Team contact details. Since we will be going to 
 
+- De brief of PIP 2
+  - 
 ---
 Mar 10
 ---
