@@ -6,6 +6,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Mar 24
 ---
 - Scrum Masters to discuss the process to improve the ad-hoc requests from developers (to other teams)
+  Here are some ideas:
   - Block of time in the Sprint planning for team for cross dependency.
   - Use the dependency process
   - Add more documentation to the common components
@@ -19,13 +20,39 @@ Mar 24
 
 - Remote working plan discussion - if required, exist. doc see here:
 https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/Remote-work.md
+
 - Shahriar on progress re Test-Automation that he wanted to drive:
 https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/DevOps%20%26%20Test-Automation.md
-  -  Jyoti to take this ownership. and work with Thor/John/Roland
-- Team contact details. Since we will be going to 
+  -  Jyoti to take this ownership. and work with Thor/John/Roland to review the next steps
+
+- Team contact details. Since we will be working in remote way of working for quite some time. @Scrum Masters: If you can please add the team members phone number to this list that would be great.
+@Linda: Can you add the busines folks in the XLS
+@Simona: To share the list of Names folks
 
 - De brief of PIP 2
-  - 
+  - Feedback from Jyoti:
+    - Some of the Retro items:
+      - Very good output as team collaborated really wel
+      - Shorten the workshop to half day
+      - If there is a major decision which impacts other team, that should be shared before the meeting
+  - Feedback from Waldemar:
+    - Alignment between teams in terms of using the program board vs team boards
+      - Bryce was not involved in the planning workshop because of other priorities. Better co-oridnation required for next PI
+    - CM Activities not visible
+      - Teams are supposed to embed the change activities in their planning.
+      - Entities team really did a good job
+      - More planning is required from relationship team before the PI.
+      - Trish is now more involved with Amit and Loren
+    - Faciliation to be infront of the room
+  - Feedback from Bryce
+    - Confidence vote -> there should be atleast two rounds of confidence voting
+    - Outcome of the meeting should be the program board. We should go back to program board towards the end of the workshop to make sure everyone gets the updated picture.
+  - Feedback from Simona
+    - Techniques to use the room effectively. Setup the speaker space in a way that the speaker can see the room
+  - Feedback from Shahriar
+    - Information dissemination to team after PI planning meeting
+  - Feedback from Linda
+    - Having the releases really helped the team to plan and visualize the Change management activities.
 ---
 Mar 10
 ---
