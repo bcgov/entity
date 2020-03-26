@@ -19,7 +19,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
-
+----
 ### March 31, 2020 - Sprint (Milestone) 26 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
@@ -32,7 +32,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 
-
+----
 ### March 17, 2020 - Sprint (Milestone) 25 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
