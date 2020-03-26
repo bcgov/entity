@@ -17,7 +17,8 @@ Mar, 26, 2020
    1. for decision: ppr production content- keep it standing or remove from cluster?
    1. advise needed: before we unplug, what dependencies does we need to consider?
    1. for discussion: API specs doc approach
-3.Loren agree w. Kaine: Business profile: need to make email field as a mandatory input by user. #3080
+ 
+* 3.Loren agree w. Kaine: Business profile: need to make email field as a mandatory input by user. #3080
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/3080
 4. Jyoti to bring up Organizational level changes(if there is anything required)
 
