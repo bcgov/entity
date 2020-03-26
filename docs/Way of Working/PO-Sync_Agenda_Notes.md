@@ -12,7 +12,12 @@ Apr, 02, 2020
 Mar, 26, 2020
 ----
 1. UAT testing for Staff. UAT process was discussed in SOS and there are some inputs required.UAT process is documented here:-  https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/UAT-Process.md
-1.  
+1. Sandra wants to discuss below topics:
+   1. for décision: roi on prototyping ppr
+   1. for decision: ppr production content- keep it standing or remove from cluster?
+   1. advise needed: before we unplug, what dependencies does we need to consider?
+   1. for discussion: API specs doc approach
+1. Jyoti to bring up Organizational level changes(if there is anything required)
 
 ----
 Mar, 19, 2020
