@@ -12,7 +12,7 @@ Apr, 02, 2020
 Mar, 26, 2020
 ----
 1. UAT testing for Staff. UAT process was discussed in SOS and there are some inputs required.UAT process is documented here:-  https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/UAT-Process.md
-  - Recommendation to go forward with : "User testing" for staff
+    - Recommendation to go forward with : "User testing" for staff
 1. Sandra wants to discuss below topics: - For Decision:
    - ROI on prototyping ppr
       - Decission to move forward with this. Financing statement, search, dashboard. These will be wireframes or HTML mockup.
