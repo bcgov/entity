@@ -32,7 +32,7 @@ Mar, 26, 2020
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/3080
     - Ticket has been updated.
 1. Jyoti to bring up Organizational level changes(if there is anything required)
-    - Waldemar is going to roll off by end of this month(31st March)
+    - Waldemar and Bryan is going to roll off by end of this month(31st March)
 1. Information architecture
     - Proposal to be sent to Linda, Kaine and Thor after Loren reviews it.
     - To be done by Next PO SYNC
