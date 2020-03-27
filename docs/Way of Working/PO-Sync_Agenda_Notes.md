@@ -25,8 +25,9 @@ Mar, 26, 2020
       - No concerns from any other team
    - API specs doc approach
       - During the course of documentation, some resource would be required from Loren and Kaine team.
-  * Lessons learnt 
-    - Do we need to involve more folks apart from Assets team?
+    - Lessons learnt 
+      - Do we need to involve more folks apart from Assets team?
+        - Sandra to conduct the lessons learnt within Assets team and circulate the results/outcome to PO's.
 1. Loren agree w. Kaine: Business profile: need to make email field as a mandatory input by user. #3080
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/3080
     - Ticket has been updated.
