@@ -15,23 +15,23 @@ Mar, 26, 2020
   - Recommendation to go forward with : "User testing" for staff
 1. Sandra wants to discuss below topics: - For Decision:
    - ROI on prototyping ppr
-    - Decission to move forward with this. Financing statement, search, dashboard. These will be wireframes or HTML mockup.
-    - Demo for PO's on April 7th
-    - Kevin is working on the list of Regulatory changes required in order to start the PPR again in Fiscal year. Probably by end of next month.
+      - Decission to move forward with this. Financing statement, search, dashboard. These will be wireframes or HTML mockup.
+      - Demo for PO's on April 7th
+      - Kevin is working on the list of Regulatory changes required in order to start the PPR again in Fiscal year. Probably by end of next month.
    - PPR production content- keep it standing or remove from cluster?
-    - This shoud be put down as it takes resources. 
-    - Can be done as per team convienence. 
+      - This shoud be put down as it takes resources. 
+      - Can be done as per team convienence. 
    - Advise needed: before we unplug, what dependencies does we need to consider?
-    - No concerns from any other team
+      - No concerns from any other team
    - API specs doc approach
-    - During the course of documentation, some resource would be required from Loren and Kaine team.
+      - During the course of documentation, some resource would be required from Loren and Kaine team.
   * Lessons learnt 
     - Do we need to involve more folks apart from Assets team?
 1. Loren agree w. Kaine: Business profile: need to make email field as a mandatory input by user. #3080
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/3080
-- Ticket has been updated.
+    - Ticket has been updated.
 1. Jyoti to bring up Organizational level changes(if there is anything required)
-  - Waldemar is going to roll off by end of this month(31st March)
+    - Waldemar is going to roll off by end of this month(31st March)
 1. Information architecture
     - Proposal to be sent to Linda, Kaine and Thor after Loren reviews it.
     - To be done by Next PO SYNC
