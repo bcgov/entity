@@ -12,14 +12,30 @@ Apr, 02, 2020
 Mar, 26, 2020
 ----
 - (1) UAT testing for Staff. UAT process was discussed in SOS and there are some inputs required.UAT process is documented here:-  https://github.com/bcgov/entity/blob/master/docs/Way%20of%20Working/UAT-Process.md
+  - User testing for staff
 - (2) Sandra wants to discuss below topics: - For Decision:
    * ROI on prototyping ppr
-   * ppr production content- keep it standing or remove from cluster?
-   * advise needed: before we unplug, what dependencies does we need to consider?
+    - Decission to move forward with this. Financing statement, search, dashboard. These will be wireframes or HTML mockup.
+    - Demo for PO's on April 7th
+    - Kevin is working on the list of Regulatory changes required in order to start the PPR again in Fiscal year. Probably by end of next month.
+   * PPR production content- keep it standing or remove from cluster?
+    - This shoud be put down as it takes resources. 
+    - Can be done as per team convienence. 
+   * Advise needed: before we unplug, what dependencies does we need to consider?
+    - No concerns from any other team
    * API specs doc approach
+    - During the course of documentation, some resource would be required from Loren and Kaine team.
+  * Lessons learnt 
+    - Do we need to involve more folks apart from Assets team?
 - (3) Loren agree w. Kaine: Business profile: need to make email field as a mandatory input by user. #3080
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/3080
+- Ticket has been updated.
 - (4) Jyoti to bring up Organizational level changes(if there is anything required)
+  - Waldemar is going to roll off by end of this month(31st March)
+  - Brian Snopek is also rolling off by end of this month(31st March)
+- (5) Information architecture
+    - Proposal to be sent to Linda, Kaine and Thor after Loren reviews it.
+    - To be done by Next PO SYNC
 
 ----
 Mar, 19, 2020
