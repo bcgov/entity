@@ -24,7 +24,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 #### Assets
-* xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* no demo today - good bye, and thanks for everything
 #### Entities
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Name Request
