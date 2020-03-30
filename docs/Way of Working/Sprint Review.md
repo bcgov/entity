@@ -26,7 +26,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Assets
 * no demo today - good bye, and thanks for everything
 #### Entities
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* Business ID Keycloak + URL + Bug fixes - Severin - 5 min 
 #### Name Request
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
