@@ -19,6 +19,20 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
+----
+### April 14, 2020 - Sprint (Milestone) 27 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+#### Assets
+* xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Entities
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Name Request
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Relationships
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
 ----
 ### March 31, 2020 - Sprint (Milestone) 26 - 55 min. total 
 ----
