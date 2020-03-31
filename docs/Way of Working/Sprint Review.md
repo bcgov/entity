@@ -31,7 +31,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * Replaced the auto-analyze mock server with api, additions to auto-analyze to handle multiple issues, send to examination additional names, submission details. - Lorna - 10 min 
 #### Relationships
 * Product Selector - 3007 - Andrew - 6 min 
-* Director Search - xxx - Saravan - x min (Create Director Search Account, etc.) - 20 min
+* Director Search - Saravan - (Create Director Search Account, etc.) - 20 min
 
 ----
 ### March 17, 2020 - Sprint (Milestone) 25 - 55 min. total 
