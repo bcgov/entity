@@ -47,6 +47,16 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * Product Selector - 3007 - Andrew - 6 min 
 * Director Search - Saravan - (Create Director Search Account, etc.) - 20 min
 
+Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|-------------|--------------------|-------------------------|
+| 1 | For Name Request, Image background can be used or not | Ian | Kaine |
+| 2 | User research needs to be done for going through the entity list and finding appropriate place for entity type| Cameron |  Kaine |
+| 3 | Business Process to be implemented for managing the identity maangement while accessing Director Search | Carol | NA |
+| 4 | More pressing communication needs to be done to make sure Owners are aware that there is a different process of getting invitation for accessing applications | Simona | Loren |
+| 5 | To share the Policy confirmation for the Certify section to be used as such | Loren | Kaine|
+
+
 ----
 ### March 17, 2020 - Sprint (Milestone) 25 - 55 min. total 
 ----
