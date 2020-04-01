@@ -4,9 +4,14 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * if we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
-Apr, 02, 2020
+Apr, 09, 2020
 ----
 1. Linda to bring the proposal for "Static text - help text in the application"
+----
+Apr, 03, 2020
+----
+1. Discussion about Business profile: need to make email field as a mandatory input by user. #3080
+https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/3080
 
 ----
 Mar, 26, 2020
