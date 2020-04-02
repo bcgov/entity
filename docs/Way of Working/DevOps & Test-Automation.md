@@ -68,4 +68,22 @@ https://app.zenhub.com/files/157936592/958b20d9-f077-4ca0-aa9c-b42a94cccce1/down
 * We agreed that Thor will create user stories and link them to this Epic.
 * Thor is working together with Roland Stens and John Lane.
 
-
+** Rough Notes
+## Whats the scope of work
+- Automated build of Environments and import of relevant configurations(Env in Question: Dev/Test/Prod)
+- Automated Integration Tests
+    - Is Github actions part of this?
+    - When test gets kicked off, all the other integrated components are not impacted
+- Regression testing
+    - How much of this needs tobe automated
+    - Is this covered in Night watch?
+- Metrics in terms of Monitoring of App
+    - What have we done alredy?
+    - How much we want to do more?
+    
+## Steps of the action plan:
+- Gather information about gaps and come up with scope
+- To have a story workshop and define the requirements in Epics and stories
+    - Perform estimation to understand how big the work is.
+    - Prirotize and define MVP for this work
+    
