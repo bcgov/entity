@@ -12,6 +12,7 @@ Apr, 03, 2020
 ----
 1. Discussion about Business profile: need to make email field as a mandatory input by user. #3080
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/3080
+2. Release planning process- technical dependencies between teams.
 
 ----
 Mar, 26, 2020
