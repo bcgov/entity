@@ -6,7 +6,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Apr, 17, 2020
 ----
-1. To discuss the "Registeries roadmap" with all PO's and invite thor for the same.
+1. To discuss the "Registeries roadmap" with all PO's(invite thor for the same)
 
 ----
 Apr, 09, 2020
