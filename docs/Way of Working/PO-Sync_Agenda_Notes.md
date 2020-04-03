@@ -12,8 +12,14 @@ Apr, 03, 2020
 ----
 1. Discussion about Business profile: need to make email field as a mandatory input by user. #3080
 https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/3080
+    a. Can we check the data from database to see if the email address from business contact and user profile is same? If yes, it can be prepopulated.
+    b. Email at the account level is mandatory but not at the business level
+    c. Action items:
+        1. Get all the emails for CO-OPs. Loren to check with Steven. Change management needs it as well.
+        2. BA's to confirm the user flows. Can we reconcile this?
 2. Release planning process- technical dependencies between teams.
-
+    a. Timing of the release changed where the Dev's was not sure when its going 
+    b. Jyoti to work throguh this process - and work on the alignment of releases between teams.
 ----
 Mar, 26, 2020
 ----
