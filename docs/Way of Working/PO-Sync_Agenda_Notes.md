@@ -12,6 +12,8 @@ Apr, 17, 2020
 Apr, 09, 2020
 ----
 1. Linda to bring the proposal for "Static text - help text in the application"
+1. To discuss the release cadence process.
+
 ----
 Apr, 03, 2020
 ----
