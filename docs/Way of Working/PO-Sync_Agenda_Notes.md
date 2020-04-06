@@ -2,7 +2,7 @@
 **Topics for PO-Sync. to discuss between PO´s**
 Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
-* if we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
+* If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
 Apr, 17, 2020
 ----
