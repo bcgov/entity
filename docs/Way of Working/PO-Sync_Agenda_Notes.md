@@ -37,7 +37,7 @@ Apr, 09, 2020
 - For Problem Statement D) If the team agrees on a set release cadence as described in the above point, then the release planning can be done accordingly with the PO’s for all future releases. 
     - Release cadence – Have releases from both the teams on Tuesdays after the sprint. This can be treated as a set date unless anything urgent comes up.
 
-## To discuss the test automation and DEvOps proposal
+## To discuss the test automation and DevOps proposal
 ### Phase 1:
 #### Timeline : <>
 - Somebody to lead the DevOps work who can drive the value of automation and DevOps through continuous improvements.
