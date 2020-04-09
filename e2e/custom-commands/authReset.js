@@ -19,7 +19,7 @@ authReset.prototype.command = function () {
         var auth = 'Bearer ' + result.value;
         var options = {
             'method': 'POST',
-            'url': 'https://auth-api-dev.pathfinder.gov.bc.ca/test/reset',
+            'url': 'https://auth-api-test.pathfinder.gov.bc.ca/test/reset',
             'headers': {
                 'Content-Type': 'application/json',
                 'Authorization': auth 
@@ -28,8 +28,9 @@ authReset.prototype.command = function () {
         
         request(options, function (error, response) { 
             if (error) {
-                console.log(error);
+                console.log("Auth reset failed: " + error);
             }
+            console.log("Auth reset complete: " + response.statusCode);
             self.emit('complete');
         });
 

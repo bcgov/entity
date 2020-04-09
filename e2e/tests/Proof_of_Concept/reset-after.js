@@ -1,14 +1,16 @@
 module.exports = {
-    '@tags': ['single'],
+    '@tags': [''],
 
     'POST data to the auth reset tool': function (browser) {
         bcsc = browser.page.bcscPage();
         browser.url(browser.globals.launch_url);
-        bcsc.loginWithBCSC(process.env.ServiceCard2, process.env.ServiceCard2Pw);
+        bcsc
+            .verifyLandingPage()
+            .moveToBCSC()
+            .enterBCSCCardUser(process.env.ServiceCard3)
+            .enterBCSCPassword(process.env.ServiceCard3Pw)
+            .pause(10000);
 
-        browser
-            .useCss()
-            .waitForElementVisible('h1.view-header__title');
     },
 
     after: function(browser) {
