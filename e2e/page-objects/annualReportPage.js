@@ -5,7 +5,7 @@ var ArFilingsCommands = {
             .assert.containsText('#AR-step-1-header', '1. Annual General Meeting Date')
             .assert.containsText('#AR-step-2-header', '2. Registered Office Addresses')
             .assert.containsText('#AR-step-3-header', '3. Directors')
-            .assert.containsText('#AR-step-4-header', '4. Certify Correct')
+            .assert.containsText('#AR-step-4-header', '4. Certify')
             .assert.containsText('#entity-incorporation-number', coopObject.identifier)
             .assert.containsText('#entity-legal-name', coopObject.legal_name)
             .assert.visible('@saveDraftButton')

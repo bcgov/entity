@@ -1,7 +1,7 @@
 require('dotenv').config();
 module.exports={
 
-  '@tags': ['Regression'],
+  '@tags': ['regression', 'staff'],
   before:function(browser){
 
       browser.setupData('CP1001403', function(busObject){
@@ -19,12 +19,13 @@ module.exports={
     .click('#login-form > section > div > div.col-sm-7.col-md-8 > div > div.panel-body > div.login-form-action > input')
   },
 
-'Login To Dashboard':function(browser){
+  'Login To Dashboard':function(browser){
     browser
-    .assert.visible('#app > div > div.app-body > div > h1','Search Co-operatives') 
+    .assert.visible('h1','Staff Dashboard')
     .setValue('#txtBusinessNumber', browser.globals.CP1001403.identifier)
-    .click('#app > div > div.app-body > div > form > button')
-  },
+    .assert.not.cssClassPresent('button.search-btn', 'v-btn--disabled')
+    .click('button.search-btn')
+},
 
 
 '1.Verify initial state of dashboard, then start COD filing': function (browser) {
@@ -32,7 +33,7 @@ module.exports={
   dashboard.verifyTombstone(browser.globals.CP1001403);
   dashboard.verifyAddresses(browser.globals.CP1001403);
  // dashboard.verifyDirectorCount(browser.globals.CP1001403.director_count)
-  dashboard.startCodFiling()
+  dashboard.startCodFiling(browser.globals.CP1001403);
   },
 
 '2.Confirm initial state of COD filing': function (browser) {
@@ -84,12 +85,12 @@ module.exports={
   dashboard.click('@deleteDraftButton');
   dashboard.waitForElementVisible('@confirmDeleteDraftButton');
   dashboard.click('@confirmDeleteDraftButton');
-  dashboard.waitForElementVisible('@fileNowButton1');   
+  dashboard.waitForElementVisible('@fileNowButton');   
  },
 
 '10.Start COD filing after deleting draft': function (browser) {
   dashboard = browser.page.dashboardPage();
-  dashboard.startCodFiling();
+  dashboard.startCodFiling(browser.globals.CP1001403);
  },
 
 '11.Confirm initial state of COD filing - POST DRAFT': function (browser) {

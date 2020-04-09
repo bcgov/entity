@@ -1,6 +1,6 @@
 require('dotenv').config();
 module.exports={
-  '@tags': ['Regression'],
+  '@tags': ['regression', 'staff'],
   before:function(browser ){
     browser.setupData('CP1000992', function(busObject){
          console.log(busObject);
@@ -18,24 +18,25 @@ module.exports={
   },
 
   'Login To Dashboard':function(browser){
-      browser
-      .assert.visible('#app > div > div.app-body > div > h1','Search Co-operatives')
-      .setValue('#txtBusinessNumber', browser.globals.CP1000992.identifier)
-      .click('#app > div > div.app-body > div > form > button')
-  },
+    browser
+    .assert.visible('h1','Staff Dashboard')
+    .setValue('#txtBusinessNumber', browser.globals.CP1000992.identifier)
+    .assert.not.cssClassPresent('button.search-btn', 'v-btn--disabled')
+    .click('button.search-btn')
+},
 
   '1.Verify initial state of dashboard, then start AR filing': function (browser) {
       dashboard = browser.page.dashboardPage();
       dashboard.verifyTombstone(browser.globals.CP1000992);
       dashboard.verifyAddresses(browser.globals.CP1000992);
-      dashboard.startArFiling();
-      dashboard.selectAGMDate()
+      dashboard.startArFiling(browser.globals.CP1000992);
+      dashboard.selectAGMDate('File 2018 Annual Report');
      // dashboard.verifyDirectorCount(browser.globals.CP1000992.director_count);
     },
 
     '2.Confirm initial state of Annual Report': function (browser) {
       ArPage = browser.page.annualReportPage();
-      ArPage.verfifyInitialArState(browser.globals.CP1000992);
+      ArPage.verfifyInitialArState(browser.globals.CP1000992, 'File 2018 Annual Report');
       ArPage.checkFeeByIndex('Annual Report', '$30.00', 0);
       ArPage.checkFeeCount(1);
       ArPage.checkTotalFees('$30.00');
@@ -87,8 +88,6 @@ module.exports={
     '8.Verify draft resumed correctly then return to dashoard': function (browser) {
       ArPage = browser.page.annualReportPage();
       ArPage.checkFeeCount(3);
-      //Note fees re-ordered on resume
-      ArPage.checkFeeByIndex('Change of Registered Office Address', '$20.00', 1);
       ArPage.checkTotalFees('$70.00');
       ArPage.assert.visible('@resetOfficeAddressButton');
       ArPage.assert.containsText('@officeDeliveryLine1', '123 test street');
@@ -105,18 +104,18 @@ module.exports={
       dashboard.click('@deleteDraftButton');
       dashboard.waitForElementVisible('@confirmDeleteDraftButton');
       dashboard.click('@confirmDeleteDraftButton');
-      dashboard.waitForElementVisible('@fileNowButton1');
+      dashboard.waitForElementVisible('@fileNowButton');
     },
   
     '10.Start AR filing after deleting draft': function (browser) {
       dashboard = browser.page.dashboardPage();
-      dashboard.startArFiling();
-      dashboard.selectAGMDate()
+      dashboard.startArFiling(browser.globals.CP1000992);
+      dashboard.selectAGMDate('File 2018 Annual Report')
     },
   
     '11.Confirm initial state of Annual Report - POST DRAFT': function (browser) {
       ArPage = browser.page.annualReportPage();
-      ArPage.verfifyInitialArState(browser.globals.CP1000992);
+      ArPage.verfifyInitialArState(browser.globals.CP1000992, 'File 2018 Annual Report');
       ArPage.checkFeeByIndex('Annual Report', '$30.00', 0);
       ArPage.checkFeeCount(1);
       ArPage.checkTotalFees('$30.00');

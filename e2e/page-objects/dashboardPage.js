@@ -1,90 +1,89 @@
-require('dotenv').config();
-var dashboardCommands = {  
+var dashboardCommands = {
     verifyTombstone: function (coopObject) {
         return this.waitForElementVisible('@entityName')
-               .assert.containsText('@identifier', coopObject.identifier)
-               .assert.containsText('@entityName', coopObject.legal_name);
+            .assert.containsText('@identifier', coopObject.identifier)
+            .assert.containsText('@entityName', coopObject.legal_name);
     },
     verifyAddresses: function (coopObject) {
-        return this.assert.containsText('@officeAddressHeader','Office Addresses')
-               .assert.visible('@launchCOAButton')
-               .assert.containsText('@mailingAddressLabel','Mailing Address')
-               .assert.containsText('@mailingLine1', coopObject.mailing.line1)
-               .assert.containsText('@mailingLine2', coopObject.mailing.line2)
-               .assert.containsText('@mailingLine3', coopObject.mailing.line3)
-               .assert.containsText('@deliveryAddressLabel','Delivery Address')
-               .assert.containsText('@deliveryLine1', coopObject.delivery.line1)
-               .assert.containsText('@deliveryLine2', coopObject.delivery.line2)
-               .assert.containsText('@deliveryLine3', coopObject.delivery.line3);
+        return this.assert.containsText('@officeAddressHeader', 'Office Addresses')
+            .assert.visible('@launchCOAButton')
+            .assert.containsText('@mailingAddressLabel', 'Mailing Address')
+            .assert.containsText('@mailingLine1', coopObject.mailing.line1)
+            .assert.containsText('@mailingLine2', coopObject.mailing.line2)
+            .assert.containsText('@mailingLine3', coopObject.mailing.line3)
+            .assert.containsText('@deliveryAddressLabel', 'Delivery Address')
+            .assert.containsText('@deliveryLine1', coopObject.delivery.line1)
+            .assert.containsText('@deliveryLine2', coopObject.delivery.line2)
+            .assert.containsText('@deliveryLine3', coopObject.delivery.line3);
     },
 
-    selectAGMDate: function(annualReportYear){
+    selectAGMDate: function (annualReportYear) {
         return this.
-         assert.containsText('@arHeader',annualReportYear)
-        .assert.containsText('@AGMDate','1. Annual General Meeting Date')
-        .waitForElementVisible('@datePicker')
-        .assert.cssClassNotPresent('@noAGMButton', 'v-btn--disabled')
-        .click('@datePicker')
-        .waitForElementVisible('@choosenDate')
-        .click('@choosenDate')
+        assert.containsText('@arHeader', annualReportYear)
+            .assert.containsText('@AGMDate', '1. Annual General Meeting Date')
+            .waitForElementVisible('@datePicker')
+            .assert.not.cssClassPresent('@noAGMButton', 'v-btn--disabled')
+            .click('@datePicker')
+            .waitForElementVisible('@choosenDate')
+            .click('@choosenDate')
     },
     verifyDirectorCount: function (director_count) {
         return this
-        .useCss()
-               .assert.containsText('@currentDirectorsHeader','Current Directors')
-               .expect.elements('v-expansion-panel-header address-panel-toggle').count.to.equal(director_count);
+            .useCss()
+            .assert.containsText('@currentDirectorsHeader', 'Current Directors')
+            .expect.elements('v-expansion-panel-header address-panel-toggle').count.to.equal(director_count);
     },
-    verifyTodolistandRecentFilings:function(noOfFilings){
+    verifyTodolistandRecentFilings: function (noOfFilings) {
         return this
-        .assert.containsText('@toDoListHeader',noOfFilings )
-        .assert.cssClassNotPresent('@fileNowButton1', 'v-btn--disabled')
-        .expect.element('@fileNowButton2').to.not.be.enabled
+            .assert.containsText('@toDoListHeader', noOfFilings)
+            .assert.not.cssClassPresent('@fileNowButton', 'v-btn--disabled')
+            .expect.element('@fileNowButton2').to.not.be.enabled
     },
-    startArFiling: function () {
+    startArFiling: function (coopObject) {
         return this
-                .useCss()
-                .waitForElementVisible('@fileNowButton1')
-                .click('@fileNowButton1')
-                .assert.urlEquals(this.api.globals.launch_url1 + 'annual-report')
-                .waitForElementVisible('#AR-header', 'Annual Report Page Loaded');
+            .useCss()
+            .waitForElementVisible('@fileNowButton')
+            .click('@fileNowButton')
+            .assert.urlEquals(this.api.globals.launch_url + coopObject.identifier + '/annual-report')
+            .waitForElementVisible('#AR-header', 'Annual Report Page Loaded');
     },
-    startCoaFiling: function () {
+    startCoaFiling: function (coopObject) {
         return this.waitForElementVisible('@launchCOAButton')
-                .assert.cssClassNotPresent('@launchCOAButton', 'v-btn--disabled')
-                .click('@launchCOAButton')
-                .assert.urlEquals(this.api.globals.launch_url1 + 'standalone-addresses')
-                .useCss()
-                .waitForElementVisible('#filing-header', 'COA Page Loaded');
+            .assert.not.cssClassPresent('@launchCOAButton', 'v-btn--disabled')
+            .click('@launchCOAButton')
+            .assert.urlEquals(this.api.globals.launch_url + coopObject.identifier + '/standalone-addresses')
+            .useCss()
+            .waitForElementVisible('#filing-header', 'COA Page Loaded');
     },
-    startCodFiling: function() {
+    startCodFiling: function (coopObject) {
         return this.waitForElementVisible('@launchCODButton')
-                   .assert.cssClassNotPresent('@launchCODButton','v-btn--disabled')
-                   .click('@launchCODButton')
-                   .assert.urlEquals(this.api.globals.launch_url1 + 'standalone-directors')
-                   .useCss()
-                   .waitForElementVisible('#filing-header','COD Page Loaded')
+            .assert.not.cssClassPresent('@launchCODButton', 'v-btn--disabled')
+            .click('@launchCODButton')
+            .assert.urlEquals(this.api.globals.launch_url + coopObject.identifier + '/standalone-directors')
+            .useCss()
+            .waitForElementVisible('#filing-header', 'COD Page Loaded')
     },
 
-    enterRoutingSlipNumber:function(){
+    enterRoutingSlipNumber: function () {
         return this.waitForElementVisible('@paymentHeader')
-                   .assert.containsText('@paymentHeader','Staff Payment')
+            .assert.containsText('@paymentHeader', 'Staff Payment')
     }
 
-    
+
 };
-module.exports={
-    commands:[dashboardCommands],
-    url: function() {
+module.exports = {
+    commands: [dashboardCommands],
+    url: function () {
         return this.api.globals.launch_url + '/dashboard';
     },
-    elements:{
+    elements: {
         entityName: "#entity-legal-name",
         identifier: "#entity-incorporation-number",
         filingHistoryHeader: '[data-test-id="dashboard-filing-history-subtitle"]',
         noFilingsMessage: "#dashboardArticle > div > div > section:nth-child(2) > div > div.no-results.v-card.v-card--flat.v-sheet.theme--light > div > div.no-results__title",
         topFilingInHistoryName: {
-                selector: "div.filing-label h3",
-                index: 0
+            selector: "div.filing-label h3",
+            index: 0
         },
         topFilingInHistoryStatus: "div.v-expansion-panel__header__status",
         officeAddressHeader: '[data-test-id="dashboard-addresses-subtitle"]',
@@ -100,18 +99,18 @@ module.exports={
         currentDirectorsHeader: '[data-test-id="dashboard-directors-subtitle"]',
         launchCODButton: "#standalone-directors-button > span > span",
         toDoListHeader: '[data-test-id="dashboard-todo-subtitle"]',
-        fileNowButton1: "#todo-list > div.v-item-group.theme--light.v-expansion-panels.v-expansion-panels--accordion > div:nth-child(1) > button > div.list-item > div.list-item__actions > div > button",
-        resumeDraftButton: "#todo-list > div.v-item-group.theme--light.v-expansion-panels.v-expansion-panels--accordion > div.v-expansion-panel.align-items-top.todo-item.draft > button > div.list-item > div.list-item__actions > div > button.btn-draft-resume.v-btn.v-btn--contained.theme--light.v-size--default.primary > span",
+        fileNowButton: "button.btn-file-now",
+        resumeDraftButton: "button.btn-draft-resume",
         toDoButtonMoreActionsArrow: "#menu-activator > span > i",
         deleteDraftButton: "#btn-delete-draft > div",
         confirmDeleteDraftButton: {
-         selector: "#app > div.v-dialog__content.v-dialog__content--active > div > div > div.v-card__actions > button:nth-child(2) > span",
+            selector: "#dialog-yes-button",
         },
-        fileNowButton2:'[ type="button"] [disabled="disabled"]',
-        recentHistory:'#dashboardArticle > div > div > section:nth-child(2) > header > h2',
-        paymentHeader:'#AR-step-5-header',
-        arHeader:'#AR-header',
-        AGMDate:'#AR-step-1-header',
+        fileNowButton2: '[ type="button"] [disabled="disabled"]',
+        recentHistory: '#dashboardArticle > div > div > section:nth-child(2) > header > h2',
+        paymentHeader: '#AR-step-5-header',
+        arHeader: '#AR-header',
+        AGMDate: '#AR-step-1-header',
         datePicker: '[data-test-id="agm-date-text"]',
         choosenDate: '#app > div.v-menu__content.theme--light.menuable__content__active > div > div > div > div.v-date-picker-table.v-date-picker-table--date.theme--light > table > tbody > tr:nth-child(1) > td:nth-child(7) > button > div',
         noAGMButton: '#agm-checkbox'

@@ -4,8 +4,7 @@ module.exports = {
 	throwOnMultipleElementsReturned : true,
 	launch_url: "https://test.bcregistry.ca/cooperatives/",
 	idtest_url: "https://idtest.gov.bc.ca/login",
-	launch_idirurl:"https://test.bcregistry.ca/cooperatives/auth/signin/idir",
-	launch_url1: "https://test.bcregistry.ca/cooperatives/auth/", 
+	launch_idirurl:"https://test.bcregistry.ca/cooperatives/auth/signin/idir",/
 
 	CP1002111: {
 		identifier: "CP1002111",

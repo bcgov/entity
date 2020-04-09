@@ -2,7 +2,7 @@ var CoaFilingsCommands = {
     verfifyInitialCoaState: function (coopObject) {
       return this
         .assert.containsText('#filing-header', 'Address Change')
-        .assert.containsText('#AR-step-4-header', 'Certify Correct')
+        .assert.containsText('#AR-step-4-header', 'Certify')
         .assert.containsText('#entity-incorporation-number', coopObject.identifier)
         .assert.containsText('#entity-legal-name', coopObject.legal_name)
         .assert.visible('@saveDraftButton')
