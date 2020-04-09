@@ -18,8 +18,57 @@ Apr, 09, 2020
 ----
 
 1. To discuss the release cadence process.
-1. To discuss the test automation and DEvOps proposal
+#### Problem statement: 
+- A) Not enough time for QA’s in the release to complete the test and regression. There is always a rush to complete things in the end.
+- B) Technical dependencies between the teams.
+- C) Frequent change in actual deployment time of the release results in context switching and communications through multiple channel also takes important time away from Dev’s.
+- D) Multiple communications to Staff for multiple release which are happening in parallel.
+ 
+##### Ideas:-
+- For problem statement A) Based on the nature of our delivery, most of the features are testable towards the end of sprint. In order to give enough time for QA, we can plan to give some buffer in the release.
+- For problem statement B) Start documenting the business communication and technical dependency in the release ticket in ZenHub. This will ensure that everyone knows what the other team is doing and CM will also have a clear picture.
+- For problem statement C) To work on a release cadence for both the teams. If we agree on a specific date for a release from both the teams which gives buffer to QA’s as well, then we stick to those timelines no matter if we are done early.
+    - Proposal is Tuesday after the Sprint. Gives 4 days buffer for QA’s.
+    - Friday and Monday after the Sprint were ruled out because,
+    - Wednesday after the Sprint – Team is focussed on Sprint planning and wrapping up the previous left over items
+    - Thursday after the Sprint – Doesn’t give enough buffer for our QA team
+    - Friday has not been a good day for deploying something towards the end of day and have a fear of not working something over the weekend.
+    - Monday – Lot of flex’s. John from QA side is on flex on the Monday after the sprint ends and he usually performs production deployment verification
+- For Problem Statement D) If the team agrees on a set release cadence as described in the above point, then the release planning can be done accordingly with the PO’s for all future releases. 
+    - Release cadence – Have releases from both the teams on Tuesdays after the sprint. This can be treated as a set date unless anything urgent comes up.
 
+1. To discuss the test automation and DEvOps proposal
+### Phase 1:
+#### Timeline : <>
+- Somebody to lead the DevOps work who can drive the value of automation and DevOps through continuous improvements.
+- Scrum master and Jyoti to have a workshop(with Dev’s and QA) to come up with a Spike to document the gaps
+- Develop the backlog of items which needs to be done
+    - Example of this could be:-
+        - Create an Epic for this and break out all the stories to cover what would be required to have a fully automated tests in Dev
+        - Create an Epic for browser automation test by involving one of the QA person + One Front end dev.
+- The minimum which we can do(low hanging fruits) –
+    - For any schema changes, can we ask the dev’s to update the Data reset tool to make sure it doesn’t fail?
+ 
+### Phase 2:
+#### Timeline: <>
+- Start estimating the Devops and Test Automation work
+- Size the Browser Automation work
+- Size the Automated tests in Dev
+- Size the Pipeline work for items to move to test
+- Once we have the rough estimation, develop the technical roadmap which shows how we are going to meet our long term goals
+- The roadmap would have high level features which we can deliver in the sprint in the next quarter.
+- We need to keep aside some bandwidth from Dev’s capacity to keep this going. We would need PO’s buy-in for this.
+ 
+### Long term goals:
+- Develop the DevOps skill within the Dev team
+- Code coverage using CodeCov
+- Fully running automated tests in Dev
+- Automated Integration tests to move things from Dev to Test
+- Have a full proof release deployment strategy
+ 
+### What we are doing now:-
+- Refactoring of Data reset tool
+- QA Integration test
 ----
 Apr, 03, 2020
 ----
