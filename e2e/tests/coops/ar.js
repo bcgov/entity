@@ -3,6 +3,7 @@ module.exports = {
 
   '@tags': ['regression'],
   before: function (browser) {
+    browser.maximizeWindow()
     browser.setupData('CP1000019', function (busObject) {
       console.log(busObject);
     });
