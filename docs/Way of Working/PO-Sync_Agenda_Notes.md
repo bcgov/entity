@@ -37,6 +37,10 @@ Apr, 09, 2020
 - For Problem Statement D) If the team agrees on a set release cadence as described in the above point, then the release planning can be done accordingly with the PO’s for all future releases. 
     - Release cadence – Have releases from both the teams on Tuesdays after the sprint. This can be treated as a set date unless anything urgent comes up.
 
+#### Conclusion:
+- Agreement to move forward with this plan.
+- Jyoti to check the release schedule and adjust the dates as needed.
+
 ## To discuss the test automation and DevOps proposal
 ### Phase 1:
 #### Timeline : <>
@@ -69,6 +73,10 @@ Apr, 09, 2020
 ### What we are doing now:-
 - Refactoring of Data reset tool
 - QA Integration test
+
+#### Conclusion:
+- Agreement to move forward with this plan.
+- Jyoti and SHahriar to move forward with this plan starting with small workshops.
 
 ### Email captured at Business Level vs Account level
   #### Short term questions
