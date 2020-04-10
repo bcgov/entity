@@ -11,8 +11,8 @@ Apr 23, 2020
 ----
 Apr, 17, 2020
 ----
-1. To discuss the "Registeries roadmap" with all PO's(invite thor for the same)
-
+1. To discuss the "Registeries roadmap" with all PO's(invite thor for the same
+   
 ----
 Apr, 09, 2020
 ----
@@ -69,6 +69,19 @@ Apr, 09, 2020
 ### What we are doing now:-
 - Refactoring of Data reset tool
 - QA Integration test
+
+### Email captured at Business Level vs Account level
+  #### Short term questions
+  - How do we capture those emails? Can the account level email used? 
+   - Yes, we do have the emails at account level which can be used.
+   - If we are collecting the email(Registered office email) at Incorporation flow, should we send this info to Relationship team(Business Profile level)?
+  
+  #### Long term questions
+  - How do we manage the flow going forward?
+   
+- A decission was taken to not pursue this item as of now the value this might bring compared to the effort involved is not on the higher side.
+ - Start planting these questions in the upcoming user session if possible, otherwise postpone it after BCOMP go-live.
+
 ----
 Apr, 03, 2020
 ----
