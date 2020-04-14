@@ -24,14 +24,14 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 ### April 14, 2020 - Sprint (Milestone) 27 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
-#### Assets
-* xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
-#### Entities
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
+#### Entities - 5 mins
+
 #### Name Request
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* Step 3 - Create and View Share Class and Series - #2152 - Cameron - 10 min 
 #### Relationships
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* UI Design - Username/Password Policy for Director Search Users - #3266 - Jeremey
+* UI Design - Resend Account Invitation Email to Director Search Account Owner - #3274 - Jeremy
 
 ----
 ### March 31, 2020 - Sprint (Milestone) 26 - 55 min. total 
