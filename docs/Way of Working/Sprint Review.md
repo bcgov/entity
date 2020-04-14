@@ -29,7 +29,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 
-Action Items:
+#### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 
@@ -44,7 +44,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * UI Design - Resend Account Invitation Email to Director Search Account Owner - #3274 - Jeremy
 * UI Design - Username/Password Policy for Director Search Users - #3266 - Jeremy
 
-Action Items:
+#### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 | 1 | Par Value needs to be in the correct format | Cameron W | Kaine |
