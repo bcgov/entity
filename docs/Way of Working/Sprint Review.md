@@ -11,14 +11,27 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 ### Month xx, 2020 - Sprint (Milestone) xx - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
-#### Assets
-* xxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
 #### Entities
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Name Request
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
+----
+### April 28, 2020 - Sprint 28 - 55 min. total 
+----
+#### Entities
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Name Request
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Relationships
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
+Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
 
 ----
 ### April 14, 2020 - Sprint (Milestone) 27 - 55 min. total 
@@ -30,6 +43,16 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Relationships 5 mins
 * UI Design - Resend Account Invitation Email to Director Search Account Owner - #3274 - Jeremy
 * UI Design - Username/Password Policy for Director Search Users - #3266 - Jeremy
+
+Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+| 1 | Par Value needs to be in the correct format | Cameron W | Kaine |
+| 2 | From staff side, who will need to have access for account management for director search | Cameron W | Loren |
+| 3 | Is there an option to Auto generate the passwords | Kaine | Loren |
+| 4 | The time they have to change their password is currently 7 days, can we make it shorter? | Carol | Loren |
+| 5 | Temporarory passwords can't be duplicated within the team members | Kevin | Loren|
+| 6 | Have a short session with Kaine/Carol/Karla Maria/ Trish to go through the flow for setting up account, sharing passwords and setting up team | Carol | Loren |
 
 ----
 ### March 31, 2020 - Sprint (Milestone) 26 - 55 min. total 
@@ -47,7 +70,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
-|---|-------------|--------------------|-------------------------|
+|---|----------------------|--------------------|-------------------------|
 | 1 | For Name Request, Image background can be used or not | Ian | Kaine |
 | 2 | User research needs to be done for going through the entity list and finding appropriate place for entity type| Cameron |  Kaine |
 | 3 | Business Process to be implemented for managing the identity maangement while accessing Director Search | Carol | NA |
