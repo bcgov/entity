@@ -28,8 +28,8 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities - 5 mins
 
 #### Name Request
-* Step 3 - Create and View Share Class and Series - #2152 - Cameron - 10 min 
-#### Relationships
+* Step 3 - Create and View Share Class and Series - #2152 - Cameron - 10 mins
+#### Relationships 5 mins
 * UI Design - Username/Password Policy for Director Search Users - #3266 - Jeremey
 * UI Design - Resend Account Invitation Email to Director Search Account Owner - #3274 - Jeremy
 
