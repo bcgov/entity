@@ -65,7 +65,7 @@ Apr, 09, 2020
  
 ### Long term goals:
 - Develop the DevOps skill within the Dev team
-- Code coverage using CodeCov
+- Code coverage using a tool decided by team
 - Fully running automated tests in Dev
 - Automated Integration tests to move things from Dev to Test
 - Have a full proof release deployment strategy
