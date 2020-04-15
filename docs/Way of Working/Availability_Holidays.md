@@ -1,5 +1,5 @@
 **Overview of Team availability BC Registries**
-- When are you unavailable (booked into workshops, conferences, heads-down & undisturbed, working remotely with intermitten connectivity, etc)?  
+- When are you _unavailable_ (booked into workshops, conferences, heads-down & undisturbed, working remotely with intermitten connectivity, etc)?  
 ----
 
 **Assets**
@@ -14,6 +14,7 @@
 * Sienna:
 * Jyoti: Jun 29, Jun 30, Jul 31, Sep 4, Sep 18
 * Cameron:
+* Severin:
 
 
 ----
