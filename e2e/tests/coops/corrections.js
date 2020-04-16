@@ -24,7 +24,7 @@ module.exports = {
   '3. Verify initial state of dashboard': function (browser) {
     dashboard = browser.page.dashboardPage();
     dashboard.verifyTombstone(browser.globals.CP1001560);
-   //dashboard.verifyAddresses(browser.globals.CP1001560);
+    dashboard.verifyAddresses(browser.globals.CP1001560);
 },
 
  '4.Click add detail and assert add detail':function(browser){
@@ -39,7 +39,7 @@ module.exports = {
    Correction.completePyament(process.env.routingslip)
  },
  '6.Assert Payment Module':function(browser){
-   feeModule=browser.page.addDetailPage()
+   feeModule=browser.page.dashboardPage()
    feeModule.checkFeeCount(2)
    feeModule.checkFeeByIndex('Correction', '$20.00', 0)
    feeModule.checkFeeByIndex('Priority Fee', '$100.00', 1)

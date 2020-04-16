@@ -183,7 +183,7 @@ module.exports = {
 		identifier:"CP1001560",
 		legal_name:"SAFE PLACE HOUSING CO-OPERATIVE",
 		delivery: {
-			line1: "700 ALMONDS STREET",
+			line1: "710 ALMONDS STREET",
 			line2: "BURNABY BC V9V 9A9",
 			line3: "Canada"
 		},

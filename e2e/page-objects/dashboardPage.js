@@ -64,6 +64,18 @@ var dashboardCommands = {
             .waitForElementVisible('#filing-header', 'COD Page Loaded')
     },
 
+    checkFeeByIndex: function (feeName, feeValue, desiredIndex) {
+        return this
+            .assert.containsText({selector: '@feeName', index: desiredIndex}, feeName)
+            .assert.containsText({selector: '@feeValue', index: desiredIndex}, feeValue);
+    },
+    checkFeeCount: function (expectedCount) {
+        return this.expect.elements('@feeListItem').count.to.equal(expectedCount);
+    },
+    checkTotalFees: function (expectedTotalString) {
+        return this.assert.containsText('@feeTotal', expectedTotalString);
+    },    
+
     enterRoutingSlipNumber: function () {
         return this.waitForElementVisible('@paymentHeader')
             .assert.containsText('@paymentHeader', 'Staff Payment')
@@ -113,7 +125,12 @@ module.exports = {
         AGMDate: '#AR-step-1-header',
         datePicker: '[data-test-id="agm-date-text"]',
         choosenDate: '#app > div.v-menu__content.theme--light.menuable__content__active > div > div > div > div.v-date-picker-table.v-date-picker-table--date.theme--light > table > tbody > tr:nth-child(1) > td:nth-child(7) > button > div',
-        noAGMButton: '#agm-checkbox'
+        noAGMButton: '#agm-checkbox',
+        fileandpay:"#correction-file-pay-btn ",
+        feeName: "div.fee-list__item-name",
+        feeValue: "div.fee-list__item-value",
+        feeListItem: "li.fee-list__item",
+        feeTotal: "div.fee-total__value",
 
     }
 };

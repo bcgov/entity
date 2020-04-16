@@ -40,17 +40,6 @@ var addDetailsCommands={
         .setValue('#routing-slip-number-textfield',routingslip)
         .click('@prioritycheckbox')
     },
-    checkFeeByIndex: function (feeName, feeValue, desiredIndex) {
-        return this
-            .assert.containsText({selector: '@feeName', index: desiredIndex}, feeName)
-            .assert.containsText({selector: '@feeValue', index: desiredIndex}, feeValue);
-    },
-    checkFeeCount: function (expectedCount) {
-        return this.expect.elements('@feeListItem').count.to.equal(expectedCount);
-    },
-    checkTotalFees: function (expectedTotalString) {
-        return this.assert.containsText('@feeTotal', expectedTotalString);
-    },
     dashboardAssertion: function(browser){
         return this
         .assert.containsText('@todoTitle','To Do (2)')
@@ -90,12 +79,7 @@ module.exports = {
     correctionHeader:"#correction-header",
     dateAssertion:"#correction-article > header > p",
     certifyCheckbox:"#AR-step-4-container   div.v-input.theme--light.v-input--selection-controls.v-input--checkbox  div.v-input__slot  div  div",    
-    feeName: "div.fee-list__item-name",
-    feeValue: "div.fee-list__item-value",
-    feeListItem: "li.fee-list__item",
-    feeTotal: "div.fee-total__value",
     prioritycheckbox:"#AR-step-5-container  div.v-input__slot   div.v-input__slot div  div",
-    fileandpay:"#correction-file-pay-btn ",
     todoTitle:'[data-test-id="dashboard-todo-subtitle"]',
     addressChangeButton:'#standalone-addresses-button'
 }
