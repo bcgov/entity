@@ -18,8 +18,8 @@ var addDetailsCommands={
         .assert.containsText('@assertComment','Add Comment')
     },
     addCorrection:function(browser){
-        return this.waitForElementVisible('@chevronForCorrection')
-        .click('@chevronForCorrection')
+        return this.waitForElementVisible('@chevron')
+        .click('@chevron')
         .waitForElementVisible('@fileCorrection')
         .click('@fileCorrection')
     },
@@ -52,19 +52,16 @@ module.exports = {
     commands: [addDetailsCommands],
     elements:{
     chevron:{
-        selector:"div:nth-child(1)  button i",
-        index:5
+        selector:"div.filing-item__actions i",
+        index:0
     },
-    addDetailButton:{
-    selector:' div.v-menu__content.theme--light.menuable__content__active  div:nth-child(2)',
-    index:1
-    },
+    addDetailButton:"div.add-detail-comment-item",
     addDetailDialogBox:"#dialog-title",
     addDetailArea:"#detail-comment-textarea",
     saveButton:"#dialog-save-button",
     addedDetailButton:{
-            selector:" div:nth-child(1) > button > div.list-item",
-            index:1
+            selector:"button.filing-item-toggle",
+            index:0
     },
     assertDetail:"#details-list  h4",
     assertComment:'div:nth-child(3)  div.v-list-item__subtitle.body-2  div',
@@ -72,13 +69,9 @@ module.exports = {
         selector:" div.v-menu__content.theme--light.menuable__content__active  div:nth-child(1)",
         index:2
     },
-    chevronForCorrection:{
-        selector:"div:nth-child(1)  button i",
-        index:6
-    },
     correctionHeader:"#correction-header",
     dateAssertion:"#correction-article > header > p",
-    certifyCheckbox:"#AR-step-4-container   div.v-input.theme--light.v-input--selection-controls.v-input--checkbox  div.v-input__slot  div  div",    
+    certifyCheckbox:'#AR-step-4-container   div.v-input.theme--light.v-input--selection-controls.v-input--checkbox  div.v-input__slot  div  div',    
     prioritycheckbox:"#AR-step-5-container  div.v-input__slot   div.v-input__slot div  div",
     todoTitle:'[data-test-id="dashboard-todo-subtitle"]',
     addressChangeButton:'#standalone-addresses-button'
