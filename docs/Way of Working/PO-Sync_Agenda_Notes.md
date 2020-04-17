@@ -7,11 +7,12 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Apr 23, 2020
 ----
 1. Linda to bring the proposal for "Static text - help text in the application"
+1. To discuss the "Registeries roadmap" with all PO's(invite thor for the same
 
 ----
 Apr, 17, 2020
 ----
-1. To discuss the "Registeries roadmap" with all PO's(invite thor for the same
+Meeting was cancelled as Loren was not available for this meeting.
    
 ----
 Apr, 09, 2020
