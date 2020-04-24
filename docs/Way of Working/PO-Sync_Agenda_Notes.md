@@ -7,8 +7,24 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Apr 23, 2020
 ----
 1. Linda to bring the proposal for "Static text - help text in the application"
+   - Postponed for 2 weeks
 1. To discuss the "Registeries roadmap" with all PO's
+   - Sandra, kaine and Loren are going to have an internal discussion and then have a discussion with Carol in the early weeks of May. 
+   - We will discuss this topic later in mid may
 1. To discuss the ownership of the Manage Business Dashboard in future.
+   - Relationship team will own the piece till June and then later Entity team will own that.
+   - Thor and Sumesh are working on carving this out from web_auth
+   - Setup a meeting for early next week to discuss the missing pieces
+1. Business Registry page vs CO-OP page
+   - Can Co-OP page be used as Business registry page?
+      - Yes it can be, but by end of June
+   - Is it easy to use this page for Busienss Registry page?
+      - Details will be figured out to by Dev's
+   - For now,we will have a button on the Coperative online which can be used for integration test- this is the target for next sprint.
+      - Linda to create a ticket for the same
+      - Jyoti to book a meeting to discuss both the above topics next week
+1. BN Messaging capacity
+   - We will have Steven chen to look into this and take help from Kial where needed.
 
 ----
 Apr, 17, 2020
