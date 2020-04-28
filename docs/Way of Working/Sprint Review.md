@@ -38,6 +38,9 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
+| 1 | Help text under the "Incorporation Date and Time" is blending in with the background color. It would be ideal to have the fee amount atleast prompt out so that user understand there is an extra fee | Cameron W | Entities team |
+| 2 | Work from relationship and entities team should be integrated and married together for good user experience. Not that its not happening, but just a reminder to keep that focus on always | Carol | Loren and Kaine |
+| 3 | Loop in the small business JEDE to understand the work being done on " Choose your entity" and see if that can be integrated with Entities incorporation flow | Carol | Scott |
 
 ----
 ### April 14, 2020 - Sprint (Milestone) 27 - 55 min. total 
