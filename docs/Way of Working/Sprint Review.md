@@ -28,10 +28,11 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Name Request
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
-* UI Design Review - Jeremy 10 mins 
- - Export Transaction History to CSV or PDF#3352
- - Filter Transactions by Time Period / Date Range #3353
- - Email Notification Preferences (Transaction History)#3366
+* UI Design Review - Jeremy - 8 mins 
+ -- Export Transaction History to CSV or PDF #3352
+ -- Filter Transactions by Time Period / Date Range #3353
+ -- Email Notification Preferences (Transaction History) #3366
+ * Premium account (BC Online) setup #280 - Jeremy - 5 mins
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
