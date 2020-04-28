@@ -25,14 +25,15 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities
 * UI for future effective DateTime Selector component - #2131 - Cameron - 10 mins
 * Filing corrections - #3091 - Richard - 5 mins
+* Incorporation Flow - Scott - 10 mins
 #### Name Request
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
 * UI Design Review - Jeremy - 8 mins 
- -- Export Transaction History to CSV or PDF #3352
- -- Filter Transactions by Time Period / Date Range #3353
- -- Email Notification Preferences (Transaction History) #3366
- * Premium account (BC Online) setup #280 - Jeremy - 5 mins
+ - Export Transaction History to CSV or PDF #3352
+ - Filter Transactions by Time Period / Date Range #3353
+ - Email Notification Preferences (Transaction History) #3366
+ - Premium account (BC Online) setup #280 - Jeremy - 5 mins
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
