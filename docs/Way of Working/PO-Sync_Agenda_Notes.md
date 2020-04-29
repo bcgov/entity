@@ -11,6 +11,8 @@ May 08, 2020
 ----
 May 01, 2020
 ----
+- Discussion about "where do we land" after we have created the account.
+- To go through the BC registry page and gather feedback
 
 ----
 Apr 24, 2020
