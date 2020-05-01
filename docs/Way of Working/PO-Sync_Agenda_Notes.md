@@ -7,13 +7,22 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 May 08, 2020
 ----
 1. Linda to bring the proposal for "Static text - help text in the application"
+1. Thor and Sumesh will have a discussion with URL to be used and re-directs and bring to the table for decision to be implemented in next sprint.
 
 ----
 May 01, 2020
 ----
 - Discussion about "where do we land" after we have created the account.
+   - For MVP, users would land on Business Registry Page.
+   - Some visual changes needs to be added by Scott for that
 - To go through the BC registry page and gather feedback
+   - [Loren]: Anything wrt to BCSC needs to be reviewed by IDIM. ANy new page needs a full review from IDIM
+      - Jeremy to share the updated content of BCSC.
+   - [Trish]: OPtions like "I have lost my passcode?" and "I have not recieved my consent letter"
+   - There is no search functionality built in on Business Registry Page.
 - A new business registry page with JAMSTACK implementation and not using the CO-OP page.
+   - For now, we will haul the existing CO-OP page
+      - Entities team will do the work and push the PR
 
 ----
 Apr 24, 2020
