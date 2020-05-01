@@ -13,6 +13,7 @@ May 01, 2020
 ----
 - Discussion about "where do we land" after we have created the account.
 - To go through the BC registry page and gather feedback
+- A new business registry page with JAMSTACK implementation and not using the CO-OP page.
 
 ----
 Apr 24, 2020
