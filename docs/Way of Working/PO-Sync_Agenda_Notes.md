@@ -4,9 +4,13 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
-May 08, 2020
+May 15, 2020
 ----
 1. Linda to bring the proposal for "Static text - help text in the application"
+
+----
+May 08, 2020
+----
 1. Thor and Sumesh will have a discussion with URL to be used and re-directs and bring to the table for decision to be implemented in next sprint.
 1. Jennifer to bring the following topics for discussion
    - Updated Partner Roadmap
