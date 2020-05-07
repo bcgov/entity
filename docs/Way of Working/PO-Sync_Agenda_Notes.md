@@ -8,6 +8,9 @@ May 08, 2020
 ----
 1. Linda to bring the proposal for "Static text - help text in the application"
 1. Thor and Sumesh will have a discussion with URL to be used and re-directs and bring to the table for decision to be implemented in next sprint.
+1. Jennifer to bring the following topics for discussion
+   - Updated Partner Roadmap
+   - Risk and action item log
 
 ----
 May 01, 2020
