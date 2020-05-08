@@ -12,10 +12,19 @@ May 15, 2020
 May 08, 2020
 ----
 1. Thor and Sumesh will have a discussion with URL to be used and re-directs and bring to the table for decision to be implemented in next sprint.
+   - Kaine is following up with Thor on the same.
 1. Jennifer to bring the following topics for discussion
    - Updated Partner Roadmap
+      - Jennifer to take a closer look at the old Roadmap and see whats mis-matching between two
    - Risk and action item log
+      - Discussed and updated in the meeting
 1. Discuss the dependency around BCSC content - #3655
+   - Agreement on this from both the team. 
+   - Jeremy can update the ticket 3655 with details.
+   - Ideal time would be to recieve the updated version by end of the current sprint.
+1. Sprint Planning timings
+   - Entity team from 8:30-10
+   - Relationship team from 10:30 AM - 12 PM
 
 ----
 May 01, 2020
