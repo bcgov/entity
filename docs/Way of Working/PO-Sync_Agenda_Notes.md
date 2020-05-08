@@ -15,6 +15,7 @@ May 08, 2020
 1. Jennifer to bring the following topics for discussion
    - Updated Partner Roadmap
    - Risk and action item log
+1. Discuss the dependency around BCSC content - #3655
 
 ----
 May 01, 2020
