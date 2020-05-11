@@ -29,11 +29,13 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* Visual Validation of Dates - Cameron - #3525 - 3mins
+* Certificate Output - Lekshmi - #2907 - 5mins
+* Updated Business registry Flow - Scott - 10mins
 #### Name Request
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* BCOL integration Overview - Amit 5 mins 
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
