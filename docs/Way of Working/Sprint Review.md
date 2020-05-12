@@ -35,7 +35,8 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Name Request
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
-* BCOL integration Overview - Amit 5 mins 
+* Upgrade / downgrade account - Jeremy - 5mins
+* Transaction History - Jeremy - 5mins
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
