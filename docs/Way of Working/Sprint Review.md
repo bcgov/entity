@@ -24,6 +24,20 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 |---|----------------------|--------------------|-------------------------|
 
 ----
+### May 26, 2020 - Sprint 30 - 55 min. total 
+----
+#### Entities
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Name Request
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Relationships
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+----
 ### May 12, 2020 - Sprint 29 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
@@ -41,6 +55,8 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
+| 1 | Bluebar in the date component for selecting Future effective date. This doesnt look consistent with other date components we have in the application | Kaine | Cameron(Dev) |
+| 2 | Updating Incorporation Number on Incorporation Certificate | Sienna | Lakshmi |
 
 ----
 ### April 28, 2020 - Sprint 28 - 55 min. total 
