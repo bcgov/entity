@@ -7,6 +7,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 May 15, 2020
 ----
 1. Linda to bring the proposal for "Static text - help text in the application"
+2. What APIs and API docs we will provide partners, when these APIs and docs will be available
 
 ----
 May 08, 2020
