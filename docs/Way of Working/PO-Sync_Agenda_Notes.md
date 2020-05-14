@@ -13,6 +13,21 @@ May 15, 2020
 ----
 1. What APIs and API docs we will provide partners, when these APIs and docs will be available
 1. To discuss how the navigation menu bar changes based upon logged in state.
+1. Remote Program Increment planning discussion. How can we do it?
+   - Have distributed team co-located in different spaces
+      - Entity team in one space
+      - Relationship team in one space
+      - All others in a different space
+   - Co-locate where we can
+      - Rest team can be remote
+   - All Remote
+   Regardless of this, if there is any remote element, we have to consider this:
+      - Leverage real time digita tools
+         - Real time board which can be used for Program Board, Team board and Risk board - WE DONT HAVE THIS
+         - A confrencing software which gives an option of breakout - We have Zoom which we can use
+         - Slack --> For any communication across team during breakout - We have this
+      - More planning upfromnt. Team should have their created and Sprint goals defined before the PI planning meeting
+      - Detaied Agenda and timeboxed events
 
 ----
 May 08, 2020
