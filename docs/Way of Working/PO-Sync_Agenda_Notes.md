@@ -4,11 +4,15 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
-May 15, 2020
+May 22, 2020
 ----
 1. Linda to bring the proposal for "Static text - help text in the application"
-2. What APIs and API docs we will provide partners, when these APIs and docs will be available
-3. To discuss how the navigation menu bar changes based upon logged in state.
+
+----
+May 15, 2020
+----
+1. What APIs and API docs we will provide partners, when these APIs and docs will be available
+1. To discuss how the navigation menu bar changes based upon logged in state.
 
 ----
 May 08, 2020
