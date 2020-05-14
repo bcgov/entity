@@ -13,6 +13,7 @@ May 15, 2020
 ----
 1. What APIs and API docs we will provide partners, when these APIs and docs will be available
 1. To discuss how the navigation menu bar changes based upon logged in state.
+1. Getting feedback on strucutre of Sprint review from stakeholders
 1. Remote Program Increment planning discussion. How can we do it?
    - Have distributed team co-located in different spaces
       - Entity team in one space
