@@ -73,12 +73,12 @@ stage("NI: incorp lear->colin") {
         }
         // run suite for incorporating a new incorp
         openshift.withCluster() {
-            openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
+            openshift.withProject() {
                 try {
                     namespace = 'gl2uos'
                     component_name = 'legal_api'
                     collection_name = 'lear-incorp-setup'
-                    def pm_pipeline = openshift.selector('bc', 'integration-pm-pipeline')
+                    def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
                     pm_pipeline.startBuild(
                         '--wait=true', 
                         "-e=NAMESPACE=${namespace}", 
@@ -105,12 +105,12 @@ stage('NI: verify incorp lear->colin') {
     // run lear postman collection to verify incorp success
     script {
         openshift.withCluster() {
-            openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
+            openshift.withProject() {
                 try {
                     namespace = 'gl2uos'
                     component_name = 'legal_api'
                     collection_name = 'lear-verify-incorp-setup'
-                    def pm_pipeline = openshift.selector('bc', 'integration-pm-pipeline')
+                    def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
                     pm_pipeline.startBuild(
                         '--wait=true', 
                         "-e=NAMESPACE=${namespace}", 
@@ -141,8 +141,8 @@ stage('NI: Run Colin-Updater') {
         openshift.withCluster() {
             namespace = 'gl2uos'
             openshift.withProject("${namespace}-${TAG_NAME}") {
-                def pm_pipeline = openshift.selector('bc', 'run-colin-updater-pipeline')
-                pm_pipeline.startBuild(
+                def job_pipeline = openshift.selector('bc', 'update-colin-filings-run-pipeline')
+                job_pipeline.startBuild(
                     '--wait=true'
                 ).logs('-f')
             }
@@ -198,12 +198,12 @@ stage("NI: incorp colin->lear") {
     // run colin-api postman collection to incorporate? Insert into db?
     script {
         openshift.withCluster() {
-            openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
+            openshift.withProject() {
                 try {
                     namespace = 'gl2uos'
                     component_name = 'colin_api'
                     collection_name = 'colin-incorp-setup'
-                    def pm_pipeline = openshift.selector('bc', 'integration-pm-pipeline')
+                    def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
                     pm_pipeline.startBuild(
                         '--wait=true', 
                         "-e=NAMESPACE=${namespace}", 
@@ -241,8 +241,8 @@ stage('NI: Run Legal-Updater') {
         openshift.withCluster() {
             namespace = 'gl2uos'
             openshift.withProject("${namespace}-${TAG_NAME}") {
-                def pm_pipeline = openshift.selector('bc', 'run-legal-updater-pipeline')
-                pm_pipeline.startBuild(
+                def job_pipeline = openshift.selector('bc', 'update-legal-filings-run-pipeline')
+                job_pipeline.startBuild(
                     '--wait=true'
                 ).logs('-f')
             }
@@ -253,12 +253,12 @@ stage('NI: verify incorp in lear') {
     // run legal-api postman collection to verify incorp success
     script {
         openshift.withCluster() {
-            openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
+            openshift.withProject() {
                 try {
                     namespace = 'gl2uos'
                     component_name = 'legal_api'
                     collection_name = 'lear-verify-incorp'
-                    def pm_pipeline = openshift.selector('bc', 'integration-pm-pipeline')
+                    def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
                     pm_pipeline.startBuild(
                         '--wait=true', 
                         "-e=NAMESPACE=${namespace}", 
