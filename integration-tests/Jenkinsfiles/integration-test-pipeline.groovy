@@ -50,7 +50,7 @@ stage("Call tests with test variables") {
             - PM_COLLECTION_PATH: ${PM_COLLECTION_PATH}
         """
         def integr_pipeline = openshift.selector('bc', 'integration-pipeline')
-        try:
+        try {
             integr_pipeline.startBuild(
                 '--wait=true', 
                 "-e=NAMESPACE=${NAMESPACE}", 
