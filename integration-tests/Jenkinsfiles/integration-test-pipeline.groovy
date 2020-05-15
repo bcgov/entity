@@ -47,7 +47,6 @@ stage("Call tests with test variables") {
         Pipeline called with constants:
             - NAMESPACE: ${NAMESPACE}
             - TAG_NAME: ${TAG_NAME}
-            - PM_COLLECTION_PATH: ${PM_COLLECTION_PATH}
         """
         def integr_pipeline = openshift.selector('bc', 'integration-pipeline')
         try {
