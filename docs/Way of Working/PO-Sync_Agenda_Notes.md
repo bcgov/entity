@@ -12,7 +12,23 @@ May 22, 2020
 May 15, 2020
 ----
 1. What APIs and API docs we will provide partners, when these APIs and docs will be available
+   - D&D reached out for "what APIs they have".
+   - Partner might have need to different API's.
+   - We need to come up with a plan 
+   - D&D are expected to meet early June
+      - Kaine, Loren, Thor, Sumesh, Linda need to be avalable for the planning event.
+   - What does need to plan have:
+      - API Names
+      - API Documentation
+      - What does the API have?
+      - When they would be available?
+      - How they actually explore the API? Ex: Consoles?
+      - Terms of Service
+      - When we shutting down the old service, the API service need to be available. Is there any blocker with this?
+   - Jyoti to schedule the meeting
 1. To discuss how the navigation menu bar changes based upon logged in state.
+   - Entity team can decide on the navigation part on the Business Registry page and dont need to have the existing Navigation bar
+   - Cameron need to connect with Sumesh on the flow of "Create account" depending upon login state.
 1. Getting feedback on strucutre of Sprint review from stakeholders
 1. Remote Program Increment planning discussion. How can we do it?
    - Have distributed team co-located in different spaces
@@ -27,8 +43,11 @@ May 15, 2020
          - Real time board which can be used for Program Board, Team board and Risk board - WE DONT HAVE THIS
          - A confrencing software which gives an option of breakout - We have Zoom which we can use
          - Slack --> For any communication across team during breakout - We have this
+            - Other option to have Microsoft Teams
       - More planning upfromnt. Team should have their created and Sprint goals defined before the PI planning meeting
       - Detaied Agenda and timeboxed events
+         - Have the planning session in June - Epic planning
+         - Have the bigger session in July - 2nd week
 
 ----
 May 08, 2020
