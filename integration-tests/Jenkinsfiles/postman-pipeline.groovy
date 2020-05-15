@@ -67,11 +67,13 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             CLIENT_SECRET:${CLIENT_SECRET}
             SERVICE_URL:${SERVICE_URL}
             COLLECION_NAME:${COLLECION_NAME}
+            TESTS_PATH:${TESTS_PATH}
             """
             checkout scm
 
             dir("${TESTS_PATH}") {
                 all_passed = true
+                sh 'npm install -g n'
                 sh 'npm install newman'
                 stage("Running ${COMPONENT_NAME} pm tests") {
                     try {
