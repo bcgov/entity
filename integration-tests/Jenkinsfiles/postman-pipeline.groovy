@@ -63,7 +63,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             REALM:${REALM}
             PASSWORD:${PASSWORD}
             USERNAME:${USERNAME}
-            CLIENTID:${CLIENTID}
+            CLIENTID:${CLIENT_ID}
             CLIENT_SECRET:${CLIENT_SECRET}
             SERVICE_URL:${SERVICE_URL}
             COLLECION_NAME:${COLLECION_NAME}
