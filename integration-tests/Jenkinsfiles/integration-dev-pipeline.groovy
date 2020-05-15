@@ -48,19 +48,23 @@ stage("Call tests with dev variables") {
             - NAMESPACE: ${NAMESPACE}
             - TAG_NAME: ${TAG_NAME}
         """
-        def integr_pipeline = openshift.selector('bc', 'integration-pipeline')
-        try {
-            integr_pipeline.startBuild(
-                '--wait=true', 
-                "-e=NAMESPACE=${NAMESPACE}", 
-                "-e=TAG_NAME=${TAG_NAME}"
-            ).logs('-f')
-        } catch (Exception e) {
-            PASSED = false
-            def error_message = e.getMessage()
-            echo """
-            Tests failed: ${error_message}
-            """
+        openshift.withCluster() {
+            openshift.withProject("d7eovc-tools") {
+                def integr_pipeline = openshift.selector('bc', 'integration-pipeline')
+                try {
+                    integr_pipeline.startBuild(
+                        '--wait=true', 
+                        "-e=NAMESPACE=${NAMESPACE}", 
+                        "-e=TAG_NAME=${TAG_NAME}"
+                    ).logs('-f')
+                } catch (Exception e) {
+                    PASSED = false
+                    def error_message = e.getMessage()
+                    echo """
+                    Tests failed: ${error_message}
+                    """
+                }
+            }
         }
     }
 }
