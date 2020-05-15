@@ -31,11 +31,11 @@ def TESTS_PATH = 'integration-tests/postman'
 // define groovy functions
 import groovy.json.JsonOutput
 
-def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
+def py3nodejs_label = "jenkins-py3nodejs10-${UUID.randomUUID().toString()}"
 podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenkins', cloud: 'openshift', containers: [
     containerTemplate(
         name: 'jnlp',
-        image: '172.50.0.2:5000/openshift/jenkins-slave-py3nodejs',
+        image: '172.50.0.2:5000/openshift/jenkins-slave-py3nodejs10',
         resourceRequestCpu: '500m',
         resourceLimitCpu: '1000m',
         resourceRequestMemory: '1Gi',
