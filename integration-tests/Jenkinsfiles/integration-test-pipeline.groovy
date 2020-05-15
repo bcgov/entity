@@ -50,7 +50,7 @@ stage("Call tests with test variables") {
         """
         openshift.withCluster() {
             openshift.withProject("d7eovc-tools") {
-                def integr_pipeline = openshift.selector('bc', 'integration-pipeline')
+                def integr_pipeline = openshift.selector('bc', 'integration-base-pipeline')
                 try {
                     integr_pipeline.startBuild(
                         '--wait=true', 
