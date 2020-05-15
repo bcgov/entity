@@ -31,11 +31,11 @@ def TESTS_PATH = 'integration-tests/postman'
 // define groovy functions
 import groovy.json.JsonOutput
 
-def py3nodejs_label = "jenkins-py3nodejs10-${UUID.randomUUID().toString()}"
+def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
 podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenkins', cloud: 'openshift', containers: [
     containerTemplate(
         name: 'jnlp',
-        image: '172.50.0.2:5000/openshift/jenkins-slave-py3nodejs10',
+        image: '172.50.0.2:5000/openshift/jenkins-slave-py3nodejs',
         resourceRequestCpu: '500m',
         resourceLimitCpu: '1000m',
         resourceRequestMemory: '1Gi',
@@ -46,7 +46,6 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         echo: "check envVar",
         envVars:([
             secretEnvVar(key: 'AUTH_URL', secretName: "integration-${TAG_NAME}-secret", secretKey: 'auth_url'),
-            secretEnvVar(key: 'TOKEN_URL', secretName: "integration-${TAG_NAME}-secret", secretKey: 'token_url'),
             secretEnvVar(key: 'REALM', secretName: "integration-${TAG_NAME}-secret", secretKey: 'realm'),
             secretEnvVar(key: 'PASSWORD', secretName: "integration-${TAG_NAME}-secret", secretKey: 'password'),
             secretEnvVar(key: 'USERNAME', secretName: "integration-${TAG_NAME}-secret", secretKey: 'username'),
