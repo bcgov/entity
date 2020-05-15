@@ -238,7 +238,6 @@ stage('NI: verify mras/bn messaging colin->lear') {
 stage('NI: Run Legal-Updater') {
     // call/wait for job pipeline with legal-updater vals
     script {
-        script {
         openshift.withCluster() {
             namespace = 'gl2uos'
             openshift.withProject("${namespace}-${TAG_NAME}") {
