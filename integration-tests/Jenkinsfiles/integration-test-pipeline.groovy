@@ -23,6 +23,7 @@
 // openshift env
 def NAMESPACE = 'd7eovc'
 def TAG_NAME = 'test'
+def PM_COLLECTION_PATH = 'integration-tests/postman'
 
 // stays true if all tests pass
 def PASSED = true
@@ -55,7 +56,8 @@ stage("Call tests with test variables") {
                     integr_pipeline.startBuild(
                         '--wait=true', 
                         "-e=NAMESPACE=${NAMESPACE}", 
-                        "-e=TAG_NAME=${TAG_NAME}"
+                        "-e=TAG_NAME=${TAG_NAME}",
+                        "-e=PM_COLLECTION_PATH=${PM_COLLECTION_PATH}"
                     ).logs('-f')
                 } catch (Exception e) {
                     PASSED = false
