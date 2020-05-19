@@ -74,7 +74,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             dir("${TESTS_PATH}") {
                 all_passed = true
                 sh 'node -v'
-                sh 'npm install newman<4.0'
+                sh 'npm install newman@3.7.5'
                 stage("Running ${COMPONENT_NAME} pm tests") {
                     try {
                         echo "Running ${COMPONENT_NAME} pm collection"
