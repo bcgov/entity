@@ -25,7 +25,7 @@
 def NAMESPACE = 'gl2uos'
 def TAG_NAME = 'dev'
 def COMPONENT_NAME = 'legal_api'
-def COLLECION_NAME = 'insert-incorp-lear'
+def COLLECION_NAME = 'lear-incorp-setup'
 def TESTS_PATH = 'integration-tests/postman'
 
 // define groovy functions
