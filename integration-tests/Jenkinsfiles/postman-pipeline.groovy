@@ -22,11 +22,11 @@
 // define constants
 // set from call
 
-def NAMESPACE
-def TAG_NAME
-def COMPONENT_NAME
-def COLLECION_NAME
-def TESTS_PATH
+NAMESPACE
+TAG_NAME
+COMPONENT_NAME
+COLLECION_NAME
+TESTS_PATH
 
 // define groovy functions
 import groovy.json.JsonOutput

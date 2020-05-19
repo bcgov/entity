@@ -48,6 +48,7 @@ stage("Call tests with test variables") {
         Pipeline called with constants:
             - NAMESPACE: ${NAMESPACE}
             - TAG_NAME: ${TAG_NAME}
+            - PM_COLLECTION_PATH: ${PM_COLLECTION_PATH}
         """
         openshift.withCluster() {
             openshift.withProject("d7eovc-tools") {
