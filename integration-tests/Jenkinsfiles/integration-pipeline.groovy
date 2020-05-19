@@ -154,7 +154,7 @@ stage('NI: verify incorp in colin') {
     // run lear postman collection to verify incorp success
     script {
         openshift.withCluster() {
-            openshift.withProject("${NAMESPACE}-${TAG_NAME}") {
+            openshift.withProject() {
                 try {
                     namespace = 'gl2uos'
                     component_name = 'colin_api'
