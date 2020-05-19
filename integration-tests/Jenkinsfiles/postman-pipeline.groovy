@@ -22,11 +22,11 @@
 // define constants
 // set from call
 
-def NAMESPACE = 'gl2uos'
-def TAG_NAME = 'dev'
-def COMPONENT_NAME = 'legal_api'
-def COLLECION_NAME = 'lear-incorp-setup'
-def TESTS_PATH = 'integration-tests/postman'
+def NAMESPACE
+def TAG_NAME
+def COMPONENT_NAME
+def COLLECION_NAME
+def TESTS_PATH
 
 // define groovy functions
 import groovy.json.JsonOutput

@@ -21,9 +21,9 @@
 
 // define constants
 // openshift env
-def NAMESPACE = 'd7eovc'
-def TAG_NAME = 'dev'
-def PM_COLLECTION_PATH = 'integration-tests/postman'
+NAMESPACE
+TAG_NAME
+PM_COLLECTION_PATH
 
 // stays true if all tests pass
 def PASSED = true
