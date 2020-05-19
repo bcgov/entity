@@ -159,7 +159,7 @@ stage('NI: verify incorp in colin') {
                     namespace = 'gl2uos'
                     component_name = 'colin_api'
                     collecttion_name = 'colin-verify-incorp'
-                    def pm_pipeline = openshift.selector('bc', 'integration-pm-pipeline')
+                    def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
                     pm_pipeline.startBuild(
                         '--wait=true', 
                         "-e=NAMESPACE=${namespace}", 
