@@ -25,7 +25,7 @@
 NAMESPACE
 TAG_NAME
 COMPONENT_NAME
-COLLECION_NAME
+COLLECTION_NAME
 TESTS_PATH
 
 // define groovy functions
@@ -66,7 +66,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             CLIENTID:${CLIENT_ID}
             CLIENT_SECRET:${CLIENT_SECRET}
             SERVICE_URL:${SERVICE_URL}
-            COLLECION_NAME:${COLLECION_NAME}
+            COLLECION_NAME:${COLLECTION_NAME}
             TESTS_PATH:${TESTS_PATH}
             """
             checkout scm
@@ -79,7 +79,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                     try {
                         echo "Running ${COMPONENT_NAME} pm collection"
 
-                        sh """./node_modules/newman/bin/newman.js run ./${COLLECION_NAME}.postman_collection.json \
+                        sh """./node_modules/newman/bin/newman.js run ./${COLLECTION_NAME}.postman_collection.json \
                         --global-var auth_url=${AUTH_URL} --global-var realm=${REALM} \
                         --global-var password=${PASSWORD} --global-var client_secret=${CLIENT_SECRET} \
                         --global-var username=${USERNAME} --global-var client_id=${CLIENT_ID} \
