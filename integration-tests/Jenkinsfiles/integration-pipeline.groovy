@@ -135,7 +135,7 @@ stage('NI: verify incorp lear->colin') {
         }
     }
 }
-stage('NI: Run Colin-Updater') {
+stage('Run Colin-Updater') {
     // call/wait for job pipeline with colin-updater vals
     script {
         openshift.withCluster() {
@@ -235,7 +235,7 @@ stage('NI: verify mras/bn messaging colin->lear') {
         /* code here */
     }
 }
-stage('NI: Run Legal-Updater') {
+stage('Run Legal-Updater') {
     // call/wait for job pipeline with legal-updater vals
     script {
         openshift.withCluster() {

@@ -42,7 +42,7 @@ def rocketChatNotificaiton(token, channel, comments) {
      script: "curl -X POST -H 'Content-Type: application/json' --data \'${payload}\' ${rocketChatUrl}")
 }
 // NI (Not Implemented) - will pass automatically
-stage("Call tests with dev variables") {
+stage("Run DEV integrations") {
     script {
         echo """
         Pipeline called with constants:
