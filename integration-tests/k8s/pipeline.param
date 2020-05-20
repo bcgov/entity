@@ -1,0 +1,14 @@
+#=========================================================
+# Template parameters for:
+# Project: integration tests
+# Component: pipeline
+# Action: build
+# Template File: templates/pipeline.json
+#=========================================================
+NAME="integration"
+PIPELINE_PURPOSE="base"
+GIT_REPO_URL="https://github.com/bcgov/entity.git"
+GIT_REF="master"
+SOURCE_CONTEXT_DIR="integration-tests"
+JENKINS_FILE="Jenkinsfiles/integration-pipeline.groovy"
+WEBHOOK="unknown"

@@ -1,0 +1,106 @@
+{
+    "kind": "Template",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "pipeline-template"
+    },
+    "objects": [
+        {
+            "kind": "BuildConfig",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "${NAME}-${PIPELINE_PURPOSE}-pipeline",
+                "creationTimestamp": null,
+                "labels": {
+                    "app": "${NAME}-${PIPELINE_PURPOSE}-pipeline",
+                    "name": "${NAME}-${PIPELINE_PURPOSE}-pipeline",
+                    "template": "${NAME}-${PIPELINE_PURPOSE}-pipeline"
+                }
+            },
+            "spec": {
+                "triggers": [
+                    {
+                        "type": "GitHub",
+                        "github": {
+                            "secretReference": {
+                                "name": "${WEBHOOK}"
+                            }
+                        }
+                    }
+                ],
+                "runPolicy": "Serial",
+                "source": {
+                    "type": "Git",
+                    "git": {
+                        "uri": "${GIT_REPO_URL}",
+                        "ref": "${GIT_REF}"
+                    },
+                    "contextDir": "${SOURCE_CONTEXT_DIR}"
+                },
+                "strategy": {
+                    "type": "JenkinsPipeline",
+                    "jenkinsPipelineStrategy": {
+                        "jenkinsfilePath": "${JENKINS_FILE}"
+                    }
+                },
+                "output": {},
+                "resources": {},
+                "postCommit": {},
+                "nodeSelector": {},
+                "successfulBuildsHistoryLimit": 5,
+                "failedBuildsHistoryLimit": 5
+            }
+        }
+    ],
+    "parameters": [
+        {
+            "name": "NAME",
+            "displayName": "Name",
+            "description": "The name assigned to all of the resources defined in this template.",
+            "required": true,
+            "value": "business-create-ui"
+        },
+        {
+            "name": "PIPELINE_PURPOSE",
+            "displayName": "Pipeline purpose",
+            "description": "The activity that this pipeline will manage. eg. build, test, promote, etc.",
+            "required": true,
+            "value": "build"
+        },
+        {
+            "name": "GIT_REPO_URL",
+            "displayName": "Git Repo URL",
+            "description": "The URL to your GIT repo.",
+            "required": true,
+            "value": "https://github.com/bcgov/bcrs-business-create-ui"
+        },
+        {
+            "name": "GIT_REF",
+            "displayName": "Git Reference",
+            "description": "The git reference or branch.",
+            "required": true,
+            "value": "master"
+        },
+        {
+            "name": "WEBHOOK",
+            "displayName": "Secret name for the webhook.",
+            "description": "The name of the Secret that holds the webhook.",
+            "required": true,
+            "value": "unknown"
+        },
+        {
+            "name": "SOURCE_CONTEXT_DIR",
+            "displayName": "Source Context Directory",
+            "description": "The source context directory.",
+            "required": false,
+            "value": "/src"
+        },
+        {
+            "name": "JENKINS_FILE",
+            "displayName": "The Jenksinfile this pipeline should use.",
+            "description": "The Jenkinsfile this pipeline should use.",
+            "required": false,
+            "value": "Jenkinsfile"
+        }
+    ]
+}
