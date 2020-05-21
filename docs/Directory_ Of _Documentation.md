@@ -8,7 +8,7 @@ This is an up to date list of links to documentation for the Entities and Relati
 https://sites.google.com/freshworks.io/bcros/home
 The site is organized by "Business Registry" > Entity type > filing type
 
-### UX Documentation
+### UX Documentation:
 
 
 ### Architecture and Tech documentation
