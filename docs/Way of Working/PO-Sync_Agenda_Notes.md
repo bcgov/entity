@@ -11,17 +11,16 @@ May 22, 2020
 1. Quick disucssion around Out of Province Solution
    - Account administrator will have the notary verify the person or have law firm
    - Notary will notarize the document
-   - Basic BCeID, Passowrd and one time password - IDIM needs to sign off on use of Basic BCeID
-   - Account flow - update the affidavit document
-   - Review process with Staff
+   - Basic BCeID, Passowrd and one time password on phone will be required for authentification - IDIM needs to sign off on use of Basic BCeID
+   - Account flow will take over then - User to upload the affidavit document
+   - Staff to Review the document and approve
    - Deadline - 23rd of June if everything gets right
-   - Cordinator/user will get an invite and they can use Basic BCeID, Passowrd and one time password to login
+   - Cordinator/user will get an invite from Account administrator and they can use Basic BCeID, Passowrd and one time password to login
 1. Flow mapping meeting discussion
    - Involve Amit
 1. Direction on documentation of requirements - Choose the right tool
-   - Jamstack is another option. 
-   - Microsot team
-   - Business as usual for now. We need to bring it up post June
+   - Jamstack is another option apart from Microsot team
+   - Business as usual for now. We need to bring this up post June
 1. Create receipts for all types of payment #3482
 - Discussed in the PO sync that the logo will be added in the footer to keep it consistent. Amit to create another ticket for that work which will be taken in the next sprint.
 
