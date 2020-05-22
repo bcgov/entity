@@ -7,6 +7,10 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 May 22, 2020
 ----
 1. Linda to bring the proposal for "Static text - help text in the application"
+1. Quick disucssion around Out of Province Solution
+1. Flow mapping meeting discussion
+1. Direction on documentation of requirements - Choose the right tool
+1. Create receipts for all types of payment #3482
 
 ----
 May 15, 2020
