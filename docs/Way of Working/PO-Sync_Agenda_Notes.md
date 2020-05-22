@@ -7,10 +7,23 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 May 22, 2020
 ----
 1. Linda to bring the proposal for "Static text - help text in the application"
+   - Team to continue on the approach as of now and get more user feedback and then decide on the concise approach
 1. Quick disucssion around Out of Province Solution
+   - Account administrator will have the notary verify the person or have law firm
+   - Notary will notarize the document
+   - Basic BCeID, Passowrd and one time password - IDIM needs to sign off on use of Basic BCeID
+   - Account flow - update the affidavit document
+   - Review process with Staff
+   - Deadline - 23rd of June if everything gets right
+   - Cordinator/user will get an invite and they can use Basic BCeID, Passowrd and one time password to login
 1. Flow mapping meeting discussion
+   - Involve Amit
 1. Direction on documentation of requirements - Choose the right tool
+   - Jamstack is another option. 
+   - Microsot team
+   - Business as usual for now. We need to bring it up post June
 1. Create receipts for all types of payment #3482
+- Discussed in the PO sync that the logo will be added in the footer to keep it consistent. Amit to create another ticket for that work which will be taken in the next sprint.
 
 ----
 May 15, 2020
