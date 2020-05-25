@@ -27,11 +27,13 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 ### May 26, 2020 - Sprint 30 - 55 min. total 
 ----
 #### Entities
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* BC Registries & Online Services Launch Page - Cameron - #2883 - 10 mins
+* BCOMP Incorporation Application Output - Lekshmi - #2910 - 5mins
 #### Name Request
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+* Updates to User Roles - Saravan - #3461 - 10 mins 
+
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
