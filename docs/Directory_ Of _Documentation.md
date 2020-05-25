@@ -23,8 +23,12 @@ The site is organized by "Business Registry" > Entity type > filing type
 
 ## Business Requirements:
 1. Team management: https://sites.google.com/freshworks.io/bcros/authentication/team-creation-management
-2. SharePoint Link APIs, Terms of Service, FAQs: https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/Modernization%20Docs/Relationships%20Docs
-3. Process flows: https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/Modernization%20Docs/Process%20Flows
+2. FAQs: https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/Modernization%20Docs/Relationships%20Docs/FAQs%20and%20Job%20aid
+3. Business Docs: https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/Modernization%20Docs/Relationships%20Docs/Business%20Documentation
+4. Legal Services: https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/Modernization%20Docs/Relationships%20Docs/Legal%20Services
+5. Process flows: https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/Modernization%20Docs/Process%20Flows
+6. SharePoint link Relationships root directory:
+https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/Modernization%20Docs/Relationships%20Docs
 
 ## UX Documentation:
 Navigation Wireframes:  https://preview.uxpin.com/ec5725a91e5ed646c9217e6295f9b87b3b6a7bfc#/pages/121718326/simulate/sitemap
