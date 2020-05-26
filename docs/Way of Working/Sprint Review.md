@@ -41,6 +41,10 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
+| 1 | It would be good to keep a check on the responsiveness of the Home page being demoed | Jeeremy | Kaine |
+| 2 | Is the App being built compatible on Mobile devices | Carol | Kaine confirmed, that the MVP version is to have the app working on the Web browsers and no active work being done to make it compatible pn Mobile devices. This can be taken in future based upon priority and feedback. Loren also confirmed that the use case of using mobile devices for incorporation is very low |
+| 3 | User roles description needs to change to make the responsibilites more distinct and clear | Carol/Simona | Loren |
+| 4 | Few design concepts still Team members login option. This should be aligned to the new User roles | Simona | Loren |
 
 ----
 ### May 12, 2020 - Sprint 29 - 55 min. total 
