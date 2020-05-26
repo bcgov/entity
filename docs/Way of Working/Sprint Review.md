@@ -33,6 +33,9 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
 * Updates to User Roles - Saravan - #3461 - 10 mins 
+* Authentication options for account delegates - Loren- 5 mins
+* Out-of-province identity verification and identity - Loren - 5 mins
+* Findings on ending draw down accounts and payment methods - Loren - 5 mins
 
 
 #### Action Items:
