@@ -23,6 +23,22 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 
+
+---
+### June 02, 2020 - Sprint 31 - 55 min. total 
+---
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Name Request
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Relationships
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
 ----
 ### May 26, 2020 - Sprint 30 - 55 min. total 
 ----
