@@ -45,8 +45,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities
 * BC Registries & Online Services Launch Page - Cameron - #2883 - 10 mins
 * BCOMP Incorporation Application Output - Lekshmi - #2910 - 5mins
-#### Name Request
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
 #### Relationships
 * Updates to User Roles - Saravan - #3461 - 10 mins 
 * Authentication options for account delegates - Loren- 5 mins
@@ -71,8 +70,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * Visual Validation of Dates - Cameron - #3525 - 3mins
 * Certificate Output - Lekshmi - #2907 - 5mins
 * Updated Business registry Flow - Scott - 10mins
-#### Name Request
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
 #### Relationships
 * Upgrade / downgrade account - Jeremy - 5mins
 * Transaction History - Jeremy - 5mins
@@ -90,8 +88,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * UI for future effective DateTime Selector component - #2131 - Cameron - 10 mins
 * Filing corrections - #3091 - Richard - 5 mins
 * Incorporation Flow - Scott - 10 mins
-#### Name Request
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+
 #### Relationships
 * UI Design Review - Jeremy - 8 mins 
  - Export Transaction History to CSV or PDF #3352
