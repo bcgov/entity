@@ -1,5 +1,5 @@
 # PO-Sync. 
-**Topics for PO-Sync. to discuss between PO´s**
+**Topics for PO-Sync. to discuss between PO's**
 Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
@@ -7,9 +7,16 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 May 29, 2020
 ----
 1. Name for payees for online banking
+   - "BC Registries" could be the name used
 1. Deadline for dependency ticket #3806
+   - Jyoti to talk to Sumesh/Saravan to align the release
 1. Staff filings with BCOL payments - BCOL account vs BCOL UserID
+   - Linda to do some research on this with Sumesh
+   - No rush for June 30th
 1. Update on Entities release dates
+   - Entity team next two release dates are June 9th and June 17th
+1. Staff Dashboard
+   - Entity team to start own this in next Program Increment and start doing some design work
 ----
 May 22, 2020
 ----
