@@ -6,7 +6,10 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 May 29, 2020
 ----
-*Topics to discuss*
+1. Name for payees for online banking
+1. Deadline for dependency ticket #3806
+1. Staff filings with BCOL payments - BCOL account vs BCOL UserID
+1. Update on Entities release dates
 ----
 May 22, 2020
 ----
