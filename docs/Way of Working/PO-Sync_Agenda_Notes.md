@@ -4,6 +4,20 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+June 05, 2020
+----
+1. Staff payment as a common payment
+   - This can be done after June 30th - Staffs are OK with that.
+   - Component should have No Fee, Routing slip number, BCOL payments, help in the payment rim
+      - This needs more discussion
+      - Do a spike and estimate it
+   - Give two weeks of time
+   - bring it next to next po sync
+1. Payment type for Basic account: Credit card and Online Banking
+   - for Online banking, till we get the funds, the transaction wouldnt be mark completed
+   - Have regression impact to Entities team
+   - Loren to send the recommendations to Kaine and seek feedback.
+----
 May 29, 2020
 ----
 1. Name for payees for online banking
