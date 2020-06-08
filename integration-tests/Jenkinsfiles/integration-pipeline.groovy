@@ -63,7 +63,7 @@ stage("NI: incorp lear->colin") {
         // wait for QA to proceed (might want to do something through the UI after setup)
         try {
             timeout(time: 1, unit: 'DAYS') {
-                input message: "Proceed after setup?", id: "1235", submitter: 'admin,thorwolpert-admin,rarmitag-admin,kialj876-admin,severinbeauvais-edit,riyazuddinsyed-edit'
+                input message: "Proceed after setup?", id: "1235", submitter: 'admin,thorwolpert-admin,rarmitag-admin,kialj876-admin,severinbeauvais-edit,riyazuddinsyed-edit,ochiu-edit'
             }
         }
         catch (Exception e) {
