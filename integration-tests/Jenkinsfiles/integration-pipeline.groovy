@@ -96,43 +96,6 @@ stage("NI: incorp lear->colin") {
                 }
             }
         }
-        /* code here */
-        // wait for filer before starting next stage
-        sleep 10
-    }
-}
-stage('NI: verify incorp lear->colin') {
-    // run lear postman collection to verify incorp success
-    script {
-        openshift.withCluster() {
-            openshift.withProject() {
-                try {
-                    namespace = 'gl2uos'
-                    component_name = 'legal_api'
-                    collection_name = 'lear-verify-incorp-setup'
-                    def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
-                    pm_pipeline.startBuild(
-                        '--wait=true', 
-                        "-e=NAMESPACE=${namespace}", 
-                        "-e=TAG_NAME=${TAG_NAME}",
-                        "-e=COMPONENT_NAME=${component_name}",
-                        "-e=COLLECTION_NAME=${collection_name}", 
-                        "-e=TESTS_PATH=${PM_COLLECTION_PATH}"
-                    ).logs('-f')
-                } catch (Exception e) {
-                    PASSED = false
-                    def error_message = e.getMessage()
-                    echo """
-                    Postman details: ${error_message}
-                    """
-                }
-            }
-        }
-        if (PASSED) {
-            echo "Verified incorporation!"
-        } else {
-            echo "Failed to verify incorporation in lear."
-        }
     }
 }
 stage('Run Colin-Updater') {
