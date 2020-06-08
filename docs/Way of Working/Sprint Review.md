@@ -38,7 +38,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 1. Reserve/cond. Reserve workflow
 
 #### Relationships
-1. 
+1. Transaction Reporting - #1967 - Loren - 15 min 
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
