@@ -13,7 +13,7 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-* End to end Walkthru of BCOMP Incorporations - Linda - 15 min 
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min
 #### Name Request
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
@@ -30,14 +30,15 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-* BC Registries & Online Services Launch Page - Cameron - #2883 - 10 mins
-* BCOMP Incorporation Application Output - Lekshmi - #2910 - 5mins
+1. End to end Walkthru of BCOMP Incorporations - Linda - 15 min 
+
+#### Name Request
+1. Name Request send to draft workflow to Namex.
+1. Namex consent workflow.
+1. Reserve/cond. Reserve workflow
 
 #### Relationships
-* Updates to User Roles - Saravan - #3461 - 10 mins 
-* Authentication options for account delegates - Loren- 5 mins
-* Out-of-province identity verification and identity - Loren - 5 mins
-* Findings on ending draw down accounts and payment methods - Loren - 5 mins
+1. 
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
