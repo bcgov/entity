@@ -56,7 +56,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             secretEnvVar(key: 'STAFF_SERVICE_ACCOUNT_ID', secretName: "integration-${TAG_NAME}-secret", secretKey: 'staff_service_account_id'),
             secretEnvVar(key: 'STAFF_SERVICE_ACCOUNT_SECRET', secretName: "integration-${TAG_NAME}-secret", secretKey: 'staff_service_account_secret'),
             secretEnvVar(key: 'STAFF_ACCOUNT_ID', secretName: "integration-${TAG_NAME}-secret", secretKey: 'staff_account_id'),
-            secretEnvVar(key: 'LEGAL_API_URL', secretName: "integration-${TAG_NAME}-secret", secretKey: 'legal_api_url')
+            secretEnvVar(key: 'LEGAL_SERVICE_URL', secretName: "integration-${TAG_NAME}-secret", secretKey: 'legal_api_url')
         ])
     )
 ])
@@ -93,7 +93,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                         --global-var staff-service-account-id=${STAFF_SERVICE_ACCOUNT_ID} \
                         --global-var staff-service-account-secret=${STAFF_SERVICE_ACCOUNT_SECRET} \
                         --global-var staff_account_id=${STAFF_ACCOUNT_ID} \
-                        --global-var legal_api_url=${LEGAL_API_URL}
+                        --global-var legal_api_url=${LEGAL_SERVICE_URL}
                         """
                     } catch (Exception e) {
                         echo "One or more tests failed."
