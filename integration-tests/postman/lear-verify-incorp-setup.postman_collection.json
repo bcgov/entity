@@ -1,111 +1,262 @@
 {
 	"info": {
-		"_postman_id": "88480c92-1e9e-4561-880f-e18ec5ed54c4",
+		"_postman_id": "b79df1f2-ad1d-478c-807e-cc67ab8f7350",
 		"name": "lear-verify-incorp-setup",
-		"description": "version=2.0.1 - This is a Legal API description",
+		"description": "Collection to verify PAID incorporation application crated with lear-incorp-setup collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "ops",
-			"item": [
+			"name": "Verify completed Incorporation Application",
+			"event": [
 				{
-					"name": "readyz",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "b0ad425b-8ebd-4d70-97d1-8065054b6f01",
-								"exec": [
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
-									"});",
-									"",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"",
-									"",
-									"pm.test(\"api is healthy\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.message).to.eql('api is ready');",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{url}}/ops/readyz",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"ops",
-								"readyz"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "healthz",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "ace593fe-b72d-4950-bef7-687730fb1cf1",
-								"exec": [
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
-									"});",
-									"",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"",
-									"",
-									"pm.test(\"api is healthy\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.message).to.eql('api is healthy');",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{url}}/ops/healthz",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"ops",
-								"healthz"
-							]
-						}
-					},
-					"response": []
+					"listen": "test",
+					"script": {
+						"id": "610d55c9-632e-457e-b60a-e3f0e1d8ed87",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Completed Incorporation Application has expected properties\", function () {",
+							"    var responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('filing');",
+							"",
+							"    // Check general filing structure",
+							"    var filing = responseData['filing'];",
+							"    console.log('filing', filing);",
+							"    pm.expect(filing).to.have.property('business');",
+							"    pm.expect(filing).to.have.property('header');",
+							"    pm.expect(filing).to.have.property('incorporationApplication');",
+							"",
+							"    // Check business properties",
+							"    var business = filing['business'];",
+							"    pm.expect(business).to.have.property('identifier');",
+							"",
+							"    var expected_temp_id = pm.variables.get('incorp_app_temp_reg_id');",
+							"    var temp_id = business['identifier']",
+							"    pm.expect(temp_id).to.eql(expected_temp_id)",
+							"",
+							"    // Check header properties",
+							"    var header = filing['header'];",
+							"    pm.expect(header).to.have.property('filingId');",
+							"    pm.expect(header).to.have.property('paymentToken');",
+							"    pm.expect(header['status']).to.have.eql('PAID');",
+							"    pm.expect(header['name']).to.have.eql('incorporationApplication');",
+							"    pm.expect(header['paymentStatusCode']).to.have.eql('COMPLETED');",
+							"    pm.expect(header['certifiedBy']).to.have.eql('Thomas Engine');",
+							"    pm.expect(header['routingSlipNumber']).to.have.eql('111111111');",
+							"    ",
+							"    // Check general incorporation application structure",
+							"    var incorpApp = filing['incorporationApplication'];",
+							"    pm.expect(incorpApp).to.have.property('contactPoint');",
+							"    pm.expect(incorpApp).to.have.property('incorporationAgreement');",
+							"    pm.expect(incorpApp).to.have.property('offices');",
+							"    pm.expect(incorpApp['offices']).to.have.property('recordsOffice');",
+							"    pm.expect(incorpApp['offices']['recordsOffice']).to.have.property('deliveryAddress');",
+							"    pm.expect(incorpApp['offices']['recordsOffice']).to.have.property('mailingAddress');",
+							"    pm.expect(incorpApp['offices']).to.have.property('registeredOffice');",
+							"    pm.expect(incorpApp['offices']['registeredOffice']).to.have.property('deliveryAddress');",
+							"    pm.expect(incorpApp['offices']['registeredOffice']).to.have.property('mailingAddress');",
+							"    pm.expect(incorpApp).to.have.property('parties');",
+							"    pm.expect(incorpApp).to.have.property('shareClasses');",
+							"",
+							"    // Check contacts",
+							"    pm.expect(incorpApp['contactPoint']['email']).to.have.eql('test@my.company.com');",
+							"    //pm.expect(incorpApp['contactPoint']['extension']).to.have.eql('2222');",
+							"    //pm.expect(incorpApp['contactPoint']['phone']).to.have.eql('250-777-8888');",
+							"",
+							"    // Check incorporation agreement",
+							"    pm.expect(incorpApp['incorporationAgreement']['agreementType']).to.have.eql('sample');",
+							"",
+							"    // Check records office",
+							"    var recordsOffice = incorpApp['offices']['recordsOffice'];",
+							"    pm.expect(recordsOffice['deliveryAddress']['addressCity']).to.have.eql('Victoria');",
+							"    pm.expect(recordsOffice['deliveryAddress']['addressCountry']).to.have.eql('CA');",
+							"    pm.expect(recordsOffice['deliveryAddress']['addressRegion']).to.have.eql('BC');",
+							"    pm.expect(recordsOffice['deliveryAddress']['postalCode']).to.have.eql('V8W 3E6');",
+							"    pm.expect(recordsOffice['deliveryAddress']['streetAddress']).to.have.eql('200-940 Blanshard St');",
+							"    pm.expect(recordsOffice['mailingAddress']['addressCity']).to.have.eql('Victoria');",
+							"    pm.expect(recordsOffice['mailingAddress']['addressCountry']).to.have.eql('CA');",
+							"    pm.expect(recordsOffice['mailingAddress']['addressRegion']).to.have.eql('BC');",
+							"    pm.expect(recordsOffice['mailingAddress']['postalCode']).to.have.eql('V8W 3E6');",
+							"    pm.expect(recordsOffice['mailingAddress']['streetAddress']).to.have.eql('200-940 Blanshard St');",
+							"    ",
+							"    // Check registered office",
+							"    var registeredOffice = incorpApp['offices']['registeredOffice'];",
+							"    pm.expect(registeredOffice['deliveryAddress']['addressCity']).to.have.eql('Victoria');",
+							"    pm.expect(registeredOffice['deliveryAddress']['addressCountry']).to.have.eql('CA');",
+							"    pm.expect(registeredOffice['deliveryAddress']['addressRegion']).to.have.eql('BC');",
+							"    pm.expect(registeredOffice['deliveryAddress']['postalCode']).to.have.eql('V8W 3E6');",
+							"    pm.expect(registeredOffice['deliveryAddress']['streetAddress']).to.have.eql('200-940 Blanshard St');",
+							"    pm.expect(registeredOffice['mailingAddress']['addressCity']).to.have.eql('Victoria');",
+							"    pm.expect(registeredOffice['mailingAddress']['addressCountry']).to.have.eql('CA');",
+							"    pm.expect(registeredOffice['mailingAddress']['addressRegion']).to.have.eql('BC');",
+							"    pm.expect(registeredOffice['mailingAddress']['postalCode']).to.have.eql('V8W 3E6');",
+							"    pm.expect(registeredOffice['mailingAddress']['streetAddress']).to.have.eql('200-940 Blanshard St');",
+							"",
+							"    // Check parties",
+							"    var parties = incorpApp['parties'][0];",
+							"    ",
+							"    pm.expect(parties['deliveryAddress']['addressCity']).to.have.eql('Victoria');",
+							"    pm.expect(parties['deliveryAddress']['addressCountry']).to.have.eql('CA');",
+							"    pm.expect(parties['deliveryAddress']['addressRegion']).to.have.eql('BC');",
+							"    pm.expect(parties['deliveryAddress']['postalCode']).to.have.eql('V8W 3E6');",
+							"    pm.expect(parties['deliveryAddress']['streetAddress']).to.have.eql('200-940 Blanshard St');",
+							"    pm.expect(parties['mailingAddress']['addressCity']).to.have.eql('Victoria');",
+							"    pm.expect(parties['mailingAddress']['addressCountry']).to.have.eql('CA');",
+							"    pm.expect(parties['mailingAddress']['addressRegion']).to.have.eql('BC');",
+							"    pm.expect(parties['mailingAddress']['postalCode']).to.have.eql('V8W 3E6');",
+							"    pm.expect(parties['mailingAddress']['streetAddress']).to.have.eql('200-940 Blanshard St');",
+							"",
+							"    pm.expect(parties['officer']['email']).to.have.eql('test@test.com');",
+							"    pm.expect(parties['officer']['firstName']).to.have.eql('Thomas');",
+							"    pm.expect(parties['officer']['lastName']).to.have.eql('Engine');",
+							"    pm.expect(parties['officer']['middleName']).to.have.eql('The');",
+							"    pm.expect(parties['officer']['partyType']).to.have.eql('Person');",
+							"    pm.expect(parties['officer']['orgName']).to.have.eql('');",
+							"    ",
+							"    // Check roles",
+							"    ia_date = pm.environment.get('ia_date');",
+							"    var roles = parties['roles'];",
+							"",
+							"    pm.expect(roles[0]['appointmentDate']).to.have.eql(ia_date);",
+							"    pm.expect(roles[0]['roleType']).to.have.eql('Completing Party');",
+							"    pm.expect(roles[1]['appointmentDate']).to.have.eql(ia_date);",
+							"    pm.expect(roles[1]['roleType']).to.have.eql('Incorporator');",
+							"    pm.expect(roles[2]['appointmentDate']).to.have.eql(ia_date);",
+							"    pm.expect(roles[2]['roleType']).to.have.eql('Director');",
+							"",
+							"    // Check share classes",
+							"    var shareClasses = incorpApp['shareClasses'];",
+							"    pm.expect(shareClasses[0]['currency']).to.have.eql(null);",
+							"    pm.expect(shareClasses[0]['hasMaximumShares']).to.have.eql(false);",
+							"    pm.expect(shareClasses[0]['hasParValue']).to.have.eql(false);",
+							"    pm.expect(shareClasses[0]['hasRightsOrRestrictions']).to.have.eql(false);",
+							"    pm.expect(shareClasses[0]['maxNumberOfShares']).to.have.eql(null);",
+							"    pm.expect(shareClasses[0]['name']).to.have.eql('Common Shares');",
+							"    pm.expect(shareClasses[0]['parValue']).to.have.eql(null);",
+							"    pm.expect(shareClasses[0]['priority']).to.have.eql(1);",
+							"    pm.expect(shareClasses[0]['series']).to.have.eql([]);",
+							"    pm.expect(shareClasses[0]['type']).to.have.eql('Class');",
+							"",
+							"    pm.expect(shareClasses[1]['currency']).to.have.eql('CAD');",
+							"    pm.expect(shareClasses[1]['hasMaximumShares']).to.have.eql(true);",
+							"    pm.expect(shareClasses[1]['hasParValue']).to.have.eql(true);",
+							"    pm.expect(shareClasses[1]['hasRightsOrRestrictions']).to.have.eql(true);",
+							"    pm.expect(shareClasses[1]['maxNumberOfShares']).to.have.eql('999');",
+							"    pm.expect(shareClasses[1]['name']).to.have.eql('Class A Shares');",
+							"    pm.expect(shareClasses[1]['parValue']).to.have.eql('1.00');",
+							"    pm.expect(shareClasses[1]['priority']).to.have.eql(2);",
+							"    pm.expect(shareClasses[1]['type']).to.have.eql('Class');",
+							"    pm.expect(shareClasses[1]['series']).to.have.lengthOf(2);",
+							"",
+							"    var series = shareClasses[1]['series'];",
+							"    pm.expect(series[0]['currency']).to.have.eql('CAD');",
+							"    pm.expect(series[0]['hasMaximumShares']).to.have.eql(true);",
+							"    pm.expect(series[0]['hasParValue']).to.have.eql(true);",
+							"    pm.expect(series[0]['hasRightsOrRestrictions']).to.have.eql(true);",
+							"    pm.expect(series[0]['maxNumberOfShares']).to.have.eql(\"150\");",
+							"    pm.expect(series[0]['name']).to.have.eql('Class A Voting Shares');",
+							"    pm.expect(series[0]['parValue']).to.have.eql('1.00');",
+							"    pm.expect(series[0]['priority']).to.have.eql(1);",
+							"    pm.expect(series[0]['type']).to.have.eql('Series');",
+							"",
+							"    pm.expect(series[1]['currency']).to.have.eql('CAD');",
+							"    pm.expect(series[1]['hasMaximumShares']).to.have.eql(true);",
+							"    pm.expect(series[1]['hasParValue']).to.have.eql(true);",
+							"    pm.expect(series[1]['hasRightsOrRestrictions']).to.have.eql(false);",
+							"    pm.expect(series[1]['maxNumberOfShares']).to.have.eql(\"800\");",
+							"    pm.expect(series[1]['name']).to.have.eql('Class A Non-voting Shares');",
+							"    pm.expect(series[1]['parValue']).to.have.eql('1.00');",
+							"    pm.expect(series[1]['priority']).to.have.eql(2);",
+							"    pm.expect(series[1]['type']).to.have.eql('Series');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
-			"protocolProfileBehavior": {}
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{legal_api_url}}/api/v1/businesses/{{incorp_app_temp_reg_id}}/filings/{{incorp_app_filing_id}}",
+					"host": [
+						"{{legal_api_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"businesses",
+						"{{incorp_app_temp_reg_id}}",
+						"filings",
+						"{{incorp_app_filing_id}}"
+					]
+				},
+				"description": "Call business filings endpoint with the temporary registration number and filing id to verify response data"
+			},
+			"response": []
 		}
 	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "{{accessToken}}",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "7a79733c-94f2-4cbd-8850-2a59cf09c3c5",
+				"id": "11132ef2-42dd-44e1-8bcf-880d1fea3044",
 				"type": "text/javascript",
 				"exec": [
+					"/**",
+					" * Pre-request script to retrieve an access token ",
+					" */",
+					"",
+					"function getvar(variableName) {",
+					"    let value = pm.variables.get(variableName);",
+					"    if (!value) throw new Error(",
+					"        `Variable '${variableName}' is not defined.`);",
+					"    return value;",
+					"}",
+					"",
+					"let tokenUrl = getvar('staff-token-url');",
+					"let accountId = getvar('staff-service-account-id');",
+					"let accountSecret = getvar('staff-service-account-secret');",
+					"",
+					"let getTokenRequest = {",
+					"    method: 'POST',",
+					"    url: tokenUrl,",
+					"    header: {",
+					"        'content-type': 'application/x-www-form-urlencoded',",
+					"        'Authorization': 'Basic '+ btoa(accountId+':'+accountSecret)",
+					"    },",
+					" ",
+					"    body: 'grant_type=client_credentials'",
+					"    ",
+					"};",
+					"",
+					"pm.sendRequest(getTokenRequest, (err, response) => {",
+					"    let jsonResponse = response.json(),",
+					"        newAccessToken = jsonResponse.access_token;",
+					"",
+					"    console.log({ err, jsonResponse, newAccessToken })",
+					"",
+					"    pm.environment.set('accessToken', newAccessToken);",
+					"    pm.variables.set('accessToken', newAccessToken);",
+					"});",
 					""
 				]
 			}
@@ -113,7 +264,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a5759d46-85d0-4db0-947b-73a24cfbfb62",
+				"id": "eafc9011-a753-43b2-b555-af7d0cd7ec5c",
 				"type": "text/javascript",
 				"exec": [
 					""

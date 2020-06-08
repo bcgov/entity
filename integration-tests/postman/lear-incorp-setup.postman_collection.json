@@ -1,111 +1,308 @@
 {
 	"info": {
-		"_postman_id": "7f49dd95-f2a0-4050-9146-3142043b60d0",
+		"_postman_id": "ef97304d-d447-4c55-9de8-a672a2c6f01f",
 		"name": "lear-incorp-setup",
-		"description": "version=2.0.1 - This is a Legal API description",
+		"description": "Collection to test create and file a new incorporation application",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "ops",
-			"item": [
+			"name": "create draft incorporation application",
+			"event": [
 				{
-					"name": "readyz",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "02c6ca25-a229-4ca7-ae5c-f2b3325e1ed2",
-								"exec": [
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
-									"});",
-									"",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"",
-									"",
-									"pm.test(\"api is healthy\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.message).to.eql('api is ready');",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{url}}/ops/readyz",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"ops",
-								"readyz"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "healthz",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "a363f04c-685d-47b8-861c-13235026ccca",
-								"exec": [
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
-									"});",
-									"",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"",
-									"",
-									"pm.test(\"api is healthy\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.message).to.eql('api is healthy');",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{url}}/ops/healthz",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"ops",
-								"healthz"
-							]
-						}
-					},
-					"response": []
+					"listen": "test",
+					"script": {
+						"id": "578361fe-f36b-4007-8fb8-08c492781d8c",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Draft Incorporation Application has expected properties\", function () {",
+							"    var responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('filing');",
+							"",
+							"    var filing = responseData['filing'];",
+							"    pm.expect(filing).to.have.property('business');",
+							"    pm.expect(filing).to.have.property('header');",
+							"    pm.expect(filing).to.have.property('incorporationApplication');",
+							"",
+							"    var business = filing['business'];",
+							"    pm.expect(business).to.have.property('identifier');",
+							"",
+							"    var header = filing['header'];",
+							"    pm.expect(header).to.have.property('accountId');",
+							"",
+							"    var filing_id = header['filingId']",
+							"    pm.environment.set('incorp_app_filing_id', filing_id);",
+							"    pm.variables.set('incorp_app_filing_id', filing_id);",
+							"",
+							"    var expected_account_id = pm.variables.get('staff_account_id');",
+							"    var accountId = header['accountId']",
+							"    pm.expect(+accountId).to.eql(+expected_account_id)",
+							"",
+							"    var tempRegId = business['identifier']",
+							"    pm.environment.set('incorp_app_temp_reg_id', tempRegId);",
+							"    pm.variables.set('incorp_app_temp_reg_id', tempRegId);",
+							"});",
+							"",
+							"pm.test(\"Incorporation application temporary registration id is set in environment variables\", function () {",
+							"    incorpAppTempRegId = pm.variables.get('incorp_app_temp_reg_id');",
+							"    pm.expect(incorpAppTempRegId)",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
-			"protocolProfileBehavior": {}
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"filing\": {\n        \"header\": {\n            \"accountId\": {{staff_account_id}},\n            \"name\": \"incorporationApplication\"\n        },\n        \"business\":{\n        \t\"legalType\": \"BC\"\t\n        },\n        \"incorporationApplication\": {\n        \t\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{legal_api_url}}/api/v1/businesses?draft=true",
+					"host": [
+						"{{legal_api_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"businesses"
+					],
+					"query": [
+						{
+							"key": "draft",
+							"value": "true"
+						}
+					]
+				},
+				"description": "Create a draft incorporation application with a minimal filing and save the temporary registration number"
+			},
+			"response": []
+		},
+		{
+			"name": "Verify draft Incorporation Application",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "510fdd2c-f439-4234-8bc8-b8638caaffc6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Draft Incorporation Application has expected properties\", function () {",
+							"    var responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('filing');",
+							"",
+							"    var filing = responseData['filing'];",
+							"    console.log('filing', filing);",
+							"    pm.expect(filing).to.have.property('business');",
+							"    pm.expect(filing).to.have.property('header');",
+							"    pm.expect(filing).to.have.property('incorporationApplication');",
+							"",
+							"    var business = filing['business'];",
+							"    pm.expect(business).to.have.property('identifier');",
+							"",
+							"    var expected_temp_id = pm.variables.get('incorp_app_temp_reg_id');",
+							"    var temp_id = business['identifier']",
+							"    pm.expect(temp_id).to.eql(expected_temp_id)",
+							"",
+							"    var header = filing['header'];",
+							"    pm.expect(header['status']).to.have.eql('DRAFT');",
+							"    pm.expect(header['name']).to.have.eql('incorporationApplication');",
+							"    pm.expect(header).to.have.property('filingId');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{legal_api_url}}/api/v1/businesses/{{incorp_app_temp_reg_id}}/filings",
+					"host": [
+						"{{legal_api_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"businesses",
+						"{{incorp_app_temp_reg_id}}",
+						"filings"
+					]
+				},
+				"description": "Call business filings endpoint with the draft incorporation application with temporary registration number and verify response data"
+			},
+			"response": []
+		},
+		{
+			"name": "Complete Incorporation Application Filing",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "6afff31d-3cf0-46ec-a615-0634ea2bd6a5",
+						"exec": [
+							"var moment = require('moment')",
+							"ia_date = moment().format(\"YYYY-MM-DD\");",
+							"pm.variables.set('ia_date', ia_date);",
+							"pm.environment.set('ia_date', ia_date);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "2609e555-418b-45b4-a422-ec2bd7239230",
+						"exec": [
+							"pm.test(\"Status code is 202\", function () {",
+							"    pm.response.to.have.status(202);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"filing\": {\n        \"header\": {\n            \"name\": \"incorporationApplication\",\n            \"certifiedBy\": \"Thomas Engine\",\n            \"date\": \"{{ia_date}}\",\n            \"routingSlipNumber\": \"111111111\"\n        },\n        \"business\": {\n            \"legalType\": \"BC\",\n            \"identifier\": \"{{incorp_app_temp_reg_id}}\"\n        },\n        \"incorporationApplication\": {\n            \"offices\": {\n                \"registeredOffice\": {\n                    \"deliveryAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    },\n                    \"mailingAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    }\n                },\n                \"recordsOffice\": {\n                    \"deliveryAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    },\n                    \"mailingAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    }\n                }\n            },\n            \"contactPoint\": {\n                \"email\": \"test@my.company.com\",\n                \"phone\": \"250-777-8888\",\n                \"extension\": \"2222\"\n            },\n            \"parties\": [\n                {\n                    \"officer\": {\n                        \"id\": 0,\n                        \"firstName\": \"Thomas\",\n                        \"lastName\": \"Engine\",\n                        \"middleName\": \"The\",\n                        \"orgName\": \"\",\n                        \"partyType\": \"Person\",\n                        \"email\": \"test@test.com\"\n                    },\n                    \"roles\": [\n                        {\n                            \"roleType\": \"Completing Party\",\n                            \"appointmentDate\": \"{{ia_date}}\"\n                        },\n                        {\n                            \"roleType\": \"Incorporator\",\n                            \"appointmentDate\": \"{{ia_date}}\"\n                        },\n                        {\n                            \"roleType\": \"Director\",\n                            \"appointmentDate\": \"{{ia_date}}\"\n                        }\n                    ],\n                    \"mailingAddress\": {\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\",\n                        \"addressCity\": \"Victoria\",\n                        \"addressRegion\": \"BC\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"addressCountry\": \"CA\"\n                    },\n                    \"deliveryAddress\": {\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\",\n                        \"addressCity\": \"Victoria\",\n                        \"addressRegion\": \"BC\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"addressCountry\": \"CA\"\n                    }\n                }\n            ],\n            \"shareClasses\": [\n                {\n                    \"id\": 1,\n                    \"priority\": 1,\n                    \"type\": \"Class\",\n                    \"name\": \"Common Shares\",\n                    \"hasMaximumShares\": false,\n                    \"maxNumberOfShares\": null,\n                    \"hasParValue\": false,\n                    \"parValue\": null,\n                    \"currency\": null,\n                    \"hasRightsOrRestrictions\": false,\n                    \"series\": []\n                },\n                {\n                    \"id\": 2,\n                    \"priority\": 2,\n                    \"type\": \"Class\",\n                    \"name\": \"Class A Shares\",\n                    \"hasMaximumShares\": true,\n                    \"maxNumberOfShares\": \"999\",\n                    \"hasParValue\": true,\n                    \"parValue\": \"1.00\",\n                    \"currency\": \"CAD\",\n                    \"hasRightsOrRestrictions\": true,\n                    \"series\": [\n                        {\n                            \"id\": 1,\n                            \"priority\": 1,\n                            \"type\": \"Series\",\n                            \"name\": \"Class A Voting Shares\",\n                            \"hasMaximumShares\": true,\n                            \"maxNumberOfShares\": \"150\",\n                            \"hasParValue\": true,\n                            \"parValue\": \"1.00\",\n                            \"currency\": \"CAD\",\n                            \"hasRightsOrRestrictions\": true\n                        },\n                        {\n                            \"id\": 2,\n                            \"priority\": 2,\n                            \"type\": \"Series\",\n                            \"name\": \"Class A Non-voting Shares\",\n                            \"hasMaximumShares\": true,\n                            \"maxNumberOfShares\": \"800\",\n                            \"hasParValue\": true,\n                            \"parValue\": \"1.00\",\n                            \"currency\": \"CAD\",\n                            \"hasRightsOrRestrictions\": false\n                        }\n                    ]\n                }\n            ],\n            \"incorporationAgreement\": {\n                \"agreementType\": \"sample\"\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{legal_api_url}}/api/v1/businesses/{{incorp_app_temp_reg_id}}/filings/{{incorp_app_filing_id}}?draft=false",
+					"host": [
+						"{{legal_api_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"businesses",
+						"{{incorp_app_temp_reg_id}}",
+						"filings",
+						"{{incorp_app_filing_id}}"
+					],
+					"query": [
+						{
+							"key": "draft",
+							"value": "false"
+						}
+					]
+				},
+				"description": "Update business filing with a complete filing with draft=false and use route slip number for payment"
+			},
+			"response": []
+		},
+		{
+			"name": "Delay for PAID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://echo.getpostman.com/delay/3",
+					"protocol": "https",
+					"host": [
+						"echo",
+						"getpostman",
+						"com"
+					],
+					"path": [
+						"delay",
+						"3"
+					]
+				},
+				"description": "Wait for payment to go through"
+			},
+			"response": []
 		}
 	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "{{accessToken}}",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "58521962-5288-429a-987b-4240ef66a0ae",
+				"id": "a648e7f1-00e7-4294-860a-8fb899cd78ed",
 				"type": "text/javascript",
 				"exec": [
+					"/**",
+					" * Pre-request script to retrieve an access token ",
+					" */",
+					"",
+					"function getvar(variableName) {",
+					"    let value = pm.variables.get(variableName);",
+					"    if (!value) throw new Error(",
+					"        `Variable '${variableName}' is not defined.`);",
+					"    return value;",
+					"}",
+					"",
+					"let tokenUrl = getvar('staff-token-url');",
+					"let accountId = getvar('staff-service-account-id');",
+					"let accountSecret = getvar('staff-service-account-secret');",
+					"",
+					"let getTokenRequest = {",
+					"    method: 'POST',",
+					"    url: tokenUrl,",
+					"    header: {",
+					"        'content-type': 'application/x-www-form-urlencoded',",
+					"        'Authorization': 'Basic '+ btoa(accountId+':'+accountSecret)",
+					"    },",
+					" ",
+					"    body: 'grant_type=client_credentials'",
+					"    ",
+					"};",
+					"",
+					"pm.sendRequest(getTokenRequest, (err, response) => {",
+					"    let jsonResponse = response.json(),",
+					"        newAccessToken = jsonResponse.access_token;",
+					"",
+					"    console.log({ err, jsonResponse, newAccessToken })",
+					"",
+					"    pm.environment.set('accessToken', newAccessToken);",
+					"    pm.variables.set('accessToken', newAccessToken);",
+					"});",
 					""
 				]
 			}
@@ -113,7 +310,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7311aa53-2f1c-4450-b99d-622c1a41f8fa",
+				"id": "f63078ce-10a0-4ab4-a5f1-05d2f2992c9d",
 				"type": "text/javascript",
 				"exec": [
 					""
