@@ -18,8 +18,8 @@ As of now these include our integration tests for the incorporation flow. Other 
 ### Adding More Integration Tests
 To add more to this pipeline:
 1. add your pm collections in the postman folder (edit the integration pm pipeline as necessary)
-2. add the setup for your tests in the correct setup stage for you (i.e. run a pm collection over the data-reset-tool)
-3. add your verification in the correct verify stage for you (i.e. run a pm collection)
+2. add the setup and verification for your tests in the correct setup stage for you (i.e. run a pm collection over the data-reset-tool)
+
 
 ### Updating openshift objects
 Steps for updating / adding needed openshift objects for the tests (i.e. pipelines, secrets, etc.)

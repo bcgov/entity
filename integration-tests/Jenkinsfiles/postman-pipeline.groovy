@@ -51,7 +51,12 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             secretEnvVar(key: 'USERNAME', secretName: "integration-${TAG_NAME}-secret", secretKey: 'username'),
             secretEnvVar(key: 'CLIENT_SECRET', secretName: "integration-${TAG_NAME}-secret", secretKey: 'client_secret'),
             secretEnvVar(key: 'CLIENT_ID', secretName: "integration-${TAG_NAME}-secret", secretKey: 'client_id'),
-            secretEnvVar(key: 'SERVICE_URL', secretName: "integration-${TAG_NAME}-secret", secretKey: "${COMPONENT_NAME}_url")
+            secretEnvVar(key: 'SERVICE_URL', secretName: "integration-${TAG_NAME}-secret", secretKey: "${COMPONENT_NAME}_url"),
+            secretEnvVar(key: 'STAFF_TOKEN_URL', secretName: "integration-${TAG_NAME}-secret", secretKey: 'staff_token_url'),
+            secretEnvVar(key: 'STAFF_SERVICE_ACCOUNT_ID', secretName: "integration-${TAG_NAME}-secret", secretKey: 'staff_service_account_id'),
+            secretEnvVar(key: 'STAFF_SERVICE_ACCOUNT_SECRET', secretName: "integration-${TAG_NAME}-secret", secretKey: 'staff_service_account_secret'),
+            secretEnvVar(key: 'STAFF_ACCOUNT_ID', secretName: "integration-${TAG_NAME}-secret", secretKey: 'staff_account_id'),
+            secretEnvVar(key: 'LEGAL_SERVICE_URL', secretName: "integration-${TAG_NAME}-secret", secretKey: 'legal_api_url')
         ])
     )
 ])
@@ -83,7 +88,12 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                         --global-var auth_url=${AUTH_URL} --global-var realm=${REALM} \
                         --global-var password=${PASSWORD} --global-var client_secret=${CLIENT_SECRET} \
                         --global-var username=${USERNAME} --global-var client_id=${CLIENT_ID} \
-                        --global-var url=${SERVICE_URL}
+                        --global-var url=${SERVICE_URL} \
+                        --global-var staff-token-url=${STAFF_TOKEN_URL} \
+                        --global-var staff-service-account-id=${STAFF_SERVICE_ACCOUNT_ID} \
+                        --global-var staff-service-account-secret=${STAFF_SERVICE_ACCOUNT_SECRET} \
+                        --global-var staff_account_id=${STAFF_ACCOUNT_ID} \
+                        --global-var legal_api_url=${LEGAL_SERVICE_URL}
                         """
                     } catch (Exception e) {
                         echo "One or more tests failed."
