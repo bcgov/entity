@@ -7,6 +7,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 June 12, 2020
 ----
 1. OPS Support for account affiliation - trainings/documentation?
+1. Partner support/status for BC Services Card
 1. Tri weekly status touch points
 
 ----
