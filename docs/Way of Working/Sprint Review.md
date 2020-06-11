@@ -43,7 +43,10 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
-| 1 | Notification Email signature should say "BC Registry and Online Services" | Carol | Entity Team|
+| 1 | Notification Email signature should say "BC Registry and Online Services" | Carol | Linda |
+| 2 | Priority Help text on Name Request page | Sinead | Lorna |
+| 3 | To have the transaction report amount field dynamic enough in future to accoodate PPR needs| Kevin | Loren |
+
 ----
 ### May 26, 2020 - Sprint 30 - 55 min. total 
 ----
