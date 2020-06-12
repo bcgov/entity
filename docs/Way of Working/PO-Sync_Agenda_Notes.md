@@ -7,10 +7,30 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 June 12, 2020
 ----
 1. OPS Support for account affiliation - trainings/documentation?
+   - Training IT OPS for managing account affiliation. Not for now, may be sometime in july
+   - Cross train LAB OPS team. This needs to be addressed
+      - Shahriar has the list of cross train skills required. 
+         - This needs to be specific for internal team in terms of OPS training
 1. Partner support/status for BC Services Card
+   - Service interupptions from PayBC and IDIM needs to be raised
+   - How can we ensure PayBC is available on 24th June? - Action item to Loren
 1. "Create Account" option not present when user logged in.
-1. Entities to upgrade to the latest common components so clients can access transaction history (after the 16th) or a choice of login (BCeID vs BCSC) by the 29th
+   - We need a place to create account option for logged in version?. Amit to create a dependency ticket
+   - Do we need this before Go-live?
+   - Where should we place the option? From a design standpoint, Loren to check 
+1. Entities to upgrade to the latest common components so clients can access transaction history (after the 16th) or a choice of login (BCeID vs BCSC) by the June 29th
+   - Relationship team(Amit) to create the dependency ticket for doing this work
+   - We need to bring this up in standup.
+1. BCOL Fee codes
+   - Is there a need to differntiate the system while collecting the fees?
+   - {Loren}: Doesn't look like
+1. Celebration after june 30th
+   - For planing involve Ian, Karla Maria, MRAS team
+   - Jyoti and Shahriar to work together and bring up some fresh plans
 1. Tri weekly status touch points
+   - Odi might leave the project, may be by end of month
+   - Risks around managing other filing for BCOMP's - team presented a manual way of doing that. So the risk is mitigated
+   - Procurement for APA-G(cloud) has been done, contract signing pending
 
 ----
 June 05, 2020
