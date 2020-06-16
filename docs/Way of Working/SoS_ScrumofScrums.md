@@ -3,6 +3,15 @@
 Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 ---
+June 16
+---
+1. Invovle Trish in the planning meeting
+1. Program level Sprint Review
+  - Can be done in the PI meeting?
+  - Any other options?
+1. Follow up meeting within Shahriar and Jyoti for DEVOPS stories
+1. Quality metrics for the releases. We are moving things in the relesae/sprint but we are not looking at a bigger picture
+---
 Mar 24
 ---
 - Scrum Masters to discuss the process to improve the ad-hoc requests from developers (to other teams)
