@@ -4,11 +4,32 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Aug 14, 2020
+----
+1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
+----
+June 24, 2020
+----
+1. Combined Retro for Entity and Relationship team
+1. 
+----
 June 19, 2020
 ----
 1. Business Registry Home Page for Coops users
-1. Shared business access - PI Planning
-1. Quality Metrics in the team
+   - Decission was to leave it as is for now. 
+   - For CO-OP users, we will wait for staff to see how many questions do they get for CO-OP users?
+   - Linda to check with Trish to see the communication plan?
+   - Loren to see in future if we can add " If you already have an account, Please login?" below the prominent button "Create BC Resgistry Account". Relationship team already have this in backlog
+1. BComp NR Type
+   - The dependency ticket wont be needed as relationship doesnt check for NR type
+   - This would be there for only few months. Later NR will come in picture
+1. Shared business access - Came in relationship PI Planning topic
+   - How to provide access to people who are outside your account?
+   - Since we are getting away from passcodes. This should be on our radar when Entity starts owning Manage business 
+   - There would be epics for "Manage business" dashboard which relationshp team has it in their backlog. One of such epics would be "Search for Premium users"
+1. Quality Metrics across team
+   - Team to have more room in the team sprints for bugs and tech debt - almost 15% capacity should be reserved for that
+
 ----
 June 12, 2020
 ----
