@@ -4,6 +4,12 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+June 19, 2020
+----
+1. Business Registry Home Page for Coops users
+1. Shared business access - PI Planning
+1. Quality Metrics in the team
+----
 June 12, 2020
 ----
 1. OPS Support for account affiliation - trainings/documentation?
