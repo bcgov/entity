@@ -23,8 +23,23 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 
+----
+### July 04, 2020 - Sprint (Milestone) 33 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
+#### Entities
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min
+#### Name Request
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Relationships
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+----
 ### June 23rd, 2020 - Sprint (Milestone) 32 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
@@ -43,6 +58,11 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
+| 1 | Legal Obligation notification option not available for CO-OPS| Trish | Linda confirmed that currently its only for Benefit company but agrees that it could be really helpful for CO-OPS users to be aware of their Legal requirements |
+| 2 | Wording on Business Registry page is currently directed to BCOMP and CO-OP maintenance filing users, will it be changing everytime we are adding more users to our application | Carol |Scott confirmed thats the plan forward to keep the page updated to the user base is catering to |
+| 3 | Retional behind branding few pages as Dashboard vs normal pages | Kevin | Scott confirmed this is the MVP version and team has an internal plan to tackle multi dashboard thing in future |
+| 4 | Password being visible on the account setup for BCeID | Severin | Loren confirmed that its intentional(as per user feedback)|
+| 5 | How does the actual Affidavit look like and whats the process for Notary to self identify them | Kevin | Loren provided the update that currently there is no digital way for Notaries to self identify them but Carol is working on a bigger pan-canada plan for Notaries to have a digitally identify themselves|
 
 
 ---
