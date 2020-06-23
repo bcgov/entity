@@ -24,6 +24,27 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 |---|----------------------|--------------------|-------------------------|
 
 
+
+### June 23rd, 2020 - Sprint (Milestone) 32 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+* Email notifications - Severin - 5 min
+* Breadcrumbs - Cameron - 2 min
+* Outputs & Notice of Articles - Lekshmi 
+* Legal Obligations Benefit Statement - Lekshmi - 2 min
+
+#### Name Request
+* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+#### Relationships
+* Out of province setup & Staff Review - Loren - 20 min 
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+
 ---
 ### June 09, 2020 - Sprint 31 - 55 min. total 
 ---
