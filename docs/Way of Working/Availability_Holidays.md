@@ -10,7 +10,7 @@
 * Thor: May 11-15, June 19,22-26, Oct 14
 * Kial: Mondays in the morning, Wed all day, Thurdsays in the morning
 * Lekshmi:
-* Peter:
+* Peter: Jun 26, 29
 * Sienna:
 * Jyoti: Jun 29, Jun 30, Jul 31, Sep 4, Sep 18
 * Cameron:
