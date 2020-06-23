@@ -7,8 +7,8 @@ June 16
 ---
 1. Invovle Trish in the planning meeting
 1. Program level Sprint Review
-  - Can be done in the PI meeting?
-  - Any other options?
+    - Can be done in the PI meeting?
+    - Any other options?
 1. Follow up meeting within Shahriar and Jyoti for DEVOPS stories
 1. Quality metrics for the releases. We are moving things in the relesae/sprint but we are not looking at a bigger picture
 ---
