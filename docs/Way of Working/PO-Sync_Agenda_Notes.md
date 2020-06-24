@@ -11,7 +11,7 @@ Aug 14, 2020
 June 24, 2020
 ----
 1. Combined Retro for Entity and Relationship team
-1. 
+1. OPS readiness for BCOMP
 ----
 June 19, 2020
 ----
