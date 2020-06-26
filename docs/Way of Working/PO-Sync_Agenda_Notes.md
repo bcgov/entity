@@ -11,6 +11,11 @@ Aug 14, 2020
 ----
 July 02, 2020
 ----
+a. Discuss the PI planning together
+   
+----
+June 24, 2020
+----
 1. Combined Retro for Entity and Relationship team
 - Lets do it every PI, after the PI, we cna bring in people for last 1 hr and do a combined retro
 1. Bring the board at grooming
@@ -30,12 +35,6 @@ July 02, 2020
 - Develop a process to indicate the SLA 
 - Someone still need to be accountablefor managing this
 - Linda to add folks to the email which IT OPS sends us
-   
-----
-June 24, 2020
-----
-1. Combined Retro for Entity and Relationship team
-1. OPS readiness for BCOMP
 ----
 June 19, 2020
 ----
