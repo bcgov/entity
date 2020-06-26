@@ -7,6 +7,30 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Aug 14, 2020
 ----
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
+
+----
+July 02, 2020
+----
+1. Combined Retro for Entity and Relationship team
+- Lets do it every PI, after the PI, we cna bring in people for last 1 hr and do a combined retro
+1. Bring the board at grooming
+- Shahriar
+1. Celebration
+- Different options. 
+1. OPS readiness for BCOMP
+- Immediate need would be to include everyone on the team
+- Tech review across teams on regular basis
+- Do more impromptu demos - explain the features in demos
+   - Record the session
+   - Involve the home team
+   - Lunch and learn in the month
+- Long term solution- Train the IT OPS
+   - Third phase is to train the HOme dev
+- Involve all the team members in the email from IT OPS
+- Develop a process to indicate the SLA 
+- Someone still need to be accountablefor managing this
+- Linda to add folks to the email which IT OPS sends us
+   
 ----
 June 24, 2020
 ----
