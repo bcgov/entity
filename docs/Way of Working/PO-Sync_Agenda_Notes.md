@@ -12,6 +12,7 @@ Aug 14, 2020
 July 03, 2020
 ----
 a. Discuss the PI planning together
+b. PIA/STRA update for BCOMP/release on june 30th - whats outstanding?
    
 ----
 June 24, 2020
