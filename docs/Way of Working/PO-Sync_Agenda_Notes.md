@@ -12,6 +12,8 @@ Aug 14, 2020
 July 03, 2020
 ----
 a. Discuss the PI planning together
+   - Have a longer term plan done for Relationship team. @Amit and Jyoti to connect
+   - 
 b. PIA/STRA update for BCOMP/release on june 30th - whats outstanding?
    
 ----
