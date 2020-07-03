@@ -12,9 +12,16 @@ Aug 14, 2020
 July 03, 2020
 ----
 a. Discuss the PI planning together
-   - Have a longer term plan done for Relationship team. @Amit and Jyoti to connect
+   - Have a longer term plan done for Relationship team. @Amit and Jyoti to connect.
    - 
 b. PIA/STRA update for BCOMP/release on june 30th - whats outstanding?
+   - Nothing is outstanding
+   
+c. Jyoti, Jennifer and Sandra to work on OKR's and bring more solid plan to the table.
+
+d. Loren to create his Epics in Zenhub
+
+e. Linda, Kaine and Jyoti to update the release board and Epics in Zenhub.
    
 ----
 June 24, 2020
