@@ -109,7 +109,7 @@ Most of the customations can be done via configurations as environment variables
 
 # Recommendation
 	# Recommendation
-	From the discussion with Thor and Lorna , it has been decided that the risks are low at this point of time.
+	From the discussion with Thor and Lorna , it has been decided that the risks are low at this point of time and the application doesnt have to go with any of the above options.
 	
 	From Lorna ,
 	After discussion with Thor(2020-07-06), it was pointed put that COLIN, NRO and many 
