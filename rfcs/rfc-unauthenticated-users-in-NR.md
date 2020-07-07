@@ -108,7 +108,8 @@ Most of the customations can be done via configurations as environment variables
           
 
 # Recommendation
-	To be filled after discussion with the team
+	From Lorna :
+	After discussion with Thor(2020-07-06), it was pointed put that COLIN, NRO and many government apps such as eDivorce do not require a login and do not have additional protection in these apps such as captcha to protect the database from being hacked or filled up by bots. The government network handle ddos attacks so all we need to do in the api is to ensure that we are validating data being captured in the database. He also pointed out that login is not necessarily foolproof as logins can be compromised which results in the same level of risk as apps that do not require a login. Hence we have concluded that we will not proceed with any of these options and go with the status quo as the risk is considered low.
 
 # Thanks
 
