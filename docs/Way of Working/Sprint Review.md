@@ -24,12 +24,15 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 |---|----------------------|--------------------|-------------------------|
 
 ----
-### July 04, 2020 - Sprint (Milestone) 33 - 55 min. total 
+### July 07, 2020 - Sprint (Milestone) 33 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min
+* Alteration Filing UI : Severin - 5 min
+* Business Number Display & Colin only, Pre alteration filing : Severin - 5mins
+* Demo of BComp AR & COD : Cameron - 5 mins
+
 #### Name Request
 * xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
 #### Relationships
