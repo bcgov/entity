@@ -7,6 +7,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ## Jul, 08, 2020
 1. PyTest Fixture - Thor
 1. Minio - Patrick
+1. Address complete - Severin
 
 ----
 ## Mar, 18, 2020
