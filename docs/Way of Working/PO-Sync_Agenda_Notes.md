@@ -9,6 +9,12 @@ Aug 14, 2020
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
 
 ----
+July 10, 2020
+----
+* Requirements for Search functionality
+* PI Agenda and timings
+
+----
 July 03, 2020
 ----
 a. Discuss the PI planning together
