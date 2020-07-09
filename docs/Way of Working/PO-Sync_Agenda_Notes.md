@@ -11,8 +11,10 @@ Aug 14, 2020
 ----
 July 10, 2020
 ----
+* Authorization for COLIN accounts
 * Requirements for Search functionality
 * PI Agenda and timings
+
 
 ----
 July 03, 2020
