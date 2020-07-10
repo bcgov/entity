@@ -14,14 +14,15 @@ July 10, 2020
 ----
 * Authorization for COLIN accounts
    - We are creating a ticket for this and assigning it to Thor
-   - Use the AR code or Password code to affiliate their business to their account
+   - Idea: Use the AR code or Password code to affiliate their business to their account
 * Manage Business Dashboard:
    - Amit to create a spike ticket and assign it to UI folks()
 * Requirements for Search functionality
    - Jyoti to create a ticket and assign it to BA's. This would be research ticket
    - Create an Epic for Staff search
    - Corp staff, Help desk staff needs to be involved
-   - Should be done y 2 weeks
+   - requirements need to be handed over to Dev team
+   - Should be done by next 2 weeks
 * PI Agenda and timings
    -  Invite all the team member
    - Include the team members from Home team and keep them optionals
