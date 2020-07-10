@@ -12,7 +12,7 @@ Aug 14, 2020
 ----
 July 10, 2020
 ----
-* Authorization for COLIN accounts
+* Authorization for Business in COLIN
    - We are creating a ticket for this and assigning it to Thor
    - Idea: Use the AR code or Password code to affiliate their business to their account
 * Manage Business Dashboard:
