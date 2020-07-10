@@ -7,6 +7,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Aug 14, 2020
 ----
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
+1. Staff Dashboard design
 
 ----
 July 10, 2020
