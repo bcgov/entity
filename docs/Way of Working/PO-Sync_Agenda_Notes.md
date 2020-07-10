@@ -23,7 +23,9 @@ July 10, 2020
    - Corp staff, Help desk staff needs to be involved
    - Should be done y 2 weeks
 * PI Agenda and timings
--  Invite all the team member
+   -  Invite all the team member
+   - Include the team members from Home team and keep them optionals
+      - David Roberts, Bob Bowles, Mihai Dinu, Cameron Wulff and Amber Andresen
 
 
 ----
