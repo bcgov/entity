@@ -12,6 +12,7 @@ Aug 14, 2020
 July 17, 2020
 ----
 1. BC Registry Homepage - Review the draft(Loren)
+1. To prioritize tickets 3092, 2436, 4304  - Linda
 
 ----
 July 10, 2020
