@@ -8,6 +8,10 @@ Aug 14, 2020
 ----
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
 1. Staff Dashboard design
+----
+July 17, 2020
+----
+1. BC Registry Homepage - Review the draft(Loren)
 
 ----
 July 10, 2020
