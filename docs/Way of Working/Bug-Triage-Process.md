@@ -18,10 +18,7 @@
     -  __Priority3__ - Minor defect with a workaround, may relate to usability. Must be fixed in some future release. 
 
    c) Dev provides estimate for the bug.
-   d) Set release version:
-    i) P2s next release
-    ii) P3s any of the next 3 releases. 
-      
+   d) Set release version P2s any of the next 3 releases. P3s are sometime in the future.
    e) Place into the Bug Column/Pipeline in priority order.
    
 * Preparation for this Bug Triage Meeting: QA check if there is a duplicate of this issue (remove duplicates) and confirms if all bugs are reproducable (some bugs could be fixed already) 
