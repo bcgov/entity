@@ -1,3 +1,13 @@
+# CAVEAT
+AVOID THESE STEPS FOR THE MOMENT.
+
+There are existing procedures for installing pre-requisites and running things, for example:
+- https://github.com/bcgov/entity/blob/master/docs/development.md
+- https://github.com/bcgov/lear/actions/runs/169244066/workflow
+- https://github.com/bcgov/lear/blob/master/makefile
+
+These procedures may or may not work in your development environment. It would be great to update the existing docs or at least document steps that follow best practices and don't deviate from established procedures. (Since I started this, I will try to spend a bit of time testing and updating this... SB)
+
 # How to Run the Legal API Unit Tests
 
 ## Option 1 - Github Actions
