@@ -13,6 +13,8 @@ July 17, 2020
 ----
 1. BC Registry Homepage - Review the draft(Loren)
 1. To prioritize tickets 3092, 2436, 4304  - Linda
+1. Update the Roadmap
+1. Use the Friday Meeting for Organizing tickets on the releases.
 
 ----
 July 10, 2020
