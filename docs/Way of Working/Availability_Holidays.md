@@ -29,7 +29,7 @@
 * Nitin: Feb 17 - Mar 13
 * Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3, ...)
 * Waldemar: 
-* Sumesh:
+* Sumesh: July 31
 
 
 ----
