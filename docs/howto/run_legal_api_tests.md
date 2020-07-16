@@ -32,10 +32,44 @@
   python3 -m pip install -r requirements/prod.txt
   python3 -m pip install -r requirements/bcregistry-libraries.txt
   ```
-9. you can check what's installed with `python3 -m pip freeze`
+9. (you can check what's installed with `python3 -m pip freeze`)
+10. you have a connection to a database! (eg, dev); fill in the proper values:
+  ```
+  oc login https://console.pathfinder.gov.bc.ca:8443 --token=...
+  oc port-forward postgresql-dev-7-df4cr 5433:5432
+  ```
 
 ### Option 2.1 - Run the Tests from the Command Line
-(coming soon)
+```
+cd /c/Repos/lear/legal-api
+python3 -m pip install .  # sometimes needed to compile some files
+python3 -m pytest tests/unit/api
+```
 
 ### Option 2.2 - Run the Tests from VS Code
-(coming soon)
+1. start VS Code
+2. open the "cd /c/Repos/lear" folder (or previously saved Lear workspace)
+3. open Run panel
+4. click gear icon to open "launch.json"
+5. you need a configuration similar to this:
+```
+{
+    "name": "Python: Pytest",
+    "type": "python",
+    "request": "launch",
+    "module":"pytest",
+    "args": ["c:/Repos/lear/legal-api/tests/unit/services/test_document_meta.py"],
+    "cwd": "c:/Repos/lear/legal-api",
+    "envFile": "/c/Repos/lear/legal-api/.env",
+    "justMyCode": false
+},
+```
+6. in the RUN bar, select configuration "Python: Pytest"
+7. click the green run icon
+8. if needed, select terminal "powershell"
+9. open Explorer panel
+10. open "lear/legal-api/tests/unit/" folder
+11. open subfolder that contains your test file
+12. you can right-click on the file and select "Debug All Tests" or "Run All Tests"
+13. you can set break-points in your test file
+14. in the Run Panel, you can watch variables, see the call stack, etc.
