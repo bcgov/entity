@@ -12,6 +12,7 @@ Aug 14, 2020
 July 17, 2020
 ----
 1. BC Registry Homepage - Review the draft(Loren)
+   Some feedback captured in the meeting:
    - "Go To" looking noisy.
    -  Include Names Request under Modernization Initiative
    -  Registered/Log-In section - doesnt make sense
