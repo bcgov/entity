@@ -11,7 +11,11 @@ Aug 14, 2020
 ----
 July 24, 2020
 ----
-
+1. How to execute the upcoming PI's?
+   - Remote vs In person?
+   - When should we do it?
+   - Involvement? - Same as last one?
+   - Duration? - 4 hrs? so that we can address the Retro
 
 ----
 July 17, 2020
