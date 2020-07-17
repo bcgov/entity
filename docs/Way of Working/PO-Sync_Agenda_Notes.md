@@ -12,10 +12,10 @@ Aug 14, 2020
 July 17, 2020
 ----
 1. BC Registry Homepage - Review the draft(Loren)
-   Some feedback captured in the meeting:
-   - "Go To" looking noisy.
-   -  Include Names Request under Modernization Initiative
-   -  Registered/Log-In section - doesnt make sense
+   - Some feedback captured in the meeting:
+      - "Go To" looks noisy.
+      -  Include Names Request under Modernization Initiative
+      -  Registered/Log-In section - doesnt make sense as there are three "Create Accounts" options on the page
 1. To prioritize tickets 3092, 2436, 4304  - Linda
    - 3092 --> Can we start the documentation? Amit to check with team to see the progress made so far
    - 2436 --> Ticket closed
