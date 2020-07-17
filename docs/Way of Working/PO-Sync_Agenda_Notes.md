@@ -12,9 +12,19 @@ Aug 14, 2020
 July 17, 2020
 ----
 1. BC Registry Homepage - Review the draft(Loren)
+   - "Go To" looking noisy.
+   -  Include Names Request under Modernization Initiative
+   -  Registered/Log-In section - doesnt make sense
 1. To prioritize tickets 3092, 2436, 4304  - Linda
-1. Update the Roadmap
+   - 3092 --> Can we start the documentation? Amit to check with team to see the progress made so far
+   - 2436 --> Ticket closed
+   - 4304 --> Thor and Sumesh are handling it
+1. Update the Zenhub Roadmap
+   - Team to update the Roadmap in next few weeks
 1. Use the Friday Meeting for Organizing tickets on the releases.
+   - Bring it in the PO Sync as an standing agenda
+1. Getting back to work in the LAB
+   - This is voluntary
 
 ----
 July 10, 2020
