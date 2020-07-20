@@ -13,11 +13,12 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min
+Description - ticket_number - presenter - duration (min)
 #### Name Request
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+Description - ticket_number - presenter - duration (min)
 #### Relationships
-* xxxxxxxxxxxxx xxxxxxx - xxxx - ABCDE - x min 
+Description - ticket_number - presenter - duration (min)
+
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
