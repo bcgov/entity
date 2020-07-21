@@ -41,6 +41,10 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
+| 1 | Different date formats present across the applications | Kevin | This is already on the list for the Entity team |
+| 2 | While inviting the team members for, it currently doesnt remind of the authentification option choosen | Janis | Relationship team |
+| 3 | Audit trails for all the changes being made by admins for security purposes | Kevin | Relationship team |
+
 ----
 
 ### July 07, 2020 - Sprint (Milestone) 33 - 55 min. total 
