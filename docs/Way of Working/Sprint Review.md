@@ -29,14 +29,14 @@ Description - ticket_number - presenter - duration (min)
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-Named Translation Output in IA and NOA - Severin - 2mins
-Bcomp Date Changes - Severin - 5 mins
+- Named Translation Output in IA and NOA - Severin - 2mins
+- Bcomp Date Changes - Severin - 5 mins
 
 #### Name Request
 
 #### Relationships
-Account Management by staff - Sumesh - 10 mins 
-BCeID for delegates - Amit - 5 mins
+- Account Management by staff - Sumesh - 10 mins
+- BCeID for delegates - Amit - 5 mins
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
