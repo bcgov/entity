@@ -11,6 +11,7 @@ Aug 14, 2020
 ----
 July 24, 2020
 ----
+1. Lab/home team release communications
 1. How to execute the upcoming PI's?
    - Remote vs In person?
    - When should we do it?
