@@ -9,14 +9,22 @@ Aug 14, 2020
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
 1. Staff Dashboard design
 ----
-July 24, 2020
+July 31, 2020
 ----
-1. Lab/home team release communications
+1. Change in Scope of our PI
 1. How to execute the upcoming PI's?
    - Remote vs In person?
    - When should we do it?
    - Involvement? - Same as last one?
    - Duration? - 4 hrs? so that we can address the Retro
+----
+July 24, 2020
+----
+1. Lab/home team release communications
+   - Improve communications for Home team
+   - Send the link for our Release PLanning document
+   - Send the release communication email to everyone over registry
+
 
 ----
 July 17, 2020
