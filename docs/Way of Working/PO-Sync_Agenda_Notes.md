@@ -6,33 +6,31 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Aug 21, 2020
 ----
-Standing Agedna:
+* Standing Agenda:
 1. Scope of Release going next
-Moving Agenda:
+* Moving Agenda:
 ----
 Aug 14, 2020
 ----
-Standing Agedna:
+* Standing Agenda:
 1. Scope of Release going next
-Moving Agenda:
+* Moving Agenda:
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
 1. Staff Dashboard design
 ----
 Aug 07, 2020
 ----
-Standing Agedna:
+* Standing Agenda:
 1. Scope of Release going next
-
-Moving agenda:
+* Moving Agenda:
 1. Antipatterns in way of working
 
 ----
 July 31, 2020
 ----
-Standing Agedna:
+* Standing Agenda:
 1. Scope of Release going next
-
-Moving agenda:
+* Moving Agenda:
 1. Change in Scope of our PI
 1. SBC_Pay doesnt support credit card refund. General discussion on how are we going to manage this? Next steps(dependency?) and risk assessment if we are not able to work get to a solution by Name Request go live.
 1. How to execute the upcoming PI's?
