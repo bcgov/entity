@@ -4,14 +4,28 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Aug 21, 2020
+----
+Standing Agedna:
+1. Scope of Release going next
+Moving Agenda:
+----
 Aug 14, 2020
 ----
+Standing Agedna:
+1. Scope of Release going next
+Moving Agenda:
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
 1. Staff Dashboard design
 ----
 July 31, 2020
 ----
+Standing Agedna:
+1. Scope of Release going next
+
+Moving agenda:
 1. Change in Scope of our PI
+1. SBC_Pay doesnt support credit card refund. General discussion on how are we going to manage this? Next steps(dependency?) and risk assessment if we are not able to work get to a solution by Name Request go live.
 1. How to execute the upcoming PI's?
    - Remote vs In person?
    - When should we do it?
