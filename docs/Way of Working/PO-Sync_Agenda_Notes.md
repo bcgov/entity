@@ -18,6 +18,15 @@ Moving Agenda:
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
 1. Staff Dashboard design
 ----
+Aug 07, 2020
+----
+Standing Agedna:
+1. Scope of Release going next
+
+Moving agenda:
+1. Antipatterns in way of working
+
+----
 July 31, 2020
 ----
 Standing Agedna:
