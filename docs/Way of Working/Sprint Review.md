@@ -23,7 +23,28 @@ Description - ticket_number - presenter - duration (min)
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
+
 ----
+
+### Aug 4, 2020 - Sprint (Milestone) xx - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+Notebook to file alterations - Thor - 5 mins
+Maintenance filings outputs - Cameron - 5 mins
+
+#### Name Request
+#### Relationships
+Canada Post address finder - Nitheesh - 5 mins
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+----
+
 ### July 21, 2020 - Sprint (Milestone) 34 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
