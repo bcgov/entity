@@ -3,7 +3,13 @@
 Agenda and description re Tech Review see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 ----
+## Aug, 19th, 2020
+
+----
 ## Aug, 5th, 2020
+----
+1. Severin: Reports
+1. Lekshmi: Versioning
 
 ----
 ## Jul, 22, 2020
