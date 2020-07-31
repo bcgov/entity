@@ -32,6 +32,7 @@ July 31, 2020
 1. Scope of Release going next
 * Moving Agenda:
 1. Change in Scope of our PI
+1. Discuss 3966
 1. SBC_Pay doesnt support credit card refund. General discussion on how are we going to manage this? Next steps(dependency?) and risk assessment if we are not able to work get to a solution by Name Request go live.
 1. How to execute the upcoming PI's?
    - Remote vs In person?
