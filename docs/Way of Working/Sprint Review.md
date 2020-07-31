@@ -32,7 +32,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 #### Entities
 - Notebook to file alterations - Thor - 5 mins
-- Maintenance filings outputs - Severin or Cameron - 5 mins
+- Updated designs and implementation of BCOMP Maintenance Filings PDF Outputs for Change of Directors and Change of Address - #4230 - Severin or Cameron - 5 mins
 
 #### Name Request
 #### Relationships
