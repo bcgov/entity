@@ -24,13 +24,6 @@ Aug 07, 2020
 1. Scope of Release going next
 * Moving Agenda:
 1. Antipatterns in way of working
-
-----
-July 31, 2020
-----
-* Standing Agenda:
-1. Scope of Release going next
-* Moving Agenda:
 1. Change in Scope of our PI
 1. Discuss 3966 - Atemp solution was implemented, do we need to revisit this?
 1. SBC_Pay doesnt support credit card refund. General discussion on how are we going to manage this? Next steps(dependency?) and risk assessment if we are not able to work get to a solution by Name Request go live.
@@ -39,6 +32,13 @@ July 31, 2020
    - When should we do it?
    - Involvement? - Same as last one?
    - Duration? - 4 hrs? so that we can address the Retro
+1. Staff ability to Filter records on Account management screen. Near real names for Basic Account types(ABC Company" "ABC - Company" "ABC Company." all with different emails)
+
+----
+July 31, 2020
+----
+* Meeting Cancelled
+
 ----
 July 24, 2020
 ----
