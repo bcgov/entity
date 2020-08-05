@@ -33,6 +33,7 @@ Aug 07, 2020
    - Involvement? - Same as last one?
    - Duration? - 4 hrs? so that we can address the Retro
 1. Staff ability to Filter records on Account management screen. Near real names for Basic Account types(ABC Company" "ABC - Company" "ABC Company." all with different emails)
+1. Share the user testing result with the team
 
 ----
 July 31, 2020
