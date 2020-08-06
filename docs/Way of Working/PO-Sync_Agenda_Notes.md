@@ -12,17 +12,17 @@ Aug 21, 2020
 ----
 Aug 14, 2020
 ----
-* Standing Agenda:
+### Standing Agenda:
 1. Scope of Release going next
-* Moving Agenda:
+### Moving Agenda:
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
 1. Staff Dashboard design
 ----
 Aug 07, 2020
 ----
-* Standing Agenda:
+### Standing Agenda:
 1. Scope of Release going next
-* Moving Agenda:
+### Moving Agenda:
 1. Antipatterns in way of working
 1. Change in Scope of our PI
 1. Discuss 3966 - Atemp solution was implemented, do we need to revisit this?
