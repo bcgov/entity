@@ -26,6 +26,7 @@ Aug 07, 2020
 1. Antipatterns in way of working
 1. Change in Scope of our PI
 1. Discuss 3966 - Atemp solution was implemented, do we need to revisit this?
+1. 2007 - What work is remaining on URL Structure?
 1. SBC_Pay doesnt support credit card refund. General discussion on how are we going to manage this? Next steps(dependency?) and risk assessment if we are not able to work get to a solution by Name Request go live.
 1. How to execute the upcoming PI's?
    - Remote vs In person?
