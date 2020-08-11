@@ -32,6 +32,8 @@ Aug 14, 2020
 1. Staff ability to Filter records on Account management screen. Near real names for Basic Account types(ABC Company" "ABC - Company" "ABC Company." all with different emails)
 1. Share the user testing result with the team
 1. Pro Data API meeting co-ordination
+1. Quantitative Analysis across application - when should we prioritize this?
+1. Corporate search - when are we doing this? and who is doign this?
 ----
 Aug 07, 2020
 ----
