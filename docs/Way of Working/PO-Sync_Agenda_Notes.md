@@ -17,23 +17,24 @@ Aug 14, 2020
 ### Moving Agenda:
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
 1. Staff Dashboard design
+1. Dependency items which needs PO inputs:-
+   1. Discuss 3966 - Atemp solution was implemented, do we need to revisit this?
+   1. 2007 - What work is remaining on URL Structure?
+   1. 2396 - In app notificattions? Where are we going to fit this?
+   1. Update Component component documentation : 3092
+1. SBC_Pay doesnt support credit card refund. General discussion on how are we going to manage this? Next steps(dependency?) and risk assessment if we are not able to work get to a solution by Name Request go live.
+1. Staff ability to Filter records on Account management screen. Near real names for Basic Account types(ABC Company" "ABC - Company" "ABC Company." all with different emails)
+1. Share the user testing result with the team - Forgot what was this about?
+1. Pro Data API meeting co-ordination - Kaine also has another meeting planned for PPR
+1. Quantitative Analysis across application - when should we prioritize this?
+1. Corporate search - when are we doing this? and who is doign this?
 1. Antipatterns in way of working
 1. Change in Scope of our PI
-1. Discuss 3966 - Atemp solution was implemented, do we need to revisit this?
-1. 2007 - What work is remaining on URL Structure?
-1. 2396 - In app notificattions? Where are we going to fit this?
-1. Update Component component documentation : 3092
-1. SBC_Pay doesnt support credit card refund. General discussion on how are we going to manage this? Next steps(dependency?) and risk assessment if we are not able to work get to a solution by Name Request go live.
 1. How to execute the upcoming PI's?
    - Remote vs In person?
    - When should we do it?
    - Involvement? - Same as last one?
    - Duration? - 4 hrs? so that we can address the Retro
-1. Staff ability to Filter records on Account management screen. Near real names for Basic Account types(ABC Company" "ABC - Company" "ABC Company." all with different emails)
-1. Share the user testing result with the team
-1. Pro Data API meeting co-ordination
-1. Quantitative Analysis across application - when should we prioritize this?
-1. Corporate search - when are we doing this? and who is doign this?
 ----
 Aug 07, 2020
 ----
