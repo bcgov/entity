@@ -35,6 +35,10 @@ Aug 14, 2020
    - When should we do it?
    - Involvement? - Same as last one?
    - Duration? - 4 hrs? so that we can address the Retro
+1. GL Code granularity?
+   - What level of revenue detail do we need to make decisions/take action?
+   - What data do we need to go to the CFS and be reported out by SBC Finance vs data that we keep in the data lake that we can pull ourselves?
+   - Note when looking at filings codes 154 for Corporate Online, 157 for Societies Online, 74 for Firms, 27 for Coops and other entities, not considering other products like assets
 ----
 Aug 07, 2020
 ----
