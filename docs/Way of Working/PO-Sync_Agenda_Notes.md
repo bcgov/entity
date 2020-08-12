@@ -9,6 +9,13 @@ Aug 21, 2020
 * Standing Agenda:
 1. Scope of Release going next
 * Moving Agenda:
+1. Antipatterns in way of working
+1. Change in Scope of our PI
+1. How to execute the upcoming PI's?
+   - Remote vs In person?
+   - When should we do it?
+   - Involvement? - Same as last one?
+   - Duration? - 4 hrs? so that we can address the Retro
 ----
 Aug 14, 2020
 ----
@@ -16,6 +23,7 @@ Aug 14, 2020
 1. Scope of Release going next
 ### Moving Agenda:
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
+1. Manage Business Dashboard - Decission on priority of this work.
 1. Staff Dashboard design
 1. Dependency items which needs PO inputs:-
    1. Discuss 3966 - Atemp solution was implemented, do we need to revisit this?
@@ -28,13 +36,6 @@ Aug 14, 2020
 1. Pro Data API meeting co-ordination - Kaine also has another meeting planned for PPR
 1. Quantitative Analysis across application - when should we prioritize this?
 1. Corporate search - when are we doing this? and who is doign this?
-1. Antipatterns in way of working
-1. Change in Scope of our PI
-1. How to execute the upcoming PI's?
-   - Remote vs In person?
-   - When should we do it?
-   - Involvement? - Same as last one?
-   - Duration? - 4 hrs? so that we can address the Retro
 1. GL Code granularity?
    - What level of revenue detail do we need to make decisions/take action?
    - What data do we need to go to the CFS and be reported out by SBC Finance vs data that we keep in the data lake that we can pull ourselves?
