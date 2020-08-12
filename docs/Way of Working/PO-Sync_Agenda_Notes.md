@@ -25,6 +25,7 @@ Aug 14, 2020
 1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
 1. Manage Business Dashboard - Decission on priority of this work.
 1. Staff Dashboard design
+1. Upgrade to Vuetify - Vuetify is undergoing a major version upgrade and our version is being deprecated 
 1. Dependency items which needs PO inputs:-
    1. Discuss 3966 - Atemp solution was implemented, do we need to revisit this?
    1. 2007 - What work is remaining on URL Structure?
