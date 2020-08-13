@@ -16,8 +16,8 @@ module.exports = {
     browser.url(browser.globals.launch_url)
     bcsc.verifyLandingPage()
     bcsc.moveToBCSC()
-    bcsc.enterBCSCCardUser(process.env.ServiceCard2)
-    bcsc.enterBCSCPassword(process.env.ServiceCard2Pw)
+    bcsc.enterBCSCCardUser(process.env.BCServiceCardUsername)
+    bcsc.enterBCSCPassword(process.env.BCServiceCardPasscode)
     bcsc.proceedPastCardUseHistory()
   },
 

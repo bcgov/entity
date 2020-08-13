@@ -3,9 +3,9 @@ module.exports = {
 	waitForConditionTimeout : 30000,
 	retryAssertionTimeout: 30000,	
 	throwOnMultipleElementsReturned : false,
-	launch_url: "https://dev.bcregistry.ca/cooperatives/auth/",
+	launch_url: "https://dev.bcregistry.ca/business/auth/",
 	idtest_url: "https://idtest.gov.bc.ca/login",
-	launch_idirurl: "https://dev.bcregistry.ca/cooperatives/auth/signin/idir",
+	launch_idirurl: "https://dev.bcregistry.ca/business/auth/signin/idir",
 
 	CP1002111: {
 		identifier: "CP1002111",

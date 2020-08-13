@@ -1,11 +1,14 @@
 var loginCommands = {
     verifyLandingPage: function (browser) {
         return this
-            .waitForElementVisible('@createBCRegistriesAccount')
             .assert.urlEquals(this.api.globals.launch_url + "auth/")
-            .assert.containsText('@mainHeader', 'Welcome to Cooperatives Online')
+            .assert.containsText('@brandTitle', 'BC Registries & Online Services')
+            .waitForElementVisible('@createBCRegistriesAccount')
             .waitForElementVisible('@loginWithBCServiceCard')
             .click('@loginWithBCServiceCard')
+            .waitForElementVisible('@loginMenuListItemBCSC')
+            .assert.containsText('@loginMenuListItemBCSC', 'BC Services Card')
+            .click('@loginMenuListItemBCSC')
     },
 
     moveToBCSC: function () {
@@ -61,9 +64,10 @@ module.exports = {
         passCodeHeader: "#passcodeField > label",
         passCodeInput: "#passcode",
         cardUseHistory: '#card-use-history',
-        loginWithBCServiceCard: 'div.app-header__actions button',
-        createBCRegistriesAccount: 'div.hero-banner__cta-btns button'
-
-
+        loginWithBCServiceCard: '.app-header__actions #loginBtn',
+        createBCRegistriesAccount: '.hero-banner__cta-btns .cta-btn',
+        brandTitle: '.brand__title',
+        loginMenuListItem: '.v-list-item .v-list-item__title',
+        loginMenuListItemBCSC: '.v-list-item--link:nth-of-type(1) .v-list-item__title'
     }
 }

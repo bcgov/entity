@@ -339,7 +339,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"clientSystemUrl\": \"https://dev.bcregistry.ca/cooperatives/dashboard?filing_id=12345\",\n\t\"payReturnUrl\": \"http://localhost:8081\"\n}"
+					"raw": "{\n\t\"clientSystemUrl\": \"https://dev.bcregistry.ca/business/dashboard?filing_id=12345\",\n\t\"payReturnUrl\": \"http://localhost:8081\"\n}"
 				},
 				"url": {
 					"raw": "{{pay-api-base-url}}/api/v1/payment-requests/{{payment-identifier}}/transactions",
