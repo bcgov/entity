@@ -26,18 +26,18 @@ Description - ticket_number - presenter - <duration> mins
 
 ----
 
-### Aug 4, 2020 - Sprint (Milestone) 36 - 55 min. total 
+### Aug 18, 2020 - Sprint (Milestone) 36 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-Staff filing for premium payment - 3753 - Severin - 10 mins
-Director Change - 4213 - Severin
-Address Change & multi-filing tickets - 4214 - Severin
-Annual Report - 4215 - Severin
+- Staff filing for premium payment - 3753 - Severin - 10 mins
+- Director Change - 4213 - Severin
+- Address Change & multi-filing tickets - 4214 - Severin
+- Annual Report - 4215 - Severin
 
 #### Name Request
-Direct pay (CC) through Pay BC - 2856 - Sumesh - 5 mins
+- Direct pay (CC) through Pay BC - 2856 - Sumesh - 5 mins
 
 #### Relationships
 
