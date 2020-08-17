@@ -13,11 +13,33 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-Description - ticket_number - presenter - duration (min)
+Description - ticket_number - presenter - <duration> mins
 #### Name Request
-Description - ticket_number - presenter - duration (min)
+Description - ticket_number - presenter - <duration> mins
 #### Relationships
-Description - ticket_number - presenter - duration (min)
+Description - ticket_number - presenter - <duration> mins
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+----
+
+### Aug 4, 2020 - Sprint (Milestone) 36 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+Staff filing for premium payment - 3753 - Severin - 10 mins
+Director Change - 4213 - Severin
+Address Change & multi-filing tickets - 4214 - Severin
+Annual Report - 4215 - Severin
+
+#### Name Request
+Direct pay (CC) through Pay BC - 2856 - Sumesh - 5 mins
+
+#### Relationships
 
 
 #### Action Items:
