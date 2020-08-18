@@ -39,6 +39,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 #### Relationships
 - Direct pay (CC) through Pay BC - 2856 - Sumesh - 5 mins
+- View, edit, add GL coding for direct pay - 4373 - Jeremy - 5 mins
 
 #### Name Request
 - No Demo
