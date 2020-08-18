@@ -113,3 +113,4 @@ directory.
   - Verify everything with in Ubuntu shell:
     - `docker info`
     - `docker-compose --version`
+
