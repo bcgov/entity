@@ -48,6 +48,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
+| 1 | Loren to work on the Business Process and policies for GL codes before releasing it to the Market | Carol | Loren |
 
 ----
 
