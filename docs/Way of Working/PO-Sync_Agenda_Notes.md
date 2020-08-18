@@ -4,40 +4,78 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Spe 11, 2020
+----
+1. Follow up on the Staff dashboard design which can be shared with the team
+
+----
 Aug 21, 2020
 ----
 * Standing Agenda:
 1. Scope of Release going next
 * Moving Agenda:
-----
-Aug 14, 2020
-----
-* Standing Agenda:
-1. Scope of Release going next
-* Moving Agenda:
-1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
-1. Staff Dashboard design
-----
-Aug 07, 2020
-----
-* Standing Agenda:
-1. Scope of Release going next
-* Moving Agenda:
+1. Quantitative Analysis across application - when should we prioritize this?
+1. Corporate search - when are we doing this? and who is doign this?
+1. Staff ability to Filter records on Account management screen. Near real names for Basic Account types(ABC Company" "ABC - Company" "ABC Company." all with different emails)
+1. Share the user testing result with the team - Forgot what was this about?
 1. Antipatterns in way of working
-
-----
-July 31, 2020
-----
-* Standing Agenda:
-1. Scope of Release going next
-* Moving Agenda:
 1. Change in Scope of our PI
-1. SBC_Pay doesnt support credit card refund. General discussion on how are we going to manage this? Next steps(dependency?) and risk assessment if we are not able to work get to a solution by Name Request go live.
 1. How to execute the upcoming PI's?
    - Remote vs In person?
    - When should we do it?
    - Involvement? - Same as last one?
    - Duration? - 4 hrs? so that we can address the Retro
+----
+Aug 14, 2020
+----
+### Standing Agenda:
+1. Scope of Release going next
+### Moving Agenda:
+1. Data lake availability to customer. Thor to bring up. Invite Thor for this meeting
+   - Approval recieved for creation of project
+   - Targetting to have something ready for end of September
+1. Manage Business Dashboard - Decission on priority of this work.
+   - Thor to break out the story on Monday and Tuesday
+   - Idea would be to put some story in scope for the next Sprint and then the remaining in the following sprint
+1. Staff Dashboard design
+   - Not sure what the topic was to discuss
+   - Quick visual whih can be sahred with teh team - mid september(TBD based on Scott availability)
+1. Upgrade to Vuetify - Vuetify is undergoing a major version upgrade and our version is being deprecated 
+   - Should we wait for Vue 3.0 so that we can be done upgrading all at once?
+   - Decision is to wait for Vue 3.0 and put it on the table for next PI discussion
+1. Dependency items which needs PO inputs:-
+   1. Discuss 3966 - A temp solution was implemented, do we need to revisit this?
+      - Ticket updated
+   1. 2007 - What work is remaining on URL Structure?
+      - Thor and Sumesh to work on the next steps
+   1. 2396 - In app notificattions? Where are we going to fit this?
+      - After Dec 2020
+   1. Update Component component documentation : 3092
+      - Ticket closed
+1. SBC_Pay doesnt support credit card refund. General discussion on how are we going to manage this? Next steps(dependency?) and risk assessment if we are not able to work get to a solution by Name Request go live.
+   - This has been raised in Steering committee and is on the radar of the PO's
+   - The idea is to keep pushing and the deadline would be end of Sept
+   - If the deadline is not met, team(Entity) woud need to build auto generated notification to a mailbox
+   - Kaine to talk to Lorna about the ticket creation
+1. Pro Data API meeting co-ordination - Kaine also has another meeting planned for PPR
+   - Meeting with Pro data users in September
+   - Kaine to share the list of companies who would be interested in interviews
+1. GL Code granularity?
+   - What level of revenue detail do we need to make decisions/take action?
+      - This can be dealyed for few weeks. Thor, Sumesh and Greg are working on the data lake piece and should be ready with something towards the end of this PI to show the team the value of Data lake
+      - Thor to connect with Sumesh on the urgency of this item
+   - What data do we need to go to the CFS and be reported out by SBC Finance vs data that we keep in the data lake that we can pull ourselves?
+   - Note when looking at filings codes 154 for Corporate Online, 157 for Societies Online, 74 for Firms, 27 for Coops and other entities, not considering other products like assets
+----
+Aug 07, 2020
+----
+* Meeting Cancelled
+
+----
+July 31, 2020
+----
+* Meeting Cancelled
+
 ----
 July 24, 2020
 ----

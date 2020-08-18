@@ -5,7 +5,7 @@ click by click description, and it assumes familiarity with Windows, Linux, and 
 
 The standard environment is:
 1. Windows
-2. Windows Subsystem for Linux 2 (WSL)
+2. Windows Subsystem for Linux (WSL 1 and WSL 2)
 3. Ubuntu latest in WSL
 4. Visual Studio Code (VS Code)
 
@@ -18,7 +18,7 @@ local community.
 
 Should be installed for you - easy!
 
-### 2. Windows Subsystem for Linux 2 (WSL)
+### 2. Windows Subsystem for Linux (WSL 1 and WSL 2)
 
 Follow Microsoft's instructions.
 
@@ -35,11 +35,11 @@ Follow Microsoft's instructions.
 #### Python
 
 - `curl https://pyenv.run | bash`, then follow the instructions to add it to your load path.
-- `pyenv install 3.7.6`
-- `pyenv global 3.7.6` to set it as the default version.
+- `pyenv install 3.8.5`
+- `pyenv global 3.8.5` to set it as the default version.
 - `sudo apt install python3-pip`
 - `pip install --upgrade pip`
-- `sudo apt install python3.7-venv`
+- `sudo apt install python3.8-venv`
 
 #### Node.js for npm
 
@@ -74,37 +74,43 @@ directory.
   - terminal.integrated.scrollback: you'll probably want more than 1000 lines of history
   - terminal.integrated.shell.windows: click the *Edit in settings.json* link and set the value
     `"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe"`
-
-### 5. Docker
-
+    
+### 5. Docker 
   - Install [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-  - Go to Docker Settings on Windows and tick "Expose daemon on tcp://localhost:2375 without TLS"
-  - These instructions are based off of:
-  [Docker and WSL](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
-  - Add the  Docker upstream repository
-  ```
-  sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
-   ```
-  - Update package list
-      `sudo apt-get update -y`
-  - Install package dependencies
-   `sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common gnupg2 pass`
+  - For WSL 1
+   
+    - Go to Docker Settings on Windows and tick "Expose daemon on tcp://localhost:2375 without TLS" 
+    - These instructions are based off of:
+    [Docker and WSL](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
+    - Add the  Docker upstream repository
+    ```
+    sudo add-apt-repository \
+     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+     $(lsb_release -cs) \
+     stable"
+     ```
+    - Update package list  
+        `sudo apt-get update -y`
+    - Install package dependencies  
+     `sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common`
 
-  - Download and add Docker's official public PGP key
-  `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
-  - Verify the fingerprint.
-  `sudo apt-key fingerprint 0EBFCD88`
-  - Install Docker CE
-  `sudo apt-get install -y docker-ce`
-  - Allow user to access Docker CLI without root
-  `sudo usermod -aG docker $USER`
-  - Install Docker Compose
-  `sudo apt install docker-compose`
-  - Set environment variable for remote Docker daemon
-  `echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashrc`
-  - Verify everything with:
-      - `docker info`
-      - `docker-compose --version`
+    - Download and add Docker's official public PGP key  
+    `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+    - Verify the fingerprint.  
+    `sudo apt-key fingerprint 0EBFCD88`
+    - Install Docker CE  
+    `sudo apt-get install -y docker-ce`
+    - Allow user to access Docker CLI without root  
+    `sudo usermod -aG docker $USER`
+    - Install Docker Compose  
+    `sudo apt install docker-compose`
+    - Set environment variable for remote Docker daemon  
+    `echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashrc`
+
+  - For WSL 2
+    - Go to Docker Settings on Windows -> Resources -> WSL INTEGRATION -> Enable integration with Ubuntu
+    
+  - Verify everything with in Ubuntu shell:
+    - `docker info`
+    - `docker-compose --version`
+
