@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "a73ebe10-3ccb-4fb8-9c6e-c77b9ba2ba8c",
+		"_postman_id": "76cf220e-c214-42e7-bf64-3ef77e7708bd",
 		"name": "lear-verify-incorp",
 		"description": "version=2.0.1 - This is a Legal API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -90,6 +90,217 @@
 							"path": [
 								"ops",
 								"healthz"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "verify-incorporation",
+			"item": [
+				{
+					"name": "authenticate",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b9726fcf-79ba-4e85-9441-b8ba82a7d802",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"pm.environment.set(\"token\", jsonData.access_token);",
+									"pm.environment.set(\"refresh_token\", jsonData.refresh_token);",
+									"",
+									"pm.environment.set(\"token_expires\", Date.now()+(jsonData.expires_in * 1000));",
+									"pm.environment.set(\"refresh_token_expires\", Date.now()+(jsonData.refresh_expires_in * 1000));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{staff-service-account-secret}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{staff-service-account-id}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{staff-token-url}}",
+							"host": [
+								"{{staff-token-url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get identifier",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dc93ada1-e69e-4aba-8ac6-02df2e6e5661",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"response is ok\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"response should be okay to process\", function () { ",
+									"    pm.response.to.not.be.error; ",
+									"    pm.response.to.not.have.jsonBody(\"error\"); ",
+									"});",
+									"",
+									"pm.test(\"response must be valid and have a body\", function () {",
+									"     pm.response.to.be.withBody;",
+									"     pm.response.to.be.json;",
+									"});",
+									"",
+									"pm.test(\"Verify that the account has a BC entity affiliation\",  () => {",
+									"    var responseData = pm.response.json();",
+									"    pm.expect(responseData).to.have.property('entities');",
+									"",
+									"    var entities = responseData['entities'];",
+									"    if(entities.length !== 2) {",
+									"        postman.setNextRequest(null);",
+									"        throw new Error(`Incorrect number of affiliations : ` + entities.length)",
+									"    }",
+									"    ",
+									"    var identifier=''",
+									"    _.each(entities, (arrItem) => {",
+									"        if (arrItem.corpType.code === 'BC') {",
+									"            identifier=arrItem.businessIdentifier",
+									"            pm.environment.set(\"businessIdentifier\", arrItem.businessIdentifier);",
+									"        }",
+									"    })",
+									"    ",
+									"    if (identifier === '') {",
+									"        // Will not execute further requests in the collection if no identifier",
+									"        postman.setNextRequest(null);",
+									"        throw new Error(`The account does not have an affiliated Benefit Company`)",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4a3fb0cc-e96f-4ec9-9647-8223279e3752",
+								"exec": [
+									"pm.environment.set(\"businessIdentifier\", null);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{auth_url}}/api/v1/orgs/{{test_account_number}}/affiliations",
+							"host": [
+								"{{auth_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"orgs",
+								"{{test_account_number}}",
+								"affiliations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify BN",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "37f97d2b-ca37-47b8-a9d2-108acb8063af",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('should return JSON', function () {",
+									"    pm.response.to.have.header('Content-Type', 'application/json');",
+									"});",
+									"",
+									"pm.test(\"Verify that the business number exists for the identifier\", () => {",
+									"    pm.expect(jsonData.business).to.exist",
+									"    pm.expect(jsonData.business).to.have.property('taxId');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{legal_api_url}}/api/v1/businesses/{{businessIdentifier}}",
+							"host": [
+								"{{legal_api_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"{{businessIdentifier}}"
 							]
 						}
 					},
