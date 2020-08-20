@@ -69,12 +69,11 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             REALM:${REALM}
             PASSWORD:${PASSWORD}
             USERNAME:${USERNAME}
-            CLIENTID:${CLIENT_ID}
-            CLIENT_SECRET:${CLIENT_SECRET}
             SERVICE_URL:${SERVICE_URL}
             COLLECION_NAME:${COLLECTION_NAME}
             TESTS_PATH:${TESTS_PATH}
             """
+
             checkout scm
 
             dir("${TESTS_PATH}") {
@@ -83,20 +82,48 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                 sh 'npm install newman@4.6.1'
                 stage("Running ${COMPONENT_NAME} pm tests") {
                     try {
-                        echo "Running ${COMPONENT_NAME} pm collection"
+                        run_collection = true
+                        if (COLLECION_NAME == 'affiliations-reset') {
 
-                        sh """./node_modules/newman/bin/newman.js run ./${COLLECTION_NAME}.postman_collection.json \
-                        --global-var auth_url=${AUTH_URL} --global-var realm=${REALM} \
-                        --global-var password=${PASSWORD} --global-var client_secret=${CLIENT_SECRET} \
-                        --global-var username=${USERNAME} --global-var client_id=${CLIENT_ID} \
-                        --global-var url=${SERVICE_URL} \
-                        --global-var staff-token-url=${STAFF_TOKEN_URL} \
-                        --global-var staff-service-account-id=${STAFF_SERVICE_ACCOUNT_ID} \
-                        --global-var staff-service-account-secret=${STAFF_SERVICE_ACCOUNT_SECRET} \
-                        --global-var staff_account_id=${STAFF_ACCOUNT_ID} \
-                        --global-var legal_api_url=${LEGAL_SERVICE_URL} \
-                        --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
-                        """
+                            pre_collection_run = 'no-affiliations-check'
+                            echo "Running ${pre_collection_run} pm collection"
+                            try {
+                                sh """./node_modules/newman/bin/newman.js run ./${pre_collection_run}.postman_collection.json \
+                                --global-var auth_url=${AUTH_URL} --global-var realm=${REALM} \
+                                --global-var password=${PASSWORD} --global-var client_secret=${CLIENT_SECRET} \
+                                --global-var username=${USERNAME} --global-var client_id=${CLIENT_ID} \
+                                --global-var url=${SERVICE_URL} \
+                                --global-var staff-token-url=${STAFF_TOKEN_URL} \
+                                --global-var staff-service-account-id=${STAFF_SERVICE_ACCOUNT_ID} \
+                                --global-var staff-service-account-secret=${STAFF_SERVICE_ACCOUNT_SECRET} \
+                                --global-var staff_account_id=${STAFF_ACCOUNT_ID} \
+                                --global-var legal_api_url=${LEGAL_SERVICE_URL}
+                                --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
+                                """
+                                run_collection = false
+                                echo "no affiliations check passed -- skipping affiliations reset."
+                            } catch (Exception e) {
+                                echo "One or more tests failed for no affiliations check -- running affiliations reset..."
+                            }
+                        }
+
+                        if (run_collection) {
+                            echo "Running ${COMPONENT_NAME} pm collection"
+
+                            sh """./node_modules/newman/bin/newman.js run ./${COLLECTION_NAME}.postman_collection.json \
+                            --global-var auth_url=${AUTH_URL} --global-var realm=${REALM} \
+                            --global-var password=${PASSWORD} --global-var client_secret=${CLIENT_SECRET} \
+                            --global-var username=${USERNAME} --global-var client_id=${CLIENT_ID} \
+                            --global-var url=${SERVICE_URL} \
+                            --global-var staff-token-url=${STAFF_TOKEN_URL} \
+                            --global-var staff-service-account-id=${STAFF_SERVICE_ACCOUNT_ID} \
+                            --global-var staff-service-account-secret=${STAFF_SERVICE_ACCOUNT_SECRET} \
+                            --global-var staff_account_id=${STAFF_ACCOUNT_ID} \
+                            --global-var legal_api_url=${LEGAL_SERVICE_URL}
+                            --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
+                            """
+                        }
+
                     } catch (Exception e) {
                         echo "One or more tests failed."
                         echo "${e.getMessage()}"
