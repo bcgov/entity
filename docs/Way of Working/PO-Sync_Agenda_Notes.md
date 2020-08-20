@@ -14,7 +14,8 @@ Aug 21, 2020
 * Standing Agenda:
 1. Scope of Release going next
 * Moving Agenda:
-1. IT Ops Workflow - BA's starting to create the Zenhub tickets for IT OPs - Linda to bring up
+1. IT Ops Workflow - BA's starting to create the Zenhub tickets for IT OPs - Linda to bring up to discuss with relationship team
+1. Staff dashboard scope - Confirm the requirements by Sept 15th
 1. Quantitative Analysis across application - when should we prioritize this?
 1. Corporate search - when are we doing this? and who is doign this?
 1. Staff ability to Filter records on Account management screen. Near real names for Basic Account types(ABC Company" "ABC - Company" "ABC Company." all with different emails)
