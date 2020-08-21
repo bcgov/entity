@@ -9,6 +9,15 @@ Sep 11, 2020
 1. Follow up on the Staff dashboard design which can be shared with the team
 
 ----
+Aug 28, 2020
+----
+### Standing Agenda:
+1. Scope of Release going next
+
+### Moving Agenda:
+1. 
+
+----
 Aug 21, 2020
 ----
 ### Standing Agenda:
