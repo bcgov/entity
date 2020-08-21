@@ -13,11 +13,11 @@ Aug 21, 2020
 ----
 ### Standing Agenda:
 1. Scope of Release going next - Do we need to look at our upcoming releases(Sep 8th) and see whats the scope? If we are clear then we dont need to.
-- 
+- Discussed
 
 ### Moving Agenda:
 1. Loren - Manage business dashboard, will this make it in the PI?
-   - We will defer this work on PI
+   - We will defer this work on this PI
 1. IT Ops Workflow - BA's starting to create the Zenhub tickets for IT OPs - Linda to bring up to discuss with relationship team
    - Steven will open tickets in ZH (except passcode ones), and post in chat if he's away. Linda will talk with him to start the week after next, with BAs covering for next week.
 1. Staff dashboard scope - Confirm the requirements by Sept 15th.(4687 - Epic, 4688 - Relationship)
