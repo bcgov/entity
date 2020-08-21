@@ -1,103 +1,11 @@
 {
 	"info": {
-		"_postman_id": "e62e54ac-7124-4635-aa2c-e794d8caff88",
+		"_postman_id": "a5696b27-1413-42de-8e50-a08cc1d19537",
 		"name": "lear-verify-bn-updated",
 		"description": "version=2.0.1 - This is a Legal API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
-		{
-			"name": "ops",
-			"item": [
-				{
-					"name": "readyz",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "687b62b4-7534-4eb2-bb32-ddbdd6ee807a",
-								"exec": [
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
-									"});",
-									"",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"",
-									"",
-									"pm.test(\"api is healthy\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.message).to.eql('api is ready');",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{url}}/ops/readyz",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"ops",
-								"readyz"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "healthz",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "3bd44b84-e026-4f52-81e9-715b6fa7e205",
-								"exec": [
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
-									"});",
-									"",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"",
-									"",
-									"pm.test(\"api is healthy\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.message).to.eql('api is healthy');",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{url}}/ops/healthz",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"ops",
-								"healthz"
-							]
-						}
-					},
-					"response": []
-				}
-			],
-			"protocolProfileBehavior": {}
-		},
 		{
 			"name": "verify-incorporation",
 			"item": [
