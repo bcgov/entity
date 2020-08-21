@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "da61c21f-e536-40a8-a1ae-2b0c554d2c64",
+		"name": "affiliations-empty-check",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "authentication setup",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eab0f190-1fe8-4470-856b-8134aa5c9256",
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"pm.environment.set(\"token\", jsonData.access_token);",
+							"pm.environment.set(\"refresh_token\", jsonData.refresh_token);",
+							"",
+							"pm.environment.set(\"token_expires\", Date.now()+(jsonData.expires_in * 1000));",
+							"pm.environment.set(\"refresh_token_expires\", Date.now()+(jsonData.refresh_expires_in * 1000));",
+							"pm.environment.set(\"auth_url\", 'https://auth-api-{{env}}.pathfinder.gov.bc.ca/api/v1');",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic ZW50aXR5LXNlcnZpY2UtYWNjb3VudDphNmI3MDcyMS0zMjQxLTQzYmEtYTI5OC02YjQ0MTI0NjFjNzM=",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "grant_type=client_credentials"
+				},
+				"url": {
+					"raw": "https://sso-{{env}}.pathfinder.gov.bc.ca/auth/realms/{{realm}}/protocol/openid-connect/token",
+					"protocol": "https",
+					"host": [
+						"sso-{{env}}",
+						"pathfinder",
+						"gov",
+						"bc",
+						"ca"
+					],
+					"path": [
+						"auth",
+						"realms",
+						"{{realm}}",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/orgs/<id>/affiliations - get affiliations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "aaf59851-1c5d-4c4e-a17d-3a1bf155fdd0",
+						"exec": [
+							"pm.test(\"response is ok\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"response must be valid json\", function () {",
+							"     pm.response.to.be.json;",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"pm.test(\"Verify payload\",  () => {",
+							"    pm.expect(jsonData.entities).to.exist",
+							"});",
+							"",
+							"pm.test(\"Affiliations do not exist\",  () => {",
+							"    pm.expect(jsonData.entities).to.eql([]);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{auth_url}}/orgs/{{test_account_number}}/affiliations",
+					"host": [
+						"{{auth_url}}"
+					],
+					"path": [
+						"orgs",
+						"{{test_account_number}}",
+						"affiliations"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "afbda069-0033-4783-ad2b-b7b95894e42c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "065ca170-5888-4652-9348-712dea34234c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "76cf220e-c214-42e7-bf64-3ef77e7708bd",
-		"name": "lear-verify-incorp",
+		"_postman_id": "e62e54ac-7124-4635-aa2c-e794d8caff88",
+		"name": "lear-verify-bn-updated",
 		"description": "version=2.0.1 - This is a Legal API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -15,7 +15,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9d483032-8f69-4d70-b1b4-5237ad27f0d2",
+								"id": "687b62b4-7534-4eb2-bb32-ddbdd6ee807a",
 								"exec": [
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(200);",
@@ -58,7 +58,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c1c62c12-b8dd-40da-8e38-bf1327ab11a2",
+								"id": "3bd44b84-e026-4f52-81e9-715b6fa7e205",
 								"exec": [
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(200);",
@@ -102,19 +102,21 @@
 			"name": "verify-incorporation",
 			"item": [
 				{
-					"name": "authenticate",
+					"name": "authentication setup",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "b9726fcf-79ba-4e85-9441-b8ba82a7d802",
+								"id": "bc82ac73-b665-482b-99ab-dd7940e80689",
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"pm.environment.set(\"token\", jsonData.access_token);",
 									"pm.environment.set(\"refresh_token\", jsonData.refresh_token);",
 									"",
 									"pm.environment.set(\"token_expires\", Date.now()+(jsonData.expires_in * 1000));",
-									"pm.environment.set(\"refresh_token_expires\", Date.now()+(jsonData.refresh_expires_in * 1000));"
+									"pm.environment.set(\"refresh_token_expires\", Date.now()+(jsonData.refresh_expires_in * 1000));",
+									"pm.environment.set(\"auth_url\", 'https://auth-api-{{env}}.pathfinder.gov.bc.ca/api/v1');",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -126,32 +128,50 @@
 							"basic": [
 								{
 									"key": "password",
-									"value": "{{staff-service-account-secret}}",
+									"value": "{{password}}",
 									"type": "string"
 								},
 								{
 									"key": "username",
-									"value": "{{staff-service-account-id}}",
+									"value": "{{username}}",
 									"type": "string"
 								}
 							]
 						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Basic ZW50aXR5LXNlcnZpY2UtYWNjb3VudDphNmI3MDcyMS0zMjQxLTQzYmEtYTI5OC02YjQ0MTI0NjFjNzM=",
+								"disabled": true
+							}
+						],
 						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "grant_type",
-									"value": "client_credentials",
-									"type": "text"
-								}
-							]
+							"mode": "raw",
+							"raw": "grant_type=client_credentials"
 						},
 						"url": {
-							"raw": "{{staff-token-url}}",
+							"raw": "https://sso-{{env}}.pathfinder.gov.bc.ca/auth/realms/{{realm}}/protocol/openid-connect/token",
+							"protocol": "https",
 							"host": [
-								"{{staff-token-url}}"
+								"sso-{{env}}",
+								"pathfinder",
+								"gov",
+								"bc",
+								"ca"
+							],
+							"path": [
+								"auth",
+								"realms",
+								"{{realm}}",
+								"protocol",
+								"openid-connect",
+								"token"
 							]
 						}
 					},
@@ -163,7 +183,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "dc93ada1-e69e-4aba-8ac6-02df2e6e5661",
+								"id": "04aa4eac-21f9-4453-ab07-30e0e4da10de",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -214,7 +234,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "4a3fb0cc-e96f-4ec9-9647-8223279e3752",
+								"id": "84379425-3c5a-49dc-9f9f-96fb50a165d4",
 								"exec": [
 									"pm.environment.set(\"businessIdentifier\", null);"
 								],
@@ -236,13 +256,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{auth_url}}/api/v1/orgs/{{test_account_number}}/affiliations",
+							"raw": "{{auth_url}}/orgs/{{test_account_number}}/affiliations",
 							"host": [
 								"{{auth_url}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"orgs",
 								"{{test_account_number}}",
 								"affiliations"
@@ -257,7 +275,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "37f97d2b-ca37-47b8-a9d2-108acb8063af",
+								"id": "62e86458-c496-4ab8-8e7c-40b4010bbd80",
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"",
@@ -292,13 +310,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{legal_api_url}}/api/v1/businesses/{{businessIdentifier}}",
+							"raw": "{{url}}/businesses/{{businessIdentifier}}",
 							"host": [
-								"{{legal_api_url}}"
+								"{{url}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"businesses",
 								"{{businessIdentifier}}"
 							]
@@ -314,7 +330,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0a2e01bc-b758-451e-ae23-be091b9a98a3",
+				"id": "822ae7e3-575e-49c4-8ff3-e90473a3f4fe",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -324,7 +340,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e58dd505-ec06-4e61-b866-4fe635b44043",
+				"id": "538f6c38-794d-4ef8-9840-ea2ec6fccbd2",
 				"type": "text/javascript",
 				"exec": [
 					""

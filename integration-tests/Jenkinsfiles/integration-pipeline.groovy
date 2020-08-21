@@ -41,8 +41,32 @@ def rocketChatNotificaiton(token, channel, comments) {
   sh(returnStdout: true,
      script: "curl -X POST -H 'Content-Type: application/json' --data \'${payload}\' ${rocketChatUrl}")
 }
+// call/run the postman pipeline
+def run_pm_pipeline(namespace, component_name, collection_name) {
+    openshift.withCluster() {
+        openshift.withProject() {
+            try {
+                def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
+                pm_pipeline.startBuild(
+                    '--wait=true', 
+                    "-e=NAMESPACE=${namespace}", 
+                    "-e=TAG_NAME=${TAG_NAME}",
+                    "-e=COMPONENT_NAME=${component_name}",
+                    "-e=COLLECTION_NAME=${collection_name}", 
+                    "-e=TESTS_PATH=${PM_COLLECTION_PATH}"
+                ).logs('-f')
+            } catch (Exception e) {
+                PASSED = false
+                def error_message = e.getMessage()
+                echo """
+                Postman details: ${error_message}
+                """
+            }
+        }
+    }
+}
 // NI (Not Implemented) - will pass automatically
-stage("NI: setup lear->colin flow") {
+stage("setup lear->colin flow") {
     script {
         echo """
         Pipeline called with constants:
@@ -51,51 +75,22 @@ stage("NI: setup lear->colin flow") {
             - PM_COLLECTION_PATH: ${PM_COLLECTION_PATH}
         """
         // setup for lear -> colin flow
-        // call data reset tool to delete corp from db? Is this necessary?
-        // leave stage in for other integration tests if not for incorp
-        /* code here */
+        // run pm suite for removing any existing affiliations to the integration test account
+        namespace = 'gl2uos'
+        component_name = 'legal_api'
+        collection_name = 'affiliations-reset'
+        run_pm_pipeline(namespace, component_name, collection_name)
     }
 }
 run = true
-stage("NI: incorp lear->colin") {
+stage("incorp lear->colin") {
     // Create incorporation in lear
     script {
-        // wait for QA to proceed (might want to do something through the UI after setup)
-        try {
-            timeout(time: 1, unit: 'DAYS') {
-                input message: "Proceed after setup?", id: "1235", submitter: 'admin,thorwolpert-admin,rarmitag-admin,kialj876-admin,severinbeauvais-edit,riyazuddinsyed-edit,ochiu-edit'
-            }
-        }
-        catch (Exception e) {
-            echo "Cancelling integration test run."
-            currentBuild.result = 'SUCCESS'
-            return
-        }
         // run suite for incorporating a new incorp
-        openshift.withCluster() {
-            openshift.withProject() {
-                try {
-                    namespace = 'gl2uos'
-                    component_name = 'legal_api'
-                    collection_name = 'lear-incorp-setup'
-                    def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
-                    pm_pipeline.startBuild(
-                        '--wait=true', 
-                        "-e=NAMESPACE=${namespace}", 
-                        "-e=TAG_NAME=${TAG_NAME}",
-                        "-e=COMPONENT_NAME=${component_name}",
-                        "-e=COLLECTION_NAME=${collection_name}", 
-                        "-e=TESTS_PATH=${PM_COLLECTION_PATH}"
-                    ).logs('-f')
-                } catch (Exception e) {
-                    PASSED = false
-                    def error_message = e.getMessage()
-                    echo """
-                    Postman details: ${error_message}
-                    """
-                }
-            }
-        }
+        namespace = 'gl2uos'
+        component_name = 'legal_api'
+        collection_name = 'lear-incorporation'
+        run_pm_pipeline(namespace, component_name, collection_name)
     }
 }
 stage('Run Colin-Updater') {
@@ -116,86 +111,15 @@ stage('NI: verify incorp in colin') {
     // run colin-api postman collection to verify incorp success
     // run lear postman collection to verify incorp success
     script {
-        openshift.withCluster() {
-            openshift.withProject() {
-                try {
-                    namespace = 'gl2uos'
-                    component_name = 'colin_api'
-                    collecttion_name = 'colin-verify-incorp'
-                    def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
-                    pm_pipeline.startBuild(
-                        '--wait=true', 
-                        "-e=NAMESPACE=${namespace}", 
-                        "-e=TAG_NAME=${TAG_NAME}",
-                        "-e=COMPONENT_NAME=${component_name}",
-                        "-e=COLLECTION_NAME=${collecttion_name}", 
-                        "-e=TESTS_PATH=${PM_COLLECTION_PATH}",
-                    ).logs('-f')
-                } catch (Exception e) {
-                    PASSED = false
-                    def error_message = e.getMessage()
-                    echo """
-                    Postman details: ${error_message}
-                    """
-                }
-            }
-        }
+        namespace = 'gl2uos'
+        component_name = 'colin_api'
+        collecttion_name = 'colin-verify-incorp'
+        run_pm_pipeline(namespace, component_name, collection_name)
         if (PASSED) {
             echo "Verified incorporation!"
         } else {
             echo "Failed to verify incorporation in colin."
         }
-    }
-}
-
-stage("NI: setup colin->lear flow") {
-    // run colin-api postman collection to reset corp num? Is this necessary?
-    // leave stage in for other integration tests
-    script {
-        echo "seting up colin db cases.."
-        /* code here */
-        echo "setup finished"
-    }
-}
-stage("NI: incorp colin->lear") {
-    // run colin-api postman collection to incorporate? Insert into db?
-    script {
-        openshift.withCluster() {
-            openshift.withProject() {
-                try {
-                    namespace = 'gl2uos'
-                    component_name = 'colin_api'
-                    collection_name = 'colin-incorp-setup'
-                    def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
-                    pm_pipeline.startBuild(
-                        '--wait=true', 
-                        "-e=NAMESPACE=${namespace}", 
-                        "-e=TAG_NAME=${TAG_NAME}",
-                        "-e=COMPONENT_NAME=${component_name}",
-                        "-e=COLLECTION_NAME=${collection_name}", 
-                        "-e=TESTS_PATH=${PM_COLLECTION_PATH}",
-                    ).logs('-f')
-                } catch (Exception e) {
-                    PASSED = false
-                    def error_message = e.getMessage()
-                    echo """
-                    Postman details: ${error_message}
-                    """
-                }
-            }
-        }
-        if (PASSED) {
-            echo "Verified incorporation!"
-        } else {
-            echo "Failed to verify incorporation in colin."
-        }
-    }
-}
-stage('NI: verify mras/bn messaging colin->lear') {
-    // not sure how we do this yet: out of scope for now
-    script {
-        echo "Not Implemented."
-        /* code here */
     }
 }
 stage('Run Legal-Updater') {
@@ -212,37 +136,18 @@ stage('Run Legal-Updater') {
         }
     }
 }
-stage('NI: verify incorp in lear') {
+stage('verify incorp in lear') {
     // run legal-api postman collection to verify incorp success
     script {
-        openshift.withCluster() {
-            openshift.withProject() {
-                try {
-                    namespace = 'gl2uos'
-                    component_name = 'legal_api'
-                    collection_name = 'lear-verify-incorp'
-                    def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
-                    pm_pipeline.startBuild(
-                        '--wait=true', 
-                        "-e=NAMESPACE=${namespace}", 
-                        "-e=TAG_NAME=${TAG_NAME}",
-                        "-e=COMPONENT_NAME=${component_name}",
-                        "-e=COLLECTION_NAME=${collection_name}", 
-                        "-e=TESTS_PATH=${PM_COLLECTION_PATH}"
-                    ).logs('-f')
-                } catch (Exception e) {
-                    PASSED = false
-                    def error_message = e.getMessage()
-                    echo """
-                    Postman details: ${error_message}
-                    """
-                }
-            }
-        }
+        namespace = 'gl2uos'
+        component_name = 'legal_api'
+        collection_name = 'lear-verify-bn-updated'
+        run_pm_pipeline(namespace, component_name, collection_name)
+
         if (PASSED) {
-            echo "Verified incorporation!"
+            echo "Verified bn updated in lear!"
         } else {
-            echo "Failed to verify incorporation in lear."
+            echo "Failed to verify bn in lear."
         }
     }
 }
