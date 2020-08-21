@@ -13,19 +13,37 @@ Aug 21, 2020
 ----
 ### Standing Agenda:
 1. Scope of Release going next - Do we need to look at our upcoming releases(Sep 8th) and see whats the scope? If we are clear then we dont need to.
+- 
 
 ### Moving Agenda:
+1. Loren - Manage business dashboard, will this make it in the PI?
+   - We will defer this work on PI
 1. IT Ops Workflow - BA's starting to create the Zenhub tickets for IT OPs - Linda to bring up to discuss with relationship team
+   - Steven will open tickets in ZH (except passcode ones), and post in chat if he's away. Linda will talk with him to start the week after next, with BAs covering for next week.
 1. Staff dashboard scope - Confirm the requirements by Sept 15th.(4687 - Epic, 4688 - Relationship)
-1. Corporate search - when are we doing this? and who is doign this? - This came up during the long term planning for relationship team. Loren to discuss
+   - Loren bringing this into grooming for the grooming after next
+1. Corporate search - when are we doing this? and who is doing this? - This came up during the long term planning for relationship team. Loren to discuss
+   - Not currently a part of Entity team's planned work. We will plan for this to be added to roadmap and split between the teams (frontend/backend)
+   - Entities is bringing corporations over in March and has a dependency on this being done
+   - Plan for this in December to be able to build in January
 1. Quantitative Analysis across application - when should we prioritize this? Loren to bring up
+   - Proposed value of seeing where people stop and potentially identifying issues before reported
+   - Review this at the end of the next PI to consider implementing before user numbers get higher
+   - Giving this to the SRE team - Kaine to chat with Thor
 1. Staff ability to Filter records on Account management screen. Near real names for Basic Account types(ABC Company" "ABC - Company" "ABC Company." all with different emails) - This came up in a meeting with Staff for Loren
+   - Talk to designers and make sure it's consistent - Loren and Kaine
+   - Respond to what staff is asking for (put in ability to find account name on staff dashboard, for example) - Loren
 1. Share the user testing result with the team - Forgot what was this about?
+   - updates shared
 1. How to execute the upcoming PI's?
    - Remote vs In person?
+   -- remote
    - When should we do it? - I propose 3rd week of September
+   -- yes
    - Involvement? - Same as last one?
+   -- yes
    - Duration? - 4 hrs? so that we can address the Retro
+   -- yes
 ----
 Aug 14, 2020
 ----
