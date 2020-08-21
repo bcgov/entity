@@ -112,7 +112,7 @@
 			"name": "verify-incorporation",
 			"item": [
 				{
-					"name": "Authenticate",
+					"name": "authentication setup",
 					"event": [
 						{
 							"listen": "test",
@@ -124,7 +124,8 @@
 									"pm.environment.set(\"refresh_token\", jsonData.refresh_token);",
 									"",
 									"pm.environment.set(\"token_expires\", Date.now()+(jsonData.expires_in * 1000));",
-									"pm.environment.set(\"refresh_token_expires\", Date.now()+(jsonData.refresh_expires_in * 1000));"
+									"pm.environment.set(\"refresh_token_expires\", Date.now()+(jsonData.refresh_expires_in * 1000));",
+									"pm.environment.set(\"auth_url\", 'https://auth-api-{{env}}.pathfinder.gov.bc.ca/api/v1');"
 								],
 								"type": "text/javascript"
 							}
@@ -136,32 +137,48 @@
 							"basic": [
 								{
 									"key": "password",
-									"value": "{{staff-service-account-secret}}",
+									"value": "{{password}}",
 									"type": "string"
 								},
 								{
 									"key": "username",
-									"value": "{{staff-service-account-id}}",
+									"value": "{{username}}",
 									"type": "string"
 								}
 							]
 						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
 						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "grant_type",
-									"value": "client_credentials",
-									"type": "text"
-								}
-							]
+							"mode": "raw",
+							"raw": "grant_type=client_credentials",
+							"options": {
+								"urlencoded": {}
+							}
 						},
 						"url": {
-							"raw": "{{staff-token-url}}",
+							"raw": "https://sso-{{env}}.pathfinder.gov.bc.ca/auth/realms/{{realm}}/protocol/openid-connect/token",
+							"protocol": "https",
 							"host": [
-								"{{staff-token-url}}"
+								"sso-{{env}}",
+								"pathfinder",
+								"gov",
+								"bc",
+								"ca"
+							],
+							"path": [
+								"auth",
+								"realms",
+								"{{realm}}",
+								"protocol",
+								"openid-connect",
+								"token"
 							]
 						}
 					},
@@ -208,7 +225,7 @@
 									"    pm.expect(responseData).to.have.property('entities');",
 									"",
 									"    var entities = responseData['entities'];",
-									"    if(entities.length !== 2) {",
+									"    if(entities.length !== 29) {",
 									"        postman.setNextRequest(null);",
 									"        throw new Error(`Incorrect number of affiliations : ` + entities.length)",
 									"    }",
@@ -246,13 +263,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{auth_url}}/api/v1/orgs/{{test_account_number}}/affiliations",
+							"raw": "{{auth_url}}/orgs/{{test_account_number}}/affiliations",
 							"host": [
 								"{{auth_url}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"orgs",
 								"{{test_account_number}}",
 								"affiliations"
@@ -411,6 +426,161 @@
 					"response": []
 				},
 				{
+					"name": "GET Business Name NB",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "342b93fa-4647-479f-be3a-40b0a1f31ed2",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('should return JSON', function () {",
+									"    pm.response.to.have.header('Content-Type', 'application/json');",
+									"});",
+									"",
+									"pm.test(\"Returns name objects containing name\", () => {",
+									"    var jsonData = pm.response.json()",
+									"    pm.expect(jsonData.names).to.exist",
+									"    for (var i=0; i<jsonData.names.length; i++) {",
+									"        pm.expect(jsonData.names[i].legalName).to.exist",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/NB",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"BC",
+								"{{businessIdentifier}}",
+								"names",
+								"NB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Business Name CO",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "11a16e75-8ee0-4169-a9fa-1bc89273d809",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Returns name objects containing name\", () => {",
+									"    var jsonData = pm.response.json()",
+									"    pm.expect(jsonData.names).to.exist",
+									"    for (var i=0; i<jsonData.names.length; i++) {",
+									"        pm.expect(jsonData.names[i].legalName).to.exist",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/CO",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"BC",
+								"{{businessIdentifier}}",
+								"names",
+								"CO"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Business Names TR",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33575229-f95b-4c41-b301-e5bc0c95e511",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('should return JSON', function () {",
+									"    pm.response.to.have.header('Content-Type', 'application/json');",
+									"});",
+									"",
+									"pm.test(\"Returns name objects containing name\", () => {",
+									"    var jsonData = pm.response.json()",
+									"    pm.expect(jsonData.names).to.exist",
+									"    for (var i=0; i<jsonData.names.length; i++) {",
+									"        pm.expect(jsonData.names[i].legalName).to.exist",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/TR",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"BC",
+								"{{businessIdentifier}}",
+								"names",
+								"TR"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "GET Share Structure",
 					"event": [
 						{
@@ -461,12 +631,12 @@
 					"response": []
 				},
 				{
-					"name": "GET Names",
+					"name": "GET Resolutions",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "33575229-f95b-4c41-b301-e5bc0c95e511",
+								"id": "88a88eeb-e550-4520-ab83-a691e8655108",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -476,16 +646,9 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
-									"pm.test('should return JSON', function () {",
-									"    pm.response.to.have.header('Content-Type', 'application/json');",
-									"});",
-									"",
-									"pm.test(\"Returns name objects containing name\", () => {",
+									"pm.test(\"Returns the resolution dates\", () => {",
 									"    var jsonData = pm.response.json()",
-									"    pm.expect(jsonData.names).to.exist",
-									"    for (var i=0; i<jsonData.names.length; i++) {",
-									"        pm.expect(jsonData.names[i].legalName).to.exist",
-									"    }",
+									"    pm.expect(jsonData.resolutionDates).to.exist",
 									"});"
 								],
 								"type": "text/javascript"
@@ -496,7 +659,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/TR",
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/resolutions",
 							"host": [
 								"{{url}}"
 							],
@@ -506,8 +669,7 @@
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
-								"names",
-								"TR"
+								"resolutions"
 							]
 						}
 					},
