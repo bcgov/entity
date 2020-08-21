@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d8322e0d-39d1-4c96-803b-03648f1be507",
+		"_postman_id": "ff4c9e29-aaaa-4f26-b559-7c9afc21b35c",
 		"name": "colin-verify-incorp",
 		"description": "version=0.108 - This is a Colin API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -100,6 +100,576 @@
 							"path": [
 								"ops",
 								"healthz"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "verify-incorporation",
+			"item": [
+				{
+					"name": "authentication setup",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "47d22dfe-bfe3-491c-bf15-8ff0247d674e",
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"pm.environment.set(\"token\", jsonData.access_token);",
+									"pm.environment.set(\"refresh_token\", jsonData.refresh_token);",
+									"",
+									"pm.environment.set(\"token_expires\", Date.now()+(jsonData.expires_in * 1000));",
+									"pm.environment.set(\"refresh_token_expires\", Date.now()+(jsonData.refresh_expires_in * 1000));",
+									"pm.environment.set(\"auth_url\", 'https://auth-api-{{env}}.pathfinder.gov.bc.ca/api/v1');"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "grant_type=client_credentials",
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "https://sso-{{env}}.pathfinder.gov.bc.ca/auth/realms/{{realm}}/protocol/openid-connect/token",
+							"protocol": "https",
+							"host": [
+								"sso-{{env}}",
+								"pathfinder",
+								"gov",
+								"bc",
+								"ca"
+							],
+							"path": [
+								"auth",
+								"realms",
+								"{{realm}}",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET identifier",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "7bae95ee-0105-430b-9898-cc8b8bdb53ba",
+								"exec": [
+									"pm.environment.set(\"businessIdentifier\", null);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "8d5ad5bf-bef9-4829-8711-745d7c54d666",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"response is ok\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"response should be okay to process\", function () { ",
+									"    pm.response.to.not.be.error; ",
+									"    pm.response.to.not.have.jsonBody(\"error\"); ",
+									"});",
+									"",
+									"pm.test(\"response must be valid and have a body\", function () {",
+									"     pm.response.to.be.withBody;",
+									"     pm.response.to.be.json;",
+									"});",
+									"",
+									"pm.test(\"Verify that the account has a BC entity affiliation\",  () => {",
+									"    var responseData = pm.response.json();",
+									"    pm.expect(responseData).to.have.property('entities');",
+									"",
+									"    var entities = responseData['entities'];",
+									"    if(entities.length !== 29) {",
+									"        postman.setNextRequest(null);",
+									"        throw new Error(`Incorrect number of affiliations : ` + entities.length)",
+									"    }",
+									"    ",
+									"    var identifier=''",
+									"    _.each(entities, (arrItem) => {",
+									"        if (arrItem.corpType.code === 'BC') {",
+									"            identifier=arrItem.businessIdentifier",
+									"            pm.environment.set(\"businessIdentifier\", arrItem.businessIdentifier.substring(2));",
+									"        }",
+									"    })",
+									"    ",
+									"    if (identifier === '') {",
+									"        // Will not execute further requests in the collection if no identifier",
+									"        postman.setNextRequest(null);",
+									"        throw new Error(`The account does not have an affiliated Benefit Company`)",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{auth_url}}/orgs/{{test_account_number}}/affiliations",
+							"host": [
+								"{{auth_url}}"
+							],
+							"path": [
+								"orgs",
+								"{{test_account_number}}",
+								"affiliations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Business",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "49daf3a5-d06a-43b6-8edd-28a1b8c60d44",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('should return JSON', function () {",
+									"    pm.response.to.have.header('Content-Type', 'application/json');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"BC",
+								"{{businessIdentifier}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Office",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a9a29e92-58bb-406e-a9f4-e45e00d852bd",
+								"exec": [
+									"var jsonData = pm.response.json()",
+									"",
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('should return JSON', function () {",
+									"    pm.response.to.have.header('Content-Type', 'application/json');",
+									"});",
+									"",
+									"pm.test(\"Returns the required fields for registered office\", () => {",
+									"    pm.expect(jsonData.registeredOffice).to.exist",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/office",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"BC",
+								"{{businessIdentifier}}",
+								"office"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Parties",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c2ed844a-c865-4036-a6f7-a19e150024bf",
+								"exec": [
+									"var jsonData = pm.response.json()",
+									"",
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('should return JSON', function () {",
+									"    pm.response.to.have.header('Content-Type', 'application/json');",
+									"});",
+									"",
+									"pm.test(\"Returns the required fields directors\", () => {",
+									"    pm.expect(jsonData.directors).to.exist",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/parties?partyType=Director",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"BC",
+								"{{businessIdentifier}}",
+								"parties"
+							],
+							"query": [
+								{
+									"key": "partyType",
+									"value": "Director"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Business Name NB",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "342b93fa-4647-479f-be3a-40b0a1f31ed2",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('should return JSON', function () {",
+									"    pm.response.to.have.header('Content-Type', 'application/json');",
+									"});",
+									"",
+									"pm.test(\"Returns name objects containing name\", () => {",
+									"    var jsonData = pm.response.json()",
+									"    pm.expect(jsonData.names).to.exist",
+									"    for (var i=0; i<jsonData.names.length; i++) {",
+									"        pm.expect(jsonData.names[i].legalName).to.exist",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/NB",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"BC",
+								"{{businessIdentifier}}",
+								"names",
+								"NB"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Business Name CO",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "11a16e75-8ee0-4169-a9fa-1bc89273d809",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Returns name objects containing name\", () => {",
+									"    var jsonData = pm.response.json()",
+									"    pm.expect(jsonData.names).to.exist",
+									"    for (var i=0; i<jsonData.names.length; i++) {",
+									"        pm.expect(jsonData.names[i].legalName).to.exist",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/CO",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"BC",
+								"{{businessIdentifier}}",
+								"names",
+								"CO"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Business Names TR",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33575229-f95b-4c41-b301-e5bc0c95e511",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('should return JSON', function () {",
+									"    pm.response.to.have.header('Content-Type', 'application/json');",
+									"});",
+									"",
+									"pm.test(\"Returns name objects containing name\", () => {",
+									"    var jsonData = pm.response.json()",
+									"    pm.expect(jsonData.names).to.exist",
+									"    for (var i=0; i<jsonData.names.length; i++) {",
+									"        pm.expect(jsonData.names[i].legalName).to.exist",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/TR",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"BC",
+								"{{businessIdentifier}}",
+								"names",
+								"TR"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Share Structure",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "68a0e9b2-8be5-4d55-acde-88c93ea1d577",
+								"exec": [
+									"var jsonData = pm.response.json()",
+									"",
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('should return JSON', function () {",
+									"    pm.response.to.have.header('Content-Type', 'application/json');",
+									"});",
+									"",
+									"pm.test(\"Returns the share structure\", () => {",
+									"    pm.expect(jsonData.shareClasses).to.exist",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/sharestructure",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"BC",
+								"{{businessIdentifier}}",
+								"sharestructure"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Resolutions",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "88a88eeb-e550-4520-ab83-a691e8655108",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Returns the resolution dates\", () => {",
+									"    var jsonData = pm.response.json()",
+									"    pm.expect(jsonData.resolutionDates).to.exist",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/resolutions",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"businesses",
+								"BC",
+								"{{businessIdentifier}}",
+								"resolutions"
 							]
 						}
 					},
