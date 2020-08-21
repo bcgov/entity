@@ -11,12 +11,11 @@ Spe 11, 2020
 ----
 Aug 21, 2020
 ----
-* Standing Agenda:
+### Standing Agenda:
 1. Scope of Release going next - Do we need to look at our upcoming releases(Sep 8th) and see whats the scope? If we are clear then we dont need to.
 
-* Moving Agenda:
+### Moving Agenda:
 1. IT Ops Workflow - BA's starting to create the Zenhub tickets for IT OPs - Linda to bring up to discuss with relationship team
-   - 
 1. Staff dashboard scope - Confirm the requirements by Sept 15th.(4687 - Epic, 4688 - Relationship)
 1. Corporate search - when are we doing this? and who is doign this? - This came up during the long term planning for relationship team. Loren to discuss
 1. Quantitative Analysis across application - when should we prioritize this? Loren to bring up
