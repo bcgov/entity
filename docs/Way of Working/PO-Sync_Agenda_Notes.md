@@ -12,18 +12,19 @@ Spe 11, 2020
 Aug 21, 2020
 ----
 * Standing Agenda:
-1. Scope of Release going next
+1. Scope of Release going next - Do we need to look at our upcoming releases(Sep 8th) and see whats the scope? If we are clear then we dont need to.
+
 * Moving Agenda:
 1. IT Ops Workflow - BA's starting to create the Zenhub tickets for IT OPs - Linda to bring up to discuss with relationship team
-1. Staff dashboard scope - Confirm the requirements by Sept 15th
-1. Corporate search - when are we doing this? and who is doign this?
-1. Quantitative Analysis across application - when should we prioritize this?
-1. Staff ability to Filter records on Account management screen. Near real names for Basic Account types(ABC Company" "ABC - Company" "ABC Company." all with different emails)
+   - 
+1. Staff dashboard scope - Confirm the requirements by Sept 15th.(4687 - Epic, 4688 - Relationship)
+1. Corporate search - when are we doing this? and who is doign this? - This came up during the long term planning for relationship team. Loren to discuss
+1. Quantitative Analysis across application - when should we prioritize this? Loren to bring up
+1. Staff ability to Filter records on Account management screen. Near real names for Basic Account types(ABC Company" "ABC - Company" "ABC Company." all with different emails) - This came up in a meeting with Staf for Loren
 1. Share the user testing result with the team - Forgot what was this about?
-1. Change in Scope of our PI
 1. How to execute the upcoming PI's?
    - Remote vs In person?
-   - When should we do it?
+   - When should we do it? - I propose 3rd week of September
    - Involvement? - Same as last one?
    - Duration? - 4 hrs? so that we can address the Retro
 ----
