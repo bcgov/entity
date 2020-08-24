@@ -107,7 +107,7 @@ stage('Run Colin-Updater') {
         }
     }
 }
-stage('NI: verify incorp in colin') {
+stage('verify incorp in colin') {
     // run colin-api postman collection to verify incorp success
     // run lear postman collection to verify incorp success
     script {

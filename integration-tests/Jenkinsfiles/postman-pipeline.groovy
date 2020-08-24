@@ -112,7 +112,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                                         run_collection(COLLECION_NAME)
                                         echo "all affiliations sucessfully deleted."
                                         break
-                                    } catch (Exception e) {
+                                    } catch (Exception ex) {
                                         echo "One or more tests failed for affiliations reset -- running again..."
                                         if (i == 19) {
                                             echo "Failed to delete all affiliations -- manual fix needed."
