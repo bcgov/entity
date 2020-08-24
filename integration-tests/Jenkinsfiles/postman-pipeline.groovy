@@ -34,8 +34,8 @@ import groovy.json.JsonOutput
 def run_collection(collection_name) {
     // run a postman collection (if a test fails it will raise an exception)
     echo "Running ${collection_name} pm collection..."
-    sh """./node_modules/newman/bin/newman.js run ./${pre_collection_run}.postman_collection.json \
-    --global-var env=${env} \
+    sh """./node_modules/newman/bin/newman.js run ./${collection_name}.postman_collection.json \
+    --global-var env=${ENV} \
     --global-var realm=${REALM} \
     --global-var username=${USERNAME} \
     --global-var password=${PASSWORD} \
@@ -84,6 +84,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             SERVICE_URL:${SERVICE_URL}
             COLLECION_NAME:${COLLECTION_NAME}
             TESTS_PATH:${TESTS_PATH}
+            TEST_ACCOUNT_NUMBER:${TEST_ACCOUNT_NUMBER}
             """
 
             checkout scm
