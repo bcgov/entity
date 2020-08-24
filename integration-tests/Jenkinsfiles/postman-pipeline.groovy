@@ -35,7 +35,7 @@ def run_collection(collection_name) {
     // run a postman collection (if a test fails it will raise an exception)
     echo "Running ${collection_name} pm collection..."
     sh """./node_modules/newman/bin/newman.js run ./${pre_collection_run}.postman_collection.json \
-    --global-var auth_url=${AUTH_URL} \
+    --global-var env=${env} \
     --global-var realm=${REALM} \
     --global-var username=${USERNAME} \
     --global-var password=${PASSWORD} \
@@ -60,6 +60,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         args: '${computer.jnlpmac} ${computer.name}',
         echo: "check envVar",
         envVars:([
+            secretEnvVar(key: 'ENV', secretName: "integration-${TAG_NAME}-secret", secretKey: 'env'),
             secretEnvVar(key: 'REALM', secretName: "integration-${TAG_NAME}-secret", secretKey: 'realm'),
             secretEnvVar(key: 'USERNAME', secretName: "integration-${TAG_NAME}-secret", secretKey: 'username'),
             secretEnvVar(key: 'PASSWORD', secretName: "integration-${TAG_NAME}-secret", secretKey: 'password'),
@@ -74,7 +75,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
     node(py3nodejs_label) {
         script {
             echo """
-            AUTH_URL:${AUTH_URL}
+            ENV:${ENV}
             REALM:${REALM}
             USERNAME:${USERNAME}
             PASSWORD:${PASSWORD}
