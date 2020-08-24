@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0982b246-7d1e-4e85-b238-3d5395759ae0",
+		"_postman_id": "3a609ac7-c367-4dd9-9767-49390ed376c7",
 		"name": "colin-verify-incorp",
 		"description": "version=0.108 - This is a Colin API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -10,85 +10,12 @@
 			"name": "verify-incorporation",
 			"item": [
 				{
-					"name": "authentication setup",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "47d22dfe-bfe3-491c-bf15-8ff0247d674e",
-								"exec": [
-									"var jsonData = pm.response.json();",
-									"pm.environment.set(\"token\", jsonData.access_token);",
-									"pm.environment.set(\"refresh_token\", jsonData.refresh_token);",
-									"",
-									"pm.environment.set(\"token_expires\", Date.now()+(jsonData.expires_in * 1000));",
-									"pm.environment.set(\"refresh_token_expires\", Date.now()+(jsonData.refresh_expires_in * 1000));",
-									"pm.environment.set(\"auth_url\", 'https://auth-api-{{env}}.pathfinder.gov.bc.ca/api/v1');"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "{{password}}",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "{{username}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "grant_type=client_credentials",
-							"options": {
-								"urlencoded": {}
-							}
-						},
-						"url": {
-							"raw": "https://sso-{{env}}.pathfinder.gov.bc.ca/auth/realms/{{realm}}/protocol/openid-connect/token",
-							"protocol": "https",
-							"host": [
-								"sso-{{env}}",
-								"pathfinder",
-								"gov",
-								"bc",
-								"ca"
-							],
-							"path": [
-								"auth",
-								"realms",
-								"{{realm}}",
-								"protocol",
-								"openid-connect",
-								"token"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "GET identifier",
 					"event": [
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "7bae95ee-0105-430b-9898-cc8b8bdb53ba",
+								"id": "a0d2f4e7-c0ca-4ab2-bc34-a3bcd76b479b",
 								"exec": [
 									"pm.environment.set(\"businessIdentifier\", null);"
 								],
@@ -98,7 +25,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8d5ad5bf-bef9-4829-8711-745d7c54d666",
+								"id": "9c798dca-f9f8-470e-a8d4-bbd815f514e5",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -180,7 +107,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "49daf3a5-d06a-43b6-8edd-28a1b8c60d44",
+								"id": "f6650ed8-2624-4bcf-b967-c234cd10a594",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -221,7 +148,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a9a29e92-58bb-406e-a9f4-e45e00d852bd",
+								"id": "0534c5c7-b04e-45d6-9828-4c6b83f84ad6",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -269,7 +196,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c2ed844a-c865-4036-a6f7-a19e150024bf",
+								"id": "e283a9d7-3e6f-4aad-b2f4-27dcf16d41e7",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -323,7 +250,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "342b93fa-4647-479f-be3a-40b0a1f31ed2",
+								"id": "2d20c966-6812-4641-98b9-df8122e31f10",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -374,7 +301,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "11a16e75-8ee0-4169-a9fa-1bc89273d809",
+								"id": "16630200-70ab-463a-9fb2-0ff39da53419",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -421,7 +348,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33575229-f95b-4c41-b301-e5bc0c95e511",
+								"id": "81da816a-550d-4b00-b059-d4f43151d4c0",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -472,7 +399,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "68a0e9b2-8be5-4d55-acde-88c93ea1d577",
+								"id": "6da9ef7f-2909-41f4-ad44-e1fd3218d87c",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -520,7 +447,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "88a88eeb-e550-4520-ab83-a691e8655108",
+								"id": "569684b7-0c63-48f0-b87f-2c03a5a499f3",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -565,7 +492,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "afcd8d72-22ad-45d2-8687-9c0fe4e09282",
+				"id": "f09860b2-6479-4a73-aede-783b2f54bcae",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -575,7 +502,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "56efcb89-6675-4519-bf66-e12082ede2a6",
+				"id": "bfb09e91-0ead-45f0-b10d-6047fb1bbca9",
 				"type": "text/javascript",
 				"exec": [
 					""
