@@ -65,7 +65,6 @@ def run_pm_pipeline(namespace, component_name, collection_name) {
         }
     }
 }
-// NI (Not Implemented) - will pass automatically
 // stage("setup lear->colin flow") {
 //     script {
 //         echo """
@@ -82,7 +81,6 @@ def run_pm_pipeline(namespace, component_name, collection_name) {
 //         run_pm_pipeline(namespace, component_name, collection_name)
 //     }
 // }
-// run = true
 // stage("incorp lear->colin") {
 //     // Create incorporation in lear
 //     script {
@@ -113,7 +111,7 @@ stage('verify incorp in colin') {
     script {
         namespace = 'gl2uos'
         component_name = 'colin_api'
-        collecttion_name = 'colin-verify-incorp'
+        collection_name = 'colin-verify-incorp'
         run_pm_pipeline(namespace, component_name, collection_name)
         if (PASSED) {
             echo "Verified incorporation!"
