@@ -129,7 +129,8 @@ In short:
 6. Run/build Storybook
 7. Commit/publish to GitHub (*)
 
-(*) The prototype uses GitHub Pages to serve the Storybook app folder.
+(*) The prototype uses GitHub Pages to serve the Storybook app folder, however this requires a developer to build
+    before committing and may not lend itself well to concurrent independent/multiple component development.
 
 ## How To Consume The Component
 
@@ -165,6 +166,7 @@ See ticket https://github.com/bcgov/entity/issues/4551.
 5. Document any other development processes (how to develop, test, publish, import, etc)
 6. Figure out how components can use VueX
 7. Figure out how components can use services, etc
+8. Configure automatic build/publish for GH Pages
 
 # References
 
