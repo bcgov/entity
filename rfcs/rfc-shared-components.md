@@ -163,6 +163,8 @@ See ticket https://github.com/bcgov/entity/issues/4551.
 3. Document our Storybook config and usage
 4. Figure out how to use individual components in an app
 5. Document any other development processes (how to develop, test, publish, import, etc)
+6. Figure out how components can use VueX
+7. Figure out how components can use services, etc
 
 # References
 
