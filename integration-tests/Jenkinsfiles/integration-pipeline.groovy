@@ -68,46 +68,46 @@ def run_pm_pipeline(namespace, component_name, collection_name) {
         }
     }
 }
-// stage("setup lear->colin flow") {
-//     script {
-//         echo """
-//         Pipeline called with constants:
-//             - NAMESPACE: ${NAMESPACE}
-//             - TAG_NAME: ${TAG_NAME}
-//             - PM_COLLECTION_PATH: ${PM_COLLECTION_PATH}
-//         """
-//         // setup for lear -> colin flow
-//         // run pm suite for removing any existing affiliations to the integration test account
-//         namespace = 'gl2uos'
-//         component_name = 'legal_api'
-//         collection_name = 'affiliations-reset'
-//         run_pm_pipeline(namespace, component_name, collection_name)
-//     }
-// }
-// stage("incorp lear->colin") {
-//     // Create incorporation in lear
-//     script {
-//         // run suite for incorporating a new incorp
-//         namespace = 'gl2uos'
-//         component_name = 'legal_api'
-//         collection_name = 'lear-incorporation'
-//         run_pm_pipeline(namespace, component_name, collection_name)
-//     }
-// }
-// stage('Run Colin-Updater') {
-//     // call/wait for job pipeline with colin-updater vals
-//     script {
-//         openshift.withCluster() {
-//             namespace = 'gl2uos'
-//             openshift.withProject("${namespace}-${TAG_NAME}") {
-//                 def job_pipeline = openshift.selector('bc', 'update-colin-filings-run-pipeline')
-//                 job_pipeline.startBuild(
-//                     '--wait=true'
-//                 ).logs('-f')
-//             }
-//         }
-//     }
-// }
+stage("setup lear->colin flow") {
+    script {
+        echo """
+        Pipeline called with constants:
+            - NAMESPACE: ${NAMESPACE}
+            - TAG_NAME: ${TAG_NAME}
+            - PM_COLLECTION_PATH: ${PM_COLLECTION_PATH}
+        """
+        // setup for lear -> colin flow
+        // run pm suite for removing any existing affiliations to the integration test account
+        namespace = 'gl2uos'
+        component_name = 'legal_api'
+        collection_name = 'affiliations-reset'
+        run_pm_pipeline(namespace, component_name, collection_name)
+    }
+}
+stage("incorp lear->colin") {
+    // Create incorporation in lear
+    script {
+        // run suite for incorporating a new incorp
+        namespace = 'gl2uos'
+        component_name = 'legal_api'
+        collection_name = 'lear-incorporation'
+        run_pm_pipeline(namespace, component_name, collection_name)
+    }
+}
+stage('Run Colin-Updater') {
+    // call/wait for job pipeline with colin-updater vals
+    script {
+        openshift.withCluster() {
+            namespace = 'gl2uos'
+            openshift.withProject("${namespace}-${TAG_NAME}") {
+                def job_pipeline = openshift.selector('bc', 'update-colin-filings-run-pipeline')
+                job_pipeline.startBuild(
+                    '--wait=true'
+                ).logs('-f')
+            }
+        }
+    }
+}
 stage('verify incorp in colin') {
     // run colin-api postman collection to verify incorp success
     // run lear postman collection to verify incorp success
