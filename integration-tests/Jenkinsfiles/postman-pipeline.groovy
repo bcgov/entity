@@ -93,11 +93,11 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                 all_passed = true
                 sh 'node -v'
                 sh 'npm install newman@4.6.1'
-                stage("Running ${COMPONENT_NAME} pm tests") {
+                stage("Running ${COLLECTION_NAME} pm tests") {
                     try {
                         if (COLLECTION_NAME != 'affiliations-reset') {
                             // run the pm collection like normal
-                            run_collection(COMPONENT_NAME)
+                            run_collection(COLLECTION_NAME)
                         } else {
                             // check if affiliations need reset before running reset
                             pre_collection_run = 'affiliations-empty-check'
