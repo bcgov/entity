@@ -60,7 +60,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         args: '${computer.jnlpmac} ${computer.name}',
         echo: "check envVar",
         envVars:([
-            secretEnvVar(key: 'ENV', secretName: "integration-${TAG_NAME}-secret", secretKey: 'env'),
+            secretEnvVar(key: 'ENVIRONMENT', secretName: "integration-${TAG_NAME}-secret", secretKey: 'env'),
             secretEnvVar(key: 'REALM', secretName: "integration-${TAG_NAME}-secret", secretKey: 'realm'),
             secretEnvVar(key: 'USERNAME', secretName: "integration-${TAG_NAME}-secret", secretKey: 'username'),
             secretEnvVar(key: 'PASSWORD', secretName: "integration-${TAG_NAME}-secret", secretKey: 'password'),
@@ -75,7 +75,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
     node(py3nodejs_label) {
         script {
             echo """
-            ENV:${ENV}
+            ENVIRONMENT:${ENVIRONMENT}
             REALM:${REALM}
             USERNAME:${USERNAME}
             PASSWORD:${PASSWORD}
