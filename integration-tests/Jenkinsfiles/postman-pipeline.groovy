@@ -31,18 +31,18 @@ TESTS_PATH
 // define groovy functions
 import groovy.json.JsonOutput
 
-def run_collection(collection_name, env, realm, username, password, service_url, test_account_number) {
+def run_collection(collection_name) {
     // run a postman collection (if a test fails it will raise an exception)
     echo "Running ${collection_name} pm collection..."
     sh """./node_modules/newman/bin/newman.js run ./${collection_name}.postman_collection.json \
-    --global-var env=${env} \
-    --global-var realm=${realm} \
-    --global-var username=${username} \
-    --global-var password=${password} \
-    --global-var staff_username=${username} \
-    --global-var staff_password=${password} \
-    --global-var url=${service_url} \
-    --global-var test_account_number=${test_account_number}
+    --global-var env=${ENVIRONMENT} \
+    --global-var realm=${REALM} \
+    --global-var username=${USERNAME} \
+    --global-var password=${PASSWORD} \
+    --global-var staff_username=${USERNAME} \
+    --global-var staff_password=${PASSWORD} \
+    --global-var url=${SERVICE_URL} \
+    --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
     """
 }
 
