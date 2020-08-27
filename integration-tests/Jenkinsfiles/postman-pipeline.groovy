@@ -82,7 +82,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
             STAFF_USERNAME:${STAFF_USERNAME}
             STAFF_PASSWORD:${STAFF_PASSWORD}
             SERVICE_URL:${SERVICE_URL}
-            COLLECION_NAME:${COLLECTION_NAME}
+            COLLECTION_NAME:${COLLECTION_NAME}
             TESTS_PATH:${TESTS_PATH}
             TEST_ACCOUNT_NUMBER:${TEST_ACCOUNT_NUMBER}
             """
@@ -95,7 +95,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                 sh 'npm install newman@4.6.1'
                 stage("Running ${COMPONENT_NAME} pm tests") {
                     try {
-                        if (COLLECION_NAME != 'affiliations-reset') {
+                        if (COLLECTION_NAME != 'affiliations-reset') {
                             // run the pm collection like normal
                             run_collection(COMPONENT_NAME)
                         } else {
@@ -111,7 +111,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                                 for (int i=0; i<20; i++) {
                                     try {
                                         echo "reset collection has run ${i} times."
-                                        run_collection(COLLECION_NAME)
+                                        run_collection(COLLECTION_NAME)
                                         echo "all affiliations sucessfully deleted."
                                         break
                                     } catch (Exception ex) {
