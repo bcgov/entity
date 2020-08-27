@@ -34,6 +34,16 @@ import groovy.json.JsonOutput
 def run_collection(collection_name) {
     // run a postman collection (if a test fails it will raise an exception)
     echo "Running ${collection_name} pm collection..."
+    echo """
+    --global-var env=${ENVIRONMENT} \
+    --global-var realm=${REALM} \
+    --global-var username=${USERNAME} \
+    --global-var password=${PASSWORD} \
+    --global-var staff_username=${STAFF_USERNAME} \
+    --global-var staff_password=${STAFF_PASSWORD} \
+    --global-var url=${SERVICE_URL} \
+    --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
+    """
     sh """./node_modules/newman/bin/newman.js run ./${collection_name}.postman_collection.json \
     --global-var env=${ENVIRONMENT} \
     --global-var realm=${REALM} \
