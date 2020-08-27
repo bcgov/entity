@@ -39,8 +39,8 @@ def run_collection(collection_name) {
     --global-var realm=${REALM} \
     --global-var username=${USERNAME} \
     --global-var password=${PASSWORD} \
-    --global-var staff_username=${USERNAME} \
-    --global-var staff_password=${PASSWORD} \
+    --global-var staff_username=${STAFF_USERNAME} \
+    --global-var staff_password=${STAFF_PASSWORD} \
     --global-var url=${SERVICE_URL} \
     --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
     """
