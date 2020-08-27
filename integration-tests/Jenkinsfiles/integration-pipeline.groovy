@@ -26,7 +26,7 @@ TAG_NAME
 PM_COLLECTION_PATH
 
 // stays true if all tests pass
-def PASSED = true
+PASSED = true
 
 def ROCKETCHAT_CHANNEL='#registries-bot'
 
@@ -43,6 +43,9 @@ def rocketChatNotificaiton(token, channel, comments) {
 }
 // call/run the postman pipeline
 def run_pm_pipeline(namespace, component_name, collection_name) {
+    echo """
+    Running postman ${collection_name} collection tests...
+    """
     openshift.withCluster() {
         openshift.withProject() {
             try {
