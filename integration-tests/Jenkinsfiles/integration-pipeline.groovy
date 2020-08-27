@@ -46,7 +46,7 @@ def run_pm_pipeline(namespace, component_name, collection_name) {
     echo """
     Running postman ${collection_name} collection tests...
     """
-    openshift.withCluster() {
+    openshift.withCluster('gl2uos') {
         openshift.withProject('gl2uos-dev') {
             try {
                 def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
