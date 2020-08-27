@@ -22,8 +22,6 @@
 // define constants
 // set from call
 
-NAMESPACE
-TAG_NAME
 COMPONENT_NAME
 COLLECTION_NAME
 TESTS_PATH
