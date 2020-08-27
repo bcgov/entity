@@ -44,16 +44,20 @@ def run_collection(collection_name) {
     --global-var url=${SERVICE_URL} \
     --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
     """
-    sh """./node_modules/newman/bin/newman.js run ./${collection_name}.postman_collection.json \
-    --global-var env=${ENVIRONMENT} \
-    --global-var realm=${REALM} \
-    --global-var username=${USERNAME} \
-    --global-var password=${PASSWORD} \
-    --global-var staff_username=${STAFF_USERNAME} \
-    --global-var staff_password=${STAFF_PASSWORD} \
-    --global-var url=${SERVICE_URL} \
-    --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
-    """
+    openshift.withCluster() {
+        openshift.withProject('gl2uos-dev') {
+            sh """./node_modules/newman/bin/newman.js run ./${collection_name}.postman_collection.json \
+            --global-var env=${ENVIRONMENT} \
+            --global-var realm=${REALM} \
+            --global-var username=${USERNAME} \
+            --global-var password=${PASSWORD} \
+            --global-var staff_username=${STAFF_USERNAME} \
+            --global-var staff_password=${STAFF_PASSWORD} \
+            --global-var url=${SERVICE_URL} \
+            --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
+            """
+        }
+    }
 }
 
 def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
