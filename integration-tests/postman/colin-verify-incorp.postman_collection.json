@@ -1,11 +1,113 @@
 {
 	"info": {
-		"_postman_id": "f5c5bfac-fe78-4d40-ac9b-823c7d4db44e",
+		"_postman_id": "43bbaa07-62fd-44b1-8e92-077a9b929850",
 		"name": "colin-verify-incorp",
 		"description": "version=0.108 - This is a Colin API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
+		{
+			"name": "ops",
+			"item": [
+				{
+					"name": "GET readyz",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4c3f56df-6e59-42da-a434-064d51583a32",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"api is ready\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.message).to.eql('api is ready');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/ops/readyz",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ops",
+								"readyz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET healthz",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ca65f288-7f71-42a2-8b69-4e987a6a59ff",
+								"exec": [
+									"pm.test(\"Response time is less than 10000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"api is healthy\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.message).to.eql('api is healthy');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/ops/healthz",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"ops",
+								"healthz"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
 		{
 			"name": "verify-incorporation",
 			"item": [
@@ -15,7 +117,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "112c0ea8-684d-40d6-be60-e6f987eb5f53",
+								"id": "1ea5be1f-40c1-4641-8702-8a547201f488",
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"pm.environment.set(\"token\", jsonData.access_token);",
@@ -57,7 +159,7 @@
 							"mode": "raw",
 							"raw": "grant_type=client_credentials",
 							"options": {
-								"urlencoded": {}
+								"raw": {}
 							}
 						},
 						"url": {
@@ -88,7 +190,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "f77fd86d-64ae-4b88-8002-7202074e080f",
+								"id": "6577968b-90e4-447e-a9db-4a98bfdb8c9e",
 								"exec": [
 									"pm.environment.set(\"businessIdentifier\", null);"
 								],
@@ -98,7 +200,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "95130993-3b8e-43d5-a2a3-a3c982b1d98c",
+								"id": "4b723443-7617-418c-b2ab-2ecdbf451337",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -117,31 +219,31 @@
 									"     pm.response.to.be.withBody;",
 									"     pm.response.to.be.json;",
 									"});",
+									"pm.environment.set(\"businessIdentifier\", 0878615)",
+									"// pm.test(\"Verify that the account has a BC entity affiliation\",  () => {",
+									"//     var responseData = pm.response.json();",
+									"//     pm.expect(responseData).to.have.property('entities');",
 									"",
-									"pm.test(\"Verify that the account has a BC entity affiliation\",  () => {",
-									"    var responseData = pm.response.json();",
-									"    pm.expect(responseData).to.have.property('entities');",
-									"",
-									"    var entities = responseData['entities'];",
-									"    if(entities.length !== 29) {",
-									"        postman.setNextRequest(null);",
-									"        throw new Error(`Incorrect number of affiliations : ` + entities.length)",
-									"    }",
+									"//     var entities = responseData['entities'];",
+									"//     if(entities.length !== 29) {",
+									"//         postman.setNextRequest(null);",
+									"//         throw new Error(`Incorrect number of affiliations : ` + entities.length)",
+									"//     }",
 									"    ",
-									"    var identifier=''",
-									"    _.each(entities, (arrItem) => {",
-									"        if (arrItem.corpType.code === 'BC') {",
-									"            identifier=arrItem.businessIdentifier",
-									"            pm.environment.set(\"businessIdentifier\", arrItem.businessIdentifier.substring(2));",
-									"        }",
-									"    })",
+									"//     var identifier=''",
+									"//     _.each(entities, (arrItem) => {",
+									"//         if (arrItem.corpType.code === 'BC') {",
+									"//             identifier=arrItem.businessIdentifier",
+									"//             pm.environment.set(\"businessIdentifier\", arrItem.businessIdentifier.substring(2));",
+									"//         }",
+									"//     })",
 									"    ",
-									"    if (identifier === '') {",
-									"        // Will not execute further requests in the collection if no identifier",
-									"        postman.setNextRequest(null);",
-									"        throw new Error(`The account does not have an affiliated Benefit Company`)",
-									"    }",
-									"});"
+									"//     if (identifier === '') {",
+									"//         // Will not execute further requests in the collection if no identifier",
+									"//         postman.setNextRequest(null);",
+									"//         throw new Error(`The account does not have an affiliated Benefit Company`)",
+									"//     }",
+									"// });"
 								],
 								"type": "text/javascript"
 							}
@@ -180,7 +282,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e93451f2-01f3-451a-bb82-643beb9d81f1",
+								"id": "1f4cec1f-657c-4d3b-955e-6e77d883a0cb",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -202,11 +304,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}",
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
+								"api",
+								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}"
@@ -221,7 +325,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "65f982d7-f7f6-40e1-a327-ece856431b7f",
+								"id": "5aafa954-4748-44e3-8ded-eb2578c84ecc",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -249,11 +353,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/office",
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/office",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
+								"api",
+								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -269,7 +375,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e71910b4-ae12-448e-9c65-ed29fecca30e",
+								"id": "cf4ec4e4-e8b8-4480-b447-fe1897a97132",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -297,11 +403,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/parties?partyType=Director",
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/parties?partyType=Director",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
+								"api",
+								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -323,7 +431,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "67c02b86-857d-4770-9c3c-82b5b01439dd",
+								"id": "593af24a-2e3a-4573-9c82-3a39592b0ef3",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -353,11 +461,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/names/NB",
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/NB",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
+								"api",
+								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -374,7 +484,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b66def2f-bc29-4746-b49c-f018b302fd5f",
+								"id": "d3af018a-31b9-4957-b576-8494d43eb3a3",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -400,11 +510,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/names/CO",
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/CO",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
+								"api",
+								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -421,7 +533,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "679884b8-8e09-4151-811e-3f4232b73ecb",
+								"id": "95f12a4d-f2fd-448e-a7b7-9b6befcd8bed",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -451,11 +563,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/names/TR",
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/TR",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
+								"api",
+								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -472,7 +586,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b97b4f0b-1829-4278-961a-8c96c909ab0f",
+								"id": "e8720e75-996f-4e0e-bd89-da9d813aa8cc",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -500,11 +614,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/sharestructure",
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/sharestructure",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
+								"api",
+								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -520,7 +636,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "1542460b-75df-45bc-b54d-e6c3610cbbd6",
+								"id": "453aabfd-6535-4d50-87cc-39ef91ffec09",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -543,11 +659,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/resolutions",
+							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/resolutions",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
+								"api",
+								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -565,7 +683,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0ab516cd-2040-4498-9d1b-034ef9b94ecd",
+				"id": "49419f57-c57c-4def-b503-a068a4ca24d5",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -575,7 +693,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "568a0c0a-b569-4524-a17b-a35a39e56139",
+				"id": "49db04d6-671e-4b6c-80c5-9d77d89a0297",
 				"type": "text/javascript",
 				"exec": [
 					""

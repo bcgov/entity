@@ -33,8 +33,8 @@ import groovy.json.JsonOutput
 
 def run_collection(collection_name) {
     // run a postman collection (if a test fails it will raise an exception)
-    echo "Running ${collection_name} pm collection..."
     echo """
+    Running ${collection_name} pm collection...
     --global-var env=${ENVIRONMENT} \
     --global-var realm=${REALM} \
     --global-var username=${USERNAME} \
