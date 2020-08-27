@@ -7,108 +7,6 @@
 	},
 	"item": [
 		{
-			"name": "ops",
-			"item": [
-				{
-					"name": "GET readyz",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "4c3f56df-6e59-42da-a434-064d51583a32",
-								"exec": [
-									"pm.test(\"Response time is less than 10000ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
-									"});",
-									"",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test(\"api is ready\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.message).to.eql('api is ready');",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "{{url}}/ops/readyz",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"ops",
-								"readyz"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET healthz",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "ca65f288-7f71-42a2-8b69-4e987a6a59ff",
-								"exec": [
-									"pm.test(\"Response time is less than 10000ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
-									"});",
-									"",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test(\"api is healthy\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.message).to.eql('api is healthy');",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json",
-								"disabled": true
-							}
-						],
-						"url": {
-							"raw": "{{url}}/ops/healthz",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"ops",
-								"healthz"
-							]
-						}
-					},
-					"response": []
-				}
-			],
-			"protocolProfileBehavior": {}
-		},
-		{
 			"name": "verify-incorporation",
 			"item": [
 				{
@@ -304,13 +202,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}",
+							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}"
@@ -353,13 +249,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/office",
+							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/office",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -403,13 +297,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/parties?partyType=Director",
+							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/parties?partyType=Director",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -461,13 +353,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/NB",
+							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/names/NB",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -510,13 +400,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/CO",
+							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/names/CO",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -563,13 +451,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/names/TR",
+							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/names/TR",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -614,13 +500,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/sharestructure",
+							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/sharestructure",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
@@ -659,13 +543,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/api/v1/businesses/BC/{{businessIdentifier}}/resolutions",
+							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/resolutions",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"businesses",
 								"BC",
 								"{{businessIdentifier}}",
