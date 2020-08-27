@@ -45,7 +45,7 @@ def run_collection(collection_name) {
     --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
     """
     openshift.withCluster() {
-        openshift.withProject('gl2uos-dev') {
+        openshift.withProject() {
             sh """./node_modules/newman/bin/newman.js run ./${collection_name}.postman_collection.json \
             --global-var env=${ENVIRONMENT} \
             --global-var realm=${REALM} \
