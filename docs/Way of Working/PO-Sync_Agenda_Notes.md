@@ -15,7 +15,16 @@ Aug 28, 2020
 1. Scope of Release going next
 
 ### Moving Agenda:
-1. 
+1. 4753(Relationship team asked Entity to do) - Grooming done
+1. API Discussion on Sept 28th with PPR stakeholders
+   - Pro data account will not be ready for production this PI.
+1. CAS/CFS downtime email notifications
+   - Linda/Jyoti/Loren/Kaine/ITOPS should be part of the email notification group
+   - Loren to follow up to have the above group added for notification
+   - For next weekend, we need a notice up on Business Registry page that the payment wont be available till "X" date
+   - Create a ticket(Amit/Melissa) for banner update today?
+      - Raise this in Tech Release meeting?
+      - Banner should be up and Running by Sept 2nd till Sept 8th(6AM)
 
 ----
 Aug 21, 2020
