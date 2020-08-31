@@ -32,12 +32,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "{{password}}",
+							"value": "{{staff_password}}",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "{{username}}",
+							"value": "{{staff_username}}",
 							"type": "string"
 						}
 					]

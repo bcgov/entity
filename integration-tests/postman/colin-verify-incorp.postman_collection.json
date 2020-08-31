@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0982b246-7d1e-4e85-b238-3d5395759ae0",
+		"_postman_id": "43bbaa07-62fd-44b1-8e92-077a9b929850",
 		"name": "colin-verify-incorp",
 		"description": "version=0.108 - This is a Colin API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -15,7 +15,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "47d22dfe-bfe3-491c-bf15-8ff0247d674e",
+								"id": "1ea5be1f-40c1-4641-8702-8a547201f488",
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"pm.environment.set(\"token\", jsonData.access_token);",
@@ -57,7 +57,7 @@
 							"mode": "raw",
 							"raw": "grant_type=client_credentials",
 							"options": {
-								"urlencoded": {}
+								"raw": {}
 							}
 						},
 						"url": {
@@ -88,7 +88,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "7bae95ee-0105-430b-9898-cc8b8bdb53ba",
+								"id": "6577968b-90e4-447e-a9db-4a98bfdb8c9e",
 								"exec": [
 									"pm.environment.set(\"businessIdentifier\", null);"
 								],
@@ -98,7 +98,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8d5ad5bf-bef9-4829-8711-745d7c54d666",
+								"id": "4b723443-7617-418c-b2ab-2ecdbf451337",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -117,7 +117,6 @@
 									"     pm.response.to.be.withBody;",
 									"     pm.response.to.be.json;",
 									"});",
-									"",
 									"pm.test(\"Verify that the account has a BC entity affiliation\",  () => {",
 									"    var responseData = pm.response.json();",
 									"    pm.expect(responseData).to.have.property('entities');",
@@ -180,7 +179,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "49daf3a5-d06a-43b6-8edd-28a1b8c60d44",
+								"id": "1f4cec1f-657c-4d3b-955e-6e77d883a0cb",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -221,7 +220,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a9a29e92-58bb-406e-a9f4-e45e00d852bd",
+								"id": "5aafa954-4748-44e3-8ded-eb2578c84ecc",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -269,7 +268,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c2ed844a-c865-4036-a6f7-a19e150024bf",
+								"id": "cf4ec4e4-e8b8-4480-b447-fe1897a97132",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -323,7 +322,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "342b93fa-4647-479f-be3a-40b0a1f31ed2",
+								"id": "593af24a-2e3a-4573-9c82-3a39592b0ef3",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -374,7 +373,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "11a16e75-8ee0-4169-a9fa-1bc89273d809",
+								"id": "d3af018a-31b9-4957-b576-8494d43eb3a3",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -421,7 +420,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33575229-f95b-4c41-b301-e5bc0c95e511",
+								"id": "95f12a4d-f2fd-448e-a7b7-9b6befcd8bed",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -472,7 +471,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "68a0e9b2-8be5-4d55-acde-88c93ea1d577",
+								"id": "e8720e75-996f-4e0e-bd89-da9d813aa8cc",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -520,7 +519,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "88a88eeb-e550-4520-ab83-a691e8655108",
+								"id": "453aabfd-6535-4d50-87cc-39ef91ffec09",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -565,7 +564,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "afcd8d72-22ad-45d2-8687-9c0fe4e09282",
+				"id": "49419f57-c57c-4def-b503-a068a4ca24d5",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -575,7 +574,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "56efcb89-6675-4519-bf66-e12082ede2a6",
+				"id": "49db04d6-671e-4b6c-80c5-9d77d89a0297",
 				"type": "text/javascript",
 				"exec": [
 					""

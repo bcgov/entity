@@ -22,8 +22,6 @@
 // define constants
 // set from call
 
-NAMESPACE
-TAG_NAME
 COMPONENT_NAME
 COLLECTION_NAME
 TESTS_PATH
@@ -33,17 +31,31 @@ import groovy.json.JsonOutput
 
 def run_collection(collection_name) {
     // run a postman collection (if a test fails it will raise an exception)
-    echo "Running ${collection_name} pm collection..."
-    sh """./node_modules/newman/bin/newman.js run ./${pre_collection_run}.postman_collection.json \
-    --global-var auth_url=${AUTH_URL} \
+    echo """
+    Running ${collection_name} pm collection...
+    --global-var env=${ENVIRONMENT} \
     --global-var realm=${REALM} \
     --global-var username=${USERNAME} \
     --global-var password=${PASSWORD} \
-    --global-var staff_username=${USERNAME} \
-    --global-var staff_password=${PASSWORD} \
+    --global-var staff_username=${STAFF_USERNAME} \
+    --global-var staff_password=${STAFF_PASSWORD} \
     --global-var url=${SERVICE_URL} \
     --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
     """
+    openshift.withCluster() {
+        openshift.withProject() {
+            sh """./node_modules/newman/bin/newman.js run ./${collection_name}.postman_collection.json \
+            --global-var env=${ENVIRONMENT} \
+            --global-var realm=${REALM} \
+            --global-var username=${USERNAME} \
+            --global-var password=${PASSWORD} \
+            --global-var staff_username=${STAFF_USERNAME} \
+            --global-var staff_password=${STAFF_PASSWORD} \
+            --global-var url=${SERVICE_URL} \
+            --global-var test_account_number=${TEST_ACCOUNT_NUMBER}
+            """
+        }
+    }
 }
 
 def py3nodejs_label = "jenkins-py3nodejs-${UUID.randomUUID().toString()}"
@@ -60,6 +72,7 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
         args: '${computer.jnlpmac} ${computer.name}',
         echo: "check envVar",
         envVars:([
+            secretEnvVar(key: 'ENVIRONMENT', secretName: "integration-${TAG_NAME}-secret", secretKey: 'env'),
             secretEnvVar(key: 'REALM', secretName: "integration-${TAG_NAME}-secret", secretKey: 'realm'),
             secretEnvVar(key: 'USERNAME', secretName: "integration-${TAG_NAME}-secret", secretKey: 'username'),
             secretEnvVar(key: 'PASSWORD', secretName: "integration-${TAG_NAME}-secret", secretKey: 'password'),
@@ -74,15 +87,16 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
     node(py3nodejs_label) {
         script {
             echo """
-            AUTH_URL:${AUTH_URL}
+            ENVIRONMENT:${ENVIRONMENT}
             REALM:${REALM}
             USERNAME:${USERNAME}
             PASSWORD:${PASSWORD}
             STAFF_USERNAME:${STAFF_USERNAME}
             STAFF_PASSWORD:${STAFF_PASSWORD}
             SERVICE_URL:${SERVICE_URL}
-            COLLECION_NAME:${COLLECTION_NAME}
+            COLLECTION_NAME:${COLLECTION_NAME}
             TESTS_PATH:${TESTS_PATH}
+            TEST_ACCOUNT_NUMBER:${TEST_ACCOUNT_NUMBER}
             """
 
             checkout scm
@@ -91,11 +105,11 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                 all_passed = true
                 sh 'node -v'
                 sh 'npm install newman@4.6.1'
-                stage("Running ${COMPONENT_NAME} pm tests") {
+                stage("Running ${COLLECTION_NAME} pm tests") {
                     try {
-                        if (COLLECION_NAME != 'affiliations-reset') {
+                        if (COLLECTION_NAME != 'affiliations-reset') {
                             // run the pm collection like normal
-                            run_collection(COMPONENT_NAME)
+                            run_collection(COLLECTION_NAME)
                         } else {
                             // check if affiliations need reset before running reset
                             pre_collection_run = 'affiliations-empty-check'
@@ -109,10 +123,10 @@ podTemplate(label: py3nodejs_label, name: py3nodejs_label, serviceAccount: 'jenk
                                 for (int i=0; i<20; i++) {
                                     try {
                                         echo "reset collection has run ${i} times."
-                                        run_collection(COLLECION_NAME)
+                                        run_collection(COLLECTION_NAME)
                                         echo "all affiliations sucessfully deleted."
                                         break
-                                    } catch (Exception e) {
+                                    } catch (Exception ex) {
                                         echo "One or more tests failed for affiliations reset -- running again..."
                                         if (i == 19) {
                                             echo "Failed to delete all affiliations -- manual fix needed."

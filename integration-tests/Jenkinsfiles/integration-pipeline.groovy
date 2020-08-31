@@ -26,7 +26,7 @@ TAG_NAME
 PM_COLLECTION_PATH
 
 // stays true if all tests pass
-def PASSED = true
+PASSED = true
 
 def ROCKETCHAT_CHANNEL='#registries-bot'
 
@@ -43,8 +43,11 @@ def rocketChatNotificaiton(token, channel, comments) {
 }
 // call/run the postman pipeline
 def run_pm_pipeline(namespace, component_name, collection_name) {
+    echo """
+    Running postman ${collection_name} collection tests...
+    """
     openshift.withCluster() {
-        openshift.withProject() {
+        openshift.withProject("${namespace}-${TAG_NAME}") {
             try {
                 def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
                 pm_pipeline.startBuild(
@@ -65,7 +68,6 @@ def run_pm_pipeline(namespace, component_name, collection_name) {
         }
     }
 }
-// NI (Not Implemented) - will pass automatically
 stage("setup lear->colin flow") {
     script {
         echo """
@@ -82,7 +84,6 @@ stage("setup lear->colin flow") {
         run_pm_pipeline(namespace, component_name, collection_name)
     }
 }
-run = true
 stage("incorp lear->colin") {
     // Create incorporation in lear
     script {
@@ -107,13 +108,13 @@ stage('Run Colin-Updater') {
         }
     }
 }
-stage('NI: verify incorp in colin') {
+stage('verify incorp in colin') {
     // run colin-api postman collection to verify incorp success
     // run lear postman collection to verify incorp success
     script {
         namespace = 'gl2uos'
         component_name = 'colin_api'
-        collecttion_name = 'colin-verify-incorp'
+        collection_name = 'colin-verify-incorp'
         run_pm_pipeline(namespace, component_name, collection_name)
         if (PASSED) {
             echo "Verified incorporation!"
