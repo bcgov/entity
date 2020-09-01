@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "a5696b27-1413-42de-8e50-a08cc1d19537",
+		"_postman_id": "e62e54ac-7124-4635-aa2c-e794d8caff88",
 		"name": "lear-verify-bn-updated",
 		"description": "version=2.0.1 - This is a Legal API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -195,10 +195,12 @@
 									"    pm.response.to.have.header('Content-Type', 'application/json');",
 									"});",
 									"",
-									"pm.test(\"Verify that the business number exists for the identifier\", () => {",
-									"    pm.expect(jsonData.business).to.exist",
-									"    pm.expect(jsonData.business).to.have.property('taxId');",
-									"});"
+									"if (pm.environment.get('env') != 'dev') {",
+									"    pm.test(\"Verify that the business number exists for the identifier\", () => {",
+									"        pm.expect(jsonData.business).to.exist",
+									"        pm.expect(jsonData.business).to.have.property('taxId');",
+									"    });",
+									"}"
 								],
 								"type": "text/javascript"
 							}

@@ -52,8 +52,6 @@ def run_pm_pipeline(namespace, component_name, collection_name) {
                 def pm_pipeline = openshift.selector('bc', 'postman-collection-run-pipeline')
                 pm_pipeline.startBuild(
                     '--wait=true', 
-                    "-e=NAMESPACE=${namespace}", 
-                    "-e=TAG_NAME=${TAG_NAME}",
                     "-e=COMPONENT_NAME=${component_name}",
                     "-e=COLLECTION_NAME=${collection_name}", 
                     "-e=TESTS_PATH=${PM_COLLECTION_PATH}"
