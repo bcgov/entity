@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "43bbaa07-62fd-44b1-8e92-077a9b929850",
+		"_postman_id": "00864b06-6725-478f-ac32-c8883d3db968",
 		"name": "colin-verify-incorp",
 		"description": "version=0.108 - This is a Colin API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -15,7 +15,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "1ea5be1f-40c1-4641-8702-8a547201f488",
+								"id": "b624271e-5ffc-4349-a653-387588f423e8",
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"pm.environment.set(\"token\", jsonData.access_token);",
@@ -88,7 +88,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "6577968b-90e4-447e-a9db-4a98bfdb8c9e",
+								"id": "7b2dc2f6-abf8-4581-95d2-8f2fd0046a4f",
 								"exec": [
 									"pm.environment.set(\"businessIdentifier\", null);"
 								],
@@ -98,7 +98,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "4b723443-7617-418c-b2ab-2ecdbf451337",
+								"id": "d919abb8-1715-4f68-9eb8-430961b48070",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -122,7 +122,7 @@
 									"    pm.expect(responseData).to.have.property('entities');",
 									"",
 									"    var entities = responseData['entities'];",
-									"    if(entities.length !== 29) {",
+									"    if(entities.length !== 2) {",
 									"        postman.setNextRequest(null);",
 									"        throw new Error(`Incorrect number of affiliations : ` + entities.length)",
 									"    }",
@@ -179,7 +179,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "1f4cec1f-657c-4d3b-955e-6e77d883a0cb",
+								"id": "5de5d910-4687-497a-b774-91085d07237a",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -220,7 +220,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "5aafa954-4748-44e3-8ded-eb2578c84ecc",
+								"id": "5d7c5eae-19e8-4e3a-98f8-b462b5c6b79a",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -268,7 +268,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cf4ec4e4-e8b8-4480-b447-fe1897a97132",
+								"id": "e5d67b45-604c-4330-a4af-6a0af210cbad",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -322,7 +322,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "593af24a-2e3a-4573-9c82-3a39592b0ef3",
+								"id": "8c301261-88c6-4367-939f-e3c3664113e8",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -373,7 +373,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d3af018a-31b9-4957-b576-8494d43eb3a3",
+								"id": "70464cf0-0f41-46a1-a2db-2c575c0d2974",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -420,7 +420,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "95f12a4d-f2fd-448e-a7b7-9b6befcd8bed",
+								"id": "74d2a0d7-19b6-43cc-9ebe-7ffaad80155c",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -471,7 +471,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e8720e75-996f-4e0e-bd89-da9d813aa8cc",
+								"id": "f5b8692f-7d13-4437-bfc9-51e86d017e20",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -519,7 +519,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "453aabfd-6535-4d50-87cc-39ef91ffec09",
+								"id": "214cbd1b-1d73-4d07-b3c5-f6ec39c954e0",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -564,7 +564,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "49419f57-c57c-4def-b503-a068a4ca24d5",
+				"id": "8d3da0de-ce0c-4b19-9711-a8df1efa0f18",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -574,7 +574,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "49db04d6-671e-4b6c-80c5-9d77d89a0297",
+				"id": "2af479ab-e573-40b1-a48c-f5b719f03892",
 				"type": "text/javascript",
 				"exec": [
 					""
