@@ -26,6 +26,35 @@ Description - ticket_number - presenter - <duration> mins
 
 ----
 
+### Sept 1, 2020 - Sprint (Milestone) 37 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+Sprint Update - Linda
+
+#### Name Request
+Premium Statements - Loren - 10 mins
+
+#### Relationships
+Lorna - 30 mins
+1.  Lock down of the entity/actions
+1.  Addition of Queue Conflicts to auto-analyze process.
+1.  Workflow of DRAFT to Payment
+1.  Workflow of conditionally reserved or reserved to Payment
+1.  Edit Existing DRAFT NR (request action/entity type/names/contact info)
+1.  Upgrade Existing DRAFT NR to Priority (Need to hook-up the Payment)
+1.  Re-Apply an NR without requiring examination (Need to still hook up payment)
+1.  Edit an NR that has been completed.
+1.  XPRO gets all analysis results but still goes to examination.
+1. Workflow of Assumed Name of an XPRO
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+----
+
 ### Aug 18, 2020 - Sprint (Milestone) 36 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
