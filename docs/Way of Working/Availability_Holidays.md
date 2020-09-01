@@ -8,7 +8,7 @@
 ----
 **Entities** 
 * Thor: May 11-15, June 19,22-26, Oct 14
-* Kial: Mondays in the morning, Wed all day, Thurdsays in the morning
+* Kial: Flex day every second friday
 * Lekshmi:
 * Peter: Jun 26, 29
 * Sienna:
