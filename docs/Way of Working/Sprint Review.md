@@ -25,18 +25,34 @@ Description - ticket_number - presenter - <duration> mins
 |---|----------------------|--------------------|-------------------------|
 
 ----
+### Sept 18, 2020 - Sprint (Milestone) 38 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
+#### Entities
+Description - ticket_number - presenter - <duration> mins
+#### Name Request
+Description - ticket_number - presenter - <duration> mins
+#### Relationships
+Description - ticket_number - presenter - <duration> mins
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+----
 ### Sept 1, 2020 - Sprint (Milestone) 37 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-Sprint Update - Linda
-
-#### Name Request
-Premium Statements - Loren - 10 mins
+1. Sprint Update - Linda
 
 #### Relationships
+1. Premium Statements - Loren - 10 mins
+1. 4649 - Generate Statements based on Statement Frequency
+
+#### Name Request
 Lorna - 30 mins
 1.  Lock down of the entity/actions
 1.  Addition of Queue Conflicts to auto-analyze process.
