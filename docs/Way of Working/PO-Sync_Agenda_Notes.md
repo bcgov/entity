@@ -9,6 +9,22 @@ Sep 11, 2020
 1. Follow up on the Staff dashboard design which can be shared with the team
 
 ----
+Sep 4, 2020
+----
+### Standing Agenda:
+1. Scope of Release going next
+
+### Moving Agenda:
+1. Name Request Account Authentification
+   - Are we going to do it?
+   - If yes, which team needs to do what?
+   - If no, how are we going to manage the Pilot release to corp supervisor
+2. Payment
+   - When would we hook up other payment method with Name request payment? this decission is important for lot of things(Onboarding users like BCOL users and Corp supervisor, change impact)
+   - Which team needs to do what?
+3. Credit card refund: Any update on this?
+
+----
 Aug 28, 2020
 ----
 ### Standing Agenda:
