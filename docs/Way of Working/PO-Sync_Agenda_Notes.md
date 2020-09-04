@@ -23,6 +23,7 @@ Sep 4, 2020
    - When would we hook up other payment method with Name request payment? this decission is important for lot of things(Onboarding users like BCOL users and Corp supervisor, change impact)
    - Which team needs to do what?
 3. Credit card refund: Any update on this?
+4. Define relationship requirements for Staff Dashboard - 4688
 
 ----
 Aug 28, 2020
