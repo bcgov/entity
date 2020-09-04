@@ -4,9 +4,17 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
-Sep 11, 2020
+Oct 9, 2020
 ----
 1. Follow up on the Staff dashboard design which can be shared with the team
+
+----
+Sep 11, 2020
+----
+### Standing Agenda:
+1. Scope of Release going next
+
+### Moving Agenda:
 
 ----
 Sep 4, 2020
@@ -16,14 +24,28 @@ Sep 4, 2020
 
 ### Moving Agenda:
 1. Name Request Account Authentification
-   - Are we going to do it?
-   - If yes, which team needs to do what?
+   - Are we going to do it? - Yes, by Oct 30'ish
+   - If yes, which team needs to do what? - It would be mostly core Entity team. Some dependency might be on Relationship team.
    - If no, how are we going to manage the Pilot release to corp supervisor
 2. Payment
    - When would we hook up other payment method with Name request payment? this decission is important for lot of things(Onboarding users like BCOL users and Corp supervisor, change impact)
    - Which team needs to do what?
+      - Its all based on Auth, so all the features would be part of Oct 30'ish release when Auth piece is done
 3. Credit card refund: Any update on this?
+   - No update as of now. 
+   - Whom to call for support requirement? 
+      - Amit/Loren to get the info.
+      - Ticket which can be updated with the info - 4353. Ticket updated with action items
+      - Loren/Amit to complete the SLA/Email by end of next week
+      - Loren/Amit to confirm with IT OPS about current NR( or any) Refund Process. 
+   - Loren to follow up with Kevin.
 4. Define relationship requirements for Staff Dashboard - 4688
+   - Document management research is required. Which tool can be used? Entity team need to own this.
+5. IT OPS
+   - Linda reached out to Steven Chen. Steven Chen is to create a ZenHub ticket for IT OPS related item
+   - BA Guild team to create the Zenhub template for creating above tickets.
+   - IT OPS to update the distribution list
+   - IT OPS to confirm whether they can take the Passcode reset.
 
 ----
 Aug 28, 2020
