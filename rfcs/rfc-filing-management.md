@@ -26,17 +26,20 @@ Following is the workflow to return a simple filing.
 The raw JSON in the filing table is returned until such time as it is rendered into the domain model and marked COMPLETED. After being COMPLETED, the filing is created from the versioned domain model.
 
 Filings like _Annual Report_ can also return other useful information such as the directors in place at the time of filing via the _Enrichment_ process.
+
 ![Simple Filing image](rfc-filing-management/simple.png)
 
 ### Corrected Filing
 
 A corrected filing is the result of retrieving the _simple_filing_ for the correction, and including the differences to the original simple filing.
 The original is not returned.
+
 ![Corrected Filing image](rfc-filing-management/correction.png)
 
 ### Audit Filing (aka Raw)
 
 This returns the historical JSON as submitted by the customer.
+
 ![Audit Filing image](rfc-filing-management/audit.png)
 
 # Drawbacks
