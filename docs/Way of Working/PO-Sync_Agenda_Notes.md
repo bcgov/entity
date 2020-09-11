@@ -15,6 +15,10 @@ Sep 11, 2020
 1. Scope of Release going next
 
 ### Moving Agenda:
+1. Dependency on BCOL for NR go-live or NRO decommision on Jan 15. If there is any dependency, that needs to be scoped in the next PI
+1. Moving the last sprint of the year by a week for better outcome
+1. Corporate search - Who is doing it?. This was discussed before, so we should revisit that and confirm the scope of work for this PI.
+1. Budget considerations for upcoming PI
 
 ----
 Sep 4, 2020
