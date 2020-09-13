@@ -16,9 +16,29 @@ Sep 11, 2020
 
 ### Moving Agenda:
 1. Dependency on BCOL for NR go-live or NRO decommision on Jan 15. If there is any dependency, that needs to be scoped in the next PI
+   - No Dependency on relationship team
+   - Work should be done by NR Core team
 1. Moving the last sprint of the year by a week for better outcome
+   - All in agreement
 1. Corporate search - Who is doing it?. This was discussed before, so we should revisit that and confirm the scope of work for this PI.
+   - The ownership needs to be discussed. This isnt the roadmap for next PI(oct - dec). Team to revisit this by end of Dec
+   - Jyoti to add this to agenda for Mid dec
 1. Budget considerations for upcoming PI
+   - This is in PO's radar. Plan which is put in place is considering the budget pressure. 
+   - Because of uncertainity, Relationship team might drop Pro data account and Vital stats.
+   - PayBC is the priority, so full focus on completing Pay BC requirement
+   - For Entity team, there is no implication as of now.
+1. Credit Card refund
+   - Raised at the Steering committee
+   - Next steps are work in progress from CAS. 
+   - Amit has chalked out the current process - 4353
+   - Whats the SLA on the refund process from PayBC side for Refund? - Loren to check it.
+   - @Amit - To draft the the proposed solution to send an automated email notification to CAS and IT OPS. To be reviewed in next PO sync.
+      - Who is building this? - Entity Team
+      - When? - Next Sprint? Use the notification service
+   - @Amit to check with Sumesh on whats the unique transaction number
+   - @Melisa to be setup the meeting with Ian B and team to review the support process for IT OPS
+   - Keep the ticket 4353 updated with findings
 
 ----
 Sep 4, 2020
@@ -84,7 +104,7 @@ Aug 21, 2020
 1. Staff dashboard scope - Confirm the requirements by Sept 15th.(4687 - Epic, 4688 - Relationship)
    - Loren bringing this into grooming for the grooming after next
 1. Corporate search - when are we doing this? and who is doing this? - This came up during the long term planning for relationship team. Loren to discuss
-   - Not currently a part of Entity team's planned work. We will plan for this to be added to roadmap and split between the teams (frontend/backend)
+   - Not currently a part of Entity team's planned work. We will plan for this to be added to roadmap and split between the teams (design/frontend/backend)
    - Entities is bringing corporations over in March and has a dependency on this being done
    - Plan for this in December to be able to build in January
 1. Quantitative Analysis across application - when should we prioritize this? Loren to bring up
