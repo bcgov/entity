@@ -39,9 +39,9 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 Description - ticket_number - presenter - <duration> mins
 
 #### Relationships
-- Staff reset OTP authenticator - 4313 - Jeremy - 10 mins
-- Staff dashboard - filter by account name - 4510 - Jeremy
-- Admin/Coordinator resets one-time password authenticator - 3239 - Jeremy
+- Staff reset OTP authenticator - 4313 - Nitheesh - 10 mins
+- Staff dashboard - filter by account name - 4510 - Nitheesh
+- Admin/Coordinator resets one-time password authenticator - 3239 - Nitheesh
 
 
 #### Action Items:
