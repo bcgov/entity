@@ -39,7 +39,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 Description - ticket_number - presenter - <duration> mins
 
 #### Relationships
-Description - ticket_number - presenter - <duration> mins
+- Staff reset OTP authenticator - 4313 - <presenter> - 5 mins
 
 
 #### Action Items:
