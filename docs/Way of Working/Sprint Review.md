@@ -30,9 +30,14 @@ Description - ticket_number - presenter - <duration> mins
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-Description - ticket_number - presenter - <duration> mins
+- As a staff user I want to be able to see the IA correction - 4519 - Cam - 15 mins
+- As a staff user I want to input or choose a new NR# or manually edit the name in the correction flow - 4557 - Cam
+- As staff I want to view information that was filed in the incorporation application - 4318 - Cam
+- As a staff user I want to change the Name to a numbered company in the correction flow - 4556 - Cam
+ 
 #### Name Request
 Description - ticket_number - presenter - <duration> mins
+
 #### Relationships
 Description - ticket_number - presenter - <duration> mins
 
