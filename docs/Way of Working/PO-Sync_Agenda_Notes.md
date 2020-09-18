@@ -6,17 +6,33 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Oct 9, 2020
 ----
-1. Follow up on the Staff dashboard design which can be shared with the team
+
 ----
-Sep 18, 2020
+Sep 25, 2020
 ----
 ### Standing Agenda:
 1. Scope of Release going next
 
 ### Moving Agenda:
+1. Showing account setup with payment methods - Loren
+
+----
+Sep 18, 2020
+----
+### Standing Agenda:
+1. Scope of Release going next
+ - On the 22nd we will put out the one time password authenticator reset (no common component changes required for Entities)
+
+### Moving Agenda:
 1. What filings clients will be able to do in person at at Service BC centre - Loren added this to agenda
+ - Discussion required to make recommendations to Carol (invite Patty to this for context questions)
+ - Loren to follow up with Cameron and Debbie for more detail around job aids
+ - Jennifer will look into past experience in a similar situation
 1. BCSC Outage this week. The BCSC will be down in production on Sunday, September 27th between 6am – 9am. Do we need a banner message as last time?
+ - Covered, we are dealing with it. We have a ticket to do a banner -Loren
 1. Do we need to expose(or plan to expose) Name API to other partners in the next quarter(Dec - Oct)? If yes, relationship needs to account some work on Pro data partner.
+ - This will likely happen in the Spring
+
 
 ----
 Sep 11, 2020
