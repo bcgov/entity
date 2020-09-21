@@ -15,7 +15,7 @@ Sep 25, 2020
 
 ### Moving Agenda:
 1. Showing account setup with payment methods - Loren
-
+2. Relationships team to show designs for 4857 - In-app notification of suspended account.
 ----
 Sep 18, 2020
 ----
