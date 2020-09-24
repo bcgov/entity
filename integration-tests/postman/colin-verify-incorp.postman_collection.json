@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "00864b06-6725-478f-ac32-c8883d3db968",
+		"_postman_id": "15be2acb-0fa7-4920-8404-da5d68c0a97d",
 		"name": "colin-verify-incorp",
 		"description": "version=0.108 - This is a Colin API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -15,7 +15,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b624271e-5ffc-4349-a653-387588f423e8",
+								"id": "82ab7bd8-6e73-476a-8094-a1e3b32c8dff",
 								"exec": [
 									"var jsonData = pm.response.json();",
 									"pm.environment.set(\"token\", jsonData.access_token);",
@@ -88,7 +88,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "7b2dc2f6-abf8-4581-95d2-8f2fd0046a4f",
+								"id": "0a607891-b56e-4dce-8cd0-e7b5b12871e0",
 								"exec": [
 									"pm.environment.set(\"businessIdentifier\", null);"
 								],
@@ -98,7 +98,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d919abb8-1715-4f68-9eb8-430961b48070",
+								"id": "8f0865a4-dc87-441f-af2d-4b3c414b235e",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -179,7 +179,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "5de5d910-4687-497a-b774-91085d07237a",
+								"id": "fb620fff-f167-4262-aa57-a713b071c4f6",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -201,13 +201,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}",
+							"raw": "{{url}}/businesses/BEN/{{businessIdentifier}}",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"businesses",
-								"BC",
+								"BEN",
 								"{{businessIdentifier}}"
 							]
 						}
@@ -220,7 +220,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "5d7c5eae-19e8-4e3a-98f8-b462b5c6b79a",
+								"id": "857ca6b2-9f07-46e7-9d18-b06f8b0de4c4",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -248,13 +248,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/office",
+							"raw": "{{url}}/businesses/BEN/{{businessIdentifier}}/office",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"businesses",
-								"BC",
+								"BEN",
 								"{{businessIdentifier}}",
 								"office"
 							]
@@ -268,7 +268,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e5d67b45-604c-4330-a4af-6a0af210cbad",
+								"id": "bb5f0a7b-abf9-4dfd-a76b-2b842af544af",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -296,13 +296,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/parties?partyType=Director",
+							"raw": "{{url}}/businesses/BEN/{{businessIdentifier}}/parties?partyType=Director",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"businesses",
-								"BC",
+								"BEN",
 								"{{businessIdentifier}}",
 								"parties"
 							],
@@ -322,7 +322,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8c301261-88c6-4367-939f-e3c3664113e8",
+								"id": "a1a95e7f-c45b-4edd-ad7a-c0df7d17ab55",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -352,13 +352,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/names/NB",
+							"raw": "{{url}}/businesses/BEN/{{businessIdentifier}}/names/NB",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"businesses",
-								"BC",
+								"BEN",
 								"{{businessIdentifier}}",
 								"names",
 								"NB"
@@ -373,7 +373,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "70464cf0-0f41-46a1-a2db-2c575c0d2974",
+								"id": "466873f4-d256-4e16-82fd-28f618b5c24d",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -399,13 +399,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/names/CO",
+							"raw": "{{url}}/businesses/BEN/{{businessIdentifier}}/names/CO",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"businesses",
-								"BC",
+								"BEN",
 								"{{businessIdentifier}}",
 								"names",
 								"CO"
@@ -420,7 +420,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "74d2a0d7-19b6-43cc-9ebe-7ffaad80155c",
+								"id": "3d2941b9-17e7-434c-bce2-c42f07d7630e",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -450,13 +450,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/names/TR",
+							"raw": "{{url}}/businesses/BEN/{{businessIdentifier}}/names/TR",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"businesses",
-								"BC",
+								"BEN",
 								"{{businessIdentifier}}",
 								"names",
 								"TR"
@@ -471,7 +471,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f5b8692f-7d13-4437-bfc9-51e86d017e20",
+								"id": "a0c5fd26-95fc-4f19-bfe7-18fee8e1eea8",
 								"exec": [
 									"var jsonData = pm.response.json()",
 									"",
@@ -499,13 +499,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/sharestructure",
+							"raw": "{{url}}/businesses/BEN/{{businessIdentifier}}/sharestructure",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"businesses",
-								"BC",
+								"BEN",
 								"{{businessIdentifier}}",
 								"sharestructure"
 							]
@@ -519,7 +519,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "214cbd1b-1d73-4d07-b3c5-f6ec39c954e0",
+								"id": "c606deff-1d54-4500-880f-034748e6881c",
 								"exec": [
 									"pm.test(\"Response time is less than 10000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
@@ -542,13 +542,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/businesses/BC/{{businessIdentifier}}/resolutions",
+							"raw": "{{url}}/businesses/BEN/{{businessIdentifier}}/resolutions",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"businesses",
-								"BC",
+								"BEN",
 								"{{businessIdentifier}}",
 								"resolutions"
 							]
@@ -564,7 +564,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "8d3da0de-ce0c-4b19-9711-a8df1efa0f18",
+				"id": "75de1d26-0d75-4bdc-a419-98035d240668",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -574,7 +574,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "2af479ab-e573-40b1-a48c-f5b719f03892",
+				"id": "dd70cc18-6156-493b-b636-0b170b5b54fb",
 				"type": "text/javascript",
 				"exec": [
 					""

@@ -1,246 +1,240 @@
 {
 	"info": {
-		"_postman_id": "e62e54ac-7124-4635-aa2c-e794d8caff88",
+		"_postman_id": "b5fcf9b1-2324-4c86-8cba-58aa0b9e095f",
 		"name": "lear-verify-bn-updated",
 		"description": "version=2.0.1 - This is a Legal API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "verify-incorporation",
-			"item": [
+			"name": "authentication setup",
+			"event": [
 				{
-					"name": "authentication setup",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "bc82ac73-b665-482b-99ab-dd7940e80689",
-								"exec": [
-									"var jsonData = pm.response.json();",
-									"pm.environment.set(\"token\", jsonData.access_token);",
-									"pm.environment.set(\"refresh_token\", jsonData.refresh_token);",
-									"",
-									"pm.environment.set(\"token_expires\", Date.now()+(jsonData.expires_in * 1000));",
-									"pm.environment.set(\"refresh_token_expires\", Date.now()+(jsonData.refresh_expires_in * 1000));",
-									"pm.environment.set(\"auth_url\", 'https://auth-api-{{env}}.pathfinder.gov.bc.ca/api/v1');",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "{{password}}",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "{{username}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/x-www-form-urlencoded"
-							},
-							{
-								"key": "Authorization",
-								"type": "text",
-								"value": "Basic ZW50aXR5LXNlcnZpY2UtYWNjb3VudDphNmI3MDcyMS0zMjQxLTQzYmEtYTI5OC02YjQ0MTI0NjFjNzM=",
-								"disabled": true
-							}
+					"listen": "test",
+					"script": {
+						"id": "84bc3100-80cd-4b70-b88e-01b123a25858",
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"pm.environment.set(\"token\", jsonData.access_token);",
+							"pm.environment.set(\"refresh_token\", jsonData.refresh_token);",
+							"",
+							"pm.environment.set(\"token_expires\", Date.now()+(jsonData.expires_in * 1000));",
+							"pm.environment.set(\"refresh_token_expires\", Date.now()+(jsonData.refresh_expires_in * 1000));",
+							"pm.environment.set(\"auth_url\", 'https://auth-api-{{env}}.pathfinder.gov.bc.ca/api/v1');",
+							""
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "grant_type=client_credentials"
-						},
-						"url": {
-							"raw": "https://sso-{{env}}.pathfinder.gov.bc.ca/auth/realms/{{realm}}/protocol/openid-connect/token",
-							"protocol": "https",
-							"host": [
-								"sso-{{env}}",
-								"pathfinder",
-								"gov",
-								"bc",
-								"ca"
-							],
-							"path": [
-								"auth",
-								"realms",
-								"{{realm}}",
-								"protocol",
-								"openid-connect",
-								"token"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "get identifier",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "04aa4eac-21f9-4453-ab07-30e0e4da10de",
-								"exec": [
-									"pm.test(\"Response time is less than 10000ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(10000);",
-									"});",
-									"",
-									"pm.test(\"response is ok\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test(\"response should be okay to process\", function () { ",
-									"    pm.response.to.not.be.error; ",
-									"    pm.response.to.not.have.jsonBody(\"error\"); ",
-									"});",
-									"",
-									"pm.test(\"response must be valid and have a body\", function () {",
-									"     pm.response.to.be.withBody;",
-									"     pm.response.to.be.json;",
-									"});",
-									"",
-									"pm.test(\"Verify that the account has a BC entity affiliation\",  () => {",
-									"    var responseData = pm.response.json();",
-									"    pm.expect(responseData).to.have.property('entities');",
-									"",
-									"    var entities = responseData['entities'];",
-									"    if(entities.length !== 2) {",
-									"        postman.setNextRequest(null);",
-									"        throw new Error(`Incorrect number of affiliations : ` + entities.length)",
-									"    }",
-									"    ",
-									"    var identifier=''",
-									"    _.each(entities, (arrItem) => {",
-									"        if (arrItem.corpType.code === 'BC') {",
-									"            identifier=arrItem.businessIdentifier",
-									"            pm.environment.set(\"businessIdentifier\", arrItem.businessIdentifier);",
-									"        }",
-									"    })",
-									"    ",
-									"    if (identifier === '') {",
-									"        // Will not execute further requests in the collection if no identifier",
-									"        postman.setNextRequest(null);",
-									"        throw new Error(`The account does not have an affiliated Benefit Company`)",
-									"    }",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "84379425-3c5a-49dc-9f9f-96fb50a165d4",
-								"exec": [
-									"pm.environment.set(\"businessIdentifier\", null);"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{token}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{auth_url}}/orgs/{{test_account_number}}/affiliations",
-							"host": [
-								"{{auth_url}}"
-							],
-							"path": [
-								"orgs",
-								"{{test_account_number}}",
-								"affiliations"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "verify BN",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "62e86458-c496-4ab8-8e7c-40b4010bbd80",
-								"exec": [
-									"var jsonData = pm.response.json();",
-									"",
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test('should return JSON', function () {",
-									"    pm.response.to.have.header('Content-Type', 'application/json');",
-									"});",
-									"",
-									"if (pm.environment.get('env') != 'dev') {",
-									"    pm.test(\"Verify that the business number exists for the identifier\", () => {",
-									"        pm.expect(jsonData.business).to.exist",
-									"        pm.expect(jsonData.business).to.have.property('taxId');",
-									"    });",
-									"}"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{token}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{url}}/businesses/{{businessIdentifier}}",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"businesses",
-								"{{businessIdentifier}}"
-							]
-						}
-					},
-					"response": []
+						"type": "text/javascript"
+					}
 				}
 			],
-			"protocolProfileBehavior": {}
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic ZW50aXR5LXNlcnZpY2UtYWNjb3VudDphNmI3MDcyMS0zMjQxLTQzYmEtYTI5OC02YjQ0MTI0NjFjNzM=",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "grant_type=client_credentials"
+				},
+				"url": {
+					"raw": "https://sso-{{env}}.pathfinder.gov.bc.ca/auth/realms/{{realm}}/protocol/openid-connect/token",
+					"protocol": "https",
+					"host": [
+						"sso-{{env}}",
+						"pathfinder",
+						"gov",
+						"bc",
+						"ca"
+					],
+					"path": [
+						"auth",
+						"realms",
+						"{{realm}}",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get identifier",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ba822e5f-e580-460e-a416-94120197491a",
+						"exec": [
+							"pm.test(\"Response time is less than 10000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);",
+							"});",
+							"",
+							"pm.test(\"response is ok\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"response should be okay to process\", function () { ",
+							"    pm.response.to.not.be.error; ",
+							"    pm.response.to.not.have.jsonBody(\"error\"); ",
+							"});",
+							"",
+							"pm.test(\"response must be valid and have a body\", function () {",
+							"     pm.response.to.be.withBody;",
+							"     pm.response.to.be.json;",
+							"});",
+							"",
+							"pm.test(\"Verify that the account has a BC entity affiliation\",  () => {",
+							"    var responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('entities');",
+							"",
+							"    var entities = responseData['entities'];",
+							"    if(entities.length !== 2) {",
+							"        postman.setNextRequest(null);",
+							"        throw new Error(`Incorrect number of affiliations : ` + entities.length)",
+							"    }",
+							"    ",
+							"    var identifier=''",
+							"    _.each(entities, (arrItem) => {",
+							"        if (arrItem.corpType.code === 'BC') {",
+							"            identifier=arrItem.businessIdentifier",
+							"            pm.environment.set(\"businessIdentifier\", arrItem.businessIdentifier);",
+							"        }",
+							"    })",
+							"    ",
+							"    if (identifier === '') {",
+							"        // Will not execute further requests in the collection if no identifier",
+							"        postman.setNextRequest(null);",
+							"        throw new Error(`The account does not have an affiliated Benefit Company`)",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "66933740-cba6-4a41-8066-8e11fe6d05b9",
+						"exec": [
+							"pm.environment.set(\"businessIdentifier\", null);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{auth_url}}/orgs/{{test_account_number}}/affiliations",
+					"host": [
+						"{{auth_url}}"
+					],
+					"path": [
+						"orgs",
+						"{{test_account_number}}",
+						"affiliations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify BN",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0c90984a-cd86-4b33-99ee-b5591fc7d690",
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('should return JSON', function () {",
+							"    pm.response.to.have.header('Content-Type', 'application/json');",
+							"});",
+							"",
+							"if (pm.environment.get('env') != 'dev') {",
+							"    pm.test(\"Verify that the business number exists for the identifier\", () => {",
+							"        pm.expect(jsonData.business).to.exist",
+							"        pm.expect(jsonData.business).to.have.property('taxId');",
+							"    });",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/businesses/{{businessIdentifier}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"businesses",
+						"{{businessIdentifier}}"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "822ae7e3-575e-49c4-8ff3-e90473a3f4fe",
+				"id": "5d177f00-9c27-438a-8d61-5f3516ce65c4",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -250,7 +244,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "538f6c38-794d-4ef8-9840-ea2ec6fccbd2",
+				"id": "9e41d437-7ceb-4c35-a705-5ccb5cc4d7a3",
 				"type": "text/javascript",
 				"exec": [
 					""
