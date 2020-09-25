@@ -4,26 +4,36 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
-Oct 9, 2020
+Oct 3, 2020
 ----
+1. Relationships team to show designs for 4857 - In-app notification of suspended account.
+1. Online Banking design review ? - Loren
+1. NSF changes to be review - Loren
 
 ----
 Sep 25, 2020
 ----
 ### Standing Agenda:
 1. Scope of Release going next
-- incorporation application correction filing
+   - incorporation application correction filing
+      - OCM tasks for Public should be put on hold. Release date should not change 
 
 ### Moving Agenda:
 1. Showing account setup with payment methods - Loren
-1. Relationships team to show designs for 4857 - In-app notification of suspended account.
 1. Name request cutover action items
+   - Jyoti to follow up with Trish/Lorna on the dependency of Socities online with payment around NRO
 1. Sharing a recording of our Sprint Review with Dev Exchange for their Youtube channel - Jason
+   - No concerns from the PO's. 
+   - Jason/Jyoti to work with Ari
 1. PPR MHR roadmapping
+   - Will out this on hold for next week
 1. Long term planning board update - things have changed and we should update our board to put up a realistic picture
+   - Jyoti to setup the meetings
 1. Idea: More business involvement in our Program Increment
+   - Jyoti to plan this out.
 1. Idea: Allocate points for Change management activities
-
+   - This might disrupt the planning process as the team has a good average going on
+   - Also, it wont be only CM activities but it would be everything apart from Dev which needs to be accounted
 ----
 Sep 18, 2020
 ----
