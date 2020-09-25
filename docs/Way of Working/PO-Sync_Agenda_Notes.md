@@ -15,7 +15,9 @@ Sep 25, 2020
 
 ### Moving Agenda:
 1. Showing account setup with payment methods - Loren
-2. Relationships team to show designs for 4857 - In-app notification of suspended account.
+1. Relationships team to show designs for 4857 - In-app notification of suspended account.
+1. Sharing a recording of our Sprint Review with Dev Exchange for their Youtube channel - Jason
+
 ----
 Sep 18, 2020
 ----
