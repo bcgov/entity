@@ -12,11 +12,17 @@ Sep 25, 2020
 ----
 ### Standing Agenda:
 1. Scope of Release going next
+- incorporation application correction filing
 
 ### Moving Agenda:
 1. Showing account setup with payment methods - Loren
 1. Relationships team to show designs for 4857 - In-app notification of suspended account.
+1. Name request cutover action items
 1. Sharing a recording of our Sprint Review with Dev Exchange for their Youtube channel - Jason
+1. PPR MHR roadmapping
+1. Long term planning board update - things have changed and we should update our board to put up a realistic picture
+1. Idea: More business involvement in our Program Increment
+1. Idea: Allocate points for Change management activities
 
 ----
 Sep 18, 2020
