@@ -9,6 +9,8 @@ Oct 3, 2020
 1. Relationships team to show designs for 4857 - In-app notification of suspended account.
 1. Online Banking design review ? - Loren
 1. NSF changes to be review - Loren
+1. Is there any work remaining for embedding change on the project team? - If yes, how should we get there? - Trish/Simona
+
 
 ----
 Sep 25, 2020
