@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "9212407e-8146-48e0-9eb0-3f809bcac1b7",
+		"_postman_id": "686024a5-d737-4de7-a4cb-8d620b5a5a2d",
 		"name": "lear-incorporation",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,7 +11,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "21bd828e-c641-4264-9834-cf1c4245a8d0",
+						"id": "b4eaa280-9d3f-44fb-956d-c98a9040e91e",
 						"exec": [
 							"var jsonData = pm.response.json();",
 							"pm.environment.set(\"token\", jsonData.access_token);",
@@ -87,7 +87,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ae976e04-5664-41dc-a849-35b60aecf2af",
+						"id": "5a2bc121-9e10-4c4d-9dbd-58ad16f2dd03",
 						"exec": [
 							"pm.test(\"Status code is 201\", function () {",
 							"    pm.response.to.have.status(201);",
@@ -147,7 +147,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"filing\": {\n        \"header\": {\n            \"accountId\": {{test_account_number}},\n            \"name\": \"incorporationApplication\"\n        },\n        \"business\":{\n        \t\"legalType\": \"BC\"\t\n        },\n        \"incorporationApplication\": {\n        \t\"nameRequest\": {\n                \"legalType\": \"BC\"\n            }\n        }\n    }\n}",
+					"raw": "{\n    \"filing\": {\n        \"header\": {\n            \"accountId\": {{test_account_number}},\n            \"name\": \"incorporationApplication\"\n        },\n        \"business\":{\n        \t\"legalType\": \"BEN\"\t\n        },\n        \"incorporationApplication\": {\n        \t\"nameRequest\": {\n                \"legalType\": \"BEN\"\n            }\n        }\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -179,7 +179,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "991738ee-71d9-4d1a-92c5-4e570dff8135",
+						"id": "368e21bc-b8d3-454b-8219-92afa1a4e93c",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -246,7 +246,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "af07649b-2a0b-44b8-8221-c582d406c19b",
+						"id": "968eb0d7-4664-4a99-abe6-3967fe598a35",
 						"exec": [
 							"var moment = require('moment')",
 							"ia_date = moment().format(\"YYYY-MM-DD\");",
@@ -260,7 +260,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "9195d812-0b67-444f-89a4-dc91bee94c4a",
+						"id": "dfd60232-6e03-4056-b8fe-85f438e81ddb",
 						"exec": [
 							"pm.test(\"Status code is 202\", function () {",
 							"    pm.response.to.have.status(202);",
@@ -292,7 +292,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"filing\": {\n        \"header\": {\n            \"name\": \"incorporationApplication\",\n            \"certifiedBy\": \"Thomas Engine\",\n            \"date\": \"{{ia_date}}\",\n            \"routingSlipNumber\": \"111111111\"\n        },\n        \"business\": {\n            \"legalType\": \"BC\",\n            \"identifier\": \"{{incorp_app_temp_reg_id}}\"\n        },\n        \"incorporationApplication\": {\n        \t\"nameRequest\": {\n        \t\t\"legalType\": \"BC\"\n        \t},\n            \"offices\": {\n                \"registeredOffice\": {\n                    \"deliveryAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    },\n                    \"mailingAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    }\n                },\n                \"recordsOffice\": {\n                    \"deliveryAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    },\n                    \"mailingAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    }\n                }\n            },\n            \"contactPoint\": {\n                \"email\": \"test@my.company.com\",\n                \"phone\": \"250-777-8888\",\n                \"extension\": \"2222\"\n            },\n            \"parties\": [\n                {\n                    \"officer\": {\n                        \"id\": 0,\n                        \"firstName\": \"Thomas\",\n                        \"lastName\": \"Engine\",\n                        \"middleName\": \"The\",\n                        \"orgName\": \"\",\n                        \"partyType\": \"Person\",\n                        \"email\": \"test@test.com\"\n                    },\n                    \"roles\": [\n                        {\n                            \"roleType\": \"Completing Party\",\n                            \"appointmentDate\": \"{{ia_date}}\"\n                        },\n                        {\n                            \"roleType\": \"Incorporator\",\n                            \"appointmentDate\": \"{{ia_date}}\"\n                        },\n                        {\n                            \"roleType\": \"Director\",\n                            \"appointmentDate\": \"{{ia_date}}\"\n                        }\n                    ],\n                    \"mailingAddress\": {\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\",\n                        \"addressCity\": \"Victoria\",\n                        \"addressRegion\": \"BC\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"addressCountry\": \"CA\"\n                    },\n                    \"deliveryAddress\": {\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\",\n                        \"addressCity\": \"Victoria\",\n                        \"addressRegion\": \"BC\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"addressCountry\": \"CA\"\n                    }\n                }\n            ],\n            \"shareClasses\": [\n                {\n                    \"id\": 1,\n                    \"priority\": 1,\n                    \"type\": \"Class\",\n                    \"name\": \"Common Shares\",\n                    \"hasMaximumShares\": false,\n                    \"maxNumberOfShares\": null,\n                    \"hasParValue\": false,\n                    \"parValue\": null,\n                    \"currency\": null,\n                    \"hasRightsOrRestrictions\": false,\n                    \"series\": []\n                },\n                {\n                    \"id\": 2,\n                    \"priority\": 2,\n                    \"type\": \"Class\",\n                    \"name\": \"Class A Shares\",\n                    \"hasMaximumShares\": true,\n                    \"maxNumberOfShares\": \"999\",\n                    \"hasParValue\": true,\n                    \"parValue\": \"1.00\",\n                    \"currency\": \"CAD\",\n                    \"hasRightsOrRestrictions\": true,\n                    \"series\": [\n                        {\n                            \"id\": 1,\n                            \"priority\": 1,\n                            \"type\": \"Series\",\n                            \"name\": \"Class A Voting Shares\",\n                            \"hasMaximumShares\": true,\n                            \"maxNumberOfShares\": \"150\",\n                            \"hasParValue\": true,\n                            \"parValue\": \"1.00\",\n                            \"currency\": \"CAD\",\n                            \"hasRightsOrRestrictions\": true\n                        },\n                        {\n                            \"id\": 2,\n                            \"priority\": 2,\n                            \"type\": \"Series\",\n                            \"name\": \"Class A Non-voting Shares\",\n                            \"hasMaximumShares\": true,\n                            \"maxNumberOfShares\": \"800\",\n                            \"hasParValue\": true,\n                            \"parValue\": \"1.00\",\n                            \"currency\": \"CAD\",\n                            \"hasRightsOrRestrictions\": false\n                        }\n                    ]\n                }\n            ],\n            \"incorporationAgreement\": {\n                \"agreementType\": \"sample\"\n            }\n        }\n    }\n}",
+					"raw": "{\n    \"filing\": {\n        \"header\": {\n            \"name\": \"incorporationApplication\",\n            \"certifiedBy\": \"Thomas Engine\",\n            \"date\": \"{{ia_date}}\",\n            \"routingSlipNumber\": \"111111111\"\n        },\n        \"business\": {\n            \"legalType\": \"BEN\",\n            \"identifier\": \"{{incorp_app_temp_reg_id}}\"\n        },\n        \"incorporationApplication\": {\n        \t\"nameRequest\": {\n        \t\t\"legalType\": \"BEN\"\n        \t},\n            \"offices\": {\n                \"registeredOffice\": {\n                    \"deliveryAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    },\n                    \"mailingAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    }\n                },\n                \"recordsOffice\": {\n                    \"deliveryAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    },\n                    \"mailingAddress\": {\n                        \"addressCity\": \"Victoria\",\n                        \"addressCountry\": \"CA\",\n                        \"addressRegion\": \"BC\",\n                        \"deliveryInstructions\": \"\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\"\n                    }\n                }\n            },\n            \"contactPoint\": {\n                \"email\": \"test@my.company.com\",\n                \"phone\": \"250-777-8888\",\n                \"extension\": \"2222\"\n            },\n            \"parties\": [\n                {\n                    \"officer\": {\n                        \"id\": 0,\n                        \"firstName\": \"Thomas\",\n                        \"lastName\": \"Engine\",\n                        \"middleName\": \"The\",\n                        \"orgName\": \"\",\n                        \"partyType\": \"Person\",\n                        \"email\": \"test@test.com\"\n                    },\n                    \"roles\": [\n                        {\n                            \"roleType\": \"Completing Party\",\n                            \"appointmentDate\": \"{{ia_date}}\"\n                        },\n                        {\n                            \"roleType\": \"Incorporator\",\n                            \"appointmentDate\": \"{{ia_date}}\"\n                        },\n                        {\n                            \"roleType\": \"Director\",\n                            \"appointmentDate\": \"{{ia_date}}\"\n                        }\n                    ],\n                    \"mailingAddress\": {\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\",\n                        \"addressCity\": \"Victoria\",\n                        \"addressRegion\": \"BC\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"addressCountry\": \"CA\"\n                    },\n                    \"deliveryAddress\": {\n                        \"streetAddress\": \"200-940 Blanshard St\",\n                        \"streetAddressAdditional\": \"\",\n                        \"addressCity\": \"Victoria\",\n                        \"addressRegion\": \"BC\",\n                        \"postalCode\": \"V8W 3E6\",\n                        \"addressCountry\": \"CA\"\n                    }\n                }\n            ],\n            \"shareClasses\": [\n                {\n                    \"id\": 1,\n                    \"priority\": 1,\n                    \"type\": \"Class\",\n                    \"name\": \"Common Shares\",\n                    \"hasMaximumShares\": false,\n                    \"maxNumberOfShares\": null,\n                    \"hasParValue\": false,\n                    \"parValue\": null,\n                    \"currency\": null,\n                    \"hasRightsOrRestrictions\": false,\n                    \"series\": []\n                },\n                {\n                    \"id\": 2,\n                    \"priority\": 2,\n                    \"type\": \"Class\",\n                    \"name\": \"Class A Shares\",\n                    \"hasMaximumShares\": true,\n                    \"maxNumberOfShares\": \"999\",\n                    \"hasParValue\": true,\n                    \"parValue\": \"1.00\",\n                    \"currency\": \"CAD\",\n                    \"hasRightsOrRestrictions\": true,\n                    \"series\": [\n                        {\n                            \"id\": 1,\n                            \"priority\": 1,\n                            \"type\": \"Series\",\n                            \"name\": \"Class A Voting Shares\",\n                            \"hasMaximumShares\": true,\n                            \"maxNumberOfShares\": \"150\",\n                            \"hasParValue\": true,\n                            \"parValue\": \"1.00\",\n                            \"currency\": \"CAD\",\n                            \"hasRightsOrRestrictions\": true\n                        },\n                        {\n                            \"id\": 2,\n                            \"priority\": 2,\n                            \"type\": \"Series\",\n                            \"name\": \"Class A Non-voting Shares\",\n                            \"hasMaximumShares\": true,\n                            \"maxNumberOfShares\": \"800\",\n                            \"hasParValue\": true,\n                            \"parValue\": \"1.00\",\n                            \"currency\": \"CAD\",\n                            \"hasRightsOrRestrictions\": false\n                        }\n                    ]\n                }\n            ],\n            \"incorporationAgreement\": {\n                \"agreementType\": \"sample\"\n            }\n        }\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -348,7 +348,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "b8f5322b-ca6c-4966-a19f-511205fd646c",
+						"id": "9ca7d89a-5677-4139-a3f2-23f9bf62c53a",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -543,7 +543,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "20bab210-a3dc-4c49-897d-00a8b146c0c0",
+						"id": "6807ba52-54c6-4972-b932-396c429b80ab",
 						"exec": [
 							"// Delay to wait for completed",
 							"console.log('Delay 30s to wait for completed status')",
@@ -577,7 +577,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "a6e471f2-cb1d-4224-bdca-3ff1b72f6ee1",
+						"id": "fbd73fa7-c322-4038-b860-4e999a2c7193",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -767,7 +767,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "fb7e004e-5d56-4a1b-a123-f475da0047c2",
+				"id": "39675f95-9cc3-42b6-9960-9e72ff042344",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -777,7 +777,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8994d079-6a12-4da2-af60-b5f931c5b9b5",
+				"id": "d637c25e-62ce-4eff-873e-5e465fd356ad",
 				"type": "text/javascript",
 				"exec": [
 					""
