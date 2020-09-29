@@ -24,6 +24,26 @@ Description - ticket_number - presenter - <duration> mins
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 
+### Sept 25, 2020 - Sprint (Milestone) 38 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+- As staff I want to start a correction from the ledger - 4317 - Linda - 10 mins
+- As staff I want to view information that was filed in the incorporation application - 4318
+- People and Roles for Correction - 4763
+ 
+#### Name Request
+Description - ticket_number - presenter - <duration> mins
+
+#### Relationships
+- Search by username in manage team - 4339 - Nitheesh
+- Search by username on transaction view - 4341 - Nitheesh
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
 ----
 ### Sept 18, 2020 - Sprint (Milestone) 38 - 55 min. total 
 ----
