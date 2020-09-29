@@ -29,15 +29,15 @@ Description - ticket_number - presenter - <duration> mins
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-- As staff I want to start a correction from the ledger - 4317 - Linda - 10 mins
-- As staff I want to view information that was filed in the incorporation application - 4318
-- People and Roles for Correction - 4763
+- As staff I want to start a correction from the ledger - 4317 - Linda - 15 mins
+- As staff I want to view information that was filed in the incorporation application - 4318 - Linda
+- People and Roles for Correction - 4763 - Linda
  
 #### Name Request
 Description - ticket_number - presenter - <duration> mins
 
 #### Relationships
-- Search by username in manage team - 4339 - Nitheesh
+- Search by username in manage team - 4339 - Nitheesh - 10 mins
 - Search by username on transaction view - 4341 - Nitheesh
 
 
