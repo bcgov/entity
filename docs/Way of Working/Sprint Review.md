@@ -31,7 +31,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities
 - As staff I want to start a correction from the ledger - 4317 - Linda - 15 mins
 - As staff I want to view information that was filed in the incorporation application - 4318 - Linda
-- People and Roles for Correction - 4763 - Linda
+- People and Roles for Correction - 4763 - Scott - 5 mins
  
 #### Name Request
 Description - ticket_number - presenter - <duration> mins
