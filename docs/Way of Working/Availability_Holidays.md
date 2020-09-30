@@ -28,7 +28,7 @@
 * Melissa: Flex day bi-weekly Monday's (Aug 17th on)
 * Milan: 
 * Nitin: Feb 17 - Mar 13
-* Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3, ...) Dec 21, 2020 - Jan 5, 2021
+* Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3, ...); Nov 02, 2020-Nov 13, 2020; Dec 21, 2020 - Jan 5, 2021
 * Waldemar: 
 * Sumesh: Sep 4
 
