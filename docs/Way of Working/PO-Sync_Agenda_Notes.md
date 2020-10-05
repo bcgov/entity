@@ -4,13 +4,19 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Oct 9, 2020
+----
+1. Is there any work remaining for embedding change on the project team? - If yes, how should we get there? - Trish/Simona
+1. Online Banking design review ? - Loren
+
+----
 Oct 3, 2020
 ----
-1. Relationships team to show designs for 4857 - In-app notification of suspended account.
-1. Online Banking design review ? - Loren
 1. NSF changes to be review - Loren
-1. Is there any work remaining for embedding change on the project team? - If yes, how should we get there? - Trish/Simona
+   - Discussion still open to whether the client would be able to access their dashboard at all.
 
+1 Payment calculator review - 4018 - Kaine
+   - No concerns for the new wrapper
 
 ----
 Sep 25, 2020
