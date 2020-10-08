@@ -4,7 +4,7 @@
 ----
 Oct 20, 2020
 ----
-- Form 47 input
-- Transition application output review
-- Correction page content
+- Form 47 input ([draft of form](https://drive.google.com/file/d/1SI5FO8Hkoq9zDzaXyhACxfbCJNpCrcGA/view?usp=sharing), [draft of form instructions](https://docs.google.com/document/d/1B9G-KuOK3ZI7XoXuiDvIvvvMrsGHR17zJiABjThuxwM/edit?usp=sharing))
+- Transition application output review ([output design](https://projects.invisionapp.com/share/86YVDMZJFNX#/screens?browse))
+- Correction page content ([draft](https://docs.google.com/document/d/1Sq9eXD-d4Oc_QhYnuHaipFhHSEmTuD_8H_-WktDzj7M/edit?usp=sharing))
 - Withdrawal Filing requirements ([req. doc](https://docs.google.com/document/d/1HhOVry-u5Y7Q3Bh5UJVe-t3X_5Dx33YCg5cXecT3C9c/edit?usp=sharing))
