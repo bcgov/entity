@@ -9,6 +9,7 @@ Oct 9, 2020
 1. Is there any work remaining for embedding change on the project team? - If yes, how should we get there? - Trish/Simona
 1. Online Banking design review - decision on the Online Banking flow  ? - Loren
 1. Sprint Demo share on Youtube - Unlisted. Confirmation required from PO's.
+1. Christmas holiday celebration - Linda
 
 ----
 Oct 3, 2020
