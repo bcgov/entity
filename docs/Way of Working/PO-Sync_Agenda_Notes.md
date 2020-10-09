@@ -4,6 +4,11 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Jan 12, 2021
+----
+1. Jyoti to bring the CM topic again in the PO Sync, action item from OCt 9th meeting
+
+----
 Oct 9, 2020
 ----
 1. Online Banking design review - decision on the Online Banking flow  ? - Loren
