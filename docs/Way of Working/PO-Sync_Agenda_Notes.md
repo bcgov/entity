@@ -7,10 +7,26 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Oct 9, 2020
 ----
 1. Online Banking design review - decision on the Online Banking flow  ? - Loren
+   - DECISION: Relationship team will own the payment design and build for Online banking
+   - Kaine/Linda to send the Address future dated transaction to Policy and keep Loren in loop
+   - For TO DO list - there is some work required by Entities team. It would to good to have a dependency tickets. Amit/Melissa to create one?
 1. Is there any work remaining for embedding change on the project team? - If yes, how should we get there? - Trish/Simona
+   - Loren and Kaine to check with BA's
+   - Jyoti to brought this again after 3 months
+1. NSF discusion with Carol
+   - Loren to do some more research 
+1. PPR Discussion
+   - Approval for funding recieved
+   - Couple developer, Nov + Dec
+   - Jason + Linda/Sienna + Jyoti
+1. Corp Supervisor meeting 
+   - In general, all good. Nothing happened
+   - Auto Analyze testing are being tested by Thor and Kial
+   - Kaine will share the results of testing when its available
 1. Sprint Demo share on Youtube - Unlisted. Confirmation required from PO's.
+   - Decisison - To share the recorded file with Lab team. No objections
 1. Christmas holiday celebration - Linda
-
+   - PO's to discuss with their team if they are willing to come to Sticky Wicket
 ----
 Oct 3, 2020
 ----
