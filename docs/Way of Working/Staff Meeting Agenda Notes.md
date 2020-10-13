@@ -9,3 +9,4 @@ Oct 20, 2020
 - Correction page content ([draft](https://docs.google.com/document/d/1Sq9eXD-d4Oc_QhYnuHaipFhHSEmTuD_8H_-WktDzj7M/edit?usp=sharing))
 - Withdrawal Filing requirements ([req. doc](https://docs.google.com/document/d/1HhOVry-u5Y7Q3Bh5UJVe-t3X_5Dx33YCg5cXecT3C9c/edit?usp=sharing))
 - Maybe the bcomp filings job aid? ([job aid](https://docs.google.com/spreadsheets/d/1zTzC3fSwit2DikDx6AFFJHxYK8mAtkGbRQdh0td1M0k/edit?usp=sharing))
+- Maybe the new BCOMP > BC email template? ([email templates](https://docs.google.com/document/d/1WS-BtGhgppkUprzUWxVamQLtQfhFF9_XVhqNPjZGrkk/edit?usp=sharing))
