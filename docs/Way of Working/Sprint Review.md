@@ -20,11 +20,39 @@ Description - ticket_number - presenter - <duration> mins
 Description - ticket_number - presenter - <duration> mins
 
 
+
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 
-### Sept 25, 2020 - Sprint (Milestone) 38 - 55 min. total 
+----
+
+### Oct 13, 2020 - Sprint (Milestone) 40 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+- Manual Alteration from Benefit to BC Company - 4974 - Kaine - 5 mins
+- As a third party user I want to be able to download and pay for a company summary from BC Online/SOFI - 3823 - Jyoti or Sienna - 5 mins
+- Entire filing start-to-finish with some updates along the way - 5125/5076/++ - Cameron - 10 mins
+
+#### Name Request
+Description - ticket_number - presenter - <duration> mins
+
+#### Relationships
+- Choose payment during basic account setup - 4740 - Amit - 10 mins
+- Enter Contact Information for Basic or unlinked Premium accounts - 5144 - Amit
+- NSF - Roy - 10 mins
+- Online Banking - Roy
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+----
+
+### Sept 25, 2020 - Sprint (Milestone) 39 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
@@ -44,7 +72,9 @@ Description - ticket_number - presenter - <duration> mins
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
+
 ----
+
 ### Sept 18, 2020 - Sprint (Milestone) 38 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
@@ -67,7 +97,9 @@ Description - ticket_number - presenter - <duration> mins
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
+
 ----
+
 ### Sept 1, 2020 - Sprint (Milestone) 37 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
