@@ -6,7 +6,12 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Jan 12, 2021
 ----
-1. Jyoti to bring the CM topic again in the PO Sync, action item from OCt 9th meeting
+1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
+----
+Oct 16, 2020
+----
+1. Premium Payment, payment calculator - Kaine
+
 
 ----
 Oct 9, 2020
