@@ -12,8 +12,20 @@ Oct 16, 2020
 ----
 1. Premium Payment, payment calculator - Kaine
 2. Possibility of delaying the Name Request release to accomodate Premium payments release
-3. how ServiceBC reps will do NRs at the counter and how payment will be processed
+   - General agreement to create the space for the team to have their time by either combining two releases or keeping them apart in January.
+3. How ServiceBC reps will do NRs at the counter and how payment will be processed
+   - Melissa is going to map out the current process with GRAMS
+      - When are we going to meet to discuss? - Next PO Sync
+      - Discuss the proposal and figure out the plan
+      - This has to be done before NRO shut down
+   - Trish is meeting with Crystal (Service BC Manager) to next week 
 4. Schedule for staff to return part-time to lab (https://bcdevexchange.org/docs/Return-to-Workplace-Playbook.pdf)
+   - Jason to set up discussion with team on this topic separately for the teams
+   - Figure out the dependencies before moving to the LAB - Each of the PO's to maange the orientation for their respective team
+   - First thing, 8 internal team members can join the home office and LAB space.
+5. Ticket for Auto Refund(PayBC) - 
+   - PayBC will present the options(time and cost) in the next steering committee, next Thursday
+   -  Relationship team(@Melissa) to create a ticket and track the work under that.
 
 ----
 Oct 9, 2020
