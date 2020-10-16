@@ -11,7 +11,9 @@ Jan 12, 2021
 Oct 16, 2020
 ----
 1. Premium Payment, payment calculator - Kaine
-
+2. Possibility of delaying the Name Request release to accomodate Premium payments release
+3. how ServiceBC reps will do NRs at the counter and how payment will be processed
+4. Schedule for staff to return part-time to lab (https://bcdevexchange.org/docs/Return-to-Workplace-Playbook.pdf)
 
 ----
 Oct 9, 2020
