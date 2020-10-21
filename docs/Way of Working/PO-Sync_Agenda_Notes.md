@@ -13,6 +13,7 @@ Oct 23, 2020
 ----
 1. Data reset tool
 2. Release timing - Name Request and Relationships
+3. Shared resources across teams...Jyoti to discuss this
 
 ----
 Oct 16, 2020
