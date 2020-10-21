@@ -7,6 +7,13 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Jan 12, 2021
 ----
 1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
+
+----
+Oct 23, 2020
+----
+1. Data reset tool
+2. Release timing - Name Request and Relationships
+
 ----
 Oct 16, 2020
 ----
