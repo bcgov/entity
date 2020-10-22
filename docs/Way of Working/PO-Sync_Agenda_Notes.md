@@ -11,11 +11,17 @@ Jan 12, 2021
 ----
 Oct 23, 2020
 ----
-1. Data reset tool
-2. Release timing - Name Request and Relationships
-3. Shared resources across teams...Jyoti to discuss this
-4. Discussion on experience: As a premium user I am requesting a name from the new name request system, When I decide to log in with services card and have a new account mid name request, When I have a bad PAD payment, Then I am blocked completely from my transaction and if the below is true Then
-5. As a premium user I have logged in with services card and have a bad PAD payment, When I need to clear the payment with the only option of credit card, When CAS is down which affects the invoice and Credit Card payment frequently, Then I am not able to file anything urgent or able to recover my account immediately >>> just flagging this experience for discussion
+1. PayBC SLA
+1. Autoamated Refund update
+1. New Release Date for Payment Solution
+1. Pro data account features
+1. 3-Day confirmation period for PAD
+1. Financial Risks and control review
+1. Data reset tool - Linda
+1. Release timing - Name Request and Relationships - Linda
+1. Discussion on experience: As a premium user I am requesting a name from the new name request system, When I decide to log in with services card and have a new account mid name request, When I have a bad PAD payment, Then I am blocked completely from my transaction and if the below is true Then
+1. As a premium user I have logged in with services card and have a bad PAD payment, When I need to clear the payment with the only option of credit card, When CAS is down which affects the invoice and Credit Card payment frequently, Then I am not able to file anything urgent or able to recover my account immediately >>> just flagging this experience for discussion
+1. Licensing Agrement for APIGEE..Jennifer to disucss this
 ----
 Oct 16, 2020
 ----
