@@ -1,4 +1,4 @@
-# Staff Meeting Agenda 
+# Corps Staff Meeting Agenda 
 **Topics for Lab team and Business staff to discuss on weekly basis**
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update the ticket in Zenhub
 ----
@@ -15,8 +15,9 @@ Oct 20, 2020
 ----
 Oct 27, 2020
 ----
-Meeting Notes (to be created)
+[Meeting Notes](https://docs.google.com/document/d/1QMJcjmHmCgC8vAuFyzq-LNJurTIyR_BDklr8W8TDqvo/edit?usp=sharing)
 
+- Society NR changes in Name Request
 - Bcomp filings job aid ([job aid](https://docs.google.com/spreadsheets/d/1zTzC3fSwit2DikDx6AFFJHxYK8mAtkGbRQdh0td1M0k/edit?usp=sharing))
 - New BCOMP > BC email template ([email templates](https://docs.google.com/document/d/1WS-BtGhgppkUprzUWxVamQLtQfhFF9_XVhqNPjZGrkk/edit?usp=sharing))
 - AGM Extension requirements ([comparson sheet](https://docs.google.com/spreadsheets/d/1Ct_stiwfcsvzD-h10WjQf0cmMVvc7Mo3kqNJexUKxZ8/edit?usp=sharing), requirements doc(https://docs.google.com/document/d/1z6rIoahvR-sO_zUO6N7t4GRXUrF6L3_qTlK9zUs544M/edit?usp=sharing))
