@@ -12,16 +12,46 @@ Jan 12, 2021
 Oct 23, 2020
 ----
 1. PayBC SLA
+   - Loren to work on the SLA proposal with Melissa
+   - Also, to circulate with other stakeholders like Sinead, Ian A, Ian B
 1. Autoamated Refund update
+   - Meeting Next week, discussed in Steering committee
+   - More news to come on Monday
 1. New Release Date for Payment Solution
+   - new Release date is Jan 17th
+   - UAT Date: Nov 23rd
+   - Last Production release is Dec 1st
+   - Between Dec 1st and Jan 17th - highlevel plan is to include Journal Voucher, Manage Business Dashboard etc..
+   - Dec 7th is the proposed date for NR golive
 1. Pro data account features
+   - No concerns from anyone
 1. 3-Day confirmation period for PAD
+   - This will be included in Terms of Use
+   - Usually under Canada processing rules, the waiting period is 15 days
 1. Financial Risks and control review
+   - A third party assessment is required for all the financial tools being built
+   - Pay, Authentification, Lear(receipts) would be under assessment
+   - Is this a mandate for go-live? - YES
+   - Contract to start on Nov 7th
 1. Data reset tool - Linda
+   - Patrick has this on the roadmap
+   - If its done early, QA team would be able to accomodate Automation testing
 1. Release timing - Name Request and Relationships - Linda
+   - No More users getting added to Beta NR release
 1. Discussion on experience: As a premium user I am requesting a name from the new name request system, When I decide to log in with services card and have a new account mid name request, When I have a bad PAD payment, Then I am blocked completely from my transaction and if the below is true Then
+   - Login with Non-authenticated user and pay with credit card
 1. As a premium user I have logged in with services card and have a bad PAD payment, When I need to clear the payment with the only option of credit card, When CAS is down which affects the invoice and Credit Card payment frequently, Then I am not able to file anything urgent or able to recover my account immediately >>> just flagging this experience for discussion
+   - This can happen and might result in bad experience
+   - At this point, there is no solution to this. A risk to be raised for below two things and discuss in tri-weekly
+      - How do we manage the down payment?
+      - How do we cater the client who are in non-payment status?
 1. Licensing Agrement for APIGEE..Jennifer to disucss this
+   - Jennifer to check with Lisa
+   - Check with Ian B for operating budget? - Kaine to action this.
+1. Melissa actioned the action item for current process with GRAMS:
+   - Current process Link here:
+   - Proposed process: 
+1. USC Direct(Procured solution to replace GRAMS) will be delayed till June 2021
 ----
 Oct 16, 2020
 ----
