@@ -7,6 +7,10 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Jan 12, 2021
 ----
 1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
+----
+Oct 30, 2020
+----
+1. Third Party scan - Loren
 
 ----
 Oct 23, 2020
