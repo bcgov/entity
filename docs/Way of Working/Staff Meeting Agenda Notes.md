@@ -20,4 +20,4 @@ Oct 27, 2020
 - Society NR changes in Name Request
 - Bcomp filings job aid ([job aid](https://docs.google.com/spreadsheets/d/1zTzC3fSwit2DikDx6AFFJHxYK8mAtkGbRQdh0td1M0k/edit?usp=sharing))
 - New BCOMP > BC email template ([email templates](https://docs.google.com/document/d/1WS-BtGhgppkUprzUWxVamQLtQfhFF9_XVhqNPjZGrkk/edit?usp=sharing))
-- AGM Extension requirements ([comparson sheet](https://docs.google.com/spreadsheets/d/1Ct_stiwfcsvzD-h10WjQf0cmMVvc7Mo3kqNJexUKxZ8/edit?usp=sharing), requirements doc(https://docs.google.com/document/d/1z6rIoahvR-sO_zUO6N7t4GRXUrF6L3_qTlK9zUs544M/edit?usp=sharing))
+- AGM Extension requirements ([comparson sheet](https://docs.google.com/spreadsheets/d/1Ct_stiwfcsvzD-h10WjQf0cmMVvc7Mo3kqNJexUKxZ8/edit?usp=sharing), [requirements doc](https://docs.google.com/document/d/1z6rIoahvR-sO_zUO6N7t4GRXUrF6L3_qTlK9zUs544M/edit?usp=sharing), [Decision doc](https://docs.google.com/document/d/14odOBr4XUp_kPeWu7jk--6JEfmmFFagxy5eseRjFPc0/edit?usp=sharing))
