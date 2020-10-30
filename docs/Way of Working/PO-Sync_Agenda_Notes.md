@@ -10,7 +10,30 @@ Jan 12, 2021
 ----
 Oct 30, 2020
 ----
-1. Third Party scan - Loren
+1. Third Party scan 
+- Scan on annual basis recommended from IDIM
+- Gary perkins from the ministry group has offered to do the scan in $1
+- This is covered in capital fund
+- Which Env: Test or Prod
+- Outage: No outage
+- Timeline: Early Feb
+- Codebase: All the different repos
+1. GL Coding 
+- Loren to reach out to Carol for the approval on Monday
+1. Automated Refund
+- Deloitte(CAS) to confirm before next Thursday on the timeline
+- We will only require refund for Direct pay. Automated refund only needed for Names flow.
+- A dependency should be cretaed for Relationship team for NR to not allow Direct pay
+   - Kaine to create the ticket. BA's to discus the the ticket in the next BA guild
+   - Timeline would be end of PI
+- Is there a partial refund scenario ever possible? 
+   - Linda to create the ticket
+   - Timeline to get the answer by Monday(Nov 2nd)
+- For all non direct pay scenarios, Manual refund is possible through Finance
+1. Search(In general)
+- Entities team to own the search feature as PPR team has already started working on it
+- Work start in Dec
+- Bob wants to stay till PPR is done. 
 
 ----
 Oct 23, 2020
