@@ -1,4 +1,4 @@
-# Corps Staff Meeting Agenda 
+# Corps Staff Requirements Meeting Agenda 
 **Topics for Lab team and Business staff to discuss on weekly basis**
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update the ticket in Zenhub
 ----
