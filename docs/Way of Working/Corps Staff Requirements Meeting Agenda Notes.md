@@ -23,11 +23,14 @@ Oct 27, 2020
 - AGM Extension requirements ([comparson sheet](https://docs.google.com/spreadsheets/d/1Ct_stiwfcsvzD-h10WjQf0cmMVvc7Mo3kqNJexUKxZ8/edit?usp=sharing), [requirements doc](https://docs.google.com/document/d/1z6rIoahvR-sO_zUO6N7t4GRXUrF6L3_qTlK9zUs544M/edit?usp=sharing), [Decision doc](https://docs.google.com/document/d/14odOBr4XUp_kPeWu7jk--6JEfmmFFagxy5eseRjFPc0/edit?usp=sharing))
 
 ----
-Nov 23rd, 2020
+Nov 3rd, 2020
 ----
-- Name Request type descriptions ([sheet]())
+- Name Request type descriptions ([sheet](https://docs.google.com/spreadsheets/d/1rIv-AN59jfsHsBIvqKa9ZRFQ63O5aQaG-ol5HWLYxZ0/edit?usp=sharing))
 
 ----
-NEXT OCM
+Nov 10th, 2020
 ----
-FAQs for Incorproation Application Correction (draft) ([FAQs](https://docs.google.com/document/d/1e6Vr1IAiBUM15pZUI53caYHVUbk6qkiogyt0wX8l3yg/edit?usp=sharing))
+- Receipt date ([requirements doc](https://docs.google.com/document/d/1z8Vc1yVVu-VxqeJXBW1F9D4s0ei0pHdAUYuNLwPvGIg/edit?usp=sharing))
+
+
+
