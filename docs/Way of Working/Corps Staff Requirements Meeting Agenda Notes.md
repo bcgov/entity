@@ -26,7 +26,6 @@ Oct 27, 2020
 Nov 3rd, 2020
 ----
 - Name Request type descriptions ([sheet](https://docs.google.com/spreadsheets/d/1rIv-AN59jfsHsBIvqKa9ZRFQ63O5aQaG-ol5HWLYxZ0/edit?usp=sharing))
-- 
 
 ----
 Nov 10th, 2020
