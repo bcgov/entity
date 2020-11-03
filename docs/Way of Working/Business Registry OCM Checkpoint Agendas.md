@@ -17,8 +17,14 @@ Nov 12th - BComp
 * Correction CMS site page ([Draft number 2](https://docs.google.com/document/d/1Sq9eXD-d4Oc_QhYnuHaipFhHSEmTuD_8H_-WktDzj7M/edit?usp=sharing))
 #### Relationships
 
-
+Nov 25th - Check In
 ----
+#### Entities
+*
+#### Relationships
+* Roy to present usability test results from UX research on account creation and payment flows
+----
+
 Nov 26th - BComp
 ----
 #### Entities
