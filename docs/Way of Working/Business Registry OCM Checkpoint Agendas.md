@@ -16,7 +16,7 @@ Nov 12th - BComp
 * New alteration email templates ([Google doc](https://docs.google.com/document/d/1WS-BtGhgppkUprzUWxVamQLtQfhFF9_XVhqNPjZGrkk/edit?usp=sharing)
 * Form 51, 52, 53, 47 (sienna link docs when gen is done on nov 9)
 #### Relationships
-* 
+* Roy to present usability test results from UX research on account creation and payment flows (20 minutes)
 
 ----
 Nov 26th - BComp
