@@ -4,7 +4,7 @@
 Nov 4th - Payment
 ----
 #### Relationships
-* 
+* Review of PAD and NSF
 
 ----
 Nov 12th - BComp
