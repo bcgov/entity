@@ -17,7 +17,7 @@ Nov 12th - BComp
 * Correction CMS site page ([Draft number 2](https://docs.google.com/document/d/1Sq9eXD-d4Oc_QhYnuHaipFhHSEmTuD_8H_-WktDzj7M/edit?usp=sharing))
 #### Relationships
 ----
-Nov 25th - Check In
+Nov 25th - Monthly OCM meeting with larger group
 ----
 #### Entities
 *
