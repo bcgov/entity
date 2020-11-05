@@ -11,10 +11,12 @@ Jan 12, 2021
 Nov 6, 2021
 ----
 1. Spike in issue where client affiliates to their legal entity they wants to remove from their own dashboard for another party to manage. 
-   -process involves issue being logged by staff, escalated (IT Ops), sent to our team, new passcode generated in CPRD, auth tables updated, response to IT Ops, IT Ops response     to staff then back to the client.
-   -Janis has dashboard requirements for moving an entity for staff
-   -No client facing option logged
-   -Consideration for building solution ideally before additional entity types are added
+   - process involves issue being logged by staff, escalated (IT Ops), sent to our team, new passcode generated in CPRD, auth tables updated, response to IT   Ops,IT Ops response to staff then back to the client.
+   - Janis has dashboard requirements for moving an entity for staff
+   - No client facing option logged
+   - Consideration for building solution ideally before additional entity types are added
+1. Quantitative Analytics: With Names coming out we are going to see a significant increase in our user base across the applications. This will lead to more calls to staff for help. I want to ensure we have quantitative analytics so we know the percentage of clients who successfully complete a task in the system vs those who call
+1. API technical session - Loren to bring this up
 ----
 Oct 30, 2020
 ----
