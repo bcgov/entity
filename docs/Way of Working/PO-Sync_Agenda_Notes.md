@@ -17,7 +17,8 @@ Nov 6, 2021
    - Consideration for building solution ideally before additional entity types are added
 1. Quantitative Analytics: With Names coming out we are going to see a significant increase in our user base across the applications. This will lead to more calls to staff for help. I want to ensure we have quantitative analytics so we know the percentage of clients who successfully complete a task in the system vs those who call
 1. API technical session - Loren to bring this up
-1 Vulnerability: SonarQube Security Advisory - Who should own this? 
+1. Vulnerability: SonarQube Security Advisory - Who should own this? 
+
 ----
 Oct 30, 2020
 ----
