@@ -24,7 +24,7 @@ Nov 25th - Monthly OCM meeting with larger group
 #### Relationships
 * Roy to present usability test results from UX research on account creation and payment flows
 
-* I would like to add this to the Nov.25th agenda. Could we please remind/discuss the process when one person sets up an account (like for a coop) and this one person leaves the organization, what's the process for someone else to get access? Could we also remind staff that access to these accounts is verified with the individual's ID/verification and it cannot be a group/shared ID. This issue was raised by the BCOL HD. They expressed concern that the accounts are tied to a user and not a company. We may need to explain again, how accounts and authentication are setup. (TR) 
+* Could we please remind/discuss the process when one person sets up an account (like for a coop) and this one person leaves the organization, what's the process for someone else to get access? Could we also remind staff that access to these accounts is verified with the individual's ID/verification and it cannot be a group/shared ID and tied to one company instead of a user. This issue was raised by the BCOL HD. They expressed concern that the accounts are tied to a user and not a company. We may need to explain again, how accounts and authentication are setup. (TR) 
 
 * Could we provide an update on the IDIM roadmap and the mobile card solution for out of province clients that will implemented down the road. Many staff have expressed concerns that there are too many ways to authenticate. We need to remind them that this is temporary. (TR)
 
