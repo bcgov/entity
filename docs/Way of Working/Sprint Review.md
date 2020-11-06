@@ -26,6 +26,28 @@ Description - ticket_number - presenter - <duration> mins
 
 ----
 
+---- TEMPLATE ----
+### Nov 10, 2020 - Sprint (Milestone) 42 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+Description - ticket_number - presenter - <duration> mins
+
+#### Name Request
+Description - ticket_number - presenter - <duration> mins
+
+#### Relationships
+PAD Payment Method, See Confirmation Period Details and Accept Confirmation Period - 5341 - Amit - 10 mins
+
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+----
+
 ### Oct 27, 2020 - Sprint (Milestone) 41 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
