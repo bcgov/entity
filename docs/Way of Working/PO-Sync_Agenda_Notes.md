@@ -15,9 +15,21 @@ Nov 6, 2021
    - Janis has dashboard requirements for moving an entity for staff
    - No client facing option logged
    - Consideration for building solution ideally before additional entity types are added
+      - This needs to be added to the roadmap for the next PI
+      - Melissa and Linda to work on this and create a ticket for this
 1. Quantitative Analytics: With Names coming out we are going to see a significant increase in our user base across the applications. This will lead to more calls to staff for help. I want to ensure we have quantitative analytics so we know the percentage of clients who successfully complete a task in the system vs those who call
+   - SRE team should have this in their roadmap for next PI
+   - It might not be possible to get this before the Name request go live
 1. API technical session - Loren to bring this up
+   - Technical session with technical folks of "how legal API works?" was asked by the new company (RBC-OWNR)
+   - Loren to share the contact details with Kaine
+   - Technical session not being planned till end of this year
 1. Vulnerability: SonarQube Security Advisory - Who should own this? 
+   - This has been already taken care
+1. Automatic refund
+   - Verbal timeline 4.5 month, with an earliest start date of mid january
+   - Quote is $51,000
+      - Not leaning towards paying for this solution in this fiscal. There would be more development cost apart from $50K for building this end to end solution.
 
 ----
 Oct 30, 2020
