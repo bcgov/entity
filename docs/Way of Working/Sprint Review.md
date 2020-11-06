@@ -37,7 +37,7 @@ Description - ticket_number - presenter - <duration> mins
 Description - ticket_number - presenter - <duration> mins
 
 #### Relationships
-PAD Payment Method, See Confirmation Period Details and Accept Confirmation Period - 5341 - Amit - 10 mins
+PAD Payment Method, See Confirmation Period Details and Accept Confirmation Period - 5341 - Amit - 5 mins
 
 
 
