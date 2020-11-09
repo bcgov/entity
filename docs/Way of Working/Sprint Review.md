@@ -31,13 +31,15 @@ Description - ticket_number - presenter - <duration> mins
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-Description - ticket_number - presenter - <duration> mins
+- As a user I want to be notified that a correction was completed and view the outputs - 4322 - Cameron - 10 mins
+- As a user I want to view new outputs and see the old ones are out of date - 4321 - Cameron
+- As a user I want to open my "View and Change Company Info" profile so that I can view my company information - 4278 - Cameron
 
 #### Name Request
 Description - ticket_number - presenter - <duration> mins
 
 #### Relationships
-PAD Payment Method, See Confirmation Period Details and Accept Confirmation Period - 5341 - Amit - 5 mins
+- PAD Payment Method, See Confirmation Period Details and Accept Confirmation Period - 5341 - Amit - 5 mins
 
 
 
