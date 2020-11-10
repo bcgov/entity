@@ -8,6 +8,14 @@ Jan 12, 2021
 ----
 1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
 ----
+
+Nov 13, 2021
+
+1. Automatic Passcode resets? Is this an issue for entities or relationships?
+- Staff need the ability to remove all affiliations associated to the account.
+2. 
+----
+
 Nov 6, 2021
 ----
 1. Spike in issue where client affiliates to their legal entity they wants to remove from their own dashboard for another party to manage. 
