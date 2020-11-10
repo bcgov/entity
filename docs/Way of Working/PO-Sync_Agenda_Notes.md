@@ -13,7 +13,9 @@ Nov 13, 2021
 
 1. Automatic Passcode resets? Is this an issue for entities or relationships?
 - Staff need the ability to remove all affiliations associated to the account.
+
 2. 
+
 ----
 
 Nov 6, 2021
