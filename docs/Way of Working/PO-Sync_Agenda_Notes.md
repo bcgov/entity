@@ -10,11 +10,14 @@ Jan 12, 2021
 ----
 
 Nov 13, 2021
-
+---
 1. Automatic Passcode resets? Is this an issue for entities or relationships?
 - Staff need the ability to remove all affiliations associated to the account.
 
-2. 
+2. Manage Business Page as Login for Staff.
+-Raised by entities as a high priority bug.
+-When staff exit entity dashboard or reopen site in another tab they should see staff dashboard.
+-If we go straight to the dashboard for staff what about when we add access to other apps? Button to link to staff dashboard from main page?
 
 ----
 
