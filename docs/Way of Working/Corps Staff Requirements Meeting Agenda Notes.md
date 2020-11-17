@@ -35,8 +35,8 @@ Nov 10th, 2020
 ----
 Nov 17th, 2020 
 ----
-[notes]()
-- Dissolution ([requirements doc](!!!))
+[notes](https://docs.google.com/document/d/1V1F4w7OISqhJil_ZAn8Wc0BdPf_YzGrVSOW80729QUI/edit?usp=sharing)
+- Dissolution ([co-op requirements](https://docs.google.com/document/d/13Rvj2cR_C1lEGXzuv1DmIEzDQiWByl_168kOmltjwAM/edit?usp=sharing), [corp requirements](https://docs.google.com/document/d/1THbh9ejbg5kSqlu6OKdwtH2iEGuvt61BNhc1AbWYlGY/edit?usp=sharing))
 - Receipt date ([requirements doc](https://docs.google.com/document/d/1z8Vc1yVVu-VxqeJXBW1F9D4s0ei0pHdAUYuNLwPvGIg/edit?usp=sharing))
 - CO-OP AGM and AGM Extensions ([agm](https://docs.google.com/document/d/14odOBr4XUp_kPeWu7jk--6JEfmmFFagxy5eseRjFPc0/edit?usp=sharing), [agm extensions](https://docs.google.com/document/d/1z6rIoahvR-sO_zUO6N7t4GRXUrF6L3_qTlK9zUs544M/edit?usp=sharing))
 
