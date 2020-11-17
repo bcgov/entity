@@ -28,9 +28,11 @@ Nov 3rd, 2020
 - Name Request type descriptions ([sheet](https://docs.google.com/spreadsheets/d/1rIv-AN59jfsHsBIvqKa9ZRFQ63O5aQaG-ol5HWLYxZ0/edit?usp=sharing))
 
 ----
-Nov 10th, 2020
+Nov 9th, 2020
 ----
-[notes]()
+[notes](https://docs.google.com/document/d/1tZ6XMz0uvshXRmaTkxMc5s-iqnBNcn9dpkEPHPHv75M/edit?usp=sharing)
+ - Out of order co-op, solution for short term devops issue, and long term
+
 
 ----
 Nov 17th, 2020 
