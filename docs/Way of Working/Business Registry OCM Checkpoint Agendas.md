@@ -21,8 +21,11 @@ Nov 12th - BComp
 Nov 25th - Monthly OCM meeting with larger group
 ----
 #### Entities
-*
+* 30 mins - Kaine & Linda to discuss priorities and issues with staff.
+
 #### Relationships
+* TBD - waiting for confirmation from Loren. Proposal: discuss issues and priorities with staff (like the item below). If we decide not to use this time to discuss priorities/issues, we will present the research on payment and account creation.
+
 * Roy to present usability test results from UX research on account creation and payment flows
 
 * Could we please remind/discuss the process when one person sets up an account (like for a coop) and this one person leaves the organization, what's the process for someone else to get access? Could we also remind staff that access to these accounts is verified with the individual's ID/verification and it cannot be a group/shared ID and tied to one company instead of a user. This issue was raised by the BCOL HD. They expressed concern that the accounts are tied to a user and not a company. We may need to explain again, how accounts and authentication are setup. (TR) 
