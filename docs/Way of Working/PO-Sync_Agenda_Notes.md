@@ -12,13 +12,19 @@ Jan 12, 2021
 Nov 13, 2021
 ---
 1. Automatic Passcode resets? 
-- Staff need the ability to remove all affiliations associated to the account.
-
+   - Staff need the ability to remove all affiliations associated to the account.
+      - This is currently a manual process
+      - Roy and Melissa will work on that
+         - To be reviewed on Nov 27 PO Sync
 2. Manage Business Page as Login for Staff.
--Raised by entities as a high priority bug.
--When staff exit entity dashboard or reopen site in another tab they should see staff dashboard.
--If we go straight to the dashboard for staff what about when we add access to other apps? Button to link to staff dashboard from main page?
-
+   -- Raised by entities as a high priority bug.
+   -When staff exit entity dashboard or reopen site in another tab they should see staff dashboard.	- When staff exit entity dashboard or reopen site in another tab they should see staff dashboard.
+   -If we go straight to the dashboard for staff what about when we add access to other apps? Button to link to staff dashboard from main page?	- If we go straight to the dashboard for staff what about when we add access to other apps? Button to link to staff dashboard from main page?
+   - Linda and Sienna to talk to Staff to understand the depth of the problem
+   
+3. Movember Volunteer:
+- Loren 
+- Jason to look for more volunteer
 ----
 
 Nov 6, 2021
