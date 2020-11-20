@@ -11,7 +11,7 @@ Jan 12, 2021
 Nov 27, 2021
 ----
 - Discsuss API topics - When can we reach out to exrernal 
--  Discuss staff requirement if possible
+- Discuss staff requirement coming out of Nov 27 Staff meeting if possible
 
 ----
 Nov 20, 2021
@@ -24,10 +24,9 @@ Nov 20, 2021
       - Is there a way to know if any of our users are using IDIM card reader - Loren to check with Sumesh
          - Trish to check with IDM team on the communication plan
          - To have a better solution for clients who are not connected through internet - Jyoti to set it up
-            - Who should be invited? - Olisa, Sinead, Trish, Linda, Kaine, Loren,Ian A.
+            - Who should be invited? - Olisa, Sinead, Trish, Linda, Kaine, Loren, Ian A.
 - Cameron team meeting on Nov 27th
-   - Because of the manage dashboard not being moved over to Entities repo
-   - Get the list of requirement from the staff and then decide ont he priority and owership lates
+   - Get the list of requirement from the staff and then decide on the priority and ownership later
 
 Nov 13, 2021
 ---
