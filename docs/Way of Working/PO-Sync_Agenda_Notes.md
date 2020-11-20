@@ -18,6 +18,7 @@ Nov 20, 2021
 ----
 - Variable Fee codes
    - For now just use one variable code
+   - The real requireemnt to have this is far out in the future. We will discuss this again when it comes up.
 - IDIM Card Reader
    - IDIM Card reader is going away.
    - What is the communication plan - IDIM will manage their own front, and we will manage ours.
