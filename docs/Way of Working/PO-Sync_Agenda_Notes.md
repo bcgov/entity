@@ -8,6 +8,26 @@ Jan 12, 2021
 ----
 1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
 ----
+Nov 27, 2021
+----
+- Discsuss API topics - When can we reach out to exrernal 
+-  Discuss staff requirement if possible
+
+----
+Nov 20, 2021
+----
+- Variable Fee codes
+   - For now just use one variable code
+- IDIM Card Reader
+   - IDIM Card reader is going away.
+   - What is the communication plan - IDIM will manage their own front, and we will manage ours.
+      - Is there a way to know if any of our users are using IDIM card reader - Loren to check with Sumesh
+         - Trish to check with IDM team on the communication plan
+         - To have a better solution for clients who are not connected through internet - Jyoti to set it up
+            - Who should be invited? - Olisa, Sinead, Trish, Linda, Kaine, Loren,Ian A.
+- Cameron team meeting on Nov 27th
+   - Because of the manage dashboard not being moved over to Entities repo
+   - Get the list of requirement from the staff and then decide ont he priority and owership lates
 
 Nov 13, 2021
 ---
