@@ -24,6 +24,27 @@ Description - ticket_number - presenter - <duration> mins
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 
+
+### Nov 24, 2020 - Sprint (Milestone) 43 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+- 
+
+#### Name Request
+Description - ticket_number - presenter - <duration> mins
+
+#### Relationships
+- PAD Payment Method - Email PAD Confirmation Letter to Account Administrator - 5339 - 10 mins
+- No transaactions until PAD confirmation period is complete - 5343
+
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
 ----
 
 ### Nov 10, 2020 - Sprint (Milestone) 42 - 55 min. total 
