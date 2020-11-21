@@ -24,6 +24,7 @@ Description - ticket_number - presenter - <duration> mins
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 
+----
 
 ### Nov 24, 2020 - Sprint (Milestone) 43 - 55 min. total 
 ----
