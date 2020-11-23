@@ -31,10 +31,9 @@ Description - ticket_number - presenter - <duration> mins
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-- 
-
-#### Name Request
-Description - ticket_number - presenter - <duration> mins
+- Name Request Updates - Cameron - 10 mins
+- MRAS Design update - Scott Davis - 5 mins
+- Atuo Analyze Results - Kaine - 5 mins
 
 #### Relationships
 - PAD Payment Method - Email PAD Confirmation Letter to Account Administrator - 5339 - 10 mins
