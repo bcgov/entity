@@ -30,14 +30,14 @@ Nov 3rd, 2020
 ----
 Nov 9th, 2020
 ----
-[notes](https://docs.google.com/document/d/1tZ6XMz0uvshXRmaTkxMc5s-iqnBNcn9dpkEPHPHv75M/edit?usp=sharing)
+[Notes](https://docs.google.com/document/d/1tZ6XMz0uvshXRmaTkxMc5s-iqnBNcn9dpkEPHPHv75M/edit?usp=sharing)
  - Out of order co-op, solution for short term devops issue, and long term
 
 
 ----
 Nov 17th, 2020 
 ----
-[notes](https://docs.google.com/document/d/1V1F4w7OISqhJil_ZAn8Wc0BdPf_YzGrVSOW80729QUI/edit?usp=sharing)
+[Notes](https://docs.google.com/document/d/1V1F4w7OISqhJil_ZAn8Wc0BdPf_YzGrVSOW80729QUI/edit?usp=sharing)
 - Dissolution ([co-op requirements](https://docs.google.com/document/d/13Rvj2cR_C1lEGXzuv1DmIEzDQiWByl_168kOmltjwAM/edit?usp=sharing), [corp requirements](https://docs.google.com/document/d/1THbh9ejbg5kSqlu6OKdwtH2iEGuvt61BNhc1AbWYlGY/edit?usp=sharing))
 - Receipt date ([requirements doc](https://docs.google.com/document/d/1z8Vc1yVVu-VxqeJXBW1F9D4s0ei0pHdAUYuNLwPvGIg/edit?usp=sharing))
 - CO-OP AGM and AGM Extensions ([agm](https://docs.google.com/document/d/14odOBr4XUp_kPeWu7jk--6JEfmmFFagxy5eseRjFPc0/edit?usp=sharing), [agm extensions](https://docs.google.com/document/d/1z6rIoahvR-sO_zUO6N7t4GRXUrF6L3_qTlK9zUs544M/edit?usp=sharing))
@@ -45,5 +45,13 @@ Nov 17th, 2020
 ----
 Nov 24th, 2020
 ----
-- PI planning suggestions/feedback (if it can't go in the OCM meeting)
+[Notes](https://docs.google.com/document/d/1JzK5Me8UzAY7QJHeRKnan7TVO8H-nmmKAhslNL8cHPM/edit?usp=sharing)
+- [5545 - EMORY CREEK LOT OWNERS CO-OPERATIVE ASSOCIATION (one more time)](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/5215)
+- Erratums ([requirements](https://docs.google.com/document/d/1S0E325LRnmR13LAINzB8YWJZgaTWca2SOPqgOH_FI_c/edit?usp=sharing)
+- Forms? (email)
 
+----
+Dec 1st, 2020
+----
+[Notes]
+- 
