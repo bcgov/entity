@@ -46,7 +46,7 @@ Nov 17th, 2020
 Nov 24th, 2020
 ----
 [Notes](https://docs.google.com/document/d/1JzK5Me8UzAY7QJHeRKnan7TVO8H-nmmKAhslNL8cHPM/edit?usp=sharing)
-- [5545 - EMORY CREEK LOT OWNERS CO-OPERATIVE ASSOCIATION (one more time)](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/5215)
+- EMORY CREEK LOT OWNERS CO-OPERATIVE ASSOCIATION (one more time) ([5545](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/5215))
 - Erratums ([requirements](https://docs.google.com/document/d/1S0E325LRnmR13LAINzB8YWJZgaTWca2SOPqgOH_FI_c/edit?usp=sharing)
 - Forms? (email)
 
