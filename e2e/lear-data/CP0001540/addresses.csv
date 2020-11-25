@@ -1,0 +1,3 @@
+id,address_type,street,street_additional,city,region,country,postal_code,delivery_instructions,business_id,office_id
+31052,mailing,123 MAIN STREET,,VANCOUVER,BC,CA,V5T 1V2,,,3428
+31053,delivery,600 - 1230 EAST 8TH AVENUE,,VANCOUVER,BC,CA,V5T 1V2,,,3428

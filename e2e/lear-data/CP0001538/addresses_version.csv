@@ -1,0 +1,3 @@
+id,address_type,street,street_additional,city,region,country,postal_code,delivery_instructions,business_id,transaction_id,end_transaction_id,operation_type,office_id
+31032,mailing,7460 MOFFATT ROAD,"",RICHMOND,BC,CA,V6Y 3S1,"",,128832,,0,3427
+31033,delivery,7460 MOFFATT ROAD,"",RICHMOND,BC,CA,V6Y 3S1,"",,128832,,0,3427

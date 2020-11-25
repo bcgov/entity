@@ -1,0 +1,10 @@
+id,party_type,first_name,middle_initial,last_name,title,organization_name,delivery_address_id,mailing_address_id,transaction_id,end_transaction_id,operation_type
+8521,person,MARC,"",BOWLEY,"","",31034,31035,128832,,0
+8522,person,MICHAEL,"",FLEMING,"","",31036,31037,128832,,0
+8523,person,CARMEN,"",LUNG,"","",31038,31039,128832,,0
+8524,person,ROBERT,"",MELDRUM,"","",31040,31041,128832,,0
+8525,person,CAROLYN,"",MICHAELS,"","",31042,31043,128832,,0
+8526,person,EMIL,"",SHPOLYANSKY,"","",31044,31045,128832,,0
+8527,person,VLAD,"",TOLVIN,"","",31046,31047,128832,,0
+8528,person,OLEG,"",VOYTKOV,"","",31048,31049,128832,,0
+8529,person,JOANNE,"",WILLOUGHBY,"","",31050,31051,128832,,0

@@ -1,6 +1,6 @@
 require('dotenv').config();
 module.exports = {
-  '@tags': ['regression','staff'],
+  '@tags': [''],
   before: function (browser) {
     browser.maximizeWindow()
     browser.setupData('CP1001560', function (busObject) {

@@ -1,0 +1,8 @@
+id,party_type,first_name,middle_initial,last_name,title,organization_name,delivery_address_id,mailing_address_id,transaction_id,end_transaction_id,operation_type
+8558,person,OLGA,"",MAYBUROV,"","",31118,31119,129199,,0
+8559,person,CHRISTINE,"",MULLIGAN,"","",31120,31121,129199,,0
+8560,person,MONIKA,"",SMALL,"","",31122,31123,129199,,0
+8561,person,KELSEY,"",MIZENER,"","",31124,31125,129199,,0
+8562,person,CARLING,"",HARRISON,"","",31126,31127,129199,,0
+8563,person,NADIA,"",KAISA,"","",31128,31129,129199,,0
+8564,person,CAROL,"",STANLEY,"","",31130,31131,129199,,0

@@ -1,50 +1,47 @@
 module.exports = {
-  '@tags': ['regression'],
+  '@tags': [''],
   before: function (browser) {
     browser.maximizeWindow()
-    browser.setupData('CP1002111', function (busObject) {
-      console.log(busObject);
+    browser.setupData('CP0001540','BEN', function (busObject) {
+    console.log(busObject);
     });
   },
 
-  after: function (browser) {
-    browser.authReset();
-  },
 
   '1.Verify initial login with bcsc': function (browser) {
     bcsc = browser.page.bcscPage();
     browser.url(browser.globals.launch_url)
     bcsc.verifyLandingPage()
     bcsc.moveToBCSC()
-    bcsc.enterBCSCCardUser(process.env.ServiceCard2)
-    bcsc.enterBCSCPassword(process.env.ServiceCard2Pw)
-    bcsc.proceedPastCardUseHistory()
+    bcsc.enterBCSCCardUser(process.env.user_bcsc)
+    bcsc.enterBCSCPassword(process.env.user_pwd)
   },
 
   '2.Enter contact information': function (browser) {
     relationship = browser.page.relationshipPage();
-    relationship.enterContactInformation();
     relationship.acceptTermsOfUse();
+    relationship.createBcRegistriesAccount()
+    relationship.createAccount('UIU')
+    relationship.enterContactInformation();
     relationship.saveProfileInformation();
-    relationship.createAccount('You-nique Gifts and Such TOO');
-    relationship.AddBusinesses(browser.globals.CP1002111);
+    relationship.landOnRegistriesPage();
+    relationship.AddBusinesses(browser.globals.CP0001540);
     relationship.checkAddBusinessesSuccess();
-    relationship.checkForAffliatedBusinesses(browser.globals.CP1002111);
+    relationship.checkForAffliatedBusinesses(browser.globals.CP0001540);
   },
 
   '3.Verify initial state of dashboard, then start COA filing': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.verifyTombstone(browser.globals.CP1002111);
-    dashboard.verifyAddresses(browser.globals.CP1002111);
-    //dashboard.verifyDirectorCount(browser.globals.CP1002111.director_count);
-    dashboard.startCoaFiling(browser.globals.CP1002111);
+    dashboard.verifyTombstone(browser.globals.CP0001540);
+    dashboard.verifyAddresses(browser.globals.CP0001540);
+    dashboard.startCoaFiling(browser.globals.CP0001540);
   },
 
   '4.Confirm initial state of COA filing': function (browser) {
     CoaPage = browser.page.CoaPage();
-    CoaPage.verfifyInitialCoaState(browser.globals.CP1002111);
+    CoaPage.verfifyInitialCoaState(browser.globals.CP0001540);
     CoaPage.checkTotalFees('$0.00');
-    CoaPage.verifyOfficeAddresses(browser.globals.CP1002111);
+    CoaPage.verifyOfficeAddresses(browser.globals.CP0001540);
   },
 
   '5.Edit the Office Addresses': function (browser) {
@@ -111,14 +108,14 @@ module.exports = {
 
   '11.Start COA filing after deleting draft': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.startCoaFiling(browser.globals.CP1002111);
+    dashboard.startCoaFiling(browser.globals.CP0001540);
   },
 
   '12.Confirm initial state of COA filing - POST DRAFT': function (browser) {
     CoaPage = browser.page.CoaPage();
-    CoaPage.verfifyInitialCoaState(browser.globals.CP1002111);
+    CoaPage.verfifyInitialCoaState(browser.globals.CP0001540);
     CoaPage.checkTotalFees('$0.00');
-    CoaPage.verifyOfficeAddresses(browser.globals.CP1002111);
+    CoaPage.verifyOfficeAddresses(browser.globals.CP0001540);
   },
 
   '13.Edit the Office Addresses - POST DRAFT': function (browser) {
@@ -204,7 +201,6 @@ module.exports = {
     dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
     dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (13)');
     dashboard.assert.containsText('@topFilingInHistoryName', 'Address Change');
-    // dashboard.verifyDirectorCount(browser.globals.CP1002111.director_count);
     dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
     dashboard.assert.containsText('@deliveryLine1', '123 test street');
     dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');

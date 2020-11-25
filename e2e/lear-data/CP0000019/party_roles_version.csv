@@ -1,0 +1,7 @@
+id,role,appointment_date,cessation_date,business_id,party_id,transaction_id,end_transaction_id,operation_type
+7070,director,2018-12-21 00:00:00+00,,3085,6730,112908,,0
+7071,director,2005-06-16 00:00:00+00,,3085,6731,112908,,0
+7072,director,2018-12-21 00:00:00+00,,3085,6732,112908,,0
+7073,director,2018-12-21 00:00:00+00,,3085,6733,112908,,0
+7074,director,2016-09-07 00:00:00+00,,3085,6734,112908,,0
+7075,director,2018-12-21 00:00:00+00,,3085,6735,112908,,0

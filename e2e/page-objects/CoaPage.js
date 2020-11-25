@@ -1,8 +1,8 @@
 var CoaFilingsCommands = {
     verfifyInitialCoaState: function (coopObject) {
       return this
-        .assert.containsText('#filing-header', 'Address Change')
-        .assert.containsText('#AR-step-4-header', 'Certify')
+        .assert.containsText('@filingheader', 'Address Change')
+        .assert.containsText('@ARstep4header', 'Certify')
         .assert.containsText('#entity-incorporation-number', coopObject.identifier)
         .assert.containsText('#entity-legal-name', coopObject.legal_name)
         .assert.visible('@saveDraftButton')
@@ -115,6 +115,16 @@ module.exports={
         saveDraftButton: "#coa-save-btn",
         fileAndPayButton: "#coa-file-pay-btn",
         cancelFilingButton: "#coa-cancel-btn",
-        certifyBlock: "#AR-step-4-container > div > div.certifiedby-container"
+        certifyBlock: "#AR-step-4-container > div > div.certifiedby-container",
+        addressChangeDialouge:"#dashboard div.v-card__title",
+        returnToDashboardButton:"#dialog-toggle-button",
+        continueChangeOfAddress:'#dialog-proceed-button',
+        filingheader:'#filing-header',
+        ARstep4header:'#AR-step-4-header',
+        effectiveDate:'#standalone-office-address-article > header > div > div',
+        recordsOfficeButton:{
+        selector:'#office-addresses  div:nth-child(4)  div.v-input__slot ',
+        index:1
+        },
     }
 };

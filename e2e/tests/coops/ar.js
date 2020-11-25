@@ -1,16 +1,12 @@
 require('dotenv').config();
 module.exports = {
 
-  '@tags': ['regression'],
+  '@tags': [''],
   before: function (browser) {
     browser.maximizeWindow()
-    browser.setupData('CP1000019', function (busObject) {
-      console.log(busObject);
+    browser.setupData('CP0001537','BEN', function (busObject) {
+    console.log(busObject);
     });
-  },
-
-  after: function (browser) {
-    browser.authReset();
   },
 
   '1.Verify initial login with bcsc': function (browser) {
@@ -18,40 +14,47 @@ module.exports = {
     browser.url(browser.globals.launch_url)
     bcsc.verifyLandingPage()
     bcsc.moveToBCSC()
-    bcsc.enterBCSCCardUser(process.env.ServiceCard5)
-    bcsc.enterBCSCPassword(process.env.ServiceCard5Pw)
-    bcsc.proceedPastCardUseHistory()
+    bcsc.enterBCSCCardUser(process.env.user_bcsc)
+    bcsc.enterBCSCPassword(process.env.user_pwd)
+    //bcsc.proceedPastCardUseHistory()
   },
 
   '2.Enter contact information': function (browser) {
     relationship = browser.page.relationshipPage();
-    relationship.enterContactInformation();
     relationship.acceptTermsOfUse();
+    relationship.createBcRegistriesAccount()
+    relationship.createAccount('Virtual')
+    relationship.createAccountAddress()
+    relationship.enterContactInformation();
+    relationship.selectPaymentMethod()
     relationship.saveProfileInformation();
-    relationship.createAccount('You-nique Gifts and Such');
-    relationship.AddBusinesses(browser.globals.CP1000019);
+    relationship.landOnRegistriesPage();
+    relationship.createBcRegistriesAccount()
+    relationship.createAccount('virtual')
+    relationship.enterContactInformation();
+    relationship.saveProfileInformation();
+    relationship.landOnRegistriesPage();
+    relationship.AddBusinesses(browser.globals.CP0001537);
     relationship.checkAddBusinessesSuccess();
-    relationship.checkForAffliatedBusinesses(browser.globals.CP1000019);
+    relationship.checkForAffliatedBusinesses(browser.globals.CP0001537);
   },
 
   '3.Verify initial state of dashboard, then start AR filing': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.verifyTombstone(browser.globals.CP1000019);
-    dashboard.verifyAddresses(browser.globals.CP1000019);
-    //dashboard.verifyDirectorCount(browser.globals.CP1000019.director_count);
-    dashboard.verifyTodolistandRecentFilings('To Do (3)');
-    dashboard.startArFiling(browser.globals.CP1000019);
-    dashboard.selectAGMDate('File 2018 Annual Report');
+    dashboard.verifyTombstone(browser.globals.CP0001537);
+    dashboard.verifyAddresses(browser.globals.CP0001537);
+    dashboard.verifyTodolistandRecentFilings('To Do (2)');
+    dashboard.startArFiling(browser.globals.CP0001537);
+    dashboard.selectAGMDate('File 2019 Annual Report');
   },
 
   '4.Confirm initial state of Annual Report': function (browser) {
     ArPage = browser.page.annualReportPage();
-    ArPage.verfifyInitialArState(browser.globals.CP1000019, 'File 2018 Annual Report');
+    ArPage.verfifyInitialArState(browser.globals.CP0001537, 'File 2019 Annual Report');
     ArPage.checkFeeByIndex('Annual Report', '$30.00', 0);
     ArPage.checkFeeCount(1);
     ArPage.checkTotalFees('$30.00');
-    ArPage.verifyOfficeAddresses(browser.globals.CP1000019);
-    //ArPage.verifyDirectorCount(browser.globals.CP1000019.director_count);
+    ArPage.verifyOfficeAddresses(browser.globals.CP0001537);
   },
 
   '5.Edit the Office Addresses': function (browser) {
@@ -122,17 +125,16 @@ module.exports = {
 
   '12.Start AR filing after deleting draft': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.startArFiling(browser.globals.CP1000019)
-    dashboard.selectAGMDate('File 2018 Annual Report')
+    dashboard.startArFiling(browser.globals.CP0000019)
+    dashboard.selectAGMDate('File 2019 Annual Report')
   },
 
   '13.Confirm initial state of Annual Report - POST DRAFT': function (browser) {
     ArPage = browser.page.annualReportPage();
-    ArPage.verfifyInitialArState(browser.globals.CP1000019, 'File 2018 Annual Report');
+    ArPage.verfifyInitialArState(browser.globals.CP0001537, 'File 2019 Annual Report');
     ArPage.checkFeeCount(1);
     ArPage.checkTotalFees('$30.00');
-    ArPage.verifyOfficeAddresses(browser.globals.CP1000019);
-    //ArPage.verifyDirectorCount(browser.globals.CP1000019.director_count);
+    ArPage.verifyOfficeAddresses(browser.globals.CP0001537);
   },
 
   '14.Edit the Office Addresses - POST DRAFT': function (browser) {
@@ -217,8 +219,7 @@ module.exports = {
     dashboard = browser.page.dashboardPage();
     dashboard.assert.containsText('@toDoListHeader', 'To Do (2)');
     dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (2)');
-    dashboard.assert.containsText('@topFilingInHistoryName', 'Annual Report (2018)');
-    // dashboard.verifyDirectorCount(browser.globals.CP1000019.director_count + 1);
+    dashboard.assert.containsText('@topFilingInHistoryName', 'Annual Report (2019)');
     dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
     dashboard.assert.containsText('@deliveryLine1', '123 test street');
     dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');
