@@ -1,0 +1,8 @@
+id,party_type,first_name,middle_initial,last_name,title,organization_name,delivery_address_id,mailing_address_id,transaction_id,end_transaction_id,operation_type
+8514,person,DON,"",BRANDYS,"","",31018,31019,128773,,0
+8515,person,PATRICK,"",DAVID,"","",31020,31021,128773,,0
+8516,person,PAVEL,"",NAVRATIL,"","",31022,31023,128773,,0
+8517,person,ANN,"",NORRIE,"","",31024,31025,128773,,0
+8518,person,TOM,"",ALLEN,"","",31026,31027,128773,,0
+8519,person,RENE,"",BEAUCHAMP,"","",31028,31029,128773,,0
+8520,person,PAGET,"",BENTHAM,"","",31030,31031,128773,,0

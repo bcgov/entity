@@ -1,14 +1,11 @@
+
 module.exports = {
-  '@tags': ['regression'],
-  before: function (browser) {
+  '@tags': [''],
+   before: function (browser) {
     browser.maximizeWindow()
-    browser.setupData('CP1001171', function (busObject) {
+    browser.setupData('CP0001538','BEN',function (busObject) {
       console.log(busObject);
     });
-  },
-
-  after: function (browser) {
-    browser.authReset();
   },
 
   '1.Verify initial login with bcsc': function (browser) {
@@ -16,41 +13,40 @@ module.exports = {
     browser.url(browser.globals.launch_url)
     bcsc.verifyLandingPage()
     bcsc.moveToBCSC()
-    bcsc.enterBCSCCardUser(process.env.ServiceCard3)
-    bcsc.enterBCSCPassword(process.env.ServiceCard3Pw)
-    bcsc.proceedPastCardUseHistory()
+    bcsc.enterBCSCCardUser(process.env.user_bcsc)
+    bcsc.enterBCSCPassword(process.env.user_pwd)
   },
 
   '2.Enter contact information': function (browser) {
     relationship = browser.page.relationshipPage();
-    relationship.enterContactInformation();
     relationship.acceptTermsOfUse();
+    relationship.createBcRegistriesAccount()
+    relationship.createAccount('vixv')
+    relationship.enterContactInformation();
     relationship.saveProfileInformation();
-    relationship.createAccount('You-nique Gifts and Such and Stuff');
-    relationship.AddBusinesses(browser.globals.CP1001171);
+    relationship.landOnRegistriesPage();
+    relationship.AddBusinesses(browser.globals.CP0001538);
     relationship.checkAddBusinessesSuccess();
-    relationship.checkForAffliatedBusinesses(browser.globals.CP1001171);
+    relationship.checkForAffliatedBusinesses(browser.globals.CP0001538);
   },
   
   '3.Verify initial state of dashboard, then start COD filing': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.verifyTombstone(browser.globals.CP1001171);
-    dashboard.verifyAddresses(browser.globals.CP1001171);
-    // dashboard.verifyDirectorCount(browser.globals.CP1001171.director_count)
-    dashboard.startCodFiling(browser.globals.CP1001171);
+    dashboard.verifyTombstone(browser.globals.CP0001538);
+    dashboard.verifyAddresses(browser.globals.CP0001538);
+    dashboard.startCodFiling(browser.globals.CP0001538);
   },
 
   '4.Confirm initial state of COD filing': function (browser) {
     CodPage = browser.page.CodPage();
-    CodPage.verfifyInitialCodState(browser.globals.CP1001171);
+    CodPage.verfifyInitialCodState(browser.globals.CP0001538);
     CodPage.checkTotalFees('$0.00');
   },
 
   '5.Appoint New Director': function (browser) {
     CodPage = browser.page.CodPage()
     CodPage.startAppointingNewDirector()
-    CodPage.AddNewDirector(browser.globals.CP1001171.director7, 7);
-    // CodPage.validateDirectorByNumber(browser.globals.CP1001171.director4,4)
+    CodPage.AddNewDirector(browser.globals.CP0001538.director7, 7);
   },
 
   '6.Certify who filed': function (browser) {
@@ -78,7 +74,6 @@ module.exports = {
   },
 
   '10.Assert the directors are present': function (browser) {
-    //Add assertions for directors present
     CodPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
     CodPage.click('@saveAndResumeLaterButton');
   },
@@ -96,20 +91,19 @@ module.exports = {
 
   '12.Start COD filing after deleting draft': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.startCodFiling(browser.globals.CP1001171);
+    dashboard.startCodFiling(browser.globals.CP0001538);
   },
 
   '13.Confirm initial state of COD filing - POST DRAFT': function (browser) {
     CodPage = browser.page.CodPage();
-    CodPage.verfifyInitialCodState(browser.globals.CP1001171);
+    CodPage.verfifyInitialCodState(browser.globals.CP0001538);
     CodPage.checkTotalFees('$0.00');
   },
 
   '14.Appoint New DIRECTOR - POST DRAFT': function (browser) {
     CodPage = browser.page.CodPage();
     CodPage.startAppointingNewDirector()
-    CodPage.AddNewDirector(browser.globals.CP1001171.director7, 7);
-    // CodPage.validateDirectorByNumber(browser.globals.CP1001171.director3,3)
+    CodPage.AddNewDirector(browser.globals.CP0001538.director7, 7);
   },
 
   '15.Certify who filed - POST DRAFT': function (browser) {
@@ -143,7 +137,6 @@ module.exports = {
     dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
     dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (53)');
     dashboard.assert.containsText('@topFilingInHistoryName', 'Director Change');
-    //dashboard.verifyDirectorCount(browser.globals.CP1001171.new_director_count);
   }
 
 }

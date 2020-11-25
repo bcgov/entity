@@ -1,11 +1,11 @@
 require('dotenv').config();
 module.exports = {
 
-  '@tags': ['regression', 'staff'],
-  before: function (browser) {
+  '@tags': [''],
+   before: function (browser) {
     browser.maximizeWindow()
-    browser.setupData('CP1001403', function (busObject) {
-      console.log(busObject);
+    browser.setupData('CP1001551','BEN', function (busObject) {
+    console.log(busObject);
     });
   },
 
@@ -20,28 +20,26 @@ module.exports = {
   '2. Staff Dashboard': function (browser) {
     staffLogin = browser.page.staffDashboardPage();
 
-    staffLogin.searchForBusiness(browser.globals.CP1001403.identifier);
+    staffLogin.searchForBusiness(browser.globals.CP0001551.identifier);
   },
 
   '3. Verify initial state of dashboard, then start COD filing': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.verifyTombstone(browser.globals.CP1001403);
-    dashboard.verifyAddresses(browser.globals.CP1001403);
-    // dashboard.verifyDirectorCount(browser.globals.CP1001403.director_count)
-    dashboard.startCodFiling(browser.globals.CP1001403);
+    dashboard.verifyTombstone(browser.globals.CP0001551);
+    dashboard.verifyAddresses(browser.globals.CP0001551);
+    dashboard.startCodFiling(browser.globals.CP0001551);
   },
 
   '4. Confirm initial state of COD filing': function (browser) {
     CodPage = browser.page.CodPage();
-    CodPage.verfifyInitialCodState(browser.globals.CP1001403);
+    CodPage.verfifyInitialCodState(browser.globals.CP0001551);
     CodPage.checkTotalFees('$0.00');
   },
 
   '5. Appoint New Director': function (browser) {
     CodPage = browser.page.CodPage()
     CodPage.startAppointingNewDirector()
-    CodPage.AddNewDirector(browser.globals.CP1001403.director4, 4);
-    // CodPage.validateDirectorByNumber(browser.globals.CP1001403.director2,2)
+    CodPage.AddNewDirector(browser.globals.CP0001551.director4, 4);
   },
 
   '6. Certify who filed': function (browser) {
@@ -68,7 +66,6 @@ module.exports = {
   },
 
   '10. Assert the directors are present': function (browser) {
-    //CodPage.assert.valueContains('@certifyLegalName', 'Tester');
     CodPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
     CodPage.click('@saveAndResumeLaterButton');
   },
@@ -85,12 +82,12 @@ module.exports = {
 
   '12. Start COD filing after deleting draft': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.startCodFiling(browser.globals.CP1001403);
+    dashboard.startCodFiling(browser.globals.CP0001551);
   },
 
   '13. Confirm initial state of COD filing - POST DRAFT': function (browser) {
     CodPage = browser.page.CodPage();
-    CodPage.verfifyInitialCodState(browser.globals.CP1001403);
+    CodPage.verfifyInitialCodState(browser.globals.CP0001551);
     CodPage.checkTotalFees('$0.00');
   },
 
@@ -98,7 +95,6 @@ module.exports = {
     CodPage = browser.page.CodPage();
     CodPage.startAppointingNewDirector()
     CodPage.AddNewDirector(browser.globals.CP1001403.director4, 4);
-    // CodPage.validateDirectorByNumber(browser.globals.CP1001403.director2,2)
   },
 
   '15. Certify who filed - POST DRAFT': function (browser) {
@@ -125,6 +121,5 @@ module.exports = {
     dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
     dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (58)');
     dashboard.assert.containsText('@topFilingInHistoryName', 'Director Change');
-    // dashboard.verifyDirectorCount(browser.globals.CP1001403.new_director_count)
   }
 }

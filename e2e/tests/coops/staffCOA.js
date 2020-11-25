@@ -1,6 +1,6 @@
 require('dotenv').config();
 module.exports = {
-  '@tags': ['regression', 'staff'],
+  '@tags': [''],
   before: function (browser) {
     browser.maximizeWindow()
     browser.setupData('CP1001188', function (busObject) {
@@ -18,23 +18,21 @@ module.exports = {
 
   '2. Staff Dashboard': function (browser) {
     staffLogin = browser.page.staffDashboardPage();
-
-    staffLogin.searchForBusiness(browser.globals.CP1001188.identifier);
+    staffLogin.searchForBusiness(browser.globals.CP0000019.identifier);
   },
 
   '3. Verify initial state of dashboard, then start COA filing': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.verifyTombstone(browser.globals.CP1001188);
-    dashboard.verifyAddresses(browser.globals.CP1001188);
-    // dashboard.verifyDirectorCount(browser.globals.CP1001188.director_count);
-    dashboard.startCoaFiling(browser.globals.CP1001188);
+    dashboard.verifyTombstone(browser.globals.CP0000019);
+    dashboard.verifyAddresses(browser.globals.CP0000019);
+    dashboard.startCoaFiling(browser.globals.CP0000019);
   },
 
   '4. Confirm initial state of COA filing': function (browser) {
     CoaPage = browser.page.CoaPage();
-    CoaPage.verfifyInitialCoaState(browser.globals.CP1001188);
+    CoaPage.verfifyInitialCoaState(browser.globals.CP0000019);
     CoaPage.checkTotalFees('$0.00');
-    CoaPage.verifyOfficeAddresses(browser.globals.CP1001188);
+    CoaPage.verifyOfficeAddresses(browser.globals.CP0000019);
   },
 
   '5. Edit the Office Addresses': function (browser) {
@@ -81,7 +79,6 @@ module.exports = {
     CoaPage.assert.containsText('@officeDeliveryLine1', '123 test street');
     CoaPage.assert.containsText('@officeDeliveryLine2', 'Victoria BC V1V1V1');
     CoaPage.assert.containsText('@officeDeliveryLine3', 'Canada');
-    // CoaPage.assert.valueContains('@certifyLegalName', 'Tester');
     CoaPage.moveToElement('@saveAndResumeLaterButton', 5, 5);
     CoaPage.click('@saveAndResumeLaterButton');
   },
@@ -98,14 +95,14 @@ module.exports = {
 
   '11. Start COA filing after deleting draft': function (browser) {
     dashboard = browser.page.dashboardPage();
-    dashboard.startCoaFiling(browser.globals.CP1001188);
+    dashboard.startCoaFiling(browser.globals.CP0000019);
   },
 
   '12. Confirm initial state of COA filing - POST DRAFT': function (browser) {
     CoaPage = browser.page.CoaPage();
-    CoaPage.verfifyInitialCoaState(browser.globals.CP1001188);
+    CoaPage.verfifyInitialCoaState(browser.globals.CP0000019);
     CoaPage.checkTotalFees('$0.00');
-    CoaPage.verifyOfficeAddresses(browser.globals.CP1001188);
+    CoaPage.verifyOfficeAddresses(browser.globals.CP0000019);
   },
 
   '13. Edit the Office Addresses - POST DRAFT': function (browser) {
@@ -148,7 +145,6 @@ module.exports = {
     dashboard.assert.containsText('@toDoListHeader', 'To Do (3)');
     dashboard.assert.containsText('@filingHistoryHeader', 'Recent Filing History (38)');
     dashboard.assert.containsText('@topFilingInHistoryName', 'Address Change');
-    // dashboard.verifyDirectorCount(browser.globals.CP1001188.director_count + 1);
     dashboard.assert.containsText('@deliveryAddressLabel', 'Delivery Address');
     dashboard.assert.containsText('@deliveryLine1', '123 test street');
     dashboard.assert.containsText('@deliveryLine2', 'Victoria BC V8V 4K9');

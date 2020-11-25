@@ -1,0 +1,6 @@
+id,role,appointment_date,cessation_date,business_id,party_id,transaction_id,end_transaction_id,operation_type
+8870,director,2018-08-09 00:00:00+00,,3334,8530,128913,,0
+8871,director,2018-04-08 00:00:00+00,,3334,8531,128913,,0
+8872,director,2018-04-08 00:00:00+00,,3334,8532,128913,,0
+8873,director,2019-06-07 00:00:00+00,,3334,8533,128913,,0
+8874,director,2019-06-07 00:00:00+00,,3334,8534,128913,,0

@@ -36,7 +36,6 @@ var dashboardCommands = {
     verifyTodolistandRecentFilings: function (noOfFilings) {
         return this
             .assert.containsText('@toDoListHeader', noOfFilings)
-            .assert.not.cssClassPresent('@fileNowButton', 'v-btn--disabled')
             .expect.element('@fileNowButton2').to.not.be.enabled
     },
     startArFiling: function (coopObject) {
@@ -45,7 +44,7 @@ var dashboardCommands = {
             .waitForElementVisible('@fileNowButton')
             .click('@fileNowButton')
             .assert.urlEquals(this.api.globals.launch_url + coopObject.identifier + '/annual-report')
-            .waitForElementVisible('#AR-header', 'Annual Report Page Loaded');
+            .waitForElementVisible('@arHeader', 'Annual Report Page Loaded');
     },
     startCoaFiling: function (coopObject) {
         return this.waitForElementVisible('@launchCOAButton')
@@ -53,7 +52,7 @@ var dashboardCommands = {
             .click('@launchCOAButton')
             .assert.urlEquals(this.api.globals.launch_url + coopObject.identifier + '/standalone-addresses')
             .useCss()
-            .waitForElementVisible('#filing-header', 'COA Page Loaded');
+            .waitForElementVisible('@coaFilingHeader', 'COA Page Loaded');
     },
     startCodFiling: function (coopObject) {
         return this.waitForElementVisible('@launchCODButton')
@@ -61,7 +60,7 @@ var dashboardCommands = {
             .click('@launchCODButton')
             .assert.urlEquals(this.api.globals.launch_url + coopObject.identifier + '/standalone-directors')
             .useCss()
-            .waitForElementVisible('#filing-header', 'COD Page Loaded')
+            .waitForElementVisible('@codFilingHeader', 'COD Page Loaded')
     },
 
     checkFeeByIndex: function (feeName, feeValue, desiredIndex) {
@@ -111,7 +110,10 @@ module.exports = {
         currentDirectorsHeader: '[data-test-id="dashboard-directors-subtitle"]',
         launchCODButton: "#standalone-directors-button > span > span",
         toDoListHeader: '[data-test-id="dashboard-todo-subtitle"]',
-        fileNowButton: "button.btn-file-now",
+        fileNowButton: {
+            selector:"button.btn-file-now",
+            index:0
+        },
         resumeDraftButton: "button.btn-draft-resume",
         toDoButtonMoreActionsArrow: "#menu-activator > span > i",
         deleteDraftButton: "#btn-delete-draft > div",
@@ -131,6 +133,13 @@ module.exports = {
         feeValue: "div.fee-list__item-value",
         feeListItem: "li.fee-list__item",
         feeTotal: "div.fee-total__value",
+        arHeader:'#AR-header',
+        coaFilingHeader:'#filing-header',
+        codFilingHeader:'#filing-header',
+        open:{
+            selector:'[ data-test="goto-dashboard-button"]',
+            index:0
+        },
 
     }
 };

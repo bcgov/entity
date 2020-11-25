@@ -119,7 +119,10 @@ module.exports={
         saveAndResumeLaterButton: "#cod-save-resume-btn",
         saveDraftButton: "#cod-save-btn",
         fileAndPayButton: "#cod-file-pay-btn",
-        cancelFilingButton: "#cod-cancel-btn",
+        cancelFilingButton:{
+        selector: "#cod-cancel-btn",
+        index:0,
+        },
         edit:"#director-%s-change-btn > div > span",
         completeAppointingDirector: "#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div.form__row.form__btns > button.form-primary-btn.v-btn.v-btn--contained.theme--light.v-size--default.primary > span",
         dynamicFirstName: {
@@ -136,7 +139,25 @@ module.exports={
         dynamicCessationDate: "#director-%s > div > div > div > div > div.director_dates > div:nth-child(4)",
         dynamicEditButton: "#director-%s-change-btn",
         nextButton:"#cod-next-btn > span",
-        header:"#filing-header-review"
+        header:"#filing-header-review",
+        mailingCheckbox:"#directors > div.v-card.v-card--flat.v-sheet.theme--light > ul.list.new-director > li > div > div > form > div:nth-child(4) > div.v-input.inherit-checkbox.theme--light.v-input--selection-controls.v-input--checkbox > div > div.v-input__slot > div > div",
+        directorChange:{
+            selector:'[ role="listitem"]',
+            index:0
+        },
+        noticeOfArticles:{
+            selector:'[ role="listitem"]',
+            index:1
+        },
+        reciept:{
+            selector:'[ role="listitem"]',
+            index:2
+        },
+        downloadAll:{
+           selector: '[ role="listitem"]',
+           index:3
+        }
+        
     },
 }
 

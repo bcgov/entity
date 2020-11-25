@@ -1,0 +1,13 @@
+id,address_type,street,street_additional,city,region,country,postal_code,delivery_instructions,business_id,office_id
+30058,delivery,A1 - 2820 HARRIET RD.,"",VICTORIA,BC,CA,V9A1T1,"",,
+30059,mailing,A1 - 2820 HARRIET RD.,"",VICTORIA,BC,CA,V9A1T1,"",,
+30060,delivery,A13 - 2820 HARRIET RD,"",VICTORIA,BC,CA,V9A1T1,"",,
+30061,mailing,A13 - 2820 HARRIET RD,"",VICTORIA,BC,CA,V9A1T1,"",,
+30062,delivery,B1 - 2820 HARRIET RD.,"",VICTORIA,BC,CA,V9A1T1,"",,
+30063,mailing,B1 - 2820 HARRIET RD.,"",VICTORIA,BC,CA,V9A1T1,"",,
+30064,delivery,A8 - 2820 HARRIET RD,"",VICTORIA,BC,CA,V9A1T1,"",,
+30065,mailing,A8 - 2820 HARRIET RD,"",VICTORIA,BC,CA,V9A1T1,"",,
+30066,delivery,A5 - 2820 HARRIET RD.,"",VICTORIA,BC,CA,V9A1T1,"",,
+30067,mailing,A5 - 2820 HARRIET RD.,"",VICTORIA,BC,CA,V9A1T1,"",,
+36905,delivery,B11-2820 Harriet Rd,"",Victoria,BC,CA,V9A 1T1,,,
+36906,delivery,A7-2820 Harriet Rd,"",Victoria,BC,CA,V9A 1T1,,,

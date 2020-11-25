@@ -1,9 +1,12 @@
 var staffDashboardCommands = {
     signInWithIDIR: function (user, pass) {
         return this
-            .waitForElementVisible('@siteTitle', 'Log in to sfstest7.gov.bc.ca')
-            .waitForElementVisible('@IdirUsername')
-            .waitForElementVisible('@IdirPassword')
+            .waitForElementVisible('@HeaderLogin')
+            .assert.containsText('@mainHeader','Start a Benefit Company and')
+            .waitForElementVisible('@loginButton')
+            .click('@loginButton')
+            .waitForElementVisible('@IdirLogin')
+            .click('@IdirLogin')
             .setValue('@IdirUsername', user)
             .setValue('@IdirPassword', pass)
             .click('@ContinueButton');
@@ -22,7 +25,7 @@ var staffDashboardCommands = {
 module.exports = {
     commands: [staffDashboardCommands],
     url: function () {
-        return this.api.globals.launch_idirurl;
+        return this.api.globals.launch_url;
     },
     elements: {
         siteTitle: '#login-to',
@@ -31,6 +34,13 @@ module.exports = {
         ContinueButton: 'input[name="btnSubmit"]',
         StaffDashHeader: 'h1',
         IncorporationNumberTxtBox: '#txtBusinessNumber',
-        SearchButton: 'button.search-btn'
+        SearchButton: 'button.search-btn',
+        HeaderLogin: "#app > div > div.header-group > header > div > a > span",
+        mainHeader: "#app  h1",
+        IdirLogin:{
+        selector:'#app   div:nth-child(2)  div.v-list-item__title',
+        index:2
+        },
+        loginButton:'#loginBtn'
     }
 };

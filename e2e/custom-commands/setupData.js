@@ -9,10 +9,29 @@ function setupData () {
 
 util.inherits(setupData, events.EventEmitter);
 
-setupData.prototype.command = function (identifier, legalType, callback) {
+setupData.prototype.command = function (identifier, legalType, callback){
+    var self=this;
     var path = './lear-data/' + identifier + '/';
-    var formData = {};
+    this.api.perform(function(){
+      // setTimeout(function () {
+            var options={
+                'method':'DELETE',
+                'url':'https://data-reset-tool-dev.pathfinder.gov.bc.ca/api/fixture/delete/' + identifier,
+            }
+            request(options, function (error, response) {
+                if (error) {
+                    console.error(error);
+                    return;
+                } else if (callback) {
+                    var busObject = JSON.parse(response.body);
+                    callback(busObject);
+                }
+            })
+        //})
+    });
 
+   var path = './lear-data/' + identifier + '/';
+    var formData = {};
     var files = fs.readdirSync(path);
     files.forEach(file => {
         var fileNameWithoutExtension = file.split('.').slice(0, -1).join('.');
@@ -24,13 +43,12 @@ setupData.prototype.command = function (identifier, legalType, callback) {
             }
         };
     });
-
     var self = this;
-    this.api.perform(function () {
-        setTimeout(function () {
+    setTimeout(function () {
+    self.api.perform(function () {
             var options = {
                 'method': 'POST',
-                'url': 'https://data-reset-tool-test.pathfinder.gov.bc.ca/api/fixture/import/' + legalType,
+                'url': 'https://data-reset-tool-dev.pathfinder.gov.bc.ca/api/fixture/import/' + legalType,
                 'headers': {
                     'Content-Type': 'multipart/form-data'
                 },
@@ -47,8 +65,8 @@ setupData.prototype.command = function (identifier, legalType, callback) {
 
             });
             self.emit('complete');
-        }, 10);
-    });
+        },);
+    },50);
     return this;
 };
 
