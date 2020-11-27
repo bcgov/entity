@@ -7,11 +7,13 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Jan 12, 2021
 ----
 1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
+
+- Discsuss API topics - When can we reach out to exrernal 
 ----
 Nov 27, 2021
 ----
-- Discsuss API topics - When can we reach out to exrernal 
-- Discuss staff requirement coming out of Nov 27 Staff meeting if possible
+- Roy to showcase design to PO's
+   - Off all the feature proposed, Kaine/Linda has no concerns.
 
 ----
 Nov 20, 2021
