@@ -1,9 +1,7 @@
 ---
 name: Definition of Done - Entities
 about: Team owned document to define when a User Story is done
-title: ''
-labels: ''
-assignees: ''
+
 
 ---
 
