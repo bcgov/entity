@@ -1,6 +1,6 @@
 ---
-name: DoD - Entity
-about: DoD - Entity
+Name: Definition of Done - Entities Team
+About: A team-owned document to define when a User Story is done
 
 ---
 
