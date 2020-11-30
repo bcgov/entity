@@ -1,9 +1,6 @@
 ---
 name: DoD - Entity
 about: DoD - Entity
-title: ''
-labels: ''
-assignees: ''
 
 ---
 
