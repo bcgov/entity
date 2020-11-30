@@ -1,6 +1,6 @@
 ---	
 name: Definition of Ready - Entities Team
-about: DoR - A document owned by the Product Owner and contributed by the team, definining when a User Story is ready to be worked on
+about: Owned by the Product Owner with buyin from the team, definining when a User Story is ready to be worked on
 
 ---	
 
