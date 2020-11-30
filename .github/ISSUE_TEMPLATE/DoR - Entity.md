@@ -1,9 +1,9 @@
 ---	
-name: DoR - Entity
-about: DoR - Entity
-DoR is for the PO.
+name: Definition of Ready - Entities Team
+about: DoR - A document owned by the Product Owner and contributed by the team, definining when a User Story is ready to be worked on
 
 ---	
+
 These are standards to which there can be exceptions though they require buy-in from the team.
 
 **DoR - for each User Story**
