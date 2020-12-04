@@ -9,6 +9,12 @@ Jan 12, 2021
 1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
 
 - Discsuss API topics - When can we reach out to exrernal 
+
+----
+Dec 4, 2021
+----
+- Openshift Container Platform 4 Upgrade - Mandate from the Lab
+
 ----
 Nov 27, 2021
 ----
