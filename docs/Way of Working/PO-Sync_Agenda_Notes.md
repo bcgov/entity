@@ -9,6 +9,14 @@ Jan 12, 2021
 1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
 
 - Discsuss API topics - When can we reach out to exrernal 
+   - Firewalls rule changing - IStore Request
+   - DNS are changing
+   - Network security policies has to be updated
+      - Patrick and Richard are working on this
+      - Jyoti to Create a ticket and assign it to Patrick and Richard, check with Richard A
+      - Create some space in the release planing and update in tri weekly
+   - #5652 - Entity to target the work for Dec 17. Linda and Sienna to look into this
+   - #5591 - Melissa to work with Sumesh on getting the details.
 
 ----
 Dec 4, 2021
