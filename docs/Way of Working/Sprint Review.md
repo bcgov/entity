@@ -25,6 +25,28 @@ Description - ticket_number - presenter - <duration> mins
 |---|----------------------|--------------------|-------------------------|
 
 ----
+-----------------------------------------------------------------------------------------------------------------------
+---- TEMPLATE ----
+### Dec 8 , 2020 - Sprint (Milestone) 44 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+Description - ticket_number - presenter - <duration> mins
+#### Name Request
+Description - ticket_number - presenter - <duration> mins
+#### Relationships
+Apply EFT Payment Amount to an Account - 5671 - Jeremy - 5 mins
+PAD settlement results - 4778 - Loren/Sumesh/Saravan - 20 mins
+NSF - Sumesh/Saravan - 5 mins
+Online Banking - ??? - 10 mins
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+----
 
 ### Nov 24, 2020 - Sprint (Milestone) 43 - 55 min. total 
 ----
