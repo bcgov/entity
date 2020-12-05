@@ -36,10 +36,10 @@ Description - ticket_number - presenter - <duration> mins
 #### Name Request
 Description - ticket_number - presenter - <duration> mins
 #### Relationships
-Apply EFT Payment Amount to an Account - 5671 - Jeremy - 5 mins
-PAD settlement results - 4778 - Loren/Sumesh/Saravan - 20 mins
-NSF - Sumesh/Saravan - 5 mins
-Online Banking - ??? - 10 mins
+- Apply EFT Payment Amount to an Account - 5671 - Jeremy - 5 mins
+- PAD settlement results - 4778 - Loren/Sumesh/Saravan - 20 mins
+- NSF - Sumesh/Saravan - 5 mins
+- Online Banking - ??? - 10 mins
 
 
 #### Action Items:
