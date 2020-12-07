@@ -8,7 +8,19 @@ Jan 12, 2021
 ----
 1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
 
-- Discsuss API topics - When can we reach out to exrernal 
+----
+Dec 11, 2021
+----
+* Discuss the support for release - Name Request
+   - Do we need a dedicated line?
+   - What support mechanism would be in place to support staff?
+   - is IT ops ready to take whats being delivered?
+
+----
+Dec 4, 2021
+----
+- Openshift Container Platform 4 Upgrade - Mandate from the Lab
+   - Discsuss API topics - When can we reach out to exrernal 
    - Firewalls rule changing - IStore Request
    - DNS are changing
    - Network security policies has to be updated
@@ -17,12 +29,6 @@ Jan 12, 2021
       - Create some space in the release planing and update in tri weekly
    - #5652 - Entity to target the work for Dec 17. Linda and Sienna to look into this
    - #5591 - Melissa to work with Sumesh on getting the details.
-
-----
-Dec 4, 2021
-----
-- Openshift Container Platform 4 Upgrade - Mandate from the Lab
-
 ----
 Nov 27, 2021
 ----
