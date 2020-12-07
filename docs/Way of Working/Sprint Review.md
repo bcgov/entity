@@ -37,7 +37,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 - Apply EFT Payment Amount to an Account - 5671 - Jeremy - 5 mins
 - PAD settlement results - 4778 - Loren/Sumesh/Saravan - 20 mins
 - NSF - Sumesh/Saravan - 5 mins
-- Online Banking - ??? - 10 mins
+- Online Banking - /Sumesh/Saravan - 10 mins
 
 
 #### Action Items:
