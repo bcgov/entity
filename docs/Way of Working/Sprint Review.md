@@ -32,9 +32,7 @@ Description - ticket_number - presenter - <duration> mins
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-Description - ticket_number - presenter - <duration> mins
-#### Name Request
-Description - ticket_number - presenter - <duration> mins
+- Name Request UI updates - Cameron - 20 mins
 #### Relationships
 - Apply EFT Payment Amount to an Account - 5671 - Jeremy - 5 mins
 - PAD settlement results - 4778 - Loren/Sumesh/Saravan - 20 mins
