@@ -13,8 +13,32 @@ Dec 11, 2021
 ----
 * Discuss the support for release - Name Request
    - Do we need a dedicated line?
+      - Having a Teams channel/chat
+      - Jump to Video when required
+      - Kaine/Linda/Sienna/Scott/Janis - One of them would be available
+         - Kial/Richard can also be made available
+      - Kaine to Setup the channel before Go-live
+      - Staff - Invite Debbie's team and Cameron's Team
+      - Have an email for staff to let them know about the process
    - What support mechanism would be in place to support staff?
-   - is IT ops ready to take whats being delivered?
+      - Same as Above
+   - Is IT ops ready to take whats being delivered?
+      - They would escalate to Project team - Normal process
+   
+ * Research On EFT
+   - Kaine wants to be involved
+      - Who are the EFT users?
+      - What products are they purchasing?
+
+* Dependency Ticket discussion
+   - 5806
+      - Changes are done. In Ready for QA
+   - 5331
+      - Lorent o check with Sumesh around estimate and see if Vysakh can pull any of the stuff from Sumesh plate
+
+* Refund
+   - Linda to confirm the current refund process
+   
 
 ----
 Dec 4, 2021
