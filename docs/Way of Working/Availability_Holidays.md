@@ -24,7 +24,7 @@
 * Andrew: 
 * Jeremy: 
 * Loren: 
-* Meng: Sprint 22 onwards - away for 8 weeks - and longer eventually
+* Meng: Flex day bi-weekly Friday's (Dec 18th on)
 * Melissa: Flex day bi-weekly Monday's (Aug 17th on), Dec 14, Dec 24th - Jan 5th
 * Milan: 
 * Nitin: Feb 17 - Mar 13
