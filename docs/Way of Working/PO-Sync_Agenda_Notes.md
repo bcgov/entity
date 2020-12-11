@@ -35,6 +35,7 @@ Dec 11, 2021
       - Changes are done. In Ready for QA
    - 5331
       - Lorent o check with Sumesh around estimate and see if Vysakh can pull any of the stuff from Sumesh plate
+      - There would most probably an error for premium users who are trying to pay which should be fixed by Friday
 
 * Refund
    - Linda to confirm the current refund process
