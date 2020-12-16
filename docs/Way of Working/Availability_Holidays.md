@@ -24,7 +24,7 @@
 * Andrew: 
 * Faiz:
 * Jeremy: 
-* Loren: 
+* Loren: Dec 24-Jan 1
 * Meng: Flex day bi-weekly Friday's (Dec 18th on)
 * Melissa: Flex day bi-weekly Monday's (Aug 17th on), Dec 14, Dec 24th - Jan 5th
 * Milan: Jan 7th 2021
