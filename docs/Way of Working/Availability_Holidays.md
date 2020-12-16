@@ -29,7 +29,7 @@
 * Melissa: Flex day bi-weekly Monday's (Aug 17th on), Dec 14, Dec 24th - Jan 5th
 * Milan: Jan 7th 2021
 * Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3, ...); Nov 02, 2020-Nov 13, 2020; Dec 21, 2020 - Jan 5, 2021
-* Roy:
+* Roy: Dec 23 - Dec 24 
 * Sumesh: Dec 28 - Dec 31
 * Saravan: Dec 28 - Dec 31
 
