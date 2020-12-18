@@ -10,13 +10,36 @@ Jan 12, 2021
 ----
 Dec 18, 2021
 ----
-  - IAAS has communicated they may not be able to get signoff on Registries and CAS's FRCR in time for January 17 risk date. As we expand services there is a risk we won’t have enough memory available to run apps efficiently.
+  - IAAS has communicated they may not be able to get signoff on Registries and CAS's FRCR in time for January 17 risk date. 
+    - 6 weeks review period has been asked for FRCR - Financial Risk and Control Review. Should be signed off by controller general.
+    - Has been escalated to Carol/Bev
+    - Steering committee on Jan 14th where the Go/No-Go decission will be taken
+    - ADM for CAS is the ADM for the review, so likely hood of getting this extended is very little
+    - There is no Impact t moving the release date for payment. 
+  - As we expand services there is a risk we won’t have enough memory available to run apps efficiently.
+    - There is some memory created
   - Not getting cloud access will impact how we store data and its associated costs. It is and will continue to impact creating a full data lake service.
+    - There is some work being done by Greg. 
+    - Some cordination work required
+    - Monitor for few weeks and discuss again in few week
   - NR issues with payment. We can discuss how we handle dependencies for existing endpoints to ensure the implementation of what is already built is captured
+    - Jyoti and Jason to work to avoid this in future.
   - Update on the Card Reader retirement
+    - Shutting off by Feb 8th
+    - If they already have a card reader then its fine, but nothing new
+    - Cameron's team is asking for option - the only thing availbale is paper filing
+    - Carol has very less interest in other system solution
+    - Next Steps: Paper filign is doable. Lets bring this up in new year.
+            - Add this in new year PO Sync agenda - Jan 8th 
+            - Other option is to send the client to D&D
   - Auditing 'no fee' payments has been raised a gap in our financial controls by the auditor.
+    - Team to create a report and review the report on quaterly basis
   - Melissa to bring up 5790
+    - Comment updated in ZenHub
+  - Dependency for Payment Release
+    - AMit and Melissa to scan their dependency list and flag "Must" have ones to LInda and Jyoti by Monday so that it can be accomodated in the next Sprint(46)
   - Having all the OCM taks on ZenHub and tagging it to release
+    - All Agreed. No concerns from anyone.
 ----
 Dec 11, 2021
 ----
