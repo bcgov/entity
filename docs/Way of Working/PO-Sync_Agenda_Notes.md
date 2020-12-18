@@ -15,6 +15,7 @@ Dec 18, 2021
   - NR issues with payment. We can discuss how we handle dependencies for existing endpoints to ensure the implementation of what is already built is captured
   - Update on the Card Reader retirement
   - Auditing 'no fee' payments has been raised a gap in our financial controls by the auditor.
+  - Melissa to bring up 5790
 ----
 Dec 11, 2021
 ----
