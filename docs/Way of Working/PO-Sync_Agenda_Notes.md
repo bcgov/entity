@@ -14,7 +14,7 @@ Dec 18, 2021
   - Not getting cloud access will impact how we store data and its associated costs. It is and will continue to impact creating a full data lake service.
   - NR issues with payment. We can discuss how we handle dependencies for existing endpoints to ensure the implementation of what is already built is captured
   - Update on the Card Reader retirement
-
+  - Auditing 'no fee' payments has been raised a gap in our financial controls by the auditor.
 ----
 Dec 11, 2021
 ----
