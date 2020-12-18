@@ -16,6 +16,7 @@ Dec 18, 2021
   - Update on the Card Reader retirement
   - Auditing 'no fee' payments has been raised a gap in our financial controls by the auditor.
   - Melissa to bring up 5790
+  - Having all the OCM taks on ZenHub and tagging it to release
 ----
 Dec 11, 2021
 ----
