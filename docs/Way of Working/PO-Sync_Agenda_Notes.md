@@ -7,6 +7,13 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Jan 12, 2021
 ----
 1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
+----
+Dec 18, 2021
+----
+  - IAAS has communicated they may not be able to get signoff on Registries and CAS's FRCR in time for January 17 risk date. As we expand services there is a risk we won’t have enough memory available to run apps efficiently.
+  - Not getting cloud access will impact how we store data and its associated costs. It is and will continue to impact creating a full data lake service.
+  - NR issues with payment. We can discuss how we handle dependencies for existing endpoints to ensure the implementation of what is already built is captured
+  - Update on the Card Reader retirement
 
 ----
 Dec 11, 2021
