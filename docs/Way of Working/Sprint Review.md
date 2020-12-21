@@ -26,8 +26,6 @@ Description - ticket_number - presenter - <duration> mins
 
 ----
 -----------------------------------------------------------------------------------------------------------------------
----- TEMPLATE ----
-
 
 ### Dec 22 , 2020 - Sprint (Milestone) 45 - 55 min. total 
 ----
