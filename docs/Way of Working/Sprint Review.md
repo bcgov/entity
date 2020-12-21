@@ -27,6 +27,28 @@ Description - ticket_number - presenter - <duration> mins
 ----
 -----------------------------------------------------------------------------------------------------------------------
 ---- TEMPLATE ----
+
+
+### Dec 22 , 2020 - Sprint (Milestone) 45 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+Description - ticket_number - presenter - <duration> mins
+#### Name Request
+Description - ticket_number - presenter - <duration> mins
+#### Relationships
+ Masking account number for PAD- 5514 - Amit 5 mins
+ Masking account number on confirmation letter - 5563 - Amit 5 mins
+ Payment changes from PAD to BCOL and reverse - 5064 & 5095 - Loren
+ 
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+
+
 ### Dec 8 , 2020 - Sprint (Milestone) 44 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
