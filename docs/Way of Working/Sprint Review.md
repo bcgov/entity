@@ -33,14 +33,13 @@ Description - ticket_number - presenter - <duration> mins
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
-#### Entities
-Description - ticket_number - presenter - <duration> mins
-#### Name Request
-Description - ticket_number - presenter - <duration> mins
+#### Entities/Name Request
+- Quick Search demo - Kaine
+
 #### Relationships
- Masking account number for PAD- 5514 - Amit 5 mins
- Masking account number on confirmation letter - 5563 - Amit 5 mins
- Payment changes from PAD to BCOL and reverse - 5064 & 5095 - Loren
+- Masking account number for PAD- 5514 - Amit 5 mins
+- Masking account number on confirmation letter - 5563 - Amit 5 mins
+- Payment changes from PAD to BCOL and reverse - 5064 & 5095 - Loren
  
 
 #### Action Items:
