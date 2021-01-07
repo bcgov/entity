@@ -4,10 +4,12 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
-Jan 12, 2021
+Jan 15, 2021
 ----
 1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
 2. NRO Dependency on government accounts
+3. Appetitie for onboarding any provate partners
+4. Move the password reset epic before Journal Voucher
 ----
 Dec 18, 2021
 ----
