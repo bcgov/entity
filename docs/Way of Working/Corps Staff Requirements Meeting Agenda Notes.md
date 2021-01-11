@@ -51,7 +51,8 @@ Nov 24th, 2020
 - Forms? (email)
 
 ----
-Dec 1st, 2020
+Jan 12, 2021
 ----
-[Notes]
-- 
+[Notes] (see requirements docs)
+- Co-op AGM again for clarification! ([solution doc](https://docs.google.com/document/d/14odOBr4XUp_kPeWu7jk--6JEfmmFFagxy5eseRjFPc0/edit?usp=sharing))
+- Staff comments initial discussion ([requirements](https://docs.google.com/document/d/1n7F_l053a6OSt3yhOWJ0sJ1KivlOW6YSDgbjg0kSFb4/edit?usp=sharing))
