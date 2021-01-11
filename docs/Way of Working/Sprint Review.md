@@ -34,7 +34,14 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 - 
 
 #### Relationships
-- 
+- Generate email to account adminswhen change is made to team members - 5894 Melissa
+- Change BCOl Help and BCOL Admin to read only for most account details - 593 Melissa
+- Email notification of PAD to account admins - 5564 Amit
+- Email notification when PAD confirmation period is over - 5352 Amit
+- Update UI for selecting basic or premium account - 5722 Melissa
+- Generate and download invoice Online Banking -5799 Melissa
+- Dont allow Online Banking for basic users for Name Requests - 5490 Melissa
+
  
 
 #### Action Items:
