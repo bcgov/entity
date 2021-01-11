@@ -26,7 +26,23 @@ Description - ticket_number - presenter - <duration> mins
 
 ----
 -----------------------------------------------------------------------------------------------------------------------
+----
+### Jan 12 , 2021 - Sprint (Milestone) 46 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
+#### Entities/Name Request
+- 
+
+#### Relationships
+- 
+ 
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+----
 ### Dec 22 , 2020 - Sprint (Milestone) 45 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
