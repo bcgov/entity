@@ -31,7 +31,7 @@ Description - ticket_number - presenter - <duration> mins
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities/Name Request
-- 
+- PPR API/Dev page - Thor - 10 mins
 
 #### Relationships
 - Generate email to account adminswhen change is made to team members - 5894 Melissa
