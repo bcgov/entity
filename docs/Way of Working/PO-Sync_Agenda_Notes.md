@@ -12,7 +12,8 @@ Jan 15, 2021
 4. Move the password reset epic before Journal Voucher
 5. Operationalize Refund process - Melissa
 6. Create payment reports on payments. Can show how many Online banking payments are made, cc, pad and bcol type of thing and get generated daily
-7. Disucss the PI Board update in the PO Sync - Jyoti
+7. Discuss the PI Board update in the PO Sync - Jyoti
+8. We need to figure out a plan for Ops tickets across all teams - Jason
 ----
 Dec 18, 2021
 ----
