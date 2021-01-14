@@ -62,3 +62,11 @@ Jan 12, 2021
 - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/5686
 - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/5773
 - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/5976
+
+----
+Jan 19, 2021
+----
+Notes (see requirements docs)
+- Withdrawal, and edge cases ([requirements]())
+- Ops tickets
+- 
