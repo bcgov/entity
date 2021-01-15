@@ -6,15 +6,27 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Jan 15, 2021
 ----
-1. Jyoti to bring the CM topic again in the PO Sync, action item from Oct 9th meeting
-2. NRO Dependency on government accounts
-3. Appetitie for onboarding any provate partners
-4. Move the password reset epic before Journal Voucher
-5. Operationalize Refund process - Melissa
-6. Create payment reports on payments. Can show how many Online banking payments are made, cc, pad and bcol type of thing and get generated daily
-7. Discuss the PI Board update in the PO Sync - Jyoti
-8. We need to figure out a plan for Ops tickets across all teams - Jason
-9. Requests for “FR CR Reviews” - Jason
+1.  Discuss the PI Board update in the PO Sync - Jyoti
+    - NRO Dependency on government accounts
+      - This still has to be figured out
+    - Appetitie for onboarding any Public partners
+      - Earliest is April(Vital Stats)
+    - Move the password reset epic before Journal Voucher
+      - JV has to be done early, because of time it gets to complete  the FRCR Review
+1. Operationalize Refund process - Melissa
+    1. We need to figure out a plan for Ops tickets across all teams - Jason
+      - There are number of channels through which Refund requests are coming in
+      - Every refund item would be tagged in a ticket
+      - If the colume continue, BA's can work on the Phython noteboook
+      - If the volume increases, create a feature in Name Request for sending email to CAS and ITOPS
+1. Create  reports on payments. Can show how many Online banking payments are made, cc, pad and bcol type of thing and get generated daily
+      - Amit/Melissa to work with Steven using jupiter Notebook
+1. Requests for “FR CR Reviews” - Jason
+1. Dependency Tickets
+  - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/5331
+    - To bring the topic again with team - Jason
+  - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/5801
+    - Jyoti to book a meeting across dev teams
 ----
 Dec 18, 2021
 ----
