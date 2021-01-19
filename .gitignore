@@ -117,3 +117,4 @@ e2e/tests_output
 /**/.idea/*
 .idea/*
 e2e/local.log
+.history
