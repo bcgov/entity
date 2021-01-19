@@ -70,3 +70,4 @@ Notes (see requirements docs)
 - Withdrawal, and edge cases ([requirements]())
 - Ops tickets
 - Review self serve alteration process ([requirements](https://docs.google.com/document/d/1eE5RgrpJpydaNBOAOO6jlt3K6aamRcDTNHCxOVprwO8/edit?usp=sharing))
+- COOP AGM new designs
