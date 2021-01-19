@@ -67,7 +67,9 @@ Jan 12, 2021
 Jan 19, 2021
 ----
 Notes (see requirements docs)
-- Withdrawal, and edge cases ([requirements]())
-- Ops tickets
 - Review self serve alteration process ([requirements](https://docs.google.com/document/d/1eE5RgrpJpydaNBOAOO6jlt3K6aamRcDTNHCxOVprwO8/edit?usp=sharing))
-- COOP AGM new designs
+- Staff comments designs
+- COOP AGM new designs ([design ticket](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/5379))
+- Ops tickets
+- Withdrawal, and edge cases ([requirements](https://docs.google.com/document/d/1HhOVry-u5Y7Q3Bh5UJVe-t3X_5Dx33YCg5cXecT3C9c/edit?usp=sharing))
+
