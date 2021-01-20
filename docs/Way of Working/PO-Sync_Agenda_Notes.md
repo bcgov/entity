@@ -4,6 +4,12 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Jan 22, 2021
+----
+1. Registries audit scan - Linda
+1. Post martum on how to deal with Prod issues in future
+1. 
+----
 Jan 15, 2021
 ----
 1.  Discuss the PI Board update in the PO Sync - Jyoti
