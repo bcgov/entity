@@ -31,9 +31,15 @@ Changes required in annual_report validation and get todo task.
 
     Example: Filing an ar for 2020 on 2021 Aug 15th the `last_filing_ar` will set to 2021 Aug 15th, when user tries to file an ar for the year 2021 the existing validation restrict to file on or before 2022 Aug 15th. Based on the requirement user cannot file after 2022 Apr 30. For the first time filer has same kind of issue. If the founding date is 2020 Jan 15th and trying to file on Mar 15th, the validation restrict to file after 2021 Jan 15th
 
-  - In todo task `todo_start_date` is calculating in the same logic as above (by adding 1 year). This will fail in the upcomming year.
-    min and max date has to be provided with todo task (props in header) to reduce calculation in front end.
-    if user select "we did not hold an AGM" the ar_date will set to Dec 31st (existing functionality)
+  - In todo task `todo_start_date` is calculating in the same logic as above (by adding 1 year). This will fail in the upcomming year.    
+
+  - Add a new column `next_ar_year` into Business table. For existing business update value with the year + 1 of last_ar_date (since all the existing ar filing is filed in the same year) or year of founding_date.
+    calculate `min_date` and `max_date` from `next_ar_year`, that has to be provided with todo task (props in header) to centralize logic.
+    if user select "we did not hold an AGM" the ar_date will set to Dec 31st (existing functionality) 
+    
+    `min_date` is always `next_ar_year`-01-01 or `last_filing_ar` + 1 day, which ever is greater
+
+    if `next_ar_year` is 2020 then `max_date` will be `next_ar_year`-09-30 else `next_ar_year`-04-30 
 
 # Drawbacks
 
