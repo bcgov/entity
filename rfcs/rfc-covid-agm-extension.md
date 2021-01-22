@@ -33,15 +33,15 @@ Changes required in annual_report validation and get todo task.
 
   - In todo task `todo_start_date` is calculating in the same logic as above (by adding 1 year). This will fail in the upcomming year.    
 
-  - Add a new column `next_ar_year` into Business table. For existing business update value with the year + 1 of last_ar_date (since all the existing ar filing is filed in the same year) or year of founding_date.
-    calculate `min_date` and `max_date` from `next_ar_year`, that has to be provided with todo task (props in header) to centralize logic.
-    if user select "we did not hold an AGM" the ar_date will set to Dec 31st (existing functionality) 
+  - Add a new column `last_ar_year` into Business table. For existing business update value with the year of last_ar_date (since all the existing ar filing is filed in the same year) or null.
+    calculate `ar_min_date` and `ar_max_date` from `last_ar_year`, that has to be provided with todo task (props in header) to centralize logic.
+    if user select "we did not hold an AGM" the `ar_date` will set to Dec 31st (existing functionality) 
     
-    `min_date` is always `next_ar_year`-01-01 or `last_ar_date` + 1 day, which ever is greater
+    `ar_min_date` is always `last_ar_year`-01-01 or `last_ar_date`, which ever is greater
 
-    if `next_ar_year` is 2020 then `max_date` will be `next_ar_year`-09-30 else `next_ar_year`-04-30 
+    if `last_ar_year` is 2020 then `ar_max_date` will be `last_ar_year`-10-31 else `last_ar_year`-04-30 
 
-    update `next_ar_year` in ar filing (entity_filer)
+    update `last_ar_year` in ar filing (entity_filer)
 
 # Drawbacks
 
