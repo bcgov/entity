@@ -7,10 +7,50 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Jan 22, 2021
 ----
 1. Registries audit scan - Linda
+    - IMB and MISO have recommended annual scan of application
+    - We provide test URL and the tool runs through application
+    - Tool looks for vulnerability
+    - Scan takes about a day(overnight)
+    - Proposed date for Scannig - 20th and 21st Feb
+    - If on weekdays - 22nd and 23rd as proposed date
+    - Amit to send the proposed date
+    - Relationship to handle the disabling of MFA during the scan period
 1. Post martum on how to deal with Prod issues in future
-1. Manual API vs Automated API
-1. Business registry Page work
+    - Thor and Sumesh to look at scanning to know before hand when application is broken
+        - Task this to SRE group and ask them to present option in next PO sync
+    - Options:
+        - Constant monitoring 
+        - Have a prioritized(pre-defined)group for sending payment related issues
+        - For Any P1, IT OPS to highlight the Priority/Severity
+            - Update the distribution list which IT OPS sent for P1 issues
+                - Distribution list:
+                 - Business Owner,BA, Key Dev's
+                 - Update the existing Distribution list For outages of Modernized app
+                    - Melissa, Trish and Sienna to action this.
+                - Jump on to a call when its P1
+        - Teams channel for discussing NR related ticket.
+            - Channel should be closed by end of Next Sprint
+            - Trish to handle this part
+1. NR Refunds
+    - Linda to send a communincation to Sinead
+    - MOre stuff to do for Linda
+    - Confirm with Thor - what status we are leaving the resuest in?
+1. How the Pro data users access the API: Manual vs Automated 
+    - Nice to have the automated access. The money spent is not worth for the number of users
+    - Is there another way to do this which saves us the cost? - Thor and Sumesh to look into this. Note that this is not the current scope of PI
+    - Meeting with Thor, Sumesh, Kaine and Loren for this- Jyoti to book the meeting early next week
+1. BC Registry Page work
+    - We have a header for Product selector(currently featuer flagged) - This can stay as feature flagged
+    - Go ahead with Simpler design with the products which we have launched or we are going to launch(PPR, Busines Registry and Vital Stats)
+        - Check with Ian A in the release plannig meeting that we wont be using it for Marketing
+        - When is this suppose to go-live? 
+            - to Discuss with Kaine in NExt PO Sync
+            - Are the BReadcrumbs common component? - Linda to ask Scott
+            - Breadcrumbs need to be updated from BC Regitry to other page
 1. Updating the milestones on the roadmap(unclog bigger milestones)
+    - Jyoti to bring this up after Long term planning in PO Sync
+1. For long term planning
+    - Loren team to do some research on One Stop and FAS
 ----
 Jan 15, 2021
 ----
