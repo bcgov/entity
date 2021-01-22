@@ -8,7 +8,9 @@ Jan 22, 2021
 ----
 1. Registries audit scan - Linda
 1. Post martum on how to deal with Prod issues in future
-1. 
+1. Manual API vs Automated API
+1. Business registry Page work
+1. Updating the milestones on the roadmap(unclog bigger milestones)
 ----
 Jan 15, 2021
 ----
