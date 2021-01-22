@@ -73,3 +73,7 @@ Notes (see requirements docs)
 - Ops tickets
 - Withdrawal, and edge cases ([requirements](https://docs.google.com/document/d/1HhOVry-u5Y7Q3Bh5UJVe-t3X_5Dx33YCg5cXecT3C9c/edit?usp=sharing))
 
+----
+Jan ? 2021
+
+- https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/6251
