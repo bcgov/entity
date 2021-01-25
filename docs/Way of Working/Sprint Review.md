@@ -32,10 +32,12 @@ Description - ticket_number - presenter - <duration> mins
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-Description - ticket_number - presenter - <duration> mins
-#### Name Request
-Description - ticket_number - presenter - <duration> mins
- 
+- Alterations to name and business type - Cameron
+- Submission Details Refresh and flow - 5782 & 5858 - Kaine
+- Priority Fees shows NO in the Summary even if its selected Yes - 5807 - Linda 
+- Manually setting expiry date can be off by 1 day - 5840 - Linda
+- Update co-op AGM (if completed today - 6197 - Severin 
+
 #### Relationships
 - Account info UI for old basic account - 5780 - Melissa 
 - Email notifications for Online Banking - 4895 - Melissa
