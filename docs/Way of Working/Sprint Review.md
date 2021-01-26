@@ -36,7 +36,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 - Submission Details Refresh and flow - 5782 & 5858 - Kaine
 - Priority Fees shows NO in the Summary even if its selected Yes - 5807 - Linda 
 - Manually setting expiry date can be off by 1 day - 5840 - Linda
-- Update co-op AGM (if completed today - 6197 - Severin 
+- Update co-op AGM - 6197 - Severin 
 
 #### Relationships
 - Account info UI for old basic account - 5780 - Melissa 
@@ -45,6 +45,9 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 - Form for managing admin on behalf of client - 5939 - Melissa
 - CFS is down when PAD is created - 5440 - Sumesh
 
+#### Assets
+- PPR Search by Serial Number Wire Frame - Scott
+- PPR Back end work for Search – Bob
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
