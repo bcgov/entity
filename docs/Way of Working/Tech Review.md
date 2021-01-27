@@ -3,7 +3,9 @@
 Agenda and description re Tech Review see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 ----
-## Aug, 19th, 2020
+## Feb, 10th, 2021
+----
+- Severin is going to demo his research work
 
 ----
 ## Aug, 5th, 2020
