@@ -4,27 +4,18 @@ about: Owned by the Product Owner with buyin from the team, definining when a Us
 
 ---	
 
-These are standards to which there can be exceptions though they require buy-in from the team.
+These are standards to which there can be exceptions though they require buy-in from the team. This state should be the outcome of Backlog Grooming.
+
 
 **DoR - for each User Story**
   
 - [ ] Are the Acceptance Criteria defined?
-- [ ] Are the dependencies known/ understood?
+- [ ] Does the user story speak to the value being created, and is understood by the team?
+- [ ] Are the dependencies known/ understood? (to the our best knowledge)
 - [ ] Is this user story small enough to be completed in one Sprint?
-- [ ] Dev team accepts UI artifacts? (this is design docs)
-
-Optional:
-- [ ] Do we know the audience to demo a user story/ feature? (Sprint Review to all Stakeholders)
-- [ ] If there are validation/ business rules, are they defined (UI, Data, Role-Action)?
-- [ ] Dev team accepts UI artifacts? (this is design docs)
-- [ ] Does User Story need to reference BA-checklist? (are functional/ non-functional descriptions captured?)
-- [ ] What do we possibly have to do re Change Management? - e.g. GCPE, training, do we know who is impacted and what that impact is? (this might fit in DoD, or Epic template)
-
-Removed:
-- [ ] Is a formal UAT required for this User Story?
+- [ ] Dev team accepts UI artifacts? (visual UX designs ready to go)
+- [ ] Is it clear whether this work is intended for deploy or limited/staged-release?
 
 
-
-**DoR for UX/ Design** 
-
+**DoR - for UX/ Design** 
 
