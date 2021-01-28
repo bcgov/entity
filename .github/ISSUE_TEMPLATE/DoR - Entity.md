@@ -1,6 +1,6 @@
 ---	
 name: Definition of Ready - Entities Team
-about: Owned by the Product Owner with buyin from the team, these criteria define when a User Story is ready to be worked on. This state should be the outcome of Backlog Grooming and any exceptions where a ticket doesn't meet this criteria will require buy-in from the scrum team as a whole.
+about: This state should be the outcome of Backlog Grooming. Any exceptions where a ticket doesn't meet this criteria requires buy-in from the scrum team as a whole.
 
 ---	
 
