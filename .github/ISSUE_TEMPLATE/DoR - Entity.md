@@ -14,7 +14,3 @@ about: This state should be the outcome of Backlog Grooming. Any exceptions wher
 - [ ] Is this user story small enough to be completed in one Sprint?
 - [ ] Dev team accepts UI artifacts? (visual UX designs ready to go)
 - [ ] Is it clear whether this work is intended for deploy or limited/staged-release?
-
-
-**Definition of Ready - UX/ Design** 
-
