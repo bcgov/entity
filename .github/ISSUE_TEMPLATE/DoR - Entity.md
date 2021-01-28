@@ -1,13 +1,12 @@
 ---	
 name: Definition of Ready - Entities Team
-about: Owned by the Product Owner with buyin from the team, definining when a User Story is ready to be worked on
+about: Owned by the Product Owner with buyin from the team, these criteria define when a User Story is ready to be worked on. This state should be the outcome of Backlog Grooming and any exceptions where a ticket doesn't meet this criteria will require buy-in from the scrum team as a whole.
 
 ---	
 
-These are standards to which there can be exceptions though they require buy-in from the team. This state should be the outcome of Backlog Grooming.
 
 
-**DoR - for each User Story**
+**Definition of Ready - User Story**
   
 - [ ] Are the Acceptance Criteria defined?
 - [ ] Does the user story speak to the value being created, and is understood by the team?
@@ -17,5 +16,5 @@ These are standards to which there can be exceptions though they require buy-in 
 - [ ] Is it clear whether this work is intended for deploy or limited/staged-release?
 
 
-**DoR - for UX/ Design** 
+**Definition of Ready - UX/ Design** 
 
