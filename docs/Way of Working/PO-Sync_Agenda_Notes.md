@@ -7,8 +7,12 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Jan 29, 2021
 ----
-1. https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/6236
-1. 
+1. Long term planning readiness for Monday Morning
+1. PI Planning Delivery readiness
+1. Modernization Status report
+1. Credit card discussion
+1. Dependency ticket: https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/6236
+
 ----
 Jan 22, 2021
 ----
