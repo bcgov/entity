@@ -84,5 +84,5 @@ Jan 26, 2021
 ----
 feb 2nd, 2021
 ----
-- Freeze a company in the new system
+- Freeze a company in the new system ([requirements doc](https://docs.google.com/document/d/1Hfw37sp_ZftMd_u1PpxAivTkK6yhXHRxC4sQl_eBrzg/edit?usp=sharing)
 - 
