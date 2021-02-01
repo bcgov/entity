@@ -3,6 +3,12 @@
 Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
+----
+Feb 05, 2021
+----
+1. PI Planning Delivery readiness
+1. Do we have a plan B in case Open Shift upgrade work goes away? - From release planning meeting
+1. Relevant Risks and Action items from PI planning
 
 ----
 Jan 29, 2021
