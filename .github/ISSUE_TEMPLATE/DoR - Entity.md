@@ -4,9 +4,7 @@ about: This state should be the outcome of Backlog Grooming and ensures the tick
 
 ---	
 
-
-
-**Definition of Ready - User Story**
+**Definition of Ready for Sprint - User Story**
   
 - [ ] Are the Acceptance Criteria defined?
 - [ ] Does the user story speak to the value being created, and is understood by the team?
