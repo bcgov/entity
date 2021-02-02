@@ -9,6 +9,7 @@ Feb 05, 2021
 1. PI Planning Delivery readiness
 1. Do we have a plan B in case Open Shift upgrade work goes away? - From release planning meeting
 1. Relevant Risks and Action items from PI planning
+1. How to highlight the value of the story to the stakeholders in the PI Meeting
 
 ----
 Jan 29, 2021
