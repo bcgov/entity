@@ -5,7 +5,7 @@ about: Team owned document to define when a User Story is done
 
 ---
 
-**DoD - for all User Stories**
+**Definition of Done - for all User Stories**
 - [ ] Add/ maintain selectors for unit tests and QA purposes
 
 - [ ] Peer review has been completed (all tests passed)
