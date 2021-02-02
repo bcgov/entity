@@ -10,6 +10,7 @@ Feb 05, 2021
 1. Do we have a plan B in case Open Shift upgrade work goes away? - From release planning meeting
 1. Relevant Risks and Action items from PI planning
 1. How to highlight the value of the story to the stakeholders in the PI Meeting
+1. Creating a ticket to show some messages in intercept UI, this case also can be added there if the UX agrees. - Payment issues
 
 ----
 Jan 29, 2021
