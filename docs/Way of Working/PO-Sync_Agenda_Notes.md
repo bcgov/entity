@@ -11,6 +11,8 @@ Feb 05, 2021
 1. Relevant Risks and Action items from PI planning
 1. How to highlight the value of the story to the stakeholders in the PI Meeting
 1. Creating a ticket to show some messages in intercept UI, this case also can be added there if the UX agrees. - Payment issues
+1. Credit card messaging
+1. Pay BC SLA
 
 ----
 Jan 29, 2021
