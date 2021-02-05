@@ -4,16 +4,26 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Feb 12, 2021
+----
+1. Relevant Risks and Action items from PI planning
+----
 Feb 05, 2021
 ----
 1. PI Planning Delivery readiness
+    - Looks good for next 2 sprints for both the team, Plan is updated.
 1. Do we have a plan B in case Open Shift upgrade work goes away? - From release planning meeting
-1. Relevant Risks and Action items from PI planning
-1. How to highlight the value of the story to the stakeholders in the PI Meeting
+    - This work has to be done no matter when, so no requirement of Plan B
+    - Linda to check with Richard and Patrick around creating a checklist in Zenhub
 1. Creating a ticket to show some messages in intercept UI, this case also can be added there if the UX agrees. - Payment issues
 1. Credit card messaging
+    - Scott and Roy to discuss Payment intercept messaging
 1. Pay BC SLA
-
+    - Loren to add the feedback from Kaine, Melissa and Ian, circle it back to the team and then take it to Carol on Monday.
+1. Staff Comment Quick Demo
+    - Add this in the tech review topic
+1. Ticket added To create the URL's
+    - SRE team to take it further
 ----
 Jan 29, 2021
 ----
