@@ -38,6 +38,12 @@ None.
 
 Each of these have good documentation and look easy to implement as well, but have drawbacks:
 
+Cheetah Grid
+  - Very fast (could load 1000000 records if needed), but we only need to load up to 1000 quickly so unnecessary
+  - Unsure when they will be moving to Vue 3
+  - More difference than what we already have implemented in other apps
+
+
 vue-good-table
   - Would require extra work to migrate to Vue 3 (so far no Vue 3 support has been posted)
   - More difference than what we already have implemented in other apps
