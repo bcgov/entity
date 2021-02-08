@@ -84,5 +84,7 @@ Jan 26, 2021
 ----
 feb 2nd, 2021
 ----
+- Alteration notice output designs (link!!)
+- Draft alterations - If staff start a draft, can a client pick it up? Or if staff start it, should only staff be able to cancel/finish it?([Requirements](https://docs.google.com/document/d/1eE5RgrpJpydaNBOAOO6jlt3K6aamRcDTNHCxOVprwO8/edit?usp=sharing))
 - Freeze a company in the new system ([requirements doc](https://docs.google.com/document/d/1Hfw37sp_ZftMd_u1PpxAivTkK6yhXHRxC4sQl_eBrzg/edit?usp=sharing)
-- 
+- Society NRs - should you be able to edit them? (you currently can edit a society NR in the new name request app, and it reflects in societies online)
