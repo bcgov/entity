@@ -35,8 +35,8 @@ Description - ticket_number - presenter - <duration> mins
 #### Name Request
 Description - ticket_number - presenter - <duration> mins
 #### Relationships
-Payment when you have a credit - Loren
-Provide administrators the ability to remove other admins - Loren
+- Payment when you have a credit - Loren
+- Provide administrators the ability to remove other admins - Loren
 
 
 #### Action Items:
