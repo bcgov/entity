@@ -24,6 +24,25 @@ Description - ticket_number - presenter - <duration> mins
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 
+-----------------------------------------------------------------------------------------------------------------------
+---- TEMPLATE ----
+### Feb 09, 2020 - Sprint (Milestone) 48 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+Description - ticket_number - presenter - <duration> mins
+#### Name Request
+Description - ticket_number - presenter - <duration> mins
+#### Relationships
+Payment when you have a credit - Loren
+Provide administrators the ability to remove other admins - Loren
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
 
 
 -----------------------------------------------------------------------------------------------------------------------
