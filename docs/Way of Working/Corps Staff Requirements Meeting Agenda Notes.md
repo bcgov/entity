@@ -85,6 +85,8 @@ Jan 26, 2021
 feb 9th, 2021
 ----
 - Historical Co-ops int he new system
+- Co-op Restorations - filing outstanding ARs (process clarification)
+- Self-serve alteration overview - would you like a refresher?
 - Alteration notice output designs ([design ticket](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/6402))
 - Draft alterations - If staff start a draft, can a client pick it up? Or if staff start it, should only staff be able to cancel/finish it?([Requirements](https://docs.google.com/document/d/1eE5RgrpJpydaNBOAOO6jlt3K6aamRcDTNHCxOVprwO8/edit?usp=sharing))
 - Freeze a company in the new system ([requirements doc](https://docs.google.com/document/d/1Hfw37sp_ZftMd_u1PpxAivTkK6yhXHRxC4sQl_eBrzg/edit?usp=sharing))
