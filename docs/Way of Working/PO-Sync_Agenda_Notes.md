@@ -7,6 +7,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Feb 12, 2021
 ----
 1. Relevant Risks and Action items from PI planning
+1. Design walkthrough for PAD Reciepts - Melissa to walk through
 ----
 Feb 05, 2021
 ----
