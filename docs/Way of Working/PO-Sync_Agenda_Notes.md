@@ -9,6 +9,7 @@ Feb 12, 2021
 1. Relevant Risks and Action items from PI planning
 1. Design walkthrough for PAD Reciepts - Melissa to walk through
 1. Planning Open Shift platform operation in the sprint
+1. Staff calendar of events, for all projects
 ----
 Feb 05, 2021
 ----
