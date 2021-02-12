@@ -30,10 +30,19 @@ Description - ticket_number - presenter - <duration> mins
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
-#### Entities
-Description - ticket_number - presenter - <duration> mins
-#### Name Request
-Description - ticket_number - presenter - <duration> mins
+### Assets:
+
+  *   Scott to present the design
+  *   Kial to Demo the Search
+  
+### Entities:
+  *   Linda - Staff comments
+  *   Linda - Download PDFs
+  *   Linda - New link on Registries page to refer people to the static benefits company page
+  *   Linda - Name Request Sole Proprietor indicator
+  *   Cameron - Updated fee summary with actions
+  *   Cameron - Summary review page in alterations
+  
 #### Relationships
 - Payment when you have a credit - Loren
 - Provide administrators the ability to remove other admins - Loren
