@@ -4,12 +4,38 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Feb 19, 2021
+----
+- Jamstack for Business Registry
+    - Is Jamstack capable enough to know that status of user? - Jyoti to check with Thor for next PO Sync
+----
 Feb 12, 2021
 ----
-1. Relevant Risks and Action items from PI planning
 1. Design walkthrough for PAD Reciepts - Melissa to walk through
-1. Planning Open Shift platform operation in the sprint
+    - "Payment Authorization" instead of "Payment Acknowledgement" 
+    - Linda to get the confirmation on giving the outputs right away after PAD payment confirmation
+    - Planned for Feb 21st
+    - Design links below:
+        - https://preview.uxpin.com/7943b481e252f700ef635c8f9a60fc76107cdba3#/pages/136315323/simulate/no-panels 
+        - https://preview.uxpin.com/7943b481e252f700ef635c8f9a60fc76107cdba3#/pages/136318897/simulate/no-panels
+        - https://preview.uxpin.com/7943b481e252f700ef635c8f9a60fc76107cdba3#/pages/136386649/simulate/no-panels
+        - https://preview.uxpin.com/7943b481e252f700ef635c8f9a60fc76107cdba3#/pages/136386561/simulate/no-panels
+1. Planning Open Shift platform migration in the sprint 50
+    - For Auth namespace migration - Lear and Names Space is dependency
+    - Linda to Talk to richard
 1. Staff calendar of events, for all projects
+    - Creating the Trello Board for looking into calendar view of releases and milestones
+1. Pending Payment Cleanup
+    - There are still some pending payments from Jan 9th
+    - Kaine/Thor are discussing some reporting options. We might tap into Sumesh time
+    - Linda to take a look at the pending data
+1. Staff Payment in Name Request - dependency for Sprint 50
+    - For Routing slip, there is no invoice since there is no connection with FAS
+    - If its BC Online Account - Whats going to happen?
+    - What about Premium Account - PAD payment setup?
+1. Relevant Risks and Action items from PI planning
+    - 
+1. PI Board - To see changes if any
 ----
 Feb 05, 2021
 ----
