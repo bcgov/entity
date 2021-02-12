@@ -13,7 +13,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 #### Entities
 Description - ticket_number - presenter - <duration> mins
-#### Name Request
+#### Assets
 Description - ticket_number - presenter - <duration> mins
 #### Relationships
 Description - ticket_number - presenter - <duration> mins
