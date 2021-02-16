@@ -97,6 +97,6 @@ Feb 16th, 2021
 ----
 [Meeting Notes](https://docs.google.com/document/d/1TmC8zyT5sbJCCQHHMm-WsQ9VttRqvSJeTqse_ru4RCk/edit?usp=sharing)
 - Freeze a company in the new system ([requirements doc](https://docs.google.com/document/d/1Hfw37sp_ZftMd_u1PpxAivTkK6yhXHRxC4sQl_eBrzg/edit?usp=sharing))
-- Society NRs - should you be able to edit them? (you currently can edit a society NR in the new name request app, and it reflects in societies online)
 - Review designs for Registrar’s Notation, Court Order, Registrar’s Order
+- Society NRs - should you be able to edit them? (you currently can edit a society NR in the new name request app, and it reflects in societies online)
 - Co-op Incorporation, what do you examine in the Rules and Memorandum?
