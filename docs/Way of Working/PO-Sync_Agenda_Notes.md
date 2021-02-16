@@ -8,6 +8,7 @@ Feb 19, 2021
 ----
 - Jamstack for Business Registry
     - Is Jamstack capable enough to know that status of user? - Jyoti to check with Thor for next PO Sync
+- Usage of Custom V2 - are we heading in the right direction?
 ----
 Feb 12, 2021
 ----
