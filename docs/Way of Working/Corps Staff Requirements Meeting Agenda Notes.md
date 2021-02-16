@@ -84,6 +84,7 @@ Jan 26, 2021
 ----
 feb 9th, 2021
 ----
+[Meeting Notes](https://docs.google.com/document/d/1NuvgutY5aQRnNSqTD3lOo_JW9DW8-QCgnn2KNb8_nLQ/edit?usp=sharing)
 - Historical Co-ops in the new system
 - Co-op Restorations - filing outstanding ARs (process clarification)
 - Self-serve alteration overview - would you like a refresher?
