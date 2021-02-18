@@ -10,6 +10,8 @@ Feb 19, 2021
     - Is Jamstack capable enough to know that status of user? - Jyoti to check with Thor for next PO Sync
 - Usage of Custom V2 - are we heading in the right direction?
 - Rework on reciept work 
+- Home Page discussion
+- Kiane to walkthrough the NR flow(regarding the payment issues noted when NR is getting created but no payment is taken)
 ----
 Feb 12, 2021
 ----
