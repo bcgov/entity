@@ -6,13 +6,28 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Feb 19, 2021
 ----
+- Look into the high priority bug(6529)
+    -  Jyoti to bring forward in the standup meeting on Monday
+- **Hot Jar** - Kaine is working with Ian to get the approval. There might be some work for Relationship once its ready
 - Jamstack for Business Registry
-    - Is Jamstack capable enough to know that status of user? - Jyoti to check with Thor for next PO Sync
+    - Is Jamstack capable enough to know that status of user?
+    - Loren to update the question for Thor in the ticket for Business Registry home page
 - Usage of Custom V2 - are we heading in the right direction?
+    - Relationship uses the out of box Vuetify. Entities team have used some customization
+    - For having the consistency across the application, Vuetify has to be updated. 
+    - We should have a discussion if the team across need to update
+    - We need to identify which are the custom Vuetify components
+        - We can ask Genevieve to do this. Jyoti to reach out to Suzanne directly.
 - Rework on reciept work 
-- Home Page discussion
+    - Jyoti to bring this forward in UI/UX channel
+- BC Registry Home Page discussion
+    - Direction was to go through Home page for PPR
+    - Feature flag implementation is in place to restrict the access to 30 uers from Home page to PPR
 - Kaine to walkthrough the NR flow(regarding the payment issues noted when NR is getting created but no payment is taken)
-- Payment premium refund
+    - Name request is created right when the user clicks on the Create pyament
+- Premium Payment refund
+    - Whats will the button do?
+    - May be the button can be suppressed in the mean time 
 ----
 Feb 12, 2021
 ----
