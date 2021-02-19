@@ -100,3 +100,9 @@ Feb 16th, 2021
 - Review designs for Registrar’s Notation, Court Order, Registrar’s Order
 - Society NRs - should you be able to edit them? (you currently can edit a society NR in the new name request app, and it reflects in societies online)
 - Co-op Incorporation, what do you examine in the Rules and Memorandum?
+
+----
+Feb 23rd, 2021
+----
+- How many continuation ins do you get each month? How many are of each corp type?
+- 
