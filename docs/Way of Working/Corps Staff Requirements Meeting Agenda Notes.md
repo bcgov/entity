@@ -104,5 +104,8 @@ Feb 16th, 2021
 ----
 Feb 23rd, 2021
 ----
-- How many continuation ins do you get each month? How many are of each corp type?
-- 
+- **Continuation ins**:
+  - How many numbered continuation ins do you get each month?
+  - How many are of each corp type?
+  - Is there a legislated requirement for staff to review it? Or could the user just input the xpro info and _expiry date_ (of the consent letter to "continue out") on the home juridiction's consent letter? 
+ - **Credit union incorporation**
