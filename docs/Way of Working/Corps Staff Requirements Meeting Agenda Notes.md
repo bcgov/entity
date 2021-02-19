@@ -110,4 +110,6 @@ Feb 23rd, 2021
   - Is there a legislated requirement for staff to review it? Or could the user just input the xpro info and _expiry date_ (of the consent letter to "continue out") on the home juridiction's consent letter? 
  - **Credit union incorporation**:
    - Where can we find more requirements? Walk us though them?
-   - 
+ - **Letters patent**
+   -  When are they used to create a company?
+   -  Which entity type(s) does this filing apply to?
