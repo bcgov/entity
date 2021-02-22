@@ -104,13 +104,8 @@ Feb 16th, 2021
 ----
 Feb 23rd, 2021
 ----
+[Meeting Notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/WopiFrame.aspx?sourcedoc={27daab9f-a65a-4018-bff3-233f125d3c01}&action=editnew&Source=https%3A%2F%2Fcitz%2Esp%2Egov%2Ebc%2Eca%2Fsites%2FSBC%2FREG%2FProjects%2FMVSM%2FModernization%2520Docs%2FForms%2FAllItems%2Easpx%3FRootFolder%3D%252Fsites%252FSBC%252FREG%252FProjects%252FMVSM%252FModernization%2520Docs%252FEntities%2520Docs%252FEntities%2520Requirements%2520Gathering%2520Meetings%26FolderCTID%3D0x012000B818EF4733FA1245879E82E0E935EF33%26View%3D%257B73B5D7A3%252DD31E%252D4F84%252D8AEB%252D53B299B08647%257D)
 - **Continuation ins**:
-  - How many numbered continuation ins do you get each month?
-  - How many are of each corp type?
-  - Is there a legislated requirement for staff to review it? Or could the user just input the xpro info and _expiry date_ (of the consent letter to "continue out") on the home juridiction's consent letter? 
-  - 
- - **Credit union incorporation**:
-   - Where can we find more requirements? Walk us though them?
- - **Letters patent**
-   -  When are they used to create a company?
-   -  Which entity type(s) does this filing apply to?
+- **Credit union incorporation**:
+- **Letters patent**
+
