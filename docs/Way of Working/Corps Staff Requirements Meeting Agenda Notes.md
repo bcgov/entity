@@ -109,7 +109,7 @@ Feb 23rd, 2021
 - Credit union incorporation
 - Letters patent
 - Instead of freezing a company, let's make a manual process for alterations to unaffiliate the entity from the new app. (this reduces confusion between freeze and suspend, and low-value development)
-- Can we correct a correction?
+- Can we correct a correction? This came up from #6445
 
 ----
 Mar 2nd, 2021
