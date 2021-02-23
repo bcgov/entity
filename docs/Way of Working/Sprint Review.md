@@ -7,34 +7,6 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 
 -----------------------------------------------------------------------------------------------------------------------
 ---- TEMPLATE ----
-### Feb 23, 2020 - Sprint (Milestone) 49 - 55 min. total 
-----
-PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
-
-### Assets:
-
-  *   Scott to present the design
-  *   Kial to Demo the Search
-  
-### Entities:
-  *   Linda - Staff comments
-  *   Linda - Download PDFs
-  *   Linda - New link on Registries page to refer people to the static benefits company page
-  *   Linda - Name Request Sole Proprietor indicator
-  *   Cameron - Updated fee summary with actions
-  *   Cameron - Summary review page in alterations
-  
-#### Relationships
-- Staff manually suspend account - Melissa - 10 minutes
-- Search for affiliated business - Milan - 5 minutes
-
-
-#### Action Items:
-| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
-|---|----------------------|--------------------|-------------------------|
-
------------------------------------------------------------------------------------------------------------------------
----- TEMPLATE ----
 ### Month xx, 2020 - Sprint (Milestone) xx - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
@@ -49,11 +21,35 @@ Description - ticket_number - presenter - <duration> mins
 #### Relationships
 Description - ticket_number - presenter - <duration> mins
 
+#### Relationships
 
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
+
+-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+---- TEMPLATE ----
+### Feb 23, 2020 - Sprint (Milestone) 49 - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+### Assets:
+-
+  
+### Entities:
+-
+  
+#### Relationships
+- Staff manually suspend account - Melissa - 10 minutes
+- Search for affiliated business - Milan - 5 minutes
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
 
 -----------------------------------------------------------------------------------------------------------------------
 ---- TEMPLATE ----
