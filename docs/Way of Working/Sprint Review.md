@@ -13,6 +13,9 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 #### Entities
 Description - ticket_number - presenter - <duration> mins
+* Lear api bug - 6308 - Linda
+* UI changes for name request & contact information on alterations - Cameron - 5 mins
+
 #### Assets
 Description - ticket_number - presenter - <duration> mins
 #### Relationships
