@@ -114,3 +114,6 @@ Feb 23rd, 2021
 ----
 Mar 2nd, 2021
 ----
+
+- Dissolutions in general; CPs in particular
+-- Voluntary dissolutions create a ledger; administrative dissolution (registrar's purvue) and failure to file do not have ledger.  Any reason why we couldn't have a ledger added saying ADMINISTRATIVE DISSOLUTION or DISSOLVED FOR FAILURE TO FILE?  Devs say this would be helpful for restorations down the road.
