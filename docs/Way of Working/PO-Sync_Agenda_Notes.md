@@ -3,6 +3,20 @@
 Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
+
+----
+Feb 26, 2021
+----
+- PI plannign tracking
+    - Linda and Jyoti to update the release planning board wrt the changes on the PI board
+    - Linda to create a dependency ticket - 6651
+- (Trish) Name Request Support
+    - Suggested an approach for Contact us page. To provide a simplistic contact details based on their account type
+    - Can we remove the BC registry email with Service desk?
+    - Trish to create a ticket and have update from Olisa on the ticket
+- Operation process
+    - Jyoti to escalate the issues from PayBC
+- Project X - Ticket 3584
 ----
 Feb 19, 2021
 ----
