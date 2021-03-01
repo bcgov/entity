@@ -106,15 +106,16 @@ Feb 23rd, 2021
 ----
 [Meeting Notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/WopiFrame.aspx?sourcedoc={27daab9f-a65a-4018-bff3-233f125d3c01}&action=editnew&Source=https%3A%2F%2Fcitz%2Esp%2Egov%2Ebc%2Eca%2Fsites%2FSBC%2FREG%2FProjects%2FMVSM%2FModernization%2520Docs%2FForms%2FAllItems%2Easpx%3FRootFolder%3D%252Fsites%252FSBC%252FREG%252FProjects%252FMVSM%252FModernization%2520Docs%252FEntities%2520Docs%252FEntities%2520Requirements%2520Gathering%2520Meetings%26FolderCTID%3D0x012000B818EF4733FA1245879E82E0E935EF33%26View%3D%257B73B5D7A3%252DD31E%252D4F84%252D8AEB%252D53B299B08647%257D)
 - Continuation ins
-- Credit union incorporation
-- Letters patent
 - Instead of freezing a company, let's make a manual process for alterations to unaffiliate the entity from the new app. (this reduces confusion between freeze and suspend, and low-value development)
 - Can we correct a correction? This came up from #6445
 
 ----
 Mar 2nd, 2021
 ----
+[Meeting notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/WopiFrame.aspx?sourcedoc={e9d80190-f3b7-4643-b80f-6e24dab44fb0}&action=editnew&Source=https%3A%2F%2Fcitz%2Esp%2Egov%2Ebc%2Eca%2Fsites%2FSBC%2FREG%2FProjects%2FMVSM%2FModernization%2520Docs%2FForms%2FAllItems%2Easpx%3FRootFolder%3D%252Fsites%252FSBC%252FREG%252FProjects%252FMVSM%252FModernization%2520Docs%252FEntities%2520Docs%252FEntities%2520Requirements%2520Gathering%2520Meetings)
 - Can we correct a correction? This came up from #6445
-
+- Co-op Incorporation
+- Credit union incorporation
+- Letters patent
 - Dissolutions in general; CPs in particular
 -- Voluntary dissolutions create a ledger; administrative dissolution (registrar's purvue) and failure to file do not have ledger.  Any reason why we couldn't have a ledger added saying ADMINISTRATIVE DISSOLUTION or DISSOLVED FOR FAILURE TO FILE?  Devs say this would be helpful for restorations down the road.
