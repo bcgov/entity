@@ -6,7 +6,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Mar 05, 2021
 ----
-- Delay the release(Tris)
+- Scott and Jeremy to present the update on Homepage
 ----
 Feb 26, 2021
 ----
