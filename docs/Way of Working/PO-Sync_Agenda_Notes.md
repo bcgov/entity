@@ -7,6 +7,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Mar 05, 2021
 ----
 - Scott and Jeremy to present the update on Homepage
+- Review of proposed cross-team ops rotation to begin next sprint - Jason
 ----
 Feb 26, 2021
 ----
