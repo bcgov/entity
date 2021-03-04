@@ -9,6 +9,7 @@ Mar 05, 2021
 - Scott and Jeremy to present the update on Homepage
 - Review of cross-team ops rotation to begin next sprint - Jason
 - Sprint report out - Ian
+- Afflication history on Entity Dshboard - jyoti
 ----
 Feb 26, 2021
 ----
