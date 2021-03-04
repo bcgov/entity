@@ -15,6 +15,7 @@ Release Train Engineer
 * Invite to Sprint Review
 
 **Actions Required by New Member**
+* Github - Create Github account -  https://github.com/join - need this user ID and email to request access to OpenShift
 * OpenShift - Request GitHub access to the BCDevOps org (https://github.com/BCDevOps/devops-requests/issues) and then an admin for our namespace can approve it
 * ZenHub - Requires a github account with 2-factor authentication enabled and then anyone on the SRE team can provide access
 
