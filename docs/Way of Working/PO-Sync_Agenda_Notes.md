@@ -6,15 +6,29 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 Mar 05, 2021
 ----
-- PI Plannig tracking
+- PI Planning tracking
 - Scott and Jeremy to present the update on Homepage
     - Kaine to book a meeting for next Monday ie. Mar 8   
-- Review of cross-team ops rotation to begin next sprint - Jason
+
 - Sprint report out - Ian
 - Afflication history on Entity Dshboard - Jyoti
 - New Registries Ops channel 
 - Sprint with Us March 25&26 - Request for code evaluator
 - Items at the Lab
+- Review of cross-team ops rotation to begin next sprint - Jason
+*Government Employees - not Monday or Friday*
+Kial
+Meng
+Patrick
+Richard
+Stephen
+
+*Contractors*
+Greg - not Monday or Friday
+Sumesh
+Thor - not Friday
+
+
 ----
 Feb 26, 2021
 ----
