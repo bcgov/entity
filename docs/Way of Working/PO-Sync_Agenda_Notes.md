@@ -8,16 +8,25 @@ Mar 05, 2021
 ----
 - PI Planning tracking
 - Scott and Jeremy to present the update on Homepage
-    - Kaine to book a meeting for next Monday ie. Mar 8   
-
+    - Kaine to book a meeting for next Monday ie. Mar 8  
 - Sprint report out - Ian
 - Afflication history on Entity Dshboard - Jyoti
+    - Roy to work with Work With Scott on this
 - New Registries Ops channel 
+    - Chandra to work with SRE team on having a Github library for OPS work
 - Sprint with Us March 25&26 - Request for code evaluator
+    - Carol to decide on Patrick's availability
 - Items at the Lab
+    - All the Dev's need to take back their personal item
+    - Jyoti to connect with Loren on getting his stuff back 
 - Review of cross-team ops rotation to begin next sprint - Jason
-
-
+- UX alignment
+    - To have more alignment btween UX team
+    - Jyoti to book a meting with ROy and Kaine regarding Roy future work
+    - Jyoti and Kaine and Lind to meet with UX folks for alignment
+- Refund discussion for premium account
+    - Melissa to create a ticket and jyoti to have it groomed in our gorrming next week
+- NSF 
 ----
 Feb 26, 2021
 ----
