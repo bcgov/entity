@@ -16,17 +16,6 @@ Mar 05, 2021
 - Sprint with Us March 25&26 - Request for code evaluator
 - Items at the Lab
 - Review of cross-team ops rotation to begin next sprint - Jason
-*Government Employees - not Monday or Friday*
-Kial
-Meng
-Patrick
-Richard
-Stephen
-
-*Contractors*
-Greg - not Monday or Friday
-Sumesh
-Thor - not Friday
 
 
 ----
