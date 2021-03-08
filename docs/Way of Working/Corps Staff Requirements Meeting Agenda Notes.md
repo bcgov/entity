@@ -119,3 +119,10 @@ Mar 2nd, 2021
 - Letters patent
 - Dissolutions in general; CPs in particular
 -- Voluntary dissolutions create a ledger; administrative dissolution (registrar's purvue) and failure to file do not have ledger.  Any reason why we couldn't have a ledger added saying ADMINISTRATIVE DISSOLUTION or DISSOLVED FOR FAILURE TO FILE?  Devs say this would be helpful for restorations down the road.
+
+____
+Mar 9th, 2021
+----
+[Meeting notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/WopiFrame.aspx?sourcedoc={7b11f61e-c62f-4901-99db-a81bc409e571}&action=editnew&Source=https%3A%2F%2Fcitz%2Esp%2Egov%2Ebc%2Eca%2Fsites%2FSBC%2FREG%2FProjects%2FMVSM%2FModernization%2520Docs%2FForms%2FAllItems%2Easpx%3FRootFolder%3D%252Fsites%252FSBC%252FREG%252FProjects%252FMVSM%252FModernization%2520Docs%252FEntities%2520Docs%252FEntities%2520Requirements%2520Gathering%2520Meetings%26FolderCTID%3D0x012000B818EF4733FA1245879E82E0E935EF33%26View%3D%257B73B5D7A3%2DD31E%2D4F84%2D8AEB%2D53B299B08647%257D)
+- Alteration form changes
+- Keep adding to [this sheet](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/WopiFrame2.aspx?sourcedoc=%7Be2497718-7eb5-4f0e-aaf5-c0e1ca32c107%7D&action=edit&activeCell=%27Sheet1%27!K45&wdInitialSession=2b71b09f-b093-5062-d442-51415065383f&wdRldC=1)
