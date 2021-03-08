@@ -29,6 +29,33 @@ Description - ticket_number - presenter - <duration> mins
 |---|----------------------|--------------------|-------------------------|
 
 -----------------------------------------------------------------------------------------------------------------------
+---- TEMPLATE ----
+### March 09, 2021 - Sprint (Milestone) xx - 55 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Entities
+Description - ticket_number - presenter - <duration> mins
+* Lear api bug - 6308 - Linda
+* UI changes for name request & contact information on alterations - Cameron - 5 mins
+
+#### Relationships
+* Electronic Journal Voucher progress summary - Milan - <10 minutes>
+* Provide Clear Message on Result of Credit Card Payment - 6325 - Melissa <5 minutes>
+* Add visual for PAD Payment Method (void cheque) - 5537 - Faiz <5 minutes>
+* Add suspension reason dropdown in staff account suspension flow - 6472 - Melissa <2 minutes>
+
+#### Assets
+Description - ticket_number - presenter - <duration> mins
+
+
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+-----------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------
 ---- TEMPLATE ----
 ### Feb 23, 2020 - Sprint (Milestone) 49 - 55 min. total 
