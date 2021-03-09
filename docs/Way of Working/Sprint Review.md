@@ -13,8 +13,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 #### Entities
 Description - ticket_number - presenter - <duration> mins
-* Lear api bug - 6308 - Linda
-* UI changes for name request & contact information on alterations - Cameron - 5 mins
+
 
 #### Assets
 Description - ticket_number - presenter - <duration> mins
@@ -29,8 +28,8 @@ Description - ticket_number - presenter - <duration> mins
 |---|----------------------|--------------------|-------------------------|
 
 -----------------------------------------------------------------------------------------------------------------------
----- TEMPLATE ----
-### March 09, 2021 - Sprint (Milestone) xx - 55 min. total 
+
+### March 09, 2021 - Sprint(Milestone) 50 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
@@ -46,8 +45,7 @@ Description - ticket_number - presenter - <duration> mins
 * Add suspension reason dropdown in staff account suspension flow - 6472 - Melissa <2 minutes>
 
 #### Assets
-Description - ticket_number - presenter - <duration> mins
-
+* Log in, search business(using VON API), aircraft, manufactured homes etc… see results, pay go to dashboard - Kial
 
 
 
