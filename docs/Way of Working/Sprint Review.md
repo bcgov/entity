@@ -34,7 +34,6 @@ Description - ticket_number - presenter - <duration> mins
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-Description - ticket_number - presenter - <duration> mins
 * Lear api bug - 6308 - Linda
 * UI changes for name request & contact information on alterations - Cameron - 5 mins
 
