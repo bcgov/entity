@@ -10,6 +10,7 @@ Mar 12, 2021
 - Risk raised in Tri-weekly status report - Jyoti
 - Reciept design for PAD and other payment options - Jyoti
 - Namespace EDB Minio - Jyoti on Openshift migration
+- Reporting out for Digital investment office 
 ----
 Mar 05, 2021
 ----
