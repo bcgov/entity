@@ -8,9 +8,12 @@ Mar 12, 2021
 ----
 - PI planning tracking
 - Risk raised in Tri-weekly status report - Jyoti
+    -  Jyoti to check with Kiane on his inputs
 - Reciept design for PAD and other payment options - Jyoti
 - Namespace EDB Minio - Jyoti on Openshift migration
-- Reporting out for Digital investment office 
+-   - jyoti to reach out to Richard
+- Reporting out for Digital investment office - Status report discussion
+    - Ian to talk with Jennifer and we will discuss this topic on Monday 
 ----
 Mar 05, 2021
 ----
