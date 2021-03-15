@@ -6,6 +6,8 @@ about: A checklist of onboarding tasks for new team members
 ---
 
 **Onboarding checklist for new team members**
+
+
 **IDIR**
 - [ ] Complete the form located at "R:\ARCS\HR 1300-1999\01 General\Onboarding Offboarding", which is stored on an internal drive and must be accessed by staff.
 - [ ] Submit to IT Operations Support. This form should be emailed to the Registries Executive Assistant. Currently this role is held by Michael Leung.
@@ -22,15 +24,11 @@ about: A checklist of onboarding tasks for new team members
 
 -----------------
 
-**GitHub**
-- [ ] New user to go to github.com to register their account
-- [ ] New user to verify that 2 factor authentication is enabled 
-
------------------
-
-**ZenHub** (requires GitHub with 2fa)
-- [ ] Send a message to an admin to request the new employee is added. (Admins as of Feb 2021 include: Kaine Sparks, Patrick Wei, Kial Jinnah, Richard Armitage, Thor Wolpert and John Lane.)
-- [ ] Once added, the employee will need to install the Zenhub plugin in the Chrome browser
+**GitHub & ZenHub**
+- [ ] 1. First, the new user is to go to github.com to register their account
+- [ ] 2. Next, the new user is to verify that 2 factor authentication is enabled 
+- [ ] 3. Once the account creation and 2fa are completed, send a message to an admin to request the new employee is added. (Admins as of Feb 2021 include: Kaine Sparks, Patrick Wei, Kial Jinnah, Richard Armitage, Thor Wolpert and John Lane.)
+- [ ] 4. Once added, the employee will need to install the Zenhub plugin in the Chrome browser
 
 -----------------
 
