@@ -23,13 +23,15 @@ about: A checklist of onboarding tasks for new team members
 -----------------
 
 - [ ] **GitHub**
-- [ ] New user to go to github.com to register their account and enable 2 factor authentication.
+- [ ] New user to go to github.com to register their account
+- [ ] New user to verify that 2 factor authentication is enabled 
 
 -----------------
 
 - [ ] **ZenHub**
+- [ ] GitHub registeration and 2 factor authentication are verified
 - [ ] Send a message to an admin to request the new employee is added. (Admins as of Feb 2021 include: Kaine Sparks, Patrick Wei, Kial Jinnah, Richard Armitage, Thor Wolpert and John Lane.)
-- [ ] Once added, the employee will need to install the Zenhub plugin in the Chrome browser.
+- [ ] Once added, the employee will need to install the Zenhub plugin in the Chrome browser
 
 -----------------
 
