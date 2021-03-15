@@ -28,8 +28,7 @@ about: A checklist of onboarding tasks for new team members
 
 -----------------
 
-- [ ] **ZenHub**
-- [ ] GitHub registeration and 2 factor authentication are verified
+- [ ] **ZenHub** (after GitHub completed)
 - [ ] Send a message to an admin to request the new employee is added. (Admins as of Feb 2021 include: Kaine Sparks, Patrick Wei, Kial Jinnah, Richard Armitage, Thor Wolpert and John Lane.)
 - [ ] Once added, the employee will need to install the Zenhub plugin in the Chrome browser
 
