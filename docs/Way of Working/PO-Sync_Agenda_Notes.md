@@ -4,6 +4,18 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 ----
+Mar 19, 2021
+----
+
+- sprint metrics for different teams - Jyoti
+
+
+
+
+
+
+
+----
 Mar 12, 2021
 ----
 - PI planning tracking
