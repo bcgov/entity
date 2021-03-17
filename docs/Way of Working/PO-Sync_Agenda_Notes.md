@@ -7,8 +7,8 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 Mar 19, 2021
 ----
 
-- sprint metrics for different teams - Jyoti
-
+- Sprint metrics for different teams - Jyoti
+- Brief discussion on how teams communicate release dates that get pushed out -- contribute better Agile way of working     -Trish
 
 
 
