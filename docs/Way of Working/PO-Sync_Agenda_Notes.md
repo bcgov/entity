@@ -8,8 +8,10 @@ Mar 19, 2021
 ----
 
 - Sprint metrics for different teams - Jyoti
-- Brief discussion on how teams communicate release dates that get pushed out -- contribute better Agile way of working     -Trish
 - Ticket 4808 Service Fee being charged for filings which are comnbined - Jyoti
+- Brief discussion on how teams communicate release dates that get pushed out -- contribute better Agile way of working     -Trish
+- Demo of account set up flow / selection of partner services. Given the soft launch for PPR we need to ensure there is knowledge sharing for designs and alignment for   timelines   - Melissa
+- Team designs and use cases and how we interact across our teams -Kaine
 
 
 
