@@ -9,7 +9,7 @@ Mar 19, 2021
 
 - Sprint metrics for different teams - Jyoti
 - Brief discussion on how teams communicate release dates that get pushed out -- contribute better Agile way of working     -Trish
-
+- Ticket 4808 Service Fee being charged for filings which are comnbined - Jyoti
 
 
 
