@@ -8,10 +8,19 @@ Mar 19, 2021
 ----
 
 - Sprint metrics for different teams - Jyoti
+    - velocity,Burndown, 
+    - PI tag in Zen Hub (Future action item)
+    - Follow up with all po to get some common Metrics - jyoti
+    - jyoti to circulate templet for sprint demo
+- IE-11 Version Issue not supporting the application
+    - This is been implemented in test by Patrick -- pushed in to prod 
+    - Jyoti to check with partick -- 6764
 - Ticket 4808 Service Fee being charged for filings which are comnbined - Jyoti
+    - check with carol about the Fee and some analysis on Potential revenue loss - Linda & Kaine
 - Brief discussion on how teams communicate release dates that get pushed out -- contribute better Agile way of working     -Trish
 - Demo of account set up flow / selection of partner services. Given the soft launch for PPR we need to ensure there is knowledge sharing for designs and alignment for   timelines   - Melissa
-- Team designs and use cases and how we interact across our teams -Kaine
+    - create a 3rd party authentication ticket -Kaine
+
 
 
 
