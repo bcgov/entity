@@ -12,7 +12,7 @@ Mar 19, 2021
     - PI tag in Zen Hub (Future action item)
     - Follow up with all po to get some common Metrics - jyoti
     - jyoti to circulate templet for sprint demo
-- IE-11 Version Issue not supporting the application
+- IE-11 Version Issue as it not supporting the application
     - This is been implemented in test by Patrick -- pushed in to prod 
     - Jyoti to check with partick -- 6764
 - Ticket 4808 Service Fee being charged for filings which are comnbined - Jyoti
