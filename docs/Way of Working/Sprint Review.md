@@ -18,8 +18,13 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 #### Assets
 * Design updates for search/results, selecting matches and done button in the search screen, adding folio number to the search, and the dashboard screen with search history - Kial 
+ 
 #### Relationships
-Description - ticket_number - presenter - <duration> mins
+Presenters Karthik and Meng
+* Generate passcode for non-affiliated business - 6703
+* Email new passcode - 6222
+* Remove business and reset passcode - 6220
+* Remove business and do not reset my passcode - 6701
 
 
 
