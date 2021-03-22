@@ -20,7 +20,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 Description - ticket_number - presenter - <duration> mins
 
 #### Relationships
-Description - ticket_number - presenter - <duration> mins
+* Design updates for search/results, selecting matches and done button in the search screen, adding folio number to the search, and the dashboard screen with search history - Kial 
 
 #### Relationships
 
