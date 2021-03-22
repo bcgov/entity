@@ -16,7 +16,10 @@ Description - ticket_number - presenter - <duration> mins
 
 
 #### Assets
-Description - ticket_number - presenter - <duration> mins
+Share Structure - Linda - 10 mins
+Future Effective Date - Severin - 5 mins
+Name Translation - Steph - 5 mins
+
 #### Relationships
 Description - ticket_number - presenter - <duration> mins
 
