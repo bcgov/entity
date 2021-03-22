@@ -12,13 +12,12 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Entities
-Description - ticket_number - presenter - <duration> mins
-
-
-#### Assets
 Share Structure - Linda - 10 mins
 Future Effective Date - Severin - 5 mins
 Name Translation - Steph - 5 mins
+
+#### Assets
+Description - ticket_number - presenter - <duration> mins
 
 #### Relationships
 Description - ticket_number - presenter - <duration> mins
