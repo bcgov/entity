@@ -11,14 +11,14 @@ Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
+#### Assets
+* Design updates for search/results, selecting matches and done button in the search screen, adding folio number to the search, and the dashboard screen with search history - Kial 
+
 #### Entities
 * Share Structure - Linda - 10 mins
 * Future Effective Date - Severin - 5 mins
 * Name Translation - Steph - 5 mins
 
-#### Assets
-* Design updates for search/results, selecting matches and done button in the search screen, adding folio number to the search, and the dashboard screen with search history - Kial 
- 
 #### Relationships
 Presenters Karthik and Meng
 * Generate passcode for non-affiliated business - 6703
