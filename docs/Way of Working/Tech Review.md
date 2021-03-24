@@ -5,7 +5,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ----
 ## Mar, 24th, 2021
 ----
-- Patrick would be presenting on banner-commmon components
+- Patrick would be presenting on banner-common components
 ----
 
 
