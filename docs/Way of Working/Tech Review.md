@@ -3,6 +3,13 @@
 Agenda and description re Tech Review see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 ----
+## Mar, 24th, 2021
+----
+- Patrick would be presenting on banner-commmon components
+----
+
+
+----
 ## Feb, 10th, 2021
 ----
 - Severin is going to demo his research work
