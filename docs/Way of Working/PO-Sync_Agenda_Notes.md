@@ -9,6 +9,8 @@ Mar 26, 2021
 ----
 
 - Team designs and use cases and how we interact across our teams -Kaine
+- Multiple Account Creation Issues - Potential Solution #6921     -Kaine
+- Business Registry Page Log In Update#6912  - Jyoti
 
 
 
