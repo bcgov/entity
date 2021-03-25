@@ -135,7 +135,12 @@ Mar 16th, 2021
 
 
 ____
-Mar 23th, 2021
+Mar 30th, 2021
 ----
 [Meeting notes](
-- 
+
+- [Alteration info package](https://docs.google.com/document/d/1ptCW0gttj_gmrckaGTk5d-R3FXNUjJ3J3OLNsFSq9C4/edit?usp=sharing) final review before I give it to Gen
+- [Staff email macros](https://docs.google.com/document/d/1WS-BtGhgppkUprzUWxVamQLtQfhFF9_XVhqNPjZGrkk/edit?usp=sharing). Linda made some updates to the alteration ones.
+- Ask credit union questions
+- Spreadsheet
+
