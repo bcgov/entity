@@ -139,6 +139,7 @@ Mar 30th, 2021
 ----
 [Meeting notes](
 
+- [using VON to select your "incorporator" Corproation or Firm from a list of companies](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/6877)
 - [Alteration info package](https://docs.google.com/document/d/1ptCW0gttj_gmrckaGTk5d-R3FXNUjJ3J3OLNsFSq9C4/edit?usp=sharing) final review before I give it to Gen
 - [Staff email macros](https://docs.google.com/document/d/1WS-BtGhgppkUprzUWxVamQLtQfhFF9_XVhqNPjZGrkk/edit?usp=sharing). Linda made some updates to the alteration ones.
 - Ask credit union questions
