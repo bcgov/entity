@@ -12,6 +12,7 @@ Mar 26, 2021
 - Multiple Account Creation Issues - Potential Solution #6921     -Kaine
 - Determine Published Availability of Service#6929  -Kaine
 - Business Registry Page Log In Update#6912  - Jyoti
+- Third Party Access Request and Invite for Users#6881 - Jyoti  
 - Jira demo - Kaine
 
 
