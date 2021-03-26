@@ -141,6 +141,7 @@ Mar 30th, 2021
 
 - [using VON to select your "incorporator" Corproation or Firm from a list of companies](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/6877)
 - Incorporation Agreement for LTDs, ULCs, CCCs - how should we change the app for these new entity types? [6858](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/6858) & [6859](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/6859)
+  -  Can ULCs adopt the Table 1 articles? Do they need to have their own custom articles? Should we talk to Policy about that?
 - [Alteration info package](https://docs.google.com/document/d/1ptCW0gttj_gmrckaGTk5d-R3FXNUjJ3J3OLNsFSq9C4/edit?usp=sharing) final review before I give it to Gen
 - [Staff email macros](https://docs.google.com/document/d/1WS-BtGhgppkUprzUWxVamQLtQfhFF9_XVhqNPjZGrkk/edit?usp=sharing). Linda made some updates to the alteration ones.
 - Ask credit union questions
