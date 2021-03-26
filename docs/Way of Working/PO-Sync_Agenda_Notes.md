@@ -9,11 +9,21 @@ Mar 26, 2021
 ----
 
 - Team designs and use cases and how we interact across our teams -Kaine
+    - a common agreement to treat other teams a stakeholders, 
+    - Jason to followup with UX team to get invite himself and POS 
+    - POs to alter to attanding
 - Multiple Account Creation Issues - Potential Solution #6921     -Kaine
+    - Jyoti to ask roy to look in to it
+    - Jyoti to create a ticket do some analysis/ understanding on restrictiong BC users on Single accounts
 - Determine Published Availability of Service#6929  -Kaine
-- Business Registry Page Log In Update#6912  - Jyoti
-- Third Party Access Request and Invite for Users#6881 - Jyoti  
-- Jira demo - Kaine
+- Business Registry Page Log In Update#6912  - Jyoti  -->   Related to 6921
+- Third Party Access Request and Invite for Users #6881 - Jyoti 
+    - Tuesday Jyoti have a disussion with Kaine to get some req analysis   
+- Jira demo - Ian
+    - All POs have some review on some feature and feasibility of Jira over Zenhub.    
+- Namespaces EDB: Minio#6626
+- payment per search per filing  #6955
+   
 
 
 
