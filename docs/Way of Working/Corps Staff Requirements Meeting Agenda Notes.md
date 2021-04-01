@@ -149,3 +149,10 @@ Mar 30th, 2021
 - [Staff email macros](https://docs.google.com/document/d/1WS-BtGhgppkUprzUWxVamQLtQfhFF9_XVhqNPjZGrkk/edit?usp=sharing). Linda made some updates to the alteration ones.
 - Spreadsheet
 
+----
+April 6th, 2021
+----
+[meeting notes]
+
+- [Alteration email macros done!](https://docs.google.com/document/d/1WS-BtGhgppkUprzUWxVamQLtQfhFF9_XVhqNPjZGrkk/edit?usp=sharing)
+- 
