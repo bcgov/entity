@@ -137,7 +137,7 @@ Mar 16th, 2021
 ____
 Mar 30th, 2021
 ----
-[Meeting notes](
+[Meeting notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/WopiFrame.aspx?sourcedoc={B21B58CF-6C69-424B-B920-A7C327D7CCDB}&file=2021-03-30%20-%20VON,%20Incorporation%20Articles,%20alteration%20info%20package.docx&action=default)
 
 - [using VON to select your "incorporator" Corproation or Firm from a list of companies](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/6877)
   -  We think this will add value to reduce errors. Will have correct names.
