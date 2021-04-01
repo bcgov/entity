@@ -11,7 +11,8 @@ April 1, 2021
 
 - Cross-team Ops Rotation - Ensure alignment from POs on desired outcome (as well as the resourcing required)
 - Business Registry location for training videos - 6580. Present approach to other teams. Could be used as an approach for resources for partner apps?
-
+- Migrating PROD to OCP4 - either full or dry-run on April 11
+- Migrating PROD to OCP4 - final date if not done on the 11th, April 18th
 
 ----
 Mar 26, 2021
