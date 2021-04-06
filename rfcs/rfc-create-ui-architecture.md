@@ -144,11 +144,11 @@ The following designs have been considered:
 
 1. Creating a new app for each new filing type was rejected outright as overkill and resulting in much code duplication (and thus harder to maintain).
 
-2. Updating the code independently for each new filing type was rejected outright as that usually leads to a "blinders" approach (where only the immediate code is considered), quickly resulting in complex/convulted logic that is difficult to write, understand, verify and maintain.
+2. Updating the code independently for each new filing type was rejected outright as that usually leads to a "blinders" approach (where only the immediate code is considered), quickly resulting in complex/convoluted logic that is difficult to write, understand, verify and maintain.
 
 3. Implementing/enhancing a component once with all possible permutations to handle all different filings was rejected as difficult or impossible to build correctly (as we can't know everything up front). Also, with this approach, it is not possible to test end-to-end during development, and new filing types cannot be released (deployed) one by one.
 
-4. Adding filings types one by one, enhancing components as we go and adding in per-type handling where needed, is likely easy and flexible as we only update what we need, when we need it (ie, Agile). This is probably less work than the above alternatives, and even though we'll touch components often, and we can release new filing types as they are implemented.
+4. Adding filings types one by one, enhancing components as we go and adding in per-type handling where needed, is likely fairly easy and flexible as we only update what we need, when we need it (ie, Agile). This is probably less work than the above alternatives, and even though we'll touch components often, and we can release new filing types as they are implemented.
 
 The preferred design is a blend of options 3 and 4:
 
