@@ -8,7 +8,7 @@
 
 # Summary
 
-Currently, the [Create UI web app](https://github.com/bcgov/bcrs-business-create-ui) allows a user to enter and file a Benefit Company (BCOMP) Incorporation Application (IA).
+Currently, the [Create UI web app](https://github.com/bcgov/bcrs-business-create-ui) allows a user to enter and file a Benefit Company Incorporation Application (IA).
 
 We need a software architecture/design to extend this web app to support many other types of incorporation and continuation filings easily and efficiently. The new filing types will have various differences with each other and the original filing type, and we want to be able to add them while keeping the code straightforward to implement, validate and maintain.
 
@@ -136,7 +136,7 @@ There is an additional up-front cost in implementing this architecture/design --
 
 Developers will have to use externalized/abstracted configuration/resources per filing type (ie, instead having them right there in the code) -- but the examples in this RFC should help to explain this -- and this too is an overall reduction in code complexity as more filing types are added.
 
-Each time a filing type is added, the existing filing types (beginning with the BCOMP IA) will need their configuration/resources extracted and their existing refactored. We will only know what to extact and refactor as we identify differences with the new filing types. However this effort should decrease with each new filing type, and can be considered "evidence" of code complexity avoided.
+Each time a filing type is added, the existing filing types (beginning with the Benefit Company IA) will need their configuration/resources extracted and their existing refactored. We will only know what to extact and refactor as we identify differences with the new filing types. However this effort should decrease with each new filing type, and can be considered "evidence" of code complexity avoided.
 
 # Alternatives
 
@@ -165,7 +165,7 @@ We should implement this proposal as a way to reduce the overall effort/cost of 
 
 Existing developers will have to use externalized/abstracted configuration/resources per filing type (ie, instead having them right there in the code) -- but the examples in this RFC should help to explain this.
 
-This is a "breaking change" for all existing filing types (beginning with the BCOMP IA), insofar as they need their resources extracted and their code refactored to handle differences with new filing types -- but this will be resolved by each new filing type added.
+This is a "breaking change" for all existing filing types (beginning with the Benefit Company IA), insofar as they need their resources extracted and their code refactored to handle differences with new filing types -- but this will be resolved by each new filing type added.
 
 The subject changes in the Create UI web app are not dependent upon, and do not affect, other Entity projects directly. However, ongoing development of other projects may be needed to support other filing/business types; that will be subject of other epics, RFCs, etc as needed.
 
@@ -204,7 +204,7 @@ This template is heavily based on the Vue, Golang, React, and other RFC template
 
 1. Use a story per "bundle of filing types" (instead of a story per component).
 2. Within stories, add tasks for different application steps/pages.
-3. The first story for a new filing type (other than IA) needs extra time to design and implement the resource/config object (and refactor the BCOMP IA-specific code).
+3. The first story for a new filing type (other than IA) needs extra time to design and implement the resource/config object (and refactor the Benefit Company IA-specific code).
 4. The first story also needs extra time to create initial (parameterized) unit tests.
 5. Subsequent stories will need time to update the resources/config object and refactor any new, different config/code.
 6. Subsequent stories will need time to update code where functionality differs between "bundles".
