@@ -105,7 +105,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 -----------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------
 ---- TEMPLATE ----
-### Feb 23, 2020 - Sprint (Milestone) 49 - 55 min. total 
+### Feb 23, 2021 - Sprint (Milestone) 49 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
@@ -127,7 +127,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 -----------------------------------------------------------------------------------------------------------------------
 ---- TEMPLATE ----
-### Feb 09, 2020 - Sprint (Milestone) 48 - 55 min. total 
+### Feb 09, 2021 - Sprint (Milestone) 48 - 55 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
