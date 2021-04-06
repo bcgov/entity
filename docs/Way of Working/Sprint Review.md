@@ -5,9 +5,51 @@
 #### Please use following format:       
 Feature/ User Story - ticket number - Name - how long (demo incl. Q&A)
 
+---- TEMPLATE ----
+### MON DD, YYYY - Sprint (Milestone) XX - 70 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+*
+
+#### Entities
+* 
+
+#### Relationships
+*
+
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+-----------------------------------------------------------------------------------------------------------------------
+
+---- TEMPLATE ----
+### April 06, 2021 - Sprint (Milestone) 52 - 70 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+* 
+
+#### Entities
+* 
+
+#### Relationships
+* Ministry Account Set Up - Melissa - 10 minutes
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+
 -----------------------------------------------------------------------------------------------------------------------
 ---- TEMPLATE ----
-### Month 23, 2020 - Sprint (Milestone) 65 - 70 min. total 
+### Mar 23, 2021 - Sprint (Milestone) 51 - 70 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
