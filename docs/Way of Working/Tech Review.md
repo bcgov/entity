@@ -6,6 +6,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ## Apr 7, 2021
 ----
 - Thor - API related information
+- Thor - GH Actions review
 
 ----
 ## Mar, 24th, 2021
