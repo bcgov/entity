@@ -152,7 +152,17 @@ Mar 30th, 2021
 ----
 April 6th, 2021
 ----
-[meeting notes]
 
 - [Alteration email macros done!](https://docs.google.com/document/d/1WS-BtGhgppkUprzUWxVamQLtQfhFF9_XVhqNPjZGrkk/edit?usp=sharing)
+- [FLow chart](https://app.diagrams.net/#G1VkcBtiUlfJCPMXLz3iF3iGCPFneoY_P4)
+
+
+----
+April 13th
+----
+Meeting notes
+
+- Continuation In, HJ authorization
+  - Linda's Decision Note
+  - Legal opinion VS consent letter
 - 
