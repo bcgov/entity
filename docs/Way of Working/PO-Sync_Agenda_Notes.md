@@ -4,10 +4,19 @@ Agenda and description re PO-Sync see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 * If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
 
+----
+Standing Agenda:
+----
+1. Progress re Features
+2. Assess any scope- or schedule adjustments, dependencies 
+3. Problems/ Opportunities with Features - Decisions 
+4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
+5. Refine & prioritize Features together
 
 ----
 April 8, 2021
 ----
+- Updates to the Disaster Recovery Plan - Ian
 
 ----
 April 1, 2021
