@@ -30,32 +30,33 @@ April 1, 2021
 Meeting Notes:
 -  Business carried forward from the previous meeting
     -  Team designs and use cases and how we interact across our teams -Kaine
--  first meeting conducted
-    -  Multiple Account Creation Issues - Potential Solution #6921 -Kaine
--  Roy will bring up in Ux forum
+        -  first meeting conducted
+        -  Multiple Account Creation Issues - Potential Solution #6921 -Kaine
+        -  Roy will bring up in Ux forum
     -  Determine Published Availability of Service#6929 -Kaine
--  created ticket but no further action yet 
+        -  created ticket but no further action yet 
         -  Looking at up time
     -  Business Registry Page Log In Update#6912 - Jyoti --> Related to 6921
--  This one is done - not sure if in prod 
+        -  This one is done - not sure if in prod 
         -  With Jyoti
         -  Can go in anytime
     -  Third Party Access Request and Invite for Users #6881 - Jyoti
--  Got all req'ts captured in a ticket 
+        -  Got all req'ts captured in a ticket 
         -  Jyoti - Look at from a design standpoint and see how it fits into next PI
     -  Jira demo - Ian
--  There is reporting in Zenhub just not seen by Pos 
+        -  There is reporting in Zenhub just not seen by Pos 
         -  Would help to have access to reports
         -  Kaine to follow up
     -  payment per search per filing #6955
--  Linda update - should we charge $1 fees - seems punitive - not concerned about revenue loss
+        -  Linda update - should we charge $1 fees - seems punitive - not concerned about revenue loss
+----
 -  New Business
     -  Cross-team Ops Rotation - Ensure alignment from POs on desired outcome (as well as the resourcing required) 
--  slower than expected response time in ops rotation 
+        -  slower than expected response time in ops rotation 
         -  Expect 15 min response unless on lunch or break
         -  Can't work on sprint activities if on ops rotation
     -  Business Registry location for training videos - 6580. Present approach to other teams. Could be used as an approach for resources for partner apps? 
--  topic for next build 
+        -  topic for next build 
         -  Have a location on our app where we can have training videos
         -  Make sure Scott and Tracy have gone through it
         -  Talk about in next Ux guild
@@ -63,7 +64,7 @@ Meeting Notes:
         -  A year ago Scott presented help strategy - Linda will look for it
     -  Migrating PROD to OCP4 - either full or dry-run on April 11
     -  Migrating PROD to OCP4 - final date if not done on the 11th, April 18th 
--  FYI in the channel 
+        -  FYI in the channel 
         -  Last night everything was migrated to test env
         -  Change window on Tuesday night so we should move to prod on Tuesday night
         -  Final migration on Apr 11
@@ -71,15 +72,16 @@ Meeting Notes:
         -  Might need to divert some resources for end-to-end testing 
         -  Friday Apr 9 should make go or no-go decision
         -  Will need people to perform spot checking after migration is complete on the 11th 
--  Perhaps Janice
--  Trish put her name forward
-        -  Linda to ask Richard if he can assist
+            -  Perhaps Janice
+            -  Trish put her name forward
+            -  Linda to ask Richard if he can assist
+----
 -  Non Agenda Item Discussed 
     -  Scrum Master 
--  1 has been chosen - will start onboarding next week
+        -  1 has been chosen - will start onboarding next week
     -  Potential we encounter insufficient memory 
--  Stripping functionality from the name request app will free up space
--  Kaine - not a risk at this point
+        -  Stripping functionality from the name request app will free up space
+        -  Kaine - not a risk at this point
     -  In limbo whether we can use cloud services - Kaine will follow up with Genevieve
     -  Ops are creating a drag on our ability to deliver features (perhaps 20%)
     -  Technical debt - can we do anything about project X creating technical debt - continual discussion - will have to address at our next PI plan
