@@ -14,9 +14,10 @@ Standing Agenda:
 5. Refine & prioritize Features together
 
 ----
-April 8, 2021
+April 9, 2021
 ----
 - Updates to the Disaster Recovery Plan - Ian
+- Go/No-GO for OCP Migration on Sunday
 
 ----
 April 1, 2021
