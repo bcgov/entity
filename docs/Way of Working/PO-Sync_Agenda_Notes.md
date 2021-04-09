@@ -19,6 +19,8 @@ April 9, 2021
 - Updates to the Disaster Recovery Plan - Ian
 - Go/No-GO for OCP Migration on Sunday
 - Release Management - James
+- Dev resources moving to home team - Jennifer
+- PI Planning
 
 ----
 April 1, 2021
