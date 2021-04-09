@@ -14,4 +14,4 @@ about: Team owned document to define when a User Story is done
 - [ ] Open an issue to remove feature flags created
 
 - [ ] Test coverage acceptable by Product Owner (functional & load testing)
-- [ ] Product Owner accepts the work as being completed, ensures it's tagged to a release and closes the Story (move it from 'Done' to 'Closed')
+- [ ] Product Owner accepts the work as being completed, ensures it's tagged to a release (and the PI release) and closes the Story (move it from 'Done' to 'Closed')
