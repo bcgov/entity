@@ -21,6 +21,44 @@ April 9, 2021
 - Release Management - James
 - Dev resources moving to home team - Jennifer
 - PI Planning
+----
+Meeting Notes:
+- Previous Agenda
+    - Cross-team Ops Rotation - Ensure alignment from POs on desired outcome (as well as the resourcing required)
+        - Ian will release 2 devs end of April
+        - Have devs login to teams chat
+        - 2 devs available for names release - for 2 weeks
+            - This will potentially impact our deliverable velocity
+    - Business Registry location for training videos - 6580. Present approach to other teams. Could be used as an approach for resources for partner apps?
+        - Hoping to have Relationships sprint planning move to an earlier time
+    - Migrating PROD to OCP4 - either full or dry-run on April 11
+    - Migrating PROD to OCP4 - final date if not done on the 11th, April 18th
+----
+- New Business
+    - Updates to the Disaster Recovery Plan - Ian
+        - Lorna has been making updates but we need someone to fill in gaps
+        - After the migration
+        - **Action - Melissa will create a ticket**
+    - Go/No-GO for OCP Migration on Sunday
+        - Relationship and Entities team have been testing
+        - Patrick has been awesome responding to issues
+        - Decision is to go ahead
+        - We need Richard and Reaz
+        - **Action - Linda will notify Ian Bott**
+        - Linda has created notice of a communication
+        - Sienna will be drafting communication
+    - Release Management - James
+        - Need help identifying tickets 
+        - **Action - Jyoti, Linda, Kaine to look at releases for that should be closed by next PO sync**
+        - **Action - clean- up existing tickets by next PO sync (best efforts)**
+    - Dev resources moving to home team - Jennifer
+    - PI Planning
+----
+- Non Agenda Items
+    - Kaine - Roy, Linda, Scott - how will PPR be accessed
+        - Making PPR mandatory for a premium account
+        - Scott and Roy will take away and review Wednesday
+    - Jyoti asked that the P.Os send him dependencies prior to the next PI 
 
 ----
 April 1, 2021
