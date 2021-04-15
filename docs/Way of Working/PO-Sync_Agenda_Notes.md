@@ -14,6 +14,10 @@ Standing Agenda:
 5. Refine & prioritize Features together
 
 ----
+April 16, 2021
+----
+- Manage Business Repository move to Entity Side? - Jyoti to discusss
+----
 April 9, 2021
 ----
 - Updates to the Disaster Recovery Plan - Ian
