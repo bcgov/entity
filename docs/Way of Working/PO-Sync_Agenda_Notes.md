@@ -18,6 +18,7 @@ April 16, 2021
 ----
 - Manage Business Repository move to Entity Side? - Jyoti to discusss
 - Process for follow up with angry clients (most recent email from laywer noting strong frustration and need to be walked through)
+- BCeID - Jennifer
 ----
 April 9, 2021
 ----
