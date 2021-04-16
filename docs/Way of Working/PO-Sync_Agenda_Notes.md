@@ -22,6 +22,44 @@ April 16, 2021
 - April 25th service interruptions - #7167 - Linda
 - Folio Numbers - #4286 - Linda
 ----
+Meeting Notes:
+- Previous Agenda
+    - Updates to the Disaster Recovery Plan - Ian
+        - Ticket created
+    - Go/No-GO for OCP Migration on Sunday
+        - Large impact to NameX - super slow
+        - Patrick has reached out to the lab for support
+        - Issue might have to be raised with Carol - perhaps don't escalate right away
+    - Release Management - James
+        - Jyoti has cleared all 
+        - **Action - Linda, Kaine to look at releases for that should be closed**
+    - Dev resources moving from home team - Jennifer
+    - PI Planning
+
+- New Business
+    - Manage Business Repository move to Entity Side? - Jyoti to discuss
+        - Looking to start a managed company on the managed dashboard
+        - **Action - Jyoti to check if team can do the PRs and size of this task**
+    - Process for follow up with angry clients (most recent email from lawyer noting strong frustration and need to be walked through)
+        - Trish has some thoughts about where this should live
+        - Melissa would like to see a single group look after these issues
+        - Ian - The CCII tool will be used in the future
+        - **Action - Kaine will speak with Cameron / let Trish know whether to follow up with Elisa**
+        - We're getting a lot of tier 1 questions - too much volume for Trish and team to answer
+    - BCeID - Jennifer
+        - Is there any impact to the program or to our plans
+        - Carol and Ian held a meeting to discuss BCeID - concerns about it going away with One Stop - there is an action for Ian and IDM to connect - will need Melissa's involvement
+    - April 25th service interruptions - #7167 - Linda
+        - Data center in Kelowna will be doing some work on the 25th and we can expect a 30 min service interruption
+        - We don't now the exact timing
+        - **Action- Linda to email team leads**
+        - Thor has indicated that we might need a long term decision
+    - Folio Numbers - #4286 - Linda
+        - More clarification needed re: folio on file
+
+- Non Agenda Items
+    - None
+----
 April 9, 2021
 ----
 - Updates to the Disaster Recovery Plan - Ian
