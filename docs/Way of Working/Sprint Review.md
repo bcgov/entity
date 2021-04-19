@@ -25,9 +25,33 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 
+
 -----------------------------------------------------------------------------------------------------------------------
 
----- TEMPLATE ----
+### April 20, 2021 - Sprint (Milestone) 53 - 70 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+*
+
+#### Entities
+* Linda - Walkthrough of the alteration flow
+* Cameron - Componenet and app validations & error handling
+* Severin - Functionality around fee summary, confirm vs review pages, and delete commands
+
+#### Relationships
+*
+
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
 ### April 06, 2021 - Sprint (Milestone) 52 - 70 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
@@ -48,7 +72,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 
 -----------------------------------------------------------------------------------------------------------------------
----- TEMPLATE ----
+
 ### Mar 23, 2021 - Sprint (Milestone) 51 - 70 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
