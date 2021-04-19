@@ -41,7 +41,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * Severin - Functionality around fee summary, confirm vs review pages, and delete commands
 
 #### Relationships
-*
+* Roy - Walkthrough of Ministry govt account "fee selector"
 
 
 
