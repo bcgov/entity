@@ -158,7 +158,7 @@ April 6th, 2021
 
 
 ----
-April 13th
+April 13th, 2021
 ----
 Meeting notes
 
@@ -170,7 +170,7 @@ Meeting notes
 - Co-op Restoration process
 
 ----
-April 20th
+April 20th, 2021
 ----
 Meeting Notes
 
