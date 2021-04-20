@@ -168,3 +168,10 @@ Meeting notes
 - Info Package
 - Benefit Company Voluntary Dissolution
 - Co-op Restoration process
+
+----
+April 20th
+----
+Meeting Notes
+
+- ?
