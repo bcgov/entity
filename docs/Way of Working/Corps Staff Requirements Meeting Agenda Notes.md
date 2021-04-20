@@ -170,8 +170,9 @@ Meeting notes
 - Co-op Restoration process
 
 ----
-April 20th, 2021
+April 21st, 2021
 ----
 Meeting Notes
 
-- ?
+- Scott's concepts for the numbered company
+- 
