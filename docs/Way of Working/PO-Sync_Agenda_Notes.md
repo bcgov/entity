@@ -14,6 +14,10 @@ Standing Agenda:
 5. Refine & prioritize Features together
 
 ----
+April 23, 2021
+----
+- Slack - Linda
+----
 April 16, 2021
 ----
 - Manage Business Repository move to Entity Side? - Jyoti to discusss
