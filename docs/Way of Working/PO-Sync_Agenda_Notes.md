@@ -19,6 +19,8 @@ April 23, 2021
 - Slack - Linda
 - Meeting cadence(UX Guild/Sprint planning)
 - Jyoti to discus 6883
+- Names release upcoming on Apr 30
+- Kaine - admins
 ----
 April 16, 2021
 ----
