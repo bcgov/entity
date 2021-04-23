@@ -22,6 +22,38 @@ April 23, 2021
 - Names release upcoming on Apr 30
 - Kaine - admins
 ----
+- Meeting Notes:
+    - Actions
+        - Jyoti to check if team can do the PRs and size of this task
+        - Jason to come with best practices for Rocket Chat notifications
+    - Previous Agenda
+        - Manage Business Repository move to Entity Side? - Jyoti to discusss
+            - Action - Jyoti to check if team can do the PRs and size of this task
+        - Process for follow up with angry clients (most recent email from laywer noting strong frustration and need to be walked through)
+            - Action closed
+        - BCeID - Jennifer
+        - April 25th service interruptions - #7167 - Linda
+            - Action closed
+            - App will be shut down at 5 am and brought back up at 10 am - Patrick
+        - Folio Numbers - #4286 - Linda
+    - New Business
+        - Slack - Linda
+            - Came up in Entities retro
+            - Rocket chat cumbersome - notifications do not pop up
+            - Lab couldn't come to an agreement with terms of service
+            - Action - Jason to come with best practices for notifications
+        - Meeting cadence(UX Guild/Sprint planning)
+            - An ask that sprint planning meetings be aligned so that Trish can attend both Entities and Relationships planning
+            - Perhaps UX Guild should be moved to the afternoon
+            - Move the sprint planning meeting accordingly
+        - Jyoti to discus 6883
+            - What is actually being requested - more in discussion at the moment - Assets team will build
+        - Release planning for NameX
+            - Who should be engaged - Thor, Kyle, Linda, Ryaz, Kaine, Sienna
+            - Action - Kaine to provide James the members that should be engaged for the Apr 30 release
+        - Kaine - admin flow, additional admi
+            - Do we want to continue creating account names
+----
 April 16, 2021
 ----
 - Manage Business Repository move to Entity Side? - Jyoti to discusss
