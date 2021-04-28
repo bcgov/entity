@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features together
 
 ----
+April 30, 2021
+----
+- Updates on Owned Risks
+    - Partner Reluctance - P.O.s and OCM team own 
+	- CAS - Jyoti
+	- Help Desk call mgmt + supporting spikes in business volume- OCM team
+	- Time Constraints / Staffing Changes - Kaine
+	- Call Center Rebid - P.O.s
+	- Losing key CM resource - ELT
+	- Tech Planning - James
+	- API keys - Kaine
+	- Data Migration - Kaine
+	- Team Task Integration Complexity (Lots of puzzles) - P.O.s
+
+----
 April 23, 2021
 ----
 - Slack - Linda
