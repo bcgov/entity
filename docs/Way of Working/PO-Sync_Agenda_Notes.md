@@ -19,6 +19,9 @@ April 30, 2021
 -  Updates to PAD email. Issues in decimal point / content / design.
  	- 7374 created. Who will work on this?
  	- Process for wording review?
+-  Longer term planning meeting on May 12th
+-  Proposed agenda for next PI planning
+-  Mural vs Miro
 -  Updates on Owned Risks
     - Partner Reluctance - P.O.s and OCM team own 
 	- CAS - Jyoti
