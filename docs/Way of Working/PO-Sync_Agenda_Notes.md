@@ -16,6 +16,9 @@ Standing Agenda:
 ----
 April 30, 2021
 ----
+- Outstanding Action Items
+    - Jyoti to check if team can do the PRs and size of this task
+    - Jason to come with best practices for Rocket Chat notifications
 -  Updates to PAD email. Issues in decimal point / content / design.
  	- 7374 created. Who will work on this?
  	- Process for wording review?
