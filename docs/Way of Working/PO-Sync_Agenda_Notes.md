@@ -17,8 +17,8 @@ Standing Agenda:
 April 30, 2021
 ----
 -  Updates to PAD email. Issues in decimal point / content / design.
--  	- 7374 created. Who will work on this?
--  	- Process for wording review?
+ 	- 7374 created. Who will work on this?
+ 	- Process for wording review?
 -  Updates on Owned Risks
     - Partner Reluctance - P.O.s and OCM team own 
 	- CAS - Jyoti
