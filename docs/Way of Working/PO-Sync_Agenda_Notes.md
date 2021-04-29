@@ -16,7 +16,10 @@ Standing Agenda:
 ----
 April 30, 2021
 ----
-- Updates on Owned Risks
+-  Updates to PAD email. Issues in decimal point / content / design.
+-  	- 7374 created. Who will work on this?
+-  	- Process for wording review?
+-  Updates on Owned Risks
     - Partner Reluctance - P.O.s and OCM team own 
 	- CAS - Jyoti
 	- Help Desk call mgmt + supporting spikes in business volume- OCM team
