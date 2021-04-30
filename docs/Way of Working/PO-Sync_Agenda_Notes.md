@@ -30,7 +30,7 @@ April 30, 2021
 -  Mural vs Miro
 -  Jyoti to provide an update on API Key design
 -  Jyoti to discuss 7386
--  Zenhub labels for the PI & sprints vs milestones
+-  Zenhub labels for the PI & sprints vs milestones (Jason)
 -  Updates on Owned Risks
     - Partner Reluctance - P.O.s and OCM team own 
 	- CAS - Jyoti
