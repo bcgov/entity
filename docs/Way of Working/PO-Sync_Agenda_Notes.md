@@ -18,6 +18,7 @@ April 30, 2021
 ----
 - Outstanding Action Items
     - Jyoti to check if team can do the PRs and size of this task
+    - [Jyoti] - Team confirmed that they can review the PR's. This approach should be good
     - Jason to come with best practices for Rocket Chat notifications
 -  Updates to PAD email. Issues in decimal point / content / design.
  	- 7374 created. Who will work on this?
@@ -26,6 +27,7 @@ April 30, 2021
 -  Proposed agenda for next PI planning
 -  Mural vs Miro
 -  Jyoti to provide an update on API Key design
+-  Jyoti to discuss 7386
 -  Updates on Owned Risks
     - Partner Reluctance - P.O.s and OCM team own 
 	- CAS - Jyoti
