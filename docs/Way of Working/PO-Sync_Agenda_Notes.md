@@ -24,6 +24,7 @@ April 30, 2021
  	- 7374 created. Who will work on this?
  	- Process for wording review?
 -  Review all our email outputs - Kaine
+-  Determine if we should add another QA resource to the team. (Kaine)
 -  Longer term planning meeting on May 12th
 -  Proposed agenda for next PI planning
 -  Mural vs Miro
