@@ -14,6 +14,14 @@ Standing Agenda:
 5. Refine & prioritize Features together
 
 ----
+May 7, 2021
+----
+- Outstanding Action Items
+    - Jason to come up with best practices for Rocket Chat notifications
+    - Jyoti to set up a meeting with Kaine, Linda and someone from home office re: QA resource
+    - Jyoti will contact Roy, Joanna/Amber re: 7386
+
+----
 April 30, 2021
 ----
 - Outstanding Action Items
@@ -44,10 +52,6 @@ April 30, 2021
 	- Team Task Integration Complexity (Lots of puzzles) - P.O.s
 ----
 - Meeting Notes
-    - Action Items
-        - Jason to come with best practices for Rocket Chat notifications
-        - Jyoti to set up a meeting with Kaine, Linda and someone from home office re: QA resource
-        - Jyoti will contact Roy, Joanna/Amber re: 7386
     - Actions from Last Time
         - Jyoti to check if team can do the PRs and size of this task
             - [Jyoti] - Team confirmed that they can review the PR's. This approach should be good
