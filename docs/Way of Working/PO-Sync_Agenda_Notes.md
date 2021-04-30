@@ -30,6 +30,7 @@ April 30, 2021
 -  Mural vs Miro
 -  Jyoti to provide an update on API Key design
 -  Jyoti to discuss 7386
+-  Zenhub labels for the PI & sprints vs milestones
 -  Updates on Owned Risks
     - Partner Reluctance - P.O.s and OCM team own 
 	- CAS - Jyoti
@@ -82,6 +83,8 @@ April 23, 2021
             - Action - Kaine to provide James the members that should be engaged for the Apr 30 release
         - Kaine - admin flow, additional admi
             - Do we want to continue creating account names
+
+
 ----
 April 16, 2021
 ----
