@@ -42,7 +42,66 @@ April 30, 2021
 	- API keys - Kaine
 	- Data Migration - Kaine
 	- Team Task Integration Complexity (Lots of puzzles) - P.O.s
-
+----
+- Meeting Notes
+    - Action Items
+        - Jason to come with best practices for Rocket Chat notifications
+        - Jyoti to set up a meeting with Kaine, Linda and someone from home office re: QA resource
+        - Jyoti will contact Roy, Joanna/Amber re: 7386
+    - Actions from Last Time
+        - Jyoti to check if team can do the PRs and size of this task
+            - [Jyoti] - Team confirmed that they can review the PR's. This approach should be good
+        - Jason to come with best practices for Rocket Chat notifications
+            - Carry over to next time
+    - Previous Meeting - no further discussion
+    - New Business
+        - Updates to PAD email. Issues in decimal point / content / design.
+            - Ticket has been created
+            - 7374 created. Who will work on this?
+            - Patrick H will look at this
+            - Process for wording review?
+        - Review all our email outputs - Kaine
+            - Ticket created to review all email outputs - 7380
+            - Patrick will be working on this
+        - Determine if we should add another QA resource to the team. (Kaine)
+            - BA.s are doing QA right now
+            - Perhaps add a QA person working under Riaz
+            - Also hiring a Ux person
+            - A multi-skilled resource would be nice to have (with OCM skills as well)
+            - Action - Jyoti to set up a meeting with Kaine, Linda and someone from home office
+        - Longer term planning meeting on May 12th
+            - Include Olisa
+        - Proposed agenda for next PI planning
+            - Is there a cost factor
+            - Planning effort in the last sprint
+            - Trish would need to be there
+            - Discussion to continue
+        - Mural vs Miro
+            - No concern
+        - Jyoti to provide an update on API Key design
+            - Should this be added to the PI?
+            - Hold off until fall
+        - Jyoti to discuss 7386
+            - How should this be prioritized for the Ux team
+            - What changes do we need to make
+            - Action - Jyoti will contact Roy, Joanna/Amber
+        - Zenhub labels
+            - Tracking to PI 9 as well as tracking to the release
+            - Don't see value in adding sprints
+            - Renumbering milestones to match PI iteration number
+        - Updates on Owned Risks
+            - Partner Reluctance - P.O.s and OCM team own
+            - CAS - Jyoti
+            - Help Desk call mgmt + supporting spikes in business volume- OCM team
+                - Trish has been soliciting feedback weekly
+            - Time Constraints / Staffing Changes - Kaine
+            - Call Center Rebid - P.O.s
+            - Losing key CM resource - ELT
+            - Tech Planning - James
+                - Thor invited to scrum of scrum 
+            - API keys - Kaine
+            - Data Migration - Kaine
+            - Team Task Integration Complexity (Lots of puzzles) - P.O.s
 ----
 April 23, 2021
 ----
