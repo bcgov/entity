@@ -23,6 +23,7 @@ April 30, 2021
 -  Updates to PAD email. Issues in decimal point / content / design.
  	- 7374 created. Who will work on this?
  	- Process for wording review?
+-  Review all our email outputs - Kaine
 -  Longer term planning meeting on May 12th
 -  Proposed agenda for next PI planning
 -  Mural vs Miro
