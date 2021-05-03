@@ -11,7 +11,9 @@ Standing Agenda:
 2. Assess any scope- or schedule adjustments, dependencies 
 3. Problems/ Opportunities with Features - Decisions 
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
-5. Refine & prioritize Features together
+5. Refine & prioritize Features
+
+
 
 ----
 May 7, 2021
@@ -20,6 +22,8 @@ May 7, 2021
     - Jason to come up with best practices for Rocket Chat notifications
     - Jyoti to set up a meeting with Kaine, Linda and someone from home office re: QA resource
     - Jyoti will contact Roy, Joanna/Amber re: 7386
+New Business
+- Jyoti to discuss 7412
 
 ----
 April 30, 2021
