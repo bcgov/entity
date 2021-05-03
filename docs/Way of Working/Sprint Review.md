@@ -35,7 +35,10 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 *
 
 #### Entities
-* 
+* Renew a Name Request - Linda
+* Filing a benefit company alteration - Linda
+* Name Request syncing of accounts - Sev
+* Name Request syncing of accounts - Severin
 
 #### Relationships
 * Fiaz - Walkthrough of end to end flow of Ministry govt account setup for required package - 15mins
