@@ -41,7 +41,6 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * Name Request syncing of accounts - Severin
 
 #### Relationships
-* Fiaz - Walkthrough of end to end flow of Ministry govt account setup for required package - 15mins
 * Jyoti - Vital Stats - 10mins
 
 
