@@ -177,3 +177,10 @@ Meeting Notes
 - Scott's concepts for the numbered company
 - Alteration info package review
 - Wording for the top of Form 11 BEN, 51, 52, and 53
+
+
+----
+May 4th 2021
+----
+[Meeting Notes]()
+- Co-op incorporation
