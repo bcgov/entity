@@ -8,7 +8,7 @@ Remove or downgrade the access when a team member no longer supports an applicat
 - Review realm admins in Keycloak platform
 - Review team member access permissions in other third party applications: Hotjar, 1Password, Sentry, LaunchDarkly
 
-## Application Libaries review:
+## Application Libraries review:
 Check the third-party library that the application uses to view any public warnings; if it is, we must upgrade to a secure version as soon as possible.
 
 ## Production code scanning:
