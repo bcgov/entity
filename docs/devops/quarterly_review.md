@@ -2,7 +2,7 @@
 This is a procedure of reviewing the production code quarterly to reduce application security risks.
 
 ## Team member access review:
-Remove or downgrade the access when the team member no longer worked with the application.
+Remove or downgrade the access when a team member no longer supports an application.
 - Review the access privilege of team member in Github.
 - Review team member roles in Openshift platform
 - Review realm admins in Keycloak platform
