@@ -24,6 +24,7 @@ May 7, 2021
     - Jyoti will contact Roy, Joanna/Amber re: 7386
 New Business
 - Jyoti to discuss 7412
+- Tickets in each sprint to track and create value for the Dev Tech Demo - Jason
 
 ----
 April 30, 2021
