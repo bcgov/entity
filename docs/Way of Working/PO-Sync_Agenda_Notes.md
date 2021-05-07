@@ -30,7 +30,33 @@ May 7, 2021
     - Jyoti to discuss 7412
     - Tickets in each sprint to track and create value for the Dev Tech Demo - Jason
     - Upcoming releases
-
+----
+- Meeting Notes
+    - Action From Last Meeting
+        - Jason to come up with best practices for Rocket Chat notifications
+        - Jyoti to set up a meeting with Kaine, Linda and someone from home office re: QA resource - Done
+        - Jyoti will contact Roy, Joanna/Amber re: 7386 - Done
+        - Determine if we should add another QA resource to the team. (Kaine) - Done
+        - Email outputs - find a designer - interviews pending
+    - New Business
+        - Jyoti to discuss 7412
+            - Action - Jyoti to contact Roy and Scott
+        - Tickets in each sprint to track and create value for the Dev Tech Demo - Jason
+            - Action - Expand meeting to 1 hours and go through a round table - James to reach out to Jason and Sateesh
+        - Upcoming releases
+        - CAS
+            - Discussion started on CAS
+        - Moving some of the work away from call center to Maximus - conversation is underway
+        - Conversations underway to backfill Simona
+        - Should our deployment process by reviewed
+            - Should the definition of 'done' change
+            - Decision - only demo items in test + definition of done is that ticket must be closed by QA (e.g. Riaz) + push all tickets that are not closed to the next milestone on Tuesday afternoon
+        - Concept case for beneficial ownership
+            - Started by Ian
+            - Action - Ian to set up meeting with Kaine, Linda, Thor
+            - Due at the end of July
+        - Digital credentials
+            - Action - Ian to follow up with Stephen
 ----
 April 30, 2021
 ----
