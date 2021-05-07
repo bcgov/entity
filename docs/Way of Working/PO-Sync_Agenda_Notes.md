@@ -13,8 +13,11 @@ Standing Agenda:
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
 
-
-
+----
+May 14, 2021
+----
+- Jyoti to discuss freezing a business.
+- 
 ----
 May 7, 2021
 ----
