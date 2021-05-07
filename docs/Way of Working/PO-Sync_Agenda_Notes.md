@@ -22,6 +22,7 @@ May 7, 2021
     - Jason to come up with best practices for Rocket Chat notifications
     - Jyoti to set up a meeting with Kaine, Linda and someone from home office re: QA resource
     - Jyoti will contact Roy, Joanna/Amber re: 7386
+    - Determine if we should add another QA resource to the team. (Kaine)
 New Business
 - Jyoti to discuss 7412
 - Tickets in each sprint to track and create value for the Dev Tech Demo - Jason
