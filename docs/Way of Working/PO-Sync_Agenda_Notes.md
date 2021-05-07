@@ -16,8 +16,16 @@ Standing Agenda:
 ----
 May 14, 2021
 ----
-- Jyoti to discuss freezing a business.
-- 
+- Outstanding Action Items
+    - Jason to come up with best practices for Rocket Chat notifications
+    - Email outputs - find a designer - interviews pending
+    - Action - Jyoti to contact Roy and Scott
+    - Action - Expand meeting to 1 hour and go through a round table - James to reach out to Jason and Sateesh
+    - Decision - only demo items in test + definition of done is that ticket must be closed by QA (e.g. Riaz) + push all tickets that are not closed to the next milestone on Tuesday afternoon
+    - Action - Ian to set up meeting with Kaine, Linda, Thor re: Beneficial Ownership
+    - Action - Ian to follow up with Stephen re: Digital Credentials
+- New business
+    - Jyoti to discuss freezing a business.
 ----
 May 7, 2021
 ----
