@@ -29,6 +29,7 @@ May 7, 2021
 - New Business
     - Jyoti to discuss 7412
     - Tickets in each sprint to track and create value for the Dev Tech Demo - Jason
+    - Upcoming releases
 
 ----
 April 30, 2021
