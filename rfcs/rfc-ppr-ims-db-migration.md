@@ -6,17 +6,17 @@
 
 # Summary
 
-This dicument outlines the approach of migrating the IMS database used by the legacy PPR service into the new relational model used by the _modernized_ PPR set of services.
+This document outlines the approach of migrating the IMS database used by the legacy PPR service into the new relational model used by the _modernized_ PPR set of services.
 
-The PPR modernization project is already underway with work products to leverage and a deicsion to migrate entirely to the new system and _go live_ as a new and complete service.
+The PPR modernization project is already underway with work products to leverage and a decision to migrate entirely to the new system and _go live_ as a new and complete service.
 
 This document will outline the work necessary to transition entirely to the target database, now that the requirement for a temporary DB that can accessed by both the mainframe and the modernized application is no longer valid.
 
 # Motivation
 
-The original mainframe migration project was to either connect to the mainframe envionment and access a set of simplified transactions directly, or alter the storage routines to mover from IMS to access an external Oracle database running on a middle-tier environment.
+The original mainframe migration project was to either connect to the mainframe environment and access a set of simplified transactions directly, or alter the storage routines to mover from IMS to access an external Oracle database running on a middle-tier environment.
 
-Due to the current state of that effort, the work left to complete, and timeline pressures, an alternate approach of converting to the new target envionment and going live with a completed service was decided upon.
+Due to the current state of that effort, the work left to complete, and timeline pressures, an alternate approach of converting to the new target environment and going live with a completed service was decided upon.
 
 # Detailed design
 
@@ -36,9 +36,9 @@ The following IMS data segments will be used:
 - CL1HIST	child historical code
 - US0USERS    users
 
-These output of the jobs for these segments will be loaded directly into _temp tables_ and further transformed as necessary, and the nfinally appended to the existing the table in the target database.
+These output of the jobs for these segments will be loaded directly into _temp tables_ and further transformed as necessary, and then finally appended to the existing the table in the target database.
 
-Since the historical and new data will be treated as immutable records where any change to the data results in a new record being created and the historical record as being marked as closed. The migration aproach makes adding new records additive and therefore an on-going incremental load technique, based on the date card, can be used to continuously migrate data from the legacy DB to the new one.
+Since the historical and new data will be treated as immutable records where any change to the data results in a new record being created and the historical record as being marked as closed. The migration approach makes adding new records additive and therefore an on-going incremental load technique, based on the date card, can be used to continuously migrate data from the legacy DB to the new one.
 
 ## Data Model
 
@@ -48,7 +48,7 @@ The existing model will be converted to a set of Alembic scripts, like the other
 
 It is recommended that the core extensions to Postgres be leveraged, and that some effort be made to choose the most appropriate set of extensions and operators be used to meet the required search needs.
 Postgres has trigrams and generalized indexes across those, along with metaphones, Levenshtein term distances and other techniques that can leverage indexing on par with the SOLR services the Registry is already using.
-Using the core extensions will allso the Registry to easily migrate to any Posatgres based service with the minimum amount of effort required.
+Using the core extensions will also the Registry to easily migrate to any Postgres based service with the minimum amount of effort required.
 
 
 # Drawbacks
@@ -65,7 +65,7 @@ It is possible to stay with the current Oracle DB, but
 
 # Adoption strategy
 
-The work to migrate to Postgres shuold be done now, either by bumping features or in a Project-X style.
+The work to migrate to Postgres should be done now, either by bumping features or in a Project-X style.
 
 # Unresolved questions
 
