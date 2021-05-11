@@ -3,6 +3,15 @@
 Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 ---
+May 11
+---
+- Agenda: 
+    - What was completed, upcoming Sprint Goal and Action Items
+    - Dependencies amongst teams on program level * Joint review of upcoming PBI’s and sprint goals to highlight and plan for potential impacts to delivery commitments
+    - Integration progress (CI and clean build of the system)
+    - Review current challenges re Processes and Tools"
+
+---
 June 16
 ---
 1. Invovle Trish in the planning meeting
