@@ -12,10 +12,10 @@ May 11
     - Review current challenges re Processes and Tools"
     - Ops Rotation Tickets and tracking them in sprints
     - Collecting some more stats on the sprints
-        - Measure of sprint goal success
-        - Escaped defects
-        - Epic time to market
-        - Scope changes (found work) 
+        - Measure of sprint goal success (rating scale of 1-10 on whether the goal was met)
+        - Escaped defects (no of ops tickets created)
+        - Epic time to market (time between start of dev and release to prod)
+        - Scope changes (found work during the sprint) 
 
 
 ---
