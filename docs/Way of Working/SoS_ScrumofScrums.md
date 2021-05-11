@@ -10,6 +10,13 @@ May 11
     - Dependencies amongst teams on program level * Joint review of upcoming PBI’s and sprint goals to highlight and plan for potential impacts to delivery commitments
     - Integration progress (CI and clean build of the system)
     - Review current challenges re Processes and Tools"
+    - Ops Rotation Tickets and tracking them in sprints
+    - Collecting some more stats on the sprints
+        - Measure of sprint goal success
+        - Escaped defects
+        - Epic time to market
+        - Scope changes (found work) 
+
 
 ---
 June 16
