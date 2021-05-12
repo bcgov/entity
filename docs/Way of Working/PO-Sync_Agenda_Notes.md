@@ -26,6 +26,7 @@ May 14, 2021
     - Action - Ian to follow up with Stephen re: Digital Credentials
 - New business
     - Jyoti to discuss freezing a business.
+    - BC Reg Home page discussion - Jyoti
 ----
 May 7, 2021
 ----
