@@ -14,19 +14,40 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+June 11, 2021
+----
+
+- One Month follow-up - Only demo items in test + definition of done is that ticket must be closed by QA (e.g. Riaz) + push all tickets that are not closed to the next milestone on Tuesday afternoon
+
+
+----
+May 21, 2021
+----
+
+----
 May 14, 2021
 ----
 - Outstanding Action Items
-    - Jason to come up with best practices for Rocket Chat notifications
+    - Jason to come up with best practices for Rocket Chat notifications - Resolved (Jason will follow up within Entities)
     - Email outputs - find a designer - interviews pending
-    - Action - Jyoti to contact Roy and Scott
-    - Action - Expand meeting to 1 hour and go through a round table - James to reach out to Jason and Sateesh
-    - Decision - only demo items in test + definition of done is that ticket must be closed by QA (e.g. Riaz) + push all tickets that are not closed to the next milestone on Tuesday afternoon
-    - Action - Ian to set up meeting with Kaine, Linda, Thor re: Beneficial Ownership
-    - Action - Ian to follow up with Stephen re: Digital Credentials
+    - Action - Jyoti to contact Roy and Scott - Resolved
+    - Action - Expand meeting to 1 hour and go through a round table - James to reach out to Jason and Sateesh - Resolved (this will essentially be a 1 hr dev sprint demo, not a dev guild)
+    - Decision - only demo items in test + definition of done is that ticket must be closed by QA (e.g. Riaz) + push all tickets that are not closed to the next milestone on Tuesday afternoon - Resolved (We will proceed with this as a strict practice and revisit in a month)
+    - Action - Ian to set up meeting with Kaine, Linda, Thor re: Beneficial Ownership - Resolved
+    - Action - Ian to follow up with Stephen re: Digital Credentials - Resolved - Action: Kaine will follow up on this email
+
 - New business
-    - Jyoti to discuss freezing a business.
-    - BC Reg Home page discussion - Jyoti
+    - Jyoti to discuss freezing a business - Action: Kaine will create a "frozen" story
+    - BC Reg Home page discussion - Jyoti - Action: Kaine will groom this next sprint and build it the sprint after within Assets
+    - Folio number - Resolved with note: This is stored in the business profile and we have what we need
+    - Jennifer - ICBC - Action: Ian will send the version that he has now
+    - Jennifer - Onboarding - Resolved with note: ADM approval is the next step, then she can do OCM work as part of onboarding before working with Kaine
+    - Jyoti - Design for FAS - Resolved with note: We will continue as we do with the $10 threshold for refunds and this money is being used for staff filing and nothing else (not applied as an account credit to be used for anything else on the system)
+    - Trish - Meeting capacity - Action: Jyoti will work with Kaine to coordinate an upgraded Zoom account (500 people) and let Trish know when there's an invite that can be sent out
+    - Jennifer - Data migration - Action: Kaine & Linda will go through the list of what has been done so far - Action: Jennifer will send James a note on this item
+
+
+
 ----
 May 7, 2021
 ----
