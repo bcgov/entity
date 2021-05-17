@@ -192,3 +192,4 @@ May 18th 2021
 [Meeting notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-3983)
 - What filings can a BC Company file if they have been voluntarily dissoved? What about Co-ops?
 - Review list of filing names
+- Can a co-op completing party be a corporation or firm? 
