@@ -37,10 +37,10 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities
 
 #### Relationships
-* Ministry Account Flow - Jyoti / Faiz - 
-* Show details of Transaction - Sumesh
-* VON API Integration - Jyoti
-* Show PAD Credits (If possible) - 
+* Ministry Account Flow - Jyoti / Faiz - 10mins
+* Show details of Transaction - Sumesh - 3 mins
+* VON API Integration - Jyoti - 4mins
+* Show PAD Credits (If possible) - Jyoti - 4mins
 
 
 #### Action Items:
