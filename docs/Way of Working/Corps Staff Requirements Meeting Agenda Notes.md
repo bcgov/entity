@@ -184,3 +184,10 @@ May 4th 2021
 ----
 [Meeting Notes]()
 - Co-op incorporation
+
+
+----
+May 18th 2021
+----
+[Meeting notes]()
+- What filings can a BC Company file if they have been voluntarily dissoved? What about Co-ops?
