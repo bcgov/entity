@@ -27,6 +27,28 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 -----------------------------------------------------------------------------------------------------------------------
 
+### May 17, 2021 - Sprint (Milestone) 9.2 - 70 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+*
+
+#### Entities
+
+#### Relationships
+* Ministry Account Flow - Jyoti / Faiz - 
+* Show details of Transaction - Sumesh
+* VON API Integration - Jyoti
+* Show PAD Credits (If possible) - 
+
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+-----------------------------------------------------------------------------------------------------------------------
+
 ### May 4, 2021 - Sprint (Milestone) 54 - 70 min. total 
 ----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
