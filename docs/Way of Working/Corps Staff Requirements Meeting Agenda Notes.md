@@ -160,7 +160,7 @@ April 6th, 2021
 ----
 April 13th, 2021
 ----
-Meeting notes
+[Meeting notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-3926)
 
 - Continuation In, HJ authorization
   - Linda's Decision Note
@@ -172,7 +172,7 @@ Meeting notes
 ----
 April 21st, 2021
 ----
-Meeting Notes
+[Meeting Notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-3938)
 
 - Scott's concepts for the numbered company
 - Alteration info package review
@@ -182,12 +182,12 @@ Meeting Notes
 ----
 May 4th 2021
 ----
-[Meeting Notes]()
+[Meeting Notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-3969)
 - Co-op incorporation
 
 
 ----
 May 18th 2021
 ----
-[Meeting notes]()
+[Meeting notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-3983)
 - What filings can a BC Company file if they have been voluntarily dissoved? What about Co-ops?
