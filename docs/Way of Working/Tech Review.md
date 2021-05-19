@@ -6,6 +6,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ## May 19, 2021
 ----
 - Upload and staff dashboard features - Relationships Team (Saravan and Sumesh)
+- ‘CI/CD Upgrade’ - Patrick
 ----
 ## Apr 7, 2021
 ----
