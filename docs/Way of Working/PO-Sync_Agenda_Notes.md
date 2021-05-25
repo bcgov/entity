@@ -35,18 +35,25 @@ May 28, 2021
 
 - New Business
 
-- Updates on Owned Risks
+- Updates on Owned Risks (Resolved, Mitigated, Accepted)
     - Partner Reluctance - P.O.s and OCM team own
-    - CAS - Jyoti
+    - CAS - re:what can it support and associated delay - Jyoti
     - Help Desk call mgmt + supporting spikes in business volume- OCM team
         - Trish has been soliciting feedback weekly
     - Time Constraints / Staffing Changes - Kaine
     - Call Center Rebid - P.O.s
     - Losing key CM resource - ELT
     - Tech Planning - James - **RESOLVED** - Thor invited to PO Sync
-    - API keys - Kaine
-    - Data Migration - Kaine
+    - API keys - Kaine - **DEFERRED** - Hold until fall
+    - Data Migration re:completing as big bang - Kaine
     - Team Task Integration Complexity (Lots of puzzles) - P.O.s
+
+- Updates on PI Planning Action Items
+    - More dedicated resources to triage & work on Ops tickets
+    - Build in more time if there are changes in team composition
+    - Better estimating/ identifying scope
+    - Training delivery. We should embed staff championing the functionality through our sprint sycles
+    - Aligning with leveraged product directions
 ----
 May 14, 2021
 ----
