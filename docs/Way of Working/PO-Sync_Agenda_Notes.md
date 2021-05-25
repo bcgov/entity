@@ -22,6 +22,17 @@ June 11, 2021
 
 
 ----
+May 28, 2021
+----
+- Outstanding Action Items
+    - Email outputs - find a designer
+    - Kaine to follow up with Stephen re: Digital Credentials
+    - Kaine will create a "frozen" story (re: freezing a business)
+    - re:BC Reg Home page - Kaine will groom this next sprint and build it the sprint after within Assets
+    - re:ICBC - Ian will send the version that he has now
+    - Jyoti will work with Kaine to coordinate an upgraded Zoom account (500 people) and let Trish know when there's an invite that can be sent out
+    - re: Migration - Jennifer will send James a note on this item - Note: we will revisit this in a month - Done. On the agenda for next month
+----
 May 14, 2021
 ----
 - Outstanding Action Items
