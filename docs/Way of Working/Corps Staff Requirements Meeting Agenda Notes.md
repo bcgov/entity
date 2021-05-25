@@ -200,3 +200,4 @@ May 25th 2021
 [Meeting Notes]
 - Review Tracey's Co-op incorproation designs for step 1 2 and 5
 - Review wireframes Co-op incorproation for step 3 and 4
+- When co-ops need "majority of directors in Canada", would 2 in canada and 2 outside of canada be ok? What are the specifics of this rule? Should we discuss with policy?
