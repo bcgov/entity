@@ -34,7 +34,7 @@ May 28, 2021
     - re: Migration - Jennifer will send James a note on this item - Note: we will revisit this in a month - Done. On the agenda for next month
 
 - New Business
-    - 
+    
 ----
 May 14, 2021
 ----
