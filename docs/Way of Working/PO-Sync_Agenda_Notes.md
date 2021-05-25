@@ -34,7 +34,19 @@ May 28, 2021
     - re: Migration - Jennifer will send James a note on this item - Note: we will revisit this in a month - Done. On the agenda for next month
 
 - New Business
-    
+
+- Updates on Owned Risks
+    - Partner Reluctance - P.O.s and OCM team own
+    - CAS - Jyoti
+    - Help Desk call mgmt + supporting spikes in business volume- OCM team
+        - Trish has been soliciting feedback weekly
+    - Time Constraints / Staffing Changes - Kaine
+    - Call Center Rebid - P.O.s
+    - Losing key CM resource - ELT
+    - Tech Planning - James - **RESOLVED** - Thor invited to PO Sync
+    - API keys - Kaine
+    - Data Migration - Kaine
+    - Team Task Integration Complexity (Lots of puzzles) - P.O.s
 ----
 May 14, 2021
 ----
