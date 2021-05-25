@@ -193,3 +193,10 @@ May 18th 2021
 - What filings can a BC Company file if they have been voluntarily dissoved? What about Co-ops?
 - Review list of filing names
 - Can a co-op completing party be a corporation or firm? 
+
+----
+May 25th 2021
+----
+[Meeting Notes]
+- Review Tracey's Co-op incorproation designs for step 1 2 and 5
+- Review wireframes Co-op incorproation for step 3 and 4
