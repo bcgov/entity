@@ -32,6 +32,9 @@ May 28, 2021
     - re:ICBC - Ian will send the version that he has now
     - Jyoti will work with Kaine to coordinate an upgraded Zoom account (500 people) and let Trish know when there's an invite that can be sent out
     - re: Migration - Jennifer will send James a note on this item - Note: we will revisit this in a month - Done. On the agenda for next month
+
+- New Business
+    - 
 ----
 May 14, 2021
 ----
