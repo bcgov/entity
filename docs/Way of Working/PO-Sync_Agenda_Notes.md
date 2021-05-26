@@ -18,7 +18,7 @@ June 11, 2021
 ----
 
 - One Month follow-up - Only demo items in test + definition of done is that ticket must be closed by QA (e.g. Riaz) + push all tickets that are not closed to the next milestone on Tuesday afternoon
-- One Month follow-up - Data migration - Revisit current state and planning ahead
+- One Month follow-up - (COLIN) Data migration - Revisit current state and planning ahead
 
 
 ----
