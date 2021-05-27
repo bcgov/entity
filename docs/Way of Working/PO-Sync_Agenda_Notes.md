@@ -32,6 +32,7 @@ May 28, 2021
     - re:ICBC - Ian will send the version that he has now
     - Jyoti will work with Kaine to coordinate an upgraded Zoom account (500 people) and let Trish know when there's an invite that can be sent out
     - re: Migration - Jennifer will send James a note on this item - Note: we will revisit this in a month - Done. On the agenda for next month
+    - Receipt for 7716. Initial AC added details into transactions for Name Request and PPR search. Further changes to template which cause additional work on API to customize 	blue header for each app. Recommendation to go ahead with transaction component of ticket for Names / PPR. If further changes are needed for blue bar we can look at 		generic option or can Names build their customized option?
 
 - New Business
 
