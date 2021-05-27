@@ -3,6 +3,11 @@
 Agenda and description re Tech Review see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 ----
+## June 2, 2021
+----
+ - Internal sprint demo
+ - Should story points be added to Ops tickets - round table discussion
+----
 ## May 19, 2021
 ----
 - Upload and staff dashboard features - Relationships Team (Saravan and Sumesh)
