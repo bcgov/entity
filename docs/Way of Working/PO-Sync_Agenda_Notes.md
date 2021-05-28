@@ -56,6 +56,55 @@ May 28, 2021
     - Better estimating/ identifying scope
     - Training delivery. We should embed staff championing the functionality through our sprint sycles
     - Aligning with leveraged product directions
+
+- **Meeting Notes:**
+- Outstanding Action Items
+    - Email outputs - find a designer
+        - Posting is up - closes today
+        - Looking through the submissions
+    - Kaine to follow up with Stephen re: Digital Credentials
+        - closed
+    - Kaine will create a "frozen" story (re: freezing a business)
+        - Added 7584 - closed
+    - re:BC Reg Home page - Kaine will groom this next sprint and build it the sprint after within Assets
+        - Closed - added to sprint
+    - re:ICBC - Ian will send the version that he has now
+        - Closed
+    - Jyoti will work with Kaine to coordinate an upgraded Zoom account (500 people) and let Trish know when there's an invite that can be sent out
+        - Closed - has been created
+    - re: Migration - Jennifer will send James a note on this item - Note: we will revisit this in a month - Done. On the agenda for next month
+- New Business
+    - Session schedule & plan for BCOL clients - Trish
+        - Trish confirmed the presenters for the upcoming engagement sessions
+        - Both Kaine and Linda would like to attend
+        - Trish to schedule 'account related' session to later in order to provide the Relationships team time to prepare
+    - Receipt for 7716. Initial AC added details into transactions for Name Request and PPR search. Further changes to template which cause additional work on API to customize blue header for each app. Recommendation to go ahead with transaction component of ticket for Names / PPR. If further changes are needed for blue bar we can look at generic option or can Names build their customized option?
+        - Recommendation accepted
+    - BCOL home page - Trish
+        - Looking to put some info on the BCOL home page to inform clients about the modernization
+        - Trish to change Cooperatives to Cooperative Associations
+        
+- Updates on Owned Risks (Resolved, Mitigated, Accepted)
+    - Partner Reluctance - P.O.s and OCM team own
+    - CAS - re:what can it support and associated delay - Jyoti
+    - Help Desk call mgmt + supporting spikes in business volume- OCM team
+        - Trish has been soliciting feedback weekly
+    - Time Constraints / Staffing Changes - Kaine
+    - Call Center Rebid - P.O.s
+    - Losing key CM resource - ELT
+        - **Mags is joining the team - RESOLVED**
+    - Tech Planning - James - RESOLVED - Thor invited to PO Sync
+    - API keys - Kaine - DEFERRED - Hold until fall
+    - Data Migration re:completing as big bang - Kaine
+    - Team Task Integration Complexity (Lots of puzzles) - P.O.s
+- Updates on PI Planning Action Items - No changes
+    - More dedicated resources to triage & work on Ops tickets
+        - Eve joined and is ramping up
+        - Greg is coming back next week
+    - Build in more time if there are changes in team composition
+    - Better estimating/ identifying scope
+    - Training delivery. We should embed staff championing the functionality through our sprint cycles
+    - Aligning with leveraged product directions
 ----
 May 14, 2021
 ----
