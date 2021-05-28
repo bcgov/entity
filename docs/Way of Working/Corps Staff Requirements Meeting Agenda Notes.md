@@ -202,3 +202,11 @@ May 25th 2021
 - Review wireframes Co-op incorproation for step 3 and 4
 - When co-ops need "majority of directors in Canada", would 2 in canada and 2 outside of canada be ok? What are the specifics of this rule? Should we discuss with policy?
 - Is the person who is certifying ALWAYS the same person as the completing party?
+
+----
+June 1st 2021
+----
+[meeting notes]
+- Fee Summary: does not display the correct text for Change of Director Address ([#4617](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/4617))
+- 
+- 
