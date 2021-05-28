@@ -35,6 +35,7 @@ May 28, 2021
     - Receipt for 7716. Initial AC added details into transactions for Name Request and PPR search. Further changes to template which cause additional work on API to customize 	blue header for each app. Recommendation to go ahead with transaction component of ticket for Names / PPR. If further changes are needed for blue bar we can look at 		generic option or can Names build their customized option?
 
 - New Business
+    - Session schedule & plan for BCOL clients Trish
 
 - Updates on Owned Risks (Resolved, Mitigated, Accepted)
     - Partner Reluctance - P.O.s and OCM team own
