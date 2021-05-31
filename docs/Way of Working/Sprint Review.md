@@ -37,8 +37,10 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities
 
 #### Relationships
-* 6921  - Saravan
-* 7533 - Melissa
+* Multiple Account Creation Issues - Potential Solution (6921) - Saravan
+* Action Based Account setup changes (7533) - Melissa
+* Reverse sort for Pending affidavits (7417) - Saravan
+* Display Account Number In Account Information screen (7563) - Saravan
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
