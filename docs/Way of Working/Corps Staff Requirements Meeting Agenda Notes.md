@@ -197,7 +197,7 @@ May 18th 2021
 ----
 May 25th 2021
 ----
-[Meeting Notes]
+[Meeting Notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-3991)
 - Review Tracey's Co-op incorproation designs for step 1 2 and 5
 - Review wireframes Co-op incorproation for step 3 and 4
 - When co-ops need "majority of directors in Canada", would 2 in canada and 2 outside of canada be ok? What are the specifics of this rule? Should we discuss with policy?
@@ -206,7 +206,7 @@ May 25th 2021
 ----
 June 1st 2021
 ----
-[meeting notes]
+[meeting notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-4000)
 - Fee Summary: does not display the correct text for Change of Director Address ([#4617](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/4617))
 - Dissolution ([Requirements doc for business summary](https://docs.google.com/document/u/0/d/18BICRQQcqRJ5gZ9CBh9XJg1B8mH1-dbD1h58-gFtQb8/edit?usp=sharing))([Requirements doc for VOLUNTARY dissolution](https://docs.google.com/document/d/1pJM2mUoG5ln6eiopole3BY5PBAExESBGz4cRYdnDG58/edit?usp=sharing))([Requirements doc for ADMINISTRATIVE dissolution](https://docs.google.com/document/d/1HapQ6nCtImerCzlpZuAZFxpfNDm8tr4x29TZU3cJbPo/edit?usp=sharing))
 - 
