@@ -6,6 +6,7 @@ https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.asp
 ## June 2, 2021
 ----
  - Internal sprint demo
+ - Basic HTML layout - Severin
  - Should story points be added to Ops tickets - round table discussion
 ----
 ## May 19, 2021
