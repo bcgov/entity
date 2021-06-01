@@ -25,6 +25,7 @@ June 11, 2021
 June 4, 2021
 ----
 - New Business
+    - Sprint Demo agenda and metrics
     - DoD for Epics - James
 
 
