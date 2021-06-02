@@ -27,6 +27,8 @@ June 4, 2021
 - New Business
     - Sprint Demo agenda and metrics
     - DoD for Epics - James
+    - BA OPS Rotation
+    - HOw are we tracking OPS ticket in a Sprint? New Ones, Left behind ones?
 
 
 ----
