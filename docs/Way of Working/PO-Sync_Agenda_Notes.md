@@ -46,8 +46,8 @@ May 28, 2021
     - Receipt for 7716. Initial AC added details into transactions for Name Request and PPR search. Further changes to template which cause additional work on API to customize 	blue header for each app. Recommendation to go ahead with transaction component of ticket for Names / PPR. If further changes are needed for blue bar we can look at 		generic option or can Names build their customized option?
 
 - Updates on Owned Risks (Resolved, Mitigated, Accepted)
-    - Partner Reluctance - P.O.s and OCM team own
-    - CAS - re:what can it support and associated delay - Jyoti
+    - Partner Reluctance - re: public partners are slow to migrate from BCOL to APIs  - P.O.s and OCM team own
+    - CAS - re: CAS may not be able to support FAS; may be too slow  - Jyoti
     - Help Desk call mgmt + supporting spikes in business volume- OCM team
         - Trish has been soliciting feedback weekly
     - Time Constraints / Staffing Changes - Kaine
@@ -55,8 +55,8 @@ May 28, 2021
     - Losing key CM resource - ELT
     - Tech Planning - James - **RESOLVED** - Thor invited to PO Sync
     - API keys - Kaine - **DEFERRED** - Hold until fall
-    - Data Migration re:completing as big bang - Kaine
-    - Team Task Integration Complexity (Lots of puzzles) - P.O.s
+    - Asset Data Migration re:completing as big bang - Kaine
+    - Team Task Integration Complexity (Lots of puzzles) - P.O.s **MITIGATED** - Increased Planning
 
 - Updates on PI Planning Action Items
     - More dedicated resources to triage & work on Ops tickets
