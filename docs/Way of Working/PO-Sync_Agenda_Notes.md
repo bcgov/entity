@@ -27,10 +27,11 @@ June 4, 2021
 - New Business
     - Sprint Demo agenda and metrics
     - DoD for Epics - James
-    - Business Infomration Update - Jyoti
+    - Business Information Update - Jyoti
     	- Jyoti to bring up Business Size and Legal Business Name(Would we allow clients typing ahead post the search results?)
     - BA OPS Rotation
-    - HOw are we tracking OPS ticket in a Sprint? New Ones, Left behind ones?
+    - How are we tracking OPS ticket in a Sprint? New Ones, Left behind ones?
+    - Is the PI on track?
 
 
 ----
