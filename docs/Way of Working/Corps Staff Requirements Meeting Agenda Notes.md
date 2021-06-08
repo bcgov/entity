@@ -219,4 +219,4 @@ June 8th, 2021
 ----
 - 7731 legislation for different entity type
 - Review my first drafts of help text for LTD, ULC, CCC incorporation
-- Review Name Request 2.0/search combo designs for feedback
+- Review Name Request 2.0 designs for feedback
