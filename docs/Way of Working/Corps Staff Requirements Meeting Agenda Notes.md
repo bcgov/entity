@@ -218,5 +218,5 @@ June 1st 2021
 June 8th, 2021
 ----
 - 7731 legislation for different entity type
-- If a filing is future effective, the filing gets stuck in "pending", then the FE date and time passes.. what should we do? Has this happened in COLIN before?
+- Review my first drafts of help text for LTD, ULC, CCC incorporation
 - 
