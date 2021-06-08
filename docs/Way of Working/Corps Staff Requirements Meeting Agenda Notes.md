@@ -217,6 +217,7 @@ June 1st 2021
 ----
 June 8th, 2021
 ----
+[Meeting Notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-4010)
 - Legislation for different entity type ([#7731](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/7731))
 - Review my first drafts of help text for LTD, ULC, CCC incorporation
 - Review Name Request 2.0 designs for feedback
