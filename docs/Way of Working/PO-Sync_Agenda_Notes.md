@@ -17,11 +17,14 @@ Standing Agenda:
 June 11, 2021
 ----
 
-- One Month follow-up - Only demo items in test + definition of done is that ticket must be closed by QA (e.g. Riaz) + push all tickets that are not closed to the next milestone on Tuesday afternoon
-- One Month follow-up - (COLIN) Data migration - Revisit current state and planning ahead
-- API GW - Should we encourage brand new API users for using BCOL Drawdown account? ASCENTI has reached out for starting the process.
-- How are we tracking OPS ticket in a Sprint? New Ones, Left behind ones?
-- How do we record epics for One Stop OCM - Trish
+- New Business
+    - DoD for Epics - James
+    - How are we tracking OPS ticket in a Sprint? New Ones, Left behind ones?
+    - One Month follow-up - Only demo items in test + definition of done is that ticket must be closed by QA (e.g. Riaz) + push all tickets that are not closed to the next milestone on Tuesday afternoon
+    - One Month follow-up - (COLIN) Data migration - Revisit current state and planning ahead
+    - API GW - Should we encourage brand new API users for using BCOL Drawdown account? ASCENTI has reached out for starting the process.
+    - How are we tracking OPS ticket in a Sprint? New Ones, Left behind ones?
+    - How do we record epics for One Stop OCM - Trish
 ----
 June 4, 2021
 ----
@@ -33,7 +36,22 @@ June 4, 2021
     - BA OPS Rotation
     - Is the PI on track?
 
-
+- **Meeting Notes**
+- Outstanding Action Items
+    - None
+- Possible carry-over discussion
+    - Session schedule & plan for BCOL clients – Trish - **Closed**
+- New Business
+    - Sprint Demo agenda and metrics
+        - **Decision** - Add demo agenda and send out to stakeholders prior to meeting
+        - 15 mins for demos
+        - Perhaps open up to other stakeholders - look at this again later
+        - PI Planning - just show the visual
+    - DoD for Epics – James
+    - Business Information Update - Jyoti
+        - Jyoti to bring up Business Size and Legal Business Name(Would we allow clients typing ahead post the search results?)
+    - BA OPS Rotation
+        - Should we have BA's rotate in ops **DECISION** yes
 ----
 May 28, 2021
 ----
