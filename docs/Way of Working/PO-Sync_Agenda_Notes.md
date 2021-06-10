@@ -24,6 +24,7 @@ June 11, 2021
     - One Month follow-up - (COLIN) Data migration - Revisit current state and planning ahead
     - API GW - Should we encourage brand new API users for using BCOL Drawdown account? ASCENTI has reached out for starting the process.
     - How do we record epics for One Stop OCM - Trish
+    - Have some people trained on how to turn the app off - Jason / Kaine
 ----
 June 4, 2021
 ----
