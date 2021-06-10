@@ -23,7 +23,6 @@ June 11, 2021
     - One Month follow-up - Only demo items in test + definition of done is that ticket must be closed by QA (e.g. Riaz) + push all tickets that are not closed to the next milestone on Tuesday afternoon
     - One Month follow-up - (COLIN) Data migration - Revisit current state and planning ahead
     - API GW - Should we encourage brand new API users for using BCOL Drawdown account? ASCENTI has reached out for starting the process.
-    - How are we tracking OPS ticket in a Sprint? New Ones, Left behind ones?
     - How do we record epics for One Stop OCM - Trish
 ----
 June 4, 2021
