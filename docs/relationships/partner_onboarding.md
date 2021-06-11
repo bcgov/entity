@@ -8,7 +8,7 @@ This document lists the integration points for BC Registries application partner
 ## 1.1  Authentication Flow
 
 BC Registries uses [Keycloak](https://www.keycloak.org/documentation) for identity management. Partner application needs to integrate with Keycloak (configuration to be provided by BC Registries team) to authenticate BC Registries Users onto partner application. Below diagram shows the sequence of integration.
-![Registry Pay System Flow Diagram](https://github.com/bcgov/sbc-pay/blob/development/docs/docs/architecture/Authentication%20Flow.png?raw=true)
+![Registry Pay System Flow Diagram](https://github.com/bcgov/sbc-pay/blob/main/docs/docs/architecture/Authentication%20Flow.png?raw=true)
 
  - Login Flow : This is the first integration point where the partner application integrates with keycloak. Application needs to integrate with Keycloak using [OIDC](https://openid.net/developers/specs/) [authorization code](https://auth0.com/docs/flows/authorization-code-flow) flow to get *access_token* and *refresh_token*. 
  - Registration Flow : If the access_token doesn't have the role *account_holder* means user doesn't have any account registered with BC Registries, so redirect the user to create an account. Details on redirection is added in later sections.
@@ -17,7 +17,7 @@ BC Registries uses [Keycloak](https://www.keycloak.org/documentation) for identi
 ## 1.2 Payment Flow
 
 Below diagram shows the sequence of integration from pay perspective.
-![Registry Pay System Flow Diagram](https://github.com/bcgov/sbc-pay/blob/development/docs/docs/architecture/Pay%20Flow.png?raw=true)
+![Registry Pay System Flow Diagram](https://github.com/bcgov/sbc-pay/blob/main/docs/docs/architecture/Pay%20Flow.png?raw=true)
  - Calculate Fees :  This endpoint would return fee details for the selected product.
  - Post payment request : Once the user is ready to pay call this endpoint to send the payment details.
  - Redirect for payment : If the user is working for a basic account, then they needs to be redirected for credit card payment.
@@ -43,7 +43,7 @@ A new keycloak client specific to the partner will be issued by BC Registries te
 All the endpoints are secured by keycloak and partner system must send the access_token as a Bearer Authorization header to all API requests. 
 # 4. Auth API Integration
 Auth API handles the accounts and authorizations related services. 
-> Please check [API Spec](https://github.com/bcgov/sbc-auth/blob/development/docs/docs/api_contract/auth-api-1.0.0.yaml) for details on available services and examples.
+> Please check [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml) for details on available services and examples.
 ## 4.1 User settings
 
 REST Endpoint : `GET` `{auth-api-base-url}/api/v1/users/{user-guid}/settings`
@@ -54,7 +54,7 @@ Parameters :
 
 &nbsp;&nbsp;&nbsp;&nbsp;`user-guid` is the `sub` claim from access_token
 
-Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/development/docs/docs/api_contract/auth-api-1.0.0.yaml#L4012) for the response schema
+Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L4012) for the response schema
 
 ### Handle user settings response
 
@@ -78,7 +78,7 @@ Parameters :
 
 &nbsp;&nbsp;&nbsp;&nbsp;`product-code` to be provided for each partner upon on-boarding by BC Registries.
 
-Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/development/docs/docs/api_contract/auth-api-1.0.0.yaml#L3228) for the response schema
+Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L3228) for the response schema
 
 
 ### Check if account have authorization
@@ -96,7 +96,7 @@ Parameters :
 
 &nbsp;&nbsp;&nbsp;&nbsp;`Account-Id` is the selected account id from previous step.
 
-Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/development/docs/docs/api_contract/auth-api-1.0.0.yaml#L949) for the response schema
+Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L949) for the response schema
 
 ## 4.4 Get account contact
 If the partner system needs account contact details then use the below endpoint,
@@ -109,7 +109,7 @@ Parameters :
 
 &nbsp;&nbsp;&nbsp;&nbsp;`Account-Id` is the selected account id from previous step.
 
-Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/development/docs/docs/api_contract/auth-api-1.0.0.yaml#L630) for the response schema
+Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L630) for the response schema
 
 # 5. Pay API Integration
 Pay API handles the account payments related services. 
