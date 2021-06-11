@@ -221,3 +221,10 @@ June 8th, 2021
 - Legislation for different entity type ([#7731](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/7731))
 - Review my first drafts of help text for LTD, ULC, CCC incorporation ([Draft](https://docs.google.com/document/d/1IokxIcLKUetMCptRbCXpqWCXH0o5Bgj1CFQFPPvT150/edit?usp=sharing))
 - Review Name Request 2.0 designs for feedback
+
+
+----
+June 15, 2021
+----
+[Meeting Notes]()
+- Co-op "Amended Annual Report", is it a correction or a distinct filing on its own?
