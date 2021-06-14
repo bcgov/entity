@@ -17,7 +17,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * 
 
 #### Relationships
-*
+* Capture Additional information for business during account creation (7782) - Kartik -- 10mins
 
 
 
