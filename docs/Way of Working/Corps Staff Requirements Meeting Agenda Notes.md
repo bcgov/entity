@@ -226,7 +226,7 @@ June 8th, 2021
 ----
 June 15, 2021
 ----
-[Meeting Notes]()
+[Meeting Notes (temp link while sienna doesn't have sharepoint](https://docs.google.com/document/d/1GhjNq5dEvdKsdn24JhKixRYOlP0O8K7sVRQe2LIGnoE/edit?usp=sharing)
 - Co-op "Amended Annual Report", is it a correction or a distinct filing on its own?
 - CCC tool top help text
 - CCC sample articles
