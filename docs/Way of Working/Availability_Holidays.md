@@ -30,7 +30,7 @@
 * Milan: Jan 7th 2021
 * Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3, ...); Nov 02, 2020-Nov 13, 2020; Dec 21, 2020 - Jan 5, 2021, 
 * Roy: Dec 23 - Dec 24 
-* Sumesh: May 21, July 2, 
+* Sumesh: July 2, 
 * Saravan: Feb 12 and Feb 15th
 * Sateesh:
 * Rai: 
