@@ -14,6 +14,20 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+June 18, 2021
+----
+- Action Items
+    -  API GW - Should we encourage brand new API users for using BCOL Drawdown account? ASCENTI has reached out for starting the process.
+        - **Action** Jyoti to update epic and potentially create a ticket - review with Kaine, Sara and Duane
+     - API GW - Should we encourage brand new API users for using BCOL Drawdown account? ASCENTI has reached out for starting the process.
+        - **Action** Jyoti to update epic and potentially create a ticket - review with Kaine, Sara and Duane    - 
+
+- Carry-over
+    - One Month follow-up - (COLIN) Data migration - Revisit current state and planning ahead
+
+- New Business
+    - 
+----
 June 11, 2021
 ----
 
@@ -25,6 +39,32 @@ June 11, 2021
     - API GW - Should we encourage brand new API users for using BCOL Drawdown account? ASCENTI has reached out for starting the process.
     - How do we record epics for One Stop OCM - Trish
     - Have some people trained on how to turn the app off - Jason / Kaine
+
+- **Meeting Notes**
+- Carry-over
+    - DoD for Epics – James
+        - **Decision** close or move stories to a new epic after prod release
+    - How are we tracking OPS ticket in a Sprint? New Ones, Left behind ones?
+        - Jason has done some investigation of overall quality
+        - Right now ops get pulled into a sprint if they are going to be closed, or if they are staying with the team member until they are closed
+        - The amount of effort teams are spending on Ops tickets is getting lost
+        - **Decision** report the % of ops worked at the team level and role it up to the program level and track number of bugs completed
+
+- New Business
+    - One Month follow-up - Only demo items in test + definition of done is that ticket must be closed by QA (e.g. Riaz) + push all tickets that are not closed to the next milestone on Tuesday afternoon
+        - Teams are following this practice
+    - One Month follow-up - (COLIN) Data migration - Revisit current state and planning ahead
+        - **push to next week**
+    - API GW - Should we encourage brand new API users for using BCOL Drawdown account? ASCENTI has reached out for starting the process.
+        - **Action** Jyoti to update epic and potentially create a ticket - review with Kaine, Sara and Duane
+    - How do we record epics for One Stop OCM – Trish
+        - Create epics that can be completed within a PI
+    - Have some people trained on how to turn the app off - Jason / Kaine
+        - **Action** Discuss at next SRE meeting - Kaine to add to Rocketchat
+    - Is the PI on track?
+    - New Hires and IDM
+        - A number of hires have been made
+        - Kaine chatted with Jason Owens
 ----
 June 4, 2021
 ----
