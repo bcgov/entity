@@ -26,7 +26,8 @@ June 18, 2021
     - One Month follow-up - (COLIN) Data migration - Revisit current state and planning ahead
 
 - New Business
-    - 
+    - QA Resource Allocation(jyoti)
+    - Service Fee Distribution(jyoti)
 ----
 June 11, 2021
 ----
