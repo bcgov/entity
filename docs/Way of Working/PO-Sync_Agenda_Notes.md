@@ -12,6 +12,16 @@ Standing Agenda:
 3. Problems/ Opportunities with Features - Decisions 
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
+----
+June 25, 2021
+----
+- Action Items
+    - **Action** Linda to follow up this week on COLIN migration
+    - **Action** Linda to follow up on NRO migration 
+
+- New Business
+    - Partner roadmap – status; who should own
+    - How are folks feeling about the long-term planning process; purpose
 
 ----
 June 18, 2021
@@ -28,6 +38,19 @@ June 18, 2021
 - New Business
     - QA Resource Allocation(jyoti)
     - Service Fee Distribution(jyoti)
+
+- Meeting Notes:
+    - A1 - ticket is created - **Closed**
+    - A2 - Kaine added the notification on RocketChat - **Closed**
+    - **Action** Linda to follow up this week on COLIN migration
+    - **Action** Linda to follow up on NRO migration 
+    - QA Resource Allocation
+        - How are we allocating resources between the teams
+        - **Decision** - one per team - Riyaz to lead
+    - Service Fee Distribution
+        - One fee per distribution - preliminary decision
+        - **Action** - Linda will follow-up with Carol
+    - Build in more time - **closed**
 ----
 June 11, 2021
 ----
