@@ -232,3 +232,11 @@ June 15, 2021
 - CCC sample articles
 - SHOEBOX INVESTMENTS INC. BC1294095
 - Should we surpress the SOFI outputs, so the only ones available are the new Business Registry outputs? The SOFI versions of the outputs are wrong. ([#6597](https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/6597))
+
+
+----
+June 25th, 2021. Special Friday Edition
+----
+[meeting notes]
+- AR reminders for co-ops and bcomps
+- 
