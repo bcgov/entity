@@ -6,16 +6,16 @@
 
 # Summary
 
-Name Request will publish messages using the cloud event standard to a queue when a NR has been paid for or when a 
+Name Request will publish messages using the CloudEvent standard to a queue when a NR has been paid for or when a 
 state change occurs for a NR.  The events will be published to a specific subject and relevant
 applications/services will be able to subscribe to the subject, consuming the events as required.
 
-_Note: the cloud event format is already being used by the names pay service when publishing to the entity emailer queue.
+_Note: the CloudEvent format is already being used by the names pay service when publishing to the entity emailer queue.
 As such, some of the queue common code can be leveraged during implementation._
 
 # Basic example
 
-Example cloud event format currently being used by names pay service to push a message to the entity emailer queue. 
+Example CloudEvent format currently being used by names pay service to publish a message to the entity emailer queue. 
 
 ``` json
 
@@ -36,9 +36,8 @@ Example cloud event format currently being used by names pay service to push a m
 
 ```
 
-###Sample cloud event implementation from names pay:
+###Code snippets from names pay service's CloudEvent implementation:
 
-Code snippet from /namex/services/namex-pay/venv/lib/python3.8/site-packages/queue_common/messages.py
 ``` python
 
 def create_cloud_event_msg(msg_id, msg_type, source, time, identifier, json_data_body):  # pylint: disable=too-many-arguments # noqa E501
@@ -63,7 +62,6 @@ def create_cloud_event_msg(msg_id, msg_type, source, time, identifier, json_data
 ```
 
 
-Code snippet from /Users/argus/h3/git/bcreg/namex/services/namex-pay/src/namex_pay/worker.py
 ``` python
    
     nr = RequestDAO.find_by_id(payment.nrId)
@@ -90,16 +88,16 @@ Code snippet from /Users/argus/h3/git/bcreg/namex/services/namex-pay/src/namex_p
 
 Implementing an event driven architecture through the use of queues allows us to decouple services and 
 reduce the likelihood of a single point of failure.  This architecture is also highly scaleable both from 
-the perpsective that there is no point to point integration and that it is very easily
-to integrate new services that want to consume a certain type of message in an adhoc manner.
+the perpsective that there is no need for point to point integration and that it is very easy
+to integrate new services that need to consume a certain type of message in an adhoc manner.
 
-In addition, the cloud event standard will provide a common messaging format that all developers can 
+In addition, the CloudEvent standard will provide a common messaging format that all developers can 
 reference when implementing queue related logic for producing and consuming messages.
 
 
 # Detailed design
 
-![Name Request Cloud Events Diagram](rfc-cloud-events-for-name-request/cloud_events_diagram.png)
+![Name Request CloudEvents Diagram](rfc-cloud-events-for-name-request/cloud_events_diagram.png)
 
 
 # Drawbacks
@@ -107,7 +105,11 @@ reference when implementing queue related logic for producing and consuming mess
 Event publishing or consumption may not happen in a timely enough matter in particular scenarios.
 
 May be difficult to debug errors when trying to trace the publishing and consumption of messages.  Particularly in
-scenarios where there are a lot of messages being published and consumed.
+scenarios where there are a lot of messages being published and consumed.  
+
+_Note:  We are moving to implement spans across our queues which will allow tracebility through a common
+context.  Implementation of this feature is possible once our queue infrastructure has been upgraded to a version
+that supports spans._   
 
 
 # Alternatives
@@ -120,7 +122,7 @@ through api calls in instances where information needs to be pushed to other app
 
 Should be straightforward as we can reference names-pay and queues are already used in a lot of places.  As well, 
 as the use of queues is already a loosely coupled approach(i.e. consumers and producers don't know about each other), 
-the introduction of new messages and consumption of new messages should have minimal effects to other services and components.
+the introduction of new messages and consumption of new messages should have minimal effects on other services and components.
 
 # Unresolved questions
 
