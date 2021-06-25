@@ -26,7 +26,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 -----------------------------------------------------------------------------------------------------------------------
 
 ### June 29, 2021 - Sprint (Milestone) 9.5 - 70 min. total 
-----
+
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Assets
@@ -41,10 +41,8 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 -----------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------
 
 ### June 15, 2021 - Sprint (Milestone) 9.4 - 70 min. total 
-----
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Assets
