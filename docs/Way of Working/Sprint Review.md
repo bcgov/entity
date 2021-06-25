@@ -35,7 +35,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities
 
 #### Relationships
-* BCeid Affidavit flow (Affidavit Submit and Review) (7780, 7781) - Amit - 15mins
+* BCeid Affidavit flow (Affidavit Submit and Review) (7780, 7781) - Amit - 10mins
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
