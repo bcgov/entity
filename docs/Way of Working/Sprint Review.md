@@ -17,13 +17,48 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * 
 
 #### Relationships
-* Capture Additional information for business during account creation (7782) - Karthik -- 10mins
-
-
+* 
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
+
+-----------------------------------------------------------------------------------------------------------------------
+
+### June 29, 2021 - Sprint (Milestone) 9.5 - 70 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+*
+
+#### Entities
+
+#### Relationships
+* BCeid Affidavit flow (Affidavit Submit and Review) (7780, 7781) - Amit - 15mins
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+
+### June 15, 2021 - Sprint (Milestone) 9.4 - 70 min. total 
+----
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+*
+
+#### Entities
+
+#### Relationships
+* Capture Additional information for business during account creation (7782) - Karthik -- 10mins
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+-----------------------------------------------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------------------------------------------
 
