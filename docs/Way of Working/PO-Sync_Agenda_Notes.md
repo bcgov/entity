@@ -22,6 +22,7 @@ June 25, 2021
 - New Business
     - Partner roadmap – status; who should own
     - How are folks feeling about the long-term planning process; purpose
+    - Names Request Release and NRO decommission scheduled for the end of July
 
 ----
 June 18, 2021
