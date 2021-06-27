@@ -7,8 +7,8 @@
 # Summary
 
 Name Request will publish messages using the CloudEvent standard to a queue when a NR has been paid for or when a
-state change occurs for a NR.  The events will be published to a specific subject and relevant
-applications/services will be able to subscribe to the subject, consuming the events as required.
+state change occurs for a NR.  The events will be published to a specific subject and relevant applications/services 
+will be able to subscribe to the subject, consuming the events as required.
 
 _Note: the CloudEvent format is already being used by the names pay service when publishing to the entity emailer queue.
 As such, some of the queue common code can be leveraged during implementation._
@@ -86,16 +86,12 @@ def create_cloud_event_msg(msg_id, msg_type, source, time, identifier, json_data
 
 # Motivation
 
-Implementing an event driven architecture through the use of queues allows us to decouple services and
-reduce the likelihood of a single point of failure.  This architecture is also highly scaleable both from
-the perpsective that there is no need for point to point integration and that it is very easy
-to integrate new services that need to consume a certain type of message in an adhoc manner.
-
-In addition, the CloudEvent standard will provide a common messaging format that all developers can
-reference when implementing queue related logic for producing and consuming messages.
+To provide a way for other services and applications to subscribe to different NR events(NR state changes and NR payment
+completed) and to be able to act on the event data accordingly.  This will be particularly helpful as we add more 
+features to the My Business Dashboard.
 
 
-# CloudEvent Attributes Usage (WIP)
+# CloudEvent Attributes Usage
 
 This section is intended to provide a general set of guidelines as to how the attributes of the CloudEvent payload should
 be used within the context of the development teams at BC Registries.  As such, this section will not contain an 
@@ -103,20 +99,32 @@ exhaustive description of CloudEvent attributes.  For more details of CloudEvent
 CloudEvents specification as provided in the references section of this document.
 
 
-| Attribute Name  | Attribute Type | Data Type     | Example Value                        | Required | Notes      |
-|-----------------|----------------|---------------|--------------------------------------|----------|------------|
-| specversion     | context        | string        | 1.0.1                                | Y        |            |
-| source          | context        | URI-reference | /sbc_pay_api/invoice/<INVOICE_ID>    | Y        |            |
-| id              | context        | string        | 16fd2706-8baf-433b-82eb-8c7fada847da | Y        | use uuidv4 |
-| type            | context        | string        | bc.registry.nr_payment.complete      | Y        |            |
-| datacontenttype | context        | string        | application/json                     | N        |            |
-| time            | context        | timestamp     |                                      | N        |            |
-| identifier      | custom         |               |                                      | N        |            |
-| data            | data           |               | json data                            | N        |            |
+| Attribute Name  | Attribute Type | Data Type      | Example Value                        | Required | Notes      |
+|-----------------|----------------|----------------|--------------------------------------|----------|------------|
+| specversion     | context        | string         | 1.0.1                                | Y        |            |
+| source          | context        | URI-reference  | /sbc_pay_api/invoice/<INVOICE_ID>    | Y        |            |
+| id              | context        | string         | 16fd2706-8baf-433b-82eb-8c7fada847da | Y        | use uuidv4 |
+| type            | context        | string         | bc.registry.nr_payment.complete      | Y        |            |
+| datacontenttype | context        | string         | application/json                     | N        |            |
+| time            | context        | timestamp      |                                      | N        |            |
+| identifier      | custom         | string         | 111111(FILING_ID)                    | N        |            |
+| data            | data           | no restriction | datacontenttype format               | N        |            |
 
+Of particular interest are the following items:
 
-_**Additional details will go here to go over attributes that require my explanation around the nuances of how we use the
-attributes in our CloudEvent payloads**_
+**Idempotent use of a message (`source` + `id`)** - to ensure that producers of messages are publishing distinct events, 
+a unique combination of `source` + `id` must be used.  The subscribers will have the responsibility of using the 
+`source` + `id` combination to determine how to process messages in an idempotent manner if that is required for a given
+subscriber's use case.  This will likely mean that the `source` + `id` will need to be recorded/tracked in order to 
+determine if a message has already been processed.
+
+**source** - identifies the context in which an event happened. 
+
+**id** - identifies the event.  Use uuidv4 for the id which is provided by the uuid python module. i.e. `uuid.uuid4()`  
+
+**data** - contains information specific to the event.  Typically this will contain a json payload and services consuming
+this data payload will do most of the core processing of an event with the information provided in this payload.  The content
+type of this field is encoded in the media format specified by the `datacontenttype` attribute.
 
 
 # Detailed design
@@ -129,30 +137,17 @@ the integration points are the areas where work will need to be done.
 
 ## Integration Point Details
 The following section details the expected formats of the CloudEvent payloads that need to be used at each integration point
-outlined in the CloudEvents Diagram above and any specific design details for the specific integration point.
+outlined in the Integration Points Diagram above and any specific design details for the given integration point.
 
-For details around the intended usage of the CloudEvent payload attributes, refer to the CloudEvent attribute usage section below.
+### Integration Point 1 - NR Payment Completed CloudEvent
 
-### Integration Point 1 - NR Payment Complete CloudEvent (WIP)
-The event at this integration point has already been implemented but will need to be updated to match the CloudEvent format below.  Updates will need to be made in the `PaymentTransaction.create_event_payload` function.
+The names pay job will need to publish a NR payment completed CloudEvent message to the `nr.events` subject 
+when it receives a message from sbc-pay indicating that the payment is complete.  This NR payment completed message
+will then be used by sbc-auth to affiliate the NR to the manage business dashboard can occur.  The CloudEvent payload 
+format that is to be used can found below.  
 
-**Current Implementation**
-``` python 
-
-@staticmethod
-def create_event_payload(invoice, status_code):
-    """Create event payload for payment events."""
-    payload = {
-        'paymentToken': {
-            'id': invoice.id,
-            'statusCode': status_code,
-            'filingIdentifier': invoice.filing_id
-        }
-    }
-    return payload
-
-```
-
+In terms of implementation, the names pay service already publishes messages.  It will be a matter of adding configuration
+for the new `nr.events` subject and publishing the new NR payment completed message to this new subject.
 
 **CloudEvent Payload Format**
 
@@ -160,33 +155,45 @@ def create_event_payload(invoice, status_code):
 
         {
             "specversion": "1.0.1",
-            "type": "bc.registry.nr_payment.complete",
-            "source": "/sbc_pay_api/invoice/<INVOICE_ID>",
+            "type": "bc.registry.nr_payment.completed",
+            "source": "/names_pay/nr/<NR_ID>",
             "id": "16fd2706-8baf-433b-82eb-8c7fada847da",
             "time": "<PUBLISH_TIME>",
             "datacontenttype": "application/json",
-            "identifier": "<FILING_ID>",
+            "identifier": "<NR_ID>",
             "data": {
-                "invoiceId": "<INVOICE_ID>"
-				   "filingId": "333333",
+                "nrId": "<NR_ID>"
+				 ...
             }
         }
 
 ```
 
 
-### Integration Point 2 - SBC Auth Subscriber & Affiliate NR to Manage Business Dashboard (WIP)
+### Integration Point 2 - SBC Auth NR Events Subscriber & Affiliate NR to Manage Business Dashboard
 
-At this integration point, the sbc-auth subscriber/listener will need to be updated to subscribe for the CloudEvent
-defined in integration point 1.  It will need to be able to parse the context and data attributes of the CloudEvent and 
-code to affiliate NR manage business dashboard will also need to be written.
+A new listener in sbc-auth will need to be added to listen for the new NR payment completed message via the new 
+`nr.events` subject.  Logic will also need to be added to parse the CloudEvent defined in Integration Point 1 and 
+affiliate the NR to the manage business dashboard.
+
+sbc-auth has already implemented several listeners so the implementation should just be fairly similar to the other 
+listeners.  It will just be a matter of copying an existing listener, updating subject to subscribe to `nr.events` 
+and implementing the event parsing and processing logic.
 
 
-### Integration Point 3 - Publish NR State Change CloudEvent (WIP)
+### Integration Point 3a & 3b - Publish NR State Change CloudEvent
 
-The names-api will need to be updated such that any point where a state change occurs for an NR, a CloudEvent similar 
-to the one below is sent to the queue.  
+The namex-api and names pay subscriber will need to be updated such that at any point where a state change occurs for a NR, 
+a CloudEvent similar to the one below is sent to the queue. 
 
+The namex-api in its current state does not publish and queue messages but queue publishing code can be leveraged in 
+the names-pay service in the namex repo.  The publishing of this new NR state change message should be to a 
+new subject named `nr.events`.
+
+The names pay subscriber currently already publishes messages but so there is some code that can be leveraged with respect
+to queue publishing.  The code will need to be updated to publish to state change messages to the `nr.events` subject.
+
+**CloudEvent Payload Format**
 
 ``` json
 
@@ -201,14 +208,28 @@ to the one below is sent to the queue.
             "data": {
                 "nrNum": "6724165",
                 "previousState": "DRAFT"
-                "newState": "PAID"
+                "newState": "PENDING_PAYMENT"
+                ...
             }
         }
 
 ```
 
 
+### Integration Point 4 - SOLR Updater Subscriber
 
+The namex api currently updates SOLR via REST calls which happens during certain NR state changes.  The code will
+need to be updated to remove these calls.  A new subscriber will need to be created in the namex repo that listens 
+for NR state change events published to the `nr.events` subject.  The format of the message is as state in the
+Integration Point 3a & 3b section.
+
+With respect to removal of SOLR update calls in the namex api, this will involve tracing all calls made to the functions
+found in `AbstractSolrResource` and `AbstractNameRequestResource`.  Some of the code in `AbstractNameRequestResource` is
+related to NRO so care will need to be taken to leave that code intact.
+
+The new SOLR updater subscriber code should be able to use the code that is used in the namex api to update SOLR currently
+as a reference.  Care will need to be taken to ensure that only NR state changes that are relevant to SOLR result in a 
+SOLR update.
 
 
 # Drawbacks
