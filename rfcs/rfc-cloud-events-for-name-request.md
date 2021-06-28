@@ -218,19 +218,13 @@ to queue publishing.  The code will need to be updated to publish to state chang
 
 ### Integration Point 4 - SOLR Updater Subscriber
 
-The namex api currently updates SOLR via REST calls which happens during certain NR state changes.  The code will
-need to be updated to remove these calls.  A new subscriber will need to be created in the namex repo that listens 
-for NR state change events published to the `nr.events` subject.  The format of the message is as state in the
-Integration Point 3a & 3b section.
+Currently, when NameX updates the NamesDB, this results in an Oracle trigger populating a record in the NamesDB 
+transaction table.  From there a series of processes are executed eventually leading to the update of the SOLR indexes.
+These series of processes are similar to this [diagram](https://raw.githubusercontent.com/bcgov/namex/main/docs/img/flow-1.png)
 
-With respect to removal of SOLR update calls in the namex api, this will involve tracing all calls made to the functions
-found in `AbstractSolrResource` and `AbstractNameRequestResource`.  Some of the code in `AbstractNameRequestResource` is
-related to NRO so care will need to be taken to leave that code intact.
-
-The new SOLR updater subscriber code should be able to use the code that is used in the namex api to update SOLR currently
-as a reference.  Care will need to be taken to ensure that only NR state changes that are relevant to SOLR result in a 
-SOLR update.
-
+We would like to replace this existing way of triggering an update to SOLR names indexes by creating a new SOLR updater 
+subscriber.  This new subscriber will subscribe to the `nr.events` subject and will update SOLR indexes the same way
+the previous process did when a NR state change message that requires a SOLR index update is received.  
 
 # Drawbacks
 
