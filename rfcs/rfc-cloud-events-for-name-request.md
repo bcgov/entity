@@ -226,6 +226,15 @@ We would like to replace this existing way of triggering an update to SOLR names
 subscriber.  This new subscriber will subscribe to the `nr.events` subject and will update SOLR indexes the same way
 the previous process did when a NR state change message that requires a SOLR index update is received.  
 
+### Integration Point 5 - SBC-Auth NR Events Subscriber
+
+A new subscriber may need to be created to listen for the `nr.events` subject to process NR state change messages.  Note
+that it may not be necessary to create a new subscriber if the subscriber used in integration point 2 will be used to process
+multiple message types.  i.e. payment completed and NR state change messages.
+
+The details of what will the subscriber will do with a NR state change message is has not been decided at this point in 
+time.  The Entities or the Relationships team will be implementing this subscriber.
+
 # Drawbacks
 
 Event publishing or consumption may not happen in a timely enough matter in particular scenarios.
