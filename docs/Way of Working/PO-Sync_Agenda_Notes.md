@@ -13,6 +13,16 @@ Standing Agenda:
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
 ----
+July 9, 2021
+----
+- Action Items
+    - Linda to follow up this week on COLIN migration
+    - Linda to follow up on NRO migration
+    - Service Fee Distribution - Linda to follow up with Carol 
+
+- New Business
+    - Customer feedback KPI - Jennifer
+----
 June 25, 2021
 ----
 - Action Items
@@ -23,6 +33,32 @@ June 25, 2021
     - Partner roadmap – status; who should own
     - How are folks feeling about the long-term planning process; purpose
     - Names Request Release and NRO decommission scheduled for the end of July
+
+- Meeting Notes
+    - Action Items
+        - Action Linda to follow up this week on COLIN migration
+            - Carry over to next week
+        - Action Linda to follow up on NRO migration
+            - Linda has set up meeting for NRO migration
+        - Service Fee Distribution - Linda to follow up with Carol
+            - Carry over to next week
+    - New Business
+        - Partner roadmap – status; who should own
+            - Question came up during the discussion about Q1 capital reports
+            - Partners are asking about the status of shutdowns and deadlines
+            - Require a 6 - 12 month plan
+            - Jyoti owns the partners that live on BCOL
+            - Mostly dependent on Vital Stats
+            - Related to our go to market plan for Entities
+            - Distinction should be made between Onestop and the Hub
+            - Intention should be to take the current roadmap and add in the additional partners
+            - Add a stakeholder lens to the long term plan
+        - How are folks feeling about the long-term planning process; purpose
+            - Need to complete and then continue to update the long term plan
+            - Should include the org book roadmap
+            - Include this topic in discussion with Carol next Wednesday 
+        - Names Request Release and NRO decommission scheduled for the end of July
+            - **Action** - decision is pending NRO and staff meeting - Kaine and Linda to review remaining Names tickets
 
 ----
 June 18, 2021
