@@ -19,6 +19,7 @@ July 9, 2021
     - Linda to follow up this week on COLIN migration
     - Linda to follow up on NRO migration
     - Service Fee Distribution - Linda to follow up with Carol 
+    - Names Request Release and NRO decommission schedule decision
 
 - New Business
     - Customer feedback KPI - Jennifer
