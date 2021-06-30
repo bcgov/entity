@@ -139,55 +139,14 @@ the integration points are the areas where work will need to be done.
 The following section details the expected formats of the CloudEvent payloads that need to be used at each integration point
 outlined in the Integration Points Diagram above and any specific design details for the given integration point.
 
-### Integration Point 1 - NR Payment Completed CloudEvent
 
-The names pay job will need to publish a NR payment completed CloudEvent message to the `nr.events` subject 
-when it receives a message from sbc-pay indicating that the payment is complete.  This NR payment completed message
-will then be used by sbc-auth to affiliate the NR to the manage business dashboard can occur.  The CloudEvent payload 
-format that is to be used can found below.  
+### Integration Point 1a & 1b - Publish NR State Change CloudEvent
 
-In terms of implementation, the names pay service already publishes messages.  It will be a matter of adding configuration
-for the new `nr.events` subject and publishing the new NR payment completed message to this new subject.
+The namex-api and names pay subscriber will need to be updated such that at any point where a state change occurs for a NR,
+a CloudEvent similar to the one below is sent to the queue.
 
-**CloudEvent Payload Format**
-
-``` json
-
-        {
-            "specversion": "1.0.1",
-            "type": "bc.registry.nr_payment.completed",
-            "source": "/names_pay/nr/<NR_ID>",
-            "id": "16fd2706-8baf-433b-82eb-8c7fada847da",
-            "time": "<PUBLISH_TIME>",
-            "datacontenttype": "application/json",
-            "identifier": "<NR_ID>",
-            "data": {
-                "nrId": "<NR_ID>"
-				 ...
-            }
-        }
-
-```
-
-
-### Integration Point 2 - SBC Auth NR Events Subscriber & Affiliate NR to Manage Business Dashboard
-
-A new listener in sbc-auth will need to be added to listen for the new NR payment completed message via the new 
-`nr.events` subject.  Logic will also need to be added to parse the CloudEvent defined in Integration Point 1 and 
-affiliate the NR to the manage business dashboard.
-
-sbc-auth has already implemented several listeners so the implementation should just be fairly similar to the other 
-listeners.  It will just be a matter of copying an existing listener, updating subject to subscribe to `nr.events` 
-and implementing the event parsing and processing logic.
-
-
-### Integration Point 3a & 3b - Publish NR State Change CloudEvent
-
-The namex-api and names pay subscriber will need to be updated such that at any point where a state change occurs for a NR, 
-a CloudEvent similar to the one below is sent to the queue. 
-
-The namex-api in its current state does not publish and queue messages but queue publishing code can be leveraged in 
-the names-pay service in the namex repo.  The publishing of this new NR state change message should be to a 
+The namex-api in its current state does not publish and queue messages but queue publishing code can be leveraged in
+the names-pay service in the namex repo.  The publishing of this new NR state change message should be to a
 new subject named `nr.events`.
 
 The names pay subscriber currently already publishes messages but so there is some code that can be leveraged with respect
@@ -207,33 +166,37 @@ to queue publishing.  The code will need to be updated to publish to state chang
             "identifier": "6724165",
             "data": {
                 "nrNum": "6724165",
-                "previousState": "DRAFT"
-                "newState": "PENDING_PAYMENT"
+                "previousState": "PENDING_PAYMENT"
+                "newState": "DRAFT"
                 ...
             }
         }
 
 ```
 
+### Integration Point 2 - SOLR Updater Subscriber
 
-### Integration Point 4 - SOLR Updater Subscriber
-
-Currently, when NameX updates the NamesDB, this results in an Oracle trigger populating a record in the NamesDB 
+Currently, when NameX updates the NamesDB, this results in an Oracle trigger populating a record in the NamesDB
 transaction table.  From there a series of processes are executed eventually leading to the update of the SOLR indexes.
 These series of processes are similar to this [diagram](https://raw.githubusercontent.com/bcgov/namex/main/docs/img/flow-1.png)
 
-We would like to replace this existing way of triggering an update to SOLR names indexes by creating a new SOLR updater 
+We would like to replace this existing way of triggering an update to SOLR names indexes by creating a new SOLR updater
 subscriber.  This new subscriber will subscribe to the `nr.events` subject and will update SOLR indexes the same way
-the previous process did when a NR state change message that requires a SOLR index update is received.  
+the previous process did when a NR state change message that requires a SOLR index update is received.
 
-### Integration Point 5 - SBC-Auth NR Events Subscriber
 
-A new subscriber may need to be created to listen for the `nr.events` subject to process NR state change messages.  Note
-that it may not be necessary to create a new subscriber if the subscriber used in integration point 2 will be used to
-process multiple message types.  i.e. payment completed and NR state change messages.
+### Integration Point 3 - SBC Auth NR Events Subscriber
 
-The details of what the subscriber will do with a NR state change message has not been decided at this point in 
-time.
+A new listener in sbc-auth will need to be added to listen for the new NR state change message via the new 
+`nr.events` subject.  Logic will also need to be added to parse the CloudEvent defined in Integration Point 1a & 1b.  
+The new listener will perform specific actions based on the new NR state.  A NR state change to `DRAFT` will result in 
+the subscriber affiliating the NR to the Manage Business Dashboard.  And a NR state change to `CONSUMED` will result in 
+the NR marked as used.  Resulting actions for other NR state changes are yet to be determined.  
+
+sbc-auth has already implemented several listeners so the implementation should just be fairly similar to the other 
+listeners.  It will just be a matter of copying an existing listener, updating subject to subscribe to `nr.events` 
+and implementing the event parsing and processing logic.
+
 
 # Drawbacks
 
