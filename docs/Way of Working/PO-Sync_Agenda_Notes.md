@@ -24,6 +24,7 @@ July 9
 - New Business
     - Customer feedback KPI - Jennifer
     - PAD Settlement - Currently we are doing daily settlemnts for PAD, there have been concernes reaised from  admins and clerks who does the reconciliation, have raised concerns that its going to increase their work by 10 times as there would transactions in their bank account daily, compared to 3-4 times a month. Should we go forward with weekly reconciliation? 
+    - CRM Project Kickoff(Ask from Carol)
 ----
 June 25, 2021
 ----
