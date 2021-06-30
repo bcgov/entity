@@ -13,7 +13,7 @@ Standing Agenda:
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
 ----
-July 9, 2021
+July 9
 ----
 - Action Items
     - Linda to follow up this week on COLIN migration
@@ -23,6 +23,7 @@ July 9, 2021
 
 - New Business
     - Customer feedback KPI - Jennifer
+    - PAD Settlement - Currently we are doing daily settlemnts for PAD, there have been concernes reaised from  admins and clerks who does the reconciliation, have raised concerns that its going to increase their work by 10 times as there would transactions in their bank account daily, compared to 3-4 times a month. Should we go forward with weekly reconciliation? 
 ----
 June 25, 2021
 ----
