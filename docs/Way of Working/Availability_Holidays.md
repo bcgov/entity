@@ -4,6 +4,7 @@
 
 **Assets**
 * Roland: May 18-22
+* Stephanie: July 14-16, July 30, August 9, 20, 23
 
 ----
 **Entities** 
