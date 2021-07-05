@@ -237,6 +237,12 @@ June 15, 2021
 ----
 June 25th, 2021. Special Friday Edition
 ----
-[meeting notes]
+[meeting notes], same as previous meeting notes
 - AR reminders for co-ops and bcomps
+
+
+----
+July 5th, 2021
+----
+- 5588, what do staff currently do when a client wants to request a name for one of these 4 purposes?
 - 
