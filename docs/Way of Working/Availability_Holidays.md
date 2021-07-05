@@ -5,7 +5,7 @@
 **Assets**
 * Stephanie: July 14-16, July 30, August 9, 20, 23
 * Bob F Bowlers:
-* Divya
+* Divya:
 * Doug:
 * Greg:
 * Janis:
