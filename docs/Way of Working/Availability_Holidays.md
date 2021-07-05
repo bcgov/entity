@@ -3,8 +3,21 @@
 ----
 
 **Assets**
-* Roland: May 18-22
 * Stephanie: July 14-16, July 30, August 9, 20, 23
+* Bob F Bowlers:
+* Divya
+* Doug:
+* Greg:
+* Janis:
+* Kaine:
+* Kevin:
+* Kial:
+* Kim:
+* Mag:
+* Patrick:
+* Scott:
+* Tracey:
+* Thor:
 
 ----
 **Entities** 
@@ -22,10 +35,7 @@
 ----
 **Relationships** 
 * Amit: 
-* Andrew: 
 * Faiz:
-* Jeremy: 
-* Loren: Dec 24-Jan 1
 * Meng: Flex day bi-weekly Friday's (Dec 18th on), June 21, June 23 (few hrs), June 28 (Few hrs)
 * Melissa: Flex day bi-weekly Monday's (Aug 17th on), Dec 14, Dec 24th - Jan 5th, Mar 16/17/26, Jun 14, Jun 30-Jul 2, Aug 3-6, Sep 3, Dec 21 - Jan 4 2022 
 * Milan: Jan 7th 2021
