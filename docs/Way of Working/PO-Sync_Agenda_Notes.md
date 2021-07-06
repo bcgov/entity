@@ -20,6 +20,7 @@ July 9
     - Linda to follow up on NRO migration
     - Service Fee Distribution - Linda to follow up with Carol 
     - Names Request Release and NRO decommission schedule decision
+    - CRM Project Kick-off
 
 - New Business
     - Customer feedback KPI - Jennifer
