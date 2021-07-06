@@ -25,9 +25,9 @@ about: A checklist of onboarding tasks for new team members
 -----------------
 
 **GitHub & ZenHub**
-- [ ] 1. First, the new user is to go to github.com to register their account
+- [ ] 1. First, the new user is to go to github.com to register their account (using all lower-case for their name if it's a new account)
 - [ ] 2. Next, the new user is to verify that 2 factor authentication is enabled 
-- [ ] 3. Once the account creation and 2fa are completed, send a message to an admin to request the new employee is added. (Admins as of Feb 2021 include: Kaine Sparks, Patrick Wei, Kial Jinnah, Richard Armitage, Thor Wolpert and John Lane.)
+- [ ] 3. Once the account creation and 2fa are completed, send a message to an admin to request the new employee is added. (Admins include anyone on the SRE team)
 - [ ] 4. Once added, the employee will need to install the Zenhub plugin in the Chrome browser
 
 -----------------
@@ -35,6 +35,17 @@ about: A checklist of onboarding tasks for new team members
 **RocketChat**
 - [ ] New user to download the RochatChat App and follow the instructions to Register a new account. (IT Operations Support will assign requests for access to the Business Registry to Relationships BA's (Melissa and Amit))
 
+-----------------
+
+**Meeting Invitations**
+- [ ] The new team member has been invited to all of the required meetings and ceremonies
+
+-----------------
+
+**Business Context**
+
+- [ ] Set up meeting for business context knowledge transfer
+ 
 -----------------
 
 **OpenShift**
