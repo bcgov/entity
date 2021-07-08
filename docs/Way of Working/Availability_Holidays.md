@@ -14,7 +14,7 @@
 * Kial:
 * Kim:
 * Mag:
-* Patrick:
+* Patrick:  October 25 - November 12
 * Scott:
 * Tracey:
 * Thor:
