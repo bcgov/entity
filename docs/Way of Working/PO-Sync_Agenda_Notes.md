@@ -21,6 +21,7 @@ July 9
     - Service Fee Distribution - Linda to follow up with Carol 
     - Names Request Release and NRO decommission schedule decision
     - CRM Project Kick-off
+    - Mainframe decommissioning moving forward
 
 - New Business
     - Customer feedback KPI - Jennifer
