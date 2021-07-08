@@ -20,13 +20,12 @@ July 9
     - Linda to follow up on NRO migration
     - Service Fee Distribution - Linda to follow up with Carol 
     - Names Request Release and NRO decommission schedule decision
-    - CRM Project Kick-off
-    - Mainframe decommissioning moving forward
 
 - New Business
     - Customer feedback KPI - Jennifer
     - PAD Settlement - Currently we are doing daily settlemnts for PAD, there have been concernes reaised from  admins and clerks who does the reconciliation, have raised concerns that its going to increase their work by 10 times as there would transactions in their bank account daily, compared to 3-4 times a month. Should we go forward with weekly reconciliation? 
     - CRM Project Kickoff(Ask from Carol)
+    - Mainframe decommissioning moving forward
 ----
 June 25, 2021
 ----
