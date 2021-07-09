@@ -25,6 +25,23 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 -----------------------------------------------------------------------------------------------------------------------
 
+### July 13, 2021 - Sprint (Milestone) 9.6 - 70 min. total 
+
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+*
+
+#### Entities
+
+#### Relationships
+* Deactivate premium and basic account (6270, 5937) - Sumesh & Jyoti - 15mins
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+-----------------------------------------------------------------------------------------------------------------------
+
 ### June 29, 2021 - Sprint (Milestone) 9.5 - 70 min. total 
 
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
