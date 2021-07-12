@@ -16,16 +16,21 @@ Title of ticket: [Entity number and name] or "Account Management"
 #### Description
 Summarize issue and attach email OR copy and paste email content into ticket
 
-### DEV TASKS:
+### ALTERATION TASKS - BEN > LTD:
+- [ ] [Check out this flowchart for the steps](https://drive.google.com/file/d/1jMR6eAe2jr4B8cWdQgZQrwziiVUXWl5f/view?usp=sharing)
 - [ ] use jupyter notebooks to file BEN > LTD
 - [ ] Dev inform BAs that it has been filed and paid
-- [ ] BAs review in SOFI(if alteration to LTD) or bcregistry.ca (if alteration to BEN)
-- [ ] IF BEN > COLIN, BA downloads the alteration outputs
-- [ ] BAs tell dev to unaffiliate the entity
+- [ ] BAs review in [SOFI PROD environment](https://www.bcregistryallservices.gov.bc.ca/sofi/login/login.htm)
+- [ ] BA downloads the alteration outputs from bcregistry.ca (because the outputs won't be available for the client in SOFI, which is expected)
+- [ ] BAs tell dev to unaffiliate the entity from bcregistry.ca (so the client doesn't mess anything up over there)
 - [ ] Devs unaffiliate the entity from the account
 - [ ] BAs inform staff that they can proceed with [their steps](https://drive.google.com/file/d/1jMR6eAe2jr4B8cWdQgZQrwziiVUXWl5f/view?usp=sharing)
 
-#### Tasks
+### ALTERATION TASKS - LTD/ULC > BEN:
+- [ ] [Check out this flow chart for the steps](https://drive.google.com/file/d/1aXdlPyefjab6hhMw9U9JZsHQProGS6sA/view?usp=sharing)
+- [ ] 
+
+#### General Ops Tasks
 - [ ] When ticket has been created, post the ticket in RocketChat '#Operations Tasks' channel
 - [ ] Add **entity** or **relationships** label to zenhub ticket
 - [ ] Add 'Priority1' label to zenhub ticket
