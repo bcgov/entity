@@ -246,3 +246,12 @@ July 5th, 2021
 ----
 [Meeting notes](https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/WopiFrame.aspx?sourcedoc={39913854-F6FC-4C1A-83C3-082FC0A0DA81}&file=Document.docx&action=default)
 - 5588, what do staff currently do when a client wants to request a name for one of these 4 purposes?
+
+----
+July 13th, 2021
+----
+
+For both corp and co-op:
+- Voluntary dissolution
+- admin dissolution
+- Windups
