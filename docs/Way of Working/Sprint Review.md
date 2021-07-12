@@ -30,7 +30,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
 #### Assets
-*
+* PPR User Research Session - Concept Feedback on Registering a Financing Statement: New Security Agreement - Mag - 15mins
 
 #### Entities
 
