@@ -13,6 +13,11 @@ Standing Agenda:
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
 ----
+July 16
+----
+- New Business
+	- Account Name Uniqueness(Do we need to get any Finance Approval?) 
+----
 July 9
 ----
 - Action Items
