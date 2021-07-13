@@ -24,3 +24,8 @@ Summarize issue and attach email OR copy and paste email content into ticket
 - [ ] Reply All to IT Ops email and provide zenhub ticket number opened and which team it was assigned to
 - [ ] Dev/BAs to complete work & close zenhub ticket
 - [ ] Author of zenhub ticket to mark ServiceNow ticket as resolved or ask IT Ops to do so
+
+#### DEV: Before finishing a ticket
+- [ ] Enter the time you worked on the ticket in the estimate
+- [ ] Add to your team's current milestone
+- [ ] Send to BA to close
