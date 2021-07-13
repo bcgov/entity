@@ -257,3 +257,5 @@ For both corp and co-op:
 - Windups
 
 Review [old documentation](https://sites.google.com/freshworks.io/bcros/business-registry/co-op/voluntary-dissolution) and add relevant to [new documentation](https://docs.google.com/document/d/1pJM2mUoG5ln6eiopole3BY5PBAExESBGz4cRYdnDG58/edit?usp=sharing)
+
+- 7091, do we need to make a new filing type "ammended annual report"? Or can we make these plain corrections?
