@@ -15,6 +15,11 @@ Standing Agenda:
 ----
 July 16
 ----
+- Action Items
+    - COLIN - push to next time **
+    - NRO - meetings this week, more meetings to follow on Monday **
+    - Service Fee - no final answer yet - Linda to contact Kim Wiley **
+ 
 - New Business
 	- Account Name Uniqueness(Do we need to get any Finance Approval?) 
 	- PI Planning
