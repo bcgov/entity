@@ -16,7 +16,7 @@ Standing Agenda:
 July 16
 ----
 - Action Items
-    - COLIN - push to next time **
+    - Linda to follow up this week on COLIN migration
     - NRO - meetings this week, more meetings to follow on Monday **
     - Service Fee - no final answer yet - Linda to contact Kim Wiley **
  
