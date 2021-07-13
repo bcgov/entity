@@ -17,6 +17,7 @@ July 16
 ----
 - New Business
 	- Account Name Uniqueness(Do we need to get any Finance Approval?) 
+	- PI Planning
 ----
 July 9
 ----
@@ -32,6 +33,25 @@ July 9
     - CRM Project Kickoff(Ask from Carol)
     - Mainframe decommissioning moving forward
     - OCM PI Planning
+
+- Meeting Notes
+    - COLIN - push to next time **
+    - NRO - meetings this week, more meetings to follow on Monday **
+    - Service Fee - no final answer yet - Linda to contact Kim Wiley **
+    - Customer Feedback - Kaine is working on this
+        - Interim actions (hot jar) being taken until adoption of Service BC CRM
+        - In the long roadmap in PI 11
+        - Reports are for the DIO, change team, Cameron
+    - PAD
+        - Jyoti will recommend weekly reconciliation to Carol instead of daily 
+        - Jennifer to add to tri-weekly agenda
+    - Mainframe decommissioning 
+        - Do we need the specific meeting going forward
+        - Should continue with meeting
+    - OCM PI Planning
+        - Well received by the group
+        - Add (major, minor etc) to the release plan
+
 ----
 June 25, 2021
 ----
