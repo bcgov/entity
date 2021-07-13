@@ -259,3 +259,4 @@ For both corp and co-op:
 Review [old documentation](https://sites.google.com/freshworks.io/bcros/business-registry/co-op/voluntary-dissolution) and add relevant to [new documentation](https://docs.google.com/document/d/1pJM2mUoG5ln6eiopole3BY5PBAExESBGz4cRYdnDG58/edit?usp=sharing)
 
 - 7091, do we need to make a new filing type "ammended annual report"? Or can we make these plain corrections?
+- Refund confirmation [email content](https://docs.google.com/spreadsheets/d/11wic6XEals7mLm7l64_Zl5K0YHuRAAfERpFPK--c4m0/edit?usp=sharing)
