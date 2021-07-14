@@ -23,6 +23,7 @@ July 16
 - New Business
 	- Account Name Uniqueness(Do we need to get any Finance Approval?) 
 	- PI Planning
+	- Should we move the sprint demo to Wednesday?
 ----
 July 9
 ----
