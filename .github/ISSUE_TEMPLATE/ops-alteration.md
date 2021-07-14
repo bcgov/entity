@@ -4,7 +4,7 @@ about: manual alteration filings that need to be processed using jupyter noteboo
 
 ---
 
-Title of ticket: [Entity number and name] or "Account Management"
+Title of ticket: [Entity number and name] - Alteration, [Entity type] > [Entity type]
 
 #### ServiceNow incident:
 
