@@ -26,4 +26,6 @@ Summarize issue and attach email OR copy and paste email content into ticket
 - [ ] **DEV**: Enter the time you worked on the ticket in the estimate
 - [ ] **DEV**: Tell BA it is ready to review
 - [ ] BAs review
+- [ ] Add ticket to the currne tmilestone of the code base the ops ticket was relating to (i.e., if it's a Name Request issue, assign to entities milestone, etc.)
+- [ ] Close Zenhub ticket
 - [ ] Mark ServiceNow ticket as resolved, or tell IT Ops to do so
