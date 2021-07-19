@@ -19,10 +19,10 @@ Summarize issue and attach email OR copy and paste email content into ticket
 - [ ] use jupyter notebooks to file BEN > LTD
 - [ ] Dev inform BAs that it has been filed and paid
 - [ ] BAs review in [SOFI PROD environment](https://www.bcregistryallservices.gov.bc.ca/sofi/login/login.htm)
-- [ ] BA downloads the alteration outputs from bcregistry.ca (because the outputs won't be available for the client in SOFI, which is expected)
+- [ ] BA downloads all incorporation and alteration outputs from bcregistry.ca (because the outputs won't be available for the client in SOFI, which is expected)
 - [ ] BAs tell dev to unaffiliate the entity from bcregistry.ca (so the client doesn't mess anything up over there)
 - [ ] Devs unaffiliate the entity from the account
-- [ ] BAs inform staff that they can proceed with [their steps](https://drive.google.com/file/d/1jMR6eAe2jr4B8cWdQgZQrwziiVUXWl5f/view?usp=sharing)
+- [ ] BAs inform staff that they can proceed with [their steps](https://drive.google.com/file/d/1jMR6eAe2jr4B8cWdQgZQrwziiVUXWl5f/view?usp=sharing). Include the outputs you downloaded earlier, and tell staff that they can send these to the client if they need them.
 
 ### ALTERATION TASKS - LTD/ULC > BEN:
 - [ ] [Check out this flow chart for the steps](https://drive.google.com/file/d/1aXdlPyefjab6hhMw9U9JZsHQProGS6sA/view?usp=sharing)
