@@ -8,15 +8,15 @@ assignees: ''
 ---
 Title of ticket: [Entity number and name] or "Account Management"
 
-#### ServiceNow incident:
-#### Contact information
+### ServiceNow incident:
+### Contact information
 Staff Name:
 Staff Email:
 
-#### Description
+### Description
 Summarize issue and attach email OR copy and paste email content into ticket
 
-#### Ops Process
+### Ops Process
 - [ ] Add **entity** or **relationships** label to zenhub ticket
 - [ ] Add 'Priority1' label to zenhub ticket **if there is no workaround** 
 - [ ] Assign zenhub ticket to the current developer on ops rotation
