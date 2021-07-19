@@ -16,7 +16,7 @@ Staff Email:
 #### Description
 Summarize issue and attach email OR copy and paste email content into ticket
 
-#### Tasks
+#### Ops Process
 - [ ] Add **entity** or **relationships** label to zenhub ticket
 - [ ] Add 'Priority1' label to zenhub ticket **if there is no workaround** 
 - [ ] Assign zenhub ticket to the current developer on ops rotation
