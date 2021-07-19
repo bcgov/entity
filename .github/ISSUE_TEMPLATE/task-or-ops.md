@@ -17,15 +17,13 @@ Staff Email:
 Summarize issue and attach email OR copy and paste email content into ticket
 
 #### Tasks
-- [ ] When ticket has been created, post the ticket in RocketChat '#Operations Tasks' channel
 - [ ] Add **entity** or **relationships** label to zenhub ticket
-- [ ] Add 'Priority1' label to zenhub ticket
-- [ ] Assign zenhub ticket to milestone: current, and place in pipeline: sprint backlog
+- [ ] Add 'Priority1' label to zenhub ticket **if there is no workaround** 
+- [ ] Assign zenhub ticket to the current developer on ops rotation
+- [ ] When ticket has been created, post the ticket in RocketChat '#Operations Tasks' channel
 - [ ] Reply All to IT Ops email and provide zenhub ticket number opened and which team it was assigned to
-- [ ] Dev/BAs to complete work & close zenhub ticket
-- [ ] Author of zenhub ticket to mark ServiceNow ticket as resolved or ask IT Ops to do so
-
-#### DEV: Before finishing a ticket
-- [ ] Enter the time you worked on the ticket in the estimate
-- [ ] Add to your team's current milestone
-- [ ] Send to BA to close
+- [ ] Dev/BAs to resolve issue
+- [ ] **DEV**: Enter the time you worked on the ticket in the estimate
+- [ ] **DEV**: Tell BA it is ready to review
+- [ ] BAs review
+- [ ] Mark ServiceNow ticket as resolved, or tell IT Ops to do so
