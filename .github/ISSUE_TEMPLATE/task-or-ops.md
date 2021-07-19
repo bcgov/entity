@@ -21,7 +21,7 @@ Summarize issue and attach email OR copy and paste email content into ticket
 - [ ] Add 'Priority1' label to zenhub ticket **if there is no workaround** 
 - [ ] Assign zenhub ticket to the current developer on ops rotation
 - [ ] When ticket has been created, post the ticket in RocketChat '#Operations Tasks' channel
-- [ ] Reply All to IT Ops email and provide zenhub ticket number opened and which team it was assigned to
+- [ ] Reply All to IT Ops email (CC BA Inbox) and provide zenhub ticket number opened
 - [ ] Dev/BAs to resolve issue
 - [ ] **DEV**: Enter the time you worked on the ticket in the estimate
 - [ ] **DEV**: Tell BA it is ready to review
