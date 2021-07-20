@@ -13,6 +13,11 @@ Standing Agenda:
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
 ----
+July 23
+----
+- New Business
+
+----
 July 16
 ----
 - Action Items
