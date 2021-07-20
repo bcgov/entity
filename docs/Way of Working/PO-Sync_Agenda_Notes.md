@@ -29,6 +29,22 @@ July 16
 	- Account Name Uniqueness(Do we need to get any Finance Approval?) 
 	- PI Planning
 	- Should we move the sprint demo to Wednesday?
+
+    - Meeting Notes
+        - Action Linda to follow up this week on COLIN migration **
+        - NRO - meetings this week, more meetings to follow on Monday
+            - We have the go-live date - Aug 30th  
+        - Service Fee - no final answer yet - Linda to contact Kim Wiley **
+
+        - Account Name Uniqueness(Do we need to get any Finance Approval?)
+            - Instead of sending account name we are sending account id instead
+            - This represents a change and account name would no longer be unique
+            - How will this impact reporting
+            - Action - Jyoti to contact Finance and communication new approach **
+        - PI Planning
+        - Should we move the sprint demo to Wednesday?
+            - Raise during PI planning
+            - Each team will set up speed demo on Monday - scrum masters to set up
 ----
 July 9
 ----
