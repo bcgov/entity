@@ -16,6 +16,7 @@ Standing Agenda:
 July 23
 ----
 - New Business
+    - Review the Program Kanban
 
 ----
 July 16
