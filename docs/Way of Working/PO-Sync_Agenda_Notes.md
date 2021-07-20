@@ -30,7 +30,7 @@ July 16
 	- PI Planning
 	- Should we move the sprint demo to Wednesday?
 
-    - Meeting Notes
+- Meeting Notes
         - Action Linda to follow up this week on COLIN migration **
         - NRO - meetings this week, more meetings to follow on Monday
             - We have the go-live date - Aug 30th  
