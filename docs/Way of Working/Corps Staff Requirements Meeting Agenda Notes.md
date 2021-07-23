@@ -263,10 +263,8 @@ Review [old documentation](https://sites.google.com/freshworks.io/bcros/business
 
 
 ----
-July?
+July 27th, 2021
 ----
-- Refund confirmation [email content](https://docs.google.com/spreadsheets/d/11wic6XEals7mLm7l64_Zl5K0YHuRAAfERpFPK--c4m0/edit?usp=sharing)
 - For both corp and co-op:
-  - Voluntary dissolution
-  - admin dissolution
-  - Windups
+  - [Voluntary dissolution](https://docs.google.com/document/d/1pJM2mUoG5ln6eiopole3BY5PBAExESBGz4cRYdnDG58/edit?usp=sharing)
+  - [Admin dissolution](https://docs.google.com/document/d/1HapQ6nCtImerCzlpZuAZFxpfNDm8tr4x29TZU3cJbPo/edit?usp=sharing)
