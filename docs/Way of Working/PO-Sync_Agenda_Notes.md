@@ -17,6 +17,7 @@ July 23
 ----
 - New Business
     - Review the Program Kanban
+    - Workflow for epics
 
 ----
 July 16
