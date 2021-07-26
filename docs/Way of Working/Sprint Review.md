@@ -33,7 +33,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities
 
 #### Relationships
-* Add, View Routing Slips (7792 / 8235)  - Faiz - 10mins
+* Add, View, Edit Routing Slips (7792 / 8235 / 7795)  - Faiz - 10mins
 * Existing Account Update (7783) - Saravan - 5mins
 * Deactivate Account Message Change (8218) - Saravan - 3mins
 
