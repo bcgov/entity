@@ -24,6 +24,23 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 |---|----------------------|--------------------|-------------------------|
 
 -----------------------------------------------------------------------------------------------------------------------
+### July 27, 2021 - Sprint (Milestone) 10.1 - 70 min. total 
+
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+
+#### Entities
+
+#### Relationships
+* Add, View Routing Slips (7792 / 8235)  - Faiz - 10mins
+* Existing Account Update (7783) - Saravan - 5mins
+* Deactivate Account Message Change (8218) - Saravan - 3mins
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+-----------------------------------------------------------------------------------------------------------------------
 
 ### July 13, 2021 - Sprint (Milestone) 9.6 - 70 min. total 
 
