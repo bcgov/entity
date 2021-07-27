@@ -21,7 +21,7 @@ July 30
     - Account Name Uniqueness- Jyoti to contact Finance and communication new approach
     - Name request dependency ticket - Linda to follow up with Melissa
  
--Standing Items
+- Standing Items
     - Program Kanban
 
 - New Business
