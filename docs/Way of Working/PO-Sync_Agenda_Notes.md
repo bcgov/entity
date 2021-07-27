@@ -12,12 +12,34 @@ Standing Agenda:
 3. Problems/ Opportunities with Features - Decisions 
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
+
+----
+July 30
+----
+- Action Items
+    - Service Fee - no final answer yet - Linda to contact Kim Wiley **
+    - Account Name Uniqueness- Jyoti to contact Finance and communication new approach
+    - Name request dependency ticket - Linda to follow up with Melissa
+ 
+-Standing Items
+    - Program Kanban
+
+- New Business
+    - Staff search for fas/business/accounts
 ----
 July 23
 ----
 - New Business
     - Review the Program Kanban
     - Workflow for epics
+- Meeting Notes:
+    - Colin - meeting next week
+    - Service Fee - carry over
+    - Account Name - carry over
+    - Speed demo - relationships set up, entities + assets still to do
+    - Vacation calendar - pinned thread in registries channel
+    - Name request dependency ticket - this is a big piece of work
+        - Linda to follow up with Melissa **
 
 ----
 July 16
