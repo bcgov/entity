@@ -26,6 +26,7 @@ July 30
 
 - New Business
     - Staff search for fas/business/accounts
+    - Sprint commitment vs capacity (effective use of burndown)
 ----
 July 23
 ----
