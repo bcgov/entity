@@ -265,6 +265,24 @@ Review [old documentation](https://sites.google.com/freshworks.io/bcros/business
 ----
 July 27th, 2021
 ----
+- For coop incorporation
+   - Special types (housing and community) - separate entity types like CCC, ULC or just a line in the IA output or summary - just a line in the IA not a separate entity type
+   - used to record community services ones in COBRS; not housing
+   - Staff would use it for reviewing rules and memorandum and also if special res under 178.1
+   - Would this ever get changed? 178.1 community service can't change its type.  Have done CP to CSCP; need to check if we can do any change from housing to CP (probably not.  Amber checking). Housing can't become CSCP.  Unlikely ever have to do alterations across types.
+   - note: we're going to need corections pretty quickly to replace rules and memorandum
+   - MRAS messaging when incorporated?
+   - Under the rules help... under the bullet points (above Subscriber), have a sentence "For more details regarding the matters that must be included in the rules, please refer to section 10 of the Cooperative Association Regulations (link to it).
+   - Rules and memorandum certification - number, date and stamp (like societies).  Not sure about the name. Decision: don't put on name to be consistent with societies.
+   - question if looking back at an older version will it show the old name (if we display names).  If we put name, should it be current name or name at time of filing?
+   - will completing party always be the user ID?  should be
+
+
+- For amend ledger
+    - right now we have 'Add Detail' and just amends one and doesn't create new ledger entry
+    - When bringing over still want us to display as an entry ledger called - Amendment - Ledger Information.
+    - Need new filing with same functionality as Registrar's Notation (but different name?) yes.
+    
 - For both corp and co-op:
   - [Voluntary dissolution](https://docs.google.com/document/d/1pJM2mUoG5ln6eiopole3BY5PBAExESBGz4cRYdnDG58/edit?usp=sharing)
   - [Admin dissolution](https://docs.google.com/document/d/1HapQ6nCtImerCzlpZuAZFxpfNDm8tr4x29TZU3cJbPo/edit?usp=sharing)
