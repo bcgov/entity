@@ -43,7 +43,7 @@
 * Roy: Dec 23 - Dec 24 
 * Sumesh: July 2, 
 * Saravan: July 2
-* Sateesh: July 28 & 29, August 26
+* Sateesh: July 29 & 30, August 26 & 27
 * Rai: 
 
 
