@@ -14,6 +14,15 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Aug 6
+----
+- Action Items
+    -  
+- Standing Items
+    - Program Kanban
+
+- New Business
+----
 July 30
 ----
 - Action Items
