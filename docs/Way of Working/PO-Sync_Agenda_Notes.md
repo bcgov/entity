@@ -17,25 +17,20 @@ Standing Agenda:
 Aug 6
 ----
 - Action Items
-    -  
-- Standing Items
-    - Program Kanban
-
-- New Business
-----
-July 30
-----
-- Action Items
     - Service Fee - no final answer yet - Linda to contact Kim Wiley **
     - Account Name Uniqueness- Jyoti to contact Finance and communication new approach
     - Name request dependency ticket - Linda to follow up with Melissa
- 
+
 - Standing Items
     - Program Kanban
 
 - New Business
     - Staff search for fas/business/accounts
     - Sprint commitment vs capacity (effective use of burndown)
+----
+July 30
+----
+- **Meeting Cancelled**
 ----
 July 23
 ----
