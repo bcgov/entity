@@ -270,7 +270,7 @@ July 27th, 2021
    - used to record community services ones in COBRS; not housing
    - Staff would use it for reviewing rules and memorandum and also if special res under 178.1
    - Would this ever get changed? 178.1 community service can't change its type.  Have done CP to CSCP; need to check if we can do any change from housing to CP (probably not.  Amber checking). Housing can't become CSCP.  Unlikely ever have to do alterations across types.
-   - note: we're going to need corections pretty quickly to replace rules and memorandum. We can't just replace the wrong one with the new one, we need to maintain the history of the incorrect one, when it changed, ledgers of the correction etc.
+   - note: we're going to need corections pretty quickly to replace rules and memorandum. We can't just replace the wrong one with the new one, we need to maintain the history of the incorrect one, when it changed, ledgers of the correction etc. **This would be a good candidate for another nice self-serve correction.**
    - MRAS messaging when incorporated?
    - Under the rules help... under the bullet points (above Subscriber), have a sentence "For more details regarding the matters that must be included in the rules, please refer to section 10 of the Cooperative Association Regulations (link to it).
    - Rules and memorandum certification - number, date and stamp (like societies).  Not sure about the name. Decision: don't put on name to be consistent with societies.
