@@ -23,10 +23,11 @@ Aug 6
 
 - Standing Items
     - Program Kanban
+    - PI Planning Board - Dependencies
 
 - New Business
     - Staff search for fas/business/accounts
-    - Sprint commitment vs capacity (effective use of burndown)
+    - Portfolio Epic and Priorities - Kaine
 ----
 July 30
 ----
