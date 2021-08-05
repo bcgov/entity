@@ -24,6 +24,9 @@ Aug 6
 - Standing Items
     - Program Kanban
     - PI Planning Board - Dependencies
+        - Hand-offs
+        - Maturity Assessment
+        - Guiding Principles
 
 - New Business
     - Staff search for fas/business/accounts
