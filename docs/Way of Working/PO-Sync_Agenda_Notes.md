@@ -24,7 +24,6 @@ Aug 6
 - Standing Items
     - Program Kanban
     - PI Planning Board - Dependencies
-        - 
 
 - New Business
     - Staff search for fas/business/accounts
