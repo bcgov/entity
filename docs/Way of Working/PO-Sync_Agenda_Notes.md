@@ -14,6 +14,16 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Aug 13
+----
+- Action Items
+    - Service Fee - no final answer yet - Linda to contact Kim Wiley **
+
+- Standing Items
+    - Program Kanban
+    - PI Planning Board - Dependencies
+
+----
 Aug 6
 ----
 - Action Items
@@ -31,6 +41,17 @@ Aug 6
         - Hand-offs
         - Maturity Assessment
         - Guiding Principles
+
+- Meeting Notes
+    - Service Fee - push
+    - Account Name - Jyoti reached out and awaiting confirmation
+    - Name Request - Linda followed up
+    - Kaine discussed portfolio epic
+        - Cost per team - first pass done by Jennifer
+        - We'll reconvene to break costs down into sprints
+        - Ultimately we'd like to determine costs for each of the portfolio themes
+    - Staff search - plan developed during the design meeting
+    - Mung will be away for 6 weeks starting Aug 9th 
 ----
 July 30
 ----
