@@ -290,6 +290,12 @@ July 27th, 2021
 ----
 August 10th, 2021
 ----
+NRO receipt email - changes - see email July 30th
+- 1) "If you do not incorporate/register"... - should this maybe say 'If you do not use your name request"?  Not all name requests are to incorporate/register. Julie/Josh/Cam - plain language - 'if you do not use your name request'is better.
+- 2) "Thank you for using Name Request Online" - maybe we should call it the Business Registry - Julie/Josh/Cam - yes Business Registry
+- 3) "To submit another Name Request".  Should Name Request really be capitalized? No
+- 4) Should we remove the 'this is sent from an unmonitored email' because you guys do actually monitor this email? Yes.  But make sure both phone and email option are in the footer; otherwise leave it.
+
 - Ops ticket #7091
 - 1)	Keep the output showing ‘registry staff’ or
 - 2)	Suppress the output and state available on paper only 
