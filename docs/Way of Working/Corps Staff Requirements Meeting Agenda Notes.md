@@ -287,5 +287,20 @@ July 27th, 2021
   - [Voluntary dissolution](https://docs.google.com/document/d/1pJM2mUoG5ln6eiopole3BY5PBAExESBGz4cRYdnDG58/edit?usp=sharing)
   - [Admin dissolution](https://docs.google.com/document/d/1HapQ6nCtImerCzlpZuAZFxpfNDm8tr4x29TZU3cJbPo/edit?usp=sharing)
 
+----
+August 10th, 2021
+----
+- Ops ticket #7091
+- 1)	Keep the output showing ‘registry staff’ or
+- 2)	Suppress the output and state available on paper only 
+
+- For coop incorporation
+-  1)	Do we need a category “Certain Producer Association”?  This wasn’t raised in any requirements meeting that I recall.
+-  2)	How would you like to see these coop types labelled in the drop down list and also on the coop summary when it is built?  Would the following work?
+      - a.	Cooperative without a special purpose
+      - b.	Special purpose – housing cooperative
+      - c.	Special purpose – community service cooperative
+      - d.	Special purpose – certain producer association
+
 
 
