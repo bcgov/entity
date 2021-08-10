@@ -24,7 +24,8 @@ Aug 13
     - PI Planning Board - Dependencies
 
 - New Business
-    - 
+    - Need to deal with Google Auto Fill Accross Apps Dependency
+    - Return to work place
 
 ----
 Aug 6
