@@ -299,6 +299,7 @@ NRO receipt email - changes - see email July 30th
 - Ops ticket #7091
 - 1)	Keep the output showing ‘registry staff’ or
 - 2)	Suppress the output and state available on paper only 
+- Decision: suppress output
 
 - Ops tickets re alterations
 - filing date
