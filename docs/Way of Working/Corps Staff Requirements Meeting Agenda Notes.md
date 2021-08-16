@@ -325,7 +325,21 @@ Question - outputs- what address are they coming from?  If BCRegistries@gov.bc.c
 ----
 Aug 16
 ----
+- Action buttons on the new manage business dashboard
 - Co-op agm extension ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/KtbxLwgsxQhbCrdPZZpzkFxnLCfVDSkzNB))
 - Co-op incorporation, discuss if we can correct co-ops ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/KtbxLzFrMRtHzcprhVzdmGhhSPMCDrWwQq))
 - Co-op incorporation, discuss requiring signature of the rules and memorandum ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/FMfcgzGkZkQTMZZDJMWCdZSLjkktKlSD))
 - Co-op incorproation, different types ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/FMfcgzGkZkTvSRSztHQgvChZBbPSqgKm))
+
+
+- **Affidavit & certificate of incorporation, how to fulill the requirements to get the certificate back when they dissolve:**
+  - We won't need them to send it back, or certify to destroy it.
+  - We can have them upload the certificate, attached to the affivait, in one upload. Staff don't need to retrieve it.
+  - if they don't have the certificate, they can include a line in the affidavit saying they don't have it, but if they do, they will forward it to BC Registries.
+  - We definitely need to say:
+    - it is not valid
+    - You should destroy it, or at least not use it
+  - These are form provisions under the electronic submissions act. Anything that can be submitted by paper in BC, needs to be able to submitted electonically
+
+- **Action buttons on the new manage business dashboard**
+- 
