@@ -327,3 +327,4 @@ Aug 16
 ----
 - Co-op agm extension ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/KtbxLwgsxQhbCrdPZZpzkFxnLCfVDSkzNB))
 - Co-op incorporation, discuss if we can correct co-ops ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/KtbxLzFrMRtHzcprhVzdmGhhSPMCDrWwQq))
+- Co-op incorporation, discuss requiring signature of the rules and memorandum ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/FMfcgzGkZkQTMZZDJMWCdZSLjkktKlSD))
