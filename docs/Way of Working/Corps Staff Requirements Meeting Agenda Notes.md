@@ -326,3 +326,4 @@ Question - outputs- what address are they coming from?  If BCRegistries@gov.bc.c
 Aug 16
 ----
 - Co-op agm extension ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/KtbxLwgsxQhbCrdPZZpzkFxnLCfVDSkzNB))
+- Co-op incorporation, discuss if we can correct co-ops ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/KtbxLzFrMRtHzcprhVzdmGhhSPMCDrWwQq))
