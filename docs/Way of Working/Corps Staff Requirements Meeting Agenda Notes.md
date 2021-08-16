@@ -321,3 +321,8 @@ NRO receipt email - changes - see email July 30th
       - change heading to something like this?  The memorandum of association is to be typed or printed clearly on 8.5" by 11" white paper.  Once it has been signed and witnessed, save the memorandum as a PDF electronic document.
       - any other changes?
 Question - outputs- what address are they coming from?  If BCRegistries@gov.bc.ca the undeliverables and out of offices can make it unwieldy for business staff to manage.
+
+----
+Aug 16
+----
+- Co-op agm extension ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/KtbxLwgsxQhbCrdPZZpzkFxnLCfVDSkzNB))
