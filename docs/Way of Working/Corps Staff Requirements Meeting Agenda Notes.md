@@ -331,6 +331,7 @@ Aug 16
 - Co-op incorporation, discuss requiring signature of the rules and memorandum ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/FMfcgzGkZkQTMZZDJMWCdZSLjkktKlSD))
 - Co-op incorproation, different types ([Sienna's email thread](https://mail.google.com/mail/u/0/#inbox/FMfcgzGkZkTvSRSztHQgvChZBbPSqgKm))
 
+----
 
 - **Affidavit & certificate of incorporation, how to fulill the requirements to get the certificate back when they dissolve:**
   - We won't need them to send it back, or certify to destroy it.
@@ -341,5 +342,16 @@ Aug 16
     - You should destroy it, or at least not use it
   - These are form provisions under the electronic submissions act. Anything that can be submitted by paper in BC, needs to be able to submitted electonically
 
-- **Action buttons on the new manage business dashboard**
-- 
+- **Co-op incorproation, different types**
+- Amber is working on it
+
+-**Co-op incorporation, discuss requiring signature of the rules and memorandum**
+- We should have them signed
+- If they DON'T sign them, should it warrant a correction filing?
+  - Historically we have been taking them signed. 
+  - If a citizen looks at their documents and asks why their documents are not signed, how do we repsond? It's not required?
+  - I think, due to administrative fairness, we should require a signature, and we should require a correction if they didn't sign it in their incorporation.
+
+- **Co-op incorporation, discuss if we can correct co-ops**
+- We will work on this after voluntary dissolution
+- We will build the old fashioned colin type of correction where they don't correct a filing, but they correct certain data elements.
