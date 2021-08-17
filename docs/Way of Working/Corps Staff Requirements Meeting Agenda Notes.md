@@ -355,3 +355,9 @@ Aug 16
 - **Co-op incorporation, discuss if we can correct co-ops**
 - We will work on this after voluntary dissolution
 - We will build the old fashioned colin type of correction where they don't correct a filing, but they correct certain data elements.
+
+----
+August 24th
+----
+- Co-op agm extensions https://docs.google.com/document/d/14odOBr4XUp_kPeWu7jk--6JEfmmFFagxy5eseRjFPc0/edit?usp=sharing
+- Co-op corrections
