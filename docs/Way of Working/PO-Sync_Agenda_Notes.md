@@ -14,6 +14,17 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Aug 20
+----
+- Action Items
+
+- Standing Items
+    - Program Kanban
+    - PI Planning Board - Dependencies
+
+- New Business
+    - 
+----
 Aug 13
 ----
 - Action Items
@@ -27,6 +38,13 @@ Aug 13
     - Need to deal with Google Auto Fill Across Apps Dependency
     - Return to work place
 
+- Meeting Notes
+    - Service Fee - answer emailed to both Jyoti and Kaine - Carol to decide / Amber also decided OED info
+    - Ticket 8390
+        - Relationship team will send a generic message and Entities/Assets will display
+    - Google Auto Fill - look across the site and disable where it's still enabled
+    - Linda ask gov't employees within modernization team asked to provide preference regarding return to work - deadline eod today
+    - PI 11 planning - agreement on the provided agenda
 ----
 Aug 6
 ----
