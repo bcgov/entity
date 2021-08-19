@@ -375,6 +375,10 @@ August 24th
 - Co-op incorporation cutover period
  - We originally wanted to give staff the ability to file the coop however this is a lot of dev effort for a minimal amount of filings.  Please file them in COBRS and then we can bring them over from there.  
 
+- Coop ops ticket re: can't file 2018 AR because filed director changes in 2019.
+-  how do you currently handle this with societies
+-  how would you like us to handle this scenario long-term?  without data fixes obviously.
+-  FYI, I think we've had a couple ops tickets already where we fudged our way through it if it was a correction of staff filings where we made the error.  We'd removing staff-filings and reapply them in order.  
  
 - Co-op agm extensions https://docs.google.com/document/d/14odOBr4XUp_kPeWu7jk--6JEfmmFFagxy5eseRjFPc0/edit?usp=sharing
 - Co-op corrections
