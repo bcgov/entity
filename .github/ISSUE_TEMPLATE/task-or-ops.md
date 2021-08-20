@@ -6,7 +6,6 @@ labels: ''
 assignees: ''
 
 ---
-Title of ticket: [Entity number and name] or "Account Management"
 
 ### ServiceNow incident:
 ### Contact information
