@@ -14,6 +14,18 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Aug 27
+----
+- Action Items
+    - Create CRM User stories - Kaine
+
+- Standing Items
+    - Program Kanban
+    - PI Planning Board - Dependencies
+
+- New Business
+
+----
 Aug 20
 ----
 - Action Items
@@ -30,6 +42,32 @@ Aug 20
     - Teams support for BCOL NRO cutover
     - URL Update
     - Old business dashboard demo
+
+- Meeting Notes
+    - Review cost per sprint and discuss how to track
+        - Kaine reviewed intention to apply a cost estimate to epics and themes
+    - CRM user stories
+        - Discussion about adopting a portion of CRM functionality
+        - **Create user stories - Kaine
+    - Coming changes to Asset team
+        - Melissa moving to Assets as a PO - will be gradual
+        - Kaine moving into Portfolio Director role
+    - Currency amount audit
+        - Different places in the app sees currency differently
+        - Recommend just using dollar amount with some exceptions like shares
+    - Teams support for BCOL NRO cutover
+        - Linda created a teams chat and invited appropriate members
+        - Used to answer any questions that people on the phone might have
+    - URL Update
+        - When are we moving to our URL
+        - Will be using gov.bc.ca
+        - This work is back on track but won't be completed for 6 months
+    - Old business dashboard demo
+        - Important that this is demoed to show auto-affiliation even though it's not in test
+    - Cleaning up the nodes
+        - Each team should groom this
+        - Should start next week
+    - **Meet with home team / Dwayne about procurement of resources in Sept - Kaine
 
 ----
 Aug 13
