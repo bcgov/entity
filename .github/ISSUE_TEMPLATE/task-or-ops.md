@@ -17,8 +17,9 @@ Staff Email:
 Summarize issue and attach email OR copy and paste email content into ticket
 
 ### Ops Process
-- [ ] Add **entity** or **relationships** label to zenhub ticket
-- [ ] Add 'Priority1' label to zenhub ticket, if:
+- [ ] Add **Entity** or **Relationships** label to zenhub ticket
+- [ ] Add **Ops** label
+- [ ] Add **Priority1** label to zenhub ticket, if:
   - If the business says it is a priority
   - BA can use their business knowledge and best judgement if it is a priority or not
   - How long the ticket has been open
