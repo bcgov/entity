@@ -360,7 +360,6 @@ Aug 16
 August 24th
 ----
 - co-op incorporations
-  - thanks for the help text for coop types; now need tooltip definitions for rules and memorandum.  Linda emailed Julie/Amber Aug 18th around 4:45pm.  Follow up if no response yet.
   - Go over feedback from training session...
  1. There is a field in COBRS, you can select if the company is a community co-op, and if it is you can add a paragraph about their community purposes. This field doesn’t exist for any other types. This field is the closest COBRS has to defining the co-op type, but it is only for community co-ops. Also, the field is called REPORTING/COMM, and reporting is used to define what reporting society the co-op reports to. This reporting thing hardly ever used. - Sienna, can you run this by Julie.  Is this still a need if we are indicating coop type?  I'm thinking the user could download the rules or memorandum to get more info.
 2. Can we flip delivery and mailing? Delivery first, mailing second. They can’t have just a PO Box, they need a delivery address for sure. - Out of scope.  Not changing existing functionality.
@@ -373,14 +372,21 @@ August 24th
 5. Can we explicitly state on step 3 that they don’t need to provide their occupancy agreement?  Yes, what wording and where do they want it?  In the expanding Help with Rules text? Or just above that so it is always visible?  Sienna, I've created #8661 for the cleanup UI stuff.
 
 - Co-op incorporation cutover period
- - We originally wanted to give staff the ability to file the coop however this is a lot of dev effort for a minimal amount of filings.  Please file them in COBRS and then we can bring them over from there.  
+ - We originally wanted to give staff the ability to file the coop however this is a lot of dev effort for a minimal amount of filings.  Please file them in COBRS and then we can bring them over from there.
 
-- Coop ops ticket re: can't file 2018 AR because filed director changes in 2019.
+- Coop ops ticket re: can't file 2018 AR because filed director changes in 2019. **#8637, Rustic Acres**
 -  how do you currently handle this with societies
 -  how would you like us to handle this scenario long-term?  without data fixes obviously.
--  FYI, I think we've had a couple ops tickets already where we fudged our way through it if it was a correction of staff filings where we made the error.  We'd removing staff-filings and reapply them in order.  
+-  FYI, I think we've had a couple ops tickets already where we fudged our way through it if it was a correction of staff filings where we made the error.  We'd remove staff-filings and reapply them in order.
+-  Janis emailed Julie and Lauren for this info, let's discuss it
  
 - Co-op agm extensions https://docs.google.com/document/d/14odOBr4XUp_kPeWu7jk--6JEfmmFFagxy5eseRjFPc0/edit?usp=sharing
+
 - Co-op corrections
    - would staff prefer this to be paper, or self serve with staff review?  Which would be the less risky?
    - need some policy clarification - what is a record (is it a particular document filed) or broadly the information on the coop.  If the former, and there were two records to correct, there would need to be two filings of $20 each regardless of which components were corrected in a record (this is current process).   If the latter, it could just be one filing of $20 and then staff could reference where each error was first created. Would this be useful or just muddy the waters?
+
+
+----
+August 31st
+----
