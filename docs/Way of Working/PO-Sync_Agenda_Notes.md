@@ -23,7 +23,14 @@ Aug 20
     - PI Planning Board - Dependencies
 
 - New Business
-    - 
+    - Review cost per sprint and discuss how to track
+    - CRM user stories
+    - Coming changes to Asset team
+    - Currently amount audit
+    - Teams support for BCOL NRO cutover
+    - URL Update
+    - Old business dashboard demo
+
 ----
 Aug 13
 ----
