@@ -24,6 +24,23 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 |---|----------------------|--------------------|-------------------------|
 
 -----------------------------------------------------------------------------------------------------------------------
+### August 24, 2021 - Sprint (Milestone) 10.3 - 70 min. total 
+
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+
+#### Entities
+
+#### Relationships
+* FAS Search UI, FAS Automation - Rai  - 10mins
+* Email template - Roy - 5mins
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+-----------------------------------------------------------------------------------------------------------------------
 ### August 10, 2021 - Sprint (Milestone) 10.2 - 70 min. total 
 
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
