@@ -24,6 +24,7 @@ Aug 27
     - PI Planning Board - Dependencies
 
 - New Business
+    - allow a business to be affiliated to more than one account
 
 ----
 Aug 20
