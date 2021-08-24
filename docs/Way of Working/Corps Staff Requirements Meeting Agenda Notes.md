@@ -361,24 +361,42 @@ August 24th
 ----
 - co-op incorporations
   - Go over feedback from training session...
- 1. There is a field in COBRS, you can select if the company is a community co-op, and if it is you can add a paragraph about their community purposes. This field doesn’t exist for any other types. This field is the closest COBRS has to defining the co-op type, but it is only for community co-ops. Also, the field is called REPORTING/COMM, and reporting is used to define what reporting society the co-op reports to. This reporting thing hardly ever used. - Sienna, can you run this by Julie.  Is this still a need if we are indicating coop type?  I'm thinking the user could download the rules or memorandum to get more info.
-2. Can we flip delivery and mailing? Delivery first, mailing second. They can’t have just a PO Box, they need a delivery address for sure. - Out of scope.  Not changing existing functionality.
-3. Also mailing address says “address cannot be a PO Box” but mailing address CAN be a PO Box, just not delivery address. Maybe this is just a design mistake. -  can you show me where you saw this?  I don't see it in the BEN IA.
-4. Can we also have a field in the completing party, “corporation or firm”, in addition to the person? It would be valuable to know the firm, if the person belonged to one. Could be optional. - Out of scope.  Not changing existing functionality.
+ 1. **There is a field in COBRS, you can select if the company is a community co-op, and if it is you can add a paragraph about their community purposes. This field doesn’t exist for any other types. This field is the closest COBRS has to defining the co-op type, but it is only for community co-ops. Also, the field is called REPORTING/COMM, and reporting is used to define what reporting society the co-op reports to. This reporting thing hardly ever used.** - Sienna, can you run this by Julie.  Is this still a need if we are indicating coop type?  I'm thinking the user could download the rules or memorandum to get more info.
+    - We do want to keep tabs on which co-ops are reporting co-ops. Clients never need to know if they are or not.
+    - Example, if they are a housing co-op, they might report to BC Housing. it is information that we kindof collected in the past, more so for societies than co-ops. It is only internal information.
+    - Do we want to record this going forward? We have not recorded it for a while.
+    - Sometimes there are provisions in the rules that say the reporting agency needs to approve things, but we don't regulate that.
+    - Amber thinks:
+      - It is unlikely we will add more reporting co-ops
+      - Clients should never see this info
+      - When the act is rewritten, we will need to maintain the old reporting association status for the existing co-ops. This will be whittled down over time.
+    - ACTIONS:
+      - Amber will go through the coop act and draw comparisons between reporting and non-reporting associations
+      - Julie will use this info to decide how she would like it recorded it the system
+      - Julie will ask Anderson for the existing list of reporting co-op associations
+      - Amber will get the list of reporting Societies
+  
+2. **Can we flip delivery and mailing? Delivery first, mailing second. They can’t have just a PO Box, they need a delivery address for sure.** - Out of scope.  Not changing existing functionality.
+3. **Also mailing address says “address cannot be a PO Box” but mailing address CAN be a PO Box, just not delivery address. Maybe this is just a design mistake.** -  can you show me where you saw this?  I don't see it in the BEN IA.
+4. **Can we also have a field in the completing party, “corporation or firm”, in addition to the person? It would be valuable to know the firm, if the person belonged to one. Could be optional.** - Out of scope.  Not changing existing functionality.
   Maybe we could pull in the authenticated account name for this?
-2. Same address issues as stated above, in people and roles - Out of scope.  Not changing existing functionality.
-3. If we are pulling in their BCSC info for their name, can we pull in that same info for their address? Yes, the name will be uneditable on steps 2 & 5.  The address will be editable in step 2.
-4. Are we showing a thumbnail of the uploaded memorandum/rules? Would be good to make sure they don’t upload the wrong one - No, not for MVP.  Not available with upload software package we are using - would require several days development work to build new code to support this.  Can revisit after other filings are built.
-5. Can we explicitly state on step 3 that they don’t need to provide their occupancy agreement?  Yes, what wording and where do they want it?  In the expanding Help with Rules text? Or just above that so it is always visible?  Sienna, I've created #8661 for the cleanup UI stuff.
+2. **Same address issues as stated above, in people and roles** - Out of scope.  Not changing existing functionality.
+3. **If we are pulling in their BCSC info for their name, can we pull in that same info for their address?** Yes, the name will be uneditable on steps 2 & 5.  The address will be editable in step 2.
+4. **Are we showing a thumbnail of the uploaded memorandum/rules? Would be good to make sure they don’t upload the wrong one** - No, not for MVP.  Not available with upload software package we are using - would require several days development work to build new code to support this.  Can revisit after other filings are built.
+5. **Can we explicitly state on step 3 that they don’t need to provide their occupancy agreement?**  Yes, what wording and where do they want it?  In the expanding Help with Rules text? Or just above that so it is always visible?  Sienna, I've created #8661 for the cleanup UI stuff.
+    - Housing cooperative occupancy agreements are not accepted when filing a cooperative incorporation. The cooperative may store a copy of the occupancy agreement at the registered office.
 
-- Co-op incorporation cutover period
+- **Co-op incorporation cutover period**
  - We originally wanted to give staff the ability to file the coop however this is a lot of dev effort for a minimal amount of filings.  Please file them in COBRS and then we can bring them over from there.
+    - Let's discuss a cut-off date. filing in COBRS might be labour intensive, with document uploading and stuff like that. This way we can decide when we can tell clients "sorry please file this online, we will not file it for you".
+    - Julie will tell staff: accept manual paper co-op incorp filings up until sept 7th (1week before release). If Sept 7th has passed, send the application back to the client and ask that they file it online. Inform the client that the feature will be live on sept 14th and they will get their documents immediately after the filing is completed (vs having to wait for processing times and documents in the mail).
 
-- Coop ops ticket re: can't file 2018 AR because filed director changes in 2019. **#8637, Rustic Acres**
+- **Coop ops ticket re: can't file 2018 AR because filed director changes in 2019. #8637, Rustic Acres**
 -  how do you currently handle this with societies
 -  how would you like us to handle this scenario long-term?  without data fixes obviously.
 -  FYI, I think we've had a couple ops tickets already where we fudged our way through it if it was a correction of staff filings where we made the error.  We'd remove staff-filings and reapply them in order.
 -  Janis emailed Julie and Lauren for this info, let's discuss it
+      - Let's wait until we have more info
  
 - Co-op agm extensions https://docs.google.com/document/d/14odOBr4XUp_kPeWu7jk--6JEfmmFFagxy5eseRjFPc0/edit?usp=sharing
 
