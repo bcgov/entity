@@ -2,6 +2,44 @@
 **Topics for Scrum of Scrums are listed below - to the date**
 Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
+
+---
+Aug 31
+---
+- Action Items
+
+- Standing Items
+    - What are your upcoming goals / how are you progressing
+    - Do you have any blockers
+    - Do you have any dependencies on other teams
+
+- New Business
+    - Action Items from Hand-off Discussion
+        - Break big tasks into smaller pieces (2-3 days max)
+        - Commit less / deliver more
+        - Planning sprints with releases in mind / make sure most tickets can be released to prod
+        - Focus on the goal of getting features into Test ASAP
+        - Engage in pair programming on complex tasks
+        - More team members picking up QA tasks
+        - Only pull work into the sprint if dependencies are (can be) completed
+
+---
+Aug 17
+---
+- Action Items
+
+- Standing Items
+    - What are your upcoming goals / how are you progressing
+    - Do you have any blockers
+    - Do you have any dependencies on other teams
+
+- New Business
+
+- Meeting Notes
+    - Tickets that are in review need to be moved back to in progress if a problem is found
+    - if bugs are found in QA ticket should be moved back to in progress
+    - QA participate in estimates
+
 ---
 Aug 3
 ---
