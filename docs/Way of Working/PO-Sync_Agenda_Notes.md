@@ -25,7 +25,7 @@ Aug 27
 
 - New Business
     - allow a business to be affiliated to more than one account
-    - Test account in Prod
+    - Test accounts in Prod
 
 ----
 Aug 20
