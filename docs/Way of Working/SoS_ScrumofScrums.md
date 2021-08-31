@@ -4,6 +4,29 @@ Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 
 ---
+Sep 14
+---
+- Action Items
+    - Each SM will inite others to their ceremonies
+    - The SMs will add annotations to the staging pipeline
+    - Action Items from Hand-off Discussion
+        - Break big tasks into smaller pieces (2-3 days max)
+        - Commit less / deliver more
+        - Planning sprints with releases in mind / make sure most tickets can be released to prod
+        - Focus on the goal of getting features into Test ASAP
+        - Engage in pair programming on complex tasks
+        - More team members picking up QA tasks
+        - Only pull work into the sprint if dependencies are (can be) completed
+
+- Standing Items
+    - What are your upcoming goals / how are you progressing
+    - Do you have any blockers
+    - Do you have any dependencies on other teams
+
+- New Business
+    - 
+
+---
 Aug 31
 ---
 - Action Items
@@ -25,6 +48,29 @@ Aug 31
         - Only pull work into the sprint if dependencies are (can be) completed
     - Increase SoS meeting length to 45 mins?
     - Can QA promote code?
+
+- Meeting Notes
+    - Should all 'Team' (Assets, Entities, Relationships) tickets in the sprint backlog and right of it on the board have the current milestone label?
+        - _Agreed that a milestone label should be attached to active tickets belonging to the teams_
+    - Action Items from Hand-off Discussion
+        - Break big tasks into smaller pieces (2-3 days max)
+        - Commit less / deliver more
+        - Planning sprints with releases in mind / make sure most tickets can be released to prod
+        - Focus on the goal of getting features into Test ASAP
+        - Engage in pair programming on complex tasks
+        - More team members picking up QA tasks
+        - Only pull work into the sprint if dependencies are (can be) completed
+            - _All teams are making progress with these action items_
+            - _Pair programming is not as easy to launch as the others_
+    - Increase SoS meeting length to 45 mins?
+        - _Agreed to meet weekly with a slightly different agenda_ 
+    - Send stand-up invites to other scrum masters
+       - **_Each SM will inite others to their ceremonies_**
+    - Can QA promote code?
+        - _Only specific people can promote code. Others require assistance from SRE_
+    - Criteria for moving in and out of staging
+        - _Each pipeline can be annotated to provide instructions for use_
+        - **_The SMs will add annotations to the staging pipeline_**
 
 ---
 Aug 17
