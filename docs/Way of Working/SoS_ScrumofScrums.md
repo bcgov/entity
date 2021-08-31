@@ -24,6 +24,7 @@ Aug 31
         - More team members picking up QA tasks
         - Only pull work into the sprint if dependencies are (can be) completed
     - Increase SoS meeting length to 45 mins?
+    - Can QA promote code?
 
 ---
 Aug 17
