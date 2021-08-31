@@ -14,7 +14,7 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
-Aug 27
+Sept 2
 ----
 - Action Items
     - Create CRM User stories - Kaine
@@ -26,6 +26,10 @@ Aug 27
 - New Business
     - allow a business to be affiliated to more than one account
     - Test accounts in Prod
+----
+Aug 27
+----
+- No Meeting
 
 ----
 Aug 20
