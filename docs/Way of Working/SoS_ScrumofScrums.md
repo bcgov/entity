@@ -14,6 +14,7 @@ Aug 31
     - Do you have any dependencies on other teams
 
 - New Business
+    - Should all 'Team' (Assets, Entities, Relationships) tickets in the sprint backlog and right of it on the board have the current milestone label?
     - Action Items from Hand-off Discussion
         - Break big tasks into smaller pieces (2-3 days max)
         - Commit less / deliver more
@@ -22,6 +23,7 @@ Aug 31
         - Engage in pair programming on complex tasks
         - More team members picking up QA tasks
         - Only pull work into the sprint if dependencies are (can be) completed
+    - Increase SoS meeting length to 45 mins?
 
 ---
 Aug 17
