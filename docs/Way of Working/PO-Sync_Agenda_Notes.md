@@ -27,6 +27,7 @@ Sept 2
     - allow a business to be affiliated to more than one account
     - Test accounts in Prod
     - Should tickets be moved to Closed prior to release?
+    - Fee issue paper
 ----
 Aug 27
 ----
