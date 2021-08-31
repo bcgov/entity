@@ -409,6 +409,15 @@ August 24th
 August 31st
 ----
 - coop dissolution
+  - can we make the "dissolve" button much less accidentally clickable? Bright red? Alarm bells?
+  - Can we change "business" to "cooperative association"?
+  - What do we do about the certificate? Scott will think about a nice UI
+  - We need to decide if we want to enter text for the speicial resoltuion, or do we want to upload it
+    - Is there an output for both options? Yep we can make one for either option
+  - BC Cooperative Association Act should be captialized
+  - Let's add "person holding records" to the distribution list of outputs. Maybe add email field to the liquidator/custodian component, make it optional (amber thinks people will object)
+  - How do we want the co-op certificate of dissolution? 
+    - Let's make it the same as the BCOMP incorproation certification, just for dissolution.
 
 
 - Co-op agm extensions https://docs.google.com/document/d/14odOBr4XUp_kPeWu7jk--6JEfmmFFagxy5eseRjFPc0/edit?usp=sharing
