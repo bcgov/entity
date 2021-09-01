@@ -30,6 +30,11 @@ Sept 2
     - Fee issue paper
     - BA resource discussion
     - digitial Credentials discussion
+    - an issue was raised by staff
+        - Staff note concern with clients incorporating Benefit Companies when they intended to set up a BC Limited Company. 
+        - They have noted the additional staff effort involved when clients have difficulty pathfinding. A few considerations:
+            - As I understand we don’t have links to where to go to register in Name results emails.
+            - Clients cannot register with a Limited Company NR in the Benefit Company Incorporation filing.
 
 ----
 Aug 27
