@@ -26,7 +26,7 @@ Sept 2
 - New Business
     - allow a business to be affiliated to more than one account
     - Test accounts in Prod
-    - Should tickets be moved to Closed prior to release?
+    - Should tickets be moved to Closed prior to release? Guidelines for moving from Done to Closed
     - Fee issue paper
 ----
 Aug 27
