@@ -28,6 +28,9 @@ Sept 2
     - Test accounts in Prod
     - Should tickets be moved to Closed prior to release? Guidelines for moving from Done to Closed
     - Fee issue paper
+    - BA resource discussion
+    - digitial Credentials discussion
+
 ----
 Aug 27
 ----
