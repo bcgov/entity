@@ -24,7 +24,7 @@ Sep 14
     - Do you have any dependencies on other teams
 
 - New Business
-    - 
+    - Guidelines for moving from Done to Closed?
 
 ---
 Aug 31
