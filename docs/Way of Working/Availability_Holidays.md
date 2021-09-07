@@ -41,7 +41,7 @@
 * Melissa: Flex day bi-weekly Monday's (Aug 17th on), Mar 16/17/26, Jun 14, Jun 30-Jul 2, Aug 3-6, Sep 3, Sep 23- Oct 1, Dec 21 - Jan 4 2022 
 * Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3, ...); Aug 3-6, Aug 30- Sep 3, Oct(Nov) ? - Oct(Nov) ?, Dec 21 - Jan 4 2022
 * Roy: Dec 23 - Dec 24 
-* Sumesh:  
+* Sumesh: Sep 14
 * Saravan: 
 * Sateesh: August 26 & 27
 * Rai: 
