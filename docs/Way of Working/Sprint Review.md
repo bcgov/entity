@@ -24,6 +24,23 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 |---|----------------------|--------------------|-------------------------|
 
 -----------------------------------------------------------------------------------------------------------------------
+### September 7, 2021 - Sprint (Milestone) 10.4 - 70 min. total 
+
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+
+#### Entities
+
+#### Relationships
+* linked routing slips (8530, 7796, 8629) - Jyoti - 5mins
+* staff reconciliation (7821) - Jyoti - 5mins
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+-----------------------------------------------------------------------------------------------------------------------
 ### August 24, 2021 - Sprint (Milestone) 10.3 - 70 min. total 
 
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
