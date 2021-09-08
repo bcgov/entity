@@ -14,7 +14,7 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
-Sept 2
+Sept 10
 ----
 - Action Items
     - Create CRM User stories - Kaine
@@ -35,6 +35,12 @@ Sept 2
         - They have noted the additional staff effort involved when clients have difficulty pathfinding. A few considerations:
             - As I understand we don’t have links to where to go to register in Name results emails.
             - Clients cannot register with a Limited Company NR in the Benefit Company Incorporation filing.
+    - Legal API changes for allowing multiple accounts to affiliate to a business 
+
+----
+Sept 3
+----
+- No Meeting
 
 ----
 Aug 27
