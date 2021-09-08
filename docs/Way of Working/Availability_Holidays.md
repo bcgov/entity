@@ -42,7 +42,7 @@
 * Patrick: Flex day bi-weekly Monday´s (start Jan 20) (next Feb 3, ...); Aug 3-6, Aug 30- Sep 3, Oct(Nov) ? - Oct(Nov) ?, Dec 21 - Jan 4 2022
 * Roy: Dec 23 - Dec 24 
 * Sumesh: Sep 14
-* Saravan: 
+* Saravan: Sep 9th
 * Sateesh: August 26 & 27
 * Rai: 
 * Jyoti: August 16th to 20th
