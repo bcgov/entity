@@ -23,6 +23,7 @@ Summarize issue and attach email OR copy and paste email content into ticket
   - BA can use their business knowledge and best judgement if it is a priority or not
   - How long the ticket has been open
   - If we are still unsure, reach out to other BAs in the guild
+- [ ] Add ticket to "Ops" column
 - [ ] When ticket has been created, post the ticket in RocketChat '#Operations Tasks' channel
 - [ ] Reply All to IT Ops email (CC BA Inbox) and provide zenhub ticket number opened
 - [ ] Dev/BAs to resolve issue
