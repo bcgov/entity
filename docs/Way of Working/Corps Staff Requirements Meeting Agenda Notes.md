@@ -431,4 +431,17 @@ Sept 9 2021
 ---
 * [Email templates, for co-op incorproation](https://docs.google.com/spreadsheets/d/17wMY9znmWMr2RoXH9S2elffC8uE7iifUGB5Hu3VVFpE/edit?usp=sharing) Specifically the part about BN numbers
 * COMM/REPORTING field, and other questions from email regarding voluntary dissolutions
-* 
+  * Amber will go through the coop act and draw comparisons between reporting and non-reporting associations
+  * Julie will use this info to decide how she would like it recorded it the system
+  * Julie will ask Anderson for the existing list of reporting co-op associations ✅ There are none!
+  * Amber will get the list of reporting Societies ✅
+
+* Do we want to record the "Reporting" field for future co-ops?
+* Do we want to keep the "Reporting" field for existing co-ops, and if so, where should staff/clients see it?
+* Do we want to retain the co-ops type (just community co-ops) for the existing co-ops?
+  * Yes, we definitely want to keep this, this is important information, their funding depends on it. Since we have it, let's not make them enter it again.
+* Do we want to retain the community co-ops community purpose that is also entered in COBRS? For existing, or new?
+  * Not sure if there is value in collecitng it. It is already in teh memorandum. Not sure where we would see it in the app. Also it might change, how do we facilitate this from changing int he app? Now they can change it by updating their memorandum.
+* For existing co-ops that don't have a co-op type defined, do we want them to define their co-op type? Or just collect that for all future co-ops?
+  * Amber: doesn't make sense to jump prompt new entities, the set of data would be so small. If there is a push to have thsi data, we should try to prompt existing co-ops to add it. It should be free to add this information, for existing co-ops.
+
