@@ -406,7 +406,7 @@ August 24th
 
 
 ----
-August 31st
+August 31st 2021
 ----
 - coop dissolution
   - can we make the "dissolve" button much less accidentally clickable? Bright red? Alarm bells?
@@ -425,3 +425,10 @@ August 31st
 - Co-op corrections
    - would staff prefer this to be paper, or self serve with staff review?  Which would be the less risky?
    - need some policy clarification - what is a record (is it a particular document filed) or broadly the information on the coop.  If the former, and there were two records to correct, there would need to be two filings of $20 each regardless of which components were corrected in a record (this is current process).   If the latter, it could just be one filing of $20 and then staff could reference where each error was first created. Would this be useful or just muddy the waters?
+
+----
+Sept 9 2021
+---
+* [Email templates, for co-op incorproation](https://docs.google.com/spreadsheets/d/17wMY9znmWMr2RoXH9S2elffC8uE7iifUGB5Hu3VVFpE/edit?usp=sharing) Specifically the part about BN numbers
+* COMM/REPORTING field, and other questions from email regarding voluntary dissolutions
+* 
