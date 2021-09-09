@@ -25,6 +25,7 @@ Sep 14
 
 - New Business
     - Guidelines for moving from Done to Closed?
+    - Fibonacci estimation
 
 ---
 Aug 31
