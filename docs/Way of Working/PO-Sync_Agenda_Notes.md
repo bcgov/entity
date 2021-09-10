@@ -14,6 +14,22 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Sept 17
+----
+- Action Items
+    - Create CRM User stories - Kaine
+    - Affiliation to more than one account - Thor to reaching out regarding design 
+    - Test accounts in prod - SRE team to provide an explanation that POs can take to Ian B
+    - Fee issue paper - Jyoti to forward email from Suzanne
+    - Resourcing - Is Almeed moving to SRE - Linda
+
+- Standing Items
+    - Program Kanban
+    - PI Planning Board - Dependencies
+
+- New Business
+
+----
 Sept 10
 ----
 - Action Items
@@ -42,6 +58,31 @@ Sept 10
     - With auto affiliation of NR to a manage business dashboard discussion is needed on how to handle this for Ministry Accounts. With groups like SBC field offices they will never use the NR to complete the client filing.
     - PPR Transaction triggers PAD payment confirmation email even when search error prevents complete transaction#7340 
         - From Patrick: The refund request from PPR is properly reflected in the Transaction Details, but with no updates to the status after CC or BCOL refunds, the information presented to clients won't be accurate. I think this is a larger issue for refund processing status updates than just PPR
+
+- Meeting Notes
+    - Business affiliation to more then one account
+        - OCM doing some research
+        - Not estimated
+        - **Thor to reaching out regarding design 
+    - Test accounts in Prod
+        - Brought up due to NRO shut-down
+        - Melissa has one prod account
+        - **SRE team to provide an explanation that POs can take to Ian B
+    - Fee issue paper
+        - **Jyoti to forward email from Suzanne
+        - Simplifies fee structure
+    - Issue raised by Staff
+        - Julie will be arranging a meeting
+    - Partner discussions
+        - What is the timeline for the registration filings - Jan 2022
+        - Carol has asked for a timeline for OneStop decommission 
+    - PPR transaction triggers
+        - Bug can be closed
+    - Moving tickets from done to closed
+        - All teams will move tickets to closed when POs have reviewed
+    - Resourcing
+        - **Is Almeed moving to SRE - Linda
+
 
 ----
 Sept 3
