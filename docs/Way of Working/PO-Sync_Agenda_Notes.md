@@ -36,6 +36,9 @@ Sept 10
             - As I understand we don’t have links to where to go to register in Name results emails.
             - Clients cannot register with a Limited Company NR in the Benefit Company Incorporation filing.
     - Legal API changes for allowing multiple accounts to affiliate to a business 
+    - BA resource discussion for Relationship team
+    - Partner disucssions - One Stop and BCOL
+    - Business Affiliation to multiple accounts
 
 ----
 Sept 3
