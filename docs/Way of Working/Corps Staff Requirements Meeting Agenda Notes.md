@@ -448,4 +448,7 @@ Sept 9 2021
 ----
 next
 ----
-* https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8910
+* https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8910, what text do we want for corps?
+* https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8912, do we want to include this component in the output?
+* https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8932, are there address requirements for these roles? Corp in BC, and Co-op in canada, can it also be international?
+* 
