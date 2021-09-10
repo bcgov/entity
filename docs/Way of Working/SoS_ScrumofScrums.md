@@ -22,6 +22,7 @@ Sep 14
     - What are your upcoming goals / how are you progressing
     - Do you have any blockers
     - Do you have any dependencies on other teams
+    - Is there anything in your most recent retro that is beyond your influence (every 2 weeks) 
 
 - New Business
     - Guidelines for moving from Done to Closed?
