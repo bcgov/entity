@@ -39,6 +39,7 @@ Sept 10
     - BA resource discussion for Relationship team
     - Partner disucssions - One Stop and BCOL
     - Business Affiliation to multiple accounts
+    - With auto affiliation of NR to a manage business dashboard discussion is needed on how to handle this for Ministry Accounts. With groups like SBC field offices they will never use the NR to complete the client filing.
 
 ----
 Sept 3
