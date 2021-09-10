@@ -445,3 +445,7 @@ Sept 9 2021
 * For existing co-ops that don't have a co-op type defined, do we want them to define their co-op type? Or just collect that for all future co-ops?
   * Amber: doesn't make sense to jump prompt new entities, the set of data would be so small. If there is a push to have thsi data, we should try to prompt existing co-ops to add it. It should be free to add this information, for existing co-ops.
 
+----
+next
+----
+* https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8910
