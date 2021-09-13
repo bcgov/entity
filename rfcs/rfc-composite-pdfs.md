@@ -89,7 +89,7 @@ PyMuPDF seems to have a reasonable documentation but some links may show you out
 
 # Adoption strategy
 
-If we implement this proposal, how will existing developers adopt it? Is this a breaking change? How will this affect other projects in the Entity ecosystem?
+The implementation can be as simple as creating a new utility function to be used by other modules in Lear project and there are not any impact doing that for the project. 
 
 # Unresolved questions
 
@@ -97,9 +97,9 @@ If we implement this proposal, how will existing developers adopt it? Is this a 
 
 # References
 
-https://pymupdf.readthedocs.io/en/latest/
-https://github.com/pymupdf/PyMuPDF
-https://pythonhosted.org/PyPDF2
+- https://pymupdf.readthedocs.io/en/latest/
+- https://github.com/pymupdf/PyMuPDF
+- https://pythonhosted.org/PyPDF2
 
 
 # Thanks
