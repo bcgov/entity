@@ -42,21 +42,20 @@ def get_formatted_current_datetime():
     return now.strftime(f'%B %-d, %Y at {hour}:%M %P Pacific time')
 
 def create_stamp():
-    original_pdf = PyPDF2.PdfFileReader("original_document.pdf","rb")
-    original_pdf_first_page = original_pdf.getPage(0)
-
     pdf_file = 'stamp.pdf'
     can = canvas.Canvas(pdf_file, pagesize=letter)
-
-    image_x_start = original_pdf_first_page.mediaBox.getWidth() - 150
-    image_y_start = original_pdf_first_page.mediaBox.getHeight() - 150
+    doc_width = letter[0]
+    doc_height = letter[1]
+    
+    image_x_start = doc_width - 150
+    image_y_start = doc_height - 150
 
     img_file = 'signature.png'
     can.drawImage(img_file, image_x_start, image_y_start, width=120, preserveAspectRatio=True, mask='auto')
 
     text = 'Filed on ' + get_formatted_current_datetime() + '\nIncorporation Number: CP0000001'
     text_x_margin = 30
-    text_y_margin = original_pdf_first_page.mediaBox.getHeight()-35
+    text_y_margin = doc_height - 35
     line_height = 14
     for line in text.splitlines():
         can.drawString(text_x_margin, text_y_margin, line) # TODO: use BCSans font 10px
