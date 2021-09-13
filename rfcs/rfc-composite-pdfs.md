@@ -89,7 +89,7 @@ PyMuPDF seems to have a reasonable documentation but some links may show you out
 
 # Adoption strategy
 
-The implementation can be as simple as creating a new utility function to be used by other modules in Lear project and there are not any impact doing that for the project. 
+The implementation can be as simple as creating a new utility function to be used by other modules in Lear project and there are not any impact doing that for the project. This can be also broken in smaller pieces like a generic function to add an image to a PDF and another generic function to add text to a PDF. Then other use cases can make use of them. 
 
 # Unresolved questions
 
