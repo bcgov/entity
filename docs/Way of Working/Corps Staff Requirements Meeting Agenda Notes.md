@@ -446,9 +446,22 @@ Sept 9 2021
   * Amber: doesn't make sense to jump prompt new entities, the set of data would be so small. If there is a push to have thsi data, we should try to prompt existing co-ops to add it. It should be free to add this information, for existing co-ops.
 
 ----
-next
+Sept 14th, 2021
 ----
 * https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8910, what text do we want for corps?
+  * answered in ticket
 * https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8912, do we want to include this component in the output?
+  * @tlebedovich @forgeuxGH5 could you please include this in the text somewhere in the component 4 on step 1 "delete and/or destroy certificates"? Request from staff. The Cooperative Association Act requires that the application for a voluntary dissolution be accompanied by the Certificate of Incorporation. The Certificate of Incorporation is on file for this Cooperative Association.
+  * Yes let's include it in the outputs
 * https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8932, are there address requirements for these roles? Corp in BC, and Co-op in canada, can it also be international?
-* 
+  * ⚠️ Amber is going to look into if we want to also record delivery address for co-ops (like we do for corps)
+  * 
+
+
+* Partrnerships
+  * Loren would be a good person to reach out to for sole prop maintnenance filings
+
+* Historical entity
+  * In addition to the wireframe that has the status in the to-do list, can we have the historical status in red, and more noticable? Like the big ugly one in COLIN
+  * And have "not in good standing" in orange? "active" in green
+
