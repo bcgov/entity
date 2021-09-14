@@ -70,6 +70,21 @@ stamp_pdf(input_pdf='original_document.pdf',
           watermark='stamp.pdf')
 ```
 
+Example of page size validation
+
+```
+import PyPDF2
+from reportlab.lib.pagesizes import letter
+
+pdf = PyPDF2.PdfFileReader("watermarked.pdf","rb")
+p = pdf.getPage(0)
+
+# Validates page size to be Letter standard
+assert p.mediaBox.getWidth() == letter[0]
+assert p.mediaBox.getHeight() == letter[1]
+
+```
+
 Example of output with text and image added to an existing PDF file:
 
 ![Output example](rfc-composite-pdfs/output_example.png)
@@ -91,14 +106,19 @@ Currently for Lear project reports, the registrar's signature is separate from t
 
 This new file with the registrar's signature should be added to Lear project and the current signature image should be retrieved from the [RegistrarInfo](https://github.com/bcgov/lear/blob/main/legal-api/src/legal_api/reports/registrar_meta.py) class.
 
+## Process
 
-## Validation
+### Validation
+At the moment the user files a Cooperative incorporation we should do some validations for the uploaded documents as such:
 
-Important things to check before processing the files:
 - Must be a valid PDF file
 - PDF file must not be encrypted
-- Page size must be letter
+- Page size must be Letter
 
+### Stamp Generation and Merging
+In case of validation success, the stamp pdf should be created on the fly with the signature, incorporation number and current date and time.
+After that, the stamp can be merged to original document creating the certified copy that will be saved as part of the user uploaded document replacing the original.  
+In case of error in this process the application should fail and return to the incorporation summary page displaying an error message and giving the user a chance to try again.
 
 # Drawbacks
 
