@@ -465,3 +465,9 @@ Sept 14th, 2021
   * In addition to the wireframe that has the status in the to-do list, can we have the historical status in red, and more noticable? Like the big ugly one in COLIN
   * And have "not in good standing" in orange? "active" in green
 
+----
+Sept?
+----
+- https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/9007 Text?
+  - g
+- 
