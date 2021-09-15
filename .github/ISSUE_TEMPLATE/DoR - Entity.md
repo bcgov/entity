@@ -1,8 +1,12 @@
----	
+---
 name: Definition of Ready - Entities Team
-about: This state should be the outcome of Backlog Grooming and ensures the ticket is ready to be worked on.
+about: This state should be the outcome of Backlog Grooming and ensures the ticket
+  is ready to be worked on.
+title: ''
+labels: ''
+assignees: ''
 
----	
+---
 
 **Definition of Ready for Sprint - User Story**
   

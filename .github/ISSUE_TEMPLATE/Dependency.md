@@ -25,6 +25,3 @@ assignees: ''
 
 
 ### Contact person
-
-
-

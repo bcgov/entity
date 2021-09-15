@@ -1,6 +1,9 @@
 ---
 name: ops-alteration
 about: manual alteration filings that need to be processed using jupyter notebooks
+title: ''
+labels: ''
+assignees: ''
 
 ---
 

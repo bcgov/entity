@@ -1,7 +1,9 @@
 ---
 name: Onboarding
 about: A checklist of onboarding tasks for new team members
-
+title: ''
+labels: ''
+assignees: ''
 
 ---
 
