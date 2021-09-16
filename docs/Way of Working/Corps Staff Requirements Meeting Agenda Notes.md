@@ -470,4 +470,10 @@ Sept?
 ----
 - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/9007 Text?
   - g
+- https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8274 Messaging after the filing
+  - Do we need to send info to MRAS
+  - Do coops live on Orgbook?
+  - Do you know who to speak to at Gazette re: sending jobs from postgres as well as oracle?
+- https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8913 Special Resolution
+- We don't collect sample resolution in COLIN so thinking we don't need this step.  Unless we just want help text advising the corp they need to pass a resolution and keep it in their records
 - 
