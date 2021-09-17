@@ -35,7 +35,7 @@
 
 ----
 **Relationships** 
-* Amit: 
+* John: Monday flex day (Sept 20th on), December 20-23
 * Faiz: July 20
 * Meng: Flex day bi-weekly Friday's (Dec 18th on), June 21, June 23 (few hrs), June 28 (Few hrs)
 * Melissa: Flex day bi-weekly Monday's (Aug 17th on), Mar 16/17/26, Jun 14, Jun 30-Jul 2, Aug 3-6, Sep 2-3, Sep 23- Oct 1, Dec 21 - Jan 4 2022 
