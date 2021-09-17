@@ -8,7 +8,7 @@
 * Divya:
 * Doug:
 * Greg:
-* Janis: Dec 27-31
+* Janis: Dec 20-31
 * Kaine:
 * Kevin:
 * Kial:
