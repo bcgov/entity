@@ -13,7 +13,7 @@
 * Kevin:
 * Kial:
 * Kim:
-* Mag: November 12 - 19
+* Mags: November 12 - 19
 * Patrick:  October 25 - November 12
 * Scott:
 * Tracey:
