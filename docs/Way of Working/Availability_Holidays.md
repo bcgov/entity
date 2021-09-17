@@ -26,7 +26,7 @@
 * Kial: Flex day every second friday
 * Lekshmi:
 * Peter: Jun 26, 29
-* Sienna:
+* Sienna: Sept 24, Oct 11 - 15
 * Jyoti: Jun 29, Jun 30, Jul 31, Sep 4, Sep 18
 * Cameron:
 * Severin:
