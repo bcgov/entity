@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Sept 24
+----
+- Action Items
+    - Test accounts in prod - SRE team to provide an explanation that POs can take to Ian B
+    - Resourcing - Is Omid moving to SRE - Linda
+    - BA resources - Kaine/team to discuss long term options
+    - Assessing change impacts - Kaine to look at providing a BA
+
+- Standing Items
+    - Program Kanban
+    - PI Planning Board - Dependencies
+
+- New Business
+
+----
 Sept 17
 ----
 - Action Items
@@ -21,13 +36,30 @@ Sept 17
     - Affiliation to more than one account - Thor to reaching out regarding design 
     - Test accounts in prod - SRE team to provide an explanation that POs can take to Ian B
     - Fee issue paper - Jyoti to forward email from Suzanne
-    - Resourcing - Is Almeed moving to SRE - Linda
+    - Resourcing - Is Omid moving to SRE - Linda
 
 - Standing Items
     - Program Kanban
     - PI Planning Board - Dependencies
 
 - New Business
+    - Process for assessing change impacts of items in the long term plan
+    - Maturity assessment results
+
+- Meeting Notes:
+    - CRM - done
+    - Thor has reached out
+    - Test accounts - push
+    - Fee issue paper - done
+    - Omid - resourcing - push
+    - Discussion about BA resources
+        - ** Kaine/team to discuss long term options
+    - Assessing change impacts
+        - Change assessment impact tool used for current PI
+        - Highlights system impacts and resourcing requirements
+        - Home team have concerns about resourcing
+        - Plan long term planning meetings twice per PI
+        - **Kaine to look at providing a BA
 
 ----
 Sept 10
