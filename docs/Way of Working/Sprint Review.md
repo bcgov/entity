@@ -24,6 +24,24 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 |---|----------------------|--------------------|-------------------------|
 
 -----------------------------------------------------------------------------------------------------------------------
+### September 21, 2021 - Sprint (Milestone) 10.5 - 70 min. total 
+
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+
+#### Entities
+
+#### Relationships
+* Select Multiple Rejection Reasons for Affidavit - 8664  -- Karthik  -- 5mins
+* FAS: Changes after Linking Routing Slip - 8861  -- Saravan  -- 5mins
+* Add Manual Transaction Validations - 8860  --  Saravan  - 5 mins
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+-----------------------------------------------------------------------------------------------------------------------
 ### September 7, 2021 - Sprint (Milestone) 10.4 - 70 min. total 
 
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
