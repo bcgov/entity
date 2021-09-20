@@ -466,14 +466,29 @@ Sept 14th, 2021
   * And have "not in good standing" in orange? "active" in green
 
 ----
-Sept?
+Sept 21st, 2021
 ----
-- https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/9007 Text?
-  - g
+COOP Incorporations - review outputs (email sent Sept 20th @10:43am)
+- Certificate file:///C:/Users/lmcclung/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/FIM93PBN/CP3490165%20-%20Certificate%20-%202021-09-17.pdf
+- IA - file:///C:/Users/lmcclung/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/FIM93PBN/CP3490165%20-%20Incorporation%20Application%20-%202021-09-17.pdf
+- Receipt  file:///C:/Users/lmcclung/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/FIM93PBN/CP3490165%20-%20Receipt%20-%20Sep%2017%202021.pdf
+
+COOP Voluntary Dissolutions
+- https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/9007 Affidavits
+  - Need tool tip text for an 'affidavit'
+  - For the note "The affidavit is to be sworn before a Commissioner for Taking Affidavits for British columbia or a Notary Public with a seal affixed.
+      - Should the title be "commissioner for taking oaths" or "for taking affidavits" (whats on the form)
+      - Confirm notary public is accurate too
+      - Confirm if it's a "seal" or "stamp" (instructions say seal) 
+      - 
+- Special resolution date
+- - is the resolution sufficient or do we need to record the resolution date for coops?
+-   corporations don't ask for the resolution date so this would be a schema change
+-   
 - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8274 Messaging after the filing
   - Do we need to send info to MRAS
-  - Do coops live on Orgbook?
-  - Do you know who to speak to at Gazette re: sending jobs from postgres as well as oracle?
+  - Do coops live on Orgbook? yes
+  - Do you know who to speak to at Gazette re: sending jobs from postgres as well as oracle?  David Roberts gave me the name Joan kew.
 - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/8913 Special Resolution
 - We don't collect sample resolution in COLIN so thinking we don't need this step.  Unless we just want help text advising the corp they need to pass a resolution and keep it in their records
 - 
