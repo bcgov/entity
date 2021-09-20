@@ -27,6 +27,8 @@ Sept 24
     - PI Planning Board - Dependencies
 
 - New Business
+    - Research UX - All Apps#7919
+    - Need to deal with Google Auto Fill Accross Apps#8518
 
 ----
 Sept 17
