@@ -1,6 +1,9 @@
 **Overview of Team availability BC Registries**
 - When are you _unavailable_ (booked into workshops, conferences, heads-down & undisturbed, working remotely with intermitten connectivity, etc)?  
 ----
+**OCM**
+* Trish - every Monday in Oct and maybe Nov, Nov 5, Jan 21 & 24
+----
 
 **Assets**
 * Stephanie: July 14-16, July 30, August 9, 20, 23
@@ -49,8 +52,4 @@
 
 
 ----
-Other Team Members:
-* Carol: Mar 16 - Mar 27
-* Karla-Maria:
-* Simona:
-* ... please add
+
