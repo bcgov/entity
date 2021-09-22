@@ -29,6 +29,7 @@ Summarize issue and attach email OR copy and paste email content into ticket
 
 ### ALTERATION TASKS - LTD/ULC > BEN:
 - [ ] [Check out this flow chart for the steps](https://drive.google.com/file/d/1aXdlPyefjab6hhMw9U9JZsHQProGS6sA/view?usp=sharing)
+- [ ] **BA** take screenshot in [SOFI](https://www.bcregistryallservices.gov.bc.ca/sofi/login/login.htm) of the LTD's filing history, so Thor can assess if there are new historical filings we have never dealt with before and estimate effort required.
 - [ ] Affiliate entity to account
 - [ ] Freeze entity in COLIN
 - [ ] Load historical filings to the BC Business Registry
