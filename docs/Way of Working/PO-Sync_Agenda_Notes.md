@@ -29,6 +29,7 @@ Sept 24
 - New Business
     - Research UX - All Apps#7919
     - Need to deal with Google Auto Fill Accross Apps#8518
+    - Updating the zenhub roadmap
 
 ----
 Sept 17
