@@ -30,6 +30,7 @@ Sept 24
     - Research UX - All Apps#7919
     - Need to deal with Google Auto Fill Accross Apps#8518
     - Updating the zenhub roadmap
+    - Fee Paper implementation 
 
 ----
 Sept 17
