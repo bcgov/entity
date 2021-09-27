@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Oct 1
+----
+- Action Items
+    - Research UX - All Apps#7919
+    - Need to deal with Google Auto Fill Across Apps - **Jyoti to create ticket for RFC
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+
+- 
+----
 Sept 24
 ----
 - Action Items
@@ -31,6 +46,18 @@ Sept 24
     - Need to deal with Google Auto Fill Accross Apps#8518
     - Updating the zenhub roadmap
     - Fee Paper implementation 
+
+- Meeting Notes
+    - Test accounts - ticket created - Jingua to follow up
+    - Resourcing - Omid will be joining lab teams in Oct
+    - BA resources
+    - Assessing change impacts
+    - Research Ux - **push
+    - Need to deal with Google Auto Fill Across Apps - **Jyoti to create ticket for RFC
+    - Display currency - all teams will deal with this
+    - Roadmap
+    - Fee paper - tied to the legislation
+    - PI planning agenda
 
 ----
 Sept 17
