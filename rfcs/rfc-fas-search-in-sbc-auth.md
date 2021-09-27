@@ -1,4 +1,4 @@
-# RFC For BCRS Shared Components
+# RFC For Including FAS [Fee Accounting System] dashboard in Auth application's staff dashboard
 
 - Start Date: (2021-09-15)
 - Target Major Version: None
@@ -7,7 +7,8 @@
 - Implementation PR: None
 
 # Summary
-Use existing Fas Search component inside SBC-Auth project to help staff to view FAS Routing slips without moving to fas system.
+
+Embed Fas Search component in SBC-Auth project so that  staff can avail FAS Routing slip search functionality without navigating to FAS system.
  
 # Basic example
 
@@ -17,13 +18,18 @@ https://github.com/shabeeb-aot/fas-ui/blob/feature/8605/src/lib-setup.js
 
 # Motivation
 
+This FAS search component is developed with in the fas application. The requirement is to host the search page with in the auth application as well with minimal changes in the auth-web[hosting application].
+With this approach , the major benefit is that the component still lives with in FAS application which makes maintainence easier for developers rather than maintaining in a different shared library repo.This approach can be adapted incase if another dashboards ie PPR dashboard has to be hosted in auth application. The component still lives with in the original application as well as it can be used in another project. More dadvantges are listed below
+ 
 1) Reuse existing FAS Routing slips search functionality in SBC Auth or any project needed
 
-2) Reduce duplicated code / fix bugs in one place only
+2) Eliminate duplicate code / fix bugs in one place only
 
 3) code once, use it in multiple place
 
 4) Easier component maintainability
+
+6) Pathway for other similar use cases where one applications dashboard have to be used in another application.
 
 
 # Detailed design
@@ -35,7 +41,7 @@ The components will be developed in same fas repo https://github.com/bcgov/fas-u
 https://cli.vuejs.org/guide/build-targets.html#library 
 
 In short:
-1. use same Fas git repo
+1. use same Fas github repo
 2. Check it out locally
 3. build as library using npm run build:lib
 4. it will generate lib folder.
@@ -86,47 +92,20 @@ The idea is still use existing FAS as it is and build only necessary component a
 
     It is easiest and simplest approch.But still we need to controll some part of application when we are using as a component. which we cant do by  using iframe. Also need to consider about security
 
-3) Inside commont components
+3) Inside SBC-common-components
 
     Another option to write code inside common component and use it in both sbc-auth and fas system. Since common component is used accross project and its not exported as component by component, it will increase bundile size in all project. Also we already wrote entire code for this component inside FAS using compostion api. which not supported by common component without any package updated.
 
-4) Inside shared components
-    This is another good option to consider. From requirements stand point, This component need to work with out any coding (or minimal) in sbc-auth Shared component basic principle is pass store and axios from parent and use as a complete re-usable component. We need to impliment store and axios inside component to work as a stand alon component. Also we already wrote entire code for this component inside FAS using compostion api. Code is using compostion api which will need lot of changes to move to shared component
+4) Inside BCRS-shared-components
     
-
+    The FAS Search component is developed using Vue Composition API.Composition api is not compatablie as such with current vue version in bcrs-shared and demands  lot of code changes to make it work with bcrs shared component library.
+    BCRS-shared-component is developed with the idelogy of simple components which can stand alone.Vuex, Store etc has to be passed externally so that component is lean and the simplicity is atttained.But since FAS search component is complicated and it requires store , axios etc , this will demand rewrite of the existing search component so that it can fit well into bcrs-shared-component.With the approach opted , minimal code change is only necessry. 
+   
 
 # Additional Tools Considered
 
 
-1) https://www.npmjs.com/
-
-    Npm is good option , we need to push to npm after build. When multiple projects come we can think about it. 
-
-
-<!-- # References
-
-- https://github.com/storybookjs/storybook
-- https://storybook.js.org/docs/vue/
-- https://www.learnstorybook.com/
-- https://christopherkade.com/posts/storybook - automatically deploying your Storybook to Github Pages
-- https://github.com/storybookjs/storybook-deployer - can deploy to GH Pages using CI
-- https://www.npmjs.com/package/@storybook/cli
-- https://www.npmjs.com/package/@storybook/vue - a UI development environment for your Vue components, to visualize
-    different states of your UI components and develop them interactively
-- https://www.npmjs.com/package/vue-storybook - a Webpack loader + helper script that allows you to embellish your
-    pre-existing Vue single file components (SFC) with a custom block that's automatically translated into a
-    Storybook-flavored story - use in future maybe?
-- https://github.com/storybookjs/vue-cli-plugin-storybook - will create a config folder for storybook, a sample component
-    and a sample story
-- https://github.com/white-rabbit-japan/vue-vuetify-storybook
-- https://github.com/pixari/component-library-monorepo - monorepo solution for multiple VueJs Apps and a shared component
-    library
-- https://github.com/lerna/lerna - a tool for managing JavaScript projects with multiple packages
-- https://medium.com/js-dojo/sharing-reusable-vue-js-components-with-lerna-storybook-and-npm-7dc33b38b011 - sharing
-    reusable Vue.js components with Lerna, Storybook, and npm or GitHub Package Registries
-
-As part of my research, I visited many other pages. They are documented here:
-    https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/4551#issuecomment-677903928 -->
+No additional tools required.
 
 # Thanks
 
