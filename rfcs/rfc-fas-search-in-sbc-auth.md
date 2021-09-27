@@ -61,12 +61,12 @@ Just use it like any other npm package.
 install using below comment from git
 ```
 npm i https://github.com/bcgov/fas-ui.git --save
-```or include in package.json
 ```
-    "fas-ui": "git+https://github.com/bcgov/fas-ui.git",
-
+or include in package.json
 ```
-
+ "fas-ui": "git+https://github.com/bcgov/fas-ui.git",
+```
+![sbc- auth package.json image](rfc-fas-search-in-sbc-auth/package.png)
 
 ```
 inside main.ts  `import Search from 'fas-ui'`
