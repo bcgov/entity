@@ -60,7 +60,7 @@ The components will be on github only and use npm install https://github.com/bcg
 Just use it like any other npm package. 
 install using below comment from git
 ```
-npm i https://github.com/bcgov/fas-ui/\#feature/8605 --save
+npm i https://github.com/bcgov/fas-ui.git --save
 ```
 ```
 inside main.ts  `import Search from 'fas-ui'`
