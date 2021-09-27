@@ -502,15 +502,34 @@ Sept 27th, 2021
 -----
 
 Voluntary Dissolutions
-- Corps - Resolution page - yes?
-- Corps - Affidavit page - skip tooltip?
-- Completing party - collect name and address for outputs or just prepopulate the certify section with user
-- email notifications - label 'completing party' or 'applicant'
+- Corps - Resolution page - yes? Amber with ask Policy for simple language text for resolutions
+- Corps - Affidavit page - skip tooltip? - added to designs
+- Completing party - collect name and address for outputs or just prepopulate the certify section with user - only prepoulate on the certify section.
+- email notifications - label 'completing party' or 'applicant' - completing party
+- dissolution certificate - certified to completing party is fine
 
 Coop Incorporation
-- step 1 - should not have name translation
+- step 1 - should not have name translation - correct
 - step 1 - don't default 'same as' registered office mailing; in delivery section include" A deliver address cannot be a Post Office box.
-- Step 1 - RO Contact info - informational text needs to be changed
+- Step 1 - RO Contact info - informational text needs to be changed; change company to business, remove ref to notice of articles.  make generic don't list docs or AR reminders
+- Step 2 - director address should not be auto selected
+- Step 3 - rules confirm section - should refer to rules not memorandum; remove last bullet (don't need to be signed or witnessed)
+- 
+- Step 3 - add the following to the expanded help after the "The Rules Need to" section:
+- The Cooperative Association Regulations provide a Schedule B template of Rules.  The rules adopted by an association may be in this form, a modified form of these Rules or in another form altogether. 
+- The template can be used if:
+- the cooperative association will NOT be a housing or community service cooperative association
+- the cooperative has share capital consisting of membership shares with par value 
+- the cooperative has investment shares that may be issued only to members. 
+
+- Before choosing to use the Schedule B Form of Rules, please review them carefully to decide whether they work for the cooperative association.  
+- 
+- Link for Schedule B = https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/391_2000#ScheduleB
+- 
+- Step 3 - memorandum
 - see Julie's response Setp 22nd re text
+
+Outputs - IA - why is  the S capitalized - CP3545786 - bbanner name should be capitalized (store and display)
+Receipt - why do we have a GST column if we never collect GST
 
 LTDs set up as BENs in error - FYI... email chain Sept 22 - monitor with new changes
