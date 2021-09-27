@@ -86,15 +86,15 @@ The idea is still use existing FAS as it is and build only necessary component a
 
 1) Duplicated code between projects
 
-    Don't actually do this if possible!
-
+    Breaks the DRY principle and will lead to maintanence nightmares.
+    
 2) Use as Iframe 
 
-    It is easiest and simplest approch.But still we need to controll some part of application when we are using as a component. which we cant do by  using iframe. Also need to consider about security
+    Easiest and simplest approch.But not a scalable solution and also fine grained control over the parts of the page is hard to achieve.Scoping the same requirement to PPR or other application might require more iframes and page load time will be impacted.Overall less preferred solution.
 
 3) Inside SBC-common-components
 
-    Another option to write code inside common component and use it in both sbc-auth and fas system. Since common component is used accross project and its not exported as component by component, it will increase bundile size in all project. Also we already wrote entire code for this component inside FAS using compostion api. which not supported by common component without any package updated.
+ Code inside common component and use it in both sbc-auth and fas system. Since common component is used accross project and its not exported as component by component, it will increase bundile size in all project. Also fas-search is not a common component per se.The requirment is more of one of a case where a single component has to be exposed to another app.
 
 4) Inside BCRS-shared-components
     
