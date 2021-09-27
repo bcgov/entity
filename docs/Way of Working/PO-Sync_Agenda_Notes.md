@@ -26,8 +26,8 @@ Oct 1
     - PI Planning Board - Dependencies
 
 - New Business
-
-- 
+    - Combining PI11.7 and 11.8 into one 4 week sprint
+ 
 ----
 Sept 24
 ----
