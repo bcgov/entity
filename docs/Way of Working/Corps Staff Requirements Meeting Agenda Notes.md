@@ -496,3 +496,21 @@ COOP Voluntary Dissolutions
 
 - Outputs (COOPs) affidavit, resolution, certificate, dissolution application
 - Outputs (CORPS) certificate, dissolution application
+
+-----
+Sept 27th, 2021
+-----
+
+Voluntary Dissolutions
+- Corps - Resolution page - yes?
+- Corps - Affidavit page - skip tooltip?
+- Completing party - collect name and address for outputs or just prepopulate the certify section with user
+- email notifications - label 'completing party' or 'applicant'
+
+Coop Incorporation
+- step 1 - should not have name translation
+- step 1 - don't default 'same as' registered office mailing; in delivery section include" A deliver address cannot be a Post Office box.
+- Step 1 - RO Contact info - informational text needs to be changed
+- see Julie's response Setp 22nd re text
+
+LTDs set up as BENs in error - FYI... email chain Sept 22 - monitor with new changes
