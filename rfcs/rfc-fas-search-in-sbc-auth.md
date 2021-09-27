@@ -61,7 +61,13 @@ Just use it like any other npm package.
 install using below comment from git
 ```
 npm i https://github.com/bcgov/fas-ui.git --save
+```or include in package.json
 ```
+    "fas-ui": "git+https://github.com/bcgov/fas-ui.git",
+
+```
+
+
 ```
 inside main.ts  `import Search from 'fas-ui'`
 Vue.use(Search, { store, i18n })
@@ -94,7 +100,7 @@ The idea is still use existing FAS as it is and build only necessary component a
 
 3) Inside SBC-common-components
 
- Code inside common component and use it in both sbc-auth and fas system. Since common component is used accross project and its not exported as component by component, it will increase bundile size in all project. Also fas-search is not a common component per se.The requirment is more of one of a case where a single component has to be exposed to another app.
+    Code inside common component and use it in both sbc-auth and fas system. Since common component is used accross project and its not exported as component by component, it will increase bundile size in all project. Also fas-search is not a common component per se.The requirment is more of one of a case where a single component has to be exposed to another app.
 
 4) Inside BCRS-shared-components
     
