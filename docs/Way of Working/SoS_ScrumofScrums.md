@@ -24,6 +24,7 @@ Sep 29
 
 - New Business
     - Pick a few ideas from the maturity assessment brainstorm to implement
+    - Ideas from Jingua for common practices
 
 ---
 Sep 23
