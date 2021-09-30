@@ -27,6 +27,7 @@ Oct 1
 
 - New Business
     - Combining PI11.7 and 11.8 into one 4 week sprint
+    - PI planning agenda
  
 ----
 Sept 24
