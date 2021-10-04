@@ -533,3 +533,9 @@ Outputs - IA - why is  the S capitalized - CP3545786 - bbanner name should be ca
 Receipt - why do we have a GST column if we never collect GST
 
 LTDs set up as BENs in error - FYI... email chain Sept 22 - monitor with new changes
+
+----
+Oct 5th, 2021
+----
+- "Dissolution clause" in the memorandum step of co-op incorp, user research found it confused users. Can we rehash the language around dissolution clause?
+- 
