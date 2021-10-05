@@ -537,9 +537,53 @@ LTDs set up as BENs in error - FYI... email chain Sept 22 - monitor with new cha
 ----
 Oct 5th, 2021
 ----
-- "Dissolution clause" in the memorandum step of co-op incorp, user research found it confused users. Can we rehash the language around dissolution clause?
-- Review PI mural board - thinking of swapping Firm address change with firm dissolutions.  Easy self-serve and staff filing similar to registrar's order  in that it only needs a dissolution date.  No fees.  Needs an output though. https://app.mural.co/t/leadingsafetrainingtemplate5894/m/leadingsafetrainingtemplate5894/1620073674738/cab2f4c157615bf630f911c921dd242789344778?sender=u6daebabd77a61fc0a5b75673
-- Business summary - is there a reason why corp summaries don't display share structure and resolution dates?  Do they need to?
+- **"Dissolution clause" in the memorandum step of co-op incorp, user research found it confused users. Can we rehash the language around dissolution clause?**
+  - We have always said it as optional clause in the memorandum
+  - The wording used in the sample is different for each co-op type
+  - If none of the samples apply, they can, but are not required to, provide a clause
+  - As for defining what will happen to their property after they have been dissolved or wound up - it may be defined elsewhere in the memorandum. If they don't define it in the memorandum, they will need to file a special resoltion to decide what will happen to their property.
+  - Let's keep what is in the toop tip for now, but also:
+    - Change "property" to "assets"
+    - Add another sentence after the current content: "If the cooperative decides to not adopt one of the sample dissolution clauses in their memorandum, the cooperative should put a dissolution clause into their rules. For more information about what a dissolution clause is, contact BC Registries."
+    - Change the bullet point to say "There is a Dissolution Provision in the Memorandum or Rules of Association."
+
+
+- **Review PI mural board - thinking of swapping Firm address change with firm dissolutions.  Easy self-serve and staff filing similar to registrar's order  in that it only needs a dissolution date.  No fees.  Needs an output though.** https://app.mural.co/t/leadingsafetrainingtemplate5894/m/leadingsafetrainingtemplate5894/1620073674738/cab2f4c157615bf630f911c921dd242789344778?sender=u6daebabd77a61fc0a5b75673
+  - Addres VS dissolution, which will be more common? We should build the higer volume one first, if we can. Lauren Nixon has the answers, maybe we can get numbers from her. We assume address change will be more frequent.
+  - We won't need dissolution in time for forced dissolutions. The forced renewal of firms was miscommunicated in PI planning this morn, the legislative process will take a while, and won't impact our PI decisions. 
+
+
+- **Business summary - is there a reason why corp summaries don't display share structure and resolution dates?  Do they need to?**
+  - Do not display those on corp summaries - they are on the notice of articles.
+  - NOA is generated when particualr filings are done. In terms of search, it is a particular special request, so see their NOA and their share structure. There are no legal or policy reasons not to include it.
+  - Not reccomended by Amber, too much information in the corproate summary.
+  - Julie: What are the corproate summaries used for? For court, banks, ICBC - they don't need share strucure.
+  - People who want the last NOA to know the share structure: A shareholder, Law enforcement agencies, CRA, Crimial RCMP
+  - Also usually these summaries are one page - this would take it to two.
+  - Amber always thought the policy was the basic need-to-know info.
+  - This woul also be a change management piece, partners will think its not a corproate summary, and might not accept them.
+  - There will be a lot of change to manage, with little value to the people that need these summaries.
+  - Also we might get questions from partners/stakeholders who wonder "why do corps have this on their summaries and not co-ops? Where can I see that?" "oh we don't actually collect that.." etc. Easier if we keep the fields the same across all entities. 
+    - One difference: Co-ops and Societies have last AGM date, and all other entities don't.
+  - Amber's gut is saying "no don't do it"
+  - _Let's ask Kat too, about if there would be any added value to anyone if we added more things to the corproate summary._
+
+
 - Business summary for coops - there was a requirement at some time to state whether it was a reporting coop.  But now that we specify what type of coop do we need that?  We didn't collect it in the Coop IA.
+  - Makes sense that we are not collecting it in the Coop IA - we don't want to let users make that error themselves. 
+  - We need to discuss this requirements later
+    - We think a third party tells us they are reporting or something? Not sure where we get this info, we need to define this. Julie and Lance can look into the files of existing reporting co-ops and societies.
+    - Registrar can also order that a co-op can stop or start being a reporting co-op
+    - We need to know which ones are reporting or not
+    - If they are reporting. It impacts us and things we need to do for this co-op.
+    - Maybe only staff, and maybe the co-op themselves, can see that they are reporting? TBD.
+    - @Linda, can I add this to the co-op cleanup ticket? Sounds easy, and important.
+  - Based on the previous business summary question, and amber and julie's gut, and also the fact that we will get calls asking about what it is: lets **not** include it.
+
+
 - Could go over the business summary requirements - we won't do the MVP version, we'll need the full version.  https://app.zenhub.com/workspaces/program-space-6148f085cdddca001294333e/issues/bcgov/entity/3821
-- 
+  - When we build business summaries, we need to make sure we have all the complete and correct date, we can't leave anything out, and we need all the historical data. i.e. we need to build the backend for restorations and all the different types so it can be displayed accurately and completely on the business summary.
+
+
+- Phone number and email question from Tracey: 
+  - _didn't get to this_
