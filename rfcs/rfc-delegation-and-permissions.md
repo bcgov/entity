@@ -23,7 +23,7 @@ Delegation would enable the authorization on a business to other accounts withou
 
 See below for logical diagram on how delegation would work on account and entity level.
 
-![Integration Points Diagram](rfc-delegation-and-permissions/delegation.png)
+![Delegation](rfc-delegation-and-permissions/delegation.png)
 
 ### Implementation
 An account administrator (or account user with delegate permission) will be able to delegate entity access to a different account. 
@@ -61,7 +61,7 @@ Auth_API -> Auth_Web:
 ```
 -->
 
-![Integration Points Diagram](rfc-delegation-and-permissions/delegation_seq.svg)
+![Delegation sequence](rfc-delegation-and-permissions/delegation_seq.svg)
 
 
 Delegation can go on any level i.e, 
@@ -81,7 +81,7 @@ account_3 -> account_4: Delegate Auth for Entity 1
 @enduml
 ```
 -->
-![Integration Points Diagram](rfc-delegation-and-permissions/n_delegation.svg)
+![Recursive Delegation](rfc-delegation-and-permissions/n_delegation.svg)
 
 
 #### Revocation
