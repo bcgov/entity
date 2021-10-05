@@ -540,5 +540,6 @@ Oct 5th, 2021
 - "Dissolution clause" in the memorandum step of co-op incorp, user research found it confused users. Can we rehash the language around dissolution clause?
 - Review PI mural board - thinking of swapping Firm address change with firm dissolutions.  Easy self-serve and staff filing similar to registrar's order  in that it only needs a dissolution date.  No fees.  Needs an output though. https://app.mural.co/t/leadingsafetrainingtemplate5894/m/leadingsafetrainingtemplate5894/1620073674738/cab2f4c157615bf630f911c921dd242789344778?sender=u6daebabd77a61fc0a5b75673
 - Business summary - is there a reason why corp summaries don't display share structure and resolution dates?  Do they need to?
+- Business summary for coops - there was a requirement at some time to state whether it was a reporting coop.  But now that we specify what type of coop do we need that?  We didn't collect it in the Coop IA.
 - Could go over the business summary requirements - we won't do the MVP version, we'll need the full version.  https://app.zenhub.com/workspaces/program-space-6148f085cdddca001294333e/issues/bcgov/entity/3821
 - 
