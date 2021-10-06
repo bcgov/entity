@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Oct 8
+----
+- Action Items / Carry Over
+    - Shared VON component
+    - Enhancements to VON API
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+    - Manage PI 11 planning risk items
+
+----
 Oct 1
 ----
 - Action Items
@@ -28,6 +43,17 @@ Oct 1
 - New Business
     - Combining PI11.7 and 11.8 into one 4 week sprint
     - PI planning agenda
+
+- Meeting Notes
+    - Research UX - move to design team
+    - Need to deal with Google Auto Fill Across Apps - **Jyoti to create ticket for RFC - Done
+    - Combining PI11.7 and 11.8 into one 4 week sprint
+        - Combine 11.6 + 11.7
+    - Upcoming PI agenda
+        - Demo
+    - Shared VON component - tabled
+    - Enhancements to VON API - **add to next agenda
+
  
 ----
 Sept 24
