@@ -27,6 +27,7 @@ Oct 8
 
 - New Business
     - Manage PI 11 planning risk items
+    - Complete PI 11 action items analysis
 
 ----
 Oct 1
