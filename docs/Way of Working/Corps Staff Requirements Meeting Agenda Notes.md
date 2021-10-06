@@ -588,5 +588,9 @@ Oct 5th, 2021
 - Phone number and email question from Tracey: 
   - _didn't get to this_
 
-
+----
 October 12, 2021
+----
+- Phone number and email question from Tracey: 
+
+- Understand we don't want to add anything to the business summary, but do we want to add co-op type?
