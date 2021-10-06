@@ -1,4 +1,11 @@
+---
+name: Entities_Epic.md
+about: Template for a new entities epic (typically used for a new filing)
+title: ''
+labels: ''
+assignees: ''
 
+---
 
 Things to create for each new epic:
 
