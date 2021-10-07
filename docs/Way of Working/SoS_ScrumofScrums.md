@@ -4,6 +4,31 @@ Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 
 ---
+Oct 7
+---
+- Action Items
+    - Action Items from Hand-off Discussion
+        - Break big tasks into smaller pieces (2-3 days max)
+        - Commit less / deliver more
+        - Planning sprints with releases in mind / make sure most tickets can be released to prod
+        - Focus on the goal of getting features into Test ASAP
+        - Engage in pair programming on complex tasks
+        - More team members picking up QA tasks
+        - Only pull work into the sprint if dependencies are (can be) completed
+
+- Standing Items
+    - What are your upcoming goals / how are you progressing
+    - Do you have any blockers
+    - Do you have any dependencies on other teams
+    - Is there anything in your most recent retro that is beyond your influence (every 2 weeks) 
+
+- New Business
+    - Remember to move Ux tickets on the Design Team board
+    - Pick a few ideas from the maturity assessment brainstorm to implement
+    - Ideas from Jingua for common practices
+    - Date for moving Entities + Relationships to their team boards
+
+---
 Sep 29
 ---
 - Action Items
