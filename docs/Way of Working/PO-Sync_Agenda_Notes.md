@@ -28,6 +28,7 @@ Oct 8
 - New Business
     - Manage PI 11 planning risk items
     - Complete PI 11 action items analysis
+    - Break down entity types into trackable pieces #7964
 
 ----
 Oct 1
