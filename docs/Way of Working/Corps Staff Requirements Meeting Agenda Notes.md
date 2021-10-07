@@ -595,7 +595,7 @@ October 12, 2021
 
 - Understand we don't want to add anything to the business summary, but do we want to add co-op type?
 
-- Corp dissolution application output - dissolution statement on COLIN outputs is: The affidavit required by section 316(1)(a) of the Business Corporations Act has been obtained and deposited in the company's records office.
+- Corp dissolution application output - dissolution statement on COLIN outputs is: The affidavit required by section 316(1)(a) of the Business Corporations Act has been obtained and deposited in the company's records office.  See sample under 9018 - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/9018
 This is different from what we are putting in the UI - the two options on the affidavit.
 ![image](https://user-images.githubusercontent.com/54917209/136299624-3f578a9e-0990-4ec5-b51a-69b0701a0ec2.png)
 Should we 1) remove these statements from the UI?  2) If we keep them, should they display on the output?  Along with the other statement above?  And should the other statement above also include a resolution required by section... has been obtained and deposited in the company's records office?
