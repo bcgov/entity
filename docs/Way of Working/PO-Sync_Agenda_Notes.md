@@ -17,8 +17,8 @@ Standing Agenda:
 Oct 8
 ----
 - Action Items / Carry Over
-    - Shared VON component
-    - Enhancements to VON API
+    - Shared VON component - looks like we will build our own search
+    - Enhancements to VON API - 
 
 - Standing Items
     - Program Kanban
@@ -26,9 +26,14 @@ Oct 8
     - PI Planning Board - Dependencies
 
 - New Business
-    - Manage PI 11 planning risk items
-    - Complete PI 11 action items analysis
-    - Break down entity types into trackable pieces #7964
+    - Manage PI 11 planning risk items - discuss next week
+    - Complete PI 11 action items analysis - discuss next week
+    - Break down entity types into trackable pieces #7964 - still valuable to complete
+    - dependency of account ability to have a business on multiple accounts, needs to be there before sole prop goes live
+    - also change of account name before ppr goes live
+    - Ops - issues for BAs working on Ops - IT Ops eventually for triage - working towards Ian's team doing more of this sooner
+    - older browswers, blocking use of them (ie11) - not supported as of 2 yrs ago, blocking it may be different - nov 2020, MS no longer supported it - Dwayne will follow up to enquire if it makes sense for supporting IE11 at large for BC GOV
+    - 
 
 ----
 Oct 1
