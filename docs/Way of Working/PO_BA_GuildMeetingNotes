@@ -1,6 +1,6 @@
-### 3rd August 2021
+# 3rd August 2021
 
-##### Minutes of Meeting:-
+**Minutes of Meeting**
 
 1. Cypress is being used for Automation of the testing in all the teams
 2. Currently Night watch is being maintained to make it stable and work well for the existing test scenarios
@@ -18,7 +18,7 @@ a. The QA process followed is, Developer Check-in -> Staging (DEV Env) -> UX Ass
 13. In Assets and Entities team, the testing is done in Dev env. However, Relationships team does the testing in Test env.
 14. Riyaz is pushing the code from Dev to Test and from Test to Prod envs. May be relationships team can follow the same i.e. QA pushing the builds from Dev to Test and from Test to Prod.
 
-#### Action Items:-
+**Action Items**
 
 1. Riyaz to work Jason (and Sateesh & Jinghua) to understand the Bugs (Ops / Prod / Internal / Sentry) raised and generate a metrics for reporting.
 2. Sateesh to setup a monthly Guild meeting to discuss on the status of the metrics, tools and processes and any other topics.
