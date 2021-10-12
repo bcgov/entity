@@ -1,3 +1,19 @@
+# 12 October 2021
+**Meeting Minutes**
+1. Riyaz will complete the names request automation next week and this is an ongoing task.
+2. Divya completed the Github actions and tested it in her branch.
+3. Jason shared the bugs reports dated 12Oct for all the teams for p1, p2, p3. The report was retrieved manually.
+4. Jinghua suggested for 20% of Dev capacity to be utilized for bugs / techdebt in each sprint. Maybe this can be added in the reports per sprint and share the report data with James. The relationship team considers bugs/techdept based on the sprint goals. Either tech debt or documentation is considered in the sprint planning in the relationship team.
+5. QA can take help from devs for automation if there are not many bugs to be fixed.
+
+**Action Items**
+1. @ All POs - All the old bugs which are below the 4000 series should be closed
+2. @SateeshFW - Invite Melissa from the next meeting onwards and Kaine as optional
+3. @jdyck-fw - Get the RFC ticket (8462) in the next sprint.
+4. @SateeshFW - Create a zenhub ticket for the meeting minutes
+5. @riyazuddinsyed - Talk to Thor and Patrick for implementing the GitHub actions architecture considered three teams.
+---
+
 # 8th September 2021
 **Meeting Minutes**
 1. Discussed on the bug report shared by Jason via email.
