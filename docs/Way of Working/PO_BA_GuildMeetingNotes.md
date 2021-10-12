@@ -13,7 +13,7 @@ d. Currently the Entities automation scripts are broken because of the business 
 7. Name request automation scripts is top priority.
 8. The automation for Manage business dashboard need to be completed and if required Rai from Relationships team can help Riyaz. The expectation is to develop reusable scripts across team.
 
-Action items:-
+**Action items**
 1. @Dyck, Jason CITZ:EX – Go thru the 101 bugs which are not labelled and tag them to the respective team.
 2. @ All SMs, move all the bugs in ‘Done’ column to the ‘Closed’ column for their respective team.
 3. @Boggarapu, Sateesh EDUC:EX – Check with James if we can retrieve the last 6 months or 3 months Bug data
