@@ -1,3 +1,27 @@
+# 8th September 2021
+**Meeting Minutes**
+1. Discussed on the bug report shared by Jason via email.
+2. The defect triage, the bugs which are not tagged were tagged with P1 or P2 or P3.
+3. We need to review the last 3 months or 6 months or 1 year data for bugs and take action on them.
+4. Test Automation
+a. Key cloak is being used in Assets automation scripts.
+b. GitHub actions need to be implemented to trigger the Cypress scripts.
+c. For GitHub actions, different folder structure is required to implement the actions properly.
+d. Currently the Entities automation scripts are broken because of the business registry dashboard functionality
+5. Sumesh tested the Name request functionality (8266) in post man and the UI testing need to be done by Riyaz. The relationship team will be doing the next release on Monday (13th Sept).
+6. Load testing is low priority.
+7. Name request automation scripts is top priority.
+8. The automation for Manage business dashboard need to be completed and if required Rai from Relationships team can help Riyaz. The expectation is to develop reusable scripts across team.
+
+Action items:-
+1. @Dyck, Jason CITZ:EX – Go thru the 101 bugs which are not labelled and tag them to the respective team.
+2. @ All SMs, move all the bugs in ‘Done’ column to the ‘Closed’ column for their respective team.
+3. @Boggarapu, Sateesh EDUC:EX – Check with James if we can retrieve the last 6 months or 3 months Bug data
+4. @Hemin Acharya – Work with Divya to implement Keycloak in automation
+5. @Chandupatla, Divya CITZ:EX – Work on Github actions to trigger the automation scripts.
+6. @Riyazzudin, Syed CITZ:EX – To focus on the Name request scripts which is top priority
+---
+
 # 3rd August 2021
 
 **Minutes of Meeting**
