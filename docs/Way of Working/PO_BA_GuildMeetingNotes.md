@@ -1,3 +1,11 @@
+# Standing Agenda
+1. Discuss on the test automation
+2. Discuss on the quality metrics
+3. Discuss on the outstanding open bugs
+4. Ideas to improve the quality of the applications / Test strategy
+
+---
+
 # 12 October 2021
 **Meeting Minutes**
 1. Riyaz will complete the names request automation next week and this is an ongoing task.
