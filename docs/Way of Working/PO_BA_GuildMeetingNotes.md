@@ -1,12 +1,3 @@
-# PO-Sync. 
-**Topics for PO-Sync. to discuss between PO's**
-Agenda and description re PO-Sync see here in Meetings overview:
-https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
-* If we discuss content, let´s open the roadmap or Epic to discuss the item - and possibly update 
-
-----
-Standing Agenda:
-----
 # 3rd August 2021
 
 **Minutes of Meeting**
@@ -34,3 +25,5 @@ a. The QA process followed is, Developer Check-in -> Staging (DEV Env) -> UX Ass
 3. Sateesh / Jyoti to discuss with the relationships team to follow the QA process which other teams are following.
 a. Can testing to be done in Dev env?
 b. Can QA push the builds between the envs (Dev to Test to Prod)?
+
+---
