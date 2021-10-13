@@ -25,6 +25,7 @@ Oct 13
 - New Business
     - Workflow updates to support “UX Assurance” pipeline items showing up on the design-team workspace (or a workaround plan until we update workflows)
     - Sprint load calculation
+    - Assessment actions
 ---
 Oct 7
 ---
