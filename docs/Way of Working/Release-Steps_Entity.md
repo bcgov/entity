@@ -7,14 +7,14 @@ https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/e
 
 ## Prerequisites
 
-- stakeholders (PO(s), Release Manager, Team) have decided when to have a release
+- Stakeholders (PO(s), Release Manager, Team) have decided when to have a release
 - Zenhub tickets are tagged to the release
 
 ## Work Items
 
-1. the release ticket (to track what needs to be done, status, and who is doing what)
-2. the release report (to see what tickets are in the release and to describe the release for OCM)
-3. Github release (to manage code / tags)
+1. The release ticket (to track what needs to be done, status, and who is doing what)
+2. The release report (to see what tickets are in the release and to describe the release for OCM)
+3. Github release meta (to manage code / tags)
 
 
 ### Release Ticket Template
@@ -40,15 +40,22 @@ Body:
   - [ ] Etc.
 - [ ] Add version # and release # to this ticket
 - [ ] Ensure Release Report exists (add link here)
-- [ ] PO/Dev/QA/SRE to schedule the release with staff/clients
+- [ ] PO/Dev/QA/SRE to confirm/adjust the release schedule with staff/clients
+- [ ] OCM to send out upcoming release communications
 - [ ] All dev/test pipeline test suites green
 - [ ] Dev/QA to plan deployment to Test
-- [ ] Dev/QA to plan deployment to Prod and smoke testiing (update steps below)
+- [ ] Dev/QA to plan deployment to Prod and smoke testing (update steps below)
 - [ ] After deployment to Prod, finalise/publish the release in GitHub, tagging it with the version number
 - [ ] After deployment to Prod, finalise, merge release/hotfix branch back to main (if applicable)
 - [ ] After deployment to Prod, change openshift builds/pipelines back to main (if applicable)
 - [ ] After deployment to Prod, send a message to PO/OCM in RocketChat
-- [ ] PO will send Trish a message if a release was successfully implemented: Trish.Reimer@gov.bc.ca and Karla.Maria.Ramirez@gov.bc.ca
+- [ ] PO to advise before a release is in progress (in case of Ops calls) to:
+  - Michael.Kagis@gov.bc.ca
+  - SBC_ITOperationsSupport@gov.bc.ca
+  - Olisa.Ezeh@gov.bc.ca
+- [ ] PO to report when a release is successfully implemented to:
+  - Trish.Reimer@gov.bc.ca
+  - Olisa.Ezeh@gov.bc.ca
 
 **Deployment Steps**
 
