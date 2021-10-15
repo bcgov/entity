@@ -26,7 +26,13 @@ Oct 15
     - PI Planning Board - Dependencies
 
 - New Business
-    - new OCM workspace
+    - API Dependency Items: Wording on API gateway portal and Ability for users to revoke
+    - Multiple Affiliations of Business to Account before Mar
+    - Notification change
+    - Change of Account Name(before PPR goes live)
+    - SRE resources need for FAS Go-live - How should we go forward
+    - OCM team space
+    - Proposed change to Sprint Review Agenda
 
 ----
 Oct 8
