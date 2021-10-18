@@ -34,6 +34,20 @@ Oct 15
     - OCM team space
     - Proposed change to Sprint Review Agenda
 
+- Meeting Notes
+    - API Dependency Items: Wording on API gateway portal and Ability for users to revoke
+        - Date to go live with PPR sandbox is Nov 4
+    - Multiple Affiliations of Business to Account before Mar
+        - Can be completed in PI 12
+    - Notification change
+        - Needs to be estimated to determine who builds it
+    - Change of Account Name(before PPR goes live)
+    - SRE resources need for FAS Go-live - How should we go forward
+        - Jyoti meeting with Patrick and John next week
+    - OCM team space
+    - Proposed change to Sprint Review Agenda
+        - approved
+
 ----
 Oct 8
 ----
