@@ -14,6 +14,20 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Oct 22
+----
+- Action Items / Carry Over
+    - Manage PI 11 planning risk items 
+    - Complete PI 11 action items analysis 
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+
+----
 Oct 15
 ----
 - Action Items / Carry Over
