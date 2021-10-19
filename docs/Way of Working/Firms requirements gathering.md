@@ -14,7 +14,8 @@ October 19, 2021
     - Want to keep the NOB the same way it was when the NR was examined, don't want it to be changed after that
     - This seems messy also, staff don't want more bugs for little added value
   7. Let's keep this as "completing party", not "submitting party" so it is the same across entities.
-  8. 
+  8. Confusion on the people and roles step, want the completing party and the sole prop separated more. There is only one person in this entitiy, and that is the sole prop. Wording it like the completing party is part of the sole prop is not good, people already get confused by this. Linda and Yui to assess this.
+  9. 
 
 ----
 October 13, 2021
