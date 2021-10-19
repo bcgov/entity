@@ -2,7 +2,9 @@
 October 19, 2021
 ----
 - Finish reviewing requirements doc and questions in the comments: https://docs.google.com/document/d/19nKisnQ9Pw0H8wyIH-YDFeR4S3wAk4gtKlAbDC-KLNs/edit?usp=sharing
-- ?
+- Review designs
+  - Copy change: "I acknowledge that a sole prop cannot be changed into a GP, a new Name Request and Number and statement of registration...." - that is incorrect, Debbie would like it changed.
+  - 
 
 ----
 October 13, 2021
