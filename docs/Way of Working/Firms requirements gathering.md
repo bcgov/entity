@@ -21,7 +21,7 @@ Finish reviewing requirements doc and questions in the comments: https://docs.go
 9. Business and company are the same (when adding people & roles), need to make it the same as the corproation flow.
 10. Need help text from staff for step 2
 11. Ask Amber to check if a sole prop can register with the proprietor being another company that is 1. Not registered in BC, or 2. Not xpro registered in BC. Staff sometimes allow it, but you can't do it through OneStop. Some staff reject it all together. Let's let Amber's decision and implement that.
-12. Fee acknowledgement: 
+12. Fee acknowledgement: let's keep this component
 
 ----
 October 13, 2021
