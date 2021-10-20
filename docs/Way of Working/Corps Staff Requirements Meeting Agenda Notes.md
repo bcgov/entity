@@ -602,4 +602,18 @@ Should we 1) remove these statements from the UI? Yes.  2) If we keep them, shou
 Along with the other statement above?  And should the other statement above also include a resolution required by section... has been obtained and deposited in the company's records office? - Just have the statement above.
 
 
-- 9453 - what happens withdraft filings that staff save?  https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/9453 define business process - should staff save drafts?  Kat/Amber - Wouldn't want the company to mess around with a staff draft filing.  Maybe just give company ability to delete it.
+- 9453 - what happens with draft filings that staff save?  https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/9453 define business process - should staff save drafts?  Kat/Amber - Wouldn't want the company to mess around with a staff draft filing.  Maybe just give company ability to delete it.
+
+----
+October 20, 2021
+----
+- Review business summary notes from previous meeting to get Kat's opinion
+- Update on ledger refactor changes
+- Update on alterations
+
+
+----
+October 26, 2021
+----
+- **SIENNA PREP REQUIREMENTS DOC WITH WHAT JULIE EMAILED LINDA, PREP QUESTIONS** Process for voluntary liquidation for Co-ops... it is NOT the same as a voluntary dissolution. Different steps, fees, etc. Let's talk about them.
+- 
