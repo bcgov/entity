@@ -593,7 +593,7 @@ October 12, 2021
 ----
 - Phone number and email question from Tracey: 
 
-- Understand we don't want to add anything to the business summary, but do we want to add co-op type? Yes.
+- Understand we don't want to add anything to the business summary, but do we want to add co-op type? **Yes**.
 
 - Corp dissolution application output - dissolution statement on COLIN outputs is: The affidavit required by section 316(1)(a) of the Business Corporations Act has been obtained and deposited in the company's records office.  See sample under 9018 - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/9018
 This is different from what we are putting in the UI - the two options on the affidavit.
@@ -608,6 +608,9 @@ Along with the other statement above?  And should the other statement above also
 October 20, 2021
 ----
 - Review business summary notes from previous meeting to get Kat's opinion
+  - Don't want to see business number(BN) on the company summary (not currently there)
+  - Few years ago, someone gave out the business number (BN) over the phone, and they used the number fraudulently. We now check the reliationship to the company (verbally, trusting them to tell the truth).
+
 - Update on ledger refactor changes
 - Update on alterations
 
