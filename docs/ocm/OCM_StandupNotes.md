@@ -8,16 +8,16 @@
 
 - “Ready to Start” tickets are ready for team to pull “In Progress” 
 
-| Name | Update | Comments |
-| --- | ---- | ----| 
-| **Trish** | **Oct21**: Pull all tickets to ZH; Prioritized tickets in different pipeline. “Ready to Start” tickets are ready for team to pull “In Progress”;  Team setup on GH, will tag tickets to team for awareness ; Invite Linda to join OneStop meetings (Olisa will setup), and other stakeholders meeting. Will add John, Jyoti, W Camron in this meeting (Ticket#9702)|  | 
-| **Maribeth** | **Oct21**: send invite for Nov27th meeting; will have Dry-run meeting with David next Tuesday; Move tickets to ZH|   | 
-| **Mags** | **Oct21**: help with 27th session, ask Jyoti for recording; PPR communication; API communication|   | 
-| **Sienna** | **Oct21**: Move Video ticket to done, will send training material for review; 300 audiences will join;  will transfer part of work to Maribeth (From Trish); Current priority is voluntary dissolution for Nov16th or week after|   | 
-| **John** | **Oct21**: I'll be working on the email for 6966. I will check in via email with BCOL Admin for 7413 (touchpoint yesterday was cancelled due to absences on their side).|   | 	
-| **Suanne** | **Oct21**: NA  |   | 
-| **Olisa** | **Oct21**: NA |   | 
-| **Kaine** | **Oct21**: NA |   | 
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Oct21**: Pull all tickets to ZH; Prioritized tickets in different pipeline. “Ready to Start” tickets are ready for team to pull “In Progress”;  Team setup on GH, will tag tickets to team for awareness ; Invite Linda to join OneStop meetings (Olisa will setup), and other stakeholders meeting. Will add John, Jyoti, W Camron in this meeting (Ticket#9702)|  
+| **Maribeth** | **Oct21**: send invite for Nov27th meeting; will have Dry-run meeting with David next Tuesday; Move tickets to ZH|   
+| **Mags** | **Oct21**: help with 27th session, ask Jyoti for recording; PPR communication; API communication|   
+| **Sienna** | **Oct21**: Move Video ticket to done, will send training material for review; 300 audiences will join;  will transfer part of work to Maribeth (From Trish); Current priority is voluntary dissolution for Nov16th or week after|   
+| **John** | **Oct21**: I'll be working on the email for 6966. I will check in via email with BCOL Admin for 7413 (touchpoint yesterday was cancelled due to absences on their side).|   
+| **Suanne** | **Oct21**: NA  |   
+| **Olisa** | **Oct21**: NA |   
+| **Kaine** | **Oct21**: NA |   
 
 **Action Items: -**
 
