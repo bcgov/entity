@@ -8,4 +8,4 @@
 | Wulff, Cameron | Cameron.Wulff@gov.bc.ca | Cameron-freshworks |  |
 | Primeau, Genevieve |  Genevieve.Primeau@gov.bc.ca | gprimeau |  |
 | Ezeh, Olisa | Olisa.Ezeh@gov.bc.ca | ToBeAdded |  |
-| Dane, Suzanne | Suzanne.Dane@gov.bc.ca | ToBeAdded | Optional for Standup  |
+| Dane, Suzanne | Suzanne.Dane@gov.bc.ca | ToBeAdded | 
