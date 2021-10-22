@@ -28,7 +28,10 @@ Oct 22
 - New Business
     - RAID kanban
     - Where to record sprint goals - (milestones dissapearing at the end of 2021)
-    - 
+    - How to calculate escaped defects
+    - How to arrive at % complete for sprint goals
+    - Private workspace
+    - API Sandbox
 
 ----
 Oct 15
