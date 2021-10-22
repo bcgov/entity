@@ -26,6 +26,9 @@ Oct 22
     - PI Planning Board - Dependencies
 
 - New Business
+    - RAID kanban
+    - Where to record sprint goals - (milestones dissapearing at the end of 2021)
+    - 
 
 ----
 Oct 15
