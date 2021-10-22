@@ -2,6 +2,7 @@
 - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/9248
 - https://zh-file.s3.amazonaws.com/157936592/b7f9663f-2a83-45a0-b2d1-1ddc5031c21e?Expires=1634924910&AWSAccessKeyId=AKIAI5X57DET3FHKSALA&Signature=zP9dYySZYCfChPQbGg8WMt5y2VA%3D Should this letter be from 2019? Is this updated? where do we get the most updated versions? How often are they updated? Do you mind if we merge it together as 1 set of letters and guides, then the registration as a seperate output? That is preferred from a technical perspective.
 - https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/9737
+- https://app.zenhub.com/workspaces/entity-5bf2f2164b5806bc2bf60531/issues/bcgov/entity/9254
 
 
 ----
