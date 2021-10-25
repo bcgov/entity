@@ -33,6 +33,191 @@ Oct 22
     - Private workspace
     - API Sandbox
 
+- Meeting Notes
+- Risk discussion originating from PI 11 planning
+    - Migrating all BCOL partners to new app at one time – impact to support team and other resources
+    - Kumar, Jyoti CITZ:EX
+And if they if it if from their application, if the users are able to navigate key clock then we don't have any other method to stop it. Our only option is that people unsubscribed from the product. If PPR becomes available today in production and if user’s select the product then there is nothing stopping them to use PR.
+    - Reimer, Trish CITZ:EX
+I understand the technical limitations, but I think if we want to move forward with getting them all set up, the best way to do that is to put the word out now and get people to get in there and get, you know, get their account
+    - Kumar, Jyoti CITZ:EX
+then we can still have their account setup. Once the product is available. They can go and select the product when we launch.
+    - Sparks, Kaine CITZ:EX
+But there's no where to access it unless they put the URL in and then the URL cannot be open. Like there's a way, like technically, there's definitely a way to do that if we need to do it.
+    - Kumar, Jyoti CITZ:EX
+Yeah, we haven't. Currently the system is not designed that way. As of now. So if that has to be done then that would require some changes.
+    - Sparks, Kaine CITZ:EX
+Yeah, I'd like to know like what kind of changes 'cause it should be. Pretty simple, but it depends. I don't know if Thor has an idea being here ad hoc off the cuff if it's.  A big thing, or if it's like small. But we don't actually want it. 'cause we want him to get set up and create their account and choose PPR.  And but we don't want him to actually be able to access PR, even if we put in PPR into prod. Until we say like, is there a way to technically do that? Decide when those things are linked and access is actually there?
+    - thor @ daxiom (Guest)
+Yeah yeah, 'cause we have control of that through the API gateway.
+    - Sparks, Kaine CITZ:EX
+Right, so is it fairly easy or is it like potentially large?
+    - thor @ daxiom (Guest)
+Pretty small.
+    - Reimer, Trish CITZ:EX
+And so I know that in some cases they might need a specific account type depending on the service. That's the only kind of gotcha and we could try to manage that with communications and we try to be really clear like OK for wills you can do basic or premium, but for PR you need premium for court services online or whatever you need this or this so I don't know what the other types are, but we can look at doing that and manage it very carefully. If we can't do this technically or we don't want to.
+    - Ezeh, Olisa CITZ:EX
+Two UM architected technically in such a way that it can. It can be feature flagged. I think that's definitely the best because one of the challenges were experiencing with all the stakeholders generally is even just that willingness to move and to do what needs to be done to build the, you know, the new platform we have is it. I think it's wheels registry or this particular stakeholder and we can get them. You know, in in that new space.  I think any option that supports that, you know we should really exploit and the last time we had the conversation Jersey was. It was really about the technical piece of architecting it in such a way that when I, because of how their systems architecture and we could have feature flag it. But if that exist and there's a possibility that we can control when they actually have access, then you know, I think that's probably the best option for us overall.
+    - Mills, James E
+K So can you just recap the action then it's coming from this.
+    - Sparks, Kaine CITZ:EX
+To chat with the smart people like Samesh and Thor, and I'll create a ticket right now. To see if it's possible.
+    - Mills, James E
+K and we're going to move this to owned, is that right?
+    - Kumar, Jyoti CITZ:EX
+We have to let the IDM folks know as well that if we are telling them that the White House, test users and others are going to create the account they need to be aware and they all need to be made aware that they're just creating the account. They're not accessing the product because any products who any partner who needs to be added first needs to be added to the service agreement. And before this agreement gets approved, the governors has to be done so they have been very clear about that. So we have to tell them that they are creating the account, but they're not accessing the services. 
+    - Sparks, Kaine CITZ:EX
+Yeah they can create it registries account, but they can't access the.
+    - Stanton, Melissa CITZ:EX
+We've been looking on our side, though, like any spot where we've had changes in our star Pia because of the portal agreement with item we've been looking at ways to minimize having to retouch it right when partners join, so that is a constant question, or it's coming up and like all the meetings, right? Hey, you want me to do this. Can I add this other stuff now so we're looking at it and minimizing touch points on our side? But it's Jyoti said we can't do the partner piece their governments and until they’re moving along with development.
+    - **Potential that the home team resources may not be available to do work on time.**
+    - Reimer, Trish CITZ:EX
+This is managed. Yeah, we. I think we even had a meeting this. I don't remember who was there but we went through all of the changes and resources and that was with Ian Bot, Michael McKinnon, Suzanne
+    - Mitigated I should say yeah, I know.
+    - Resistance -  non-ministry gov account users may pushback on needing a PAD account or the need to verify their identity using BCSC/BCeID
+    - Resistance - how we will manage resistance for OS Partner and BCOL Partners.
+    - Kumar, Jyoti CITZ:EX
+We plan to have an engagement session with all the nominator users. I'm not sure where that is right now, but that is the plan that we first communicate to them. Let them know what it is and if there's a resistance, then we have to deal with it.
+    - Reimer, Trish CITZ:EX
+It's on the plan and we were going to do our ministry, government account users first. That was supposed to be done this week and then Next up was ministry non government like the non minister government account users like ICBC and others, yeah. I think we have it on the plan for Sprint 11.3. Yeah, I know. I think it's supposed to start like November 2nd or something.
+    - **Is it possible CAS timelines may slip? if so, could impact other scheduled releases/ resourcing**
+    - Kumar, Jyoti CITZ:EX Till now there's been no red flags. We have a steering committee which I attend. From our side to make sure that you know all the deliverables are being done on the modeling. Uh, based upon the milestone dates. So really, there's only working at by whatever amount it slips. We have to change our release plan so I don't know if this is something which we really need to take forward. But if it happens, we have to deal with it.
+    - Sparks, Kaine CITZ:EX
+So it's mitigated. 
+    - Vacations.
+    - McClung, Linda CITZ:EX
+Yeah, accepted.
+    - Unclear deadline for business case submission.
+    - Gordon, Dwayne CITZ:EX
+So the deadline is clear and there should be no impact to this at this point.
+    - **Incomplete data for firm migrations.**
+    - McClung, Linda CITZ:EX
+I think that's gonna be owned by me
+    - **Impact of verifiable credentials.**
+    - McClung, Linda CITZ:EX
+yeah, we're supposed to come up with some sort of prototype, right?
+    - Sparks, Kaine CITZ:EX
+So we need to do something that I don't know. If you've heard anything new, Thor or Dwayne, but we haven't.
+    - Sparks, Kaine CITZ:EX
+We haven't scheduled this PR. It's about like the banking pilot for Steven Cran. Like your, I guess your teams like yeah there was work that.
+    - Gordon, Dwayne CITZ:EX
+Yes.
+    - Sparks, Kaine CITZ:EX
+We were going to do, but then Carol was saying she gave him a bunch of money. Hopefully they're gonna do it so we haven't really talked through any of those actions, though with you or their team or us.
+    - Gordon, Dwayne CITZ:EX
+I actually have a meeting with them at three, so I might find out that Carol just threw me into so.
+    - Sparks, Kaine CITZ:EX
+OK, so like if that. If nothing comes out of that like next step, maybe we need to get together with you and Stephen and Linda and I'm like Thor and just kind of talk through the work.
+    - **Handle Tech Debt better**
+    - McClung, Linda CITZ:EX
+I think the action was that we're going to make sure we have about 20% of our sprints be tech debt.
+    - Sparks, Kaine CITZ:EX
+I think it be good to report out on that too in our reviews, like how much tech that we actually did so that it it's visually. Identifiable.
+    - Kumar, Jyoti CITZ:EX
+It's not only that. I think we discussed about the documentation and other pieces will also be part of that Lightbox tech debt.
+    - jdyck
+Started collecting that metric this sprint.
+    - Sparks, Kaine CITZ:EX
+See if we can put it in the demo, either this Sprint or next sprint or something.
+    - Start considering what it will look like to take on bigger task of focus for testing and test data?
+    - McClung, Linda CITZ:EX
+Having a meeting next week. I just have to book it.
+    - **Knowledge base for OPS.**
+    - Sparks, Kaine CITZ:EX
+Assume this is we need documentation so people couldn't help us.
+    - McClung, Linda CITZ:EX
+Yep.
+    - Sparks, Kaine CITZ:EX
+And we need to do something about it. I don't know how we fit it in.
+    - Mills, James E
+OK, so who's gonna? Who's gonna own this to let people know how to use it and. Set up the folders if they need to be examined.
+    - McClung, Linda CITZ:EX
+Kaine, if you're going to sort out who gets what accounts, then I think we could pull in Sienna to help because she's got a lot of experience dealing with the Google Docs.
+    - Sparks, Kaine CITZ:EX
+Yeah, between her and yes, maybe like that type of people I think. Could well, not yet 'cause Sienna. You right like made those original documents we had were so cool. Like for annual reports and all those things Super 6.
+    - thor @ daxiom (Guest)
+Well, we've kind of got a discussion going in the OCM channel so I was what I had proposed was like Kaine, Linda, Melissa, Trish. Maribeth Wilson.
+    - McClung, Linda CITZ:EX
+Maybe instead of. Yeah, maybe instead of Kaine we should put in Cameron Wolfe.
+    - ** API sandbox **
+    - Stanton, Melissa CITZ:EX
+So it's looking over our board. We are working right now to with size and come get through some of the work to get the API sandbox up and ready for November 5th, which is what we've been telling everyone in our sessions, so we were just looking over at Jyoti and noticing that there's a few pieces for relationships. One of them was updating the steps to request to Keith.
+    - thor @ daxiom (Guest)
+In 14 minutes we have our next session on it.
+    - thor @ daxiom (Guest)
+But the the the keys are also going to be just a minute managed on their production pages. That was the original decision, so I don't know if it's a match, wants to change out.
+    - Kumar, Jyoti CITZ:EX
+Yeah, I mean, that's that's what I guess this needs to be discussed and confirm like what's the approach?
+    - Stanton, Melissa CITZ:EX
+OK, and then the other piece was the revoking a key.
+    - Kumar, Jyoti CITZ:EX
+Yeah, that is already part of the Sprint, uh so. The admins of the account would be able to go ahead and revoke that key. So it's a story in this Sprint.
+    - ** Private workspace **
+    - Sparks, Kaine CITZ:EX
+Now that you created the org and you have a private repo what do we need now?
+    - thor @ daxiom (Guest)
+So there's a few things to look at inside of there. Like what kind of repos we want, 'cause that's where the work gets actually tracked. So if you want like one like we have for the entities Or if you want separate repose which you can do, and then you can combine them if we want to.
+    - Sparks, Kaine CITZ:EX
+Well SRE is gonna have its own right like he wants his own repo Patrick because of the.
+    - thor @ daxiom (Guest)
+yeah, but but we don't actually have to manage the tickets in there. Well, the tickets are all managed in GitHub, right? Zenhub is just strapped on top to provide some lipstick on the GitHub pig, right?
+    - Mills, James E
+Is the main issue around authorization Thor or there are other reasons you'd want to have?
+    - thor @ daxiom (Guest)
+Nope, authorizations that are not. That's not a huge one. Everybody is already accepted that risk, so I think that's done now. It's just kind of. Where do you want to put everybody?
+    - Mills, James E
+So is there a reason you'd want to have separate repose versus a single repo? 
+    - thor @ daxiom (Guest)
+If you wanted to keep things separate or keep different authorizations, rank like right now. Uhm, right now, having everybody in the same repo means that I could basically go in and rearrange Jyoti’s board for him. And he can't stop me. So you know, so it's whether or not you want to provide some boundaries between the teams or not.
+    - That's the discussion on the repo setup and then the team setup is a similar but a little bit different, right?
+    - Sparks, Kaine CITZ:EX
+Yeah, OK, so for the team or sorry the repo setup like I what James question I thought Patrick did want, or you guys wanted SRE fully separate on a different repo so nobody accidentally did something?
+    - thor @ daxiom (Guest)
+Yeah, 'cause we're gonna have our configurations in there, so in those configurations get changed they get pushed to the production site so.
+    - Wei, Patrick CITZ:EX
+Yeah yeah, yeah.
+    - Sparks, Kaine CITZ:EX
+OK, so then we need like a staff repo which would include. Include like Julie's team, Debbie team for Kanban would include OCM or whatever is private OPS tickets and then the raid workspace would go there. 'cause that's private stuff too. I think all those could be on one repo. I don't see why in my opinion anybody else jump in I don't know why we disagree.
+    - thor @ daxiom (Guest)
+If you have your raid stuff in the same repo is, say Cameron's team then they have access.
+    - Sparks, Kaine CITZ:EX
+Yeah.  Yeah, I don't care. I'm I like France. He's getting unless somebody else thinks we shouldn't, but I like I feel like it's better to be open in those cases. I don't like if somebody went in, its captured who made the change?
+    - Sparks, Kaine CITZ:EX
+OK, so let's so we get through or what do you want me to do? You want me to create a ticket like create two repose? Or is it?
+    - thor @ daxiom (Guest)
+Yeah. Like a couple tickets just so we can track the work so we know we know that something is expected.
+    - Well, the work the workspaces can be done. The workspaces can be done later and you probably wanna have labels attitude workspaces. I've been going in and adding those 'cause they're missing for most of them.
+    - So you need to to finish off all the configuration for those, but probably what you want to do first for the new org is set up how you want your teams. And that'll give you a bit of an idea of how you might wanna set up repository's.
+    - Sparks, Kaine CITZ:EX
+So what what's that all about? You mean like setting up like say as an example like Julie's team as corpse in societies or whatever?
+    - thor @ daxiom (Guest)
+Yeah, 'cause teams gives you discussion areas. So like you'd have like names, that would be a team.
+    - Sparks, Kaine CITZ:EX
+Yeah.
+    - thor @ daxiom (Guest)
+They can use that teams discussion area to talk about things they can open up tickets inside of there.
+    - There are some anyone within the GitHub repo then can go like at names. Kind of how we do in rocket chat. You do a particular user you can do at names and that message is everyone on the teams.
+    - Sparks, Kaine CITZ:EX
+Yeah.
+    - thor @ daxiom (Guest)
+Right we we do a lot of GitHub setup, so I'm suggesting best practices would be to like set up the teams. It's it's. It doesn't take more than a couple minutes if we have the data.
+    - It's not not a lot of work.
+    - Sparks, Kaine CITZ:EX
+That's what I think. Yeah, at least I feel like we could just add Julie team and Debbie's team to start to that repo. And and. And you like Cameron and Lisa would be in those teams to write could.
+    - thor @ daxiom (Guest)
+I I I'm I'm suggesting more that that you don't add individuals in you'd try to work as groups as much as possible, like we've done with names. Otherwise you end up like IDR is at an absolute mass and you can't figure out what's going on because it was never managed right there, just kinda.
+    - Sparks, Kaine CITZ:EX
+Yeah, so we start with Julie team like Acorp team and uh whatever debis really long name of team is.
+    - 'cause she does all this stuff. So start with those two teams right? Yeah, and what you're saying Linda, like they're attached the repo like we are from my understanding. So like like Debbie and or Cameron for example or Alisa. It's a repo so they just go to each workspace and they can be a part of either same as we run like entity repo.
+    - Sparks, Kaine CITZ:EX
+'cause I think like well like the obviously your suggestion will have two report three repose really unnecessary one registries one for like the business and then a strategic one repo 'cause then they're all private and then under strategic we need add Carol Lisa Cain trash like all those people so we'll need like Trish and Alisa and people just say who they actually. I don't know all the people that should be out of there and then SRE like that. That one I don't or I think.
+    - So if we gave those tickets out like would it and or Patrick like if we actually create those tickets.
+    - Wei, Patrick CITZ:EX
+Yeah yeah yeah we will. You will click create ticket then put the put the detail in the second week and we can finish that very quick half day couple hours yeah?
+    - Sparks, Kaine CITZ:EX
+OK cool. So next week sometime.
+
+
 ----
 Oct 15
 ----
