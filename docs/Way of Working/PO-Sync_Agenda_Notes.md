@@ -74,8 +74,8 @@ We've been looking on our side, though, like any spot where we've had changes in
     - Reimer, Trish CITZ:EX
 This is managed. Yeah, we. I think we even had a meeting this. I don't remember who was there but we went through all of the changes and resources and that was with Ian Bot, Michael McKinnon, Suzanne
     - Mitigated I should say yeah, I know.
-    - Resistance -  non-ministry gov account users may pushback on needing a PAD account or the need to verify their identity using BCSC/BCeID
-    - Resistance - how we will manage resistance for OS Partner and BCOL Partners.
+    - ** Resistance -  non-ministry gov account users may pushback on needing a PAD account or the need to verify their identity using BCSC/BCeID **
+    - ** Resistance - how we will manage resistance for OS Partner and BCOL Partners. **
     - Kumar, Jyoti CITZ:EX
 We plan to have an engagement session with all the nominator users. I'm not sure where that is right now, but that is the plan that we first communicate to them. Let them know what it is and if there's a resistance, then we have to deal with it.
     - Reimer, Trish CITZ:EX
@@ -84,7 +84,7 @@ It's on the plan and we were going to do our ministry, government account users 
     - Kumar, Jyoti CITZ:EX Till now there's been no red flags. We have a steering committee which I attend. From our side to make sure that you know all the deliverables are being done on the modeling. Uh, based upon the milestone dates. So really, there's only working at by whatever amount it slips. We have to change our release plan so I don't know if this is something which we really need to take forward. But if it happens, we have to deal with it.
     - Sparks, Kaine CITZ:EX
 So it's mitigated. 
-    - Vacations.
+    - ** Vacations **
     - McClung, Linda CITZ:EX
 Yeah, accepted.
     - Unclear deadline for business case submission.
