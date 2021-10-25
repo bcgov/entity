@@ -70,7 +70,7 @@ We have to let the IDM folks know as well that if we are telling them that the W
 Yeah they can create it registries account, but they can't access the.
     - Stanton, Melissa CITZ:EX
 We've been looking on our side, though, like any spot where we've had changes in our star Pia because of the portal agreement with item we've been looking at ways to minimize having to retouch it right when partners join, so that is a constant question, or it's coming up and like all the meetings, right? Hey, you want me to do this. Can I add this other stuff now so we're looking at it and minimizing touch points on our side? But it's Jyoti said we can't do the partner piece their governments and until they’re moving along with development.
-    - **Potential that the home team resources may not be available to do work on time.**
+- **Potential that the home team resources may not be available to do work on time.**
     - Reimer, Trish CITZ:EX
 This is managed. Yeah, we. I think we even had a meeting this. I don't remember who was there but we went through all of the changes and resources and that was with Ian Bot, Michael McKinnon, Suzanne
     - Mitigated I should say yeah, I know.
@@ -80,20 +80,20 @@ This is managed. Yeah, we. I think we even had a meeting this. I don't remember 
 We plan to have an engagement session with all the nominator users. I'm not sure where that is right now, but that is the plan that we first communicate to them. Let them know what it is and if there's a resistance, then we have to deal with it.
     - Reimer, Trish CITZ:EX
 It's on the plan and we were going to do our ministry, government account users first. That was supposed to be done this week and then Next up was ministry non government like the non minister government account users like ICBC and others, yeah. I think we have it on the plan for Sprint 11.3. Yeah, I know. I think it's supposed to start like November 2nd or something.
-    - **Is it possible CAS timelines may slip? if so, could impact other scheduled releases/ resourcing**
+- **Is it possible CAS timelines may slip? if so, could impact other scheduled releases/ resourcing**
     - Kumar, Jyoti CITZ:EX Till now there's been no red flags. We have a steering committee which I attend. From our side to make sure that you know all the deliverables are being done on the modeling. Uh, based upon the milestone dates. So really, there's only working at by whatever amount it slips. We have to change our release plan so I don't know if this is something which we really need to take forward. But if it happens, we have to deal with it.
     - Sparks, Kaine CITZ:EX
 So it's mitigated. 
-    - ** Vacations **
+- **Vacations**
     - McClung, Linda CITZ:EX
 Yeah, accepted.
     - Unclear deadline for business case submission.
     - Gordon, Dwayne CITZ:EX
 So the deadline is clear and there should be no impact to this at this point.
-    - **Incomplete data for firm migrations.**
+- **Incomplete data for firm migrations.**
     - McClung, Linda CITZ:EX
 I think that's gonna be owned by me
-    - **Impact of verifiable credentials.**
+- **Impact of verifiable credentials.**
     - McClung, Linda CITZ:EX
 yeah, we're supposed to come up with some sort of prototype, right?
     - Sparks, Kaine CITZ:EX
@@ -108,7 +108,7 @@ We were going to do, but then Carol was saying she gave him a bunch of money. Ho
 I actually have a meeting with them at three, so I might find out that Carol just threw me into so.
     - Sparks, Kaine CITZ:EX
 OK, so like if that. If nothing comes out of that like next step, maybe we need to get together with you and Stephen and Linda and I'm like Thor and just kind of talk through the work.
-    - **Handle Tech Debt better**
+- **Handle Tech Debt better**
     - McClung, Linda CITZ:EX
 I think the action was that we're going to make sure we have about 20% of our sprints be tech debt.
     - Sparks, Kaine CITZ:EX
@@ -122,7 +122,7 @@ See if we can put it in the demo, either this Sprint or next sprint or something
     - Start considering what it will look like to take on bigger task of focus for testing and test data?
     - McClung, Linda CITZ:EX
 Having a meeting next week. I just have to book it.
-    - **Knowledge base for OPS.**
+- **Knowledge base for OPS.**
     - Sparks, Kaine CITZ:EX
 Assume this is we need documentation so people couldn't help us.
     - McClung, Linda CITZ:EX
@@ -139,7 +139,7 @@ Yeah, between her and yes, maybe like that type of people I think. Could well, n
 Well, we've kind of got a discussion going in the OCM channel so I was what I had proposed was like Kaine, Linda, Melissa, Trish. Maribeth Wilson.
     - McClung, Linda CITZ:EX
 Maybe instead of. Yeah, maybe instead of Kaine we should put in Cameron Wolfe.
-    - ** API sandbox **
+- **API sandbox**
     - Stanton, Melissa CITZ:EX
 So it's looking over our board. We are working right now to with size and come get through some of the work to get the API sandbox up and ready for November 5th, which is what we've been telling everyone in our sessions, so we were just looking over at Jyoti and noticing that there's a few pieces for relationships. One of them was updating the steps to request to Keith.
     - thor @ daxiom (Guest)
@@ -152,7 +152,7 @@ Yeah, I mean, that's that's what I guess this needs to be discussed and confirm 
 OK, and then the other piece was the revoking a key.
     - Kumar, Jyoti CITZ:EX
 Yeah, that is already part of the Sprint, uh so. The admins of the account would be able to go ahead and revoke that key. So it's a story in this Sprint.
-    - ** Private workspace **
+- **Private workspace**
     - Sparks, Kaine CITZ:EX
 Now that you created the org and you have a private repo what do we need now?
     - thor @ daxiom (Guest)
