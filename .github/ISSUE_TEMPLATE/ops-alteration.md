@@ -17,6 +17,9 @@ Title of ticket: [Entity number and name] - Alteration, [Entity type] > [Entity 
 #### Description
 Summarize issue and attach email OR copy and paste email content into ticket
 
+#### Entity's most recent Notice of Articles(NOA) output
+[Get this from the company's filing history in their current system, and attach it here so the developer and BA can use it to see if all the data came over correctly to the new system. Not all filings have a NOA, go through all the most recent filings to find the last NOA that was generated].
+
 ### ALTERATION TASKS - BEN > LTD:
 - [ ] [Check out this flowchart for the steps](https://drive.google.com/file/d/1jMR6eAe2jr4B8cWdQgZQrwziiVUXWl5f/view?usp=sharing)
 - [ ] use jupyter notebooks to file BEN > LTD
