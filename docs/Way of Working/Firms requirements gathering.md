@@ -8,7 +8,7 @@ October 27, 2021
 - 9737
 - 9254
 - Do we want to add the "start date" or "nature of business" to the company dashboard here? For the firm/staff to see at a glance. (add answer to bottom of [doc](https://docs.google.com/document/d/19nKisnQ9Pw0H8wyIH-YDFeR4S3wAk4gtKlAbDC-KLNs/edit?usp=sharing))
-- 
+- Change filings, review flow diagram?
 
 ----
 October 19, 2021
