@@ -7,15 +7,26 @@ October 27, 2021
 - Should [this letter](https://zh-file.s3.amazonaws.com/157936592/b7f9663f-2a83-45a0-b2d1-1ddc5031c21e?Expires=1634924910&AWSAccessKeyId=AKIAI5X57DET3FHKSALA&Signature=zP9dYySZYCfChPQbGg8WMt5y2VA%3D) be from 2019? Is this updated? where do we get the most updated versions? How often are they updated? Do you mind if we merge it together as 1 set of letters and guides, then the registration as a seperate output? That is preferred from a technical perspective. ([discussion happening in this email thread, this link only works for sienna](https://mail.google.com/mail/u/0/?zx=nv2aa2snq520#inbox/FMfcgzGlkXvvrGndpNhQHRJZqxTDHlSK))
 - 9737
 - 9254
+- 9721
+- 9246
 - Do we want to add the "start date" or "nature of business" to the company dashboard here? For the firm/staff to see at a glance. (add answer to bottom of [doc](https://docs.google.com/document/d/19nKisnQ9Pw0H8wyIH-YDFeR4S3wAk4gtKlAbDC-KLNs/edit?usp=sharing))
+- Help text and content for registration.. has anyone asked you to review the content yet?
 - Change filings, review flow diagram?
 
-**Notes from Amber**
+#### Notes from Amber
+
 **Can a sole prop register with the proprietor being another company that is not registered in BC, or not extraprovincially registered in BC?**
+
 This has recently come up with a bank being a person who wanted to register a DBA. Section 88 of the Partnership Act states that “a person… must file a registration statement with the registrar within 3 months after the day on which the business name is first used”. Person is defined in the Interpretation Act as “… a corporation, partnership or party, and the personal or other legal representatives of a person to whom the context can apply according to law”. For the recent inquiry of the bank registering a DBA we were a bit hung up on the fact that a bank is specifically precluded from carrying on business in BC under section 375(3)(a) under the BCA and we therefore couldn’t register it as an extraprovincial company to allow it to register a DBA. In this case it was determined that the “person” (the bank) could provide proof of registration in the home jurisdiction and submit the DBA sole prop registration form for a manual filing. I don’t think it would appropriate for staff to immediately turn manual forms away for entities in this situation – they should be evaluated on a case by case basis to ensure the registrant meets the definition of “person”.
+
+
 **Can a sole proprietor have a start date in the future, and if so, does it mean we need to wait to file it (like a future effective filing) or is it effective immediately?**
+
 I understand that currently when staff get a paper filing with a date in the future they hold onto it until the start date is closer and One Stop allows for future dated filings up to 180 days in the future. Future dated filings don’t appear to be within the scope of the legislation under section 82 which requires the registration statement to be filed within 3 months after the formation of the firm. Additionally the registration of the firm doesn’t create the existence of the firm itself – it is more a notification that they are formed and conducting business. This is similar to extraprovincial companies that have a requirement to register within 3 months of carrying on business in BC but different than entities incorporated in BC where the incorporation must be effective for the entity to exist – hence why future dated filings are offered under the BCA and require separate fees and filing requirements. Based on this I imagine allowing for a start date in the future for firms was designed to be a convenience factor, whether to allow them the time to open bank accounts/get business licenses, or just so that they would not forget to register with us at all. I also imagine that there is no withdrawal equivalent for a registration dated in the future – and if there is please let me know as this may change my understanding. If there have been no concerns raised from clients in the past surrounding the offering of future start dates, I would suggest continuing to offer them unless the requirements are onerous (such as staff needing to hold on to paper forms for extended periods of time or extensive system requirements to be built).  
+
+
 **How far in the past can a sole prop’s start date be?**
+
 I’m not sure why the 150 year logic is baked into the One Stop system. As you’ve said, section 82 requires the registration statement to be filed within 3 months after the formation of the firm. Filing outside of this timeframe leads the firm to be out of compliance with the legislation, but with one of the primary purposes of the registration of businesses is so that the public can identify and locate the individuals involved in the business I can understand why we would still want to allow firms to register even if they are not in compliance with the three month timeline – ultimately it serves our purposes by having them on the register, not missing from it because they didn’t register in that three month period. With this in mind, I’d recommend still allowing registrations that are set XX many months or years in the past – perhaps it does not need to be 150 years (this actually seems comically long considering the lifespan of proprietors/partners/companies) but some statistics around registrations can likely be requested to help find the most common periods of time to inform the business decision around the exact parameters to allow going forward.
 
 ----
