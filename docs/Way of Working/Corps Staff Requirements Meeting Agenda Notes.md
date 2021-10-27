@@ -618,7 +618,16 @@ October 20, 2021
 ----
 October 26, 2021
 ----
-- **SIENNA PREP REQUIREMENTS DOC WITH WHAT JULIE EMAILED LINDA, PREP QUESTIONS** Process for voluntary liquidation for Co-ops... it is NOT the same as a voluntary dissolution. Different steps, fees, etc. Let's talk about them.
+- Process for voluntary liquidation for Co-ops... it is NOT the same as a voluntary dissolution. Different steps, fees, etc. Let's talk about them.
+  - 
+- Insufficient funds for voluntary dissolution? What happens currently if like a cheque bounces for a paper filing?
+  - If its a corp and they file it but then later on the cheque bounces, we chase them down. It is hard to do so becuase they don't exist as a company.
+  - This might also apply to PAD going forward, since we treat them like cheques.
+  - If the Online Banking fails for a voluntary dissolution, in that scenario, the system would not file it. It would stay in draft forever. 
+    - This might be particularly bad for dissolutions, when clients think they dissolved but never actually did and now they have multiple outstanding ARs.
+    - Linda to ask John if there is anything in place to cancel a payment attempt, and is there any email notification for that? So these clients will be notified that they didn't dissolve?
 - Discuss #99
 - Discuss #107, co-op missing number, and how we can correct their rules
-- #9401 
+- #9401
+
+- NOTE: test what happens if an entity becomes not in good standing and they have a dissolution draft. How do we tell them "hey you can't finish that until you do this AR"? They can't have multiple drafts at once, do they need to delete the dissolution?
