@@ -13,7 +13,7 @@ October 27, 2021
 - Help text and content for registration.. has anyone asked you to review the content yet?
 - Change filings, review flow diagram?
 
-#### Notes from Amber
+### Notes from Amber
 
 **Can a sole prop register with the proprietor being another company that is not registered in BC, or not extraprovincially registered in BC?**
 
