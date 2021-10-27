@@ -30,6 +30,7 @@ Oct 27
 - New Business
     - Refine ticket 8479
     - Creating sprints
+    - Ux Velocity
 ---
 Oct 20
 ---
