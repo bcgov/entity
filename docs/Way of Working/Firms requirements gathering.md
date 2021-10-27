@@ -5,7 +5,13 @@ October 27, 2021
 - 9247
 - 9248
 - Should [this letter](https://zh-file.s3.amazonaws.com/157936592/b7f9663f-2a83-45a0-b2d1-1ddc5031c21e?Expires=1634924910&AWSAccessKeyId=AKIAI5X57DET3FHKSALA&Signature=zP9dYySZYCfChPQbGg8WMt5y2VA%3D) be from 2019? Is this updated? where do we get the most updated versions? How often are they updated? Do you mind if we merge it together as 1 set of letters and guides, then the registration as a seperate output? That is preferred from a technical perspective. ([discussion happening in this email thread, this link only works for sienna](https://mail.google.com/mail/u/0/?zx=nv2aa2snq520#inbox/FMfcgzGlkXvvrGndpNhQHRJZqxTDHlSK))
-- 9737
+- 9737 Letter from SBBC
+  - If there are changes to this PDF, then devs need to fix it and test it and release it.
+  - How importnat is it for us to attach this as a PDF in the email? Or could we just link it out in the email?
+  - If it does have to be a PDF, can it be a sepeprate attachment from the registration output?
+    - Lauren thinks it would be better to separate, so the registration statement is more noticable, not missed. People often miss it, delete the email, then they need to order it again.
+    - This comes from the minister, Carol, other higher ups, they want it included. They are in the process of updating this letter. I don't think they will want a link.
+    - **Linda to follow up with Carol on this**
 - 9254
 - 9721
 - 9246
