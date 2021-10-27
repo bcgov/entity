@@ -4,6 +4,33 @@ Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 
 ---
+Oct 27
+---
+- Action Items
+    - Improve Quality
+        - Action: publish code coverage stats - create a ticket for Patrick
+        - define what we want to measure
+        - more user testing (beta versions) before pushing new apps live to public
+    - DoD
+        - More automated tests
+        - devs could help create automated tests
+        - Create clean up story for each feature after release
+    - WIP / Workflow
+        - put blocker ticket in one sprint and dependencies in the following one
+        - PO to prioritize stories in milestone
+        - Smaller parts of work at a time 
+    - Where to record sprint goals - (milestones dissapearing at the end of 2021)
+
+- Standing Items
+    - What are your upcoming goals / how are you progressing
+    - Do you have any blockers
+    - Do you have any dependencies on other teams
+    - Is there anything in your most recent retro that is beyond your influence (every 2 weeks) 
+
+- New Business
+    - Refine ticket 8479
+    - Creating sprints
+---
 Oct 20
 ---
 - Action Items
