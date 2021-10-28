@@ -1,4 +1,5 @@
 November 3, 2021
+Emailed Debbie/Kyle/Laurent Oct 28th for the following 3 items.
 - 9828 - Can SP/GPs have court orders or plans of arrangement?  Court orders - yes? plan of arrangement - no?  We'll keep the full component in there so that with Partnership Act legislation rewrite if it is included, it is there.  Goes with practice principle of reusing components.  I think I asked Debbie about this before.
 - 9260 & 9246 - Re DBA proprietors.. How much should we help client with company name, incorporation number, BN?  Onestop makes them enter the name exactly and the corp# or BN#.  For SOFI, if you enter one, the other appears.  Will get advice from UX/UI folks but would like your input.
 - 9841 - Entity dashboard - we'll replace "Current directors" section with proprietor/partner information.  What should we call this section?  "Owner" and use for both?  Or have it be entity specific.
