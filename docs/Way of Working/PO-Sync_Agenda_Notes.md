@@ -25,6 +25,10 @@ Oct 29
     - PI Planning Board - Dependencies
 
 - New Business
+    - Where to record sprint goals - (milestones dissapearing at the end of 2021)
+    - How to arrive at % complete for sprint goals
+    - How to calculate escaped defects
+    - Notification - Dev work
 
 ----
 Oct 22
