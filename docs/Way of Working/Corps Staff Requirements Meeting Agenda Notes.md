@@ -631,3 +631,9 @@ October 26, 2021
 - #9401
 
 - NOTE: test what happens if an entity becomes not in good standing and they have a dissolution draft. How do we tell them "hey you can't finish that until you do this AR"? They can't have multiple drafts at once, do they need to delete the dissolution?
+
+----
+Nov 2
+----
+- Ledger refactor
+- 
