@@ -1,5 +1,5 @@
 ---
-### ** Oct 28th 2021 OCM Retro ** 
+### **Oct 28th 2021 OCM Retro** 
 
 **Participants:-**
 - Trish,  Mags, Cameron, John, Maribeth, Sienna
