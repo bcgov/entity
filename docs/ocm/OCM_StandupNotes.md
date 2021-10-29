@@ -1,3 +1,31 @@
+# **28 Oct 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Kaine; Suzanne
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Oct28**: Working on awareness campaign Ticket and Update board; 9524 will redefine this ticket and move to backlog |  
+| **Maribeth** | **Oct28**: Tasks from Sienna 9678 , put video on YouTube is in progress; 9758 and 9208 is in progress, 4 tickets ready to start |   
+| **Mags** |**Oct28**:Hold Info session  yesterday;  FAQ plan for all projects – create another epic 9862; API Communication with Kaine, Auth and payment; POST API communication, will talk with Trish 9838 |   
+| **Sienna** |**Oct28**: Knowledge base handover with Maribeth, will be working on VD(Voluntary Dissolution);  7072 is blocking? No Will work together with Suzanne ;All voluntary Dissolution tickets are ready to start  |   
+| **John** | **Oct28**: working on Campaign tickets; 8955: DL Nov1st, all will meet next Monday with others; 6966 is done; 7413 is closed ; 9675 Ready to start.|   
+| **Suanne** | **Oct28**: NA Material for present, Monday meeting future meeting (9790) – reuse the same slide deck (Follow-up with Suzanne)  |   
+| **Olisa** | **Oct28**: Finial draft instruction, meeting on Monday, package will go with communication; Will assign tickets if applicable; Happy to review and approval tickets; Follow-up with Suzanne to review the content, send email to Suzanne |   
+| **Zac** | **Oct28**: Tag assessment talk with home team, establish connection, try to unde stand future status, will discuss on Monday |   
+| **Cameron** |**Oct28**: Cameron: Knowledge base is missing / update the doc; working on 8955, also working on assessment this morning  |   
+| **Kaine** | **Oct28**: NA |   
+
+**Action Items: -**
+
+- Almost Done: Refine ZH Tickets on OCM Board, to add description and DL
+- Create OCM Ticket Template, and including deadline and other mandate part in the template
+
+**Decisions: -** 
+
 ## **26 Oct 2021: Stand-up Summary** 
 
 **Absentees:-**
