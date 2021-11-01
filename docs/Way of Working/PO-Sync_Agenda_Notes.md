@@ -29,6 +29,13 @@ Oct 29
     - How to arrive at % complete for sprint goals
     - How to calculate escaped defects
     - Notification - Dev work
+    - Adding Resource Rqts to Long Term Plan
+    - Testing Strategy
+    - Display currency consistently across applications #8859
+    - Need to deal with Google Auto Fill Across Apps #8518
+    - Research UX - Relationships for PI11#9535
+    - Research UX - Assets for  PI11#9534
+    - Research UX - Entities for  PI11#9536
 
 ----
 Oct 22
