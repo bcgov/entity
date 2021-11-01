@@ -37,6 +37,32 @@ Oct 29
     - Research UX - Assets for  PI11#9534
     - Research UX - Entities for  PI11#9536
 
+- Meeting Notes
+    - Repo Update
+        -  Thor got the private repos set up in the org so he's meeting with Cameron this afternoon. We added a repo for the RAID board too. Just need to add security rolls so it can be accessed.
+        -  Next steps after that maybe a couple weeks.
+        -  Some other ideas around how we can track things. Create all our epics for a whole life cycle when we do long term planning.  And have them sit under a project like on the program board which would have themes, under that we could capture the entities then all the risks could also be associated to an entity. So you'd be able to have a really good visual representation in that workspace of everything that was drawn through. And then by having all the epics actually created in Zen Hub, we can start attributing early on values like the costs for the whole project. 
+    - Dependencies
+        -  Meeting was held to talk about a coordinated test strategy to automate our scripts. One of the things that came out of it was that we needed to have a number of different test accounts for the different testing scenarios. So this is ticket 9860. So the idea is that what we'll do is we'll have a set of data that would we would create that would be associated to a script to create whatever entity in whatever state we need it to be.
+        -  Jyoti will ensure testing accounts are set up when needed
+    - Recording sprint goals when Zenhub milestones disappear
+        -  **Action – James to contact Zenhub support for advice**
+        -  One option is to create a Sprint objective ticket. Not ideal but it would work.
+    - How to arrive at percent complete for Sprint goals. 
+        -  **Decision - Towards the end of the Sprint hold a team vote and arrive at a consensus. Goals are not 100% complete until all they have been tested.**
+    - How to calculate escaped defects
+        -  These are defects found by the business after the code in production.
+        -  Current process is to ask team members to try to remember how many bugs may have been, logged against the product at the end of each sprint.
+        -  **Action – Linda to schedule a meeting to discuss**
+    - Notification - Dev work.
+        -  Who is taking over work for the notification?  Roy and Scott are just finishing up the design now that we've chosen not to do both, we're just going to do the one. So then Assets will do the work. 
+    - Adding resource requirements to the long-term plan. 
+        -  We’ll define where we need our expertise and having those conversations with Cameron. 
+        -  Next long-term planning is on Nov 8
+    - Display currency consistently 
+        -  Make sure it says just the dollar amount, except in the share structure. That's where it's going to say CAD.
+        -  We need tickets for each team to do their own work under here.
+
 ----
 Oct 22
 ----
