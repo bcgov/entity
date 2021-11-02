@@ -1,4 +1,43 @@
-# **28 Oct 2021: Stand-up Summary** 
+### **02 Nov 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Kaine; 
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Nov02**: On email for ministry account; Life after lib from Carole, and under review google form(two more info session: ministry and non-ministry user); Planning work/resources we need across each of the project (on going); Q: External stakeholder, find a place to share? Suzanne will share a link; Working  |  
+| **Maribeth** | **Nov02**: Set 17 18th two info session, and setup form;  Finalizing 20, 27th sessions’ actions: send response (i.e asking recording); Some duplicated tickets need to be closed; Suzanne Q: A list of ministry account internal/external? We have a DL. Ministry and non-ministry account we have a list (link); From Maribeth: some Onestop tickets for Suzanne, need to review by Suzanne  |   
+| **Mags** |**Nov02**: BCOL user communication, training plan for Business Registry Initiative; Set up a meeting next week; APl task Kaine is asking Thor for input, will follow-up. Q: Final approve for follow-up info session after Carole’s first initial approval.  Olisa suggested OCM team can decide/ collectively decision   |   
+| **Sienna** | **Nov02**: 9208 Voluntary Dissolution Impact assessment under review; Assign tickets to other teams. Tickets duplicated with Suzanne’s tickets, will use Suzanne’s ticket; Pull new task D into In Progress  |   
+| **John** | **Nov02**: transfer 9879 to Zac, working on 8955 and two impacts session; then more focus on info sessions.|   
+| **Suanne** | **Nov02**: Women entrepreneur session yesterday, small biz & community future,  later Camber few come weeks later;  Finance partner info session awareness; ICBC handle themselves, we will provide the date   |   
+| **Olisa** | **Nov02**: Met policy team for PPR yesterday, it’s on track; Working on 9775; Engagement meeting went well  |   
+| **Zac** | **Nov02**: will discuss with John and take over non-ministry staff communication   |   
+| **Cameron** |**Nov02**: Together with Sienna and John, review impact yesterday Nov1st   |   
+| **Kaine** | **Nov02**: NA |   
+
+**Action Items: -**
+
+- Add Deadline on each ticket, only exception is tickets for recurrence events  
+- Considering for OCM metrics: 
+  - Short term: Fib/Velocity; # of tickets we finished during two weeks, more?
+  - Long term: user adoption, more?
+  - Others: # of info session we provided, # of training session we provided , more?
+  
+- Try one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+  - If current assignee has finished his/her part, can add a comment on the ticket and tag to the person who will take next action (**maybe there are also some exceptions here??**)
+- Decision is not needed -> Create OCM Ticket Template, and including deadline and other mandate part in the template. While **recommendation is to add dependencies and/or links of design, or output/result in ticket description**
+- On the OCM Board: will Ping high priority if this ticket is preferred to be the next pick/working task from team
+
+**Decisions: -** 
+
+-  
+
+---
+### **28 Oct 2021: Stand-up Summary** 
 
 **Absentees:-**
 
@@ -26,7 +65,10 @@
 
 **Decisions: -** 
 
-## **26 Oct 2021: Stand-up Summary** 
+- 
+
+---
+### **26 Oct 2021: Stand-up Summary** 
 
 **Absentees:-**
 
@@ -54,10 +96,10 @@
 
 **Decisions: -** 
 
--
----- 
 
-## **21 Oct 2021: Stand-up Summary** 
+
+---
+### **21 Oct 2021: Stand-up Summary** 
 
 **Absentees:-**
 
@@ -87,12 +129,10 @@
 
 **Decisions: -** 
 
--
 
 
----- 
-
-## **Oct18 2021: Stand-up Summary**
+---
+### **Oct18 2021: Stand-up Summary**
 
 **Absentees:-**
 
