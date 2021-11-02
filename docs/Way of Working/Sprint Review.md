@@ -34,7 +34,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 
 #### Relationships
 * Staff comment (9550) -  Faiz
-* Refunds and cancellations (9379 & 7819) - Faiz
+* Refunds and cancellations (9379 & 7819) - Faiz,  (Cancellations scenarios is not Demoed)
 
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
