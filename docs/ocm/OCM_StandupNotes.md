@@ -8,7 +8,7 @@
 
 | Name | Update | 
 | --- | ---- | 
-| **Trish** | **Nov02**: On email for ministry account; Life after lib from Carole, and under review google form(two more info session: ministry and non-ministry user); Planning work/resources we need across each of the project (on going); Q: External stakeholder, find a place to share? Suzanne will share a link; Working  |  
+| **Trish** | **Nov02**: Working on email for ministry account; Life after lib from Carole, and under review google form(two more info session: ministry and non-ministry user); Planning work/resources we need across each of the project (on going); Q: External stakeholder, find a place to share? Suzanne will share a link;   |  
 | **Maribeth** | **Nov02**: Set 17 18th two info session, and setup form;  Finalizing 20, 27th sessions’ actions: send response (i.e asking recording); Some duplicated tickets need to be closed; Suzanne Q: A list of ministry account internal/external? We have a DL. Ministry and non-ministry account we have a list (link); From Maribeth: some Onestop tickets for Suzanne, need to review by Suzanne  |   
 | **Mags** |**Nov02**: BCOL user communication, training plan for Business Registry Initiative; Set up a meeting next week; APl task Kaine is asking Thor for input, will follow-up. Q: Final approve for follow-up info session after Carole’s first initial approval.  Olisa suggested OCM team can decide/ collectively decision   |   
 | **Sienna** | **Nov02**: 9208 Voluntary Dissolution Impact assessment under review; Assign tickets to other teams. Tickets duplicated with Suzanne’s tickets, will use Suzanne’s ticket; Pull new task D into In Progress  |   
