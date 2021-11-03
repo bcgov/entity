@@ -2,18 +2,37 @@
 November 3, 2021
 ----
 Emailed Debbie/Kyle/Laurent Oct 28th for the following 3 items.
-- 9828 - Can SP/GPs have court orders or plans of arrangement?  Court orders - yes? plan of arrangement - no?  We'll keep the full component in there so that with Partnership Act legislation rewrite if it is included, it is there.  Goes with practice principle of reusing components.  I think I asked Debbie about this before.
-- 9260 & 9246 - Re DBA proprietors.. How much should we help client with company name, incorporation number, BN?  Onestop makes them enter the name exactly and the corp# or BN#.  For SOFI, if you enter one, the other appears.  Will get advice from UX/UI folks but would like your input.
+- 9828 - Can SP/GPs have court orders or plans of arrangement?  Court orders - **yes**. plan of arrangement - **no**.  We'll keep the full component in there so that with Partnership Act legislation rewrite if it is included, it is there.  Goes with practice principle of reusing components.  I think I asked Debbie about this before.
+- 9260 & 9246 - Re DBA proprietors.. How much should we help client with company name, incorporation number, BN?  Onestop makes them enter the name exactly and the corp# or BN#. For SOFI, if you enter one, the other appears. Also a partian name will return results. Will get advice from UX/UI folks but would like your input.
+  - We want to do a lookup where they can start typing in the number or name
+  - That sounds good to staff
 - 9841 - Entity dashboard - we'll replace "Current directors" section with proprietor/partner information.  What should we call this section?  "Owner" and use for both?  Or have it be entity specific.
+  - We decided: "Proprietor" or "Partners" as the title for those components.
+  - We also decided: Office addresses section will, we will keep the main label as "office addresses" and will replace "Registered office addresses" with "business address"
 
 Do we have to specify "residential" address if it is a individual sole proprietor / partner?
-- If the sole proprietor / partner is a company, do we not care if it is a physical, mailing, or delivery address? It's just an address? The form doesn't say either way.
+- Right now, in bold on the form, it says "must be a residential address if the proprietor / partner is an individual".
+- We need to keep this, legislation specifies it.
+- If Business, need mailing address, and delivery address.
+- If Individual, need mailing address, and delivery address, and this section has a tool tip saying that their addresses need to be residential.
+    - "Residential" means the address of their home residence. 
+If the sole proprietor / partner is a company, do we not care if it is a physical, mailing, or delivery address? It's just an address? The form doesn't say either way.
 
-For DBA's or partners if address we pull from the company is out of date, should we 1) make address uneditable and tell them they need to go to COLIN and update there first and then register? 2) made addressuneditable and tell them to change the address in COLIN and we'll automatically make the update to the SP? or 3) make it editable and tell them to update the address in COLIN afterwards?  
+For DBA's or partners if address we pull from the company is out of date, should we 1) make address uneditable and tell them they need to go to COLIN and update there first and then register? 2) made addressuneditable and tell them to change the address in COLIN and we'll automatically make the update to the SP? or 3) make it editable and tell them to update the address in COLIN afterwards?
+- If this happens with forms, Lauren's instructions were "if the address gets pulled, but the form says something else, you should use the form".
+- Are we going to let them change their address later on, no validation making them use the owning business' address? If so, why do we bother validation at the beginning?
+    - Decision: Let's pull it in, but let them edit it. **Not** force them to go to the company and update thatt address.
+    - Add a tooltip to the in that address section, informing them: We have entered in the address of the owner. If this address is incorrect, enter the correct address in this registration. Once you have completed your registration, please go to where you usually complete your corproate filings to update the address.
 
 Can you give me some examples of DBAs that were registered with us after April 8, 2011 where the owner was not a registered BC entity?  Can't find any after this date (which might be the conversion date from when SP/GPs loaded into SOFI.  So do we really need the ability to register a SP/GP with a non-registered business owner?
+- Federal banks (and other letters patent) don't have to xpro register here, this is a rare scenario where we need this process (e.g. FM0861264)
+- Linda to investigate this example more and see if she can find more instances
+- Staff do indeed need to manually enter the name (since the lookup won't work). They don't enter the corproation number (letters patent don't have numbers). Clients are required to enter both (select something from the lookup) but staff are not required. They can still optionally enter a BN.
+
 
 Should staff be able to have multiple drafts on the go? Clients are not allowed (to prevent out of order filings). Do we want to allow staff to have multiple drafts? Are there scenarios that it would be useful?
+- These filings are fast to do, i never really need to save a draft. I don't have the ability to save a draft now, and don't need it.
+- Think it would be easiest to delete a draft before you start a new one. No filing we have is complicated enough that deleting a draft is such a serious loss of work.
 
 
 
