@@ -641,3 +641,7 @@ Nov 2
 - Let's start requirements gathering for AGM extension soon
 
 - Regarding "SRI": Amber says the legislation is specific about which ones we can allow. SRI is not included. From a policy perspective, don't think it should be allowed. Amber is going to send an email with her decision and reasoning.
+
+- Linda/Sienna to raise an ops ticket to find out how many coops said No AGM in 2021 ARs
+- Director Change didn’t have a NoA in dev or test - we raised this with Severin yesterday.
+- Filing still had user ID instead of name - I kicked this back to inprogress last night.
