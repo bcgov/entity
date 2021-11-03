@@ -639,3 +639,5 @@ Nov 2
 - Start requirements for generic "correct a corproate record" filing
 
 - Let's start requirements gathering for AGM extension soon
+
+- Regarding "SRI": Amber says the legislation is specific about which ones we can allow. SRI is not included. From a policy perspective, don't think it should be allowed. Amber is going to send an email with her decision and reasoning.
