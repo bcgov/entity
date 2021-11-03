@@ -13,6 +13,9 @@ For DBA's or partners if address we pull from the company is out of date, should
 
 Can you give me some examples of DBAs that were registered with us after April 8, 2011 where the owner was not a registered BC entity?  Can't find any after this date (which might be the conversion date from when SP/GPs loaded into SOFI.  So do we really need the ability to register a SP/GP with a non-registered business owner?
 
+Should staff be able to have multiple drafts on the go? Clients are not allowed (to prevent out of order filings). Do we want to allow staff to have multiple drafts? Are there scenarios that it would be useful?
+
+
 
 ----
 October 27, 2021
