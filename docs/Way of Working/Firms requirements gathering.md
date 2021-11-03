@@ -6,8 +6,13 @@ Emailed Debbie/Kyle/Laurent Oct 28th for the following 3 items.
 - 9260 & 9246 - Re DBA proprietors.. How much should we help client with company name, incorporation number, BN?  Onestop makes them enter the name exactly and the corp# or BN#.  For SOFI, if you enter one, the other appears.  Will get advice from UX/UI folks but would like your input.
 - 9841 - Entity dashboard - we'll replace "Current directors" section with proprietor/partner information.  What should we call this section?  "Owner" and use for both?  Or have it be entity specific.
 
-- Do we have to specify "residential" address if it is a individual sole proprietor / partner?
-- If the sole proprietor / partner is a company, do we not care if it is a physical, mailing, or deliver address? It's just an address? The form doesn't say either way.
+Do we have to specify "residential" address if it is a individual sole proprietor / partner?
+- If the sole proprietor / partner is a company, do we not care if it is a physical, mailing, or delivery address? It's just an address? The form doesn't say either way.
+
+For DBA's or partners if address we pull from the company is out of date, should we 1) make address uneditable and tell them they need to go to COLIN and update there first and then register? 2) made addressuneditable and tell them to change the address in COLIN and we'll automatically make the update to the SP? or 3) make it editable and tell them to update the address in COLIN afterwards?  
+
+Can you give me some examples of DBAs that were registered with us after April 8, 2011 where the owner was not a registered BC entity?  Can't find any after this date (which might be the conversion date from when SP/GPs loaded into SOFI.  So do we really need the ability to register a SP/GP with a non-registered business owner?
+
 
 ----
 October 27, 2021
