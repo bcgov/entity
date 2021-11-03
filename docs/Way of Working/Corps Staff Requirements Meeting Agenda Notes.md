@@ -637,3 +637,5 @@ Nov 2
 ----
 - Ledger refactor
 - Start requirements for generic "correct a corproate record" filing
+
+- Let's start requirements gathering for AGM extension soon
