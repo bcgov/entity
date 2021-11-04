@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/87034722/140417676-3b263e07-8773-446a-af3b-e981a1d281fa.png)
+
 ### Basic Rules for OCM estimation: 
 
 -	Using Fibonacci to provide estimate for each OCM ticket: 1, 2, 3, 5, 8
