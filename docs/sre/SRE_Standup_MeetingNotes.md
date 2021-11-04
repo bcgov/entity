@@ -1,3 +1,26 @@
+## **Nov 04 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Kaine; Richard
+
+**Notes:-**
+
+- Follow-up: Has met Linda to discuss Names Ops Support, will be working on two tickets in these two weeks.
+
+![image](https://user-images.githubusercontent.com/87034722/140414385-da08b323-31f5-408b-9593-1f3b21cc4682.png)
+
+
+**Action Items: -**
+
+-	Ongoing: Names support: support process, review current errors and priorities 
+-	To be confirmed: Patrick to discuss with Linda to move Steven’s tasks to SRE
+
+**Decisions: -** 
+
+- Will disucss all tickets within "New Issues" during planning
+
+---
 ## **28 Oct 2021: Stand-up Summary** 
 
 **Absentees:-**
