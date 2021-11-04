@@ -14,10 +14,26 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
-Oct 29
+Nov 5
 ----
 - Action Items / Carry Over
     - Repo set-up 
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+
+----
+Oct 29
+----
+- Action Items / Carry Over
+    - Recording sprint goals when Zenhub milestones disappear
+        -  **Action – James to contact Zenhub support for advice**
+    - How to calculate escaped defects
+        -  **Action – Linda to schedule a meeting to discuss**
 
 - Standing Items
     - Program Kanban
