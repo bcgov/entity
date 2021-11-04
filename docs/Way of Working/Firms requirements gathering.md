@@ -1,4 +1,10 @@
 ----
+November 10, 2021
+----
+- 9249 - when looking at this ticket, we realized that it isn't really secure to have anyone file an SP GP using any old corporation. OneStop doesn't have any security, and anyone can register their SP or GP to be any corporation, but maybe we should add some security?
+
+
+----
 November 3, 2021
 ----
 Emailed Debbie/Kyle/Laurent Oct 28th for the following 3 items.
@@ -33,7 +39,6 @@ Can you give me some examples of DBAs that were registered with us after April 8
 Should staff be able to have multiple drafts on the go? Clients are not allowed (to prevent out of order filings). Do we want to allow staff to have multiple drafts? Are there scenarios that it would be useful?
 - These filings are fast to do, i never really need to save a draft. I don't have the ability to save a draft now, and don't need it.
 - Think it would be easiest to delete a draft before you start a new one. No filing we have is complicated enough that deleting a draft is such a serious loss of work.
-
 
 
 ----
