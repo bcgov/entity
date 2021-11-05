@@ -645,3 +645,9 @@ Nov 2
 - Linda/Sienna to raise an ops ticket to find out how many coops said No AGM in 2021 ARs
 - Director Change didn’t have a NoA in dev or test - we raised this with Severin yesterday.
 - Filing still had user ID instead of name - I kicked this back to inprogress last night.
+
+----
+Nov ?
+----
+- 8913
+- 
