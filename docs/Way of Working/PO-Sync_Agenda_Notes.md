@@ -17,7 +17,7 @@ Standing Agenda:
 Nov 5
 ----
 - Action Items / Carry Over
-    - Repo set-up 
+    - RAID board
 
 - Standing Items
     - Program Kanban
@@ -25,6 +25,7 @@ Nov 5
     - PI Planning Board - Dependencies
 
 - New Business
+    - PO Commons December presentation
 
 ----
 Oct 29
