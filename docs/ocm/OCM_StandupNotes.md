@@ -1,3 +1,35 @@
+### **04 Nov 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Kaine; Cameron, John (Provide Update in RC)
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Nov04**: will be off Friday and Monday; team is busy with Nov17/18 Info Session,  Ray: what’s new design for all to take a look; SBC Retro for Name Request Release, will benefit other application release; SBC Meeting, Firm filing + PPR setup agenda with entities team and asset team   |  
+| **Maribeth** | **Nov04**: closed 9678 has finished; busy with 9950, 9949,9971  all due today. Beside normal OCM work, another task is monitor email/box;  add YTB link under 9678  |   
+| **Mags** |**Nov04**: Will be on vacation, Maribeth and Trish will cover;  New date for Sanbox? Will communicate later a new date(9555); Move 9552; 9862; 9553 to done; will review 9879; follow-up with Kaine/Melissa for API Sandbox communication    |   
+| **Sienna** | **Nov04**:  9208 under review, Trish will be reviewing this? New VD deadline most probably in Dec, will follow-up with Linda; will be working on 7072 , 8955   |   
+| **John** | **Nov04**: Transferred the email to non-ministry users to Zac who sent it around for review yesterday (9879). Worked with BCOL Admin to plan the invite flow for non-ministry accounts. This unblocked planning for Nov18 session. Note that some screens will not be final for those users on the 18th so demo will include some non-live portions based on UX pins. Question for Suzanne - are all BN Hub OCM tickets on the board and are there any in which I have an upcoming deliverable? |   
+| **Suanne** | **Nov04**: Trish suggested to breakdown 9896 into several tickets, one ticket for each task    |   
+| **Olisa** | **Nov04**: Working on 9775 OCM - PPR Go Live - Info Note , has forward to Carole for reivew   |   
+| **Zac** | **Nov04**:working on 9879, which is under review    |   
+| **Cameron** |**Nov04**: NA   |   
+| **Kaine** | **Nov04**: NA |   
+
+**Action Items: -**
+
+- Almost done, will double check all exceptions: Add Deadline on each ticket, only exception is tickets for recurrence events  
+- Try one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+
+**Decisions: -** 
+
+-  
+
+---
+
 ### **02 Nov 2021: Stand-up Summary** 
 
 **Absentees:-**
