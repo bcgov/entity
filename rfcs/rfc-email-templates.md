@@ -40,7 +40,7 @@ The email clients market share from Litmus Email Analytics.
 
 # Drawbacks
 
-The litmus service cost USD$63 a month. And lots of function we may need to use it.
+The litmus service cost USD$63 a month. And lots of function we may not need to use it.
 
 # Alternatives
 
