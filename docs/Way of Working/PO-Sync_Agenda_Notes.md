@@ -30,7 +30,7 @@ Nov 5
 -  Meeting Notes
     - How to record Sprint goals when milestones are removed
         - James asked Zenhub if there is a way to add goals to sprints. The response was, great idea, but we don't have any way to do it right now. 
-        - ** Decision - Going forward we'll just create tickets per sprint **
+        - **Decision - Going forward we'll just create tickets per sprint**
     - Reporting of escaped defects. 
         - Meeting for that next week 
     - Knowledge base for OPS. Is there any update there?
@@ -43,9 +43,9 @@ Nov 5
         - It would be nice to kind of go through what we show on our Sprint review like go through the different slides that we show.
         - We could also show the road map. How do they tie it up with the stakeholders?
         - A few slides and show our Muriel board; long term planning, then a second level of Pi planning and there is a third level Sprint planning.
-        - ** Action - Linda to create an agenda for the presentation **
+        - **Action - Linda to create an agenda for the presentation**
         - Patrick to speak about automation
-        - ** Action – James to create context slides to show how PI planning and sprint planning fit together as well as some information on the roles **
+        - **Action – James to create context slides to show how PI planning and sprint planning fit together as well as some information on the roles**
     - Next Friday’s meeting
         - James is planning to take the day off
         - Linda will also be off
