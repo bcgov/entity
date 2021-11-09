@@ -2,7 +2,7 @@
 November 10, 2021
 ----
 - 9249 - when looking at this ticket, we realized that it isn't really secure to have anyone file an SP GP using any old corporation. OneStop doesn't have any security, and anyone can register their SP or GP to be any corporation, but maybe we should add some security?
-
+- 9243 - registration statement output designs
 
 ----
 November 3, 2021
