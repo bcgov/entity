@@ -6,6 +6,18 @@
 
 ---
 
+# 9 November 2021
+**Meeting Minutes**
+1. Riyaz - Name request automation completed in entities - Approval from PO, BA is required.  Around 60-70% of automation work is completed
+2. Divya - Covered happy path scenarios and validations scenarions.  Renewal scenarios need to be done.  Around 50 - 60% of automation work is completed.
+3. Rai - Automation of FAS functionality is being done.  Happy path is completed and Need to add assertions to the test cases
+4. Merging of the automation code - Will continue further in the individual branches and later will merge to a single branch once the github actions are finalized
+
+**Action Items**
+@SateeshFW - Share the URL for Entities and Assets to search for 4000 series open bug tickets.  @Linda and @melissa need to review them and close them, if required.
+@SateeshFW - Check with Jyoti on the automation for exsiting functionality in relationship like account creation and other scenarios which have dependency on Entities / Assets
+@All POs need to discuss and take a decision on how often the github actions need to be run. Should be run on prod or dev/test based on the decision from PO
+
 # 12 October 2021
 **Meeting Minutes**
 1. Riyaz will complete the names request automation next week and this is an ongoing task.
