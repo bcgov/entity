@@ -653,4 +653,4 @@ Nov 9th, 2021
 - Paper to online process (9401)
 - Review our changes to dissolution, removing liquidator (review updated designs and discuss, 8490)
 - Review our change to the special resolution (see notes in 8913, designs not done yet)
-- 
+- Review designs for "not supporting IE" designs (9730)
