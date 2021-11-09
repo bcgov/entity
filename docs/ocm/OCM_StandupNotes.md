@@ -1,3 +1,39 @@
+### **09 Nov 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Kaine; 
+
+**Action Items: -**
+
+- Almost done, will double check all exceptions: Add Deadline on each ticket, only exception is tickets for recurrence events  
+- Try one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- AP: add link in ticket for more information/later reference
+- AP for planning: use Fib on each ticket
+- AP for Planning/Retro: When to move done; or move to closed
+- AP for Planning/Retro: monitor communication engagement email/box
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Nov09**:  Goal for this week: info session for ministry or non-ministry for 17th /18th , to getting PPT ready, John/Zac will be working on the deck. API /Sanbox ticket date is still opening; will work for Carole   |  
+| **Maribeth** | **Nov09**:  9972 is next work; and book session for 9913 sending google link for Nov18th session; a lot of small things under 9913, then won’t break this ticket into different smaller tickets (Closed 7823 which is duplicates with 9991)  |   
+| **Mags** |**Nov09**:  non-ministry account email send out last Fri; Monitor mailbox;  9551 WIP will talk with Janis and Patrick return; 9555 will getting it ready and transfer to Maribeth during absent; Will clean up 8180; newly created 10013 and working on it (OCM - PPR Go Live - Product how-to videos for users#10013), waiting for Patrick; will meet with Suzanne for layout and etc. Will be working on 9772     |   
+| **Sienna** | **Nov09**:  working on7072 waiting Gen’s feedback (probably by tomorrow); will be working on 9401   |   
+| **John** | **Nov09**:  working on PPT deck 9984 and 9982 (Both Due: Nov12th)  |   
+| **Suanne** | **Nov09**:  had a meeting with Community Futures to do the presentation, will do a presentation in their manager meeting, 15 managers Nov 16th. Cycle back with Andrea for Future entrepreneur for her feedback;  put together the list of all of the messaging for the partners through BNI, so finish that list, reviewed it with John    |   
+| **Olisa** | **Nov09**:  Carole has reviewed info Notes and now under Bev (ADM), next check point is next week    |   
+| **Zac** | **Nov09**:  working together with John on PPT deck 9984 and 9982 (Both Due: Nov12th) and a new ticket 10022 for Impact analysis for 9561 (please change the ticket title to make more sense)    |   
+| **Cameron** | **Nov09**:    |   
+| **Kaine** | **Nov09**: NA |   
+
+**Decisions: -** 
+
+-  
+
+---
+
 ### **04 Nov 2021: Stand-up Summary** 
 
 **Absentees:-**
