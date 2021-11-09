@@ -1,9 +1,11 @@
 ----
 November 10, 2021
 ----
-- ~9249 - when looking at this ticket, we realized that it isn't really secure to have anyone file an SP GP using any old corporation. OneStop doesn't have any security, and anyone can register their SP or GP to be any corporation, but maybe we should add some security?~
+- ~9249 - when looking at this ticket, we realized that it isn't really secure to have anyone file an SP GP using any old corporation. OneStop doesn't have any security, and anyone can register their SP or GP to be any corporation, but maybe we should add some security?~  Kaine and Linda decided to follow guiding principle of like for like and not build in any additional security.
 - 9243 - registration statement output designs
-- 10019 - lots of questions
+- 10029 - lots of questions (see ticket)
+- what types of non-incorporated in BC businesses/organizations can register a SP/GP/DBA in BC?  Need a list!  Want to make some sort of drop-down list where user needs to specify they are one of these before we let them enter just a business name (no inc #) and optional BN#.
+- Court orders - have you ever had a court order to register an SP/GP/DBA?  We're looking at SBC Offices doing any paper registrations instead of our staff and wondered if this was ever a scenario.
 
 ----
 November 3, 2021
