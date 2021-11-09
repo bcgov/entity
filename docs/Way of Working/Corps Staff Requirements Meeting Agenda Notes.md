@@ -651,6 +651,6 @@ Nov 9th, 2021
 ----
 - 9118 co-op ops task, needs discussion
 - Paper to online process (9401)
-- Review our changes to dissolution, removing liquidator (review designs and discuss, 8490)
-- Review our change to the special resolution (8913)
+- Review our changes to dissolution, removing liquidator (review updated designs and discuss, 8490)
+- Review our change to the special resolution (see notes in 8913, designs not done yet)
 - 
