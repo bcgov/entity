@@ -14,9 +14,9 @@
 4. Merging of the automation code - Will continue further in the individual branches and later will merge to a single branch once the github actions are finalized
 
 **Action Items**
-@SateeshFW - Share the URL for Entities and Assets to search for 4000 series open bug tickets.  @Linda and @melissa need to review them and close them, if required.
-@SateeshFW - Check with Jyoti on the automation for exsiting functionality in relationship like account creation and other scenarios which have dependency on Entities / Assets
-@All POs need to discuss and take a decision on how often the github actions need to be run. Should be run on prod or dev/test based on the decision from PO
+1. @SateeshFW - Share the URL for Entities and Assets to search for 4000 series open bug tickets.  @Linda and @melissa need to review them and close them, if required.
+2. @SateeshFW - Check with Jyoti on the automation for exsiting functionality in relationship like account creation and other scenarios which have dependency on Entities / Assets
+3. @All POs - Need to discuss and take a decision on how often the github actions need to be run. Should be run on prod or dev/test based on the decision from PO
 
 # 12 October 2021
 **Meeting Minutes**
