@@ -1,10 +1,29 @@
-## **Standing Items for SRE Sprint Planning**
-- Check alignment btw ZH Board and PI Board
-- Review current pipeline tasks, current workload for team
-- Planning work for coming two weeks: move from “To Do” to “Priority” 
-- Review each team member’ tasks for next two weeks
-- Tickets within “New Issues”, need grooming, and move to “To Do”? 
---
+## Standing Items for SRE Sprint Planning**
+-	Check alignment btw ZH Board and PI Board (Optional)
+-	Review current pipeline tasks, current workload for team
+-	Planning work for coming two weeks: move from “To Do” to “Priority” 
+-	Consider: Tickets in “New Issues” need grooming, and move to “To Do” or “Priority”
+-	Consider:  Definition of Ready for Ticket (Sizing, Acceptance Criteria)
+-	Consider:  Provide Est (In Fib, and benchmark for the sizing?) 
+
+## Nov 9th  2021 Assets Sprint Planning Meeting Memo
+
+**Absences: -** 
+-	No
+
+**Action Items:-**
+-	Will review all NameX Ops Support tickets within Grooming meeting with Entities/Linda
+-	Considering the general work load (%) for Names support, then others for core SRE tasks (Kaine’s suggestion is 50%) – will start from providing est for all Names Ops Support tickets
+-	Team to provide vacation update for Xms and New Year
+
+**Notes:-**
+
+![image](https://user-images.githubusercontent.com/87034722/141160839-bfc912cc-bd42-4574-8f16-66461b5cafeb.png)
+
+
+
+---
+
 ## **Oct 26th 2021 Assets Sprint Planning Meeting Memo**@here 
 
 **Absences: -**
