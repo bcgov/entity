@@ -2,9 +2,28 @@
 November 10, 2021
 ----
 - ~9249 - when looking at this ticket, we realized that it isn't really secure to have anyone file an SP GP using any old corporation. OneStop doesn't have any security, and anyone can register their SP or GP to be any corporation, but maybe we should add some security?~  Kaine and Linda decided to follow guiding principle of like for like and not build in any additional security.
-- From Yui: "Tracey said that Janis said that we may not be able to display BN9 on the UI for privacy reasons. This is in context of SP/GP registration. Do you guys have any supporting knowledge about that to either confirm or counter this point?"
+
+
+- **From Yui: "Tracey said that Janis said that we may not be able to display BN9 on the UI for privacy reasons. This is in context of SP/GP registration. Do you guys have any supporting knowledge about that to either confirm or counter this point?"**
+  - We definitely don't need to see the BN in the lookup, the name and corp num is enough. Address is an additonal value add.
+  - If they enter the BN 9 wrong, is there a way for us to fix it? Its happens often and is a pain. 5 manual steps. We get this issue daily.
+  - Usually these are basic users. In the filing flow, we auto-fill the completing party name from the BCSC, and we 100% know their name and account type. We can also monitor these issues and determine if we can make improvements. Linda suspects this will go down with the modernized UI. Lauren also suspects this will go down sence right now there has been an influx since the covid grant.
+  - Sienna mentioned the idea of removing the automated process to generate a BN 15
+  - Something to note: OrgBook shows the BNs (9s and 15s)(anyone in the public can see that info). 
+  - BN 15 currently shows in the output (this is the generated BN for the firm, based on the BN 9 that was entered)
+  - We are not sure where Janis heard this was secure info, Linda is talking to hometeam BAs and CRA contacts to double check.
+  - As of right now:
+    - We are not going to prepopulate the BN if the corp has one
+    - We are going to allow someone to enter a BN manually if the lookup doesn't have one
+    - We are going to show the BN in the review page and the output (BN 15)
+
+
 - 9243 - registration statement output designs
+
+
 - 10029 - lots of questions (see ticket)
+
+
 - what types of non-incorporated in BC businesses/organizations can register a SP/GP/DBA in BC?  Need a list!  Want to make some sort of drop-down list where user needs to specify they are one of these before we let them enter just a business name (no inc #) and optional BN#.
   - What will work in Onestop:
   -   Corporation - BC Company
