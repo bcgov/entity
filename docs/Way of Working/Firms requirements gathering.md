@@ -5,7 +5,39 @@ November 10, 2021
 - 9243 - registration statement output designs
 - 10029 - lots of questions (see ticket)
 - what types of non-incorporated in BC businesses/organizations can register a SP/GP/DBA in BC?  Need a list!  Want to make some sort of drop-down list where user needs to specify they are one of these before we let them enter just a business name (no inc #) and optional BN#.
+  - What will work in Onestop:
+  -   Corporation - BC Company
+  -   Corporation - Extraprovincial Company
+  -   Corporation - Incorporated Society
+  -   Partnership - General Partnership
+  -   Partnership - Limited Partnership
+  -   Partnership - Limited Liability Partnership
+  -   Partnership - Extraprovincial Limited Partnership 
+  -   Partnership - Extraprovincial Limited Liability Partnership
+  -   The above partnerships if the owner is more than one person or company and is currently registered in B.C.
+  -   
+  - What won't work in Onestop:
+  -   - Corporation - not registered in BC
+      - Corporation - Incorporated Association
+      - Corporation - Incorporated Financial Institution
+      - Corporation - Incorporated Hospital
+      - corporation - Incorporated Municipal Government
+      - Corporation - Incorporated Religious Organization
+      - Corporation - Incorporated Union
+      - Corporation - Incorporated University or School
+      - Other Government Body
+      - Unincorporated Association
+      - Unincorporated Financial Institution
+      - Unincorporated Hospital
+      - Unincorporated Municipal Government
+      - Unincorporated Religious Organization
+      - Unincorporated Union
+      - Unincorporated University or School
+- Can staff do any of the above SP/GP registrations
+- Under section 375 BCA - Corporation - not registered in BC would include: banks, railways, anything else?
+
 - Court orders - have you ever had a court order to register an SP/GP/DBA?  We're looking at SBC Offices doing any paper registrations instead of our staff and wondered if this was ever a scenario.
+- review email outputs - https://docs.google.com/spreadsheets/d/17wMY9znmWMr2RoXH9S2elffC8uE7iifUGB5Hu3VVFpE/edit#gid=797805835
 
 ----
 November 3, 2021
