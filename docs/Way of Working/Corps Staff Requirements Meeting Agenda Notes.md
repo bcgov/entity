@@ -649,8 +649,37 @@ Nov 2
 ----
 Nov 9th, 2021
 ----
-- 9118 co-op ops task, needs discussion
-- Paper to online process (9401)
-- Review our changes to dissolution, removing liquidator (review updated designs and discuss, 8490)
-- Review our change to the special resolution (see notes in 8913, designs not done yet)
-- Review designs for "not supporting IE" designs (9730)
+
+- **Review our changes to dissolution, removing liquidator** (review updated designs and discuss, 8490)
+  - No questions on removing liquidator
+- **Review our change to the special resolution** (see notes in 8913, designs not done yet)
+  - Comments and decisions from staff on the special resolution are in the ticket 8913
+  - Outputs need to have certified stamp, right?
+    - **yes.**
+  - Can they file dissolution if they are NIGS?
+    - **No. They must be in good standing.**
+    - in good standing means for Co-ops: if the current date is before april 30th of the year following the AR year
+    - Julie will ask Search team if we have this correct
+    - in good standing means for Corps: if there is an AR in the to-do list, and the current date is within 60 days of their anniversary date
+- **Review designs for "not supporting IE" designs** (9730)
+  - Looks good
+- **Dissolution training**
+  - Add in OneNote: screenshots that the client goes through when filing
+  - **Co-op** team would like in person training
+  - **Corps** team would like in person training as well, quick in standup
+  - Email templates for co-ops and corps, Sienna to draft main points and to give to s
+  - Update info package: bcomp voluntary dissolution. Make new one for BComps, reference the existing corp one.
+  - update info package: co-op voluntary dissolution. Overhaul existing. Higher priority.
+
+- When they voluntarily dissolve, they still have access to their acccount andgoet outputs, right?
+  - Yep!
+  - We will grey out the filing buttons.
+  - Sienna to send email about which filings can and can't be filed when entities are dissolved
+
+
+----
+Nov 16 2021
+----
+- **9118 co-op ops task, needs discussion**
+- **Paper to online process** (9401)
+  - We will not be allowing paper forms after X date, to discuss next week
