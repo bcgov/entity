@@ -28,11 +28,9 @@ for all registrations that are active and expired at 23:59:59 Pacific Time on th
 The function will log the result and return a status.
 Estimated lines of code: < 50.
 
-## Create a Scheduled job 
-Create either a PostgreSQL job (pg_cron extension) or an OS cron job or use an existing Registries job scheduler. 
+## Create a scheduled k8s cronjob 
 Run the database function nightly after midnight Pacific Time. Add robustness/reliability including retrying
 a number of times on failure.
-Long term moving to GCP pg_cron may be preferrable to an OS job.
 Estimated duration of job execution: < 1 minute.
 
 ## Add monitoring support
