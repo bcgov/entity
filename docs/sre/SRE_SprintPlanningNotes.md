@@ -5,7 +5,7 @@
 -	Consider: Tickets in “New Issues” need grooming, and move to “To Do” or “Priority”
 -	Consider:  Definition of Ready for Ticket (Sizing, Acceptance Criteria)
 -	Consider:  Provide Est (In Fib, and benchmark for the sizing?) 
-
+  
 ## Nov 9th  2021 Assets Sprint Planning Meeting Memo
 
 **Absences: -** 
