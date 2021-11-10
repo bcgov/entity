@@ -1,4 +1,11 @@
 ----
+November 17, 2021
+----
+- Pain points in registration
+
+
+
+----
 November 10, 2021
 ----
 - ~9249 - when looking at this ticket, we realized that it isn't really secure to have anyone file an SP GP using any old corporation. OneStop doesn't have any security, and anyone can register their SP or GP to be any corporation, but maybe we should add some security?~  Kaine and Linda decided to follow guiding principle of like for like and not build in any additional security.
@@ -16,6 +23,8 @@ November 10, 2021
     - We are not going to prepopulate the BN if the corp has one
     - We are going to allow someone to enter a BN manually if the lookup doesn't have one
     - We are going to show the BN in the review page and the output (BN 15)
+  - Kyle: Why do we even show the BN on the registration statement? Staff don't look for it or use it.
+    - We will run into issues either way, and this way is less issues
 
 
 - 9243 - registration statement output designs
@@ -35,29 +44,40 @@ November 10, 2021
   -   Partnership - Extraprovincial Limited Partnership 
   -   Partnership - Extraprovincial Limited Liability Partnership
   -   The above partnerships if the owner is more than one person or company and is currently registered in B.C.
-  -   
+  -   Corporation - **Extraprovincial Incorporated Society** ⭐️ Staff have filed these, and it **wasn't it OneStop**
   - What won't work in Onestop:
-  -   - Corporation - not registered in BC
-      - Corporation - Incorporated Association
-      - Corporation - Incorporated Financial Institution
-      - Corporation - Incorporated Hospital
-      - corporation - Incorporated Municipal Government
-      - Corporation - Incorporated Religious Organization
-      - Corporation - Incorporated Union
-      - Corporation - Incorporated University or School
-      - Other Government Body
-      - Unincorporated Association
-      - Unincorporated Financial Institution
-      - Unincorporated Hospital
-      - Unincorporated Municipal Government
-      - Unincorporated Religious Organization
-      - Unincorporated Union
-      - Unincorporated University or School
+    - Corporation - not registered in BC ⭐️ Staff have filed these (bank, railway, **shipping??) Linda to get policy input on this**
+    - Corporation - Incorporated Association ⭐️ Staff have filed these
+    - Corporation - Incorporated Financial Institution ⭐️ Staff have filed these
+
+    - Corporation - Incorporated Hospital
+    - corporation - Incorporated Municipal Government
+    - Corporation - Incorporated Religious Organization
+    - Corporation - Incorporated Union
+    - Corporation - Incorporated University or School
+    - Other Government Body
+    - Unincorporated Association
+    - Unincorporated Financial Institution
+    - Unincorporated Hospital
+    - Unincorporated Municipal Government
+    - Unincorporated Religious Organization
+    - Unincorporated Union
+    - Unincorporated University or School
+      - This list will be in a help text, saying these cannot be registered as Sole Proprietorships, General Partnerships, or DBA names
 - Can staff do any of the above SP/GP registrations
 - Under section 375 BCA - Corporation - not registered in BC would include: banks, railways, anything else?
 
+- Others:
+    - Private acts ⭐️ Staff have filed these?
+    - Strata Corporation ⭐️ Staff have filed these? (these are not incorproated with us, they are with land titles)
+
 - Court orders - have you ever had a court order to register an SP/GP/DBA?  We're looking at SBC Offices doing any paper registrations instead of our staff and wondered if this was ever a scenario.
-- review email outputs - https://docs.google.com/spreadsheets/d/17wMY9znmWMr2RoXH9S2elffC8uE7iifUGB5Hu3VVFpE/edit#gid=797805835
+  - Kyle: Never heard of register by court order
+  - Claudine has seen dissolve by court order, never seen registration
+  - **Linda to check with Debbie and David**
+
+
+- review emails, and the outputs attached to them - https://docs.google.com/spreadsheets/d/17wMY9znmWMr2RoXH9S2elffC8uE7iifUGB5Hu3VVFpE/edit#gid=797805835
 
 ----
 November 3, 2021
