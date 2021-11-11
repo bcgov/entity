@@ -13,11 +13,11 @@ assignees: ''
 
 ### Filing
 - [ ] Incorporation application (BEN, CP)
- - [ ] Happy path Named (BEN, CP)
- - [ ] Happy path Numbered (BEN)
- - [ ] Happy path Future effective dated (BEN)
- - [ ] Save and Resume
- - [ ] Edge: NR expired while in draft
+     - [ ] Happy path Named (BEN, CP)
+     - [ ] Happy path Numbered (BEN)
+     - [ ] Happy path Future effective dated (BEN)
+     - [ ] Save and Resume
+     - [ ] Edge: NR expired while in draft
 - [ ] Address Change (BEN, CP)
 - [ ] Director Change (BEN, CP)
 - [ ] Annual Report (BEN, CP)
