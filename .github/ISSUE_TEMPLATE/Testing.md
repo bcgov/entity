@@ -24,6 +24,9 @@ assignees: ''
 - [ ] Alteration (company info) (BEN)
 - [ ] Alteration (entity type) (BEN)
 - [ ] Voluntary dissolution (CP, BEN, LTD, CCC, ULC)
+     - [ ] Happy path immediate filing (CP, BEN, LTD, CCC, ULC)
+     - [ ] Happy path future effective filing (BEN, LTD, CC, ULC)
+     - [ ] Happy path save and resume (all)
 
 ### Staff filings
 - [ ] Court order / Plan of arrangement
