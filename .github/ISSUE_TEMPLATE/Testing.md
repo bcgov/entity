@@ -12,22 +12,22 @@ assignees: ''
 * Cooperative Association
 
 ### Filing
-* Incorporation application
-* Address Change
-* Director Change
-* Annual Report
-* Alteration (company info)
-* Alteration (entity type)
-* Voluntary dissolution
+- [ ] Incorporation application (BEN, CP)
+- [ ] Address Change (BEN, CP)
+- [ ] Director Change (BEN, CP)
+- [ ] Annual Report (BEN, CP)
+- [ ] Alteration (company info) (BEN)
+- [ ] Alteration (entity type) (BEN)
+- [ ] Voluntary dissolution (CP, BEN, LTD, CCC, ULC)
 
 ### Staff filings
-* Court order / Plan of arrangement
-* Registrat's notation
-* Registrar's order
-* Detail
-* Ledger correction (basic version)
-* Incorporation application correction (BCOMP)
-* Staff comment?
+- [ ] Court order / Plan of arrangement
+- [ ] Registrar's notation
+- [ ] Registrar's order
+- [ ] Ledger Detail
+- [ ] Ledger correction (basic version)
+- [ ]Incorporation application correction (BCOMP)
+- [ ] Staff comment
 
 ### Authenticaiton
 * BCeID
@@ -45,8 +45,8 @@ assignees: ''
   * No fee
 
 ### Features
-* Email notifications
-* Send data back to legacy system
-* Outputs
-* Future effective filings
+- [ ] Email notifications
+- [ ] Send data back to legacy system
+- [ ] Outputs
+- [ ] Future effective filings (BEN)
 
