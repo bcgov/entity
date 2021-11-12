@@ -683,3 +683,11 @@ Nov 16 2021
 - **9118 co-op ops task, needs discussion**
 - **Paper to online process** (9401)
   - We will not be allowing paper forms after X date, to discuss next week
+
+- **Question from Julie**
+  - There is no longer a blanket extension available to all coops for the 2021 AR, and want to know what the messaging will be if someone tries to enter an AGM after April 30, 2022 on a 2021 AR. 
+  - If they enter a date prior to April 30, 2022 do they need to check a box indicating that their AGM was held within 4 months of their fiscal year end date?
+  - Linda had mentioned something about collecting FYE date within the AR filing.  What is this going to look like, and are we putting a new filing design into production sometime soon?
+  - How are clients going to be requesting AGM extensions? Are we having a separate self-serve filing going live for this sometime soon?
+  - If a client indicates they did not hold an AGM on a certain AR because they were outside that 4 month window from FYE, but they actually did hold an AGM later than they should have, we discussed them being able to file a director change for this AGM, but that we would not let them file an additional AR, right? We were looking at this like a general meeting which have no requirement under the act to file as an annual report.
+  - There seems be a lot of confusion regarding these ARs and AGM extensions.  I think it’s all relating back to this FYE stuff.  We call it a 2021 Annual report, so people think it relates to the AGM held in 2021, but that’s not always the case.  We don’t collect FYE date in the filing, so it appears unimportant to the clients when they are filing. I’m sure there are coops filing ARs where they should have gotten AGM extensions, but they haven’t and the system has been permitting them to file.
