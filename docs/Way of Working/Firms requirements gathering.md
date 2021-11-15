@@ -1,7 +1,10 @@
 ----
 November 17, 2021
 ----
-- Pain points in registration
+**Pain points in registration**
+
+**Thoughts on the DBA helptext?**
+- Design here: https://projects.invisionapp.com/share/3511UPXPMT2P#/screens/460952915
 
 
 
