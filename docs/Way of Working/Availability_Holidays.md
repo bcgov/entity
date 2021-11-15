@@ -10,16 +10,15 @@
 * Bob F Bowlers:
 * Divya:
 * Doug:
-* Greg:
 * Janis: Dec 20-31
 * Kaine:
 * Kevin:
-* Kial:
+* Kial: Dec 22 - Jan 3
 * Kim:
 * Mags: November 12 - 19, December 27-31
-* Patrick:  October 25 - November 12
+* Patrick: October 25 - November 12
 * Scott:
-* Tracey:
+* Tracey: Dec 23 - 31
 * Thor:
 * Jinghua:
 
