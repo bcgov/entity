@@ -680,13 +680,15 @@ Nov 9th, 2021
 ----
 Nov 16 2021
 ----
-- **9118 co-op ops task, needs discussion**
-- **Paper to online process** (9401)
-  - We will not be allowing paper forms after X date, to discuss next week
+**9118 co-op ops task, needs discussion**
 
-- Voluntary dissolution, special resolution changes
-  - The working form says to submit by mail, etc.. what do you think of us making a new modernized form, and call it [filename]-dissolution (or something)? Then it can be used from the new app without confusion, and the old form is still available on bcreg.ca for name changes etc.. Maybe we can do this:
-  - ![Screen Shot 2021-11-15 at 10 45 14 AM](https://user-images.githubusercontent.com/53542700/141837465-e01b9d26-4424-4d99-84c1-07031ca99762.png)
+**Paper to online process** (9401)
+- We will not be allowing paper forms after X date, to discuss next week
+
+**Voluntary dissolution, special resolution changes**
+- The working form says to submit by mail, etc.. what do you think of us making a new modernized form, and call it [filename]-dissolution (or something)? Then it can be used from the new app without confusion, and the old form is still available on bcreg.ca for name changes etc.. Maybe we can do this:
+- ![Screen Shot 2021-11-15 at 10 45 14 AM](https://user-images.githubusercontent.com/53542700/141837465-e01b9d26-4424-4d99-84c1-07031ca99762.png)
+
 
 
 - **Question from Julie**
