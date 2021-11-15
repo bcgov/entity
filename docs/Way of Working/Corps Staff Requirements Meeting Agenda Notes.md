@@ -689,9 +689,6 @@ Nov 16 2021
 - The working form says to submit by mail, etc.. what do you think of us making a new modernized form, and call it [filename]-dissolution (or something)? Then it can be used from the new app without confusion, and the old form is still available on bcreg.ca for name changes etc.. Maybe we can do this:
 - ![Screen Shot 2021-11-15 at 10 45 14 AM](https://user-images.githubusercontent.com/53542700/141837465-e01b9d26-4424-4d99-84c1-07031ca99762.png)
 
-**Thoughts on the DBA helptext?**
-- Design here: https://projects.invisionapp.com/share/3511UPXPMT2P#/screens/460952915
-
 **Thoughts on the special resolution output?**
 - Design here: https://projects.invisionapp.com/share/HB11SLT5X2W9#/screens/460961338_Coop_-_Special_Resolution
 
