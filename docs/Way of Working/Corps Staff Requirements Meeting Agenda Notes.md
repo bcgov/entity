@@ -695,6 +695,9 @@ Nov 16 2021
 **Thoughts on the special resolution output?**
 - Design here: https://projects.invisionapp.com/share/HB11SLT5X2W9#/screens/460961338_Coop_-_Special_Resolution
 
+**Thoughts on this special resolution helptext?**
+- **Linda proposes:** A Special resolution is a resolution of the members of an association. It is submitted to all the members who are entitiled to vote on the resolution. It is passed by either 1) being consented to in writing by all of them or 2) in a general meeting. For full details of how many many members need to vote at a meeting, read the legislation here https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/99028_01#section1
+
 **Question from Julie**
   - There is no longer a blanket extension available to all coops for the 2021 AR, and want to know what the messaging will be if someone tries to enter an AGM after April 30, 2022 on a 2021 AR. 
   - If they enter a date prior to April 30, 2022 do they need to check a box indicating that their AGM was held within 4 months of their fiscal year end date?
