@@ -684,6 +684,11 @@ Nov 16 2021
 - **Paper to online process** (9401)
   - We will not be allowing paper forms after X date, to discuss next week
 
+- Voluntary dissolution, special resolution changes
+  - The working form says to submit by mail, etc.. what do you think of us making a new modernized form, and call it [filename]-dissolution (or something)? Then it can be used from the new app without confusion, and the old form is still available on bcreg.ca for name changes etc.. Maybe we can do this:
+  - ![Screen Shot 2021-11-15 at 10 45 14 AM](https://user-images.githubusercontent.com/53542700/141837465-e01b9d26-4424-4d99-84c1-07031ca99762.png)
+
+
 - **Question from Julie**
   - There is no longer a blanket extension available to all coops for the 2021 AR, and want to know what the messaging will be if someone tries to enter an AGM after April 30, 2022 on a 2021 AR. 
   - If they enter a date prior to April 30, 2022 do they need to check a box indicating that their AGM was held within 4 months of their fiscal year end date?
