@@ -8,7 +8,6 @@ November 17, 2021
 
 **Thoughts on the Sole Prop individual helptext?**
 - Design here: https://projects.invisionapp.com/d/#/console/21712216/460287156/comments
-- Do they both have to be residential addresses?
 
 ----
 November 10, 2021
