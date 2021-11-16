@@ -720,6 +720,10 @@ Nov 16 2021
 - The covid extension was specific for the 2020 AR, so if they have the 2018 AR outstanding, when they go to file, they won't see those options.
 - Current state: clients can enter an agm date of up to april 30th of the followign year. this applies to all outstanding years. Except 2020, which will be april 30th of 2021, unless they check the checkbox for COVID and then they get until October 31st of 2021.
 
+
+**You can have more than one warning on COLIN right?**
+- like NIGS and notin compliance, etc?
+- Yep 
 ----
 November ?
 ----
