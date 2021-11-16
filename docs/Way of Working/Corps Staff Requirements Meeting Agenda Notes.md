@@ -694,12 +694,34 @@ Nov 16 2021
 - Design here: https://projects.invisionapp.com/share/HB11SLT5X2W9#/screens/460961338_Coop_-_Special_Resolution
 
 **Thoughts on this special resolution helptext?**
-- **Linda proposes:** A Special resolution is a resolution of the members of an association. It is submitted to all the members who are entitiled to vote on the resolution. It is passed by either 1) being consented to in writing by all of them or 2) in a general meeting. For full details of how many many members need to vote at a meeting, read the legislation here https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/99028_01#section1
+- **Linda proposes:** A Special resolution is a resolution of the members of an association. It is submitted to all the members who are entitiled to vote on the resolution. It is passed by either 1) being consented to in writing by all of them or 2) in a general meeting. For full details of how topass a resolution, read the legislation here https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/99028_01#section1
 
 **Question from Julie**
-  - There is no longer a blanket extension available to all coops for the 2021 AR, and want to know what the messaging will be if someone tries to enter an AGM after April 30, 2022 on a 2021 AR. 
+  - There is no longer a blanket extension available to all coops for the 2021 AR, and want to know what the messaging will be if someone tries to enter an AGM after April 30, 2022 on a 2021 AR.
+    - They will not be able to pick it fromthe date picker, and these is no messaging.
+    - If they got an AGM extension, the date picker would allow them. We have not built that yet.
   - If they enter a date prior to April 30, 2022 do they need to check a box indicating that their AGM was held within 4 months of their fiscal year end date?
+    - We have not built it yet, we need to discuss this more and define it.
   - Linda had mentioned something about collecting FYE date within the AR filing.  What is this going to look like, and are we putting a new filing design into production sometime soon?
   - How are clients going to be requesting AGM extensions? Are we having a separate self-serve filing going live for this sometime soon?
   - If a client indicates they did not hold an AGM on a certain AR because they were outside that 4 month window from FYE, but they actually did hold an AGM later than they should have, we discussed them being able to file a director change for this AGM, but that we would not let them file an additional AR, right? We were looking at this like a general meeting which have no requirement under the act to file as an annual report.
   - There seems be a lot of confusion regarding these ARs and AGM extensions.  I think it’s all relating back to this FYE stuff.  We call it a 2021 Annual report, so people think it relates to the AGM held in 2021, but that’s not always the case.  We don’t collect FYE date in the filing, so it appears unimportant to the clients when they are filing. I’m sure there are coops filing ARs where they should have gotten AGM extensions, but they haven’t and the system has been permitting them to file.
+
+- Linda: When do we need to have AGM extensions implemented by?
+- April 30th, so they can file their ARs at a later date. 
+- Just like what we did for 2020, we usually give them 6 months beyond the date they should have held the AGM.
+- Two things we need to do:
+  1. Build AGM extension filing
+  2. Update annual reports, how they enter AGM dates, to include AGMs.
+- We could keep doing the paper AGM extensions for now, and just build the improved annual reports. This would solve blocked clients.
+- If staff do paper extensions, maybe we can do an ops ticket so the client can select the dates they want?? That might be really difficult.
+- We might need to release these features together. That would be simplest.
+
+- The covid extension was specific for the 2020 AR, so if they have the 2018 AR outstanding, when they go to file, they won't see those options.
+- Current state: clients can enter an agm date of up to april 30th of the followign year. this applies to all outstanding years. Except 2020, which will be april 30th of 2021, unless they check the checkbox for COVID and then they get until October 31st of 2021.
+
+----
+November ?
+----
+- historical states
+- 
