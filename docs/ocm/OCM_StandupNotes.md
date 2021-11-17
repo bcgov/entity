@@ -8,7 +8,7 @@
 
 - Trish will ask Kaine: how to update shadow ticket (which on RAID board)
 - Trish to create a small task to clean up the biz registry page, remove redundant files and etc??
-- Topic for discussion: who will support PPR OCM, (training material)
+- Topic for discussion: more resource to support PPR OCM, (training material)
 - Maribeth will review 9395 and 9772?
  - Almost done, will double check all exceptions: Add Deadline on each ticket, only exception is tickets for recurrence events  
 - Try one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
