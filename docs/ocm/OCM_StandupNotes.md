@@ -1,3 +1,39 @@
+### **16 Nov 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Kaine; Mags
+
+**Action Items: -**
+
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board)
+- Trish to create a small task to clean up the biz registry page, remove redundant files and etc??
+- Topic for discussion: who will support PPR OCM, (training material)
+- Maribeth will review 9395 and 9772?
+ - Almost done, will double check all exceptions: Add Deadline on each ticket, only exception is tickets for recurrence events  
+- Try one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- AP: add Fib est. and link in ticket for more information/later reference
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Nov16**:  will review 10022 and 9972   |  
+| **Maribeth** | **Nov16**:  9397 will look at today, new due date Nov19, first Sienna, the Maribeth; 9972 will hand over to Trish for review; 9913 OnHold; 9911. Mag’s task 8180   |   
+| **Mags** | **Nov16**:  NA    |   
+| **Sienna** | **Nov16**:  9401WIP, 9397 will add notes and handover to Maribeth    |   
+| **John** | **Nov16**:  9984 Onhold, and 9982 Done, Q from Olisa: need EA approval (Expense Approval – Check this in DryRun)  |   
+| **Suanne** | **Nov16**:  NR Form post to CMS(Done), agreed with Sienna will take lead for OneStop OCM/Staff Service Des, Communication out  with Staff for OneStop, support Job AIDS and etc related with OneStop decommissioning  and self serve changes; Communication with registration partners and analysis continues, probably on hold for deeper dive on the analysis around Hub/BNI until that resolved, and have a meeting with CRA to determine what’s possible, so not reaching out to our partners for the next couple of weeks; external partner (key influencers) pending confirmation with the Chamber in future; small biz bc; will update the decommission (postpone for 6 weeks); 9768 change name    |   
+| **Olisa** | **Nov16**:  Move 9775 to done,    |   
+| **Zac** | **Nov16**:  Ask Trish to review  10022 to review    |   
+| **Cameron** | **Nov16**:  Will participate in 9675 FAS Change Impact Assessment    |   
+
+**Decisions: -** 
+
+-  
+
+---
+
 ### **09 Nov 2021: Stand-up Summary** 
 
 **Absentees:-**
