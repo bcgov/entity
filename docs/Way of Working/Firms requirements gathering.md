@@ -9,6 +9,9 @@ November 17, 2021
 **Thoughts on the Sole Prop individual helptext?**
 - Design here: https://projects.invisionapp.com/d/#/console/21712216/460287156/comments
 
+**List of xpro corps that clients can enter?**
+https://projects.invisionapp.com/d/#/console/21712216/461089836/comments/146289330
+
 ----
 November 10, 2021
 ----
