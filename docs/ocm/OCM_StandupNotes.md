@@ -23,7 +23,7 @@
 | **Mags** | **Nov16**:  NA    |   
 | **Sienna** | **Nov16**:  9401WIP, 9397 will add notes and handover to Maribeth    |   
 | **John** | **Nov16**:  9984 Onhold, and 9982 Done, Q from Olisa: need EA approval (Expense Approval – Check this in DryRun)  |   
-| **Suanne** | **Nov16**:  NR Form post to CMS(Done), agreed with Sienna will take lead for OneStop OCM/Staff Service Des, Communication out  with Staff for OneStop, support Job AIDS and etc related with OneStop decommissioning  and self serve changes; Communication with registration partners and analysis continues, probably on hold for deeper dive on the analysis around Hub/BNI until that resolved, and have a meeting with CRA to determine what’s possible, so not reaching out to our partners for the next couple of weeks; external partner (key influencers) pending confirmation with the Chamber in future; small biz bc; will update the decommission (postpone for 6 weeks); 9768 change name    |   
+| **Suzanne** | **Nov16**:  NR Form post to CMS(Done), agreed with Sienna will take lead for OneStop OCM/Staff Service Des, Communication out  with Staff for OneStop, support Job AIDS and etc related with OneStop decommissioning  and self serve changes; Communication with registration partners and analysis continues, probably on hold for deeper dive on the analysis around Hub/BNI until that resolved, and have a meeting with CRA to determine what’s possible, so not reaching out to our partners for the next couple of weeks; external partner (key influencers) pending confirmation with the Chamber in future; small biz bc; will update the decommission (postpone for 6 weeks); 9768 change name    |   
 | **Olisa** | **Nov16**:  Move 9775 to done,    |   
 | **Zac** | **Nov16**:  Ask Trish to review  10022 to review    |   
 | **Cameron** | **Nov16**:  Will participate in 9675 FAS Change Impact Assessment    |   
@@ -58,7 +58,7 @@
 | **Mags** |**Nov09**:  non-ministry account email send out last Fri; Monitor mailbox;  9551 WIP will talk with Janis and Patrick return; 9555 will getting it ready and transfer to Maribeth during absent; Will clean up 8180; newly created 10013 and working on it (OCM - PPR Go Live - Product how-to videos for users#10013), waiting for Patrick; will meet with Suzanne for layout and etc. Will be working on 9772     |   
 | **Sienna** | **Nov09**:  working on7072 waiting Gen’s feedback (probably by tomorrow); will be working on 9401   |   
 | **John** | **Nov09**:  working on PPT deck 9984 and 9982 (Both Due: Nov12th)  |   
-| **Suanne** | **Nov09**:  had a meeting with Community Futures to do the presentation, will do a presentation in their manager meeting, 15 managers Nov 16th. Cycle back with Andrea for Future entrepreneur for her feedback;  put together the list of all of the messaging for the partners through BNI, so finish that list, reviewed it with John    |   
+| **Suzanne** | **Nov09**:  had a meeting with Community Futures to do the presentation, will do a presentation in their manager meeting, 15 managers Nov 16th. Cycle back with Andrea for Future entrepreneur for her feedback;  put together the list of all of the messaging for the partners through BNI, so finish that list, reviewed it with John    |   
 | **Olisa** | **Nov09**:  Carole has reviewed info Notes and now under Bev (ADM), next check point is next week    |   
 | **Zac** | **Nov09**:  working together with John on PPT deck 9984 and 9982 (Both Due: Nov12th) and a new ticket 10022 for Impact analysis for 9561 (please change the ticket title to make more sense)    |   
 | **Cameron** | **Nov09**:    |   
@@ -85,7 +85,7 @@
 | **Mags** |**Nov04**: Will be on vacation, Maribeth and Trish will cover;  New date for Sanbox? Will communicate later a new date(9555); Move 9552; 9862; 9553 to done; will review 9879; follow-up with Kaine/Melissa for API Sandbox communication    |   
 | **Sienna** | **Nov04**:  9208 under review, Trish will be reviewing this? New VD deadline most probably in Dec, will follow-up with Linda; will be working on 7072 , 8955   |   
 | **John** | **Nov04**: Transferred the email to non-ministry users to Zac who sent it around for review yesterday (9879). Worked with BCOL Admin to plan the invite flow for non-ministry accounts. This unblocked planning for Nov18 session. Note that some screens will not be final for those users on the 18th so demo will include some non-live portions based on UX pins. Question for Suzanne - are all BN Hub OCM tickets on the board and are there any in which I have an upcoming deliverable? |   
-| **Suanne** | **Nov04**: Trish suggested to breakdown 9896 into several tickets, one ticket for each task    |   
+| **Suzanne** | **Nov04**: Trish suggested to breakdown 9896 into several tickets, one ticket for each task    |   
 | **Olisa** | **Nov04**: Working on 9775 OCM - PPR Go Live - Info Note , has forward to Carole for reivew   |   
 | **Zac** | **Nov04**:working on 9879, which is under review    |   
 | **Cameron** |**Nov04**: NA   |   
@@ -117,7 +117,7 @@
 | **Mags** |**Nov02**: BCOL user communication, training plan for Business Registry Initiative; Set up a meeting next week; APl task Kaine is asking Thor for input, will follow-up. Q: Final approve for follow-up info session after Carole’s first initial approval.  Olisa suggested OCM team can decide/ collectively decision   |   
 | **Sienna** | **Nov02**: 9208 Voluntary Dissolution(VD) Impact assessment under review; Assign tickets to other teams. Tickets duplicated with Suzanne’s tickets, will use Suzanne’s ticket; Pull new task VD into In Progress  |   
 | **John** | **Nov02**: transfer 9879 to Zac, working on 8955 and two impacts session; then more focus on info sessions.|   
-| **Suanne** | **Nov02**: Women entrepreneur session yesterday, small biz & community future,  later Camber few come weeks later;  Finance partner info session awareness; ICBC handle themselves, we will provide the date   |   
+| **Suzanne** | **Nov02**: Women entrepreneur session yesterday, small biz & community future,  later Camber few come weeks later;  Finance partner info session awareness; ICBC handle themselves, we will provide the date   |   
 | **Olisa** | **Nov02**: Met policy team for PPR yesterday, it’s on track; Working on 9775; Engagement meeting went well  |   
 | **Zac** | **Nov02**: will discuss with John and take over non-ministry staff communication   |   
 | **Cameron** |**Nov02**: Together with Sienna and John, review impact yesterday Nov1st   |   
@@ -156,7 +156,7 @@
 | **Mags** |**Oct28**:Hold Info session  yesterday;  FAQ plan for all projects – create another epic 9862; API Communication with Kaine, Auth and payment; POST API communication, will talk with Trish 9838 |   
 | **Sienna** |**Oct28**: Knowledge base handover with Maribeth, will be working on VD(Voluntary Dissolution);  7072 is blocking? No Will work together with Suzanne ;All voluntary Dissolution tickets are ready to start  |   
 | **John** | **Oct28**: working on Campaign tickets; 8955: DL Nov1st, all will meet next Monday with others; 6966 is done; 7413 is closed ; 9675 Ready to start.|   
-| **Suanne** | **Oct28**: NA Material for present, Monday meeting future meeting (9790) – reuse the same slide deck (Follow-up with Suzanne)  |   
+| **Suzanne** | **Oct28**: NA Material for present, Monday meeting future meeting (9790) – reuse the same slide deck (Follow-up with Suzanne)  |   
 | **Olisa** | **Oct28**: Finial draft instruction, meeting on Monday, package will go with communication; Will assign tickets if applicable; Happy to review and approval tickets; Follow-up with Suzanne to review the content, send email to Suzanne |   
 | **Zac** | **Oct28**: Tag assessment talk with home team, establish connection, try to unde stand future status, will discuss on Monday |   
 | **Cameron** |**Oct28**: Cameron: Knowledge base is missing / update the doc; working on 8955, also working on assessment this morning  |   
@@ -187,7 +187,7 @@
 | **Mags** | **Oct26**:: Working with Cynthia for OIC package; will talk with Trish for internal stakeholder for PPR; Question about ticket granular level (will discuss in grooming/planning); working on 9555 and 9758, for google form/link will work together with Suanne; 9736 will talk with Kaine|   
 | **Sienna** | **Oct26**:: Will move some “In Progress ” tasks to other team members, will talk with Maribeth, Training session is top priority, also working on voluntary dissolution |   
 | **John** | **Oct26**:: 6966 for review; FAQ is a good idea. Ready for next session, will communicate with Mags and Maribeth. Will be working on 7413 and 9675.|   
-| **Suanne** | **Oct26**:: The rest cannot on-board, maybe have another info session later, 100 user/20 ministry users; Send partner group email; ICBC internal users (1700 internal users); have issue with ZH account; preparing presentation for next week influencer communication sessions: (Women biz and small biz ); also work on CMS tasks, finish names’ form  |   
+| **Suzanne** | **Oct26**:: The rest cannot on-board, maybe have another info session later, 100 user/20 ministry users; Send partner group email; ICBC internal users (1700 internal users); have issue with ZH account; preparing presentation for next week influencer communication sessions: (Women biz and small biz ); also work on CMS tasks, finish names’ form  |   
 | **Olisa** | **Oct26**:: 9704 has sent email yesterday, setup account; PPR is next task, will get Subject Matter Expert to join; 9776 will coming this week (Still in New Issue Pipeline); another related ticket 9775 |   
 | **Zac** | **Oct26**: New BA for Relationships team, will join OCM gradually |   
 | **Cameron** | **Oct26**: Work with Dashy DA team, and work with Thor to setup workshop, can help with GH/ZH user ID, Track all info; will review/approve tickets with in approve pipeline |   
@@ -220,7 +220,7 @@
 | **Mags** | **Oct21**: help with 27th session, ask Jyoti for recording; PPR communication; API communication|   
 | **Sienna** | **Oct21**: Move Video ticket to done, will send training material for review; 300 audiences will join;  will transfer part of work to Maribeth (From Trish); Current priority is voluntary dissolution for Nov16th or week after|   
 | **John** | **Oct21**: I'll be working on the email for 6966. I will check in via email with BCOL Admin for 7413 (touchpoint yesterday was cancelled due to absences on their side).|   
-| **Suanne** | **Oct21**: NA  |   
+| **Suzanne** | **Oct21**: NA  |   
 | **Olisa** | **Oct21**: NA |   
 | **Kaine** | **Oct21**: NA |   
 
@@ -248,7 +248,7 @@ None
 
 - John:  Engagement session presentation;  Verify identity, service card flow; BC ID flow to demo; general intro about mobile card
 
-- Suanne: Coordinate general stakeholders, set meeting with legal/gov; registry party meeting; move to ZH; to see what tools they have, any opportunities and speciality from general stakeholders
+- Suzanne: Coordinate general stakeholders, set meeting with legal/gov; registry party meeting; move to ZH; to see what tools they have, any opportunities and speciality from general stakeholders
 
 - Maribeth: Prepare for tomorrow’s engagement session (300 join tomorrow, and next 27 sessions); PI Planning move to ZH; Wills users have monthly session
 
