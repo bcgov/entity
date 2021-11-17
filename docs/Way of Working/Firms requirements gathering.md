@@ -2,6 +2,7 @@
 November 17, 2021
 ----
 **Pain points in registration**
+- Google jamboard: https://jamboard.google.com/d/1V0Eyxuajha6eVNkZdE755BMG5VU65Z_DnGovZvo2cJI/edit?usp=sharing
 
 **Thoughts on the DBA helptext?**
 - Design here: https://projects.invisionapp.com/share/3511UPXPMT2P#/screens/460952915
