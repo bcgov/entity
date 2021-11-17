@@ -4,6 +4,47 @@ November 17, 2021
 **Pain points in registration**
 - Google jamboard: https://jamboard.google.com/d/1V0Eyxuajha6eVNkZdE755BMG5VU65Z_DnGovZvo2cJI/edit?usp=sharing
 
+- _BN9 is entered incorrectly and needs to be corrected_
+  - Currently, BN can't be corrected by client easily
+  - Manual process with multiple steps to work with CRA
+  - CRA needs to make the change, we can't initiate the change
+  - We are accepting this pain
+
+- _BN9 is not entered, so one is generated, but the client actually had one already_
+  - CRA checks to make sure that the addresses don't match, they prevent duplicates
+  - Conversely, sometimes they don't get a BN at all (maybe the address check, maybe something else)
+    - Maybe solution: Add messaging to this field explaining that if they don't enter a BN here, one will be generated for them. They should go double check that they don't already have one, otherwise it will make a duplicate.
+    - Another solution: Let's add more general info on "what is a BN"? OneStop has something like that already, we can grab that info and fit it into the modernized help format
+
+- _BN shows on registration statement incorrectly_
+  - Banks look for BNs on registration statement, don't think we can remove it to reduce errors.
+  - We will have it on our modernized outputs, but it will be delayed. We send out an email later on once it has been generated. The BN used to be instant on OneStop. This could be a **future** pain point.
+
+
+- _Ammendments_
+  - People make so many mistakes when registering, and call right after submitting asking for quick fixes.
+    - Hopefully the modernized review page will prevent mistakes from being submitted
+  - Suggestion: Debbie worked with a nice solution at vital stats. The review page was actually a generated output (the final result) as the review page. So they could see what it would look like at the end.
+  - Ammending a business start date is terrible
+  - There is no form to make an ammendment. They have to file a statement of registration, we get them to write ammendment at the top.
+  - Ammendments are super manual via paper, write extra things on forms, really difficult to explain over the phone.
+    - Might simplify things if we just had a paper form similar to corp correction form. We can improve the paper form, AND the online form.
+    - build the correction filing like we will for corps. "correct company information" button, select what to edit.
+
+
+
+- _Proprietor spells their name incorrectly during registration, and we have to change their name_
+  - Lots of issues with this process currently
+  - We are going to build a filing where they can self-serve change what they want, file, and pay.
+  - Questions: Can they **just** change their legal name?
+    - Only if it was a legal change of name or they got married. They can't change Jim to Jimmy. The could change Jimmmm to Jimm (obviously a typo)
+    - We normally have subjective rules for these name changes. We want to make this self serve, which would be a process change.
+  - Let's dive deeper into this when we get to maintenance filings. There might be room to change with policy's approval.
+  - Note: GPs this is not a problem, super easy.
+
+
+
+
 **Thoughts on the DBA helptext?**
 - Design here: https://projects.invisionapp.com/share/3511UPXPMT2P#/screens/460952915
 
@@ -12,6 +53,19 @@ November 17, 2021
 
 **List of xpro corps that clients can enter?**
 https://projects.invisionapp.com/d/#/console/21712216/461089836/comments/146289330
+
+- **What can be changed and what can be ammended:**
+  - Changed:
+    - Address
+    - Business name
+    - Nature of Business
+    - Membership (GP only)
+  - Ammendments:
+    - Proprietor
+    - Business start date
+    - Put back on? Not organized under this section now, and we won't do that in the future
+  
+
 
 ----
 November 10, 2021
