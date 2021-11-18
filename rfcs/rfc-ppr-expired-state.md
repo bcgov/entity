@@ -5,48 +5,50 @@
 - Implementation PR: (leave this empty)
 
 # Summary
+Do not automate PPR registration transition from an active to an expired state.
+There is no cost effective solution to building a PPR nightly batch process that runs 
+just after midnight Pacific Time and transitions all database registrations that expired on the previous day to an expired state.
 
-Build a PPR nightly batch process that runs just after midnight and transitions all database registrations 
-that expired on the previous day to an expired state. 
+Background:
 - No changes may be made to expired registrations.
 - The scope is PPR API only: regardless of the decision, no change is required to the PPR UI. 
 
 # Motivation
-Implement an efficient solution to setting a registration to an expired state. Most PPR API operations require
+Explore implementing an efficient solution to setting a registration to an expired state. Most PPR API operations require
 examining and reporting on the registration state; an expired registration is a distinct state.
 Setting the state once and referencing a well-known value for all states is a desirable outcome.
 
 # Detailed design
 
 ## Create a PostgreSQL database table
-Record the status of the job in a new log table. This step may be unnecessary if pg_cron is 
-implemented.
+Record the status of the job execution in a new log table.
 
-## Create a PostgreSQL database function
-This function will transition the financing statement state from active (ACT) to expired (HEX) 
+## Create a PostgreSQL SQL Script
+This script will transition the financing statement state from active (ACT) to expired (HEX) 
 for all registrations that are active and expired at 23:59:59 Pacific Time on the previous day.
-The function will log the result and return a status.
-Estimated lines of code: < 50.
+The script will also log the status of the update in the new log table.
 
-## Create a scheduled k8s cronjob 
-Run the database function nightly after midnight Pacific Time. Add robustness/reliability including retrying
+## Create a script container 
+Create a container and python script that will run the SQL script.
+
+## Create a scheduled k8s cronjob/GCP cloud scheduler
+Schedule the script container to run daily just after midnight Pacific Time. Add robustness/reliability including retrying
 a number of times on failure.
-Estimated duration of job execution: < 1 minute.
 
 ## Add monitoring support
 Leverage existing monitoring: run a daily database query on the log table to report the status of the job.
 
 # Drawbacks
+- Significant effort to implement for small gain: not a cost effective solution.
 - Registries does not run any other PostgreSQL database scheduled jobs. Another process to maintain and monitor.
 - Some additional setup for monitoring and notification of job failures. 
 
 # Alternatives
 Update all API code that examines registration state as a condition to also compare the registration 
-expiry date to the system timestamp. Update all API responses that include registration state to also 
-conditionally set the state to expired with new code.
+expiry date to the system timestamp.
 Costs:
-- More code to update and maintain.
-- Overall API performance hit.
+- Small code change to the API.
+- Small overall API performance hit.
 
 # Adoption strategy
 - Needs to occur before PPR go-live.
