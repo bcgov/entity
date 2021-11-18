@@ -14,6 +14,23 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Nov 18
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+    - Working outside of Canada?
+    - Plan for Carol
+    - Optimize bcrs-shared-components #9874
+    - RFC for accommodating email templates #9073
+
+----
 Nov 5
 ----
 - Action Items / Carry Over
