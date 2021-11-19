@@ -6,10 +6,9 @@
 
 **Action Items: -**
 
-- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+- AP: add Fib est. and link in ticket for more information/later reference
 - Trish to create a small task to clean up the biz registry page, remove redundant files and etc??
 - Topic for discussion: more resource to support PPR OCM, (For training material and etc)
-- AP: add Fib est. and link in ticket for more information/later reference
 
 **Notes:-**
 
@@ -32,7 +31,7 @@
 - Add deadline on each ticket, only exception is tickets for recurrence events  
 - Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
 - Add Fib est. and link in ticket for more information/later reference
-
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
 
 ---
 
