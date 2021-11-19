@@ -1,3 +1,41 @@
+### **18 Nov 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Kaine; Mags; John
+
+**Action Items: -**
+
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+- Trish to create a small task to clean up the biz registry page, remove redundant files and etc??
+- Topic for discussion: more resource to support PPR OCM, (For training material and etc)
+- AP: add Fib est. and link in ticket for more information/later reference
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Nov18**: Jyoti is working on 9675, 9826 and 9549. Trish will review 9972, closed 9736   |  
+| **Maribeth** |**Nov18**:  Will review 9395, 9397, done 9736. Now working on 9838/9, will inform to update API page 9837.Close 9736. Can close 9551?  |   
+| **Mags** | **Nov18**:  NA    |   
+| **Sienna** | **Nov18**:  update status for 10018, and 9901. Working on current VD tickets and will consider which to pick next   |   
+| **John** | **Nov18**: NA   |   
+| **Suzanne** | **Nov18**:  NR Form post to CMS(Done), agreed with Sienna will take lead for OneStop OCM/Staff Service Des, Communication out  with Staff for OneStop, support Job AIDS and etc related with OneStop decommissioning  and self serve changes; Communication with registration partners and analysis continues, probably on hold for deeper dive on the analysis around Hub/BNI until that resolved, and have a meeting with CRA to determine what’s possible, so not reaching out to our partners for the next couple of weeks; external partner (key influencers) pending confirmation with the Chamber in future; small biz bc; will update the decommission (postpone for 6 weeks); 9768 change name    |   
+| **Olisa** | **Nov18**:  No Update    |   
+| **Zac** | **Nov18**:  Close 10022, Trish create a new ticket for Demo: 10141    |   
+| **Cameron** | **Nov18**:   NA   |   
+| **Melissa** | **Nov18**: Will have a meeting regarding 10017 on Tuesday. Will discuss with Patrick /Janis for 10013, 9551 and 9772   |   
+
+
+**Decisions: -** 
+
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+
+
+---
+
 ### **16 Nov 2021: Stand-up Summary** 
 
 **Absentees:-**
