@@ -14,7 +14,7 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
-Nov 18
+Nov 19
 ----
 - Action Items / Carry Over
     - RAID board
