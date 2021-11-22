@@ -5,18 +5,20 @@
 - Implementation PR: (leave this empty)
 
 # Summary
-Do not automate PPR registration transition from an active to an expired state.
-There is no cost effective solution to building a PPR nightly batch process that runs 
-just after midnight Pacific Time and transitions all database registrations that expired on the previous day to an expired state.
+Automate PPR registration transition from an active to an expired state.
+Build a PPR nightly batch process that runs just after midnight Pacific Time and transitions all database registrations that expired on the previous day to an expired state.
 
 Background:
+- Discharge registrations set the state to discharged (HDC).
 - No changes may be made to expired registrations.
-- The scope is PPR API only: regardless of the decision, no change is required to the PPR UI. 
+- The scope is PPR API only: regardless of the decision, no change to the PPR UI is required. 
 
 # Motivation
 Explore implementing an efficient solution to setting a registration to an expired state. Most PPR API operations require
 examining and reporting on the registration state; an expired registration is a distinct state.
 Setting the state once and referencing a well-known value for all states is a desirable outcome.
+Explicitly setting the state facilates identifying registrations that are eligible for "purging".
+Purging is a separate, future ETL process that moves records from the PPR active database to a historical one.
 
 # Detailed design
 
@@ -39,7 +41,6 @@ a number of times on failure.
 Leverage existing monitoring: run a daily database query on the log table to report the status of the job.
 
 # Drawbacks
-- Significant effort to implement for small gain: not a cost effective solution.
 - Registries does not run any other PostgreSQL database scheduled jobs. Another process to maintain and monitor.
 - Some additional setup for monitoring and notification of job failures. 
 
@@ -47,7 +48,7 @@ Leverage existing monitoring: run a daily database query on the log table to rep
 Update all API code that examines registration state as a condition to also compare the registration 
 expiry date to the system timestamp.
 Costs:
-- Small code change to the API.
+- Some code change to the API.
 - Small overall API performance hit.
 
 # Adoption strategy
