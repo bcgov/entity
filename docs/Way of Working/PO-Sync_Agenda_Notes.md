@@ -43,7 +43,7 @@ Nov 19
         - A meeting was held earlier this week to discuss it. So there's nothing else we need to discuss here.
     - Plan for Carol
         - Carol wanted to see a plan of how the entities work needs to be spread across the teams so that it gets done by end of September.
-        - ** Action - James to set up a meeting for Jyoti, Linda and Kaine to discuss long term plan **
+        - **Action - James to set up a meeting for Jyoti, Linda and Kaine to discuss long term plan**
         - Linda, Kaine and Jennifer Peaker to have a follow up conversation on budget this week
     - Optimizing BCRS shared components - #9874
         - It was designed in a way that it can only be used in the entity space and in order for this to be a real component or a micro service which can be used anywhere requires work
