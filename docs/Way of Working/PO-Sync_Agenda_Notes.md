@@ -30,6 +30,31 @@ Nov 19
     - Optimize bcrs-shared-components #9874
     - RFC for accommodating email templates #9073
 
+- Meeting Notes
+    - Reporting of escape defects
+        - We determined what our definition was and how we were going to measure them. It can be closed.
+    - Knowledge base for OPS
+        - No update
+    - Create presentation for PO commons
+        - James created some context slides
+        - Linda added a couple slides too. It's still a work in progress.
+        - Linda also really briefly ran our brainstorming ideas for the agenda passed Carol the other day. Carol would really like us to emphasize the role of the SRE
+    - Working outside of Canada
+        - A meeting was held earlier this week to discuss it. So there's nothing else we need to discuss here.
+    - Plan for Carol
+        - Carol wanted to see a plan of how the entities work needs to be spread across the teams so that it gets done by end of September.
+        - ** Action - James to set up a meeting for Jyoti, Linda and Kaine to discuss long term plan **
+        - Linda, Kaine and Jennifer Peaker to have a follow up conversation on budget this week
+    - Optimizing BCRS shared components - #9874
+        - It was designed in a way that it can only be used in the entity space and in order for this to be a real component or a micro service which can be used anywhere requires work
+        - Perhaps this something for Melissa.
+        - Assets has started talking about it so right now with PPR we don't have time. But we've started in this story mapping and there is some commenting features, but it's slightly different the way they used commenting like they have different types of annotations that they add.
+        - Assets will look at whether there is an opportunity to make it a real common component.
+    - RFC for accommodating email templates #9073
+        - This is one that we were talking about. It previous PO syncs and I think at some design Guild meetings was that depending on the person's browser, the email templates don't come across the same way. 
+        - Patrick is pursuing an RFC on a possible commercial solution. Jyoti and Melissa to provide feedback
+
+
 ----
 Nov 5
 ----
