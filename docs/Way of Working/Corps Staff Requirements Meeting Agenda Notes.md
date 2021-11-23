@@ -724,8 +724,10 @@ Nov 16 2021
 **You can have more than one warning on COLIN right?**
 - like NIGS and notin compliance, etc?
 - Yep 
+
+
 ----
-November ?
+November 23rd, 2021
 ----
 - historical states
-- 
+- Discuss paper process for dissolution, need policy's opinion. ([9401](https://app.zenhub.com/workspaces/ocm-team-space-5db37ce273e8f70001d9e2b1/issues/bcgov/entity/9401))
