@@ -729,5 +729,43 @@ Nov 16 2021
 ----
 November 23rd, 2021
 ----
-- [Historical states](https://docs.google.com/document/d/1dPQmA-fKMwGXG1uHAcN3-hDZCOAqmvTkiO7BHARi8no/edit?usp=sharing)
-- Discuss paper process for dissolution, need policy's opinion. ([9401](https://app.zenhub.com/workspaces/ocm-team-space-5db37ce273e8f70001d9e2b1/issues/bcgov/entity/9401))
+**Who should recieve outputs for coop and corp voluntary dissolution?**([8287](https://app.zenhub.com/workspaces/ocm-team-space-5db37ce273e8f70001d9e2b1/issues/bcgov/entity/8287))
+- **Corp**:
+  - Custodian email
+  - Completing party email
+  - Registered office (let's include them, in case someone dissoves them maliciously)
+- **Co-op**:
+  - Custodian email (they should get context as to why they are receiving this, and that they were registered to be the custodian, and what it means to be a custodian. They should get all outputs.)
+  - Completing party email
+  - Registered office (let's include them, in case someone dissoves them maliciously)
+
+- What does the receipt show?
+  - Currently in COLIN, there are issues with showing that and giving it to users.
+  - When Amber worked at Vital stats, it was policy to keep that confidential, it is like having a credit card, anyone could use it.
+  - Sienna to see if this is currently visible on reciepts, and if so, document risk until bcol is decomissioned
+
+
+**Discuss paper process for dissolution, need policy's opinion.** ([9401](https://app.zenhub.com/workspaces/ocm-team-space-5db37ce273e8f70001d9e2b1/issues/bcgov/entity/9401))
+
+**[Historical states]**(https://docs.google.com/document/d/1dPQmA-fKMwGXG1uHAcN3-hDZCOAqmvTkiO7BHARi8no/edit?usp=sharing)
+
+**Help text review**
+
+~**Outputs?**~
+
+**XPRO cancellation of registration**
+- is there a fee?
+  - Corps: $20
+  - Co-ops: ??
+
+- Filings for corps:
+  - Notice of Ceasing ($20) 
+  - Certificate from the HJ stating that they are defunct in the HJ (free)
+- Filings for co-ops:
+  - No filing, see info package. Submit a letter and give us $20. Legislation is quoted in the info package, and it states that it can be pretty basic and whatever they want. Section 197.1(1)
+  - Certificate from the HJ stating that they are defunct in the HJ (free)  Section 197.1(2)
+
+- Co-ops currently just get a plain ledger, no outputs.
+
+- Corps currently get a nice ledger item, and can now just recently file it self serve but still don't get outputs other than a receipt
+
