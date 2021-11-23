@@ -729,5 +729,5 @@ Nov 16 2021
 ----
 November 23rd, 2021
 ----
-- historical states
+- [Historical states](https://docs.google.com/document/d/1dPQmA-fKMwGXG1uHAcN3-hDZCOAqmvTkiO7BHARi8no/edit?usp=sharing)
 - Discuss paper process for dissolution, need policy's opinion. ([9401](https://app.zenhub.com/workspaces/ocm-team-space-5db37ce273e8f70001d9e2b1/issues/bcgov/entity/9401))
