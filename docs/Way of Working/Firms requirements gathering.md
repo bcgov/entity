@@ -1,4 +1,44 @@
 ----
+November 24, 2021
+----
+- Questions:  https://docs.google.com/document/d/19nKisnQ9Pw0H8wyIH-YDFeR4S3wAk4gtKlAbDC-KLNs/edit#
+
+**Entirely self serve, no staff intervention?**
+
+- Not sure we should allow the manual override to select a DBA proprietor company, clients might be able to register completely wrong things. Don't think we want to allow them to do that without our help.
+- We see very few of these unique ones that we need to do manually. Kyle has only seen credit union, and not registered in BC.
+
+
+**Maintenance filings**
+- three differnet maintnenace filings
+  - Change of proprietor/partnership registration (name, )
+  - Change in membership (to change your partners, GP only)
+
+- **Legal name change is not in the existing maintnenace filing**
+  - If the proprietor is an individual: They send a signed and dated letter, a piece of ID, and their certificate of name change (marrige, divorce, name change, etc.)
+  - If the proprietor is a corproation, they send a signed and dated letter, and a certificate of name change output
+    - it would be really cool if this automatically updates. Whenever a corp changes their name, their name of the proprietor of the DBA name also changes.
+    - It would also be really great if automatic updates would be made to the DBA when the proprietor corporation amalgamates. Possibly new name, new corproation number.
+  - Proposal: when a corp files an alteration to change their name, we call out that they currently have a DBA (or multiple DBAs) and we will let them know "we are going to update the proprietor name on your DBA(s)" and auto-update it.
+  - After the change is auto-made, the soleprop (DBA) gets a ledger item in their filing history to indicate that the DBA's proprietor name was changed. Ledger called "Change of proprietor/partnership registration" (it is kind of the same filing, and they get the same output).
+ 
+
+**Change of proprietor/partnership registration**
+- Address change (business, mailing, proprietor) (free, more important to have the correct info than get payment for this)
+- Nature of Business (free)
+- Change of Business Name ($40)
+
+
+**Ammendments**
+- The eqivalent of corporations "corrections"
+- Free
+- Difficult and manual
+- There is currently no form, they just write "ammendment" at the top of the original form.
+  - Then there would be no need for a dated and signed letter!
+
+
+
+----
 November 17, 2021
 ----
 **Pain points in registration**
@@ -32,7 +72,6 @@ November 17, 2021
     - build the correction filing like we will for corps. "correct company information" button, select what to edit.
 
 
-
 - _Proprietor spells their name incorrectly during registration, and we have to change their name_
   - Lots of issues with this process currently
   - We are going to build a filing where they can self-serve change what they want, file, and pay.
@@ -41,7 +80,6 @@ November 17, 2021
     - We normally have subjective rules for these name changes. We want to make this self serve, which would be a process change.
   - Let's dive deeper into this when we get to maintenance filings. There might be room to change with policy's approval.
   - Note: GPs this is not a problem, super easy.
-
 
 
 
