@@ -1,3 +1,41 @@
+### **23 Nov 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Suzanne
+
+**Action Items: -**
+
+- Trish will review tickets under Review pipeline
+- Trish to create a small task to clean up the biz registry page, remove redundant files and etc – Created 10109, Maribeth is working on this
+- Topic for discussion: more resource to support PPR OCM, (For training material and etc)
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Nov23**:  Discuss how to get more PPR account setup (have 100, vs potential 3000). Create new ticket: Info Note - PPR - Announce Go Live#10176 , move 9675 to  done; Create new ticket: Create Training Plan for PPR#10172  |  
+| **Maribeth** | **Nov23**:  almost done 10152, working on 10109, 10142, Follow up from Nov 18 Info Session  #10152 |   
+| **Mags** | **Nov23**:  closed  9772, add link for 10017 and can close it. Working on Send Reminder Email to PPR Users#10177    |   
+| **Genevieve** | **Nov23**:  Will be working on 9395 and other tickets from planning session    |   
+| **Sienna** | **Nov23**:  Will ask Trish to review 9397 and other tickets within In Progress pipeline , will prioritize form task   |   
+| **John** | **Nov23**:  Both current ticket OnHold, but still some tasks need to follow-up. Will review 10151   |   
+| **Suzanne** | **No23**:  NA    |   
+| **Olisa** | **Nov23**:      |   
+| **Zac** | **Nov23**:  working on 10141, will be following up progress    |   
+| **Cameron** | **Nov23**:  I have collected stats to put together information in respect to sole prop maintenance filings. I have also set aside time to review the FAS change impact assessment  |   
+| **Melissa** | **Nov23**:     |   
+
+
+**Decisions: -** 
+
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+
+---
+
 ### **18 Nov 2021: Stand-up Summary** 
 
 **Absentees:-**
