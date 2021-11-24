@@ -1,4 +1,4 @@
-## Standing Items for SRE Sprint Planning**
+## Standing Items for SRE Sprint Planning
 -	Check alignment btw ZH Board and PI Board (Optional)
 -	Review current pipeline tasks, current workload for team
 -	Planning work for coming two weeks: move from “To Do” to “Priority” 
@@ -6,7 +6,22 @@
 -	Consider:  Definition of Ready for Ticket (Sizing, Acceptance Criteria)
 -	Consider:  Provide Est (In Fib, and benchmark for the sizing?) 
   
-## Nov 9th  2021 Assets Sprint Planning Meeting Memo
+## Nov23rd  2021 SRE Sprint Planning Meeting Memo
+
+**Absences: -** 
+-	No
+
+**Action Items:-**
+-	Considering the general work load (%) for Names support, then others for core SRE tasks (Kaine’s suggestion is 50%) – will start from providing est for all Names Ops Support tickets
+-	Team to provide vacation update for Xms and New Year
+-	Create sprint goal ticket for SER
+
+**Notes:-**
+![image](https://user-images.githubusercontent.com/87034722/143175050-08352f1f-536e-44d0-a0f0-0972ae7103b9.png)
+
+---
+
+## Nov 9th  2021 SRE Sprint Planning Meeting Memo
 
 **Absences: -** 
 -	No
@@ -24,7 +39,7 @@
 
 ---
 
-## **Oct 26th 2021 Assets Sprint Planning Meeting Memo**@here 
+## **Oct 26th 2021 SRE Sprint Planning Meeting Memo**@here 
 
 **Absences: -**
 - No
