@@ -1,3 +1,23 @@
+## **Nov 25 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Richard, Patrick
+
+**Notes:-**
+
+![image](https://user-images.githubusercontent.com/87034722/143494371-432e7a84-ac30-4ae6-a7c4-f603be6fe244.png)
+
+**Action Items: -**
+
+-	To be confirmed: Patrick to discuss with Linda to move Steven’s tasks to SRE
+
+**Decisions: -** 
+
+- Will disucss all tickets within "New Issues" during planning
+
+---
+
 ## **Nov 18 2021: Stand-up Summary** 
 
 **Absentees:-**
