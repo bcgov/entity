@@ -1,3 +1,53 @@
+### Standing Iterms for Standup
+- RC discussion / highlight 
+- Update from Trish; 
+- Tickets pending review; 
+- Go through epics/tasks (Skip some regular tasks/ tasks not in In Progress)
+
+---
+
+### **25 Nov 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Genevieve 
+
+**Action Items: -**
+
+- All: Some tickets with no deadline, and/or no estimation, please add 
+- Trish will review tickets under Review pipeline
+- On Hold for ministry, non-ministry and FAS epics, will have a meeting first then create new tickets if needed
+- Trish will have a discussion with Kaine to understand issues and risk for API publish. (Update and publish API pages#9837)
+- TBC: Suzanne: will revisit all OneStop tickets and adjust to new date based on new decommission date on March31st 2022 (Epic: 9766)
+- Topic for discussion: more resource to support PPR OCM – From Olisa, has been approved by Carole 
+
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Nov25**:  Created new epic for - OCM - Phase out BC OnLine Draw Down Accounts#10202 ->  Task: 10204; Created PPR Training 10189 -> Task 10172 (training plan: who/what/how for training material ), move 9972 back RTS  |  
+| **Maribeth** | **Nov25**:  finished 10142 and 10152, pass over to Trish for review; Haven’t check status for 10109, will take part of OCM - Voluntary Dissolution: OneNote Procedures#9396 from Sienna later |   
+| **Mags** | **Nov25**:  Working on Create Training Plan for PPR # 10172; and Modal pop-up in BCOL#10181; Send Reminder Email to PPR Users#10177;  finished Create how-to document: add PPR as a service to existing Premium accounts#10180, reviewed by Trish and move to done    |   
+| **Genevieve** | **Nov25**:  NA   |   
+| **Sienna** | **Nov25**:  9401 is waiting Amber’s comments. 10002 closed? Working on Impact Assessment Business Summary - Due Dec 7#9671 (together with Cameron); and  Impact Assessment Business Summary - Due Dec 7#9671 ; Wil start OCM - Voluntary Dissolution: OneNote Procedures#9396 once finish current priority;   |   
+| **John** | **Nov25**:     |   
+| **Suzanne** | **Nov25**:   regular external/internal stakeholder engagement meetings   |   
+| **Olisa** | **Nov25**:  one OCM resource has been approved by Carole     |   
+| **Zac** | **Nov25**:  Regarding 10141, will demo on Tuesday (Missing est)   |   
+| **Cameron** | **Nov25**:  Help with Train PPR Staff on Account Setup and Logging in (Due: Dec 10th )#10016; working on Impact Assessment Business Summary - Due Dec 7#9671 (Together with Sienna)  |   
+| **Melissa** | **Nov25**:  Patrick is working on OCM - PPR Go Live - Product how-to videos for users#10013    |   
+
+
+**Decisions: -** 
+
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+
+---
+
 ### **23 Nov 2021: Stand-up Summary** 
 
 **Absentees:-**
