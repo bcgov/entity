@@ -26,6 +26,25 @@ Nov 26
 
 - New Business
     - Adding Credit card option for Premium Account
+
+- Meeting Notes
+    - Adding credit card option for premium account.
+        - Payment options - we have the capability to add payment options without a lot of changes required. In case the premier count can pay with credit card. Something that might be considered in the future
+        - Jyoti will follow up in a session in future if this is required
+    - Adding change management issue discussion to the release planning meeting.
+        - are we are able to optimize the meeting?
+        - we are looking at mostly the same items but with two different set of folks, obviously the angle is different. We want to have all the issues highlighted by the business leads so that we can act upon it.
+        - this is the Thursday after 1:00 PM meeting that we're talking about that we have with the business.
+        - **Decision** just leave it as is for now.
+    - Vacation calendar.
+        - So currently we're using a pinned message within Rocket Chat
+        - Suggestion is that we move to using a shared Excel spreadsheet.
+		- **Decision** use a shared Excel spreadsheet to track holidays
+        - Jinghua will populate the spreadsheet with everyone's name and each person will take responsibility for entering their own vacation
+    - Ops Team retro
+        - The ops team would like to have a retro to raise concerns and then come up with an action plan.
+        - **Action** - Jyoti to follow up and check with Sienna.
+
 ----
 Nov 19
 ----
