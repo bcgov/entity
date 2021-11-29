@@ -24,7 +24,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 |---|----------------------|--------------------|-------------------------|
 
 -----------------------------------------------------------------------------------------------------------------------
-### November 30, 2021 - Sprint (Milestone) 11.3 - 70 min. total 
+### November 30, 2021 - Sprint (Milestone) 11.4 - 70 min. total 
 
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
