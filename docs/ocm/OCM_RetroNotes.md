@@ -18,7 +18,7 @@ https://app.mural.co/t/leadingsafetrainingtemplate5894/m/leadingsafetrainingtemp
 **Action Items:-** 
 - All: Move tickets to Done, then Trish will move to Closed
 - All: We will need to enforce our process more stronger, to think ahead what will be required of teams to give them lead time.
-- Cameron to follow-up with Debbie to get more Sharon’s involvement, to free up Sharon's time, 
+- Cameron will follow-up with Debbie to get more Sharon’s involvement, to free up Sharon's time, 
 - OCM short staffed: got management approval to hire OCM contractors
 - Reuse existing answers for client questions – Trill will reorganize Google Drive, move from SharePoint
 - Multiple assignees to tickets could sometimes be confusing - AP: Jinghua, during standup explain this, one person per ticket, add comments on ticket tag next person for handover
