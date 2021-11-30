@@ -769,3 +769,6 @@ November 23rd, 2021
 
 - Corps currently get a nice ledger item, and can now just recently file it self serve but still don't get outputs other than a receipt
 
+
+# future meeting notes can be found here:
+**https://docs.google.com/document/d/1Zv6zacNjyJETEn03OqItGu2k7G3UXet6mAJFxlOvg_w/edit?usp=sharing**
