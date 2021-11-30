@@ -1,4 +1,16 @@
 ----
+December 1, 2021
+----
+Why self-serve only
+
+Outputs review - https://projects.invisionapp.com/share/7S11WSHXM8NJ#/screens?browse
+
+
+
+
+
+
+----
 November 24, 2021
 ----
 - Questions:  https://docs.google.com/document/d/19nKisnQ9Pw0H8wyIH-YDFeR4S3wAk4gtKlAbDC-KLNs/edit#
