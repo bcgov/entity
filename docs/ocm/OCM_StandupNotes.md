@@ -10,30 +10,30 @@
 
 **Absentees:-**
 
-- Genevieve 
+-  
 
 **Action Items: -**
 
-- All: Ticket naming: “FORM – “, and “Website – “ for all form and website related task 
+- All: Ticket naming: start from “FORM – “, and “Website – “ for form and website related ticket 
 - All: update leave tracker 
-- AP from Retro
+- Review AP from Retro
 - All: Some tickets with no deadline, and/or no estimation, please add 
 
 **Notes:-**
 
 | Name | Update | 
 | --- | ---- | 
-| **Trish** | **Nov25**:  Created new epic for - OCM - Phase out BC OnLine Draw Down Accounts#10202 ->  Task: 10204; Created PPR Training 10189 -> Task 10172 (training plan: who/what/how for training material ), move 9972 back RTS  |  
-| **Maribeth** | **Nov25**:  finished 10142 and 10152, pass over to Trish for review; Haven’t check status for 10109, will take part of OCM - Voluntary Dissolution: OneNote Procedures#9396 from Sienna later |   
-| **Mags** | **Nov25**:  Working on Create Training Plan for PPR # 10172; and Modal pop-up in BCOL#10181; Send Reminder Email to PPR Users#10177;  finished Create how-to document: add PPR as a service to existing Premium accounts#10180, reviewed by Trish and move to done    |   
-| **Genevieve** | **Nov25**:  NA   |   
-| **Sienna** | **Nov25**:  9401 is waiting Amber’s comments. 10002 closed? Working on Impact Assessment Business Summary - Due Dec 7#9671 (together with Cameron); and  Impact Assessment Business Summary - Due Dec 7#9671 ; Wil start OCM - Voluntary Dissolution: OneNote Procedures#9396 once finish current priority;   |   
-| **John** | **Nov25**:     |   
-| **Suzanne** | **Nov25**:   regular external/internal stakeholder engagement meetings   |   
-| **Olisa** | **Nov25**:  one OCM resource has been approved by Carole     |   
-| **Zac** | **Nov25**:  Regarding 10141, will demo on Tuesday (Missing est)   |   
-| **Cameron** | **Nov25**:  Help with Train PPR Staff on Account Setup and Logging in (Due: Dec 10th )#10016; working on Impact Assessment Business Summary - Due Dec 7#9671 (Together with Sienna)  |   
-| **Melissa** | **Nov25**:  Patrick is working on OCM - PPR Go Live - Product how-to videos for users#10013    |   
+| **Trish** | **Nov30**:  reviewed tickets, move 9549 to done, had meeting for FAS, ministry and non-ministry, will create epics/plan tasks for coming work  |  
+| **Maribeth** | **Nov30**:  working on Remove redundant files for BC Registry Resources Page#10109, on hold OCM - Ministry Govt Accts - reminder to advise Acct Admin - due Dec 1#10253  |   
+| **Mags** | **Nov30**:  working on 10181, 10152    |   
+| **Genevieve** | **Nov30**:  working on 8481 Form for Co-op, will chat with Sienna, need to merge two ticket for the same task, and assigned API website update 9838 to Gen   |   
+| **Sienna** | **Nov30**:  9401 waiting Amber’s input, will schedule meeting with Linda/Trish for 9671, Fworking on 9396, 10018 waiting for Linda, not urgent, we don’t need DL for now.  |   
+| **John** | **Nov30**:  Has finished review 10152 for Mags, will be working on 10257    |   
+| **Suzanne** | **Nov30**:  Schedule regular meeting with BC Chamber and Futurprenueur, transfer 9838, 9768 to Gen    |   
+| **Olisa** | **Nov30**:  Working on new resource hiring     |   
+| **Zac** | **Nov30**:  will provide demo 10141   |   
+| **Cameron** | **Nov30**:  working on 10016- training session with account setup and logging in  |   
+| **Melissa** | **Nov30**:   NA   |   
 
 
 **Decisions: -** 
