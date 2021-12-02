@@ -25,10 +25,9 @@ Dec 3
     - PI Planning Board - Dependencies
 
 - New Business
-    - 
 
 - Meeting Notes
-    - 
+
 ----
 Nov 26
 ----
