@@ -6,6 +6,54 @@
 
 ---
 
+### **02 Dec 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+-  Zac (Provided update in RC)
+
+**Action Items: -**
+
+- All: Trying wherever applicable: one assignee per ticket: when finish your own work, change assignee and assign ticket to next person who need to continue, meantime add comments in ticket 
+- Trish: will create epic/plan for FAS, Ministry and Non-ministry 
+- All: Please send Maribeth all final response email, so that can be added to the KB for future responses.
+- Gen/Suzanne: Ticket re-naming under epic 10316: start from “FORM – “, and “Website – “ for form and website related ticket 
+- John: Update new deadline on ministry info session and non-ministry info session (9913 and 10321) (when we have that information)
+- Maribeth: update new due date for OCM - Ministry Govt Accts - reminder to advise Acct Admin - due Dec 1#10253 (when we have that information)
+- Some tickets without epics missing update, if current assignee can update that in each ticket 😊
+	- Maribeth: Remove redundant files for BC Registry Resources Page#10109
+	- Cameron: Decision - Will Maximus support Firm Maintenance filings when these filings move from paper to online?#10107
+- All: update leave tracker 
+- All: Some tickets with no deadline, and/or no estimation, please add 
+
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Dec02**:  Working on epic: OCM - Phase out BC OnLine Draw Down Accounts#10202  |  
+| **Maribeth** | **Dec02**:  working on OCM - Ministry Govt Accts - reminder to advise Acct Admin - due Dec 1#10253  |   
+| **Mags** | **Dec02**:  Move Communication to API users to let them know API's are ready - Due Dec 1#10291 to done;  Working on  Create training timeline for PPR to share with SBC and Leads#10225, Update BCOL Annoucements#10325; Push a message into BC OnLine users' mailboxes about PPR/modernization#10181; Post API update to Mod Site and BCOL#10323; Update PPR Messaging in PPR mainframe app & BC Registries Modernization Page#10272    |   
+| **Genevieve** | **Dec02**:  Update bcreg.ca to highlight modernization initiative resources#10185; Post API update to Modernization Site #9838; FORM - Create new form for co-op incorporation + remove reference of old working forms#8481 |   
+| **Sienna** | **Dec02**:  Update bcreg.ca to highlight modernization initiative resources#10185; Post API update to Modernization Site #9838; FORM - Create new form for co-op incorporation + remove reference of old working forms#8481 |   
+| **John** | **Dec02**:  Preparing deck for ministry and non-ministry info session, remove “On Hold” tag from both epics, including OCM - Schedule Ministry Government Account Users Information Session (round 2) #10321, OCM - Non-Ministry Govt Accounts - Information Session (Nov 18) setup and logistics#9913 ; Working on OCM - BCeID Additional Admin - Job Aide#9679 (under epic 9677);     |   
+| **Suzanne** | **Dec02**:  OCM - One Stop - Hub/BNI Messaging - Needs Assessment#9891; OCM - One Stop - Hub/BNI Messaging - Needs Assessment#9891; SP & GP Registrations - Engagement for firm filings BC Chamber and Futurpreneur#8961   |   
+| **Olisa** | **Dec02**:  working on 10310 French translation, will finish soon     |   
+| **Zac** | **Dec02**:  I completed the demos for 10141   |   
+| **Cameron** | **Dec02**: Provide training regarding  Train PPR Staff on Account Setup and Logging in (Due: Dec 10th )#10016  |   
+| **Melissa** | **Dec02**:  Patrick will provide input by end of this week for OCM - PPR Go Live - Product how-to videos for users (deadline: mid-December)#10013  |   
+
+
+**Decisions: -** 
+
+- Team move tickets to Done, then Trish will move to Closed
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+
+---
+
 ### **30 Nov 2021: Stand-up Summary** 
 
 **Absentees:-**
