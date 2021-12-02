@@ -4,6 +4,21 @@ Agenda and description re this meeting- see here in Meetings overview:
 https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/DocIdRedir.aspx?ID=S52QENDTEJAE-1724982671-2193 
 
 ---
+Dec 02
+---
+- Action Items
+
+
+- Standing Items
+    - What are your upcoming goals / how are you progressing
+    - Do you have any blockers
+    - Do you have any dependencies on other teams
+    - Is there anything in your most recent retro that is beyond your influence (every 2 weeks) 
+
+- New Business
+
+ 
+---
 Nov 10
 ---
 - Action Items
