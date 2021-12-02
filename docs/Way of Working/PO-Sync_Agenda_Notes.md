@@ -14,6 +14,22 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Dec 3
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+    - 
+
+- Meeting Notes
+    - 
+----
 Nov 26
 ----
 - Action Items / Carry Over
