@@ -14,7 +14,7 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
-Dec 3
+Dec 10
 ----
 - Action Items / Carry Over
     - RAID board
@@ -27,6 +27,39 @@ Dec 3
 - New Business
 
 - Meeting Notes
+
+----
+Dec 3
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+    - QA coverage for the SRE team.
+    - PO sync meetings for December the 24th and 31st.
+    - Tri-weekly and Release Planning in December
+    - Vital Stats vs PPR
+
+- Meeting Notes
+    - QA coverage for the SRE team.
+        - Patrick reached out to Kaine about not having enough QA resources to test things.
+        - Patrick is asking who he could call on for extra QA help.
+        - FYI Patrick might be reaching out to some of the other teams for help.
+        - In the new year it would be good to have the QA from Relationships team to start picking up some entities to get ready for the feature team plan.
+        - **Action** - Linda will touch base with Patrick
+    - PO sync meetings for December the 24th and 31st.
+        - **Decision** meetings will be cancelled
+    - Tri-weekly and Release Planning in December
+	    - Linda is meeting with ELT on Monday and will ask about the triweekly and release planning meetings. How many will be happening over the month of December?
+    - Vital Stats vs PPR
+        - Trish approached Melissa about the possiblity of setting up PPR in a similar way to Vital Stats.  For background, vital stats have an approval flow. So rather than having to have people click that they want something and then having that cause work for internal staff, we identified if someone already has an account and then preset that for them. That just reduces a lot of effort. With PPR there is no approval flow. So that is the key difference between the two.
+        - There was a decision made with PPR that people should be choosing the product rather than automatically defaulting it a premium account.
+        - The piece that is missing is in BC online there is a restricted track and there is a subscription code. For PPR that restricted flag is the one for the Crown registrations. That one we integrated that anyone who has the flag in BC online they will get that restricted access. But there is no flag as such for the basic PPR product. It has a subscription code and that's why it never went to an automation mode.
 
 ----
 Nov 26
