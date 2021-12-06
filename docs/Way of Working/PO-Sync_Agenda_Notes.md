@@ -14,7 +14,7 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
-Dec 10
+Dec 10, 2021
 ----
 - Action Items / Carry Over
     - RAID board
@@ -29,7 +29,7 @@ Dec 10
 - Meeting Notes
 
 ----
-Dec 3
+Dec 3, 2021
 ----
 - Action Items / Carry Over
     - RAID board
@@ -62,7 +62,7 @@ Dec 3
         - The piece that is missing is in BC online there is a restricted track and there is a subscription code. For PPR that restricted flag is the one for the Crown registrations. That one we integrated that anyone who has the flag in BC online they will get that restricted access. But there is no flag as such for the basic PPR product. It has a subscription code and that's why it never went to an automation mode.
 
 ----
-Nov 26
+Nov 26, 2021
 ----
 - Action Items / Carry Over
     - RAID board
@@ -94,7 +94,7 @@ Nov 26
         - **Action** - Jyoti to follow up and check with Sienna.
 
 ----
-Nov 19
+Nov 19, 2021
 ----
 - Action Items / Carry Over
     - RAID board
@@ -136,7 +136,7 @@ Nov 19
 
 
 ----
-Nov 5
+Nov 5, 2021
 ----
 - Action Items / Carry Over
     - RAID board
@@ -175,7 +175,7 @@ Nov 5
         - Kaine and Jyoti to arrange a meeting if necessary
 
 ----
-Oct 29
+Oct 29, 2021
 ----
 - Action Items / Carry Over
     - Recording sprint goals when Zenhub milestones disappear
@@ -228,7 +228,7 @@ Oct 29
         -  We need tickets for each team to do their own work under here.
 
 ----
-Oct 22
+Oct 22, 2021
 ----
 - Action Items / Carry Over
     - Manage PI 11 planning risk items 
@@ -433,7 +433,7 @@ OK cool. So next week sometime.
 
 
 ----
-Oct 15
+Oct 15, 2021
 ----
 - Action Items / Carry Over
     - Manage PI 11 planning risk items 
@@ -468,7 +468,7 @@ Oct 15
         - approved
 
 ----
-Oct 8
+Oct 8, 2021
 ----
 - Action Items / Carry Over
     - Shared VON component - looks like we will build our own search
@@ -490,7 +490,7 @@ Oct 8
     - 
 
 ----
-Oct 1
+Oct 1, 2021
 ----
 - Action Items
     - Research UX - All Apps#7919
@@ -517,7 +517,7 @@ Oct 1
 
  
 ----
-Sept 24
+Sept 24, 2021
 ----
 - Action Items
     - Test accounts in prod - SRE team to provide an explanation that POs can take to Ian B
@@ -548,7 +548,7 @@ Sept 24
     - PI planning agenda
 
 ----
-Sept 17
+Sept 17, 2021
 ----
 - Action Items
     - Create CRM User stories - Kaine
@@ -581,7 +581,7 @@ Sept 17
         - **Kaine to look at providing a BA
 
 ----
-Sept 10
+Sept 10, 2021
 ----
 - Action Items
     - Create CRM User stories - Kaine
@@ -636,17 +636,17 @@ Sept 10
 
 
 ----
-Sept 3
+Sept 3, 2021
 ----
 - No Meeting
 
 ----
-Aug 27
+Aug 27, 2021
 ----
 - No Meeting
 
 ----
-Aug 20
+Aug 20, 2021
 ----
 - Action Items
 
@@ -690,7 +690,7 @@ Aug 20
     - **Meet with home team / Dwayne about procurement of resources in Sept - Kaine
 
 ----
-Aug 13
+Aug 13, 2021
 ----
 - Action Items
     - Service Fee - no final answer yet - Linda to contact Kim Wiley **
@@ -711,7 +711,7 @@ Aug 13
     - Linda ask gov't employees within modernization team asked to provide preference regarding return to work - deadline eod today
     - PI 11 planning - agreement on the provided agenda
 ----
-Aug 6
+Aug 6, 2021
 ----
 - Action Items
     - Service Fee - no final answer yet - Linda to contact Kim Wiley **
@@ -740,11 +740,11 @@ Aug 6
     - Staff search - plan developed during the design meeting
     - Mung will be away for 6 weeks starting Aug 9th 
 ----
-July 30
+July 30, 2021
 ----
 - **Meeting Cancelled**
 ----
-July 23
+July 23, 2021
 ----
 - New Business
     - Review the Program Kanban
@@ -759,7 +759,7 @@ July 23
         - Linda to follow up with Melissa **
 
 ----
-July 16
+July 16, 2021
 ----
 - Action Items
     - Linda to follow up this week on COLIN migration
@@ -787,7 +787,7 @@ July 16
         - Raise during PI planning
         - Each team will set up speed demo on Monday - scrum masters to set up
 ----
-July 9
+July 9, 2021
 ----
 - Action Items
     - Linda to follow up this week on COLIN migration
