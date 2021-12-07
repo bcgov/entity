@@ -11,6 +11,78 @@
 
 ## Nov 23rd 2021 Assets Sprint Planning Meeting Memo ** @here 
 **Absences: -** 
+-	Suzanne, Linda, Jyoti
+
+**Action Items:-**
+- All team member: review their own ticket, add description, add deadline (if applicable), add Fib est on all OCM Tickets Under In Progress 
+- Trish: will create new tickets for Business Summary based on impact assessment (Epic: 9670)
+-  All: update leave tracker
+- Jinghua: add Dec24 as due date for epic:  OCM - Non-Ministry Accounts Work#9545 and move RTS tickets to InProgress (Code planned to be ready Dec28)
+- Maribeth: Do we need to add Due date (Dec16th)on ticket? OCM - Schedule Ministry Government Account Users Information Session (round 2) #10321 
+- Jinghua: ticket 9677 move all RTS tickets to InProgress
+
+
+**Notes:-**
+**Tickets under RTS + In Progress**
+
+- Epic OCM - Phase out BC OnLine Draw Down Accounts#10202 
+	- 3 tickets under RTS
+	- Trish will discuss with Carole first for management decision/approval 
+- Epic: OCM - BC Business Summary#9670, move to EIP
+	- Sienna: 9671 Impact Assessment: done
+- Epic: OCM - Voluntary Dissolution (Co-op, Corporation)#9207 (RTS – Any new pick)
+	- RTS: OCM - Voluntary Dissolution: government website announcement#9395
+	- RTS: OCM - Voluntary Dissolution: Create email macros (DEC 12)#9400
+	- RTS: Genevieve: OCM - Voluntary Dissolution - Create BComp info package#10036
+	- RTS: Genevieve: OCM - Voluntary Dissolution: Send communication to admin team (DEC 9)#10089
+	- OCM - Voluntary Dissolution - COOP and BEN Form Changes#10021  
+	- OCM - Voluntary Dissolution: Process Change Paper to Online#9401
+	- OCM - Voluntary Dissolution: government website updates#9394
+	- OCM - Voluntary Dissolution training (co-op and bcomp) (DEC 12)#9393
+	- Review: OCM - Voluntary Dissolution: OneNote Procedures#9396: Pending Julie’s review now
+- Epic: OCM activities in support of FAS#8671
+	- RTS: OCM - Schedule and Coordinate UAT/Training for FAS - due Dec #10377
+	- RTS: OCM - Understand and confirm Processes & Support with CAS - due Dec/Jan to support Feb go live#10376
+- Epic: OCM - BCeID Additional Admin work#9677
+	- Move all RTS tickets (9) to In Progress and will assign tickets to new team member
+- Epic: OCM work for Government Accounts Release#6965
+	- 5 Tickets under RTS, un-assign Jyoti and assign to John
+	- OCM - Schedule Ministry Government Account Users Information Session (round 2) #10321
+- Epic: OCM - Non-Ministry Accounts Work#9545 
+	- Provide demo/walk through to BCOL Admin staff on process (Due: Dec24)#10243
+	- Communicate process to BCOL Admin - how they will identify non-min gov accounts if user setup a Premium (Dec24)#10354
+	- Create checklist/training material for BCOL Admin for non-ministry gov accounts (Dec28)#10239
+- Epic: OCM - API Work#7059
+	- OCM - Create Job Aide guide to help users understand PAD process (needed for non-min and API users) - due Dec 17#10399
+	- Define Ops process once key request is received#10391
+	- Post API update to Mod Site and BCOL#10323
+	- OnHold and move back to RTS: Update and publish API pages#9837
+- Epic: OCM - PPR Training#10189
+	- 3 Tickets under RTS
+	- Train PPR Staff on Account Setup and Logging in (Due: Dec 10th )#10016
+	- OCM - PPR Go Live - Product how-to videos for users (deadline: mid-December)#10013
+	- OCM - PPR SBC Regional Office Job Aide - (Deadline: Dec 10, send to SBC by Dec 13 A.M.)#10259
+	- Dec 16th Info Session - due Dec 15th - Update slides, Logistics and possible follow up work#10289
+- Epic: OCM - PPR Work#7909
+	- 5 Tickets under RTS
+	- OCM - Create Job Aide guide to help users understand PAD process (needed for non-min and API users) - due Dec 17#10399
+	- WEB - Update PPR Messaging on BC Registries Modernization Page#10272
+	- PPR - Review and update PPR website content pages Due Jan 25th#10314 
+	- FORM- FIN 630 - PPR Search Request Due Jan 12th#9848
+	- Email to BCOL PPR users (due: Dec 14)#10349
+	- Train PPR Staff on Account Setup and Logging in (Due: Dec 10th )#10016
+	- BCOL Message OR Modal OR Both - waiting on response from Steven (deadline: N/A)#10181
+	- OCM - PPR Go Live - Product how-to videos for users (deadline: mid-December)#10013
+	- Dec 16th Info Session - due Dec 15th - Update slides, Logistics and possible follow up work#10289
+
+**Current Board Dec07 -** # of issues
+- Ready to Start: 25, In Progress: 39: Review: 2; Approval: 3; Done: 40
+
+
+---
+
+## Nov 23rd 2021 Assets Sprint Planning Meeting Memo ** @here 
+**Absences: -** 
 -	Suzanne
 
 **Action Items:-**
@@ -81,11 +153,12 @@
 **Others we didn’t review**
 - Epic: OCM - My Registry Dashboard work#9586 (Under Epic, not EIP)
 
-**Current Board Nov09 -** # of issues
+**Current Board Nov23 -** # of issues
 - Ready to Start: 8, In Progress: 28: Review: 4; Approval: 0; Done: 17
 
 
 ---
+
 ## Nov 9th 2021 Assets Sprint Planning Meeting Memo ** @here 
 **Absences: -** 
 - NA
