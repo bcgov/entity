@@ -6,6 +6,21 @@
 -	Consider:  Definition of Ready for Ticket (Sizing, Acceptance Criteria)
 -	Consider:  Provide Est (In Fib, and benchmark for the sizing?) 
   
+## Dec07  2021 SRE Sprint Planning Meeting Memo
+
+**Absences: -** 
+-	Thor
+
+**Action Items:-**
+
+
+**Notes:-**
+
+![image](https://user-images.githubusercontent.com/87034722/145141315-a8472d64-d64b-4089-ba73-37e867146509.png)
+
+
+---
+
 ## Nov23rd  2021 SRE Sprint Planning Meeting Memo
 
 **Absences: -** 
