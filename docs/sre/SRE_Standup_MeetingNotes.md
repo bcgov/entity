@@ -1,3 +1,23 @@
+## **Dec 09 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Eve, Omid, Richard
+
+**Notes:-**
+
+![image](https://user-images.githubusercontent.com/87034722/145470080-170dc407-b8b4-4750-af74-3c93d3f8a176.png)
+
+**Action Items: -**
+
+-	To be confirmed: Patrick to discuss with Linda to move Steven’s tasks to SRE
+
+**Decisions: -** 
+
+- Will disucss all tickets within "New Issues" during planning
+
+---
+
 ## **Dec 02 2021: Stand-up Summary** 
 
 **Absentees:-**
