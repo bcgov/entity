@@ -23,6 +23,27 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 
+
+-----------------------------------------------------------------------------------------------------------------------
+### December 10, 2021 - Sprint (Milestone) 11.5 - 70 min. total 
+
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+
+#### Entities
+
+#### Relationships
+* Multiple Admins for BCeID Account Types (8735) - Faiz / Karthik
+* Invite a new Admin (9325) - Faiz / Karthik
+* Accept Invite and Upload Affidavit for new Admin (9326) - Faiz / Karthik
+* Staff approves/reject the new admin (9327) - Faiz / Karthik
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+
 -----------------------------------------------------------------------------------------------------------------------
 ### November 30, 2021 - Sprint (Milestone) 11.4 - 70 min. total 
 
