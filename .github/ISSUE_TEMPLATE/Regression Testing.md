@@ -1,5 +1,5 @@
 ---
-name: Testing
+name: Regression Testing
 about: A template for the entities test scnearios
 title: ''
 labels: ''
@@ -18,15 +18,22 @@ assignees: ''
      - [ ] Happy path Future effective dated (BEN)
      - [ ] Save and Resume
      - [ ] Edge: NR expired while in draft
+
+- [ ] Incorporation Application Correction
 - [ ] Address Change (BEN, CP)
 - [ ] Director Change (BEN, CP)
 - [ ] Annual Report (BEN, CP)
-- [ ] Alteration (company info) (BEN)
+- [ ] Alteration Limited to BEN
+- [ ] Alteration ULC to BEN
+- [ ] Alteration BEN to BC
 - [ ] Alteration (entity type) (BEN)
 - [ ] Voluntary dissolution (CP, BEN, LTD, CCC, ULC)
      - [ ] Happy path immediate filing (CP, BEN, LTD, CCC, ULC)
      - [ ] Happy path future effective filing (BEN, LTD, CC, ULC)
      - [ ] Happy path save and resume (all)
+- [ ] Court Order
+- [ ] Registrar's Notation
+- [ ] Registrar's Order
 
 ### Staff filings
 - [ ] Court order / Plan of arrangement
@@ -54,6 +61,7 @@ assignees: ''
 
 ### Features
 - [ ] Email notifications
+  - [ ] Email notifications listed here: https://docs.google.com/spreadsheets/d/17wMY9znmWMr2RoXH9S2elffC8uE7iifUGB5Hu3VVFpE/edit?usp=sharing
 - [ ] Send data back to legacy system
 - [ ] Outputs
 - [ ] Future effective filings (BEN)
