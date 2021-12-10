@@ -6,6 +6,57 @@
 
 ---
 
+### **10 Dec 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+-  Suzanne
+
+**Action Items: -**
+
+- Jinghua/Trish/Olisa: Two new resource on boarding Fareen and Amitis
+- Jinghua: forward meeting invites to Fareen: fareen@freshworks.club and TBD: Amitis Partovi
+- Trish: will create new tickets for Business Summary based on impact assessment (Epic: 9670)
+- Gen: Working on FORM/WEB, reach out to Trish/Maribeth/Mags if need help
+- Maribeth will meet John for Job Aide handover
+- Sienna/ Gen: move 10036 to In Progress? 
+- Zac/Cameron: move 10377 to In Progress?
+- Gen/Suzanne: Ticket re-naming under epic 10316: start from “FORM – “, and “Website – “ for form and website related ticket 
+- Put comments under ticket for latest progress tracking
+- Add assignee to all tickets within RTS
+- All team member: review their own ticket, add description, add deadline (if applicable), add Fib est on all OCM Tickets(under In Progress) 
+- All: update leave tracker 
+- All: Some tickets with no deadline, and/or no estimation, please add 
+
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Dec09**:  Forms missing date, need to be done asap. New resource onboarding   |  
+| **Maribeth** | **Dec09**:  Can soon close 10383/Job Aides; Working on OCM - Schedule Ministry Government Account Users Information Session (round 2) #10321; all other tasks are on track   |   
+| **Mags** | **Dec09**:  working on 10349 and 10259, good with current progress and deadline    |   
+| **Genevieve** | **Dec09**:  Has done one FORM, working on other tasks. From Trish, some forms/websites tasks have passed due date, should be done asap |   
+| **Sienna** | **Dec09**:  VD: OneNote Procedures (DEC 16)#9396 is waiting Julie’s review; 10018 is with Linda/Execs; also working on VD Create email macros (DEC 12)#9400 and VD training (co-op and bcomp) (DEC 12)#9393  |   
+| **John** | **Dec09**:  I sent in the draft BCeID multi-admin content review yesterday. Working on the job aides and checklists for BCOL admin (ministry and non-). And lots of payment/account type chats and meetings   |   
+| **Suzanne** | **Dec09**:  NA |   
+| **Olisa** | **Dec09**:  working on resource onboarding     |   
+| **Zac** | **Dec09**:  will be working on FAS training 10377; - Zac/Cameron: move 10377 to In Progress?  |   
+| **Cameron** | **Dec09**:  Support FAS training 10377, onboarding Fareen 10423, PPR Staff account setup10016, will do another training |   
+| **Melissa** | **Dec09**:  NA  |   
+
+
+**Decisions: -** 
+
+- Team move tickets to Done, then Trish will move to Closed
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+
+---
+
+
 ### **02 Dec 2021: Stand-up Summary** 
 
 **Absentees:-**
