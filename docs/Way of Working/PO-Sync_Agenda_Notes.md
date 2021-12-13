@@ -14,7 +14,7 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
-Dec 10, 2021
+Dec 17, 2021
 ----
 - Action Items / Carry Over
     - RAID board
@@ -28,6 +28,37 @@ Dec 10, 2021
 
 - Meeting Notes
 
+----
+Dec 10, 2021
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+    - OCM requiring help from Relationships team
+    - SRE Tickets waiting for deployment to prod
+    - SRE releases
+    - Entities dependency ticket 10296
+
+- Meeting Notes
+    - OCM requiring help from the relationships team.
+        - We have a good structure. We have new resources starting on our team providing the business rules/requirements. They're doing OPS work now, Johns covering for as a PO as well, and throwing in OCM on top of all of that is is unreasonable so we're just gonna shifting or looking at changing how we work together so it's a bit more effective and efficient.
+        - John is meeting with Mary Beth later today to get coordinated on the templates and what's in the pipeline for OCM that needs drafting and then Zach has agreed earlier in the day that he's gonna have time to okr couple of those in terms of getting the base content going.
+    - SRE tickets waiting for deployment to prod
+        - That is, how should they be handled if they are initiated on one of the development team boards
+        - Suggested approach is to remove them from the dev board once they're done from the development team's perspective, but leave them on the SRE board. Removing them from the development team board means just moving them back to new issues, removing them from the sprint and removing the development team label, but leaving them in the SRE board in in the pipeline for completion.
+        - **Decision** The group agreed to proceed with this approach
+    - Patrick / Release 
+        - When will the SRE team be releasing? A reminder to let Jean know so that she can do the release communications for it.
+        - SRE won't be executing a separate release. The release will be combined with the Entities team.
+    - Entities dependency ticket 10296
+        - Dependency on the Relationships team 
+        - John will add to the upcoming groomming
 ----
 Dec 3, 2021
 ----
