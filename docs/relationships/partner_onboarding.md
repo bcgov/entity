@@ -223,3 +223,20 @@ Parameters :
 
 
 Response: Please see the [API Spec](https://bcregistry-demo.apigee.io/docs/payment-proxy/1/types/Invoice) for the response schema and examples.
+
+# 6. Notify API Integration
+Notify API can be used to send any email notification. 
+> Please check [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/notify-api-1.0.0.yaml) for details on available services and examples.
+
+
+## 6.1 Send Notification
+REST Endpoint : `POST` `{notify-api-base-url}/api/v1/notify/`
+
+Request Headers : 
+
+- `Authorization` : `Bearer {access_token}`
+- `x-apikey : {api_key}`
+
+
+
+Response: Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/notify-api-1.0.0.yaml#L11) for the response schema and examples.
