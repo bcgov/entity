@@ -41,6 +41,19 @@ A new keycloak client specific to the partner will be issued by BC Registries te
 
 # 3. API Integration
 All the endpoints are secured by keycloak and partner system must send the access_token as a Bearer Authorization header to all API requests. API Key for the gateway would be provided by BC Registries team which needs to be passed as a request header to Auth and Pay API calls.
+## Environments
+|API|TEST|PROD|
+|---|---|---|
+|Pay|https://bcregistry-test.apigee.net/pay/api/v1/|https://bcregistry-prod.apigee.net/pay/api/v1/|
+|Auth|https://bcregistry-test.apigee.net/autth/api/v1/|https://bcregistry-prod.apigee.net/auth/api/v1/|
+|Notify|https://bcregistry-test.apigee.net/auth-notify/api/v1/|https://bcregistry-prod.apigee.net/auth-notify/api/v1/|
+|Keycloak|https://test.oidc.gov.bc.ca/|https://oidc.gov.bc.ca/|
+
+### IP Address connectivity
+The partner system would need connectivity to below listed IP addresses from their hosting environment.
+- Keycloak : 142.34.194.118
+- API gateway : 35.203.11.173
+
 # 4. Auth API Integration
 Auth API handles the accounts and authorizations related services. 
 > Please check [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml) for details on available services and examples.
