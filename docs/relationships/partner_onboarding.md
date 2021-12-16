@@ -40,7 +40,20 @@ A new keycloak client specific to the partner will be issued by BC Registries te
     }
 
 # 3. API Integration
-All the endpoints are secured by keycloak and partner system must send the access_token as a Bearer Authorization header to all API requests. 
+All the endpoints are secured by keycloak and partner system must send the access_token as a Bearer Authorization header to all API requests. API Key for the gateway would be provided by BC Registries team which needs to be passed as a request header to Auth and Pay API calls.
+## Environments
+|API|TEST|PROD|
+|---|---|---|
+|Pay|https://bcregistry-test.apigee.net/pay|https://bcregistry-prod.apigee.net/pay|
+|Auth|https://bcregistry-test.apigee.net/auth|https://bcregistry-prod.apigee.net/auth|
+|Notify|https://bcregistry-test.apigee.net/auth-notify|https://bcregistry-prod.apigee.net/auth-notify|
+|Keycloak|https://test.oidc.gov.bc.ca/|https://oidc.gov.bc.ca/|
+
+### IP Address connectivity
+The partner system would need connectivity to below listed IP addresses from their hosting environment.
+- Keycloak : 142.34.194.118
+- API gateway : 35.203.11.173
+
 # 4. Auth API Integration
 Auth API handles the accounts and authorizations related services. 
 > Please check [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml) for details on available services and examples.
@@ -48,13 +61,15 @@ Auth API handles the accounts and authorizations related services.
 
 REST Endpoint : `GET` `{auth-api-base-url}/api/v1/users/{user-guid}/settings`
 
-Request Headers : `Authorization : Bearer {access_token}`
+Request Headers
+- `Authorization : Bearer {access_token}`
+- `x-apikey : {api_key}`
 
 Parameters : 
 
 &nbsp;&nbsp;&nbsp;&nbsp;`user-guid` is the `sub` claim from access_token
 
-Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L4012) for the response schema
+Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L3545) for the response schema
 
 ### Handle user settings response
 
@@ -70,7 +85,9 @@ Once the Account-Id is selected, then make a call to Auth-API to see if the acco
 
 REST Endpoint : `GET` `{auth-api-base-url}/api/v1/accounts/{Account-Id}/products/{product-code}/authorizations`
 
-Request Headers : `Authorization : Bearer {access_token}`
+Request Headers
+- `Authorization : Bearer {access_token}`
+- `x-apikey : {api_key}`
 
 Parameters : 
 
@@ -78,7 +95,7 @@ Parameters :
 
 &nbsp;&nbsp;&nbsp;&nbsp;`product-code` to be provided for each partner upon on-boarding by BC Registries.
 
-Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L3228) for the response schema
+Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L3231) for the response schema
 
 
 ### Check if account have authorization
@@ -90,26 +107,40 @@ If the partner system needs account details then use the below endpoint,
 
 REST Endpoint : `GET` `{auth-api-base-url}/api/v1/orgs/{Account-Id}`
 
-Request Headers : `Authorization : Bearer {access_token}`
+Request Headers
+- `Authorization : Bearer {access_token}`
+- `x-apikey : {api_key}`
 
 Parameters : 
 
 &nbsp;&nbsp;&nbsp;&nbsp;`Account-Id` is the selected account id from previous step.
 
-Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L949) for the response schema
+Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L3180) for the response schema
 
 ## 4.4 Get account contact
 If the partner system needs account contact details then use the below endpoint,
 
 REST Endpoint : `GET` `{auth-api-base-url}/api/v1/orgs/{Account-Id}/contacts`
 
-Request Headers : `Authorization : Bearer {access_token}`
+Request Headers
+- `Authorization : Bearer {access_token}`
+- `x-apikey : {api_key}`
 
 Parameters : 
 
 &nbsp;&nbsp;&nbsp;&nbsp;`Account-Id` is the selected account id from previous step.
 
-Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L630) for the response schema
+## 4.5 Get user contact
+If the partner system needs user contact details then use the below endpoint,
+
+REST Endpoint : `GET` `{auth-api-base-url}/api/v1/users/@me`
+
+Request Headers
+- `Authorization : Bearer {access_token}`
+- `x-apikey : {api_key}`
+
+
+Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/auth-api-1.0.0.yaml#L2994) for the response schema
 
 # 5. Pay API Integration
 Pay API handles the account payments related services. 
@@ -121,9 +152,9 @@ REST Endpoint : `GET` `{pay-api-base-url}/api/v1/fees/{product-code}/{filing-typ
 
 Request Headers : 
 
-`Authorization` : `Bearer {access_token}`
-
-`Account-Id` : `{Account-Id}`
+- `Authorization` : `Bearer {access_token}`
+- `x-apikey : {api_key}`
+- `Account-Id` : `{Account-Id}`
 
 Parameters : 
 
@@ -145,15 +176,17 @@ REST Endpoint : `POST` `{pay-api-base-url}/api/v1/payment-requests`
 
 Request Headers : 
 
-`Authorization` : `Bearer {access_token}`
-
-`Account-Id` : `{Account-Id}`
+- `Authorization` : `Bearer {access_token}`
+- `x-apikey : {api_key}`
+- `Account-Id` : `{Account-Id}`
 
 Parameters : 
 
 &nbsp;&nbsp;&nbsp;&nbsp;`Account-Id` is the selected account id from previous step.
 
 &nbsp;&nbsp;&nbsp;&nbsp;`access_token` is the access token from keycloak.
+
+&nbsp;&nbsp;&nbsp;&nbsp;`api_key` is the API gateway consumer key.
 
 Request Body: Please see the [API Spec](https://bcregistry-demo.apigee.io/docs/payment-proxy/1/types/PaymentRequest) for the request schema.
 
@@ -186,9 +219,9 @@ REST Endpoint : `GET` `{pay-api-base-url}/api/v1/payment-requests/{payment-reque
 
 Request Headers : 
 
-`Authorization` : `Bearer {access_token}`
-
-`Account-Id` : `{Account-Id}`
+- `Authorization` : `Bearer {access_token}`
+- `x-apikey : {api_key}`
+- `Account-Id` : `{Account-Id}`
 
 Parameters : 
 
@@ -198,5 +231,25 @@ Parameters :
 
 &nbsp;&nbsp;&nbsp;&nbsp;`payment-request-id` : `id` received from payment request response.
 
+&nbsp;&nbsp;&nbsp;&nbsp;`api_key` is the API gateway consumer key.
+
+
 
 Response: Please see the [API Spec](https://bcregistry-demo.apigee.io/docs/payment-proxy/1/types/Invoice) for the response schema and examples.
+
+# 6. Notify API Integration
+Notify API can be used to send any email notification. 
+> Please check [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/notify-api-1.0.0.yaml) for details on available services and examples.
+
+
+## 6.1 Send Notification
+REST Endpoint : `POST` `{notify-api-base-url}/api/v1/notify/`
+
+Request Headers : 
+
+- `Authorization` : `Bearer {access_token}`
+- `x-apikey : {api_key}`
+
+
+
+Response: Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main/docs/docs/api_contract/notify-api-1.0.0.yaml#L11) for the response schema and examples.
