@@ -44,9 +44,9 @@ All the endpoints are secured by keycloak and partner system must send the acces
 ## Environments
 |API|TEST|PROD|
 |---|---|---|
-|Pay|https://bcregistry-test.apigee.net/pay/api/v1/|https://bcregistry-prod.apigee.net/pay/api/v1/|
-|Auth|https://bcregistry-test.apigee.net/autth/api/v1/|https://bcregistry-prod.apigee.net/auth/api/v1/|
-|Notify|https://bcregistry-test.apigee.net/auth-notify/api/v1/|https://bcregistry-prod.apigee.net/auth-notify/api/v1/|
+|Pay|https://bcregistry-test.apigee.net/pay|https://bcregistry-prod.apigee.net/pay|
+|Auth|https://bcregistry-test.apigee.net/auth|https://bcregistry-prod.apigee.net/auth|
+|Notify|https://bcregistry-test.apigee.net/auth-notify|https://bcregistry-prod.apigee.net/auth-notify|
 |Keycloak|https://test.oidc.gov.bc.ca/|https://oidc.gov.bc.ca/|
 
 ### IP Address connectivity
