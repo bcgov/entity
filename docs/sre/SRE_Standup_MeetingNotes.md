@@ -1,3 +1,28 @@
+## **Dec 16 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Richard
+
+**Notes:-**
+
+![image](https://user-images.githubusercontent.com/87034722/146491786-1aa3cde2-4d5a-455d-8698-09930d003694.png)
+
+**Action Items: -**
+
+-	Jinghua to setup meeting for 2022
+-	Patrick will reivew 11.5 Release Report-> Names 11.5 release next week when all the tickets are ready to go
+-	#5842	Dec16: Reached to Riyaz, maybe not a bug, can be closed
+-	#8272	Dec16: Waiting for @riyazuddinsyed
+-	#9009	Dec16: Hi, this is waiting entities's QA before release, thanks @riyazuddinsyed; CC: @lmcclung @sienna-blumstengel
+-	#9731	Dec16: waiting to QA
+-	To be confirmed: Patrick to discuss with Linda to move Steven’s tasks to SRE
+
+**Decisions: -** 
+
+- Will disucss all tickets within "New Issues" during planning
+
+---
 ## **Dec 09 2021: Stand-up Summary** 
 
 **Absentees:-**
