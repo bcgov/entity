@@ -19,6 +19,7 @@
 - Jinghua to talk to Trish for January’s priorities, new team members’ hand-on training, RTS/InProg tickets without Due date 
 - Jinghua will create a ticket/template for onboarding training list
 - Trish: add team role and responsibilities? Jinghua will talk to Trish
+- TBC for done: on boarding Fareen and Amitis
 - TBC: Put comments under ticket for latest progress tracking…
 
 - Recap/follow-up actions from previous meeting:
