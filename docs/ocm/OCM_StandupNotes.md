@@ -6,6 +6,57 @@
 
 ---
 
+### **16 Dec 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+-  Suzanne, Trish, John
+
+**Action Items: -**
+
+- Trish: will create new tickets for Business Summary based on impact assessment (Epic: 9670)
+- Add assignee and due date for all tickets within RTS and In Progress
+- Jinghua to talk to Trish for January’s priorities, new team members’ hand-on training, RTS/InProg tickets without Due date 
+- Jinghua will create a ticket/template for onboarding training list
+- Trish: add team role and responsibilities? Jinghua will talk to Trish
+- TBC: Put comments under ticket for latest progress tracking…
+
+- Recap/follow-up actions from previous meeting:
+	- Review grooming and prioritizing process to focus on urgent tasks- Grooming for 4 weeks, and RTS for 2 weeks
+	- Build KB – Shared responsibilities within whole team, will fully start from Jan 2022
+	- Cameron to follow-up with Debbie to get more Sharon’s involvement, to free up Sharon's time, 
+
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Dec16**: NA  |  
+| **Maribeth** | **Dec16**: Done 10383/Job Aides, has done #10321; working on BCeID Additional Admin - Update External Complete step-by-step guide on BC Gov Website #9679, support new team members; other tickets are on track   |   
+| **Mags** | **Dec16**: Done Email to BCOL PPR users 10349; and Done Update PPR System News 10485; working on Update BCOL Modal Pop-Up - (Due: Dec 21)#10484; Update BCOL Announcements & Landing Page # 10483; High-level PPR training: BC Registry Admin& BCOL Admin & maybe SBC Finance#10261; PPR Staff Training (primary users) & BCOL Help Desk #10262     |   
+| **Genevieve** | **Dec16**: From Melissa FIN627, FIN631, FIN630 are ready to start; VD postpone release, website update left a small change #9394; can we move VD government website announcement# 9395 into InProgress?   |   
+| **Sienna** | **Dec16**: Done VD training (co-op and bcomp) (DEC 12)#9393; Provide input to Gen for VD Website update #9394, working on Voluntary Dissolution: Create email macros (DEC 12)#9400; OneNote Procedures (DEC 16)#9396 is waiting Julie’s review;  |   
+| **John** | **Dec16**: Two tickets are due during Zac and your absent, any idea how to tackle this? #10345, #10243   |   
+| **Fareen** | **Dec16**: BCeID Additional Admin related activities: BC Reg Staff OneNote#9682; Update all website content on BC Gov website#10315; attend stand-ups to demo functionality - #9689; External Communications -# 9684; update staff check-list/procedures - #9687; Internal Communications - Reg Staff, BCOL HD, IDIM and Maximus #10371 |   
+| **Amitis** | **Dec16**: Amitis is working on  BCOL admin hands-on training - #9683 and PPR Go Live - Product how-to videos for users #10013 |   
+| **Suzanne** | **Dec16**: NA |   
+| **Olisa** | **Dec16**: Support new team members onboarding  |   
+| **Zac** | **Dec16**: working together with Cameron for Schedule and Coordinate UAT/Training for FAS # 10377, will cover John during his absent |   
+| **Cameron** | **Dec16**: working on onboarding Fareen 10423 and onboarding Amitis 10456; Schedule and Coordinate UAT/Training for FAS # 10377 |   
+
+**Decisions: -** 
+
+- Team move tickets to Done, then Trish will move to Closed
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+- All: Please send Maribeth all final response email, so that can be added to the KB for future responses.
+- 
+
+
+---
+
 ### **10 Dec 2021: Stand-up Summary** 
 
 **Absentees:-**
