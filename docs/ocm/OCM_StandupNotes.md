@@ -21,6 +21,7 @@
 - Trish: add team role and responsibilities? Jinghua will talk to Trish
 - TBC for done: on boarding Fareen and Amitis
 - TBC: Put comments under ticket for latest progress tracking…
+- TBC: Start standup meeting from 8:30am? 
 
 - Recap/follow-up actions from previous meeting:
 	- Review grooming and prioritizing process to focus on urgent tasks- Grooming for 4 weeks, and RTS for 2 weeks
