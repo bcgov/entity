@@ -27,6 +27,10 @@ Dec 17, 2021
 - New Business
 
 - Meeting Notes
+    - Blockers
+        - There's a ticket for weasy print and I'll just put that one on the radar. I don't know that anything can be done until Joyti's back.
+        - There's some PDFs and things for PPR that aren't rendering right, and the team is fairly confident if we fix the weasy print issue, it'll fix some of the other output issues we have.
+        - Setup was done by Patrick so this will probably land with SRE
 
 ----
 Dec 10, 2021
