@@ -6,6 +6,63 @@
 
 ---
 
+### **21 Dec 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+-  Suzanne,  John, Fareen
+
+**Update and Action Items:: -**
+
+- VD release date is postponed to Jan
+- BCeID release date from Dec28 to Dec20
+- Talked about engagement email box coverage: Mags, Trish, and Cameron can take during rest of Dec; Trish will asking ministry gov questions; PPR/API questions: Mags
+- Trish: will create new tickets for Business Summary based on impact assessment (Epic: 9670)
+- Sienna: Update Voluntary Dissolution due date since release date is postpone
+- Add assignee and due date for all tickets within RTS and In Progress
+- InProg: Jinghua to talk to Trish for January’s priorities, new team members’ hand-on training, RTS/InProg tickets without Due date 
+- InProg: Trish: add team role and responsibilities? Trish will update information
+- TBC for done: on boarding Fareen and Amitis
+- TBC: Put comments under ticket for latest progress tracking
+- Done: Start standup meeting from 8:30am
+- Jinghua will create a ticket/template for onboarding training list: https://github.com/bcgov/entity/blob/master/docs/ocm/OCM_Onboarding_Checklist.md 	
+
+- Recap/follow-up actions from previous meeting:
+	- Build KB – Shared responsibilities within whole team, will fully start from Jan 2022
+	- Cameron to follow-up with Debbie to get more Sharon’s involvement, to free up Sharon's time, 
+
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Dec21**: will create new tickets for Business Summary based on impact assessment (Epic: 9670); Groom/Plan tickets for Jan, adding assignees and due date (if possible )  |  
+| **Maribeth** | **Dec21**:  monitor engagement email box,  will finish several left actions and starting holidays, transfer current tasks to Mags, Fareen (10239) and Cameron   |   
+| **Mags** | **Dec21**: 10484 and 10493 Done; two ticket transfer from Maribeth to Mags , BCeID Additional Admin - Update External Complete step-by-step guide on BC Gov Website9679 and PPR Info session 10289 can close beside follow-up questions; working on High-level PPR training: BC Registry Admin& BCOL Admin & maybe SBC Finance#10261; PPR Staff Training (primary users) & BCOL Help Desk #10262; starting Review SBC job aide#10511;    |   
+| **Genevieve** | **Dec21**:  finish VD Web, ready to go; will be working on PPR Form during holidays;   |   
+| **Sienna** | **Dec21**: VD postpone to Jan, and will be working on business summary(Release date is TBD) in January   |   
+| **John** | **Dec21**: NA  |   
+| **Fareen** | **Dec21**: Didn’t join Standup? Transfer Create checklist/training material for BCOL Admin for non-ministry gov accounts 10239; working on other BCeID tickets |   
+| **Amitis** | **Dec21**: working on PPR Video 10013; Melissa will review video; Skype is missing  |   
+| **Suzanne** | **Dec16**: NA |   
+| **Olisa** | **Dec21**: Support Fareen for BCeID Tickets   |   
+| **Zac** | **Dec21**: working together with Cameron for Schedule and Coordinate UAT/Training for FAS # 10377, release is on Feb |   
+| **Cameron** | **Dec21**: working on onboarding Fareen 10423 and onboarding Amitis 10456; Schedule and Coordinate UAT/Training for FAS # 10377, 10107: get Kaine/Linda’s feedback |   
+
+**Decisions: -** 
+
+- Review grooming and prioritizing process to focus on urgent tasks- Grooming for 4 weeks, and RTS for 2 weeks
+- Team move tickets to Done, then Trish will move to Closed
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+- All: Please send Maribeth all final response email, so that can be added to the KB for future responses.
+- 
+
+
+---
+
 ### **16 Dec 2021: Stand-up Summary** 
 
 **Absentees:-**
