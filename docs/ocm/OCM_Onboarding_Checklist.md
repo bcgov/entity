@@ -9,6 +9,10 @@
 
 ### 2. Training Material 
 
-2.1. Posible training material on Google Drive
+2.1. Posible training material on Google Drive: https://drive.google.com/drive/folders/0ACd3H3AJYDFyUk9PVA 
+![image](https://user-images.githubusercontent.com/87034722/147118434-b3fdf899-9b78-4a1c-bceb-23f5b4c8e91a.png)
 
-2.2. Posible training material on SharePoints
+
+2.2. Posible training material on SharePoints: https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/SitePages/Home.aspx
+![image](https://user-images.githubusercontent.com/87034722/147118804-4c0cd7a0-9723-4f01-99a2-724d7a4b45bb.png)
+
