@@ -1,3 +1,24 @@
+## **Dec 23 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+- Patrick, Eve, Steven
+
+**Notes:-**
+
+![image](https://user-images.githubusercontent.com/87034722/147287166-acb8d874-ada6-4a89-a667-6a2a043fbca6.png)
+
+**Action Items: -**
+
+-	Jinghua to setup meeting for 2022
+-	Omid will do Names11.5 Release today Dec23rd
+
+**Decisions: -** 
+
+- Will disucss all tickets within "New Issues" during planning
+
+---
+
 ## **Dec 16 2021: Stand-up Summary** 
 
 **Absentees:-**
