@@ -14,10 +14,11 @@
 
 **Update and Action Items:: -**
 
-- All: move tickets to done if tasks within tickets are finished
+- All: move tickets to done if tasks within ticket are finished
+- Trish: plan tasks from now to Jan15th, move to RTS; add assignee and due date for all tickets within RTS 
 - Trish: will create new tickets for Business Summary based on impact assessment (Epic: 9670)
-- Trish: plan tasks from now to Jan15th, move to RTS, add assignee and due date for all tickets within RTS 
-- InProg: Trish: add team role and responsibilities? Trish will update information. Or will follow-up January
+- InProg: Trish: add team role and responsibilities: Trish will update information. Or will follow-up January
+- Jinghua will send meeting invite for 2022
 - TBC: Put comments under ticket for latest progress tracking
 
 - Recap/follow-up actions from previous meeting:
