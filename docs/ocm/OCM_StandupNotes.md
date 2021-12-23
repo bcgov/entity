@@ -6,6 +6,56 @@
 
 ---
 
+### **23 Dec 2021: Stand-up Summary** 
+
+**Absentees:-**
+
+-  Suzanne,  John, Fareen, Maribeth, Zac, Sienna
+
+**Update and Action Items:: -**
+
+- All: move tickets to done if tasks within tickets are finished
+- Trish: will create new tickets for Business Summary based on impact assessment (Epic: 9670)
+- Trish: plan tasks from now to Jan15th, move to RTS, add assignee and due date for all tickets within RTS 
+- InProg: Trish: add team role and responsibilities? Trish will update information. Or will follow-up January
+- TBC: Put comments under ticket for latest progress tracking
+
+- Recap/follow-up actions from previous meeting:
+	- Build KB – Shared responsibilities within whole team, will fully start from Jan 2022
+	- Cameron to follow-up with Debbie to get more Sharon’s involvement, to free up Sharon's time, 
+
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | **Dec23**: will create new tickets for Business Summary based on impact assessment (Epic: 9670); Groom/Plan tickets for Jan, adding assignees and due date (if possible )  |  
+| **Maribeth** | **Dec23**: NA  |   
+| **Mags** | **Dec23**: working on High-level PPR training: BC Registry Admin& BCOL Admin & maybe SBC Finance#10261; PPR Staff Training (primary users) & BCOL Help Desk #10262; starting Review SBC job aide#10511;    |   
+| **Genevieve** | **Dec23**: Starting 630 Form, will be working on all PPR Form and other website update   |   
+| **Sienna** | **Dec23**: NA   |   
+| **John** | **Dec23**: NA  |   
+| **Fareen** | **Dec23**: Have done a few BCeID tasks, is working on Non Ministry account tasks  |   
+| **Amitis** | **Dec23**: working on PPR Video 10013; Melissa will review video; finished Search, will be working on other part  |   
+| **Suzanne** | **Dec23**: NA |   
+| **Olisa** | **Dec23**: support Fareen for BCeID and Non Ministry Account, move few tickets to done   |   
+| **Zac** | **Dec23**: NA |   
+| **Cameron** | **Dec23**: working on Schedule and Coordinate UAT/Training for FAS # 10377 |   
+
+**Decisions: -** 
+
+- Review grooming and prioritizing process to focus on urgent tasks- Grooming for 4 weeks, and RTS for 2 weeks
+- Team move tickets to Done, then Trish will move to Closed
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+- All: Please send Maribeth all final response email, so that can be added to the KB for future responses.
+- 
+
+
+---
+
 ### **21 Dec 2021: Stand-up Summary** 
 
 **Absentees:-**
