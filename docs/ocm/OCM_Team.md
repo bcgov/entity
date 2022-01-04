@@ -6,7 +6,7 @@
 | Lane, John | John.A.M.Lane@gov.bc.ca | JohnamLane | BA of Relationships  |
 | Sienna Blumstengel | sienna@freshworks.io | Sienna-Blumstengel | BA of Entities |
 | Wulff, Cameron | Cameron.Wulff@gov.bc.ca | Cameron-freshworks |  |
-| Primeau, Genevieve |  Genevieve.Primeau@gov.bc.ca | gprimeau |  |
+| Primeau, Genevieve |  Genevieve.Primeau@gov.bc.ca | gprimeau | Update Forms, CMS/Website |
 | Ezeh, Olisa | Olisa.Ezeh@gov.bc.ca | ToBeAdded |  |
 | Dane, Suzanne | Suzanne.Dane@gov.bc.ca | ToBeAdded |   |
 | Jotyi | Jyoti.Kumar@gov.bc.ca |    | PO of Relationships |
