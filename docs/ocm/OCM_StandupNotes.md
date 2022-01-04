@@ -6,6 +6,61 @@
 
 ---
 
+### **04 Jan 2022: Stand-up Summary** 
+
+**Absentees:-**
+
+-  Suzanne,  John,  Zac, Trish,
+
+**Update and Action Items:: -**
+
+- John: OCM - BCregistries.ca application- Update references to Mobile Card to BC Services Card App & fix broken links - DUE immediately #10566 --- Discussed during standup, Gen don't have access right to change the application, will need to talk with John/Jyoti
+- Olisa: Tickets under Review, Olisa will review and provide comments
+- All: move tickets to done if tasks within ticket are finished
+- All: change due date if target schedule has changed
+- InProg: Trish and Olisa: add team role and responsibilities: ask Olisa for help
+- Done: Trish: created new tickets for Business Summary based on impact assessment (Epic: 9670)
+- Done: Trish: plan tasks from now to Jan15th, move to RTS; add assignee and due date for all tickets within RTS. All: please add due date if applicable
+; TBD for PPR "Info Center" for external communication 
+- TBD: Olisa will assign new tasks to Fareen and Amitis, 
+- Jinghua : will talk with Olisa about no assignees ticket under RTS
+- TBC: Put comments under ticket for latest progress tracking
+- others: need to give home room team at least one month lead time 
+
+- Follow-up actions from previous meeting:
+	- Build KB – Shared responsibilities within whole team, will fully start from Jan 2022
+	- Cameron to follow-up with Debbie to get more Sharon’s involvement, to free up Sharon's time, 
+
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** |**Jan04**: NA  |  
+| **Maribeth** | **Jan04**: Have several urgent tasks today or tomorrow; Will meet with John for 10287; Non-ministry release update, will talk with John or Zac |   
+| **Mags** | **Jan04**: 10571 ask Melissa and Kaine for review comments; TBD for PPR "Info Center" for external communication ; PPR Staff training is in progress(10262); also working on 10511 SBC Job aide ; redo the PPR video due to a new script    |   
+| **Genevieve** | **Jan04**: Several tickets under Review pipeline for review comments; VD is ready for release; (only Create BComp info package, 10036 pending input); Form 630(now is Form 12 PPR) is under review; will be working on Form 631 (Form 14 PPR); 10566: Discussed during standup, Gen don't have access right to change the application, will need to talk with John/Jyoti |   
+| **Sienna** | **Jan04**: release date for Business Summary(BS) is TBD, will be working on OCM tasks for BS; VD BComp info package 10036 (lower priority now)   |   
+| **John** | **Jan04**: NA  |   
+| **Fareen** | **Jan04**: Need to know time for non-ministry release for sending out communication, will need to wait for John/Zac (Jyoti and Sateesh are off); need DL for 10512(Send email to BCeID Admins). Need new task tickets soon.   |   
+| **Amitis** | **Jan04**: working on OCM - PPR Go Live - Product how-to videos for users (10013); will need other task tickets |   
+| **Suzanne** | **Jan04**: NA |   
+| **Olisa** | **Jan04**: Will assign Fareen and Amities new tasks; will check 10176 (Info Note - PPR - Announce Go Live - DUE Jan 17#10176) and 10534 (Prepare Q&A for clients re: Phase out BCOL accounts - DUE DEC 31#10534); also working together with Fareen for 9684   |   
+| **Zac** | **Jan04**: NA|   
+| **Cameron** | **Jan04**: NA |   
+
+**Decisions: -** 
+
+- Review grooming and prioritizing process to focus on urgent tasks- Grooming for 4 weeks, and RTS for 2 weeks
+- Team move tickets to Done, then Trish will move to Closed
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+- All: Please send Maribeth all final response email, so that can be added to the KB for future responses.
+
+---
+
 ### **23 Dec 2021: Stand-up Summary** 
 
 **Absentees:-**
