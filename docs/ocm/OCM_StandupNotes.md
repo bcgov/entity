@@ -6,6 +6,52 @@
 
 ---
 
+### **06 Jan 2022: Stand-up Summary** 
+
+**Absentees:-**
+
+-  Suzanne,  John,  Zac, Trish,
+
+**Update and Action Items:: -**
+
+- Olisa and POs: Review tickets under review pipeline
+- OCM - BCregistries.ca application- Update references to Mobile Card to BC Services Card App & fix broken links - DUE immediately #10566 --- Relationship team will work on this
+- TBC: Put comments under ticket for latest progress tracking
+
+- Follow-up actions from previous meeting:
+	- Build KB – Shared responsibilities within whole team, will fully start from Jan 2022
+	- Cameron to follow-up with Debbie to get more Sharon’s involvement, to free up Sharon's time, 
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | NA  |  
+| **Maribeth** | Pause for 10287; Help with 10534; OCM Communication: non-ministry gov account users - RCMP - DUE JAN 25TH #10353; Prepare for Jan20 Info session 10334; 
+Reminder email to Ministry gov account users #10356 and#10357, #10358 |   
+| **Mags** | 10330 is pending Olisa’s review; 10571 ask Melissa and Kaine for review comments; PPR Staff training is in progress(10261, and 10262); 10511 SBC Job aide (Done) ; start working on 10600   |   
+| **Genevieve** | Several tickets under Review pipeline for review comments; VD is ready for release; (only Create BComp info package, 10036 pending input); Form 630(now is Form 12 PPR) is under review; will be working on Form 631 (Form 14 PPR |   
+| **Sienna** | release date for Business Summary(BS) is Jan18,VD’s release date: Jan11 |   
+| **John** |   NA  |   
+| **Fareen** | 10512(Done). Working on 10286, 10351 and 10352, 10354; can help 10534, and 10353  |   
+| **Amitis** |  I have an appointment when we have stand-up so I won’t be there today. My update is that I am ready to make the next video today if the script is reviewed and final. |   
+| **Suzanne** |  NA |   
+| **Olisa** | will check 10176 (Info Note - PPR - Announce Go Live - DUE Jan 17#10176) and 10534 (Prepare Q&A for clients re: Phase out BCOL accounts - DUE DEC 31#10534);    |   
+| **Zac** |  NA|   
+| **Cameron** | Help with Training and provide review comments |   
+
+**Decisions: -** 
+
+- Review grooming and prioritizing process to focus on urgent tasks- Grooming for 4 weeks, and RTS for 2 weeks
+- Team move tickets to Done, then Trish will move to Closed
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+- All: Please send Maribeth all final response email, so that can be added to the KB for future responses.
+
+---
+
 ### **04 Jan 2022: Stand-up Summary** 
 
 **Absentees:-**
