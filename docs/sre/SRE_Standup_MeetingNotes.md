@@ -1,3 +1,24 @@
+## **Jan062022: Stand-up Summary** 
+
+**Absentees:-**
+
+- Patrick, Richard, 
+
+**Notes:-**
+
+![image](https://user-images.githubusercontent.com/87034722/148443202-3c75657d-4153-46ef-a88d-366fec528303.png)
+
+**Action Items: -**
+
+- Jinghua will bring QA issue in PO Syc (Thor suggested to use Home Team BA to do QA for SRE)
+- Omid will check which tickets we can close under NameX11.5 release
+
+**Decisions: -** 
+
+- Will disucss all tickets within "New Issues" during planning
+
+---
+
 ## **Dec 23 2021: Stand-up Summary** 
 
 **Absentees:-**
