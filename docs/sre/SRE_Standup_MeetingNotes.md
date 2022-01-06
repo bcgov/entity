@@ -12,6 +12,7 @@
 
 - Jinghua will bring QA issue in PO Syc (Thor suggested to use Home Team BA to do QA for SRE)
 - Omid will check which tickets we can close under NameX11.5 release
+- Jinghua will discuss RFR tickets for next SRE Release
 
 **Decisions: -** 
 
