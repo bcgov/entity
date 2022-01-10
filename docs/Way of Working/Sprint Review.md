@@ -23,6 +23,26 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
 
+-----------------------------------------------------------------------------------------------------------------------
+### January 11, 2022 - Sprint (Milestone) 11.6 & 11.7 - 70 min. total 
+
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+
+#### Entities
+
+#### Relationships
+* Ability for BCOL Admin to switch from Premium to Non-Ministry (10255) - Faiz
+* Change the Prod Stat Fee and Service fee for Ministry and Non Ministry Account Types (10256) - Faiz
+* Update all the FAS Text on UI (10412) - Karthik
+* FAS - Limit RS field to 9 Characters (10068) - Karthik
+* FAS: Cheque Advice text on Refund Cheque (9927) - Karthik
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
 
 -----------------------------------------------------------------------------------------------------------------------
 ### December 10, 2021 - Sprint (Milestone) 11.5 - 70 min. total 
