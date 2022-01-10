@@ -12,6 +12,20 @@ Standing Agenda:
 3. Problems/ Opportunities with Features - Decisions 
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
+----
+Jan 14, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+
+- Meeting Notes
 
 ----
 Jan 7, 2022
@@ -25,8 +39,31 @@ Jan 7, 2022
     - PI Planning Board - Dependencies
 
 - New Business
+    - non-PAD groups
+    - QA testing for SRE
+    - Zenhub licenses
 
 - Meeting Notes
+    - Weezy Print
+        - Ticket 8417
+    - Thor Ops Team
+        - Richard is taking on the long running Ops work; this solution seems to be working out
+    - Jupiter Notebooks
+        - PR is approved for testing
+        - this has been mitigited
+    - Groups that cannot pay via PAD discussion (e.g. RCMP)
+        - most of these entities have been identified
+        - cannot put them in the Director's search account because the use other services as well
+        - plan is that groups will identify themselves how ever they choose when establishing their id and they will not show up on reports
+        - groups will be responsible for identifying their end user in case of an audit
+        - **Proposal** is to allow individual groups to use draw down for a limited time (invoices will have to be issued)
+    - QA testing for SRE team
+        - 3 tickets currently in QA
+        - one suggestion is to use the Home team, but this is an on-going issue
+        - maybe Ry has some capacity
+        - **Action** Kaine will ask Jyoti if he can take up some of this work
+    - Zenhub licensing
+        - Licenses have been purchased
 
 ----
 Dec 17, 2021
