@@ -39,6 +39,9 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * FAS - Limit RS field to 9 Characters (10068) - Karthik
 * FAS: Cheque Advice text on Refund Cheque (9927) - Karthik
 
+Following tickets are planned for demo in next sprint (11.8)
+* 9383 - FAS: Status Transition validations 
+
 #### Action Items:
 | # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
 |---|----------------------|--------------------|-------------------------|
