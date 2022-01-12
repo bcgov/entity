@@ -6,6 +6,20 @@
 -	Consider:  Definition of Ready for Ticket (Sizing, Acceptance Criteria)
 -	Consider:  Provide Est (In Fib, and benchmark for the sizing?) 
   
+## Jan12  2021 SRE Sprint Planning Meeting Memo
+
+**Absences: -** 
+-	
+
+**Action Items:-**
+- Jinghua will update meeting invites, first Namex meeting then SRE Planning. Change SRE standup as once per week.
+
+**Notes:-**
+
+![image](https://user-images.githubusercontent.com/87034722/149231230-daa6fe2b-0eb3-481e-9cc1-14a459fb3a89.png)
+
+---
+
 ## Dec07  2021 SRE Sprint Planning Meeting Memo
 
 **Absences: -** 
