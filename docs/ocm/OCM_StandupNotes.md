@@ -6,6 +6,47 @@
 
 ---
 
+### **13 Jan 2022: Stand-up Summary** 
+
+**Absentees:-**
+
+-  Zac  John,  Trish,
+
+**Update and Action Items:: -**
+
+- All: move tickets to done if tasks within ticket are finished
+- All: please add estimates on your tickets if possible 
+- All: change due date if target schedule has changed
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | NA  |  
+| **Maribeth** | 10637 Done; Pause 10287(blocking 10286; waiting for confirmation that this email can be delayed until after PPR.); Prepare for Jan20 Info session 10334; Reminder email to Ministry gov account users #10356(Done) and#10357, #10358, will review 10658 for Fareen; also a lot of effort on engagement emailbox response |   
+| **Mags** |  10571 PPR "Info Center"  under review(Kaine has agreed to publish without further review); PPR Staff training is in place (10261, and 10262);; start working on 10600 (asking Melissa to review); working on Create Quickstart Guides for CMS & PPR Info Center #10617 (1 tasks left); 10629(Done); Create a new ticket 10677 for PRD connectivity test   |   
+| **Genevieve** | Move VD tickets to Done (only Create BComp info package, 10036 pending input); Form 630(now is Form 12 PPR) Done ; Form 631 (Form 14 PPR) update based on review comments(WIP); Form 627 for review ; working on 8481; two RTS Tickets: Demand for Discharge Under the Miscellaneous Registrations Act(10533) and Form 3, 4, 5 6, 7 |   
+| **Sienna** | release date for Business Summary(BS) is postponed to Jan27th; start working on BS OMC tickets; follow-up with Julie for 9396 (done) |   
+| **John** |   NA; Questions to follow: two RTS tickets, can we move to In Progress?  |   
+| **Fareen** | Can take new tickets: 10551( move back to BLG, no available); will need to check relationships release cadence; 10629 (done) and 10352(almost done beside small updates), 10354(with Cameron’s help); working on 10534 (waiting Cameron’s response), and 10353 (done); working on 10329 and 10334 (Jan20 Info session); working on Review BC Registry Application user guide and make updates#10622, and 10425 OCM - Review and Update BCeID training Videos (lower priority) - to add additional admin  |   
+| **Amitis** | Working on  10013 (Videos) and 10617(Create Quickstart Guides for CMS & PPR Info Center), Will be working on 10332 |   
+| **Suzanne** | Update on OneStop activities 8961 and 9891 |   
+| **Olisa** | Working on 10176 (Info Note - PPR - Announce Go Live - DUE Jan 17#10176) sent to Carole created a new ticket: Decision Note DM - PPR -Engagements DUE Jan 18#10638 sent to Carole  |   
+| **Zac** |  NA  |   
+| **Cameron** | NA, in a training |   
+
+**Decisions: -** 
+
+- Review grooming and prioritizing process to focus on urgent tasks- Grooming for 4 weeks, and RTS for 2 weeks
+- Team move tickets to Done, then Trish will move to Closed
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+- All: Please send Maribeth all final response email, so that can be added to the KB for future responses.
+
+---
+
 ### **11 Jan 2022: Stand-up Summary** 
 
 **Absentees:-**
