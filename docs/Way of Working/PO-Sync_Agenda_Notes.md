@@ -13,6 +13,18 @@ Standing Agenda:
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
 ----
+Jan 21, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+----
 Jan 14, 2022
 ----
 - Action Items / Carry Over
@@ -26,6 +38,7 @@ Jan 14, 2022
 - New Business
 
 - Meeting Notes
+    - Moving the Feb 1 release planning meeting tabled to next week
 
 ----
 Jan 7, 2022
