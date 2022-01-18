@@ -6,6 +6,48 @@
 
 ---
 
+### **18 Jan 2022: Stand-up Summary** 
+
+**Absentees:-**
+
+-  John
+
+**Update and Action Items:: -**
+
+- three mass emails will go out today
+- All: move tickets to done if tasks within ticket are finished
+- All: please add estimates on your tickets if possible 
+- All: change due date if target schedule has changed
+
+**Notes:-**
+
+| Name | Update | 
+| --- | ---- | 
+| **Trish** | Support engagement email-box; review tickets   |  
+| **Maribeth** | Monitor engagement mailbox; 10354 (Done); Pause 10287(blocking 10286; waiting for confirmation that this email can be delayed until after PPR.); Prepare for Jan20 Info session 10334;  and#10357 (waiting review), #10358 (will check with Mags), will review 10658 for Fareen (Done);  For the info session: asking John to review presentation |   
+| **Mags** |   10571 PPR "Info Center"  under review(Kaine has agreed to publish without further review, can be done); PPR Staff training is in place (10261, and 10262 on going);; start working on 10600 (Done work, pending some inputs to close this ticket); working on Create Quickstart Guides for CMS & PPR Info Center #10617 (done); Create a new ticket 10677 for PRD connectivity test (done); new created 10723 to update PPR communication plan; will talk with Trish for BCOL users   |   
+| **Genevieve** | Move VD tickets to Done (only Create BComp info package, 10036 pending input); Form 631 (Form 14 PPR) update based on review comments(WIP); working on 8481(waiting for review); three RTS Tickets: Demand for Discharge Under the Miscellaneous Registrations Act(10533); working on 10314 PPR website update; Form 4, 5 6, 7 -> Post Go-live |   
+| **Sienna** | release date for Business Summary(BS) is postponed to Jan27th; start working on BS OMC tickets; follow-up with Julie for 9396 (done); 10036 Info package: lower priority  |   
+| **John** |   NA; Questions to follow: two RTS tickets, can we move to In Progress? |   
+| **Fareen** | Can take new tickets: and 10352(done), 10354(done with Cameron’s help); working on 10534 (under review), and working on 10329 (most done)and 10334 (Jan20 Info session); working on Review BC Registry Application user guide and make updates#10622, and 10425 OCM - Review and Update BCeID training Videos (lower priority) - to add additional admin; 10693 waiting for review (TBD: who will review it?); also working on 10690   |   
+| **Amitis** | Working on  10013 (Videos) and 10617(soon done Create Quickstart Guides for CMS & PPR Info Center), working on 10332 (waiting review) |   
+| **Suzanne** | Update on OneStop activities 8961 and 9891, will talk with Trish for partnership outreach/transition plan  |   
+| **Olisa** | WWorking on 10176 (Info Note - PPR - Announce Go Live - DUE Jan 17#10176) sent to Carole created a new ticket: Decision Note DM - PPR -Engagements DUE Jan 18#10638 sent to Carole  |   
+| **Zac** |  10377: Will demo FAS tomorrow,  |   
+| **Cameron** | Business Summary: will meeting Sienna(10549), 10107 decision will done soon. Keep 10377 until March; working on 10450; help with Prepare Q&A for clients re: Phase out BCOL accounts 10534; 10245 (done) ; 9527(BCOL Admin done) |   
+
+**Decisions: -** 
+
+- Review grooming and prioritizing process to focus on urgent tasks- Grooming for 4 weeks, and RTS for 2 weeks
+- Team move tickets to Done, then Trish will move to Closed
+- Add deadline on each ticket, only exception is tickets for recurrence events  
+- Try to only assign one person responsible for a certain ZH ticket at the same time, avoid shared assigners/responsibilities 
+- Add Fib est. and link in ticket for more information/later reference
+- Trish will ask Kaine: how to update shadow ticket (which on RAID board) – Create shadow ticket
+- All: Please send Maribeth all final response email, so that can be added to the KB for future responses.
+
+---
+
 ### **13 Jan 2022: Stand-up Summary** 
 
 **Absentees:-**
