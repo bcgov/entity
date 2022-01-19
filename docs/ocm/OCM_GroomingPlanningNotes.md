@@ -9,7 +9,21 @@
 
 --- 
 
-## Nov 23rd 2021 Assets Sprint Planning Meeting Memo ** @here 
+## Jan 19th 2022 OCM Sprint Planning Meeting Memo ** @here 
+**Absences: -** 
+-	
+
+**Action Items:-**
+- Trish: create epic for Multiple Acct for BCeID
+
+**Notes:-**
+![image](https://user-images.githubusercontent.com/87034722/150209652-00c928b7-7220-4fdd-a064-8c80abb269f8.png)
+![image](https://user-images.githubusercontent.com/87034722/150209684-03a7d060-fe93-4b2d-a4fc-9f8e3954e035.png)
+![image](https://user-images.githubusercontent.com/87034722/150209712-afe9a486-7f98-4cb2-af37-2f62c90a4b99.png)
+
+--- 
+
+## Nov 23rd 2021 OCM Sprint Planning Meeting Memo ** @here 
 **Absences: -** 
 -	Suzanne, Linda, Jyoti
 
@@ -81,7 +95,7 @@
 
 ---
 
-## Nov 23rd 2021 Assets Sprint Planning Meeting Memo ** @here 
+## Nov 23rd 2021 OCM Sprint Planning Meeting Memo ** @here 
 **Absences: -** 
 -	Suzanne
 
@@ -159,7 +173,7 @@
 
 ---
 
-## Nov 9th 2021 Assets Sprint Planning Meeting Memo ** @here 
+## Nov 9th 2021 OCM Sprint Planning Meeting Memo ** @here 
 **Absences: -** 
 - NA
 
@@ -239,7 +253,7 @@
 
 ---
 
-## **Oct 26th 2021 Assets Sprint Planning Meeting Memo**
+## **Oct 26th 2021 OCM Sprint Planning Meeting Memo**
 ---
 **Absences: -** 
 - NA
