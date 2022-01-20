@@ -1,3 +1,22 @@
+## **Jan202022: Stand-up Summary** 
+
+**Absentees:-**
+
+- Thor
+
+**Notes:-**
+
+![image](https://user-images.githubusercontent.com/87034722/150413037-b7932219-2817-4d56-96e0-6a6e97657dc8.png)
+
+**Action Items: -**
+
+- Will have our next Names release tomorrow Jan21st
+- Patrick is planning for SRE items for next PI
+
+**Decisions: -** 
+
+---
+
 ## **Jan062022: Stand-up Summary** 
 
 **Absentees:-**
