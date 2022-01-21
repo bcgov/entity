@@ -31,13 +31,18 @@ Dev:
   - list here, copy to test and prod
 - [ ] are there any one-time scripts to be run, such as for data migration? 
   - list here, copy to test and prod
+- [ ] Database updates which should be run automatically as part of GH CD via the legal-api pre-hook
+  - list here, copy to test and prod
 
 Test:
 
 Prod:
 
 **Smoke Test Script**
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] watch [Kibana](https://kibana.pathfinder.gov.bc.ca/) logs for 5 minutes
+- [ ] try a filing from Filings UI (do not save it)
+- [ ] try a correction from Edit UI (do not save it)
+- [ ] try an alteration from Edit UI (do not save it)
+- [ ] try an incorporation application from Create UI (do not save it)
+- [ ] try a voluntary dissolution from Create UI (do not save it)
+- [ ] watch [Sentry](https://sentry.io/organizations/registries/issues/?project=1533020) logs for 60 minutes
+- [ ] watch [Kibana](https://kibana.pathfinder.gov.bc.ca/) logs for 60 minutes
