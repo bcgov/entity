@@ -56,7 +56,7 @@ Jan 21, 2022
         - OK, so how about we make this for the Sprint that starts February 8th then?
     - Scrum masters to gather our existing users
         - A list of who their existing team members are and their email and IDIR
-    -     - - Provide to Patrick
+        - Provide to Patrick
     - We have to look at how we expose our API service or specs so orgs like Ministry of Finance can start building APIs
         - The board is gonna work with John to do some requirements around what APIs are going to be exposed 
 ----
