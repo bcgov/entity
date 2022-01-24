@@ -12,6 +12,22 @@ Standing Agenda:
 3. Problems/ Opportunities with Features - Decisions 
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
+
+----
+Jan 28, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+
+- Meeting Notes
+
 ----
 Jan 21, 2022
 ----
@@ -24,6 +40,25 @@ Jan 21, 2022
     - PI Planning Board - Dependencies
 
 - New Business
+    - New date for Feb 1st release planning mtg
+    - Payment modal
+
+- Meeting Notes
+    - New date for the Feb 1st release planning meeting
+        - **Decision** - Move it to the next day, same time.
+    - Payment modal
+        - The Assets team found an issue in it and it's a shared component.
+        - In the shared modal, like the the payment model for staff with cash or check and BC online and no fee, it's currently persisting a BC Online account number entered in error if someone cancels or closes something before submitting.
+        - **Decision** Whomever picks up the component should fix it. It shouldn't be passed to another team to fix.
+    - Is API starting this coming Sprint or are we going to do it the following one?
+        - Suggesting we start the PI on Feb 8th and the next Pi will be 5 sprints instead of the typical 6.
+        - No impact to metrics
+        - OK, so how about we make this for the Sprint that starts February 8th then?
+    - Scrum masters to gather our existing users
+        - A list of who their existing team members are and their email and IDIR
+    -     - - Provide to Patrick
+    - We have to look at how we expose our API service or specs so orgs like Ministry of Finance can start building APIs
+        - The board is gonna work with John to do some requirements around what APIs are going to be exposed 
 ----
 Jan 14, 2022
 ----
