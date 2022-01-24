@@ -24,7 +24,27 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 |---|----------------------|--------------------|-------------------------|
 
 -----------------------------------------------------------------------------------------------------------------------
-### January 11, 2022 - Sprint (Milestone) 11.6 & 11.7 - 70 min. total 
+### January 25, 2022 - Sprint (Milestone) 11.7 - 70 min. total 
+
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+
+#### Entities
+
+#### Relationships
+* - Multiple accounts for IDIR - Karthik
+* - Multiple accounts for BCEID  -- Faiz
+
+Following tickets are planned for demo in next sprint (11.8)
+* 9383 - FAS: Status Transition validations 
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+
+### January 11, 2022 - Sprint (Milestone) 11.6 - 70 min. total 
 
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
 
@@ -39,7 +59,7 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 * FAS - Limit RS field to 9 Characters (10068) - Karthik
 * FAS: Cheque Advice text on Refund Cheque (9927) - Karthik
 
-Following tickets are planned for demo in next sprint (11.8)
+Following tickets are planned for demo in next sprint (11.7)
 * 9383 - FAS: Status Transition validations 
 
 #### Action Items:
