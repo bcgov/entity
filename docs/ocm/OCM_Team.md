@@ -5,7 +5,7 @@
 | Szymanski, Magdalena | magdalena.szymanski@cgi.com  | magszymanski | Common OCM activities; Engagement Emailbox; PPR Related OCM;  |
 | Lane, John | John.A.M.Lane@gov.bc.ca | JohnamLane | BA of Relationships  |
 | Sienna Blumstengel | sienna@freshworks.io | Sienna-Blumstengel | BA of Entities |
-| Wulff, Cameron | Cameron.Wulff@gov.bc.ca | Cameron-freshworks |  |
+| Wulff, Cameron | Cameron.Wulff@gov.bc.ca | cwulff1 |  |
 | Primeau, Genevieve |  Genevieve.Primeau@gov.bc.ca | gprimeau | Update Forms, CMS/Website |
 | Ezeh, Olisa | Olisa.Ezeh@gov.bc.ca | ToBeAdded |  |
 | Dane, Suzanne | Suzanne.Dane@gov.bc.ca | ToBeAdded |   |
