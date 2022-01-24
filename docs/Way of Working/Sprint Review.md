@@ -33,8 +33,8 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 #### Entities
 
 #### Relationships
-* - Multiple accounts for IDIR - Karthik
-* - Multiple accounts for BCEID  -- Faiz
+* Ability for Multiple Accounts for IDIR (10554) -- Karthik
+* Ability for Multiple Accounts for BCeID (10135)  -- Faiz
 
 Following tickets are planned for demo in next sprint (11.8)
 * 9383 - FAS: Status Transition validations 
