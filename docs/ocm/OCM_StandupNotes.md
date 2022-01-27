@@ -6,6 +6,29 @@
 
 ---
 
+### **27 Jan 2022: Stand-up Summary** 
+
+**Absentees:-**
+
+-  John, Zac
+
+**Update and Action Items:: -**
+
+- Mags is working on engagement mail box, most PPR tickets are done
+- Maribeth is full-time on engagement mail box
+- Gen can start RTS tickets: PPR Forms4-7, also working on URL update
+- Fareen is waiting for release date for multi account for BCeID, working on tickets related with multi-accounts, some tickets need Trish’s review 
+- Amitis, can take new tickets, will meet people/Linda for firm fillings, can also talk with Sienna
+- Cameron W: 10107 will delay one week, FAS/UAT 
+- Sienna: Business Summary tickets are all done, 10018 Linda is following up with this ticket.
+- Olisa: discussed two phase filling need to be ready at once 
+- Trish: is working on commutation for Carole, long term plan, firm registration 
+- Goal for Firm Registration : March  31st Dev
+- Suzanne: new webpage for PPR, all regular meetings keep on-going
+
+
+---
+
 ### **20 Jan 2022: Stand-up Summary** 
 
 **Absentees:-**
