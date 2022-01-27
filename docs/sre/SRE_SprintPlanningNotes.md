@@ -6,7 +6,26 @@
 -	Consider:  Definition of Ready for Ticket (Sizing, Acceptance Criteria)
 -	Consider:  Provide Est (In Fib, and benchmark for the sizing?) 
   
-## Jan12  2021 SRE Sprint Planning Meeting Memo
+## Jan27  2022 SRE Sprint Planning Meeting Memo
+
+**Absences: -** 
+-	Thor, Richard
+
+**Action Items:-**
+- Eve: Will upgrade SOFI in next two weeks
+- All: add real effort on SRE ticket
+- Patrick is planning for Pure SRE items for next PI
+- Jinghua: working on SRE burndown report/Metric
+- All: start KT to learn Sumesh's training recording and documents
+- Steven can pickup new ticket
+- Patrick will bring BA resource shortage issue in PO syc
+
+**Notes:-**
+
+![image](https://user-images.githubusercontent.com/87034722/151440950-d31d5918-9450-47e9-bd12-74475f15ddfd.png)
+---
+  
+## Jan12  2022 SRE Sprint Planning Meeting Memo
 
 **Absences: -** 
 -	
