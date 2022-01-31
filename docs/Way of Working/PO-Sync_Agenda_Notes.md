@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Feb 4, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+
+- Meeting Notes
+
+----
 Jan 28, 2022
 ----
 - Action Items / Carry Over
@@ -27,6 +42,13 @@ Jan 28, 2022
 - New Business
 
 - Meeting Notes
+    - List of current team members
+    -     - Jason is working on an updated list
+        - The list is needed to review access permissions to to our project.
+        - Patrick to provide the list to Linda when received
+    - The 7th is PI 12 planning.
+    -     - We made some updates to the portfolio planning board
+    - Realignment for a feature teams.
 
 ----
 Jan 21, 2022
