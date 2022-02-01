@@ -70,6 +70,6 @@ assignees: ''
 - [ ] Developers or BA are added to Ops repo
 - [ ] BA have access to shared BA inbox
 - [ ] Set up overview meeting with another Dev/BA to cover process and common requests
-- [ ] BA have access to prod dashboard and read-only DB access to review client status for requests (SOFI, Namex and Business Registries)
-- [ ] BA training on the database to review client status for requests (SOFI, Namex and Business Registries)
+- [ ] Access to prod dashboard and databases (read-only for BAs to review client status for requests - SOFI, Namex and Business Registries)
+- [ ] Set up meeting for training on an overview of each application and each DB. 
 - [ ] If available, API testing training using Postman
