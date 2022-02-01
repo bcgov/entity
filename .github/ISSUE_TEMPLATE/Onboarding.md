@@ -61,7 +61,7 @@ assignees: ''
 -----------------
 
 **Google Drive Access for Knowledge Sharing Videos**
-- [ ] Read access to https://drive.google.com/drive/folders/1tl3h0XnZZdlOR440CJjM-KHvvHgXCHoV (currently Maribeth and Trish can share this)
+- [ ] Read access to https://drive.google.com/drive/folders/1tl3h0XnZZdlOR440CJjM-KHvvHgXCHoV (currently Linda, Maribeth and Trish can share this)
 
 -----------------
 
