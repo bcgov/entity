@@ -57,3 +57,19 @@ assignees: ''
 
 **OpenShift NameSpace Access**
 - [ ] For developers and completed by Admin: Patrick Wei, Kial Jinnah, or Richard Armitage.
+
+-----------------
+
+**Google Drive Access for Knowledge Sharing Videos**
+- [ ] Read access to https://drive.google.com/drive/folders/1tl3h0XnZZdlOR440CJjM-KHvvHgXCHoV (currently Maribeth and Trish can share this)
+
+-----------------
+
+**Ops Team Onboarding**
+
+- [ ] Developers or BA are added to Ops repo
+- [ ] BA have access to shared BA inbox
+- [ ] Set up overview meeting with another Dev/BA to cover process and common requests
+- [ ] BA have access to prod dashboard and read-only DB access to review client status for requests (SOFI, Namex and Business Registries)
+- [ ] BA training on the database to review client status for requests (SOFI, Namex and Business Registries)
+- [ ] If available, API testing training using Postman
