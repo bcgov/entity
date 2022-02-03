@@ -6,6 +6,29 @@
 
 ---
 
+### **Feb03 2022: Stand-up Summary** 
+
+**Absentees:-**
+
+-  John, Zac
+
+**Update and Action Items:: -**
+
+- Maribeth, can move 10941 and 10942 to review; 10941 current due date Feb21st, it will be a living doc. 10862 done
+- Mags is working on 10984 and 10985, general notice and refund email. Will need to discuss with Melissa to find the wording. 10367 is waiting Kevin’s input, not high priority 
+- Fareen: multi account for BCeID release on Monday, final email sent for approval. Will join Cameron team’s standup tomorrow and do demo, created a new ticket for MOD Website update for BCeID Admins 
+- Amitis, 10920 and 10732, also collect information during meeting with internal stakeholders (Linda, Cameron, Debbie and Johana), SP/GP Change impact/Firm requirements meeting after Carole make Firm decision 
+- Gen working on PPR Forms4-7, also working on URL update
+- Sienna: 10036 Info package, will close 10547 and 10548; 10018 Linda is following up with this ticket. Will do impact analysis later.
+- Suzanne: all regular meetings keep on-going, several tickets regarding OneStop decommissioning: 9897, 9898, 10011,10010, 11009; Will adjust the date on tickets
+- Cameron W: 10107 done, collecting last feedback from Olisa and etc, FAS/UAT training provided 
+- Olisa: am meeting with Treasury Board today and hopefully will get some direction on Society Act Amendment Timeline
+- Trish: PI planning: update mural board and color code. Change impact assessment for search
+- Linda: discussed UX/UI Research with key users#11026
+- Goal for Firm Registration : March  31st Dev
+
+---
+
 ### **27 Jan 2022: Stand-up Summary** 
 
 **Absentees:-**
