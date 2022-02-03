@@ -15,10 +15,11 @@
 - 	Thor: discussed SRE on board pay&auth. Current plan: Patrick will support first few weeks. SRE team continue focus on bug fixing. Will need Zac/Jane for business and communication
 - 	Thor: discussed Ops rotation person triage bugs on that day, also triage questions put in RC Ops channel: answer it or find someone to answer it
 - 	All: start KT to learn Sumesh's training recording and documents
-- 	Patrick is in transation with IT Ops team, and helping with relationship with resource issue regarding Report API
-- 	Patrick/Thor/Kaine: will have GCP Decsion meeting tomorrow
+- 	Patrick is in transition with IT Ops team, and helping with relationship with resource issue regarding Report API
+- 	Patrick/Thor/Kaine: will have GCP Decision meeting tomorrow
 - 	TBD: Actual # of Ops day is more than planned Ops days, will discuss with Jason
 - 	Ops tickets on SRE Board? Yes, we are okay for this 
+
 
 **Decisions: -** 
 
