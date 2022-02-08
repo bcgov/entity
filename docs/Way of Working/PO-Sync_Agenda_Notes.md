@@ -14,7 +14,7 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
-Feb 4, 2022
+Feb 11, 2022
 ----
 - Action Items / Carry Over
     - RAID board
@@ -28,6 +28,29 @@ Feb 4, 2022
 
 - Meeting Notes
 
+----
+Feb 4, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+
+- Meeting Notes
+    - Behaviors of the flow across all the different applications
+    - Credit Card Stability
+        - DMS office is working on a payment solution to fix what's wrong with payments.
+          - Thor has a Matthew and and his team that are running that project to find out where we're at and see if maybe we can use something better.
+        - Two options: 
+          - Use bambora  - requires fast-track approval
+          - Release the features only to premium accounts
+    - POs to update their roadmaps before next Friday
+    
 ----
 Jan 28, 2022
 ----
