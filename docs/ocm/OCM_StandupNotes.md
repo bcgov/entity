@@ -13,7 +13,7 @@
 
 **Update and Action Items:: -**
 - Maribeth, will create new tickets/epics; will create a new epic for 11079 and other user guide;  10941 it will be a living doc, collecting input. Working on 11031; will check FAS epic and move Backlog tickets to RTS.
-- Mags is working on 10919, and 10367. 10367 is waiting Kevin’s input, not high priority; a new epic is needed for 11079 /User Guide; will meet with Gen/Maribeth for website update/resource page
+- Mags is working on 10919, and 10367. 10367 is waiting Kevin/Amber’s input, not high priority; a new epic is needed for 11079 /User Guide; will meet with Gen/Maribeth for website update/resource page
 - Fareen: multi account for BCeID release two weeks delay; will do demo, created a new ticket for MOD Website update for BCeID Admins 
 - Amitis, will do handover with Suzanne, collecting information during meeting with internal stakeholders (Linda, Cameron, Debbie and Johana), will be working on HowToVideo after discussion with Mags and Melissa
 - Gen working on PPR Forms4-7, also working on URL update, will meeting Sienna discuss BS
