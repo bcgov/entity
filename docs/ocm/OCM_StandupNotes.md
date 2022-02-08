@@ -4,7 +4,32 @@
 - Tickets pending review; 
 - Go through epics/tasks (Skip some regular tasks/ tasks not in In Progress)
 
----
+----
+
+### 08 Feb2022 OCM Standup: 
+
+**Absence -**
+- John, Trish 
+
+**Update and Action Items:: -**
+- Maribeth, will create new tickets/epics; will create a new epic for 11079 and other user guide;  10941 it will be a living doc, collecting input. Working on 11031; will check FAS epic and move Backlog tickets to RTS.
+- Mags is working on 10919, and 10367. 10367 is waiting Kevin’s input, not high priority; a new epic is needed for 11079 /User Guide; will meet with Gen/Maribeth for website update/resource page
+- Fareen: multi account for BCeID release two weeks delay; will do demo, created a new ticket for MOD Website update for BCeID Admins 
+- Amitis, will do handover with Suzanne, collecting information during meeting with internal stakeholders (Linda, Cameron, Debbie and Johana), will be working on HowToVideo after discussion with Mags and Melissa
+- Gen working on PPR Forms4-7, also working on URL update, will meeting Sienna discuss BS
+- Sienna: 10036 Info package, closed 10547 and 10548 Will do impact analysis later.
+- Suzanne: all regular meetings keep on-going, several tickets regarding OneStop decommissioning: 9897, 9898, 10011,10010, 11009; Will adjust the date on tickets
+- Cameron W: NA; Before: 10107 done, collecting last feedback from Olisa and etc, FAS/UAT training provided 
+- Zac: FAS done UAT, waiting Jyoti’s feedback. Training needs will be huge, will prepare training material 
+- Olisa: NA; Before: am meeting with Treasury Board today and hopefully will get some direction on Society Act Amendment Timeline
+- Trish: NA, Before: PI planning: update mural board and color code. Change impact assessment for search
+- Linda: NA, Before: discussed UX/UI Research with key users#11026
+- Goal for Firm Registration : March  31st Dev
+- Kaine: MHR OCM preparation, need to bring Alpha group earlier
+
+
+----
+
 
 ### **Feb03 2022: Stand-up Summary** 
 
