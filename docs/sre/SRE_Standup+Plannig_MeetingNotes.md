@@ -1,3 +1,28 @@
+## **Feb102022: Planning Summary** 
+
+**Absentees:-**
+
+- 
+
+**Notes:-**
+![image](https://user-images.githubusercontent.com/87034722/153502595-e13ada51-1036-44c5-aa21-9f0e108fa6e9.png)
+
+**Action Items: -**
+
+- 	All: add real effort on SRE ticket
+- 	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+- 	Patrick: Regarding Sumesh's training recording and documents, Patrick will re-org all training materials
+- 	TBD:SRE Name Request UI 12.1 Release/ two tickets have Entities 11.8 Release Tag (10999 and 10922), maybe these two have already been released
+- 	Jinghua: Create a ticket as container to put SRE daily rountine effort to capture this effort on SRE board
+- 	Patrick: Create a ticket for review SSM permission on openshift, will put P1, team can pick when have time
+- 	Will use pre-release checklist for each SRE release going forward
+- 	Patrick will meet with Linda, Kaine and Thor for BN Wrapper - Identify scope and tasks 10844
+
+
+**Decisions: -** 
+
+---
+
 ## **Feb032022: Stand-up Summary** 
 
 **Absentees:-**
