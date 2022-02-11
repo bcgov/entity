@@ -6,6 +6,31 @@
 
 ----
 
+### 10 Feb2022 OCM Standup: 
+
+**Absence -**
+- Zac, Trish, Sienna 
+
+**Update and Action Items:: -**
+- Maribeth, will create new tickets/epics; created a new epic for 11079 and other user guide(11086 created);  10941 it will be a living doc, collecting input. Working on 11031, will meet Debie; will check FAS epic and move Backlog tickets to RTS.
+- Mags is working on 10919(lower priority, due this week), and 10367. 10367 is waiting Kevin/Amber’s input, not high priority; will meet with Gen/Maribeth for website update/resource page (This Friday)
+- Fareen: multi account for BCeID release two weeks delay (around Feb22); did demo then team need to do some changes regarding demo feedback, deadline is TBD. Will update communication plan, then MHR impact analysis/ review documents shared by Trish.  created a new ticket for MOD Website update for BCeID Admins (11028)
+- Amitis, Will be working on all Firms ticket; will do handover with Suzanne, collecting information during meeting with internal stakeholders (Linda, Cameron, Debbie and Johana), will be working on HowToVideo after discussion with Mags and Melissa(10732, one piece is not correct anymore: discharge/re-register)
+- Gen: Sienna will provide info package input to Gen; Form 9 will change to Form 20, also need to change website; will meet with Amitis; working on PPR Forms4-7, also working on URL update, will meeting Sienna discuss BS
+- Sienna: NA; Before: 10036 Info package, closed 10547 and 10548 Will do impact analysis later.
+- Suzanne: Transition/KT planning; regarding external partner, what need to be done; all regular meetings keep on-going, several tickets regarding OneStop decommissioning: 9897, 9898, 10011,10010, 11009; Will adjust the date on tickets
+- Cameron W: NA; Before: 10107 done, collecting last feedback from Olisa and etc, FAS/UAT training provided 
+- Zac: NA; Before: FAS done UAT, waiting Jyoti’s feedback. Training needs will be huge, will prepare training material 
+- John:  BCOL Admin escalation, Help desk/T1 and T2, who does what, will meet with Maribeth and work together
+- Olisa: met with Treasury Board, have their tentative greenlight on Society Act Amendment Timeline, March 31st; will do demo for Federal Gov later this month regarding MOD ; all work safe email will copy Dwayne and Suzanne
+- Trish: NA, Before: PI planning: update mural board and color code. Change impact assessment for search
+- Linda: Decision notes with Carole and Trish; user research with Mags (UX/UI Research with key users#11026); Non-mobile users/use hard token
+- Goal for Firm Registration: March  31st Dev
+- Melissa: PPR underway, work with Gen/Mags, will work with Fareen for MHR. PPR Team chat down will be in couple of weeks
+- Kaine: March3rd, API D&D meeting, present our roadmap of API for Search/Entities, Mags will join. Before: MHR OCM preparation, need to bring Alpha group earlier
+
+----
+
 ### 08 Feb2022 OCM Standup: 
 
 **Absence -**
