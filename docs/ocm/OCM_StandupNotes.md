@@ -1,8 +1,12 @@
 ### Standing Iterms for Standup
-- RC discussion / highlight 
-- Update from Trish; 
-- Tickets pending review; 
-- Go through epics/tasks (Skip some regular tasks/ tasks not in In Progress)
+- Review Tickets for each team members
+- Update from Trish/Kaine/Olisa 
+
+### ~~Standing Iterms for Standup~~ (Not using this anymore)
+- ~~RC discussion / highlight~~
+- ~~Update from Trish;~~
+- ~~Tickets pending review;~~
+- ~~Go through epics/tasks (Skip some regular tasks/ tasks not in In Progress)~~
 
 ----
 
