@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Feb 18, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+
+- Meeting Notes
+
+----
 Feb 11, 2022
 ----
 - Action Items / Carry Over
@@ -27,6 +42,16 @@ Feb 11, 2022
 - New Business
 
 - Meeting Notes
+    - Release coordination. 
+        - Patrick asked this to be added
+        - Asking that a technical release coordinator be assigned for cross team release coordination
+        - Would be helpful to know what exactly when releases are happening and what is being released
+        - Long term plan is that Trish Reimer will take over releases. James is going to reduce down to half time to affect that transition, and whenever it's ready, then James will roll off
+    - Tickets 10678 and 10679
+        - **Decision** 10678 isn't needed and will be closed
+        - 10679 Account name should be displayed for BCOL, Help and BC Registries staff
+        - **Decision** this is a low priority
+    - An ask that teams try to ensure the stories committed to in a sprint are closed prior to the end of the sprint
 
 ----
 Feb 4, 2022
