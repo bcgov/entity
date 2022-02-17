@@ -1,4 +1,30 @@
-## **Feb102022: Planning Summary** 
+## **Feb17 2022: Planning Summary** 
+
+**Absentees:-**
+
+- 
+
+**Notes:-**
+![image](https://user-images.githubusercontent.com/87034722/154579162-6eb4f69f-921f-4ae0-8f53-97d593c6c8ff.png)
+
+**Action Items: -**
+
+- 	Patrick is working on some adhoc support: PPR, OCM Auth/Pay investigation
+- 	Jinghua will create tickets for Pre-release checklist for the coming 3 releases
+- 	All use 11223 for tracking SRE effort which don't have a ticket
+- 	Richard is working on Data migration, get data to EDP
+- 	Eve is working on SOFI migration, Apache configuration, search part is not working; probably next week can be back to Team
+- 	Eve will be following up with Regi Integration Status (9696), now is waiting for QA, after confirmation, can release
+- 	All: add real effort on SRE ticket
+- 	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan) (https://chat.developer.gov.bc.ca/channel/registries-ops/thread/eE5YAL38dPLHpqkPv)
+)
+- 	Patrick: Regarding Sumesh's training recording and documents, Patrick will re-org all training materials
+
+**Decisions: -** 
+
+---
+
+## **Feb10 2022: Planning Summary** 
 
 **Absentees:-**
 
