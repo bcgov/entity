@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Feb 25, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+
+- Meeting Notes
+
+----
 Feb 18, 2022
 ----
 - Action Items / Carry Over
@@ -27,6 +42,10 @@ Feb 18, 2022
 - New Business
 
 - Meeting Notes
+    - Multiple BCeID accounts
+        - Holding the release until all the tickets are done
+        - Tentative date is March 1st
+    - Reviewed risks raised during PI planning
 
 ----
 Feb 11, 2022
