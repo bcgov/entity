@@ -16,7 +16,7 @@
 * Kial: Dec 22 - Jan 3
 * Kim:
 * Mags: November 12 - 19, December 27-31
-* Patrick: October 25 - November 12
+* Patrick: April 1 - 8, July 25 - 29, October 10 - 14, 21 and January 23 - February 3
 * Scott:
 * Tracey: Dec 23 - 31
 * Thor:
