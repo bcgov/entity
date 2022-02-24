@@ -10,6 +10,47 @@
 
 ----
 
+### Feb24 2022 OCM Standup:
+**Absence -**
+- Zac, John, Cameron, Suzanne
+
+**Latest Release Date: -**
+- Multi-account: March 1st
+- Goal for Firm Registration: March  31st in Dev
+- FAS: March 31 -> April 5th 
+- Wills Registry: March 31
+
+**Update and Action Items: -**
+- All: Add Due date and Estimates on OCM tickets where is applicable
+- 1st draft of engagement/communication plan is before March 11
+	- Mags: API; Biz Search 
+	- Amitis: Firm and OneStop 
+	- Fareen: MHR
+- Separate btw Amitis and Fareen: two different applications
+	- Amitis: focus on OneStop Partner: CRA; Work Safe; Finance 
+	- Fareen: BCOL Partner
+
+**Update and Action Items: -**
+- Maribeth: Working on prep for March info session for ministry and non-ministry, almost all set; for 11290 will discuss with John; Created new ticket 11291, need Fareen’s support
+- Mags: 11194 is under review; Confirming search BCOL is in early sprint and other late sprint; working on 10857 SP/GP
+- Fareen: Multi-account go-live: March1st, prepare user guide; will check with Melissa and Sienna for all possible release on March1st(combining into one release notes); For external BCeID email DL: 700 recipiences, OCM will send out email directly;  will be working on MHR change impact and engagement plan; hold on communication with BCOL admin on how to setup multi-accounts, will walk through during info session first;
+- Amitis, Will meet Suzanne for KT; Will redo one PPR Video;  working on all Firms ticket(10920); will do handover with Suzanne(external stakeholder/partners for OneStop); 
+- Gen: Will help with Job Aid; working on PDF for Voluntary Dissolution and MHR emergency Form update from Debbie; remove links for known issues from CMS site, only accessible from PPR application (Done); Changing phone# need to connect with Cameron and Olisa, Before: Sienna will provide info package input to Gen; 
+- Sienna: working on 10036 Info package (End of Feb), working on 10926 (March1st)
+- Suzanne: NA, Before: will close tickets regarding OneStop decommissioning; will add latest document under new communication ticket. Transition/KT before Feb28; regarding external partner, what need to be done; all regular meetings keep on-going, 
+- Cameron W: NA; Before: 10107 done, collecting last feedback from Olisa and etc, FAS/UAT training provided 
+- Zac: NA; Before: has met Jyoti last Friday for FAS; will move RTS ticket to In Progress , Before: coordinate FAS go-live, current release date: April5th. Training needs will be huge, will prepare training material; 10381 waiting Jyoti’s confirmation to move to In Progress
+- John:  NA, Before: BCOL Admin escalation, Help desk/T1 and T2, who does what, will meet with Maribeth and work together
+- Olisa: Working with Jyoti for info notes; Also working on another info notes in March(for another Act, will build under PPR), to build additional filing. Target timeline is late 2023; Before: met with Treasury Board, have their tentative greenlight on Society Act Amendment Timeline, March 31st; will do demo for Federal Gov later this month regarding MOD ; all work safe email will copy Dwayne and Suzanne
+- Trish: SBC meeting today, will focus on biz search, targeting June, but MVP April; PPR GCP bulletin late in March, new bulletin on launch and search, need to make sure application is stable 
+- Linda: NA, Before: Decision notes with Carole and Trish; user research with Mags (UX/UI Research with key users#11026); Non-mobile users/use hard token
+- Melissa: Discussed PPR release date with Sienna and Fareen; Before: PPR underway, work with Gen/Mags, will work with Fareen for MHR. PPR Team chat down will be in couple of weeks
+- Kaine: NA; Before: Working with D&D for search, there are two options, Before: March3rd, API D&D meeting, present our roadmap of API for Search/Entities, Mags will join. Before: MHR OCM preparation, need to bring Alpha group earlier
+
+
+
+----
+
 ### Feb22 2022 OCM Standup:
 **Absence -**
 - Amitis, John, Cameron, Suzanne
