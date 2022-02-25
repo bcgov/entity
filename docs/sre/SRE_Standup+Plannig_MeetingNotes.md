@@ -1,4 +1,30 @@
-## **Feb17 2022: Planning Summary** 
+## **Feb24 2022: Planning Summary** 
+
+**Absentees:-**
+
+- 
+
+**Notes:-**
+![image](https://user-images.githubusercontent.com/87034722/155793261-9e0cfb5c-8fd0-4a65-9e28-b94b153ae6b2.png)
+
+**Action Items: -**
+
+- 	Richard is working on entities' data migration (get data to EDP)
+- 	Jinghua to check how to track Richard's effor when working for entities
+- 	Jinghua to find out a list of benchmark Fib number for SRE team/ticket est.
+- 	Eve is working on SOFI migration, code part is done, now Apache configuration URL/Local host has an issue; probably next week can be back to Team
+- 	Eve will be following up with Regi Integration Status (9696), now is waiting for QA, after confirmation, can release
+- 	Done two releases: SRE 12.1 Release: Name Request UI and SRE Feb24 Release: Name Examination
+- 	Another release is planned: SRE March3rd Release: NameX
+- 	All: add real effort on SRE ticket
+- 	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+- 	TBC: Patrick: Regarding Sumesh's training recording and documents, Patrick will re-org all training materials
+
+**Decisions: -** 
+
+---
+
+## **Feb17 2022: Standup Summary** 
 
 **Absentees:-**
 
