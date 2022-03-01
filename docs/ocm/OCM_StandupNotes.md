@@ -10,6 +10,46 @@
 
 ----
 
+### March1st 2022 OCM Standup:
+**Absence -**
+- John
+
+**Latest Release Date: -**
+- Multi-account: March 1st (not sure about the time, Fareen will check with John/Jyoti)
+- Goal for Firm Registration: March  31st in Dev
+- FAS: March 31 -> April 5th  (CAS code freeze might impact FAS go-live date, Zac will find out)
+- Wills Registry: March 31
+
+**Update and Action Items: -**
+- Patrick will chat with staff to decide if we should continue with Team Chat for PPR support, will inform OCM later, otherwise PPR support will transfer to Ops channel 
+- All: update coming vacation in leave tracker: https://docs.google.com/spreadsheets/d/1xxmXi__om7hYkqbmHVTPzlxy9wBOaegzVI9ikJysXSc/edit#gid=0
+- Mags and Trish will meet for business search discussion (who is target audience, how to get user setup, and etc.)
+- Amitis to try to finish draft 10010 today
+- Trish will create ticket for tracking lawyer’s strategy 
+- OCM join BA meeting: 
+•	Invite OCM to join FAS business leads meeting? – will use Team Chat/ Email for communication 
+•	Invite Amitis and Mags could to join weekly requirements gathering meeting with the firms team? – Ask Linda to send invite to Mags and Amitis, Mags and Amitis will decide if they will go or not
+•	Invited Fareen in weekly MHR review meeting
+- All: Add Due date and Estimates on OCM tickets where is applicable
+
+**Update and Action Items: -**
+- Maribeth: NA, Before: Working on prep for March info session for ministry and non-ministry, almost all set; for 11290 will discuss with John; Created new ticket 11291, need Fareen’s support
+- Mags: will meet with Trish for business search discussion (who is target audience, how to get user setup, and etc.)
+- Fareen: Multi-account go-live: March1st; will monitor engagement mailbox; getting input from Debbie and Cameron for MHR change impact analysis; need meeting invite for Suzan’s handover meeting, will check with Robyn Murray - Branch Coordinator and Keri Sandford
+- Amitis, met Suzanne for KT; setup local gov communication, will need input from Dwayne; will try to finish draft 10100 by end of today; will find out priority for tickets under In Progress 
+- Gen: 10036 will meet Sienna and move to done; will check statistic of number of download for C-Corp forms for filling, Gen will try to find out. 
+- Sienna: waiting App to be finished before OCM tasks, focus on requirement gathering; will check RTS and In Progress tickets; create new task tickets under epic if anything is missing;  working with Gen together on 10036 Info package (End of Feb), working on 10926 (March1st)
+- Cameron W: NA; Before: 10107 done, collecting last feedback from Olisa and etc, FAS/UAT training provided 
+- Zac: 10381 moved to In Progress- guide is necessary, will setup info session to walk through the whole system. Also will setup Team chat to support staff like PPR go-live; will have a meeting on March 7th for 10378	
+- John:  NA, Before: BCOL Admin escalation, Help desk/T1 and T2, who does what, will meet with Maribeth and work together
+- Olisa: NA: Working with Jyoti for info notes; Also working on another info notes in March(for another Act, will build under PPR), to build additional filing. Target timeline is late 2023; Before: met with Treasury Board, have their tentative greenlight on Society Act Amendment Timeline, March 31st; will do demo for Federal Gov later this month regarding MOD ; all work safe email will copy Dwayne and Suzanne
+- Trish: will be off after Thursday until March23rd; Priority is book March engagement sessions; create new task tickets under epic if anything is missing
+- Linda: NA, Before: Decision notes with Carole and Trish; user research with Mags (UX/UI Research with key users#11026); Non-mobile users/use hard token
+- Melissa: NA, Before: Discussed PPR release date with Sienna and Fareen; Before: PPR underway, work with Gen/Mags, will work with Fareen for MHR. PPR Team chat down will be in couple of weeks
+- Kaine: NA; Before: Working with D&D for search, there are two options, Before: March3rd, API D&D meeting, present our roadmap of API for Search/Entities, Mags will join. Before: MHR OCM preparation, need to bring Alpha group earlier
+
+----
+
 ### Feb24 2022 OCM Standup:
 **Absence -**
 - Zac, John, Cameron, Suzanne
