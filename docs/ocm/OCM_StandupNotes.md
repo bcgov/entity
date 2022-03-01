@@ -20,8 +20,8 @@
 - FAS: March 31 -> April 5th  (CAS code freeze might impact FAS go-live date, Zac will find out)
 - Wills Registry: March 31
 
-**Update and Action Items: -**
-- Patrick will chat with staff to decide if we should continue with Team Chat for PPR support, will inform OCM later, otherwise PPR support will transfer to Ops channel 
+**Highlight Action Items: -**
+- Patrick will chat with staff to decide if we will continue with Team Chat for PPR support, will inform OCM later, otherwise PPR support will transfer to Ops channel 
 - All: update coming vacation in leave tracker: https://docs.google.com/spreadsheets/d/1xxmXi__om7hYkqbmHVTPzlxy9wBOaegzVI9ikJysXSc/edit#gid=0
 - Mags and Trish will meet for business search discussion (who is target audience, how to get user setup, and etc.)
 - Amitis to try to finish draft 10010 today
