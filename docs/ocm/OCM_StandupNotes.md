@@ -26,9 +26,9 @@
 - All: update coming vacation in leave tracker: https://docs.google.com/spreadsheets/d/1xxmXi__om7hYkqbmHVTPzlxy9wBOaegzVI9ikJysXSc/edit#gid=0
 - TBC: Trish will create ticket for tracking lawyer’s strategy 
 - OCM join BA meeting: 
- - Invite OCM to join FAS business leads meeting? – will use Team Chat/ Email for communication 
- - Invite Amitis and Mags could to join weekly requirements gathering meeting with the Firms’s team? – Ask Linda to send invite to Mags and Amitis, Mags and Amitis will decide if they will go or not
- - Invited Fareen in weekly MHR review meeting
+ 	- Invite OCM to join FAS business leads meeting? – will use Team Chat/ Email for communication 
+ 	- Invite Amitis and Mags could to join weekly requirements gathering meeting with the Firms’s team? – Ask Linda to send invite to Mags and Amitis, Mags and Amitis will decide if they will go or not
+ 	- Invited Fareen in weekly MHR review meeting
 - All: Add Due date and Estimates on OCM tickets where is applicable
 
 **Update and Action Items: -**
