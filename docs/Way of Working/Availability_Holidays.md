@@ -1,4 +1,4 @@
-### March03 2022 Update: Please use Google doc for leave/absent tracking, **we don't use this Zenhub doc anymore**, thank you! 
+### March03 2022 Update: Please use Google doc for leave/absent tracking, **we don't use this Github doc anymore**, thank you! 
 
 **Google Doc**: https://docs.google.com/spreadsheets/d/1xxmXi__om7hYkqbmHVTPzlxy9wBOaegzVI9ikJysXSc/edit#gid=0 
 
