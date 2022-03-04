@@ -1,3 +1,22 @@
+## **March03 2022: Standup Meeting** 
+
+**Absentees:-**
+
+- Patrick
+
+**Notes:-**
+![image](https://user-images.githubusercontent.com/87034722/156696012-a905364b-3db0-4923-99db-7de5133da870.png)
+**Action Items: -**
+- 	Richard is working on entities' data migration (get data to EDP). Reconstructed Dev Env.
+- 	Jinghua to check how to track Richard's effor when working for entities; Has sent email to Linda on Feb25, follow-up email on March3rd.
+- 	Todo: Jinghua to find out a list of benchmark Fib number for SRE team/ticket est.
+- 	Eve is working on SOFI migration, code part is done, having connetion problem, will cannot be solved by end of today, will pick a new SRE ticket
+- 	Eve followed up with Regi Integration Status (9696), now is waiting for QA, after confirmation, can release. John's Feedback: The REGI test cases have all passed, but I can continue tha with more edge case testing.
+- 	SRE March3rd Release done 
+- 	All: add real effort on SRE ticket
+
+---
+
 ## **Feb24 2022: Planning Summary** 
 
 **Absentees:-**
