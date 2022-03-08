@@ -9,6 +9,38 @@
 - ~~Go through epics/tasks (Skip some regular tasks/ tasks not in In Progress)~~
 
 ----
+### March8th 2022 OCM Standup:
+**Absence -**
+- John, Trish, Sienna, Gen, Cameron
+
+**Latest Release Date: -**
+- Goal for Firm Registration: March  31st in Dev, End of June for Go live
+- FAS: March 31 -> April 5th  (CAS code freeze might impact FAS go-live date, Zac will find out)
+- Wills Registry: March 31
+
+**Highlight Action Items: -**
+- Jinghua: to follow-up with 11194
+- All: Finish engagement/communication plan this week for March’s tasks, then finish next week for April’s tasks 
+- Mags have DL now. Distribution List: Government users (ministry and non-ministry) + Non-government users
+- All: Add Due date and Estimates on OCM tickets where is applicable
+
+**Update and Action Items: -**
+- Maribeth: Info session schedule for March14th, if Zac cannot finish Video recording by Friday, Jyoti/John will help demo; Will follow-up. 11208 will use google meet later will check with Sienna; 11229 KB  will leave this ticket for Janis. 
+- Mags: got Distribution list, no other road blockers .
+- Fareen: BCOL offboarding AP; Will get input from Bob for # of users for Rural Property Registry (contact with Kaine/Jyoti, then Adam), this org is similar as ICBC or BC Hydro; 
+- Amitis: 11194 1st draft done, 11360, 11132(firm comm plan), 10920(internal OCM plan for SP/GP) need time to finish, no obstetricals 
+- Gen: NA; Forms for Search is TBD. Others moving along pipeline. 
+- Sienna: NA: will help Amitis 
+- Cameron W: NA; Before: 10107 done, collecting last feedback from Olisa and etc, FAS/UAT training provided 
+- Zac: 11390 prepare video for demo plan by end of this week. Otherwise ask help from Jyoti and John. 10381 FAS Job aid +  user guide; 10378 move to review; 10376 Jyoti is working on that. 10377 will have 1st info session tomorrow. 	
+- John:  NA, Before: BCOL Admin escalation, Help desk/T1 and T2, who does what, will meet with Maribeth and work together
+- Olisa: 10373 follow-up with Jyoti, and will review tickets tomorrow 
+- Trish: NA: will be off after Thursday until March23rd; Emphasize following priority: 1)GCPE in two weeks; 2)GL Code by April1st; 3) Info session on March14th(how to use BA/PO’s effort to do presentation and Q&A?); 4) PPR Final communication; 5)engagement/communication plan done this week for March’s tasks, then done next week for April’s tasks; 6) 1st draft of training plan until end of April; 7) API audience communication
+- Linda: NA, Before: Decision notes with Carole and Trish; user research with Mags (UX/UI Research with key users#11026); Non-mobile users/use hard token
+- Melissa: NA, Before: Discussed PPR release date with Sienna and Fareen; Before: PPR underway, work with Gen/Mags, will work with Fareen for MHR. PPR Team chat down will be in couple of weeks
+- Kaine: NA; Before: Working with D&D for search, there are two options, Before: March3rd, API D&D meeting, present our roadmap of API for Search/Entities, Mags will join. Before: MHR OCM preparation, need to bring Alpha group earlier
+
+----
 
 ### March3rd 2022 OCM Standup:
 **Absence -**
