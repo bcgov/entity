@@ -14,6 +14,22 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+Mar 11, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+    - 
+     
+- Meeting Notes
+
+----
 Mar 4, 2022
 ----
 - Action Items / Carry Over
@@ -25,10 +41,28 @@ Mar 4, 2022
     - PI Planning Board - Dependencies
 
 - New Business
-    - Updated action items from PPR retro
-    - 
+    - Update common component #11111
+    - Discuss tickets 11344, 11340
+    - Discuss ticket 10804 
+    - change to discourse
+     
 - Meeting Notes
-
+    - Update common component #11111
+        - relationships team opened it and there's all different kinds of UIs that need updating
+        - entities just have the Edit UI to complete - done shortly
+        - ** Decision ** this kind of activity should be a story with subtasks next time
+    - Discuss tickets 11344, 11340
+        - 11344 concerns overall BC registry, home page updates and the navigations - will be partially fixed
+        - 11340 concerns which account to default to when user logs in - move it to the backlog
+    - Discuss ticket 10804 
+        - concerns sharing information about availability 
+        - should we add it to a common component 
+        - sounds like a placing this info in a footer makes the most sense 
+        - ** Action ** send to Scott for a design 
+    - change to discourse
+        - James forwarded some suggstions for new discourse categories and associated definitions
+        - ** Decision ** implement the changes 
+    - ** Action ** - 2 releases per sprint - add to guiding principle
 
 ----
 Feb 25, 2022
