@@ -9,6 +9,45 @@
 - ~~Go through epics/tasks (Skip some regular tasks/ tasks not in In Progress)~~
 
 ----
+
+### March10th 2022 OCM Standup:
+**Absence -**
+- John, Trish, Zac, Gen, Cameron
+
+**Latest Release Date: -**
+- Goal for Firm Registration: March  31st in Dev, End of June for Go live
+- FAS: March 31 -> April 5th  (CAS code freeze might impact FAS go-live date, Zac will find out)
+- Wills Registry: March 31
+
+**Highlight Action Items: -**
+- Maribeth: to see if she can ask Dwayne for CMS website update/asking access right first. Melissa know how to do the update, she can help. 
+- Olisa to check long-term plan to find a backfill for Suzanne and backup for CMS site update
+- Jinghua: to inform Fareen if there are any MHR progress
+- Jinghua: to follow-up with 11194, can move to done. Will open another ticket for a follow-up action(11360)
+- All: Finish engagement/communication plan this week for March’s tasks, then finish next week for April’s tasks 
+- Mags have DL now. Distribution List: Government users (ministry and non-ministry) + Non-government users
+- All: Add Due date and Estimates on OCM tickets where is applicable
+
+**Update and Action Items: -**
+- Maribeth: to see if she can ask Dwayne for CMS website update/asking access right first. Melissa know how to do the update, she can help. 11229 work with Janis together; Info session schedule for March14th, Jyoti will do demo; Will follow-up. 11208 will use google meet later will check with Sienna; 11229 KB will leave this ticket for Janis. 
+- Mags: will create a ticket for PPR stability communication. Will meet with Sienna for coop paper form, searchable on BCOL; got Distribution list, no other road blockers .
+- Fareen:  MHR Comm/engagement plan got push back from Debbie and Johanna, will put this on hold, and talk with Melissa and Kaine first. Find out who will participant in MHR pilot phase (asking Sharron); PPR Search Result guide, looking examples; Ministry administer cheat sheet will meet with Cameron and Maribeth; Before:  BCOL offboarding AP; Will get input from Bob for # of users for Rural Property Registry (contact with Kaine/Jyoti, then Adam), this org is similar as ICBC or BC Hydro; 
+- Amitis: have met with Dwayne for external partner comm plan, now waiting Dwayne’s input (after his meeting on Monday); RTS tickets JTT(Job Trade and Tech), don’t know who should contact with, Maribeth will contact Sandra and get Amitis connected;  11346 cannot contact them directly, Dwayne has the connection/relationship;  11132(firm comm plan), 10920(internal OCM plan for SP/GP) need time to finish, no obstacles 
+- Gen: NA, Will be away this week. Forms for Search is TBD. Others moving along pipeline. 
+- Sienna: 10036 is under Gen’s review; working on firm training plan (together with Amitis) 
+- Cameron W: NA; Before: 10107 done, collecting last feedback from Olisa and etc, FAS/UAT training provided 
+- Zac: NA; Before: 11390 prepare video for demo plan by end of this week. Otherwise ask help from Jyoti and John. 10381 FAS Job aid +  user guide; 10378 move to review; 10376 Jyoti is working on that. 10377 will have 1st info session tomorrow. 	
+- John:  NA, Before: BCOL Admin escalation, Help desk/T1 and T2, who does what, will meet with Maribeth and work together
+- Olisa: Have reviewed tickets, will help with Amities to join Dwayne’s meeting
+- Trish: NA: will be off after Thursday until March23rd; Emphasize following priority: 1)GCPE in two weeks; 2)GL Code by April1st; 3) Info session on March14th(how to use BA/PO’s effort to do presentation and Q&A?); 4) PPR Final communication; 5)engagement/communication plan done this week for March’s tasks, then done next week for April’s tasks; 6) 1st draft of training plan until end of April; 7) API audience communication
+- Linda: NA, Before: Decision notes with Carole and Trish; user research with Mags (UX/UI Research with key users#11026); Non-mobile users/use hard token
+- Melissa: Need help for CMS site update, Before: Discussed PPR release date with Sienna and Fareen; Before: PPR underway, work with Gen/Mags, will work with Fareen for MHR. PPR Team chat down will be in couple of weeks
+- Kaine: NA; Before: Working with D&D for search, there are two options, Before: March3rd, API D&D meeting, present our roadmap of API for Search/Entities, Mags will join. Before: MHR OCM preparation, need to bring Alpha group earlier
+
+
+
+----
+
 ### March8th 2022 OCM Standup:
 **Absence -**
 - John, Trish, Sienna, Gen, Cameron
