@@ -29,6 +29,44 @@ Mar 11, 2022
 - Meeting Notes
 
 ----
+Mar 11, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+    - Feature flags and impacts.
+    - Ticket 10664.
+    - OPs
+    - Escalation to Carol
+    - Pairing on OPs tickets
+    - Business Zenhub Dashboard
+     
+- Meeting Notes
+    - Feature flags and impacts.
+        - More releases requires more QA testing due to the amount of regression. Really emphasizes the importance of us automating more of our testing.
+        - Leave for future discussion.
+    - Ticket 10664.
+        - Sent to Carol, so no action required.
+    - OPs
+        - Hold for Jason's return
+    - Escalation to Carol
+        - Jyoti has a spreadsheet.
+        - Linda will create a RAID ticket and propose that as an alternate approach.
+    - Pairing on OPs tickets
+        - Linda proposed pairing an Entity team developer up with an SRE dev who is a little less experienced and maybe between the two of them they can kind of get down to the root cause of the issues.
+        - This would provide a mentoring opportunity
+        - Thor suggested the use of the read-only database as an aide for BAs. Patrick can provide some documentation on how to access it.
+        - Patrick will provide access to the OPS repo and then the read only database.
+    - Business Zenhub Dashboard
+        - Cameron W was to have a follow up meeting to discuss the dashboard with the business team. That has been completed.
+        - Olisa/Cameron will be setting up a follow-up with James
+----
 Mar 4, 2022
 ----
 - Action Items / Carry Over
