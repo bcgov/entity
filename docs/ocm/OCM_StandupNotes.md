@@ -10,6 +10,42 @@
 
 ----
 
+### March18th 2022 OCM Standup:
+**Absence -**
+- John, Trish, Zac, Gen
+
+**Latest Release Date: -**
+- Goal for Firm Registration: March  31st in Dev, End of June for Go live
+- FAS: March 31 -> April 5th  (CAS code freeze might impact FAS go-live date, Zac will find out)
+- Wills Registry: March 31 (TBD)
+- MHR: The preliminary timeline is August/September 
+
+**Highlight Action Items: -**
+- Relationship team have a representative in this meeting: Kaine emphasize this during standup
+- InProgress: Maribeth: ask Dwayne for CMS website update, need access right first. Melissa know how to do the update, she can help. 
+- InProgress: Olisa to check long-term plan to find a backfill for Suzanne and backup for CMS site update
+- Jinghua: to inform Fareen if there are any MHR progress
+- All: Finish engagement/communication plan this week for March’s tasks, then finish next week for April’s tasks 
+- All: Add Due date and Estimates on OCM tickets where is applicable
+
+**Update and Action Items: -**
+- Maribeth: 11230 staff board, assign to Cameron; No blockers; Before: 11229 KB type of document, assign to Sienne; working on 11291. 
+- Mags: 11341 and 11342 are under Kaine/Linda/Maribeth review; working on biz search user research (with Scott, Janis, Joanna and Thor) .
+- Fareen: CC MHR email to Scott, Thor and Janis;  working on PPR close and exact match, support info session; Before: MHR timeline is not clear; create a new ticket for MHR pilot plan approach; will meet Melissa;  Will join MHR design meeting together with Melissa and Scott
+- Amitis: working with Olisa for small business comms; RTS tickets JTT #11348 (Job Trade and Tech) had a meeting, but wait input to move to InProgress; 11346 cannot contact them directly, Dwayne has the connection/relationship;  11132(firm comm plan) will meet with Mags, Linda and Dwayne first , 10920(internal OCM plan for SP/GP) need time to finish, no obstacles 
+- Gen: NA; Before: 10036 is waiting Sienna’s review. Forms for Search is TBD. Others moving along pipeline. 
+- Sienna: 10036 is under Gen and Olisa’s review; working on firm training plan (together with Amitis) 
+- Patrick: working on how to read search output doc for OCM
+- Cameron W: NA; Before: 10107 done, collecting last feedback from Olisa and etc, FAS/UAT training provided 
+- Zac: NA; Before: 11390 prepare video for demo plan by end of this week. Otherwise ask help from Jyoti and John. 10381 FAS Job aid +  user guide; 10378 move to review; 10376 Jyoti is working on that. 10377 will have 1st info session tomorrow. 	
+- John:  NA, Before: BCOL Admin escalation, Help desk/T1 and T2, who does what, will meet with Maribeth and work together
+- Olisa: 10373 is with Carole; discussed GCPE and phase out draw down accounts with Kaine
+- Trish: NA: will be off after Thursday until March23rd; Emphasize following priority: 1)GCPE in two weeks; 2)GL Code by April1st; 3) Info session on March14th(how to use BA/PO’s effort to do presentation and Q&A?); 4) PPR Final communication; 5)engagement/communication plan done this week for March’s tasks, then done next week for April’s tasks; 6) 1st draft of training plan until end of April; 7) API audience communication
+- Linda: Before: Decision notes with Carole and Trish; user research with Mags (UX/UI Research with key users#11026); Non-mobile users/use hard token
+- Melissa:  NA; Need help for CMS site update, Before: Discussed PPR release date with Sienna and Fareen; Before: PPR underway, work with Gen/Mags, will work with Fareen for MHR. PPR Team chat down will be in couple of weeks
+- Kaine: For MHR suggested users research meeting with Scott, Melissa, and Janis (vs who user use current system now);
+
+----
 ### March15th 2022 OCM Standup:
 **Absence -**
 - John, Trish, Zac, Cameron
