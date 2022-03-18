@@ -1,3 +1,28 @@
+## **March17 2022: Standup Meeting** 
+
+**Absentees:-**
+
+- 
+
+**Notes:-**
+![image](https://user-images.githubusercontent.com/87034722/159037180-524bdb66-fa8f-48e3-b763-cdfecfad9c33.png)
+
+
+**Highlight Action Points:**	
+- 	Two SRE Release done: SRE March16th Release: NameX and SRE March16th Release: Name Request UI
+- 	Patrick is working on hiring ops people, also search ticket system with Thor
+- 	Eve is working on SOFI upgrade, some errors need to fix
+- 	Steven can pickup a new ticket after current one(5293)
+- 	Don’t need Sprint Goals for  SRE
+- 	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 11223
+- 	Jinghua to create a gost ticket for SRE team support other Application team (i.e Data migration ticket for Richard)
+- 	"Jinghua to follow-up 9696, last comments from John's : The REGI test cases have all passed, but I can continue tha with more edge case testing.
+"
+- 	All: add real effort on SRE ticket
+- 	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+---
+
 ## **March03 2022: Standup Meeting** 
 
 **Absentees:-**
