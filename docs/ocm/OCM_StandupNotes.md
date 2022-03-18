@@ -10,7 +10,7 @@
 
 ----
 
-### March18th 2022 OCM Standup:
+### March17th 2022 OCM Standup:
 **Absence -**
 - John, Trish, Zac, Gen
 
