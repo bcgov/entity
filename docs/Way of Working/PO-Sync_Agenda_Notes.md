@@ -48,7 +48,7 @@ Mar 18, 2022
         - We've have an agreement on a process that will create the knowledge sharing but it hasn't happened as yet so perhaps making it easier will help.
     - Ops Kanban
         - Jason is proposing a WIP limit be initiated on some of the in progress columns.
-        - ** Decision ** POs agreed to this proposal
+        - **Decision** POs agreed to this proposal
     - Feature flag deployments
         - We're going to have a session in the next couple weeks with developers and talk about how to support this through the API and how to support it through UI, and then it's a matter of at least we can do baby steps where like each team when they're planning should pick a couple things to actually feature flag.
         - It would be helpful for us to practice these kinds of deployments because it would make our moves to production much easier if we could turn some of the features off until all the bugs have been worked out.
@@ -58,7 +58,7 @@ Mar 18, 2022
         - We might have to hire another person to backfill for Janice to allow the move to the UI team
     - New PI progress board
         - We worked on a new approach to visualizing team PI progress during this meeting
-        - ** Decision ** show the new visual in our upcoming sprint review
+        - **Decision** show the new visual in our upcoming sprint review
 ----
 Mar 11, 2022
 ----
