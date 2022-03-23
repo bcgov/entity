@@ -6,7 +6,7 @@
 
 # Summary
 
-PPR (Personal Property Registry) and MHR (Mobile Home Registry) are believed to have a lot in common, including users, application elements and features along with some joint workflows that require information from both. This is more heavily weighted on the MHR portion of the business.
+PPR (Personal Property Registry) and MHR (Mobile Home Registry) are believed to have a lot in common, including users, application elements and features along with some joint workflows that require information from both. This is more heavily weighted on the MHR portion of the business. The intent is to release features in MHR to small user groups, (staff, Manufacturers etc...) and be able to have the feature run in parralell from in old and new appliciation. 
 
 This paper and the associated User Experience designs are defining how these two application can be combined to leverage application assets and enhance their overall usability.
 
