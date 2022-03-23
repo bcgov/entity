@@ -24,6 +24,41 @@ PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what d
 |---|----------------------|--------------------|-------------------------|
 
 -----------------------------------------------------------------------------------------------------------------------
+### March 22, 2022 - Sprint (Milestone) 12.3 - 70 min. total 
+
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+
+#### Entities
+
+#### Relationships
+* 11100 - Transactions filter date off by one day - Saravan
+* 11277 - Change Existing BCOL information - Faiz / Saravan 
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+-----------------------------------------------------------------------------------------------------------------------
+### March 9, 2022 - Sprint (Milestone) 12.2 - 70 min. total 
+
+PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
+
+#### Assets
+
+#### Entities
+
+#### Relationships
+* 11264 - Dissolution Filing UI Build for SP & GP - Faiz
+* 11277 - Change Existing BCOL information - Saravan  (Next sprint 12.3)
+* 11184 - FAS - Supervisors can not approve their own Write-offs - Rai
+
+#### Action Items:
+| # | Action Item/Feedback | Feedback Shared by | Action Item Assigned to |
+|---|----------------------|--------------------|-------------------------|
+
+-----------------------------------------------------------------------------------------------------------------------
 ### January 25, 2022 - Sprint (Milestone) 11.7 - 70 min. total 
 
 PO´s can speak 2 min. each to the Sprint Goal - what they achieved - and what did not get completed this Sprint.
