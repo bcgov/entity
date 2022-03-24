@@ -1,6 +1,10 @@
 ### Standing Iterms for Standup
-- Review Tickets for each team members
-- Update from Trish/Kaine/Olisa 
+- Review Issues and Obstacles 
+- Update from Trish/Kaine/Olisa and POs
+
+### ~~Standing Iterms for Standup
+- ~~Review Tickets for each team members
+- ~~Update from Trish/Kaine/Olisa 
 
 ### ~~Standing Iterms for Standup~~ (Not using this anymore)
 - ~~RC discussion / highlight~~
