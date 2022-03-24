@@ -1,3 +1,25 @@
+## **March24 2022: Planning Meeting** 
+
+**Absentees:-**
+
+- Eve
+
+**Notes:-**
+![image](https://user-images.githubusercontent.com/87034722/160013557-e51e30bd-d2f3-4d44-83c6-7b03916495ff.png)
+
+
+**Highlight Action Points:**	
+- 	Patrick is working on director search and 11566 banner message using google sheet
+- 	Eve is working on SOFI upgrade, apache configuration
+- 	Done several tickets, now working on 11652, 10280 
+- 	Steven is working on 11651
+- 	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 11606
+- 	Jinghua created a gost ticket for Richard's entities work
+- 	Jinghua is following up 9696, last comments from John's : The REGI test cases have all passed, but I can continue tha with more edge case testing.
+- 	All: add real effort on SRE ticket
+- 	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
 ## **March17 2022: Standup Meeting** 
 
 **Absentees:-**
