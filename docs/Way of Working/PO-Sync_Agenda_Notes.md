@@ -14,7 +14,7 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
-Mar 25, 2022
+April 1, 2022
 ----
 - Action Items / Carry Over
     - RAID board
@@ -28,6 +28,33 @@ Mar 25, 2022
      
 - Meeting Notes
 
+----
+Mar 25, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+     
+- Meeting Notes
+    - Strategy for application web based help.
+        - References common issues or questions being directed to the help desk.
+        - Trying to provide that information within the application (e.g. under a tooltip).
+        - Concern raised that textual help might raise more questions than it answers
+        - **Action** Sarah to look at the issues that are currently being addressed by the help desk and do a quick analysis to inform our next steps
+        - Next step might be to distribute a survey
+    - Use of a timer during PI planning.
+        - **Decision** use a timer for planning
+    - Change Sprint Review Agenda
+        - **Decision** remove roadmap and release slides as they are reviewed in the release planning meeting
+    - Services card
+        - demo was provided to the team this week
+        - **Decision** - hold off on using it
 ----
 Mar 18, 2022
 ----
