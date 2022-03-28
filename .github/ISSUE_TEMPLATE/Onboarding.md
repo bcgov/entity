@@ -67,9 +67,10 @@ assignees: ''
 
 **Ops Team Onboarding**
 
-- [ ] Developers or BA are added to Ops repo
+- [ ] Developers or BAs are added to Ops repo
+- [ ] Devekioers or BAs are given Edit permissions for the Knowledge Base (Ops Google Drive folder)
 - [ ] BA have access to shared BA inbox
-- [ ] Set up overview meeting with another Dev/BA to cover process and common requests
+- [ ] Set up overview meeting with another Dev/BA to cover process and common requests (including review of the Knowledge Base and how to contriburte)
 - [ ] Access to prod dashboard and databases (read-only for BAs to review client status for requests - SOFI, Namex and Business Registries)
 - [ ] Set up meeting for training on an overview of each application and each DB. 
 - [ ] If available, API testing training using Postman
