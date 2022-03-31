@@ -14,6 +14,46 @@
 
 ----
 
+### March31st 2022 OCM Standup:
+**Absence -**
+- Cameron, Mags
+
+**Latest Release Date: -**
+- Goal for Firm Registration: April19 in Dev, End of June for Go live
+- FAS: March 31 -> April 25th  (CAS code freeze might impact FAS go-live date, Zac will find out)
+- Wills Registry: June15th (TBD)
+- MHR: The preliminary timeline is August/September 
+- Dissolution Filling UI Build: Apr12; Dissolution Output: Apr29
+- MHR/PPR Combo Search Apr19
+
+**Highlight Action Items: -**
+
+- Linda met with Cooperate supervisor, got following feedback: 1) Keep release stay away from Oct and Dec; 2) Output Format: Good to have Paper Form ahead of release
+- All: create tickets for April’s OCM Tasks
+- Review Ops board (part of communicate open issue with internal/external users) -> discussed in SOS meeting, has setup a weekly bug triage meeting with PO 
+- InProgress: Olisa to check long-term plan to find a backfill for Suzanne 
+- All: Add Due date and Estimates on OCM tickets where is applicable
+
+**Update and Action Items: -**
+- Maribeth: No blockers; will be working on sending PPR issue emails; 11190 work together with Cameron; 11230 talk with Cameron(now under Cameron and Trish); 
+- Mags: Vacation, Before: 11383/11504 Patrick is working on. Will provide feedback o n11343, 11345 and 11149;  Others transfer to Maribeth and Fareen. 
+- Fareen: Beside previous tasks, working on Wills registry implementation plan;  Join MHR Requirement meeting with stakeholders; Working on MHR user research with BCOL partners’ current state, will create ticket for April tasks; Review communication plan with Melissa, discuss close/exact match with Ali and Bob
+- Amitis: will be working on training plan today for SP/GP today; Create new ticket for OneStop communication and working on Firm training plan 
+- Gen: Vacation until April1st;  working 10036 Sienna’s latest review. 
+- Sienna: provided review comments on 10036, now waiting Gen
+- Patrick: working on PPR Search email communication; working on how to read search output doc for OCM, will start vacation
+- Cameron W: NA; Before: Review tickets, help with account setup, and 11230  (10989 await Cameron’s update)
+- Zac:  (Jyoti join on behalf of Zac) working on 11404, FAS user guide, have done 1st draft; will follow-up with BCOL admin team; (10378 await Zac’s update)
+- John: NA; Before: will join as PO for search team; Before: BCOL Admin escalation, Help desk/T1 and T2, who does what, will meet with Maribeth and work together
+- Olisa: 10373 is with executive this week; Carole said to give a final push for draw down accounts  , FAS delayed to mid-April (11349); Before: discussed GCPE and phase out draw down accounts with Kaine; setup a call with Trish, Kain, Olisa and Thor to discuss 11190
+- Trish: will review all tickets within Review pipeline
+- Linda: met with Cooperate supervisor, got following feedback: 1) Keep release stay away from Oct and Dec; 2) Output Format: Good to have Paper Form ahead of release
+- Melissa:  No update; Before: Need help for CMS site update, Discussed PPR release date with Sienna and Fareen; Before: PPR underway, work with Gen/Mags, will work with Fareen for MHR. PPR Team chat down will be in couple of weeks
+- Kaine: NA; Before: For MHR suggested users research meeting with Scott, Melissa, and Janis (vs who user use current system now);
+
+
+----
+
 ### March29th 2022 OCM Standup:
 **Absence -**
 - Cameron, Zac, Mags
