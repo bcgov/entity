@@ -1,3 +1,29 @@
+## **March31 2022: Standup Meeting** 
+
+**Absentees:-**
+
+- 
+
+**Notes:-**
+
+
+
+**Highlight Action Points:**	
+- 	Patrick is working on System Bannner, need a UX Design; 
+- 	Jinghua follow-up with Design team for 11696
+- 	Patrick is working on a new hiring for SRE Position and plan for next PI
+- 	Omid is helping to train Zaid, put this effor in 11606
+- 	Eve is working on SOFI upgrade, several issues with configuration
+- 	Richard is working on data migration (entitis 10976), SRE ticket 11686
+- 	Steven is donw with 11651
+- 	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 11606
+- 	"Jinghua is following up 9696, last comments from John's  on March24, will continue to follow-up
+"
+- 	Jinghua will provide SRE Metric
+- 	All: add real effort on SRE ticket
+- 	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
 ## **March24 2022: Planning Meeting** 
 
 **Absentees:-**
