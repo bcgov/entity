@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+April 8, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+     
+- Meeting Notes
+
+----
 April 1, 2022
 ----
 - Action Items / Carry Over
@@ -27,6 +42,17 @@ April 1, 2022
 - New Business
      
 - Meeting Notes
+    - OPS rotation
+        - Two to three new members will be added to the rotation
+        - John and Janice will have a less frequent rotation 
+        - Joyti and Faiz will be added to the rotation
+        - Kyle is removed from the rotation for now
+        - in the future we will add co-ops
+    - Entities Pi planning 
+        - **Decision** move to the 8th of April
+    - Epic Prioritization
+        - **Decision** schedule a meeting to prioritize epics prior to PI 14 planning
+        - The POs will socialize entities PI 13 planning priorities prior to April 19
 
 ----
 Mar 25, 2022
