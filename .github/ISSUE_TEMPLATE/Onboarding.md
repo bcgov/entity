@@ -9,6 +9,8 @@ assignees: ''
 
 **Onboarding checklist for new team members**
 
+This should be created at least a couple of days before a new member comes on board.
+
 
 **IDIR**
 - [ ] Complete the form located at "R:\ARCS\HR 1300-1999\01 General\Onboarding Offboarding", which is stored on an internal drive and must be accessed by staff.
@@ -29,8 +31,9 @@ assignees: ''
 **GitHub & ZenHub**
 - [ ] 1. First, the new user is to go to github.com to register their account (using all lower-case for their name if it's a new account)
 - [ ] 2. Next, the new user is to verify that 2 factor authentication is enabled 
-- [ ] 3. Once the account creation and 2fa are completed, send a message to an admin to request the new employee is added. (Admins include anyone on the SRE team)
-- [ ] 4. Once added, the employee will need to install the Zenhub plugin in the Chrome browser
+- [ ] 3. Once the account creation and 2fa are completed, add an SRE and Priority label to this ticket
+- [ ] 4. Comment on this ticket to indicate which project /team/product does this member need and move this ticket to the Priority pipeline on the SRE board
+- [ ] 5. Once added, the employee will need to install the Zenhub plugin in the Chrome browser
 
 -----------------
 
