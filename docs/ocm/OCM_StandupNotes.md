@@ -2,6 +2,17 @@
 - Review Issues and Obstacles 
 - Update from Trish/Kaine/Olisa and POs
 
+### Latest Release Date: -As of Apirl06,2022
+- SP/GP Change – Fillings/Registration/BusinessSummary: April19 in Dev, Go live is targeting end of June 
+- Business Search API Specs Ben Comp& Coops: May31; Business Search API Sole Prop & Gen Partner: Jun 30
+- Wills Registry: June15th (TBD)
+- Dissolution Filling UI Build: Apr12; Dissolution Output: Apr29
+- FAS Go Live: April 25
+- MHR/PPR Combo Search Apr19
+- MHR: The preliminary timeline is August/September 
+
+
+
 ### ~~Standing Iterms for Standup~~
 - ~~Review Tickets for each team members~~
 - ~~Update from Trish/Kaine/Olisa~~
