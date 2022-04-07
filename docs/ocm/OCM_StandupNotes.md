@@ -2,6 +2,44 @@
 - Review Issues and Obstacles 
 - Update from Trish/Kaine/Olisa and POs
 
+### April07 2022 OCM Standup:
+**Absence -**
+- Cameron, Olisa; Patrick; John; Linda
+
+### Latest Release Date: -
+- SP/GP Change – Fillings/Registration/BusinessSummary: April19 in Dev, Go live is targeting end of June 
+- Business Search API Specs Ben Comp& Coops: May31; Business Search API Sole Prop & Gen Partner: Jun 30
+- Wills Registry: June15th (TBD)
+- Dissolution Filling UI Build: Apr12; Dissolution Output: Apr29
+- FAS Go Live: April 25
+- MHR/PPR Combo Search Apr19
+- MHR Beta: The preliminary timeline is end of September  
+
+**Highlight Action Items: -**
+
+- Trish will review all tickets within Review pipeline
+- All: create tickets for April’s OCM Tasks
+- TBC: Olisa to check long-term plan to find a backfill for Suzanne 
+- All: Add Due date and Estimates on OCM tickets where is applicable
+
+**Update and Action Items: -**
+- Maribeth: No blockers; 11725 Info center will discuss with Mags today for new landing page; will talk with Mags for 10011; 11190 work together with Cameron; 11230 talk with Cameron(now under Cameron and Trish); 
+- Mags: API info session today, will put link and presentation on discourse; UX Research for SP/GP and OS OCM Tickets
+- Fareen: done draft version of wills registry implementation plan; MHR User Research almost done; will be working with Relationship for will registry implementation plan. Also PPR Search guide will send to Kevin for review
+- Gen: will meet with Sienna on Thursday to discuss about Form; add a link for known issue; Before: 10036 Sienna’s latest review. 
+- Sienna: will meet with Gen, will discuss with Trish for SP/GP training plan
+- Patrick: NA, on vacation
+- Cameron W: NA; Before: Review tickets, help with account setup, and 11230  (10989 await  management decision)
+- Zac/Jyoti:  Jyoti: FAS done, working on wills registry and rural property, will meet with home and Tracey for image;  Jyoti will chat with Zac for adding audio; working on(11404 FAS user guide), will create a info center, 11390 will add scripts and voice; will follow-up with BCOL admin team; 
+- John: NA; Before: will join as PO for search team; Before: BCOL Admin escalation, Help desk/T1 and T2, who does what, will meet with Maribeth and work together
+- Olisa: NA; Before: 10373 is with executive this week; Carole said to give a final push for draw down accounts  , FAS delayed to mid-April (11349); Before: discussed GCPE and phase out draw down accounts with Kaine; setup a call with Trish, Kain, Olisa and Thor to discuss 11190
+- Trish: will review all tickets within Review pipeline; will review SP/GP Form and prioritize accordingly
+- Linda: NA: Before: met with Cooperate supervisor, got following feedback: 1) Keep release stay away from Oct and Dec; 2) Output Format: Good to have Paper Form ahead of release
+- Melissa:  No update; Before: Need help for CMS site update, Discussed PPR release date with Sienna and Fareen; Before: PPR underway, work with Gen/Mags, will work with Fareen for MHR. PPR Team chat down will be in couple of weeks
+- Kaine: put a link for known issue in CMS site;
+
+
+
 ### Latest Release Date: -As of Apirl06,2022
 - SP/GP Change – Fillings/Registration/BusinessSummary: April19 in Dev, Go live is targeting end of June 
 - Business Search API Specs Ben Comp& Coops: May31; Business Search API Sole Prop & Gen Partner: Jun 30
