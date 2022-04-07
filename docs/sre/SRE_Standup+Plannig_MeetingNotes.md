@@ -19,7 +19,6 @@
 - 	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
 
 
-
 ## **March31 2022: Standup Meeting** 
 
 **Absentees:-**
