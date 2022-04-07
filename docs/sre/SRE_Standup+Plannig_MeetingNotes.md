@@ -1,3 +1,25 @@
+## **April07 2022: Planning Meeting** 
+
+**Absentees:-**
+
+- Eve
+
+**Highlight Action Points:**	
+- 	Patrick: Next PI: Ops Support + Names Support, probably add Google Cloud Training to better support PPR in the future, and FE/BE software upgrade
+- 	Patrick is working on System Banner and hotjar, waiting for  an UX Design for system banner; 
+- 	TBD on grant access right to new hires for DEV, TEST, but not PROD at the first stage? Need to discuss with PO Syc
+- 	Richard is working on data migration, experience an issue on VS, just fixed
+- 	Omid is working on 10280 and 11198 removing Sumesh and Karthick
+- 	Eve is working for Home team this week and most part of next week
+- 	Richard is working on data migration (entities 10976), SRE ticket 11686
+- 	Steven is working 11801 first, then 11652
+- 	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 11802
+- 	Jinghua is following up 9696, last comments from John's  on March24, will continue to follow-up
+- 	All: add real effort on SRE ticket
+- 	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
+
 ## **March31 2022: Standup Meeting** 
 
 **Absentees:-**
