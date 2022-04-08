@@ -11,7 +11,7 @@ assignees: ''
 * Benefit Company
 * Cooperative Association
 
-### Filing
+### Filings as a client
 - [ ] Incorporation application (BEN, CP)
      - [ ] Happy path Named (BEN, CP)
      - [ ] Happy path Numbered (BEN)
@@ -30,6 +30,7 @@ assignees: ''
 - [ ] Address Change (BEN, CP)
 - [ ] Director Change (BEN, CP)
 - [ ] Annual Report (BEN, CP)
+- [ ] ~Co-op Special Resolution (CP)~
 - [ ] ~Change of Registration (SP, GP)~
 - [ ] Alteration (change of company information, i.e. no entity type change)
 - [ ] Alteration Limited to BEN
@@ -41,12 +42,28 @@ assignees: ''
      - [ ] Happy path future effective filing (BEN, LTD, CC, ULC)
      - [ ] Happy path save and resume (all)
 - [ ] ~Firm Dissolution (SP, GP)~
-- [ ] Court Order
-- [ ] Registrar's Notation
-- [ ] Registrar's Order
 
-### Staff filings
-**Staff only:**
+### Filings as Registry IDIR staff
+- [ ] Incorporation application (BEN, CP)
+- [ ] ~Registration (SP, GP)~
+- [ ] Incorproation Application Correction (BEN)
+- [ ] Address Change (BEN, CP)
+- [ ] Director Change (BEN, CP)
+- [ ] Annual Report (BEN, CP)
+- [ ] ~Change of Registration (SP, GP)~
+- [ ] Alteration (change of company information, i.e. no entity type change)
+- [ ] Alteration Limited to BEN
+- [ ] Alteration ULC to BEN
+- [ ] Alteration BEN to BC
+- [ ] Alteration (entity type) (BEN)
+- [ ] Voluntary dissolution (CP, BEN, LTD, CCC, ULC)
+- [ ] ~Firm Dissolution (SP, GP)~
+
+### Filings as SBC Regional Office Staff
+- [ ] Can affiliate an NR to an account
+- [ ] ~Registration (SP, GP)~
+
+### Staff only filings
 - [ ] Court order / Plan of arrangement
 - [ ] Registrar's notation
 - [ ] Registrar's order
