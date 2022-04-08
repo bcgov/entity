@@ -26,7 +26,7 @@ assignees: ''
      - [ ] GP with individual partners
      - [ ] GP with company partners
 
-- [ ] Incorporation Application Correction
+- [ ] Incorproation Application Correction (BEN)
 - [ ] Address Change (BEN, CP)
 - [ ] Director Change (BEN, CP)
 - [ ] Annual Report (BEN, CP)
@@ -46,6 +46,7 @@ assignees: ''
 - [ ] Registrar's Order
 
 ### Staff filings
+**Staff only:**
 - [ ] Court order / Plan of arrangement
 - [ ] Registrar's notation
 - [ ] Registrar's order
