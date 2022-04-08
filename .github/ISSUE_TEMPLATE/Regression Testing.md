@@ -18,11 +18,20 @@ assignees: ''
      - [ ] Happy path Future effective dated (BEN)
      - [ ] Save and Resume
      - [ ] Edge: NR expired while in draft
+- [ ] ~Registration (SP, GP)~
+     - [ ] SP DBA
+     - [ ] SP Individual
+     - [ ] Use Business Lookup in filing to add company
+     - [ ] Use "business or corproation unregistered in BC" to add company
+     - [ ] GP with individual partners
+     - [ ] GP with company partners
 
 - [ ] Incorporation Application Correction
 - [ ] Address Change (BEN, CP)
 - [ ] Director Change (BEN, CP)
 - [ ] Annual Report (BEN, CP)
+- [ ] ~Change of Registration (SP, GP)~
+- [ ] Alteration (change of company information, i.e. no entity type change)
 - [ ] Alteration Limited to BEN
 - [ ] Alteration ULC to BEN
 - [ ] Alteration BEN to BC
@@ -31,6 +40,7 @@ assignees: ''
      - [ ] Happy path immediate filing (CP, BEN, LTD, CCC, ULC)
      - [ ] Happy path future effective filing (BEN, LTD, CC, ULC)
      - [ ] Happy path save and resume (all)
+- [ ] ~Firm Dissolution (SP, GP)~
 - [ ] Court Order
 - [ ] Registrar's Notation
 - [ ] Registrar's Order
