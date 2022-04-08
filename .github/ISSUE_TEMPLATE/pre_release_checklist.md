@@ -9,11 +9,11 @@ assignees: ''
 ---
 
 Prior to moving into production, the following steps should be completed or confirmed:
-- [ ] Update version number in the code being released
+- [ ] Add release # to this ticket
+- [ ] Update version numbers in the code being released and list them here:
 - [ ] Ensure deployment steps are filled in - remove/replace placeholders
 - [ ] Create a draft release in GitHub and confirm the correct commits are present
-- [ ] Add version # and release # to this ticket
-- [ ] Dev to send commit list to QA (or otherwise publish changelog)
+- [ ] Dev to ensure that the commit list is represented on the release report
 - [ ] QA to schedule the release with staff/clients (daytime's best or when staff are available for rollback)
 - [ ] All dev/test pipeline test suites green
 - [ ] Dev/QA chat to plan prod verification testing (unless already automated)
@@ -22,9 +22,16 @@ Prior to moving into production, the following steps should be completed or conf
 - [ ] Merge release branch back to master (if applicable)
 - [ ] Change openshift builds/pipelines back to master (if applicable)
 
-**Deployment Steps**
+### Deployment Steps
 
-Dev:
+#### Dev:
+- [ ] Filings UI - 
+- [ ] Create UI - 
+- [ ] Edit UI - 
+- [ ] NameX API - 
+- [ ] Legal API - 
+- [ ] Entity Filer - 
+.
 - [ ] config map changes
   - list here, copy to test and prod
 - [ ] are there any dependencies, such as an auth/pay deployment or keycloak changes?
@@ -34,11 +41,31 @@ Dev:
 - [ ] Database updates which should be run automatically as part of GH CD via the legal-api pre-hook
   - list here, copy to test and prod
 
-Test:
+#### Test:
+- [ ] Filings UI - 
+- [ ] Create UI - 
+- [ ] Edit UI - 
+- [ ] NameX API - 
+- [ ] Legal API - 
+- [ ] Entity Filer - 
+.
+- are there any dependencies, such as an auth/pay deployment or Keycloak changes?
 
-Prod:
 
-**Smoke Test Script**
+#### Prod:
+- [ ] Filings UI - 
+- [ ] Create UI - 
+- [ ] Edit UI - 
+- [ ] NameX API - 
+- [ ] Legal API - 
+- [ ] Entity Filer - 
+.
+- are there any dependencies, such as an auth/pay deployment or Keycloak changes?
+
+### Post Deployment:
+
+
+### Smoke Test Script
 - [ ] try a filing from Filings UI (do not save it)
 - [ ] try a correction from Edit UI (do not save it)
 - [ ] try an alteration from Edit UI (do not save it)
