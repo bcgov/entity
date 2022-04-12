@@ -48,7 +48,7 @@ April 8, 2022
             - Impact and urgency is how it's calculated in the ITIL world. Number of people from one person to many people and then urgency. It uses a formula to calculate if it's high, medium or low.
             - Let's look at the ITIL guideline and see if we can adopt the formula
     - Teams Structure
-        - Linda and Kaine looked at all of our new people and where they're gonna fit and and doing a little bit of shuffling. 
+        - Linda and Kaine looked at all of our new people and where they're going to fit and did a little bit of shuffling. 
         - Linda presented the changes to the group
     - Next PO Sync
         - Moved to Thursday due to the stat holiday
