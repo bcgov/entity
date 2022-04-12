@@ -45,7 +45,7 @@ April 8, 2022
     - OPS
         - We had a couple of PO's on the OPS triage call this week, but we need input from the larger group on what constitutes a high priority issue. 
         - **Proposal** - come up with something from POs and then bring that to the OPS team for their input
-            - Impact and urgency is how it's calculated and ITIL world. Number of people from one person to many people and then urgency. It uses a formula to calculate if it's high, medium or low.
+            - Impact and urgency is how it's calculated in the ITIL world. Number of people from one person to many people and then urgency. It uses a formula to calculate if it's high, medium or low.
             - Let's look at the ITIL guideline and see if we can adopt the formula
     - Teams Structure
         - Linda and Kaine looked at all of our new people and where they're gonna fit and and doing a little bit of shuffling. 
