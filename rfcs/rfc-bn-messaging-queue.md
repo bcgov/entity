@@ -28,6 +28,34 @@ The interation between OneStop uses XML/SOAP via HTTPS. Both calls mentioned bel
 same url (`/rest/REST/BCPartner`) with a query parameter `inputXML` and OneStop identifies the call based on the 
 XML provided in `inputXML`
 
+Field Mapping:
+
+| Field                                                        | Value                                                 | Description                                                                                       |
+|--------------------------------------------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| header/requestMode                                           | A or S                                                | A = Async, S = Sync<br>1st call is A<br>2nd call is S                                             |
+| header/documentSubType                                       | 000                                                   | 000 means N/A                                                                                     |
+| header/senderID                                              | CPPR                                                  | CPPR means BCRS (BC Registry   Services)                                                          |
+| header/receiverID                                            | BCSBNHUB                                              | BCSBNHUB means BC BN Hub                                                                          |
+| header/partnerNote                                           | business_id from Business table                       | This is only to track back. Not   a required prop                                                 |
+| header/CCRAHeader/userApplication                            | BI                                                    | BC Registry Services (BCRS) BCRS   BI                                                             |
+| header/CCRAHeader/userRole                                   | 01                                                    |                                                                                                   |
+| body/businessProgramIdentifier                               | BC                                                    | BC means BCRS (BC Registry   Services)                                                            |
+| body/SBNProgramTypeCode                                      | 113 or 114                                            | 114 BCRS BC Partnership<br>113 BCRS BC Proprietorship                                             |
+| body/businessCore/programAccountTypeCode                     | 01                                                    |                                                                                                   |
+| body/businessCore/crossReferenceProgramNumber                | identifier from Business table                        |                                                                                                   |
+| body/businessCore/businessTypeCode                           | 01 or 02                                              | 02 Partnership<br>01 Sole Proprietorship                                                          |
+| body/businessCore/businessSubTypeCode                        | 01 or 99 for GP?                                      | 99 Business (for GP)<br>01 Sole Proprietorship                                                    |
+| body/programAccountStatus/programAccountStatusCode           | 01                                                    | 01 Active<br>02 Closed<br>03 Pending Closure                                                      |
+| body/programAccountStatus/effectiveDate                      | founding_date (YYYY-MM-DD) from   Businesss table     | Which will be same as start date   in registration                                                |
+| body/legalName                                               | Partner name /<br>Proprietor name / <br>Business name | If more than 1 Partner it should   be comma separated<br>(givenName lastName, givenName lastName) |
+| body/operatingName/operatingName                             | legal_name from Business table                        | The one used in name request                                                                      |
+| body/operatingName/operatingNamesequenceNumber               | 1                                                     |                                                                                                   |
+| body/businessAddress                                         | businessOffice delivery address                       |                            Pending mapping. Need to discuss with Linda                            |
+| body/mailingAddress                                          | businessOffice mailing address                        |                                                                                                   |
+| body/owner/ownerIndividual                                   | Partner name /<br>Proprietor name / <br>Business name | Repeat the owner node if more   than 1 Partner                                                    |
+| body/businessActivityDeclaration/businessActivityDescription | NAICS Description                                     |                                                                                                   |
+
+
 ### 1. Inform BC BN Hub (Create Program Account Request)
 
 Request Sample
