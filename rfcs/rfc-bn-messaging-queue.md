@@ -224,18 +224,35 @@ Response Sample
 
 # Approach
 
-Introduce a new queue entity-bn. This queue should handle both request based on the queue property. Queue should have a 
-business identifier/ business_id and request type (This will be used to identify which api call queue should trigger).
+1. Introduce a new queue entity-bn. This queue should handle both request based on the queue property. Queue should have
+a business identifier/ business_id and request type (This will be used to identify which api call queue should trigger).
 Once registration filing is processed and business is created then entity-filer emits an event queue 
 (entity.business.bn), then entity-bn inform BC BN Hub about this new registration and once that is processed 
 entity-bn will emit an event queue (entity.business.bn) with request type (get-business-number) to itself, so that it
-can try to get the BN from OneStop (In case of failure it can try multiple times). This way we can track which call get
-failed and no need to send information to CRA multiple times.
+can try to get the BN from OneStop (In case of failure it can try multiple times and it has to wait for at least 30
+seconds before making that call). This way we can track which call get failed and no need to send information to CRA
+multiple times. We will have a table to track all the request with request xml and response xml and number of retires.
 
-![entity-bn](rfc-bn-messaging/entity-bn.png)
+    ![entity-bn](rfc-bn-messaging/entity-bn.png)
 
-Since its possible to not to receive Business Number even after multiple retries we need a table to track and stop
-after n number of times.
+2. Introduce a new job update-business-number. This job should run every 5 minutes. It fetch top 10 pending business
+number request from bn_request table (once the top 10 processed check for the next 10 until there is no pending request)
+. Pending request can be identified when is_processed is False and next_try is null or next_try < current_date_time
+and retry_number does not exceeds 3. Once registration filing is processed and a business is created then entity-filer
+insert into bn_request with request_type `inform-cra` and once this request is processed by this job it insert a new
+request_type `get-bn` with next_try after 1 minute.
+
+
+    * `bn_request`
+        * id
+        * business_id
+        * request_type (inform-cra, get-bn)
+        * is_processed
+        * request_xml
+        * response_xml
+        * retry_number
+        * next_try (datetime)
+    
 
 # Drawbacks
 
