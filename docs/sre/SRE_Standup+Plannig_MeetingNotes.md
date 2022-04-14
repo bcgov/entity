@@ -1,3 +1,27 @@
+
+
+## **April14 2022: Planning Meeting** 
+
+**Absentees:-**
+
+- 
+ 
+**Highlight Action Points:**	
+- 	Patrick: Next PI: Ops Support + Names Support,  FE/BE upgrade, Python upgrade, GCP Training
+- 	Patrick is working on System Bannner and hotjar(pending Omid's Namex code), waiting for  an UX Design for system banner(Tracey is asking more input?)
+- 	Grant access right to new hires for DEV, TEST (not PROD at the first stage). PO to list all project/repo in ZH on-boarding ticket
+	Omid is working on 10280, ready for QA, then 11780 later, and 11876
+- 	Richard is doing demo for Steven and Omid, and helping Eve with JupiterNotebook setup, will log this effort under 11802  Working on data migration (entitis 10976), SRE ticket 11686
+- 	Eve has done SOFI upgradation, working on FAS payment, help team to setup fee code. Will do 11591 later
+- 	Steven is working Ops ticket 750, will create a SRE ticket for that. Then 11801 and  11652
+- 	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 11802
+- 	Jinghua will move all done ticket to closed
+- 	Jinghua is following up 9696, last comments from John's  on March24, will continue to follow-up
+- 	All: add real effort on SRE ticket
+- 	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
+
 ## **April07 2022: Planning Meeting** 
 
 **Absentees:-**
