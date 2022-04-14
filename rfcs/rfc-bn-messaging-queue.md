@@ -24,7 +24,7 @@ So the suggestion is to make the first call to create program account request an
 and later make a second call to do basic information search request to get Business Number (Repeat the second call 
 until OneStop receives the Business Number from CRA).
 
-The interation between OneStop uses XML/SOAP via HTTPS. Both calls mentioned below will be HTTP GET call to the 
+The integration between OneStop uses XML/SOAP via HTTPS. Both calls mentioned below will be HTTP GET call to the 
 same url (`/rest/REST/BCPartner`) with a query parameter `inputXML` and OneStop identifies the call based on the 
 XML provided in `inputXML`
 
