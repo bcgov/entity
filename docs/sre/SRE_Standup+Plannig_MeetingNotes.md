@@ -1,6 +1,6 @@
 
 
-## **April14 2022: Planning Meeting** 
+## **April14 2022: Standup Meeting** 
 
 **Absentees:-**
 
