@@ -24,7 +24,7 @@ So the suggestion is to make the first call to create program account request an
 and later make a second call to do basic information search request to get Business Number (Repeat the second call 
 until OneStop receives the Business Number from CRA).
 
-The integration between OneStop uses XML/SOAP via HTTPS. Both calls mentioned below will be HTTP GET call to the 
+The integration with OneStop uses XML/SOAP via HTTPS. Both calls mentioned below will be HTTP GET call to the 
 same url (`/rest/REST/BCPartner`) with a query parameter `inputXML` and OneStop identifies the call based on the 
 XML provided in `inputXML`
 
@@ -252,14 +252,24 @@ Response Sample
 
 # Approach
 
-1. Introduce a new queue entity-bn. This queue should handle both request based on the queue property. Queue should have
-a business identifier/ business_id and request type (This will be used to identify which api call queue should trigger).
-Once registration filing is processed and business is created then entity-filer emits an event queue 
-(entity.business.bn), then entity-bn inform BC BN Hub about this new registration and once that is processed 
-entity-bn will emit an event queue (entity.business.bn) with request type (get-business-number) to itself, so that it
-can try to get the BN from OneStop (In case of failure it can try multiple times and it has to wait for at least 30
-seconds before making that call). This way we can track which call get failed and no need to send information to CRA
-multiple times. We will have a table to track all the request with request xml and response xml and number of retires.
+1. Introduce a new queue `entity-bn`. This queue handle both request. Subscribe to the event queue (`entity.events`)
+which `entity-filer` already emits and listen for type `bc.registry.business.registration`, check `bn_request_tracker`
+table for this identifier (if not exist insert with request_type `inform-cra` else if is_processed skip the 1st call)
+and inform BC BN Hub about new registration (1st call) and once its processed update is_processed in 
+`bn_request_tracker`. Now check `bn_request_tracker` table for this identifier and request_type `get-bn` (if not exist
+insert with request_type `get-bn` else if exist check is_processed and update retry_number without exceeding limit 
+(maybe 5)) and request BC BN Hub to get Business Number (in case of failure raise error (if retry_number exceeds limit
+no need to raise error) which will put this back to queue and based on nats the default retry is after 30 seconds)
+and once that is processed update is_processed.
+    
+    * `bn_request_tracker`
+        * id
+        * business_id
+        * request_type (inform-cra, get-bn)
+        * is_processed
+        * request_xml
+        * response_xml
+        * retry_number
 
     ![entity-bn](rfc-bn-messaging/entity-bn.png)
 
