@@ -1,5 +1,24 @@
 
 
+## **April21 2022: Planning Meeting** 
+
+**Absentees:-**
+
+- Eve, Omid
+ 
+**Highlight Action Points:**	
+- 	Have enought tickets for next two weeks
+- 	Patrick is working on GC Notify Service, FAS for home team; also help with OCM for bulk email; System Bannner waiting for  an UX Design
+- 	Richard is helping with team's tools/env. Setup and will finish 10670 soon
+- 	Eve is working on 11591, pending input f rom entities
+- 	Steven has done 11801 , working on 11652
+- 	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 11802
+- 	Jinghua moved all done ticket to closed
+- 	Jinghua is following up 9696, last comments from John's  on March24, will continue to follow-up
+- 	All: add real effort on SRE ticket
+- 	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
 ## **April14 2022: Standup Meeting** 
 
 **Absentees:-**
