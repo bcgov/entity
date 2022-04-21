@@ -1,3 +1,42 @@
+----
+
+### April21 2022 OCM Standup:
+**Absence -**
+- Cameron; Patrick; John; Zac/Jyoti
+
+### Latest Release Date: -
+- SP/GP Change – Fillings/Registration/BusinessSummary: April19 in Dev, Go live is targeting end of June 
+- Business Search API Specs Ben Comp& Coops: May31; Business Search API Sole Prop & Gen Partner: Jun 30
+- Wills Registry: June15th (TBD)
+- Dissolution Filling UI Build: May31; Dissolution Output: May31
+- FAS Go Live: April 26
+- MHR/PPR Combo Search May3
+- MHR Beta: The preliminary timeline is end of September  
+
+**Highlight Action Items: -**
+
+- Trish will groom ticket for next PI/Sprints
+- TBC: Olisa to check long-term plan to find a backfill for Suzanne 
+- All: Add Due date and Estimates on OCM tickets where is applicable
+
+**Update and Action Items: -**
+- Maribeth: No blockers; 11725 Info center will discuss with Mags today for new landing page; 
+- Mags: landing page announcement waiting for review (11930), then will be working on impact assessment for search
+- Fareen: working on rural change plan, and eWills change plan.
+- Gen: will meet with Sienna no blockers. 
+- Sienna: will meet with Gen, will closed all current tickets before end of April. Trish will redistribute Sienna to do tickets
+- Patrick: 11529 send to Kevin for review; 11650(Review and update Get Started process on Daxiom's API page#11650) cannot put a due date now, might be end of May
+- Cameron W: NA; working on 10926; 10989 await Linda, Olisa, Trish’s review)
+- Zac/Jyoti:  Jyoti: NA; Before: FAS done, working on wills registry and rural property, will meet with home and Tracey for image;  Jyoti will chat with Zac for adding audio; working on(11404 FAS user guide), will create a info center, 11390 will add scripts and voice; will follow-up with BCOL admin team; 
+- John: will invite new BA to join OCM team meeeting
+- Olisa: move GCPE to done; working on 11357
+- Trish: will groom all OCM tickets; 
+- Linda: NA: Before: met with Cooperate supervisor, got following feedback: 1) Keep release stay away from Oct and Dec; 2) Output Format: Good to have Paper Form ahead of release
+- Melissa:  No update; 
+- Kaine: NA;
+
+----
+
 ### Standing Iterms for Standup
 - Review Issues and Obstacles 
 - Update from Trish/Kaine/Olisa and POs
