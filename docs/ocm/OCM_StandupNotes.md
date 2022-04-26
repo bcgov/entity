@@ -1,5 +1,36 @@
 ----
 
+### April26 2022 OCM Standup:
+**Absence -**
+-  Gen, John
+
+### Latest Release Date: -
+- FAS Go Live: April 28
+
+**Highlight Action Items: -**
+
+- PI13 ends at July 12th
+- TBC: Olisa to check long-term plan to find a backfill for Suzanne 
+- All: Add Due date and Estimates on OCM tickets where is applicable
+
+**Update and Action Items: -**
+- Maribeth: No blockers; working on emails go out today, will meet with Cameron for staff ZH board this week; 
+- Mags: on blockers, working on OS and SP/GP, 11345 done, will meet with Cameron for training needs/plan, invite Olisa to join as well. 
+- Fareen: working on API D&D meeting this Thursday, had outline, need John, Linda and Kaine’s review and approval (adding Thor as reviewer). PPR Search guide is ready for final review and approve, adding other support resource for ppr users? How to public on CMS site (TBC) .
+- Gen: NA; will meet with Sienna no blockers. 
+- Sienna: will meet with Gen, will closed all current tickets before end of April. Trish will redistribute Sienna to do tickets
+- Patrick: 11529 final reviewed; 11650(Review and update Get Started process on Daxiom's API page#11650) cannot put a due date now, might be end of May
+- Cameron W: NA; working on 10926 with Debbie; 10989 await Linda, Olisa, Trish’s review)
+- Zac/Jyoti:  Jyoti: FAS postpone to April28, preparing release notes; update info center for this change
+- John: NA; will invite new BA to join OCM team meeting
+- Olisa: working on 11357
+- Trish: update board, will create training tickets, move RTS tickets to In Progress for tasks this week or next week; 
+- Linda: NA: Before: met with Cooperate supervisor, got following feedback: 1) Keep release stay away from Oct and Dec; 2) Output Format: Good to have Paper Form ahead of release
+- Melissa:  Adding policy update on PPR news; 
+
+
+----
+
 ### April21 2022 OCM Standup:
 **Absence -**
 - Cameron; Patrick; John; Zac/Jyoti
