@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+April 29, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+     
+- Meeting Notes
+
+----
 April 22, 2022
 ----
 - Action Items / Carry Over
@@ -27,6 +42,15 @@ April 22, 2022
 - New Business
      
 - Meeting Notes
+    - Updating our footer/website to include BC Online.
+        - Jyoti can work with the team to see if it can be done
+    - Difficulties on having touch points with PO's to get updates on releases.
+        - Put forward in the OCM retrospective by the team
+        - The best information right now is the SP/GP release will be in early July
+            - Training environments are pretty much done ready except for that business search component. Filings can be done now.
+    - Vacation requests
+        - Request that vacation requests are entered in the vacation calendar as soon as possible 
+        - We need to make sure we have enough coverage.
 
 ----
 April 14, 2022
