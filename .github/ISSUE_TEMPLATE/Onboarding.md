@@ -50,6 +50,7 @@ This should be created at least a couple of days before a new member comes on bo
 **Business Context**
 
 - [ ] Set up meeting for business context knowledge transfer
+- [ ] The new team member's contact information has been added to the "Team BCR Overview" document https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/WopiFrame.aspx?sourcedoc={5F6ECE64-702C-49BF-A02F-8B46ABF5B67E}&file=Team%20BCR%20Overview.xlsx&action=default
  
 -----------------
 
