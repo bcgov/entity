@@ -1,5 +1,26 @@
 
 
+## **April28 2022: Planning Meeting** 
+
+**Absentees:-**
+
+- 
+ 
+**Highlight Action Points:**	
+- 	10280 will be released
+- 	FAS go-live today, Eve will back to SRE. 11591 back to Todo
+- 	Richard is helping with Argus, will be working on 10670 later. Close ticket 9992
+- 	Steven is working on 11976, move 11652 to waiting
+- 	Patrick is working on GC Notify Service, FAS for home team; Hiring new SRE person; System Bannner waiting for  an UX Design
+- 	Jinghua ask Entities and Relationship to help with 10478
+- 	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 11802
+- 	Jinghua is following up 9696, last comments from John's  on March24, will continue to follow-up
+- 	All: add real effort on SRE ticket
+- 	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
+
+
 ## **April21 2022: Planning Meeting** 
 
 **Absentees:-**
