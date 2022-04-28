@@ -1,5 +1,42 @@
 ----
 
+### April28 2022 OCM Standup:
+**Absence -**
+-  Gen, John, Sienna
+
+### Latest Release Date: -
+- FAS Go Live: April 28
+- SP/GP Change – Fillings/Registration/BusinessSummary: April19 in Dev, Go live is targeting end of June 
+- Business Search API Specs Ben Comp& Coops: May31; Business Search API Sole Prop & Gen Partner: Jun 30
+- Wills Registry: June15th (TBD)
+- Dissolution Filling UI Build: May31; Dissolution Output: May31
+- MHR/PPR Combo Search May3
+- MHR Beta: The preliminary timeline is end of September  
+
+**Highlight Action Items: -**
+
+- PI13 ends at July 12th
+- TBC: Olisa to check long-term plan to find a backfill for Suzanne 
+- All: Add Due date and Estimates on OCM tickets where is applicable
+
+**Update and Action Items: -**
+- Maribeth: No blockers; 
+- Mags: No blockers; put API communication on discord and website. Create a ticket for OneStop DL, assign to Olisa 12020. 
+- Fareen: For rural communication, post message on BCOL board, user will see when they login. Create a new ticket for sending PPR comm? I.e API Comm go out to DD and etc.
+- Gen: NA; will meet with Sienna no blockers. 
+- Sienna: NA; will meet with Gen, will closed all current tickets before end of April. Trish will redistribute Sienna to do tickets
+- Patrick: 11650(Review and update Get Started process on Daxiom's API page#11650) cannot put a due date now, might be end of May, will provide training to IT ops for NR refunds.
+- Cameron W: NA; working on 10926 with Debbie; 10989 await Linda, Olisa, Trish’s review)
+- Zac/Jyoti:  Jyoti: FAS go live tonight April28, preparing release notes; update info center for this change
+- John: NA; will invite new BA to join OCM team meeting
+- Olisa: assign all Cameron’s tickets to myself;   working on 11357
+- Trish: review local gov ppt, and other comm, will review other tickets; 
+- Linda: No update; Before: met with Cooperate supervisor, got following feedback: 1) Keep release stay away from Oct and Dec; 2) Output Format: Good to have Paper Form ahead of release
+- Melissa:  working with Fareen for identify pilot user for high-lever account, potential users from pilot account to represent different user group, this is for next sprint; 
+
+
+----
+
 ### April26 2022 OCM Standup:
 **Absence -**
 -  Gen, John
