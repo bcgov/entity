@@ -14,7 +14,7 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
-April 29, 2022
+May 6, 2022
 ----
 - Action Items / Carry Over
     - RAID board
@@ -27,6 +27,11 @@ April 29, 2022
 - New Business
      
 - Meeting Notes
+
+----
+April 29, 2022
+----
+- CANCELLED
 
 ----
 April 22, 2022
