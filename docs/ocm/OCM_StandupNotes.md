@@ -1,5 +1,33 @@
 ----
 
+### May03 2022 OCM Standup:
+**Absence -**
+-  Olisa, John, Cameron
+
+**Highlight Action Items: -**
+
+- PI13 ends at July 12th
+- TBC: Olisa to check long-term plan to find a backfill for Suzanne 
+- All: Add Due date and Estimates on OCM tickets where is applicable
+
+**Update and Action Items: -**
+- Maribeth: No blockers. Now preparing for coming info session in next week, also API session and Local Gov session. Jyoti will present in these session in July and August 
+- Mags: No blockers; working on training plan for business search, other communication Trish will review. Start working on 11730 
+- Fareen: asking anymore release notes, combine with PPR search guild; rural release confirmation date June 21st or June 23rd. PPR general update will post next week. API Search draft and Local Gov PPT for next Monday, both will send Linda/John for review
+- Gen: asking who will continue review and provide input post Sienna, will tag Linda at this point, for all VD, SP/GP 
+- Sienna/New BA from entities: NA; waiting new BA join us and assign tickets (Sarah from May08)
+- Patrick: not working on OCM tickets now.
+- Cameron W: NA; last working day is end of this week
+- Zac/Jyoti:  Zac: FAS released on April28, setup team chat for support
+- John: NA; will invite new BA to join OCM team meeting
+- Olisa: NA, Before: assign all Cameron’s tickets to myself;   working on 11357
+- Trish: plan for new tasks/ticket, working on influencer’s communication , will review other tickets; 
+- Linda: NA; Before: met with Cooperate supervisor, got following feedback: 1) Keep release stay away from Oct and Dec; 2) Output Format: Good to have Paper Form ahead of release
+- Melissa:  No update; working with Fareen for identify pilot user for high-lever account, potential users from pilot account to represent different user group, this is for next sprint; 
+- Kaine: NA;
+
+----
+
 ### April28 2022 OCM Standup:
 **Absence -**
 -  Gen, John, Sienna
