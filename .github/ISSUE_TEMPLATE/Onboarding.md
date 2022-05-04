@@ -33,7 +33,7 @@ This should be created at least a couple of days before a new member comes on bo
 - [ ] 2. Next, the new user is to verify that 2 factor authentication is enabled 
 - [ ] 3. Once the account creation and 2fa are completed, add an SRE and Priority label to this ticket
 - [ ] 4. Comment on this ticket to indicate which project /team/product does this member need and move this ticket to the Priority pipeline on the SRE board
-- [ ] 5. Once added, the employee will need to install the Zenhub plugin in the Chrome browser
+- [ ] 5. Once added, the employee will need to install the Zenhub plugin in the Chrome browser - https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd
 
 -----------------
 
