@@ -55,7 +55,7 @@ This should be created at least a couple of days before a new member comes on bo
 -----------------
 
 **OpenShift**
-- [ ] Required for developers, Patrick Wei, Kial Jinnah or Richard Armitage would advise the user to send a web access request through https://github.com/BCDevOps/devops-requests/issues/
+- [ ] Required for developers, Patrick Wei or Richard Armitage would advise the user to send a web access request through https://github.com/BCDevOps/devops-requests/issues/
 
 -----------------
 
