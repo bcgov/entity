@@ -72,7 +72,7 @@ This should be created at least a couple of days before a new member comes on bo
 **Ops Team Onboarding**
 
 - [ ] Developers or BAs are added to Ops repo
-- [ ] Devekioers or BAs are given Edit permissions for the Knowledge Base (Ops Google Drive folder https://drive.google.com/drive/folders/1KK_IFAdAJz9-d7rPwUYYoFXBOfBzqlZx?usp=sharing)
+- [ ] Develooers or BAs are given Edit permissions for the Knowledge Base (Ops Google Drive folder https://drive.google.com/drive/folders/1KK_IFAdAJz9-d7rPwUYYoFXBOfBzqlZx?usp=sharing)
 - [ ] BA have access to shared BA inbox
 - [ ] Set up overview meeting with another Dev/BA to cover process and common requests (including review of the Knowledge Base and how to contriburte)
 - [ ] Access to prod dashboard and databases (read-only for BAs to review client status for requests - SOFI, Namex and Business Registries)
