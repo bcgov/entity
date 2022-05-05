@@ -4,7 +4,7 @@
 
 **Absentees:-**
 
-- 
+- Steven
  
 **Highlight Action Points:**	
 -	Patrick: Need to consider GCP training later 
@@ -17,6 +17,8 @@
 -	Patrick introduce long term plan for App upgrade
 -	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 12111
 -	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
 
 
 
