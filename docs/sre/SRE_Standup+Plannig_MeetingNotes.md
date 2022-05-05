@@ -1,6 +1,26 @@
 
 
-## **April28 2022: Planning Meeting** 
+## **April28 2022: ** 
+
+**Absentees:-**
+
+- 
+ 
+**Highlight Action Points:**	
+-	Patrick: Need to consider GCP training later 
+-	Eve: Finish Ops rotation, will take a look at 11800 and 8313
+-	Richard is working on ops work, support team with Jupiter Notebook setup, will be working on 10670
+-	Omid: Done releases (NameX and NameRequest), and working on onboarding new hires; working with Alex for 12030
+-	Patrick is working on GC Notify Service(Code done), and 11884 Director search can be deployed
+-	Current 3 Node/NPM tickets will be released by entities
+-	11943 will have more technical training plan, will discuss with Trish
+-	Patrick introduce long term plan for App upgrade
+-	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 12111
+-	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
+
+## **April28 2022: ** 
 
 **Absentees:-**
 
