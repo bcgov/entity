@@ -5,7 +5,9 @@
 
 # Summary
 
-This RFC outlines how the changes required for the staff to file an incorporation application.
+This RFC outlines how the changes required for the staff to file an incorporation application. The UI flow
+from the staff dashboard (how to launch the Incorporation Application/Registration) is not in the scope of
+this RFC.
 
 # Detailed design
 
