@@ -11,7 +11,8 @@ This RFC outlines how the changes required for the staff to file an incorporatio
 
 For a registration/incorporation, the temporary registration is created using an account and the temp registration
 is affiliated to the account. Once the temporary registration is converted to actual business, the business 
-is affiliated to the account.
+is affiliated to the account. If the temp registration and business are not affiliated to an account, the business
+will not be accessible from the dashboard.
 
 The suggestion is to use a specific account( as in PPR) for staff incorporation applications. The account id can be 
 stored as a config value. If the logged in user is a staff, 'Create Named or Numbered Company' will use this 
