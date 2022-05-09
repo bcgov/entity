@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+May 13, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+     
+- Meeting Notes
+
+----
 May 6, 2022
 ----
 - Action Items / Carry Over
@@ -27,6 +42,14 @@ May 6, 2022
 - New Business
      
 - Meeting Notes
+    - Ticket 11514. - Which team is doing pay functionality?
+        - Lakshmi will discuss with Travis
+    - Folio number automatically added to NR even when not requested -  11924.
+        - Relationships team will look at this.
+    - UI update node NPM version 10478.
+        - The teams have it in thier Sprint. Patrick shared the ticket with us for node NPM verse.
+    - Service BC COVID response retro attendees.
+        - No longer need to discuss
 
 ----
 April 29, 2022
