@@ -1,5 +1,36 @@
 ----
 
+### May10 2022 OCM Standup:
+**Absence -**
+-  John, 
+
+### Latest Release Date: -
+Refer to  Mural board / 25 Long Term Planning for release date
+**Highlight Action Items: -**
+
+- PI13 ends at July 12th
+- TBC: Olisa to check long-term plan to find a backfill for Suzanne 
+- All: Add Due date and Estimates on OCM tickets where is applicable
+- Who will update due date for Review and update Get Started process on Daxiom's API page#11650
+
+**Update and Action Items: -**
+- Maribeth: No blockers. Actions after info session 
+- Mags: NA, provided update via email 
+- Fareen: will need to send out PPR communication this week; then API workshop May12th. MHR pilot plan will meet with Melissa and Scott; then e-Will and Rural property OCM tasks, will need meet with Jyoti 
+- Gen: got confirmation from Linda and Mihai, move some pending ticket to done (VD) 
+- Sarah: Trish will setup a call with Sarah, Jenny and Linda to brief OCM, the Sarah will help with Entities’s OCM (Mihai will be on requirement gathering )
+- Patrick: not working on OCM tickets now. Fareen will update due date for 11650
+- Zac/Jyoti:  Zac: this is the last week support for FAS go-live chat. Later will move to IT ops.
+- John: NA; will invite new BA to join OCM team meeting (has invited Jenny, not sure if we need Jenny for OCM since Mags is working on Search)
+- Olisa: Got approval to hire Auxiliary staff to support; Society act will implement in Oct, do we need a training plan? Will talk with team lead and setup account tasks
+- Trish: will review other tickets; the how to arrange OCM based on Search will be a separate application/prod
+- Linda: adding new BA Sarah in OCM meeting; ; Before: met with Cooperate supervisor, got following feedback: 1) Keep release stay away from Oct and Dec; 2) Output Format: Good to have Paper Form ahead of release
+- Melissa:  asking resource page to be added Links a to PPR UI; will add
+- Kaine: suggested to create a marketing page on App, not CMS info session, to add resource page and etc
+
+
+----
+
 ### May03 2022 OCM Standup:
 **Absence -**
 -  Olisa, John, Cameron
