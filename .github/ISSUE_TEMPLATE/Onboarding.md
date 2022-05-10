@@ -43,12 +43,13 @@ This should be created at least a couple of days before a new member comes on bo
 -----------------
 
 **Meeting Invitations**
-- [ ] The new team member has been invited to all of the required meetings and ceremonies
+- [ ] The new team member has been invited to all of the required scrum team meetings and ceremonies by the team Scrum Master
+- [ ] The new team member has been invited to all of the cross-team events by the Release Train Engineer (sprint demo, dev tech demo)
 
 -----------------
 
 **Business Context**
-
+- [ ] The new team member has been informed of the Team Vacation Calendar and have added their name to it
 - [ ] Set up meeting for business context knowledge transfer
 - [ ] The new team member's contact information has been added to the "Team BCR Overview" document https://citz.sp.gov.bc.ca/sites/SBC/REG/Projects/MVSM/_layouts/15/WopiFrame.aspx?sourcedoc={5F6ECE64-702C-49BF-A02F-8B46ABF5B67E}&file=Team%20BCR%20Overview.xlsx&action=default
  
