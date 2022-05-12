@@ -1,6 +1,22 @@
 
+## **May11 2022: ** 
 
-## **April28 2022: ** 
+**Absentees:-**
+
+**Highlight Action Points:**	
+-	Omid will provide training on Github and Zenhub 12124
+-	Omid is working on all onboarding tickets for new coops students, BA and etc
+-	Couple of tickets are still waiting for Linda's input
+-	Jinghua will provide SRE Metric
+-	Eve will be working on 12129
+-	Steven done 12120; will be working on 12121
+-	Richard is working on data migaration, will be working on 10670
+-	Patrick is working on set up staff for staff dashboard; and GC Notify Service
+-	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 12111
+-	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
+## **May5 2022: ** 
 
 **Absentees:-**
 
