@@ -1,5 +1,42 @@
 ----
 
+### May12 2022 OCM Standup:
+**Absence -**
+-   
+
+### Latest Release Date: -
+
+Refer to  Mural board / 25 Long Term Planning for release date
+
+**Highlight Action Items: -**
+-	All: move engagement and communication plan ticket, and change impact assessment ticket to done
+-	All: reminder from Trish: to keep communication plan up-to-date, make sure to add all communications in your plan.
+-	Mags: link all Maximus tickets under SP/GP epic
+-	Mags will setup a 15 mins call with Patrick and Fareen to go though process for 11650 (Review and update Get Started process on Daxiom's API page#11650)
+-	TBC with Trish: Create a new ticket for SBC regional office rolling out  SP/GP in July – Can we use 10018? 
+-	Done: Fareen will create new tickets under MHR pilot epic, 11867 epic(CSO) and 9659(eWill) epic, moving to proper pipeline 
+-	TBC: Trish: create a new ticket: how to communicate to client when API Spec is changing
+-	Gen: will add PPR Form ticket under epic 10316 (Form/Website epic)
+-	Done: Maribeth: to share process document with Sarah for release communication 
+
+**Update and Action Items: -**
+- Maribeth: No blockers. Preparing Info session, Jyoti will help
+- Mags: created Maximus tickets, then SP/GP screenshot posted. Scott mentioned there are some dev work; will also support Sarah.
+- Fareen: met Jyoti for date for Rural and iWill release: Decommission on Jun21st, Go-live Jun 22nd ; BCOL announcement  
+- Gen: Working on Website update tickets; can 11530 and 11249 be closed?   
+- Sarah: will be working on entities’s OCM, will ask support from Maribeth and others if anymore questions 
+- Patrick: will meet Mags and Fareen for 11650
+- Zac/Jyoti:  Zac/Jyoti: this is the last week support for FAS go-live chat. Later will move to IT ops.
+- John: will involve Jenny for OCM activities later. 
+- Olisa: will check which tickets can be closed; Before: Got approval to hire Auxiliary staff to support; Society act will implement in Oct, do we need a training plan? Will talk with team lead and setup account tasks
+- Trish: search screenshot + wireframe info package preparation; + GCP key message 
+- Linda: provided update regarding Chamber
+- Melissa:  NA: asking resource page to be added Links a to PPR UI; will add
+- Kaine: Will do a retro for Business Search info document; Before: suggested to create a marketing page on App, not CMS info session, to add resource page and etc
+
+
+----
+
 ### May10 2022 OCM Standup:
 **Absence -**
 -  John, 
