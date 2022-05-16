@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+May 20, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+     
+- Meeting Notes
+
+----
 May 13, 2022
 ----
 - Action Items / Carry Over
@@ -27,6 +42,19 @@ May 13, 2022
 - New Business
      
 - Meeting Notes
+    - Process to change the API
+        - API is out now so if there's any changes to schema or certain other types of things that will have an impact and we would need a way to mechanism to let people who are are API subscribers know.
+        - We have been asked whether we'll get to a point where we can advise of any changes pre-release so our downstream users can test and make sure they understand how it impacts them
+        - We'll consider ways to manage communication
+    - Vacation calendar for July.
+        - Right now it looks good
+    - Moving release planning to weekly
+        - No change required
+    - Staff entering tickets in zenhub
+        - First step we'll try is to use HR as a pilot
+    - Kaine will be in Phoenix next week
+    - Linda is taking on the Portfolio Director role
+        - SMs to send Linda invites to team ceremonies
 
 ----
 May 6, 2022
