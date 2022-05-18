@@ -1,4 +1,24 @@
 
+## **May18 2022: ** 
+
+**Absentees:-**
+
+**Highlight Action Points:**	
+-	Patrick is working on GC, code is done, adding more test. Will demo in next sprint review. Director Search have issue, working on that. Create new tickets for 13.3: GCP Training and etc. Will meet with Trish and Will for new people who support Ops
+-	Patrick reviewed working for next few weeks: GCP Training, some old tickets
+-	Richard is working on ops, and fixing bug found in COLIN, postpone 10670
+-	Eve is working on 11380 and 12129 (Monitor)
+-	Steven is working on two Folio tickets (11539 and 11924)
+-	Omid done training on Github and Zenhub 12124;  is working on all onboarding tickets, with Patrick's help
+-	Omid will talk with Maribeth for staff onboarding  (Patrick will consider automation for onboarding new resource)
+-	Jinghua will provide SRE Metric
+-	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 12111
+-	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
+
+
+
 ## **May11 2022: ** 
 
 **Absentees:-**
