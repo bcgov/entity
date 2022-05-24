@@ -12,6 +12,20 @@ Standing Agenda:
 3. Problems/ Opportunities with Features - Decisions 
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
+----
+May 27, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+     
+- Meeting Notes
 
 ----
 May 20, 2022
@@ -27,6 +41,33 @@ May 20, 2022
 - New Business
      
 - Meeting Notes
+    - Business search
+        - Rationale for showing/not showing filing history in Business Search
+            - Linda to follow up with Louise
+    - Can Society act be pushed?
+        - [Olisa] Generally, No. It was already pushed out
+        - It will be a priority for Home team
+    - My performance reviews
+        - Ian/Kaine will do the my performance for Trish
+        - John and Melissa would be with Linda
+        - Patrick will do that with Ian B
+    - Feedback from Engagement mailbox
+        - Where to send it? -
+            - Can we have a Rocket Chat channel
+            - Trish/OCM or whoever gets the feedback to tag the PO's
+            - Feedback from users can be shared in that channel
+        - Timing for BCOL decommission date
+            - End of December for now
+            - Phasing of drawdown accounts - alter this year
+            - Trying to be consistent in our messaging
+        - Trish met with GCPE
+            - The messaging about our next release is around "end of June"
+                - The message would say that the release would happen in coming months
+                - IT would be information bulletin shared with media and everyone
+
+        - Follow up conversation for GCPE and Credit Card payments
+            - Limit on amounts
+            - John to ask Kaine in the search discssion
 
 ----
 May 13, 2022
