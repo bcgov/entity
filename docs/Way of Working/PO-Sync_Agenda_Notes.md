@@ -12,6 +12,22 @@ Standing Agenda:
 3. Problems/ Opportunities with Features - Decisions 
 4. Prepare for the next Sprint Planning creating ideas for Sprint Goal 
 5. Refine & prioritize Features
+
+----
+June 3, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+     
+- Meeting Notes
+
 ----
 May 27, 2022
 ----
@@ -26,7 +42,18 @@ May 27, 2022
 - New Business
      
 - Meeting Notes
-
+    - Customer facing test environment.
+        - Exposing our tests to other groups is not best practice. It opens up the possibility that our test data will be changed in error.
+        - But that'll affect both our testers cause the data they're expecting could be changed by.
+        - ** Decision ** send a note out to influencers to inform them that we'll follow what the test ID's maybe down the road, but if they would like to test the application that we actually just set up a time and walk through it with them at that time.
+        - Long long term will probably set up the sandbox as full client facing test area.
+    - Google Cloud Platform
+        - At this point at rough cost is available but waiting to confirm
+        - Current timeframe for implementation is November/December
+    - Possible walkthrough/demo/info session for clients early July.
+        - Agreed that it's a good idea
+        - Trish will start to book calendars
+        
 ----
 May 20, 2022
 ----
@@ -64,7 +91,6 @@ May 20, 2022
             - The messaging about our next release is around "end of June"
                 - The message would say that the release would happen in coming months
                 - IT would be information bulletin shared with media and everyone
-
         - Follow up conversation for GCPE and Credit Card payments
             - Limit on amounts
             - John to ask Kaine in the search discssion
