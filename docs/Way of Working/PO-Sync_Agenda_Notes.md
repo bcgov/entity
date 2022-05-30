@@ -45,7 +45,7 @@ May 27, 2022
     - Customer facing test environment.
         - Exposing our tests to other groups is not best practice. It opens up the possibility that our test data will be changed in error.
         - But that'll affect both our testers cause the data they're expecting could be changed by.
-        - ** Decision ** send a note out to influencers to inform them that we'll follow what the test ID's maybe down the road, but if they would like to test the application that we actually just set up a time and walk through it with them at that time.
+        - **Decision** send a note out to influencers to inform them that we'll follow what the test ID's maybe down the road, but if they would like to test the application that we actually just set up a time and walk through it with them at that time.
         - Long long term will probably set up the sandbox as full client facing test area.
     - Google Cloud Platform
         - At this point at rough cost is available but waiting to confirm
