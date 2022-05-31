@@ -1,5 +1,36 @@
 ----
 
+### May31 2022 OCM Standup:
+**Absence -**
+-   Trish, Linda
+
+### Latest Release Date: -
+Refer to  Mural board / 25 Long Term Planning for release date
+**Highlight Action Items: -**
+-	1. All: Some tickets past due, please inform Trish if you need help or re-prioritize tickets.
+-	2. All: Add Est. to ReadyToStart (RTS) and InProgress Tickets
+-	3. All: Add Due Date to RTS and InProgress Tickets 
+-	4. All: Add Assignees to RTS and InProgress Tickets 
+-	5. All: Move new created tickets from New Issues to Backlog 
+
+**Update and Action Items: -**
+- Maribeth: large SP/GP email sent out, will monitor engagement mailbox
+- Mags: catch with email, will check new tickets Trish created.
+- Fareen: Courts Services will be at Mid-July, currently doing development and testing. Working on API Stagey info draft PPT, session is on Thursday. 
+- Gen: Will be working on Form3b for assets. Will  meet with Sarah for SP/GP website discussion
+- Sarah: no blockers, found some tickets are duplicated, will sort them out 
+- Patrick: no update
+- Zac/Jyoti:  Zac/Jyoti: will meet with Jyoti and Trish for new tasks.
+- John: Search PROD in Dev env now. 
+- Olisa: will meet with Melissa and Fareen for MHR staff release
+- Megan: will discuss ZH ticket template for Staff board
+- Trish: NA 
+- Linda: NA
+- Melissa:  MHR Staff launch delayed for about 1 week
+
+
+----
+
 ### May12 2022 OCM Standup:
 **Absence -**
 -   
