@@ -1,4 +1,24 @@
 
+## **May31 2022: ** 
+
+**Absentees:-**
+
+**Highlight Action Points:**	
+-	Eve is working on 10455 and Ops807, 12129 (Monitor), waiting entities input for a few tickets
+-	Steven done 12238, waiting Trish to verify, will pick a new ticket from ToDo
+-	Richard is working on ops, working on 9114 and 9038 (data fix) and a new ticket from Linda: COLIN API
+-	Omid: no blockers
+-	Patrick: GC Notify Service Deployed to Dev and TEST,  will release 11884 when fix the issue
+-	Meng and Omid will do next Quaterly Review (12469)
+-	Patrick will discuss with Linda how to decrease Auth/Pay ops tickets: create bug ticket for relationships and work overtime
+-	Omid: will work on GCP Training ticket later
+-	Jinghua will provide SRE Metric
+-	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 12474
+-	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
+
+
 ## **May18 2022: ** 
 
 **Absentees:-**
