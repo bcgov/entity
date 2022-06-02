@@ -22,7 +22,7 @@ Summarize issue and attach email OR copy and paste email content into ticket
 -----------------
 
 **Ops Process**
-- [ ] Add **Entity** or **Relationships** label to zenhub ticket
+- [ ] Add **Entity** or **Relationships** or **Assets** label to zenhub ticket
 - [ ] Add **Ops** label
 - [ ] Add **Priority1** label to zenhub ticket, if:
   - If the business says it is a priority
@@ -31,14 +31,14 @@ Summarize issue and attach email OR copy and paste email content into ticket
   - If we are still unsure, reach out to other BAs in the guild
 - [ ] Add ticket to "Ops" column
 - [ ] When ticket has been created, post the ticket in RocketChat '#Operations Tasks' channel
-- [ ] Reply All to IT Ops email (CC BA Inbox) and provide zenhub ticket number opened - may not be needed...
+~~- [ ] Reply All to IT Ops email (CC BA Inbox) and provide zenhub ticket number opened - may not be needed...
 - [ ] Dev/BAs to resolve issue
 - [ ] **DEV**: Enter the time you worked on the ticket in the estimate
 - [ ] **DEV**: Tell BA it is ready to review
 - [ ] BAs review
-- [ ] Staff to verify togehter with client
+- [ ] Staff to verify togehter with client (New added during BA Guild discussion)
 - [ ] Add ticket to the current milestone of the code base the ops ticket was relating to (i.e., if it's a Name Request issue, assign to current entities milestone, etc.)
-- [ ] Staff close Zenhub ticket
+- [ ] Staff close Zenhub ticket (New added during BA Guild discussion)
 
 
 
