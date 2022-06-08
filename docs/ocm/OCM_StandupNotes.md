@@ -2,6 +2,21 @@
 
 ### May31 2022 OCM Standup:
 **Absence -**
+-   Linda, John, Gen
+
+**Highlight Action Items: -**
+-	All: Revisit Change Impact Assessment and try to align actual vs planned parties and activities, especially identify any missing part from original plan
+-	All: Some tickets past due date, please update or inform Trish if you need help or re-prioritize tickets.
+-	All: Add Due Date to RTS and InProgress Tickets 
+-	Jinghua: make sure all In Progress/RTS tickets have assignees and Due Date (put TBD if not applicable)
+-	Maribeth will involve Trish, Linda, Mags: To plan for feedback sessions with the corp sups coming up for form feedback
+-	TBC: Megan: have ZH account issue
+
+
+----
+
+### May31 2022 OCM Standup:
+**Absence -**
 -   Trish, Linda
 
 ### Latest Release Date: -
