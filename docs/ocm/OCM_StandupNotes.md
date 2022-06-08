@@ -1,6 +1,6 @@
 ----
 
-### May31 2022 OCM Standup:
+### June072022 OCM Standup:
 **Absence -**
 -   Linda, John, Gen
 
