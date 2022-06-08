@@ -21,6 +21,7 @@ assignees: ''
 -----------------
 
 **Issue Description**
+
 screenshot is highly preferred
 Summarize issue and attach **screenshot**, email OR copy and paste email content into ticket
 
