@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+June 10, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+     
+- Meeting Notes
+
+----
 June 3, 2022
 ----
 - Action Items / Carry Over
@@ -27,6 +42,12 @@ June 3, 2022
 - New Business
      
 - Meeting Notes
+    - Ops Dashboard
+        - Should be a Datalake activity
+        - Possibly could be added after current priorities are completed
+
+    - SRE vacation at the end of July.
+        - Linda to review with Kaine
 
 ----
 May 27, 2022
