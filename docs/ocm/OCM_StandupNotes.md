@@ -1,5 +1,26 @@
 ----
 
+### June09 2022 OCM Standup:
+**Absence -**
+-   John, 
+
+**Highlight Action Items: -**
+-	All: MOD messaging: https://docs.google.com/document/d/16P5Jv0y8jCODQNOusqdnda5pYr_os2Ohv4P1863eV4c/edit 
+-	Jinghua: adding OnHold label on user guide tickets(two tickets) 
+-	Mags: For SP/GP communication, update website/ announcement. Info session covers BCeID and Service Card users. Question to Megan: can Megan’s team do demo?
+-	Trish: setup a call for branding discussion with Linda and Kaine
+-	Fareen: setup bi-weekly meeting with Telnet for API communication. 
+-	Melissa: will discussion escalation process for MHR staff pilot with Fareen
+-	Kaine: discussed overarching marketing page and branding. created two tickets: chat box 12551(Olisa) and Hotjar feedback 12552(Gen)
+-	All: Revisit Change Impact Assessment and try to align actual vs planned parties and activities, especially identify any missing part from original plan
+-	All: Some tickets past due date, please adjust or inform Trish if you need help.
+-	All: Add Due Date to RTS and InProgress Tickets, put TBD or timeframe if no specific date (ie, late July) 
+-	Jinghua: make sure all In Progress/RTS tickets have assignees and Due Date
+-	Maribeth will involve Trish, Linda, Mags: To plan for feedback sessions with the corp sups coming up for form feedback
+-	TBC: Megan: have ZH account issue
+
+----
+
 ### June072022 OCM Standup:
 **Absence -**
 -   Linda, John, Gen
