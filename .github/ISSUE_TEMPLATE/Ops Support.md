@@ -42,10 +42,10 @@ Summarize issue and attach **screenshot**, email OR copy and paste email content
 - [ ] Dev/BAs to resolve issue
 - [ ] **DEV**: Enter the time you worked on the ticket in the estimate
 - [ ] **DEV**: Tell BA it is ready to review
-- [ ] **BAs** review 
-- [ ] **Staff**: to verify togehter with client (New added during BA Guild discussion)
-- [ ] **DEV**: Add ticket to the current milestone of the code base the ops ticket was relating to (i.e., if it's a Name Request issue, assign to current entities milestone, etc.)
-- [ ] **Staff** close Zenhub ticket (New added during BA Guild discussion)
+- [ ] **BAs** Review 
+- [ ] **Staff:**: To verify togehter with client (New added during BA Guild discussion)
+- [ ] **DEV:**: Add ticket to the current milestone of the code base the ops ticket was relating to (i.e., if it's a Name Request issue, assign to current entities milestone, etc.)
+- [ ] **Staff:** close Zenhub ticket (New added during BA Guild discussion)
 
 
 
