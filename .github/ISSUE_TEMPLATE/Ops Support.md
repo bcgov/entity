@@ -53,6 +53,7 @@ Summarize issue, and attach **screenshot**, email OR copy and paste email conten
 
 
 **TBD: **
-- Home team use ZH?
+- Home team use ZH - should involve Whale?
+- Go-live support process - Jinghua to setup a meeting: Team Chat(for escalation), standard process (log ticket and follow normal process, post in RC for chatting)
 
 -----------------
