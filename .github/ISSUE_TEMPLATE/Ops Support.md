@@ -7,6 +7,7 @@ assignees: ''
 
 ---
 
+**all key information in title**
 
 **Contact information**
 - [ ] Staff Name:
@@ -24,22 +25,25 @@ assignees: ''
 
 screenshot is highly preferred
 
-Summarize issue and attach **screenshot**, email OR copy and paste email content into ticket
+Summarize issue, and attach **screenshot**, email OR copy and paste email content into ticket
 
 -----------------
 
 **Ops Process**
 - [ ] Add **Entity** or **Relationships** or **Assets** label to zenhub ticket
 - [ ] Add **Ops** label
+- [ ] Add other Application lable: **Namex**, **NameRequest**, **PPR**, **MHR**, and etc
 - [ ] Add **Priority1** label to zenhub ticket, if:
   - If the business says it is a priority
   - BA can use their business knowledge and best judgement if it is a priority or not
   - How long the ticket has been open
   - If we are still unsure, reach out to other BAs in the guild
-- [ ] Add ticket to "Ops" column
+- [ ] Add ticket to "Ops" column on BC Registry Staff dashboard
+- [ ] IT Ops tickets Triages if staff cannot resolve the issue
+- [ ] If this is MOD issues, transfer to BA Lib team
 ~~- [ ] When ticket has been created, post the ticket in RocketChat '#Operations Tasks' channel~~  (Use ZH Label or Tag people (Dev/BA) for this new issue)
 ~~- [ ] Reply All to IT Ops email (CC BA Inbox) and provide zenhub ticket number opened - may not be needed...~~
-- [ ] Dev/BAs to resolve issue
+- [ ] **MOD Dev/BAs** to resolve issue Or resolved by IT ops
 - [ ] **DEV**: Enter the time you worked on the ticket in the estimate
 - [ ] **DEV**: Tell BA it is ready to review
 - [ ] **BAs** Review 
@@ -48,5 +52,7 @@ Summarize issue and attach **screenshot**, email OR copy and paste email content
 - [ ] **Staff:** close Zenhub ticket (New added during BA Guild discussion)
 
 
+**TBD: **
+- Home team use ZH?
 
 -----------------
