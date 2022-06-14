@@ -1,5 +1,20 @@
 ----
 
+### June14 2022 OCM Standup:
+**Participants -**
+-   Mags, Fareen, Megan, Jinghua, Zac
+
+**Highlight Action Items: -**
+-	Jinghua: adding OnHold label on user guide tickets(two tickets) 
+-	Mags/Megan: Megan’s team will do demo in July 24th Info session.  Jyoti and Zac will provide training/support, Fareen will send video Megan’s team so they can re-use
+-	Fareen: Court Service Online is waiting for general office’s approved, Jyoti is monitoring this 
+-	Megan will check 10926 
+-	Fareen: no clear release date for API, maybe early July. Will follow-up
+-	Jinghua: make sure all In Progress/RTS tickets have Due Date
+
+
+----
+
 ### June09 2022 OCM Standup:
 **Absence -**
 -   John, 
