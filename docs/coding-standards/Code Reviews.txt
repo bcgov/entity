@@ -1,0 +1,41 @@
+Code gatekeeper
+---------------
+A reviewer who ensures that the PR contains "good code" that:
+- does everything it needs to
+- shouldn't break anything
+- is easy to understand and build upon later
+- won't require future cleanup/refactoring (if possible)
+
+
+What to look for when reviewing code
+------------------------------------
+- easy to review code (be neat)
+- easy to understand code (KISS, add comments where needed)
+
+- don't paint yourself into a corner (in future)
+- minimize number of special cases (abstract/generalize if possible)
+- minimize tech debt + write tickets for missing work (eg, unit tests, needed refactoring)
+- imagine you'll be the one enhancing or maintaining this code in 1 year
+
+- use power of the language (eg, typing)
+- don't write complex code to be fancy (see "easy" above)
+- separation of concerns (eg, between components)
+
+- follow existing code style and layout
+- follow best practices (eg, use enums not strings)
+- search for existing code you can reuse or copy
+
+- ask about something if you don't understand
+- share and follow best practices you learned in other projects
+- share/encourage a culture of good coding
+
+- as a reviewer, don't approve without reviewing just because another developer is also reviewing it
+
+- is the PR ready to review (not draft)?
+- is the PR assigned to the author?
+- does the PR have acceptable reviewers?
+- does the PR have a link to the ticket?
+- does the PR have a suitable description (what changed, at least generally)?
+- did the PR pass all checks and has no conflicts?
+- does the PR do what the ticket requires?
+- does the PR update the app version, where appropriate?
