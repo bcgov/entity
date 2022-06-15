@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+June 17, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+     
+- Meeting Notes
+
+----
 June 10, 2022
 ----
 - Action Items / Carry Over
@@ -27,6 +42,11 @@ June 10, 2022
 - New Business
      
 - Meeting Notes
+    - Court services online.
+        - Still waiting for the CR
+        - CSL team ready for July 15th, tentatively.
+        - Doesn't add anything apart from ministry and non ministry government account, their products and the test fees have to be set by admin team.
+        - Jyoti will forward the date once formal approval is received
 
 ----
 June 3, 2022
