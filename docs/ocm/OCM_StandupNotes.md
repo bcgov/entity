@@ -1,5 +1,17 @@
 ----
 
+### June16 2022 OCM Standup:
+**Participants -**
+-   Mags, Fareen, Megan, Jinghua, Jyoti, John, Melissa, Maribeth
+
+**Highlight Action Items: -**
+-	Jinghua: adding OnHold label on user guide tickets(two tickets) 
+-	Maribeth/Jinghua will discuss setup a call to support Julie for next info session demo
+-	Megan will check 10926 
+-	Fareen: no clear release date for API, maybe early July. Will follow-up
+-	Jinghua: make sure all In Progress/RTS tickets have Due Date
+
+----
 ### June14 2022 OCM Standup:
 **Participants -**
 -   Mags, Fareen, Megan, Jinghua, Zac
