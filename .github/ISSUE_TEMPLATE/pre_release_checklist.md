@@ -31,6 +31,10 @@ Prior to moving into production, the following steps should be completed or conf
 - [ ] NameX API - 
 - [ ] Legal API - 
 - [ ] Entity Filer - 
+- [ ] PPR UI - 
+- [ ] PPR API - 
+- [ ] MHR API - 
+- [ ] BC Registries Dashboard - 
 .
 - [ ] config map changes
   - list here, copy to test and prod
@@ -48,6 +52,10 @@ Prior to moving into production, the following steps should be completed or conf
 - [ ] NameX API - 
 - [ ] Legal API - 
 - [ ] Entity Filer - 
+- [ ] PPR UI - 
+- [ ] PPR API - 
+- [ ] MHR API - 
+- [ ] BC Registries Dashboard - 
 .
 - are there any dependencies, such as an auth/pay deployment or Keycloak changes?
 
@@ -59,6 +67,10 @@ Prior to moving into production, the following steps should be completed or conf
 - [ ] NameX API - 
 - [ ] Legal API - 
 - [ ] Entity Filer - 
+- [ ] PPR UI - 
+- [ ] PPR API - 
+- [ ] MHR API - 
+- [ ] BC Registries Dashboard - 
 .
 - are there any dependencies, such as an auth/pay deployment or Keycloak changes?
 
