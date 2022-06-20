@@ -14,6 +14,21 @@ Standing Agenda:
 5. Refine & prioritize Features
 
 ----
+June 24, 2022
+----
+- Action Items / Carry Over
+    - RAID board
+
+- Standing Items
+    - Program Kanban
+    - Program Roadmap
+    - PI Planning Board - Dependencies
+
+- New Business
+     
+- Meeting Notes
+
+----
 June 17, 2022
 ----
 - Action Items / Carry Over
@@ -27,6 +42,16 @@ June 17, 2022
 - New Business
      
 - Meeting Notes
+    - SRE PPR Operational Support - Melissa
+        - Patrick's team met with Doug yesterday and did a little bit more training. 
+        - For the report output issues, Doug's team will be able to do the work though to resolve the errors. 
+        - The team will look into database access
+        - To resolve the different report errors, the team needs either 
+                - a pro data account set up in production or
+                - provide staff tokens
+        - ** Decision ** add a key on the existing product account
+    - Standing up a training environment.
+        - ** Decision ** use and maintain the spreadsheet of tester IDs
 
 ----
 June 10, 2022
