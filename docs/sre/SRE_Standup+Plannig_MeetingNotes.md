@@ -1,4 +1,24 @@
 
+## **June22 2022: ** 
+
+**Absentees:-**
+- Richard, Omid, Steven
+
+**Highlight Action Points:**	
+-	Overtime proposal approved by Linda. If there are any overtime hours happened, please report to Linda and your own supervisor
+-	Patrick will setup TeamMeeting on Sat/Sun for commnication. Ops overtime is to decrease total # of ops tickets, will be focusing on Alteration and Data fix
+-	Patrick is working on BCeID/Entities team support; supervisor training; ZH/GH issues
+-	Meng verified 6455 and moved to done
+-	Eve's moving some tickets to VER/QA, waiting entities's QA
+-	Priority bug? BC1188598 - COLIN-API stuck for won't send certain filings back to CPRD#12472 - Got Richard's Feedback
+-	Omid is working on 12596(P1) during Steven's vacation
+-	All: Move tickets to done instead of closed
+-	All: Add est to all done ticket, actual effort you have spent (5 hours = 1 SP)
+-	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 12474
+-	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+
+
+
 ## **June01 2022: ** 
 
 **Absentees:-**
