@@ -1,6 +1,6 @@
 **Process/Scrum Ceremonies**
 - Standup
-- Sprint Planning, 
+- Sprint Planning 
 - Sprint Review
 - Sprint Retro
 - Grooming meeting 
@@ -18,7 +18,7 @@
 **Tools**
 - Github
 - Zenhub
-- Selforganizing team: pull tickets
+- RocketChat
 
 **Team Rules**
 - Guiding principle
@@ -29,8 +29,6 @@ https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/DoD%20-%20Ass
 https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/DoR%20-%20Assets.md
 
 **Others: leave tracker and etc**
-
-
 Useful links for our daily work 😊
 1.	Assets Channel on Rocket Chat: https://chat.developer.gov.bc.ca/group/registries-assets   
 2.	Zenhub Board: https://app.zenhub.com/workspaces/assets-team-space-61426544e7e2ea001d079597/board?repos=157936592 
