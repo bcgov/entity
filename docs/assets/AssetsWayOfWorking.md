@@ -1,11 +1,14 @@
 **Process/Scrum Ceremonies**
 - Standup
-- Sprint Planning, Review, Retro
+- Sprint Planning, 
+- Sprint Review
+- Sprint Retro
 - Grooming meeting 
-- Pre-grooming 
-- Design meeting
-- Bug Triage
-- Release Cadence
+- Requirements (partial team)
+- Pre-grooming (partial team)
+- Design meeting (partial team)
+- Bug Triage (partial team)
+- Release Cadence (partial team)
 
 **Program Meeting/Release Train meeting**
 - Sprint Review/Stakeholder Demo
