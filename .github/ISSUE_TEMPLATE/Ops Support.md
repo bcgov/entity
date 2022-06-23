@@ -7,7 +7,10 @@ assignees: ''
 
 ---
 
-**all key information in title**
+**Please Note: Put all key information in ZenHub Ticket Title: 
+- This is the only searchable field in Zenhub
+- Use Tempalte when create a new ticket
+- 
 
 **Contact information**
 - [ ] Staff Name:
