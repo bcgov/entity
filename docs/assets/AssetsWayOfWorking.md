@@ -15,9 +15,9 @@
 - Developer Sprint Demo
 - PI Planning
 
-**Zenhub and other tools**
-- Pipelines
-- Tickets
+**Tools**
+- Github
+- Zenhub
 - Selforganizing team: pull tickets
 
 **Team Rules**
