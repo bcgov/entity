@@ -24,7 +24,7 @@ SBC staff want to access staff dashboard to search for SP/GP filing for clients,
 keycloak Roles are used accross application to determine who can access staff dashboard.
 We have to create a new role for sbc-staff and use the same role check (similear to staff) in application and show appropriate pages for sbc-staff and Staffs 
 
-# Detailed design
+### Detailed design
 
 ## 2) Bring all staff into one account and connect accounts using account deligation
 
@@ -35,7 +35,7 @@ The same will be applicable to sbc-staff also. Sbc-staff will deligate access to
 it will be similear to below rfc (instad of entity, account will be deligated to another acccounts)
 https://github.com/bcgov/entity/blob/master/rfcs/rfc-delegation-and-permissions.md
 
-# Detailed design
+### Detailed design
 
 
 # Solution Options
@@ -45,7 +45,7 @@ https://github.com/bcgov/entity/blob/master/rfcs/rfc-delegation-and-permissions.
 Now staff is not part any account, sbc-staff are part of one GOVM account. 
 sbc-staff can switch account staff dashboard and do search and altreation of filing using keycloak role, and they can file new SP/GP using their GOVM acccont.
 
-# Detailed design
+### Detailed design
 
 
 # Drawbacks
