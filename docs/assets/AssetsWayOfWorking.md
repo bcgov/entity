@@ -8,14 +8,24 @@
 - Pre-grooming (partial team)
 - Design meeting (partial team)
 - Bug Triage (partial team)
-- Release Cadence (partial team)
+- Release Cadence (Cutoff: Monday Night, Release Date: Thursday)
 
 **Program Meeting/Release Train meeting**
 - Sprint Review/Stakeholder Demo
 - Developer Sprint Demo
 - PI Planning
 
-**Tools**
+**Development Tools/Environment**
+- PPR
+  - Front End – Vue2
+  - Back End - Postgres
+  - Environment – GCP
+- MHR
+  - Front End – Vue2
+  - Back End - Postgres
+  - Environment – GCP
+
+**Process/Communication Tools**
 - Github
 - Zenhub
 - RocketChat
