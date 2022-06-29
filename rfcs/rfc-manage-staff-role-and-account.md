@@ -24,13 +24,22 @@ SBC staff want to access the staff dashboard to search for SP/GP filing for clie
 
 ### Summary
 keycloak Roles are used across the application to determine who can access the staff dashboard.
-We have to create a new role for sbc-staff and use the same role check (similar to staff) in the application and show appropriate pages for sbc-staff and staff 
+We can create a new keycloak role for sbc-staff and in code we can use this group to give permission for required component/pages.
+In this ways sbc-staff can do alteration for organization behalf of the user, and sbc-staff can use their GOVM account to create new SP/GP for Users
+We can create a new GOVM account and add all staff into that GOVM account where our staff also can do the same like sbc-staffs
+
 
 ### Detailed design
 1. Have to create a new role in keycloak for sbc-staff and
 2. In code we have to check in all places where we need to give permission for the new role, like staffed
-3. They should be able to switch to account or as a staff.
-4. According to role sbc-staff will have limited permission
+3. In addition to account (where they are part), we can show staff dashboard in menu, where they can switch between staff dashboard and account 
+4. When sbc-staff/staff access via staff dashboard, they can access all the accounts in our system (behalf of user)
+5. When sbc-staff/staff using their GOVM account then it will act as indidual account and they can do all the functionality (like creat organization / filing, etc..)
+4. As in existing we can have multiple staff groups to limit permission (search only/view/edit permissions)
+
+
+This approch will have high dev impact on sbc-auth and pay-api, less dev impact on and all partner application (can directly check user role from keycloak tokens)
+
 
 ## 2) Bring all staff into one account and connect accounts using account deligation
 
@@ -45,33 +54,12 @@ https://github.com/bcgov/entity/blob/master/rfcs/rfc-delegation-and-permissions.
 1. Account will be deligated to another account
 2. All permissions will be granular level, Auth API will control Permissions
 3. All partner apps should have to make API call to Auth API and get permissions before allowing access to the application
+4. We can show/hide components depending on the permissions they have.
+5. staff have access to all functionality (with higher permissions)
+6. sbc-staff can assign less permissions than staff.
 
 
-# Solution Options
-## 3) Allow staff to be part of the GVM account 
-
-### Summary
-Now, staff is not part of any account, sbc-staff are part of one GOVM account. 
-sbc-staff can switch account staff dashboard and do search and alteration of filing using keycloak role, and they can file new SP/GP using their GOVM account.
-
-### Detailed design
-1. sbc-staffs will have to new role in keycloak
-2. While accessing partner app, partner app can check role from keycloak and show component/page accordingly
-3. sbc-staff can access staff dashboard with new permissions
-
-
-# Drawbacks
-
-Why should we *not* do this? Please consider:
-
-- implementation cost, both in term of code size and complexity
-- whether the proposed feature can be implemented in user space
-- the impact on teaching people
-- integration of this feature with other existing and planned features
-- cost of migrating existing applications (is it a breaking change?)
-
-There are tradeoffs to choosing any path. Attempt to identify them here.
-
+This approch will have high dev impact on both sbc-auth and other applications (partner applications always need to make call to sbc-auth to check permission)
 
 # Adoption strategy
 
