@@ -1,5 +1,20 @@
 ----
 
+### June28 2022 OCM Planning:
+** Absence -**
+-   Jyoti
+
+**Highlight Action Items: -**
+-	Trish: Maximus will not be first line support for all apps. Only sp/gp registrations, names and account setup/login, will discuss process changes and confirm with Wael and Megan
+-	TBC: Trish: with release date change, will re-plan/shift OCM tickets
+-	Megan will help to find someone to support google missing phone# 
+-	Fareen done comm on refund for 61 duplicated transactions for RPT
+-	Fareen: no clear release date for API, maybe early July. Will follow-up
+-	Sarah: As the shift in process, scope & time, will affect the training schedules/times/material developed to date, and I have no scope/dates/timing for future, will be chatting with OCM team
+-	Olisa: working on Webchat and SP/SP training and KB
+-	Olisa is working on new hiring
+
+---
 ### June16 2022 OCM Standup:
 **Participants -**
 -   Mags, Fareen, Megan, Jinghua, Jyoti, John, Melissa, Maribeth
