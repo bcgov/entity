@@ -1,5 +1,28 @@
 
-## **June22 2022: ** 
+## June29 2022: 
+
+**Absentees:-**
+- Richard, Thor, Meng
+
+**Highlight Action Points:**	
+-	Patrick created epic: Python 3.10 Upgrade 12795: will starting from Names
+-	Patrick created epic: Clean up Names applications Sentry and log errors/exceptions#12678; has linked all bugs under this epic, team can pick tickets under this epic when you need work
+-	Patrick's potiential plan for PI14: Python Upgrade; GCP Training; Vue3 Upgrade; Upgrade Keycloak from Silver to Gold?
+-	Two new bugs from entities/Linda (12809 and 12806), assinged to Steven. 
+-	Follow-up with Linda/Mihai for following tickets
+	-	11801; 12241; 11380; #8272; 11652
+-	One task in PI13, @Thor, any update? RFC for PUB/SUB Middleware 
+-	GCP Training is in July11's week? TBD
+-	All: Move tickets to done instead of closed
+-	All: Add est to all done ticket, actual effort you have spent (5 hours = 1 SP)
+-	For any normal daily SRE routine tasks and/or other SRE tasks which NOT have an SRE ticket, please add under ticket 12474
+-	All: Actual Ops Spt Day: put comments under Ops Rotation Thread, if there are any changes (Not same as plan)
+-	Steven is working on 12252
+-	Eve is working on 10455, fixing merge issue
+-	Patrick: 12596 reuse invoice#
+
+
+## June22 2022: 
 
 **Absentees:-**
 - Richard, Omid, Steven
