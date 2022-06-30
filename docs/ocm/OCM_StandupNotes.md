@@ -1,4 +1,18 @@
 ----
+### June30 2022 OCM Planning:
+** Absence -**
+-   Jyoti; Maribeth; 
+
+**Highlight Action Items: -**
+-	Megan: invite Elizabeth in ops process meeting
+-	Maribeth is working on detail description for ops process
+-	Megan/Jinghua/Trish: Plan to start pilot ticket from next week. ServiceNow is expired from Maximus from August
+-	Mags: BCOL user setup comm, Trish will help
+-	Fareen: will meet with Jyoti’s for court services and etc
+-	John: reserved API Sandbox Release date: Mid-August. Now preparing slide deck for internal user and high volume users, will share with team for feedback.
+-	Jinghua will send Ops template for review
+
+----
 
 ### June28 2022 OCM Planning:
 ** Absence -**
