@@ -5,10 +5,10 @@
 - Richard, Thor, Meng
 
 **Highlight Action Points:**	
--	Patrick created epic: Python 3.10 Upgrade 12795: will starting from Names
--	Patrick created epic: Clean up Names applications Sentry and log errors/exceptions#12678; has linked all bugs under this epic, team can pick tickets under this epic when you need work
--	Patrick's potiential plan for PI14: Python Upgrade; GCP Training; Vue3 Upgrade; Upgrade Keycloak from Silver to Gold?
--	Two new bugs from entities/Linda (12809 and 12806), assinged to Steven. 
+-	New epic: Python 3.10 Upgrade 12795: will starting from Names
+-	New epic: Clean up Names applications Sentry and log errors/exceptions#12678; has linked all bugs under this epic, team can pick tickets under this epic when you need work
+-	Patrick's potential plan for PI14: Python Upgrade; GCP Training; Vue3 Upgrade; Upgrade Keycloak from Silver to Gold?
+-	Two new bugs from entities/Linda (12809 and 12806), assigned to Steven. 
 -	Follow-up with Linda/Mihai for following tickets
 	-	11801; 12241; 11380; #8272; 11652
 -	One task in PI13, @Thor, any update? RFC for PUB/SUB Middleware 
