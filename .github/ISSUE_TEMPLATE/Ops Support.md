@@ -8,8 +8,8 @@ assignees: ''
 ---
 
 **Please Note: Put all key information in ZenHub Ticket Title:** 
-- Titile is the only searchable field in Zenhub
-- Use Tempalte when create a new Ops ticket
+- Title is the only searchable field in Zenhub
+- Use Template when create a new Ops ticket
 
 
 **Contact information**
@@ -104,8 +104,8 @@ assignees: ''
 
 -----------------
 
-**Ops Process**
-- [ ] Add **Entity** or **Relationships** or **Assets** label to zenhub ticket
+**Ticket Process**
+- [ ] Add **Entity** or **Relationships** or **Assets** label to zenhub ticket (Refer to below Team and Responsibilities)
 - [ ] Add **Ops** label
 - [ ] Add other Application lable: **Namex**, **NameRequest**, **PPR**, **MHR**, and etc
 - [ ] Add **Priority1** label to zenhub ticket, if:
