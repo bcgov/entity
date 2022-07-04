@@ -122,7 +122,7 @@ assignees: ''
 - [ ] **Modernization DEV**: Enter the time you worked on the ticket in the estimate
 - [ ] **Modernization DEV**: Tell BA it is ready to review
 - [ ] **Modernization BAs** Review and reach out to staff member who created ticket to verify
-- [ ] **Staff**: To verify togehter with client (New-added during BA Guild discussion)
+- [ ] **Staff**: To verify together with client (New-added during BA Guild discussion)
 - [ ] **Modernization DEV**: Add ticket to the current milestone of the code base the ops ticket was relating to (i.e., if it's a Name Request issue, assign to current entities milestone, etc.)
 - [ ] **Staff**: close Zenhub ticket (New-added during BA Guild discussion)
 
