@@ -104,27 +104,7 @@ assignees: ''
 
 -----------------
 
-**Ticket Process**
-- [ ] Add **Entity** or **Relationships** or **Assets** label to zenhub ticket (Refer to below Team and Responsibilities)
-- [ ] Add **Ops** label
-- [ ] Add other Application lable: **Namex**, **NameRequest**, **PPR**, **MHR**, and etc
-- [ ] Add **Priority1** label to zenhub ticket, if:
-  - If business team highlight it is a priority
-  - Modernization team BA can use their business knowledge and best judgement if it is a priority or not
-  - How long the ticket has been open
-  - If we are still unsure, reach out to other Modernization team BAs in the guild
-- [ ] Add ticket to "Ops" column on **BC Registry Staff dashboard**
-- [ ] IT Ops tickets Triages if Helpdesk staff and/or IT OPS cannot resolve the issue
-- [ ] If this is Modernization issues, Modernization BA team will continue/coordinate to resolve the issue
-~~- [ ] When ticket has been created, post the ticket in RocketChat '#Operations Tasks' channel~~  (Use ZH Label or Tag people (Dev/BA) for this new issue)
-~~- [ ] Reply All to IT Ops email (CC BA Inbox) and provide zenhub ticket number opened - may not be needed...~~
-- [ ] **Modernization Dev/BAs** to resolve issue 
-- [ ] **Modernization DEV**: Enter the time you worked on the ticket in the estimate
-- [ ] **Modernization DEV**: Tell BA it is ready to review
-- [ ] **Modernization BAs** Review and reach out to staff member who created ticket to verify
-- [ ] **Staff**: To verify together with client (New-added during BA Guild discussion)
-- [ ] **Modernization DEV**: Add ticket to the current milestone of the code base the ops ticket was relating to (i.e., if it's a Name Request issue, assign to current entities milestone, etc.)
-- [ ] **Staff**: close Zenhub ticket (New-added during BA Guild discussion)
+**Ops Process** ->> Refer to **Zenhub - BC Registries Staff Dashboard Guid**:  https://docs.google.com/document/d/11Qh7me7qr2eCRHlaQGAujtWYg0q8rU79/edit 
 
 -----------------
 
