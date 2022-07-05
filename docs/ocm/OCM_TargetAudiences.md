@@ -6,7 +6,6 @@
 |	Internal	|	SBC Contact Centres (Maximus)	|	Brian and Taija	|
 |	Internal	|	Other BC Registry staff	|	e.g., IT Ops, BA's, Devs on home team, etc.	|
 |	Internal	|	Other Internal groups	|	e.g. JTT, Exec, etc.	|
-|		|		|		|
 |	External	|	BCOL: Users (non-gov)	|	Eg. Law firm	|
 |	External	|	BCOL: Ministry Users	|	Eg., Ministry of Finance 	|
 |	External	|	BCOL: Non-ministry Users	|	E.g. BC Hydro	|
