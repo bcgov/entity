@@ -41,7 +41,7 @@ We can create a new GOVM account and add all BC Registry staff into that GOVM ac
 This approach will have a high dev impact on sbc-auth and pay-api, less dev impact on and all partner applications (can directly check user role from keycloak tokens)
 
 
-## 2) Bring all Registry staff into one account and connect accounts using account deligation
+## 2) Bring all Registry staff into one account and connect accounts using account delegation
 
 ### Summary
 Currently, the Registry staff is not part of any accounts, and the Registry staff's role is being verified directly from keycloak. As a part of this solution, all users will be under at least one account and Registry staff will be deligated to all accounts according to access permissions. Then we will handle granular permission for staff from sbc-auth like end-users.
