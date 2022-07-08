@@ -1,3 +1,16 @@
+## July06 2022: 
+
+**Absentees:-**
+- None
+
+**Highlight Action Points:**	
+-	 Meng is working on a new ticket
+-	 Eve is working on 12709 with Richard's help
+-	 Omid is doing Ops interview, GCP training Monday, and help with Anne-Marie's team setup (12692), will provide ZH training to Anne-Marie's team
+-	 There are 4 tickets which Richard is working on
+-	 Steven is working on 12422
+-	 Patrick is working on Python upgrade and PI planning, and supervisor training
+
 
 ## June29 2022: 
 
