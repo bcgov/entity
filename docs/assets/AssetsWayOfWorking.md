@@ -7,13 +7,17 @@
 - Requirements (partial team)
 - Pre-grooming (partial team)
 - Design meeting (partial team)
-- Bug Triage (partial team)
-- Release Cadence (Cutoff: Monday Night, Release Date: Thursday)
+- Bug Triage (partial team) 
 
 **Program Meeting/Release Train meeting**
 - Sprint Review/Stakeholder Demo
 - Developer Sprint Demo
 - PI Planning
+
+**Release Cadence**
+- Each release has a release champion, get volunteer from Dev team on Friday's standup
+- Cutoff: Monday Night, Release Date: Thursday
+- Stop merging code to main branch from Tuesday morning, restart after Thursday's release
 
 **Development Tools/Environment**
 - PPR
@@ -31,15 +35,18 @@
 - RocketChat
 
 **Team Rules**
-- Guiding principle
+- Strong sele-organized team, pull and self-assign ticket
+- Team move all done tickets to Done pipeline, PO will move tickets to Close pipeline and close tickets
+- d
+
+**Guiding principle**
 ![Guiding Principes](https://user-images.githubusercontent.com/87034722/175352324-856a2a4d-3471-433a-835e-e224f442c187.png)
 - Definition of Done
 https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/DoD%20-%20Assets.md
 - Definition of Ready
 https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/DoR%20-%20Assets.md
 
-**Others: leave tracker and etc**
-Useful links for our daily work 😊
+**Useful links for our daily work** 
 1.	Assets Channel on Rocket Chat: https://chat.developer.gov.bc.ca/group/registries-assets   
 2.	Zenhub Board: https://app.zenhub.com/workspaces/assets-team-space-61426544e7e2ea001d079597/board?repos=157936592 
 3.	Fibonacci estimates reference: https://github.com/bcgov/entity/blob/master/docs/assets/Fib_ReferenceList.md 
