@@ -1,4 +1,18 @@
 ----
+### July21 2022 OCM Planning:
+** Absence -**
+-   
+
+**Highlight Action Items: -**
+-	All: move tickets to closed directly
+-	All: New OCM Epic template, please share your comments
+-	Sarah/Mags, add description (Done by senior analyst) in epic 91, 104, 103, 105 
+-	Sarah/Mags, review below epics and add assignees: epic 91, 104, 103, 105
+-	All: move tickets back to backlog if we don't have cycles to work on them 
+-
+
+
+----
 ### June30 2022 OCM Planning:
 ** Absence -**
 -   Jyoti; Maribeth; 
