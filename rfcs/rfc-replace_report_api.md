@@ -33,7 +33,13 @@ Gotenberg version 7 provides a GCP tuned container. A previous POC was completed
 
 The current and new report services will run in parallel for a period of time. Applications will switch over to the new service for all report types, not one report type at a time.
 When all applications have moved to the new service the current one will be retired.
+# Adoption
 
+As products migrate from OCP to GCP they should also migrate to this new ReportAPI service, it is not a blocking issue.
+
+The PPR migration work will be presented to the teams to provide an idea of impact, effort and other issues tha are needed when creating estimates and completing the work needed to move to the new service.
+
+All services are setup to use launchdarkly flags and that should be used to to manage the switch between the services to reduce the possibility of issues in the production environment.
 # Drawbacks
 
 Assets specific support for search report table of contents with internal links and page numbers is poor.
