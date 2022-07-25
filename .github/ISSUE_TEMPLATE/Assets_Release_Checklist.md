@@ -7,7 +7,7 @@ Assignees: ''
 
 ---
 
-**Ticket Naming Convension:** Example: Assets: Sprint 14.1.1 Release (1st release in Sprint14.1)
+**Ticket Naming Convention:** Example: Assets: Sprint 14.1.1 Release (1st release in Sprint14.1)
 
 **Prior to moving into production, the following steps should be completed or confirmed:**
 - [ ] Add release # to this ticket
@@ -17,7 +17,7 @@ Assignees: ''
 - [ ] All dev/test pipeline test suites green
 - [ ] Dev/QA chat to plan prod verification testing (unless already automated)
 - [ ] Release the code to production and complete smoke test (STEPS BELOW)
-- [ ] Finalise/publish the release in GitHub, tagging it
+- [ ] Finalize/publish the release in GitHub, tagging it
 
 ### Deployment Steps
 
