@@ -1,4 +1,13 @@
 ----
+### July26 2022 OCM Planning:
+** Absence -**
+-   Trish, Maribeth, Gen
+
+**Highlight Action Items: -**
+-	Sarah/Mags: will groom and re-org epics/tickets in a slight different way
+-	With new release date for BCOL partners (Sep10), comms will need to go out on ~Aug 10 (one month earlier)
+
+----
 ### July21 2022 OCM Planning:
 ** Absence -**
 -   
