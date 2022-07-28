@@ -35,9 +35,9 @@
 - RocketChat
 
 **Team Rules**
-- Strong sele-organized team, pull and self-assign ticket
+- Strong self-organized team, pull and self-assign ticket
 - Team move all done tickets to Done pipeline, PO will move tickets to Close pipeline and close tickets
-- d
+- 
 
 **Guiding principle**
 ![Guiding Principes](https://user-images.githubusercontent.com/87034722/175352324-856a2a4d-3471-433a-835e-e224f442c187.png)
