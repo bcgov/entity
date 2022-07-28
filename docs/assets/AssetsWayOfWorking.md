@@ -46,6 +46,9 @@ https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/DoD%20-%20Ass
 - Definition of Ready
 https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/DoR%20-%20Assets.md
 
+**MHR Product Vision Board**
+- https://app.mural.co/t/regionaloperationsbranch9166/m/regionaloperationsbranch9166/1656972923698/d15e1cb062ae59e1b0e2445ab8f9a02077ad68c5?sender=ud3698fd0df095bf349c34291
+
 **Useful links for our daily work** 
 1.	Assets Channel on Rocket Chat: https://chat.developer.gov.bc.ca/group/registries-assets   
 2.	Zenhub Board: https://app.zenhub.com/workspaces/assets-team-space-61426544e7e2ea001d079597/board?repos=157936592 
