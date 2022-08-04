@@ -1,3 +1,14 @@
+## Aug04 2022: 
+
+**Absentees:-**
+- Patrick, Eve, 
+
+**Highlight Action Points:**	
+-	 Steven will be working on two report tickets: 12806 and 12809
+-	 Richard is working on Entities work and Ops issues
+-	 Omid is working on 11652, then 6505
+
+
 ## July06 2022: 
 
 **Absentees:-**
