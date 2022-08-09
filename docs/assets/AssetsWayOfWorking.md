@@ -34,10 +34,16 @@
 - Zenhub
 - RocketChat
 
+
+----
+
 **Team Rules**
 - Strong self-organized team, pull and self-assign ticket
+- Pick up new tickets from Sprint Backlog pipeline (From top to down reflect tickets priorities). Communcate with PO if no applicable tickets from Sprint Backlog
+- Keep current Sprint Goals in consideration when picking up new tickets, align with sprint goals  
 - Team move all done tickets to Done pipeline, PO will move tickets to Close pipeline and close tickets
-- 
+
+
 
 **Guiding principle**
 ![Guiding Principes](https://user-images.githubusercontent.com/87034722/175352324-856a2a4d-3471-433a-835e-e224f442c187.png)
