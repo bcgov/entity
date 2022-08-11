@@ -4,7 +4,7 @@
 ** Absence -**
 -   Linda
 
-**Highlight Action Items: -**
+**Highlight Action Items: -**  please advise if any errors or omissions
 -	All: send all training/demo invites to engagement email box to keep tracking
 -	All: based on current market release dates, list OCM activities might not be able to implement, inform Trish before Monday
 -	John: to check OCM/Search tickets and check if all tasks are been covered, provide input by Monday
