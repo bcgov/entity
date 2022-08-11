@@ -1,3 +1,20 @@
+
+----
+### Aug11 2022 OCM Standup:
+** Absence -**
+-   Linda
+
+**Highlight Action Items: -**
+-	All: send all training/demo invites to engagement email box to keep tracking
+-	All: based on current market release dates, list OCM activities might not be able to implement, inform Trish before Monday
+-	John: to check OCM/Search tickets and check if all tasks are been covered, provide input by Monday
+-	Fareen follow-up with Zac to provide access to TEST/PROD env. for Anne-Marie's team
+-	Trish: BC Registry YouTube channel will be available 
+-	Support for non-bc residence to access our apps, coordinate with help desk from different partners 
+-	Trish will help with Mags for Distribution List 
+-	Megan will encourage staff to continue use new MHR app
+-	Sarah: Regional office cannot access Registries, following up with Zac
+
 ----
 ### July26 2022 OCM Planning:
 ** Absence -**
