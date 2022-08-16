@@ -1,5 +1,16 @@
 
 ----
+### Aug16 2022 OCM Standup:
+**Highlight Action Items: -**  please advise if any errors or omissions
+-	Don’t need to combine MHR epics, each has different purpose
+-	Move SP/GP Form/CMS site ticket back to BLG and adding On-Hold
+-	Epic 145, new epic waiting for clarification 
+-	Mags, Maribeth and Gen will review CMS site complex update together next week
+-	Two AGM change(Forms) on hold due to waiting UI design 
+-	Fareen is working on help HelpDesk team get in UAT (need two weeks) if cannot get by end of this week Aug19, escalate to Dwayne 
+
+
+----
 ### Aug11 2022 OCM Standup:
 ** Absence -**
 -   Linda
