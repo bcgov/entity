@@ -1,3 +1,17 @@
+## Aug24 2022: 
+
+**Absentees:-**
+- Richard, Eve, Meng
+
+**Highlight Tasks for next sprint:**	
+-	 New task: Client Feedback Plugin RFC #13427, Hotjar is expensive, consider other options
+-	 New task: Keycloak Realm Migration #13425, Platform service migrate Keycloak to golden cluster 
+-	 New epic: Convert notification and registration email templates #13428, aiming to finish first 2 steps in next sprint
+-	 Follow-up GCP Training for each SRE members
+-	 Alex shadow Omid for SRE/Ops work 
+-	 New task: quarterly review 
+-	 
+
 ## Aug04 2022: 
 
 **Absentees:-**
