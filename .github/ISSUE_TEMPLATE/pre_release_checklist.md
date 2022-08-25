@@ -12,13 +12,10 @@ Prior to moving into production, the following steps should be completed or conf
 - [ ] Add release # to this ticket
 - [ ] Update version numbers in the code being released and list them here:
 - [ ] Ensure deployment steps are filled in - remove/replace placeholders
-
 - [ ] Create a draft release in GitHub
- - [ ] Confirm the correct commits are present
- - [ ] Select appropriate target is selected which represents the build in Test - either a commit from recent commits or a reference to a branch
- - [ ] Autogenerate release notes using last release tag as a point of reference. Update change list manually if required.
-
-
+- [ ] github-draft-release - Confirm the correct commits are present
+- [ ] github-draft-release - Select appropriate target is selected which represents the build in Test - either a commit from recent commits or a reference to a branch
+- [ ] github-draft-release - Autogenerate release notes using last release tag as a point of reference. Update change list manually if required.
 - [ ] Dev to ensure that the commit list is represented on the release report
 - [ ] QA to schedule the release with staff/clients (daytime's best or when staff are available for rollback)
 - [ ] All dev/test pipeline test suites green
