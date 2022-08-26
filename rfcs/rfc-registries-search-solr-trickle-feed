@@ -1,0 +1,90 @@
+- Start Date: 2022-08-25
+- Target Major Version: None
+- Reference Issues: github/entity#13367
+- Entity Issue: github/entity#13368
+- Implementation PR: (leave this empty)
+
+
+# Summary
+Registries search relies on the data in the search solr core to be up to date so that it returns relevant data based on a user search. The current solr core updater is a batch update that happens once every hour and it is an expensive process that takes up to 15 minutes. This means the search solr core could miss searches or show incorrect data changed within the past hour and 15 minutes. Building a trickle feeder implementation will ensure that the search solr core is updated immediately (within a couple minutes) after any changes made to an entity in LEAR or COLIN.
+
+# Basic example
+### LEAR
+1. User makes change to the business name in the LEAR front end application via a filing. (existing)
+2. Filing is validated, saved, payment completed, etc. in the legal-api and put on the queue. (existing)
+3. Filing is processed and applied to the LEAR database by the entity-filer and event for completion is put on the queue. (new event)
+4. New solr updater picks up the completion event, gets the associated entity's data and updates the search solr core's doc for that entity. (new)
+5. User searches for the entity via Registries Search and see's the entity with the changed name.
+### COLIN
+1. User makes change to the business name in the COLIN front end application via a filing. (existing)
+2. Filing is processed and completed through existing processes. (existing)
+3. Existing solr-updater is triggered to update the namex solr core (existing) AND the search solr core (new)
+4. User searches for the entity via Registries Search and see's the entity with the changed name.
+
+
+# Motivation
+Registry Search needs to be as accurate as possible. Having out of date data will cause users to call in and/or not trust the system. 
+
+# Detailed design
+The diagram below summarizes the flow of this solutution.
+![SOLR-Feeder-Updates](https://user-images.githubusercontent.com/1042854/185244689-0ed3d37b-a8e4-4071-907e-0f08fa7ed082.jpg)
+Contents:
+1. solr-queue (New NATS queue for new solr updates)
+2. entity-filer (New event published by entity-filer to solr-queue)
+3. solr-updater-listener (New queue listener to get messages from the solr-queue and apply solr core updates)
+4. solr-updater-colin (Update current solr-updater that processes change events from COLIN)
+### solr-queue
+The solr-queue would contain messages for updates for the search solr core *and the namex solr core?*. The message would contain the type of change (business or nr), the identifier (i.e. BC1234567 or NR1234567), and the count (amount of times this message has attempted to process in case of repeatedly failing entities). Using this data the listener can pull all the current data for the identifier and replace the solr doc with it. It can also decide whether to put a failing event back on the queue OR send a sentry message and save the record to a database for OPS.
+### entity-filer
+Currently the entity-filer publishes to an entity subject after completion. The work here is adding another publish to the solr-queue subject with a different payload:
+```
+{
+    type: "business",
+    identifier: "<identifier>",
+    count: 0
+}
+```
+### solr-updater-listener
+A new listener in *lear/queue_services* similar to the entity-filer that will process messages from the solr-queue.
+- *notes*:
+    * if we import legal_api we get the model / don't need to hit the api with more traffic, but then we're tightly coupled to it and its a bigger image
+    * if we don't import the legal_api we can get the data via requests, but causes more traffic on the api
+    * same above questions here for using the solr service from the search-api
+    * same above questions here for the NR data collection from namex-api (not to be implemented yet, but will be later)
+
+The listener will:
+1. decode the message
+2. get the current data needed for the identifier
+    - implemetation depends on if legal_api is imported or not
+3. post the doc update to solr
+    - implemetation depends on if search_api is imported or not
+
+If an error occurs:
+1. check the error count
+- if less than 5 wait for 1 second and put back on the queue with count += 1
+- else save somewhere (needs discussion) for OPS and send sentry error msg.
+
+*Thoughts*
+- If we are requesting the api instead of importing it then it will be useful to add what we can to the message payload (i.e. state, name and whether or not partners/proprietors have changed) to avoid requesting the api when possible.
+### solr-updater-colin
+*still figuring this out*
+Is the *solr-names-updater* handling COLIN updates to business names? If so COLIN is publishing (or triggering something to publish) events to a NATS queue and we will need to update that code:
+- to publish our desired payload to the solr-queue and include the oracle connection to it so it can get the business data
+- OR ensure it publishes events for all the cases we need (name/state/parties changes) and update the solr-names-updater to handle updating the search solr core
+
+# Drawbacks
+
+# Alternatives
+1. (partial alternative) Instead of building the solr queue in NATS we could build it in GCP. This would require publishing to it from the entity-filer and having an endpoint to handle processing the message in one of the apis.
+- can we have a listener service similar to what we do with NATS?
+- will we be moving other NATS queues to GCP eventually?
+2. Run the current solr-updater constantly. This would use up a lot of resources and would still be up to 15 minutes out of date. It also will not work for the namex solr updates.
+
+# Adoption strategy
+
+
+# Unresolved questions
+None.
+
+# Thanks
+This template is heavily based on the Vue, Golang, React, and other RFC templates. Thanks to those groups for allowing us to stand on their shoulders.
