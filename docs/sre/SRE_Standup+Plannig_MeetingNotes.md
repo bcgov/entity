@@ -1,3 +1,20 @@
+## Sep07 2022: 
+
+**Absentees:-**
+- Richard, Meng
+
+**Highlight Tasks for next sprint:**	
+-	 Patrick/Jinghua: pin leave tracker in SRE Channel
+-	 For those who have signed WFH agreement and WFH(work from home), will be starting Rocketchat checkin/checkout tomorrow. Need two times perday: AM/PM. **From management, you will receive a phonecall if you forget checking-in/checking-out** :)
+-	 A new comer will join SRE by end of this month
+-	 Queue service need to be updated before Python upgrade, Patrick will check with Thor
+-	 Follow-up GCP Training for each SRE members
+-		Omid: 30%; Eve: 50%; Steven: 30%, Patrick: 100%; Richard: TBC; Meng: TBC	 	
+-	 Apply to add Alex in SRE team, this is waiting Patrick's timeline- combine with new SRE member onboard 
+-	 Quarterly review, Jinghua will send out notification email, Omid will start Sep16
+-	 Few tickets need to follow-up with entities: 13187, 11652, 12241 and 11380
+-	 
+
 ## Aug24 2022: 
 
 **Absentees:-**
