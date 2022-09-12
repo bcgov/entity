@@ -75,3 +75,5 @@ https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/DoR%20-%20Ass
 **Registries Overview** 
 [Registries overview.pptx](https://github.com/bcgov/entity/files/9551309/Registries.overview.pptx)
 
+**Modernization Overview Presentations**
+https://drive.google.com/drive/u/0/folders/1XyicOJwBQiRE4y-js4k3eN649pOJdxgD
