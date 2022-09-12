@@ -71,3 +71,7 @@ https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/DoR%20-%20Ass
 7.	PPR Training: https://drive.google.com/drive/u/0/folders/1Cug9kUQrhki94oReKTItDDdxeN1rQtR4 
 8.	Leave Tracker: https://docs.google.com/spreadsheets/d/1xxmXi__om7hYkqbmHVTPzlxy9wBOaegzVI9ikJysXSc/edit#gid=0&fvid=2093135769 
 
+
+**Registries Overview** 
+[Registries overview.pptx](https://github.com/bcgov/entity/files/9551309/Registries.overview.pptx)
+
