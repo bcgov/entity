@@ -1,9 +1,12 @@
 Start Date: 2022-09-09
+
 Target Major Version: (EPIC or User Story TAG|Link)
+
 Reference Issues: BCOL partner monthly reports #13512
+
 Entity Issue: 
+
 Implementation PR: 
-(1. submit this RFC as a regular PR -- remove this line when submitting) (2. make a copy of the template, and rename to rfc-YOUR_FEATURE.md)
 
 # Summary
 
