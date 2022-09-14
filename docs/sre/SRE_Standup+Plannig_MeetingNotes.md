@@ -1,3 +1,18 @@
+## Sep14 2022: 
+
+**Absentees:-**
+- Richard, Meng
+
+**Highlight Tasks for next sprint:**	
+-	 A new comer will join SRE by end of this month, will be responsible for infrastructure 
+-	 Eve's ticket 12655 need business logic, move back for entities's input
+-	 Follow-up GCP Training for each SRE members. will update end of Sep
+-		Omid: 30%; Eve: 50%; Steven: 30%, Patrick: 100%; Richard: TBC; Meng: TBC	 
+-	 Patrick is working on Vue3 upgrade together with all App teams
+-	 Patrick is working on Wael's offboarding and a new hire to backfill Wael
+-	 Steven: two report tickets
+-	 
+
 ## Sep07 2022: 
 
 **Absentees:-**
