@@ -1,5 +1,23 @@
 
 ----
+### Aug23 2022 OCM Standup:
+**Highlight Action Items: -**  please advise if any errors or omissions
+-	Mag will follow-up with David M for using BCID to register 
+-	Sarah will send email to PO mentioned 4 weeks lead time for our partners’ training before market release date
+-	Mags, Maribeth and Gen will review CMS site complex update together next week
+-	Two AGM change(Forms) on hold due to waiting UI design 
+-	Fareen is working on help HelpDesk team get in UAT (need two weeks) if cannot get by end of this week Aug19, escalate to Dwayne 
+
+----
+### Aug18 2022 OCM Standup:
+**Highlight Action Items: -**  please advise if any errors or omissions
+-	Mag will follow-up with David M for using BCID to register 
+-	Sarah will send email to PO mentioned 4 weeks lead time for our partners’ training before market release date
+-	Mags, Maribeth and Gen will review CMS site complex update together next week
+-	Two AGM change(Forms) on hold due to waiting UI design 
+-	Fareen is working on help HelpDesk team get in UAT (need two weeks) if cannot get by end of this week Aug19, escalate to Dwayne 
+
+----
 ### Aug16 2022 OCM Standup:
 **Highlight Action Items: -**  please advise if any errors or omissions
 -	Don’t need to combine MHR epics, each has different purpose
