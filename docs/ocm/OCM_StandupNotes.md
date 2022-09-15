@@ -1,3 +1,25 @@
+----
+### Sep15 2022 OCM Meeting:
+**Highlight Action Items: -**  please advise if any errors or omissions
+-	Zac is 50% effor on BA, ask Jenny if need more BA support
+-	Search and Relationship, two teams are merging, John is the PO
+-	CSO postpone to Sep24
+
+----
+### Sep13 2022 OCM Meeting:
+**Highlight Action Items: -**  please advise if any errors or omissions
+-	Sarah to follow-up with Freeze/Unfreeze and AGM release date (next week?), find duplicate tickets for AGM 105
+-	Mags: adding more tickets under business search epic 10930, close 93 after verification
+-	Fareen: MHR Pilot 11732 need create new tickets, change date for 145; 
+-	Gen need lead time for Form, will join entities meeting and communicate this, adding blocker in entities ticket
+-	Jinghua; help Sarah to follow-up with getting entities’s feedback (Sarah forward current email to Jinghua); to bridge Olisa and Gen to add Society Form under Society epic 12867; bring forms’ lead time in SOS 
+-	Jinghua/Maribeth/Megan will setup a Retro for New Ops process 
+-	Jinghua/Sarah/Megan to consider how to make process changes visible(68), now combine with all training material 
+-	Combine bi-weekly OCM planning with Standup, agenda: 
+o	Update blockers 
+o	Review PI plan for next two months, any OCM tickets missing?  (Release Planning Board: https://app.mural.co/t/globalleanandagilegladnew7688/m/leadingsafetrainingtemplate5894/1620073674738/cab2f4c157615bf630f911c921dd242789344778?sender=ud8c29093473b548514da7248) 
+o	Review OCM epics/task tickets for next two weeks
+
 
 ----
 ### Aug23 2022 OCM Standup:
