@@ -1,4 +1,27 @@
 ----
+### Sep22 2022 OCM Meeting:
+
+Highlight Action Items: - please advise if any errors or omissions
+•	WIP: Add Sarah in PROD for getting SBC Registry workflow(need Zac/John’s help)
+•	CSO release this weekend: Sept 26 (First guaranteed availability for business clients)
+•	Maribeth is working on #169, review data
+•	Mags will add/update ZH tickets
+•	Fareen will send out BCA comms email today
+•	Gen is off rest of this week, then will be back next Monday
+•	Sarah will be off during September 26,27,28th
+
+----
+### Sep20 2022 OCM Meeting:
+Highlight Action Items: - please advise if any errors or omissions
+•	John will demo in coming info session. Mags will do presentation, Maribeth will facilitate the meeting
+•	BCA release TBD, maybe 2023
+•	CSO  release: Sept 26 (First guaranteed availability for business clients)
+•	Site Registry release: Oct 5
+•	Gen will be off from tomorrow- end of this week, then will be back next Monday
+•	Sarah will be off during September 26,27,28th
+•	Add Sarah in PROD for getting SBC Registry workflow(need Zac/John’s help) 
+
+----
 ### Sep15 2022 OCM Meeting:
 **Highlight Action Items: -**  please advise if any errors or omissions
 -	Zac is 50% effor on BA, ask Jenny if need more BA support
