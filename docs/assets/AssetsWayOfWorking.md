@@ -3,7 +3,9 @@
 **Team Rules**
 - Self-organized team, pull and self-assign ticket
 - Stay focused on Sprint Goals when picking up new tickets, top priorities
-- Pick up new ticket from Sprint Backlog pipeline (Top-down reflect tickets priorities). Communicate with PO if no applicable tickets from Sprint Backlog.
+- From top of Sprint Backlog pipeline to pick up new ticket (Top-down reflect tickets priorities)
+- DEVs can pickup bug tickets if no suitable tickets from Sprint Backlog
+- Communicate with PO if no applicable tickets from Sprint Backlog and Bug pipeline, and have to pickup ticket from Backlog pipeline
 - Team move all done tickets to Done pipeline, PO will move tickets to Close pipeline and close tickets
 - If unavailable for standup, communicate status/blockers in RocketChat
 
@@ -17,7 +19,7 @@
 - Sprint Retro
 - Grooming meeting 
 - Requirements (partial team)
-- Pre-grooming (partial team)
+~~- Pre-grooming (partial team)~~
 - Design meeting (partial team)
 - Bug Triage (partial team) 
 
@@ -29,7 +31,19 @@
 **Release Cadence**
 - Each release has a release champion, get volunteer from Dev team on Friday's standup
 - Cutoff: Monday Night, Release Date: Thursday
-- Stop merging code to main branch from Tuesday morning, restart after Thursday's release
+- Stop merging code to main branch from Tuesday morning, restart after done Thursday's release
+
+**Release Process**
+-  SM create Release Report and Release ticket for releases
+-  1st week's Friday: During Standup: Scrum Master(SM) ask who want to volunteer as Release Champion  
+-  2nd week's Monday: SM remind team Monday night is release cutoff, try to merge code into main branch
+-  2nd week's Tuesday: SM add UXA, QA tickets in release report, ask Divya and team to verify
+-  2nd week's Wednesday: SM check any potiential risk for the comming release, monitor UXA pipeline, make sure Design team is awared of UXA effort before release date
+-  2nd week's Thusday:  SM confirm with Divya release is good to go, then
+   1). Doug/Thor promote API from TEST to PROD
+   2). Thor/Patrick promote UI from TEST to PROD
+   3). Patrick verify PROD
+   4). Patrick send release notes if applicable 
 
 **Development Tools/Environment**
 - PPR
