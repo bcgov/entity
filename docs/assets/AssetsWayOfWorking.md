@@ -34,16 +34,16 @@
 - Stop merging code to main branch from Tuesday morning, restart after done Thursday's release
 
 **Release Process**
--  SM create Release Report and Release ticket for releases
--  1st week's Friday: During Standup: Scrum Master(SM) ask who want to volunteer as Release Champion  
--  2nd week's Monday: SM remind team Monday night is release cutoff, try to merge code into main branch
--  2nd week's Tuesday: SM add UXA, QA tickets in release report, ask Divya and team to verify
--  2nd week's Wednesday: SM check any potiential risk for the comming release, monitor UXA pipeline, make sure Design team is awared of UXA effort before release date
--  2nd week's Thusday:  SM confirm with Divya release is good to go, then
-   1). Doug/Thor promote API from TEST to PROD
-   2). Thor/Patrick promote UI from TEST to PROD
-   3). Patrick verify PROD
-   4). Patrick send release notes if applicable 
+-  SM create Release Report and Release ticket for each release
+-  Friday: During Standup: Scrum Master(SM) ask who want to volunteer as Release Champion for the comming week
+-  Monday: SM remind team Monday night is release cutoff, try to merge code into main branch
+-  Tuesday: SM add UXA, QA tickets in release report, ask Divya and team to verify
+-  Wednesday: SM check any potiential risk for the comming release, monitor UXA pipeline, make sure Design team is awared of UXA effort before release date
+-  Thusday:  SM confirm with Divya release is good to go, then
+   - 1). Doug/Thor promote API from TEST to PROD
+   - 2). Thor/Patrick promote UI from TEST to PROD
+   - 3). Patrick verify PROD
+   - 4). Patrick send release notes if applicable 
 
 **Development Tools/Environment**
 - PPR
