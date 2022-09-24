@@ -36,7 +36,7 @@ A new keycloak client specific to the partner will be issued by BC Registries te
       "credentials": {
         "secret": "******"
       },
-      "confidential-port": 0
+      "confidential-port": 443
     }
 
 Partners may require reverse proxy changes (to change the redirect_uri):
