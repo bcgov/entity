@@ -1,4 +1,4 @@
-## This Meeting minutes has been combined with Standup Notes
+## This meeting minutes has been combined with Standup Notes
 ## **Standing Items for OCM Sprint Planning**
 
 - Consider Definition of Ready for Ticket
