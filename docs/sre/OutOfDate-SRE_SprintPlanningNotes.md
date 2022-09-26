@@ -1,3 +1,4 @@
+## This has been combined with Standup Notes
 ## Standing Items for SRE Sprint Planning
 -	Check alignment btw ZH Board and PI Board (Optional)
 -	Review current pipeline tasks, current workload for team
