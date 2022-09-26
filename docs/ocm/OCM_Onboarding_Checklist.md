@@ -1,6 +1,6 @@
 ### 1. Access Right
 
-1.1. SM: Create ZH Onboarding Ticket for new commers, and assign to a BC Staff
+1.1. SM: Create ZH Onboarding Ticket for new comers, and assign to a BC Staff
 
 1.2. SM: Monitor and push through Onboarding ticket and have all access right ready
 
