@@ -40,7 +40,7 @@ A new keycloak client specific to the partner will be issued by BC Registries te
     }
 
 Partners may require reverse proxy changes (to change the redirect_uri):
-## Example Reverse Proxy Apache configuration
+## Example Reverse Proxy - Apache configuration
 
 ```
 ProxyPreserveHost On
