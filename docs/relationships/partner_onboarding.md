@@ -44,7 +44,7 @@ Partners may require reverse proxy changes (to change the redirect_uri):
 
 ```
 ProxyPreserveHost On
-RequestHeader set Host <host adress>
+RequestHeader set Host <host address>
 RequestHeader set X-Forwarded-For <host address>
 RequestHeader set X-Forwarded-Proto https
 RequestHeader set X-Forwarded-Host <host address>
