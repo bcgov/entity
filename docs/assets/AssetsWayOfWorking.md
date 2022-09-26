@@ -28,6 +28,8 @@
 - Developer Sprint Demo
 - PI Planning
 
+----
+
 **Release Cadence**
 - Each release has a release champion, get volunteer from Dev team on Friday's standup
 - Cutoff: Monday Night, Release Date: Thursday
@@ -45,6 +47,8 @@
    - 3). Patrick verify PROD
    - 4). Patrick send release notes if applicable 
 
+----
+
 **Development Tools/Environment**
 - PPR
   - Front End – Vue2
@@ -60,9 +64,6 @@
 - Zenhub
 - RocketChat
 
-
-
-
 ----
 
 **Guiding principle**
@@ -72,8 +73,12 @@ https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/DoD%20-%20Ass
 - Definition of Ready
 https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/DoR%20-%20Assets.md
 
+----
+
 **MHR Product Vision Board**
 - https://app.mural.co/t/regionaloperationsbranch9166/m/regionaloperationsbranch9166/1656972923698/d15e1cb062ae59e1b0e2445ab8f9a02077ad68c5?sender=ud3698fd0df095bf349c34291
+
+----
 
 **Useful links for our daily work** 
 1.	Assets Channel on Rocket Chat: https://chat.developer.gov.bc.ca/group/registries-assets   
@@ -84,7 +89,9 @@ https://github.com/bcgov/entity/blob/master/.github/ISSUE_TEMPLATE/DoR%20-%20Ass
 6.	Assets Retro Board: https://app.mural.co/t/leadingsafetrainingtemplate5894/m/leadingsafetrainingtemplate5894/1633463783757/0e83b058907de1c6c9cdfdac8d09a611380859fd?sender=ud8c29093473b548514da7248  
 7.	Leave Tracker: https://docs.google.com/spreadsheets/d/1xxmXi__om7hYkqbmHVTPzlxy9wBOaegzVI9ikJysXSc/edit#gid=0&fvid=2093135769 
 
+----
 
+**Training material: **
 **Registries Overview** 
 [Registries overview.pptx](https://github.com/bcgov/entity/files/9551309/Registries.overview.pptx)
 
