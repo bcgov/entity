@@ -3,7 +3,7 @@
 1. Update **Metrics_BCR**  for Assets team: **Stories Completed** and **SP completed, Bugs/Tech Debt** and **# of releases**: 
 
     - Stories Completed, SP completed and Bugs/Tech Debt information can be found from burndown chart on ZH board
-    - number of releases can be found from release report
+    - Number of releases can be found from release report
 
 2. Update **Modernization Metrics** for **Goal Reached, Escaped Defects** and **Scope changes**: 
     - **Goal Reached**, Team will discuss together on Tuesday's standup and provide a percentage  
