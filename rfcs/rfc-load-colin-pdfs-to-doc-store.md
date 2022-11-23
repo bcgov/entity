@@ -17,6 +17,10 @@
  - COLIN UI connects to the COLIN server which talks to the Oracle database for some processes and the report server to generate PDFs.
  - COLIN makes calls to the report server using some parametres then the report server talks with the Oracle Database to query the data needed to generate all the necessary PDFs for a filing (maybe done using a filing ID? not sure yet)
  - The report server generates all the PDFs for a filing and sends it back to COLIN. 
+ - There are 2 report servers that generate PDFs for filings, Jasper and RMI
+ - only need an org ID to find the filing history for a company
+ - this ID is found in the oracle database, do I need more keys to call the report server?
+
  - **Draft diagram of current understanding of architecture**
 ![Draft diagram](rfc-load-colin-pdfs-to-doc-store/Draft%20Diagram.png)
 
@@ -54,7 +58,7 @@ There are tradeoffs to choosing any path. Attempt to identify them here.
 
 **Possible Approaches:**
  - screenscraping through COLIN UI if I can't call the report server directly.
- - directly calling the report server to generate PDFs.
+ - directly calling the report server to generate PDFs. might be more complicated now.
  - other appraoches? need more information.
 
 - ~~What other designs have been considered?~~
@@ -65,6 +69,8 @@ There are tradeoffs to choosing any path. Attempt to identify them here.
 If we implement this proposal, how will existing developers adopt it? Is this a breaking change? How will this affect other projects in the Entity ecosystem?
 
 # Unresolved questions
+
+  - need to ask Thayne about Jasper and RMI and how they're used to make PDFs
 
 Optional, but suggested for first drafts. What parts of the design are still TBD?
 What do calls to the report server look like? what parametres are passed? what are they used for?
