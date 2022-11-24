@@ -2,7 +2,9 @@
 name: Definition of Ready - Assets Team
 about: This state should be the outcome of Backlog Grooming and ensures the ticket
   is ready to be worked on.
-
+title: ''
+labels: ''
+assignees: ''
 
 ---
 

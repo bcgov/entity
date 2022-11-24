@@ -1,6 +1,9 @@
 ---
 name: Definition of Done - Assets
 about: Team owned document to define when a User Story is done
+title: ''
+labels: ''
+assignees: ''
 
 ---
 
