@@ -89,6 +89,8 @@ Prior to moving into production, the following steps should be completed or conf
   - list here
 - [ ] database updates which should be run automatically as part of GH CD via the legal-api pre-hook
   - list here
+-
+- [ ] Notify the team via the #registries-ops channel
 
 ### Smoke Test Script
 - [ ] load Filings UI
