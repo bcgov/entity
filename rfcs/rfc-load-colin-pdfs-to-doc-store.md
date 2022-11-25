@@ -9,12 +9,14 @@
 
 # Summary
 
-## **General idea:**
-- Retrieve filing PDFs that the COLIN report server generates and load them into doc storage service in the modern system.
+## **idea:**
+Each organization in COLIN has a filing history with multiple PDFs per filing. As COLIN becomes too cumbersome to work with and the transition to the modern app continues, there needs to be a way to migrate filing history of all organizations in in COLIN over to the modern system.
 
-## **Background so far:**
+This approach will implement a web crawler to retrieve all PDFs for each filing in an org's filing history and store them under a directory tree then send them into Doc Storage on the modern app. This approach is relatively lightweight and simple to implement compared to directly accessing Jasper and RMI, while achieving the same result with similar performance.
+
+## **Background info:**
  - COLIN has a monolith architecture.
- - COLIN UI connects to the COLIN server which talks to the Oracle database for some processes and the report server to generate PDFs.
+ - COLIN UI connects to the COLIN server which talks the report server to generate PDFs.
  - COLIN makes calls to the report server using some parametres then the report server talks with the Oracle Database to query the data needed to generate all the necessary PDFs for a filing (maybe done using a filing ID? not sure yet)
  - The report server generates all the PDFs for a filing and sends it back to COLIN. 
  - There are 2 report services running on the report server that generate PDFs for filings, Jasper and RMI
@@ -26,59 +28,44 @@
  - Most of the PDFs generated aren't saved and are made dynamically from data pulled from Oracle Database,
  although some are saved like an entire days worth of dissolutions are saved in batches and then sent out
  - To call the report server looks like I only need a batch ID which identifies the filing to generate PDFs for, and a document type
-    - would like to see documentation for more details though
+  
 ## **Draft diagram of current understanding of architecture**
 ![Draft diagram](rfc-load-colin-pdfs-to-doc-store/draft%20diagram.png)
 
-## **Possible Approaches:**
- - ### **screenscraping through COLIN UI if I can't call the report server directly.**
-    - could be done using ParseHub, but might not be able to download PDFs into Doc Store
-    - Python autoscrape package might be useful for scraping one page
-    - do we want to grab all PDF filings for all orgs? if yes how would we automate a scraper to do that
-    - **Pros**
-      - Easier to implement
-    - **Cons** 
-      - wouldn't work when COLIN UI gets shut down in March
-      - probably slower and less reliable than directly calling the report server
- - ### **directly calling the report server to generate PDFs.**
-    - Need to track down which filings are handled by Jasper and which are handled by RMI
-    - Might involve making a lot of extra code to handle both branches depending on how different each one
-    handles PDF generation
-    - **Pros**
-        - will work after COLIN gets retired
-        - might be faster
-    - **Cons**
-        - Need to handle two branches of PDF generation, could get messy
-        - might run into issues with firewalls between COLIN and modern reg app
- - ### **directly generate PDFs like Jasper and RMI using data from Oracle Database and send them over to modern app**
-    - not liking this one, would require deeper understanding of how Jasper and RMI generate reports to create and integrate
-    a lightweight app that generates reports with the same formatting they do.
-    - **Pros**
-        - Can integrate a lightweight app between Colin and modern app that generates PDFs like Jasper and RMI while they're being phased out, makes sense to do that
-    - **Cons**
-        - a lot more work for similar result as other approaches
-
- - other appraoches? need more information.
-
-~~Brief explanation of the feature.~~
-
 # Basic example
+**TODO**
 
-
-~~If the proposal involves a new or changed API, component, etc., include a basic code example.
-Omit this section if it's not applicable.~~
+If the proposal involves a new or changed API, component, etc., include a basic code example.
+Omit this section if it's not applicable.
 
 # Motivation
 
-Why are we doing this? What use cases does it support? What is the expected outcome?
+To automate the migration of filing data from orgs in COLIN into orgs in the modern app. Since COLIN already has filing data as PDFs, it doesn't make sense to regenerate these PDFs for orgs in the modern app when they're already available in COLIN. It would just be a waste of time, resources, and money. So it  makes more sense to download all the filing PDFs COLIN makes and send them into the modern Doc Storage system.
 
-Please focus on explaining the motivation so that if this RFC is not accepted, the motivation could be used to develop alternative solutions. In other words, enumerate the constraints you are trying to solve without coupling them too closely to the solution you have in mind.
+When this feature is complete it should be able to transfer the entire filing history of all orgs in COLIN over to the Doc Storage system (around 1 - 1.4 million orgs) before COLIN is retired. 
 
 # Detailed design
+
+**In Progress**
+
+
+ ### screenscraping through COLIN UI
+  - could use beuatifulsoup to parse data and autoscrape package to scrape a webpage
+  - do we want to grab all PDF filings for all orgs? if yes how would we automate a scraper to do that
+      - maybe just go and run the scraper on all orgs in the Oracle database 
+  - **Pros**
+    - Easier/more straight forward to implement and integrate
+    - comparable perfomance to other approaches
+    - used by many services like by Google, CSO, and our partners. We're just doing what they're doing.
+  
 
 This is the bulk of the RFC. Explain the design in enough detail for somebody familiar with the Entity system to understand, and for somebody familiar with the implementation to implement. This should get into specifics and corner-cases and include examples of how the feature is used. Any new terminology should be defined here.
 
 # Drawbacks
+
+**In Progress**
+  - wouldn't work when COLIN UI gets shut down, but that's okay because by that time we'll have migrated all the filing data over
+  - might conflict with features that depend on Doc Store?
 
 Why should we *not* do this? Please consider:
 
@@ -92,18 +79,46 @@ There are tradeoffs to choosing any path. Attempt to identify them here.
 
 # Alternatives
 
-- ~~What other designs have been considered?~~
-- ~~What is the impact of not doing this?~~
+ - ### **directly calling the report server to generate PDFs.**
+    - **Pros**
+        - will work after COLIN gets retired, but doesn't matter because we'll have migrated everything by then.
+        - might be faster than scraping, not by much though
+
+    - **Cons**
+        - Need to track down which filings are handled by Jasper and which are handled by RMI
+        - Need to create a Java app and figure out how to use Java RMI to generate PDFs
+        - Will also need to create another service to call Jasper to generate PDFs
+        - a lot of extra code and work for the same result as screenscraping with marginal performance improvements
+        - might run into issues with firewalls between COLIN and modern app
+
+ - ### **directly generating PDFs like Jasper and RMI using data from Oracle Database and send them over to modern app**
+    - **Pros**
+        - Can integrate a lightweight app between Colin and modern app that generates PDFs like Jasper and RMI while they're being phased out, makes sense to do that
+
+    - **Cons**
+        - a lot more work for a different result than what we want
+        - would require a lot of tracing through COLIN to understand how Jasper and RMI generate reports
+        - needs all the data to generate PDFs which requires all the data to already be migrated, which is the purpose of this feature
+
+
+**In Progress**
+
+- What is the impact of not doing this?
+
+If it's decided to not retrieve PDFs from filings from COLIN then COLIN's data would need to be migrated to the modern system and PDFs would be generated by the modern app's report service, using a lot of time and resources as it would be remaking PDFs that have already been made by COLIN.
 
 # Adoption strategy
+
+**TODO**
 
 If we implement this proposal, how will existing developers adopt it? Is this a breaking change? How will this affect other projects in the Entity ecosystem?
 
 # Unresolved questions
 
-Optional, but suggested for first drafts. What parts of the design are still TBD?
-What do calls to the report server look like? what parametres are passed? what are they used for?
-How does COLIN call/interact with the report server?
+ - how would I integrate this with modern app?
+ - where would I store downloaded PDFs before sending them into Doc Store?
+ - what would my directory tree look like for storing PDFs before Doc Store?
+ - not sure on how to integrate this with doc storage on modern app.
 
 # Thanks
 
