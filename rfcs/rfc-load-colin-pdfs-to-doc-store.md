@@ -12,7 +12,7 @@
 ## **idea:**
 Each organization in COLIN has a filing history with multiple PDFs per filing. As COLIN becomes too cumbersome to work with and the transition to the modern app continues, there needs to be a way to migrate filing history of all organizations in in COLIN over to the modern system.
 
-This approach will implement a web crawler to retrieve all PDFs for each filing in an org's filing history and store them under a directory tree then send them into Doc Storage on the modern app. This approach is relatively lightweight and simple to implement compared to directly accessing Jasper and RMI, while achieving the same result with similar performance.
+This approach will implement a web crawler/screen scraper to retrieve all PDFs for each filing in an org's filing history and store them under a directory tree then send them into Doc Storage on the modern app. This approach is relatively lightweight and simple to implement compared to directly accessing Jasper and RMI, while achieving the same result with similar performance.
 
 ## **Background info:**
  - COLIN has a monolith architecture.
@@ -29,8 +29,8 @@ This approach will implement a web crawler to retrieve all PDFs for each filing 
  although some are saved like an entire days worth of dissolutions are saved in batches and then sent out
  - To call the report server looks like I only need a batch ID which identifies the filing to generate PDFs for, and a document type
   
-## **Draft diagram of current understanding of architecture**
-![Draft diagram](rfc-load-colin-pdfs-to-doc-store/draft%20diagram.png)
+## **Diagram of COLIN's Structure**
+![diagram](rfc-load-colin-pdfs-to-doc-store/draft%20diagram.png)
 
 # Basic example
 **TODO**
@@ -48,9 +48,8 @@ When this feature is complete it should be able to transfer the entire filing hi
 
 **In Progress**
 
-
  ### screenscraping through COLIN UI
-  - could use beuatifulsoup to parse data and autoscrape package to scrape a webpage
+  - Can use Selenium to go through COLIN UI and download all report PDFs into a directory tree
   - do we want to grab all PDF filings for all orgs? if yes how would we automate a scraper to do that
       - maybe just go and run the scraper on all orgs in the Oracle database 
   - **Pros**
@@ -79,31 +78,64 @@ There are tradeoffs to choosing any path. Attempt to identify them here.
 
 # Alternatives
 
- - ### **directly calling the report server to generate PDFs.**
-    - **Pros**
+## **scraping tools**
+  - ### Scrapy
+    - Pros
+        - Built in functionality for everything needed to web scrape
+        - way faster and less memory intensive than other screen scraping tools
+        - more flexible and scalable than BS and Selenium
+    - Cons
+        - poor documentation and hardest tool to learn out of the 3
+
+  - ### Selenium
+    - Pros
+        - Built in functionality for everything needed to web scrape
+        - Beginner friendly syntax and documentation
+        - Can interact with browser UI elements directly -> can interact with COLIN UI
+    - Cons
+        - more difficult to learn than BS
+  - ### Beautiful Soup
+    - Pros
+        - has the most comprehensive documentation out of the three
+        - very beginner friendly
+    - Cons
+        - slowest out of the 3
+        - need multiple libraries to accomplish everything you want to do with web scraping, 
+        - less flexible with larger more complex projects that need a lot of libraries
+        - doesn't work well with COLIN UI, have to use COLIN UI window for inputs, BS can't do that
+
+## **approaches**
+
+ - ### Calling COLIN to generate PDFS
+    - Pros
+        - Easier to connect and integrate with COLIN to grab all report PDFs for all orgs
+        - might be faster than scraping, not by much though
+    - Cons
+        - Not many people know how to call COLIN and request information
+        - Most likely no API but there is some way to make requests
+        - Need to spend a lot of time digging through COLIN repo to find way to request information
+        - Need to create a Java app to interact with COLIN
+
+ - ### directly calling the report server to generate PDFs.
+    - Pros
         - will work after COLIN gets retired, but doesn't matter because we'll have migrated everything by then.
         - might be faster than scraping, not by much though
 
-    - **Cons**
+    - Cons
         - Need to track down which filings are handled by Jasper and which are handled by RMI
         - Need to create a Java app and figure out how to use Java RMI to generate PDFs
         - Will also need to create another service to call Jasper to generate PDFs
         - a lot of extra code and work for the same result as screenscraping with marginal performance improvements
         - might run into issues with firewalls between COLIN and modern app
 
- - ### **directly generating PDFs like Jasper and RMI using data from Oracle Database and send them over to modern app**
-    - **Pros**
+ - ### directly generating PDFs like Jasper and RMI using data from Oracle Database and send them over to modern app
+    - Pros
         - Can integrate a lightweight app between Colin and modern app that generates PDFs like Jasper and RMI while they're being phased out, makes sense to do that
 
-    - **Cons**
+    - Cons
         - a lot more work for a different result than what we want
         - would require a lot of tracing through COLIN to understand how Jasper and RMI generate reports
         - needs all the data to generate PDFs which requires all the data to already be migrated, which is the purpose of this feature
-
-
-**In Progress**
-
-- What is the impact of not doing this?
 
 If it's decided to not retrieve PDFs from filings from COLIN then COLIN's data would need to be migrated to the modern system and PDFs would be generated by the modern app's report service, using a lot of time and resources as it would be remaking PDFs that have already been made by COLIN.
 
@@ -118,8 +150,7 @@ If we implement this proposal, how will existing developers adopt it? Is this a 
  - how would I integrate this with modern app?
  - where would I store downloaded PDFs before sending them into Doc Store?
  - what would my directory tree look like for storing PDFs before Doc Store?
- - not sure on how to integrate this with doc storage on modern app.
-
+ - how would I connect to the oracle database to scrape every org in there
 # Thanks
 
 This template is heavily based on the Vue, Golang, React, and other RFC templates. Thanks to those groups for allowing us to stand on their shoulders.
