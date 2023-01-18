@@ -23,7 +23,7 @@ Note that the [Business States RFC](rfc-business-states.md) as well the current 
 
 # Basic design
 
-The COLIN operational states can be mapped 1-1 to the business states(`businesses.state`) in LEAR currently.  Only `ACTIVE` and `HISTORICAL` states are used by COLIN.  Additional states may be added to LEAR if it is determined it is determined based on analysis and work done when implementing filings such as _liquidation_ and _involuntary dissolution_.
+The COLIN operational states can be mapped 1-1 to the business states(`businesses.state`) in LEAR currently.  Only `ACTIVE` and `HISTORICAL` states are used by COLIN.  Additional states may be added to LEAR if it is determined to be required based on analysis and work done when implementing filings such as _liquidation_ and _involuntary dissolution_.
 
 The COLIN `CORP_STATE` table can be represented in LEAR by using a combination of the filing type, dynamic calculations (warning structures or business properties like good standing) or using the filing type that transitioned a business into its current state.
 
