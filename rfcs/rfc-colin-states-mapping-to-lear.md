@@ -35,7 +35,7 @@ Allowable COLIN business state transitions between `HISTORICAL` and `ACTIVE` wil
 
 Business GET endpoint will return currently actionable filings list.  This will be determined using the allowable filing transitions map.
 
-_Example of what this might look like but will need to represent sub-types of filings where applicable_
+_Examples of what this might look like but will need to represent sub-types of filings where applicable_
 ``` http request
 
 GET https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/CP0001199
@@ -45,10 +45,35 @@ GET https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/CP00011
         "legalName": "XYZ TEST CORP.",
         "legalType": "BC",
         "state": "HISTORICAL",
-        "currentlyActionableFilingTypes": ["putBackOn", "restoration"],
+        "currentlyActionableFilings": {
+            "filingTypes": ["restoration", "putBackOn"],
+            "filingSubtypes": {
+               "restoration": ["fullRestoration", "limitedRestoration"]
+            }   
+        }
         ...
 }
 ```
+
+``` http request
+
+GET https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/CP0001199
+
+{
+    "business": {
+    "legalName": "XYZ TEST CORP.",
+    "legalType": "BC",
+    "state": "ACTIVE",
+    "currentlyActionableFilings": {
+        "filingTypes": ["annualReport", "changeOfDirector", "alteration", "dissolution"],
+        "filingSubtypes": {
+            "dissolution": ["voluntaryDissolution"]
+        }   
+    }
+    ...
+}
+```
+
 
 An invalid business state transition map will be implemented as a python dictionary or database table.  This map can be used in conjunction with the existing [ALLOWABLE_FILINGS](https://github.com/bcgov/lear/blob/e850f9a22672910db6e4ceb2f1ddb9437541a86f/legal-api/src/legal_api/services/authz.py#L96) dictionary as well as any other conditions to determine what filings are allowed for a business at a given point in time.
 
