@@ -18,6 +18,8 @@ Note that the [Business States RFC](rfc-business-states.md) as well the current 
 ![colin_states.png](rfc-colin-states-mapping-to-lear/colin_states.png)
 
 #### Current Corp State Data in CPRD
+_`ACT/HIS` column is `CORP_OP_STATE` table._
+_`Type` column is `CORP_STATE` table._
 ![colin_corp_state_stats.png](rfc-colin-states-mapping-to-lear/colin_corp_state_stats.png)
 
 
