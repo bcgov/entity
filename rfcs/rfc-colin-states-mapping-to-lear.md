@@ -111,7 +111,7 @@ API consumers such as the FE with a need to determine which filing transitioned 
 
 # Adoption strategy
 
-The _lear_ team will create tickets to implement the required components.
+The _LEAR_ team will create tickets to implement the required components.
 
 # Unresolved questions
 
