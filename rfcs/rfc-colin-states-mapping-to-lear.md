@@ -25,11 +25,15 @@ _`Type` column is `CORP_STATE` table._
 
 # Basic design
 
-The COLIN operational states can be mapped 1-1 to the business states(`businesses.state`) in LEAR currently.  Only `ACTIVE` and `HISTORICAL` states are used by COLIN.  Additional states may be added to LEAR if it is determined to be required based on analysis and work done when implementing filings such as _liquidation_ and _involuntary dissolution_.
+The COLIN business states can be mapped 1-1 to the business states(`businesses.state`) in LEAR.  Only `ACTIVE` and `HISTORICAL` are valid business states.
 
-The COLIN `CORP_STATE` table can be represented in LEAR by using a combination of the filing type, dynamic calculations (warning structures or business properties like good standing) or using the filing type that transitioned a business into its current state.
+The `CORP_STATE` table in COLIN will not be used. It was essentially used track the latest filing a business had filed and not an actual state.  This functionality will be achieved in LEAR by using a combination of the filing type, dynamic calculations (warning structures or business properties like good standing) or using the filing type that transitioned a business into its current state.
 
-Allowable COLIN business state transitions between `HISTORICAL` and `ACTIVE` will be handled using a combination of the filing that transitioned the business to its current state and a map that provides allowable business state transitions.
+Compliance is informational only and does not block any registry actions but must be noted to viewers of the Registry.
+
+Good standing has various statuses and can lead to a business state transition.
+
+`Liquidation` is not a business state.  It will consist of a series of flow statuses similar to how _good standing_ works, eventually transitioning a business into a `historical` state.
 
 # Detailed design
 
