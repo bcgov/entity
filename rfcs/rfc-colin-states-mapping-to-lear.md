@@ -39,7 +39,7 @@ Good standing has various statuses and can lead to a business state transition.
 
 Business GET endpoint will return an `allowableActions` property containing allowed "filing" actions.  The allowable filings will be determined using a combination of the allowable filing transitions map, [logic in the FE](https://github.com/bcgov/business-filings-ui/blob/main/src/mixins/allowable-actions-mixin.ts) that needs to be implemented in the BE and any other required logic.
 
-The `allowbleActions` property can also be extended in the future to support things like "admin" actions.
+The `allowableActions` property can also be extended in the future to support things like "admin" actions.
 
 _Examples of what this might look like but will need to represent sub-types of filings where applicable_
 ``` http response
