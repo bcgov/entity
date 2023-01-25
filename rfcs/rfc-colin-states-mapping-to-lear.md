@@ -158,9 +158,6 @@ There are still some details that need to be fleshed out for filings like the on
 
 **Involuntary dissolution** - this is currently a manual process that transitions a business to D1 to D2 based on some conditions. Uncertain as to how this changes in LEAR and how we will represent the involuntary dissolution process from a data and process perspective. Will the manual process become an automated process in LEAR?
 
-**Liquidation** - how does this process look? do we need additional business states for the liquidation steps or will we be able to just use the business state of “LIQUIDATION” and determine which step in the liquidation process a business is in via some dynamic calculations?
-
-
 # Reference
 
 [Business States RFC](rfc-business-states.md)
