@@ -33,42 +33,50 @@ Allowable COLIN business state transitions between `HISTORICAL` and `ACTIVE` wil
 
 # Detailed design
 
-Business GET endpoint will return currently actionable filings list.  This will be determined using the allowable filing transitions map.
+Business GET endpoint will return an `allowableActions` property containing allowed "filing" actions.  The allowable filings will be determined using a combination of the allowable filing transitions map, [logic in the FE](https://github.com/bcgov/business-filings-ui/blob/main/src/mixins/allowable-actions-mixin.ts) that needs to be implemented in the BE and any other required logic.
+
+The `allowbleActions` property can also be extended in the future to support things like "admin" actions.
 
 _Examples of what this might look like but will need to represent sub-types of filings where applicable_
-``` http request
+``` http response
 
-GET https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/CP0001199
+GET https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/BC0001199
 
 {
     "business": {
         "legalName": "XYZ TEST CORP.",
         "legalType": "BC",
         "state": "HISTORICAL",
-        "currentlyActionableFilings": {
-            "filingTypes": ["restoration", "putBackOn"],
-            "filingSubtypes": {
-               "restoration": ["fullRestoration", "limitedRestoration"]
-            }   
+        "allowableActions": {
+            "admin": ["addDetailComment", "addStaffComment", "viewChangeCompanyInfo"]
+            "filing": {
+                "types": ["restoration", "putBackOn"],
+                "subTypes": {
+                   "restoration": ["fullRestoration", "limitedRestoration"]
+                }
+            }
         }
         ...
 }
 ```
 
-``` http request
+``` http response
 
-GET https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/CP0001199
+GET https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/BC0001199
 
 {
     "business": {
     "legalName": "XYZ TEST CORP.",
     "legalType": "BC",
     "state": "ACTIVE",
-    "currentlyActionableFilings": {
-        "filingTypes": ["annualReport", "changeOfDirector", "alteration", "dissolution"],
-        "filingSubtypes": {
-            "dissolution": ["voluntaryDissolution"]
-        }   
+    "allowableActions": {
+        "admin": ["addDetailComment", "addStaffComment", "viewChangeCompanyInfo"]
+        "filing": {
+            "types": ["annualReport", "changeOfDirector", "alteration", "dissolution"],
+            "subTypes": {
+               "dissolution": ["voluntaryDissolution"]
+            }           
+        }
     }
     ...
 }
