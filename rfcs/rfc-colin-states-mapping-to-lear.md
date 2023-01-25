@@ -113,7 +113,7 @@ INVALID_STATE_TRANSITION_FILINGS: Final = {
             ...
         }
     },
-    'client': {
+    'general': {
         Business.State.ACTIVE: { # current business state
             ...
         },
