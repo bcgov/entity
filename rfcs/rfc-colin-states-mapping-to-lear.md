@@ -233,7 +233,7 @@ The _LEAR_ team will create tickets to implement the required components.
 
 There are still some details that need to be fleshed out for filings like the ones below. These details will be worked out as we implement the filings in LEAR.
 
-**Involuntary dissolution** - this is currently a manual process that transitions a business to D1 to D2 based on some conditions. Uncertain as to how this changes in LEAR and how we will represent the involuntary dissolution process from a data and process perspective. Will the manual process become an automated process in LEAR?
+**Involuntary dissolution** - this is currently a manual process that transitions a business from D1 to D2 based on some conditions. Uncertain as to how this changes in LEAR and how we will represent the involuntary dissolution process from a data and process perspective. Will the manual process become an automated process in LEAR?  We will also need to know if furnishing a customer with their dissolution status is necessary.
 
 # Reference
 
