@@ -156,7 +156,7 @@ Flow statuses such as `good standing`, `liquidation`, `involuntary dissolution` 
 
 _Examples of how this might look.  Note these are only examples and the actual business rules will likely be different._
 
-##### Good standing
+##### Not In Good Standing
 
 ``` json
 {
