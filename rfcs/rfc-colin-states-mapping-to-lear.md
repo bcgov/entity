@@ -35,6 +35,10 @@ Good standing has various statuses and can lead to a business state transition.
 
 `Liquidation` is not a business state.  It will consist of a series of flow statuses similar to how _good standing_ works, eventually transitioning a business into a `historical` state.
 
+Flows like `good standing`, `liquidation`, `involuntary dissolution` will make use of existing business warnings structure to keep track of flow statuses.
+
+A periodic job(s) will run to analyze flow statuses and transition business state and do things like initiate a dissolution filing where required.
+
 # Detailed design
 
 Business GET endpoint will return an `allowableActions` property containing allowed "filing" actions.  The allowable filings will be determined using a combination of the allowable filing transitions map, [logic in the FE](https://github.com/bcgov/business-filings-ui/blob/main/src/mixins/allowable-actions-mixin.ts) that needs to be implemented in the BE and any other required logic.
@@ -147,6 +151,79 @@ All filings resulting in business state transitions will need to populate the bu
 Filings.meta_data field for any filings where a business state transitions occurs will include from/to state.
 
 API consumers such as the FE with a need to determine which filing transitioned the business to its current state will retrieve the business state filing provided by the business response of the GET business endpoint.  For example, this can be used to determine if an ACTIVE business is currently in _limited restoration_.
+
+Flow statuses such as `good standing`, `liquidation`, `involuntary dissolution` will make use of the existing warnings structure.  This will provide a way to track where a business is within a given flow.
+
+_Examples of how this might look.  Note these are only examples and the actual business rules will likely be different._
+
+##### Good standing
+
+``` json
+{
+    "business": {
+        "legalName": "XYZ TEST CORP.",
+        "legalType": "BC",
+        "state": "ACTIVE",
+        "goodStanding": false,
+        "warnings": [
+            {
+                "code": "ONE_ANNUAL_REPORT_NOT_FILED",
+                "message": "Latest annual report missing.",
+                "warningType": "GOOD_STANDING"
+            }       
+        ],
+        ...
+    }
+}
+
+```
+
+##### Involuntary Dissolution
+Strictly as an example, the `MULTIPLE_ANNUAL_REPORTS_NOT_FILED` warning could be used an indicator that the involuntary dissolution process needs to be initiated.
+
+``` json
+{
+    "business": {
+        "legalName": "XYZ TEST CORP.",
+        "legalType": "BC",
+        "state": "ACTIVE",
+        "goodStanding": false,
+        "warnings": [
+            {
+                "code": "MULTIPLE_ANNUAL_REPORTS_NOT_FILED",
+                "message": "Multiple annual reports not filed.",
+                "warningType": "GOOD_STANDING"
+            },
+            {
+                "code": "INVOLUNTARY_DISSOLUTION_STEP_1",
+                "message": "Involuntary dissolution process has been initiated.",
+                "warningType": "INVOLUNTARY_DISSOLUTION_FLOW"
+            }            
+        ],
+        ...
+    }
+}
+```
+
+#####  Liquidation
+
+``` json
+{
+    "business": {
+        "legalName": "XYZ TEST CORP.",
+        "legalType": "BC",
+        "state": "ACTIVE",
+        "warnings": [
+            {
+                "code": "LIQUIDATION_STEP_2",
+                "message": "In liquidation flow step 2",
+                "warningType": "LIQUIDATION_FLOW"
+            }
+        ],
+        ...
+    }
+}
+```
 
 # Adoption strategy
 
