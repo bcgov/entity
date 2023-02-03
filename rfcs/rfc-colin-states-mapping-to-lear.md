@@ -41,11 +41,16 @@ A periodic job(s) will run to analyze flow statuses and transition business stat
 
 # Detailed design
 
-Business GET endpoint will return an `allowableActions` property containing allowed "filing" actions.  The allowable filings will be determined using a combination of the allowable filing transitions map, [logic in the FE](https://github.com/bcgov/business-filings-ui/blob/main/src/mixins/allowable-actions-mixin.ts) that needs to be implemented in the BE and any other required logic.
+Business GET endpoint will return an `allowableActions` property containing allowed “filing” actions.
 
-The `allowableActions` property can also be extended in the future to support things like "admin" actions.
+The allowable filings will be determined using a combination of the allowable filing transitions map, [logic in the FE](https://github.com/bcgov/business-filings-ui/blob/main/src/mixins/allowable-actions-mixin.ts) that needs to be implemented in the BE, filtering by account + feature flags and any other required logic.
 
-_Examples of what this might look like but will need to represent sub-types of filings where applicable_
+As examples, a non-registry staff account would not be able to see a `putBackOn` filing and some groups may have access to a filing like `amalgamations` by feature flag.
+
+The `allowableActions` property can also be extended in the future to support things like “admin” actions.
+
+
+_Examples of what this might look like_
 ``` http response
 
 GET https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/BC0001199
@@ -56,15 +61,46 @@ GET https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/BC00011
         "legalType": "BC",
         "state": "HISTORICAL",
         "allowableActions": {
-            "admin": ["addDetailComment", "addStaffComment", "viewChangeCompanyInfo"]
+            "admin": {
+                "addDetailCommentLink": "https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/BC0871274/filings/{filing_id}/comments",
+                "addStaffCommentLink": "https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/BC0871274/comments",
+                "actionTypes": [
+                    {
+                        "name": "addDetailComment",
+                        "displayName": "Add Staff Detail Comment"
+                    },
+                    {
+                        "name": "addStaffComment",
+                        "displayName": "Add Staff Comment to Business"
+                    }
+                ]
+            },
             "filing": {
-                "types": ["restoration", "putBackOn"],
-                "subTypes": {
-                   "restoration": ["fullRestoration", "limitedRestoration"]
-                }
+                "filingSubmissionLink": "https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/BC0871274/filings",
+                "filingTypes": [
+                    {
+                        "name": "restoration",
+                        "type": "fullRestoration",
+                        "displayName": "Full Restoration",
+                        "feeCode": "RESTF"
+                    },
+                    {
+                        "name": "restoration",
+                        "type": "fullRestoration",
+                        "displayName": "Limited Restoration",
+                        "feeCode": "RESTL"
+                    },
+                    {
+                        "name": "putBackOn",
+                        "displayName": "Put Back On",
+                        "feeCode": "NOFEE"
+                    },
+                    ...
+                ]
             }
-        }
+        },
         ...
+    }
 }
 ```
 
@@ -74,19 +110,54 @@ GET https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/BC00011
 
 {
     "business": {
-    "legalName": "XYZ TEST CORP.",
-    "legalType": "BC",
-    "state": "ACTIVE",
-    "allowableActions": {
-        "admin": ["addDetailComment", "addStaffComment", "viewChangeCompanyInfo"]
-        "filing": {
-            "types": ["annualReport", "changeOfDirector", "alteration", "dissolution"],
-            "subTypes": {
-               "dissolution": ["voluntaryDissolution"]
-            }           
-        }
+        "legalName": "XYZ TEST CORP.",
+        "legalType": "BC",
+        "state": "ACTIVE",
+        "allowableActions": {
+            "admin": {
+                "addDetailCommentLink": "https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/BC0871274/filings/{filing_id}/comments",
+                "addStaffCommentLink": "https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/BC0871274/comments",
+                "actionTypes": [
+                    {
+                        "name": "addDetailComment",
+                        "displayName": "Add Staff Detail Comment"
+                    },
+                    {
+                        "name": "addStaffComment",
+                        "displayName": "Add Staff Comment to Business"
+                    }
+                ]
+            },
+            "filing": {
+                "filingSubmissionLink": "https://legal-api-dev.apps.silver.devops.gov.bc.ca/api/v2/businesses/BC0871274/filings",
+                "filingTypes": [
+                    {
+                        "name": "annualReport",
+                        "displayName": "Annual Report",
+                        "feeCode": "BCANN"
+                    },
+                    {
+                        "name": "alteration",
+                        "displayName": "Alteration",
+                        "feeCode": "ALTER"
+                    },
+                    {
+                        "name": "correction",
+                        "displayName": "Correction",
+                        "feeCode": "CRCTN"
+                    },                                        
+                    {
+                        "name": "dissolution",
+                        "type": "voluntaryDissolution",
+                        "displayName": "Voluntary Dissolution",
+                        "feeCode": "DIS_VOL"
+                    },
+                    ...
+                ]
+            }
+        },
+        ...
     }
-    ...
 }
 ```
 
