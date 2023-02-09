@@ -132,33 +132,31 @@ See diagram for overview of how to screen scraper will interact with COLIN.
 ## **Diagram of Design Architecture**
 ![diagram](rfc-load-colin-pdfs-to-doc-store/Software%20Architecture%20diagram.png)
 
-
 # Implementation
 
-## Searching Through All Orgs
-- need to connect to oracle db 
-- query Oracle db directly to get all org numbers
-- query Oracle db to get valid event dates
+## Searching Through All Orgs 
+we will query the Oracle DB fo find distinct filing events within a certain time range. This will get us all the orgs that have had filings within that time range. Once we download all the orgs found we the push the time range forward by a year or two and query for filing events again in this new time range.
+
+This allows us to crawl through all orgs with filings without making unncessary searches to orgs with no filing events or losing track of which orgs have been visited or not. Also allows us to just run the bot again to catch any new filing events made after it's finished it's inital crawl through COLIN.
+
 ## Authentication and Cookies
 - A limitatoin with COLIN is that it can only be navigated through it's UI, any interaction through the browser will cause an error
 ![error](rfc-load-colin-pdfs-to-doc-store/COLIN-error.png)
   - this means that we're limited to tools that can go through COLIN UI to progress through pages
   - trying to navigate through COLIN using BS or requests will cause an error
-  - selenium and cypress are the main considerations 
+  - selenium was chosen for this
 - need to navigate to log in page to log in as staff and gain access to registry search
 - also need to keep log in cookies to be able to make download requests after harvesting PDF download links
 
 ## Harvesting Download Links
-- after logging in we gain access to registry search -> just search for any org using just org num
+- after logging in we gain access to registry search -> search for any org using org num
 - after searching an org we need to grab all the anchor tags on the org's page that lead to a PDF download
-- these anchor tags have `target="View_Report"` attributes, 2 other types of tags namely email and mail tags
-- so just process tags where the text isn't EMAIL and MAIL
+- these anchor tags have `target="View_Report"` attributes, but so do email and mail links
 - this can be done with really any tool, beautiful soup might be the most straight forward
 
 ## Requesting PDFs
-- now we have all the tags that have a pdf download href, we just need to request a download 
 - doing this asynchronously using aiohttp is recommended to optimize the amount of time spent per download
-- if done using requests or aiohttp, the log in cookies from earlier will need to be passed to the session to be able to download PDFs
+- log in cookies from earlier will need to be passed to the session to be able to download PDFs
 - received PDFs are automatically cached in memory when downloaded through requests or aiohttp.
 - need to append `'https://www.corporateonline.gov.bc.ca'` to the beginning of each href
 
@@ -167,30 +165,11 @@ Example of requesting PDF data using aiohttp and writing it into a PDF file
 ![code](rfc-load-colin-pdfs-to-doc-store/aiohttp-example.png)
 
 ## Sending to Doc Storage
-- there's an api to make post requests to the doc storage system
-- just send all the cached list of PDF data the doc storage system in a post request
-
-why selenium?
-  - chosen over cypress and scrapy because it's easier to learn with more youtube tutorials and easier to get up and running
-  -   
-
-This is the bulk of the RFC. Explain the design in enough detail for somebody familiar with the Entity system to understand, and for somebody familiar with the implementation to implement. This should get into specifics and corner-cases and include examples of how the feature is used. Any new terminology should be defined here.
+- make calls to doc store and send over cached PDF data along with all other required data
 
 # Drawbacks
 
-**In Progress**
-  - wouldn't work when COLIN UI gets shut down, but that's okay because by that time we'll have migrated all the filing data over
-  - might conflict with features that depend on Doc Store?
-
-Why should we *not* do this? Please consider:
-
-- implementation cost, both in term of code size and complexity
-- whether the proposed feature can be implemented in user space
-- the impact on teaching people
-- integration of this feature with other existing and planned features
-- cost of migrating existing applications (is it a breaking change?)
-
-There are tradeoffs to choosing any path. Attempt to identify them here.
+implementing this might conflict with work that Argus is doing with migrating data from COLIN into LEAR 
 
 # Alternatives
 
@@ -258,16 +237,8 @@ If it's decided to not retrieve PDFs from filings from COLIN then COLIN's data w
 
 # Adoption strategy
 
-**TODO**
-
 If we implement this proposal, how will existing developers adopt it? Is this a breaking change? How will this affect other projects in the Entity ecosystem?
 
-# Unresolved questions
-
- - how would I integrate this with modern app?
- - where would I store downloaded PDFs before sending them into Doc Store?
- - what would my directory tree look like for storing PDFs before Doc Store?
- - how would I connect to the oracle database to scrape every org in there
 # Thanks
 
 This template is heavily based on the Vue, Golang, React, and other RFC templates. Thanks to those groups for allowing us to stand on their shoulders.
