@@ -21,6 +21,30 @@ For example:
 </div>
 ```
 
+Here's an example of indentation in script:
+```
+showLoadingContainer (): boolean {
+  return (
+    !this.dataLoaded &&
+    !this.dashboardUnavailableDialog &&
+    !this.businessAuthErrorDialog &&
+    !this.nameRequestAuthErrorDialog &&
+    !this.nameRequestInvalidDialog
+  )
+},
+```
+
+What about indenting long method names?
+```
+doSomething (
+  param1: string,
+  param2: number, // can add a comment here
+  param3 = false
+): void {
+  // do something
+}
+```
+
 ### Component IDs
 
 IDs should be named in kebab-case.
