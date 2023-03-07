@@ -22,7 +22,7 @@ we use props and events to communicate between form components like this:
 />
 ```
 
-We're proposing to modify the form components to use Pinia getters and mutators instead.
+We're proposing to modify the form components to use Vuex or Pinia getters and mutators instead.
 
 # Basic example
 
@@ -137,8 +137,7 @@ export default {
 </script>
 ```
 
-Below are the relevant getters and actions. Please excuse the use of Vuex, the
-plan is to replace it with Pinia as soon as we get the go-ahead to do some refactoring.
+Below are the relevant getters and actions. 
 
 #### Getters
 ```javascript
@@ -249,38 +248,38 @@ The new approach has more advantages as the forms get more complex and have more
 example:
 
 ```html
-<div>
-  <form-row>
-    <in-line-check-box id="corp_owner" :path="path" :option="true">
+<template>
+  <FormRow>
+    <InLineCheckBox id="corp_owner" :path="path" :option="true">
         Owned by corporate entity
-    </in-line-check-box>
-  </form-row>
+    </InLineCheckBox>
+  </FormRow>
   <!-- corporation sub-component start -->
-  <form-row v-if="getNestedAttribute(path, 'corp_owner') === true">
-    <text-field id="name" :path="path + '.corporation'" rules="max:40">
-      Corporation Name</text-field>
-  </form-row>
+  <FormRow v-if="getNestedAttribute(path, 'corp_owner') === true">
+    <TextField id="name" :path="path + '.corporation'" rules="max:40">
+      Corporation Name</TextField>
+  </FormRow>
   <!-- corporation sub-component start -->
   <!-- individual sub-component start -->
-  <form-row v-if="getNestedAttribute(path, 'corp_owner') !== true">
-    <text-field id="last_name" :path="path + '.individual'" rules="max:20">
-      Owner's Last Name</text-field>
-    <text-field id="first_name" :path="path + '.individual'" rules="max:20">
-      Owner's First Name</text-field>
-  </form-row>
+  <FormRow v-if="getNestedAttribute(path, 'corp_owner') !== true">
+    <TextField id="last_name" :path="path + '.individual'" rules="max:20">
+      Owner's Last Name</TextField>
+    <TextField id="first_name" :path="path + '.individual'" rules="max:20">
+      Owner's First Name</TextField>
+  </FormRow>
   <!-- individual sub-component end -->
-  <form-row>
-    <text-field id="address" :path="path" placeholder="Address" rules="max:25">
+  <FormRow>
+    <TextField id="address" :path="path" placeholder="Address" rules="max:25">
         Address Line
-    </text-field>
-  </form-row>
-  <form-row>
-    <text-field id="city" :path=path rules="max:20">City</text-field>
-    <province-field id="province" :path=path>Prov / State</province-field>
-    <text-field id="postal" :path=path>Postal / Zip</text-field>
-    <phone-field id="phone" :path=path rules="phone">Phone</phone-field>
-  </form-row>
-</div>
+    </TextField>
+  </FormRow>
+  <FormRow>
+    <TextField id="city" :path=path rules="max:20">City</TextField>
+    <ProvinceField id="province" :path=path>Prov / State</ProvinceField>
+    <TextField id="postal" :path=path>Postal / Zip</TextField>
+    <PhoneField id="phone" :path=path rules="phone">Phone</PhoneField>
+  </FormRow>
+</template>
 ```
 
 
