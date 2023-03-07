@@ -60,7 +60,7 @@ are not reactive from outside the component once the child component is mounted.
 
 Here's an example of a simple series of checkboxes:
 
-![img.png](rfc-using-pinia-for-form-components/example-component.png)
+![img.png](./rfc-using-pinia-for-form-components/example-component.png)
 
 This would be implemented by calling 5 checkboxes with the store location (aka: `path`):
 ```javascript
