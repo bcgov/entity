@@ -248,7 +248,7 @@ directly to the store using the store getter `getNestedAttribute` and the mutato
 The new approach has more advantages as the forms get more complex and have more nested objects.  For
 example:
 
-```javascript
+```html
 <div>
   <form-row>
     <in-line-check-box id="corp_owner" :path="path" :option="true">
