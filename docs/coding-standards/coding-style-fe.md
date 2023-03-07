@@ -1,6 +1,4 @@
-# Coding Style Guidelines
-
-## Front End (HTML, CSS, JavaScript/TypeScript)
+# Coding Style Guidelines - Front End (HTML, CSS, JavaScript/TypeScript)
 
 ### Indentation
 
@@ -34,7 +32,7 @@ showLoadingContainer (): boolean {
 },
 ```
 
-What about indenting long method names?
+What about indenting long method signatures?
 ```
 doSomething (
   param1: string,
@@ -57,8 +55,7 @@ For example:
 Classes should be named "mostly" in kebab-case.
 For example:
 ```
-<div class="my-class">
-</div>
+<MyComponent class="my-class" />
 ```
 
 Exception: some "deep" elements may use double-underscores.
@@ -151,10 +148,10 @@ For example:
 </style>
 ```
 
+(In some cases, the script block may come before the template block.)
+
 ### Consistency
 
 Being consistent with surrounding code _may_ override the above guidelines!
 
-## Back End (Python)
-
-_add some examples/guidelines here_
+--end of document--
