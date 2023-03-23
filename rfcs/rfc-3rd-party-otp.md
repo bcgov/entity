@@ -28,7 +28,7 @@ This works for anyone in Canada.
 
 # Detailed design
 
-The public user will submit a request to a BCOnline Providing partner via the 3rdp Party Service Provider. To validate the the public user, it redirects the user to the OTP service and the user logins using their BC Services Card. A OTP Token is provided and saved in a Redis backed Memstore.
+The public user will submit a request to a BCOnline Providing partner via the 3rdp Party Service Provider. To validate the the public user, it redirects the user to the OTP service and the user logs in using their BC Services Card. An OTP Token is provided and saved in a Redis backed Memstore.
 The OTP Token is included in the submission through the gateway to the protected BCOnline Service.
 
 ![Get an OTP Token](rfc-3rd-party-otp/get_token.png)
