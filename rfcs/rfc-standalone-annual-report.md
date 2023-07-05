@@ -2,7 +2,7 @@
 
 # Summary
 
-Proposal:  create a standalone Annual Report filing that will contain the first instance of  the proposed "Register a beneficial owner" workflow. 
+Create a standalone Annual Report filing and Beneficial Ownership registration to prove out the workflow and UX for capturing the data required for the Transparency Registry.
 
 # Motivation
 
