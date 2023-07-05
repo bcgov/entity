@@ -17,7 +17,7 @@ Create a standalone Annual Report filing and Beneficial Ownership registration t
 # Detailed design
 
 ## Include Add a Beneficial Owner workflow
-The AR standalone filing will contain the information in the current corporate annual report filing and will also include the workflow for adding beneficial owners. The workflow includes:
+The filing flow would be:
 1. Add Person section (name and email)
 2. Significant Individual Assessment section (evaluates user input and returns status)
 3. Add Personal Details (DOB, address, SIN, citizenship etc.)
