@@ -18,9 +18,13 @@ Create a standalone Annual Report filing and Beneficial Ownership registration t
 
 ## Include Add a Beneficial Owner workflow
 The filing flow would be:
-1. Add Person section (name and email)
-2. Significant Individual Assessment section (evaluates user input and returns status)
-3. Add Personal Details (DOB, address, SIN, citizenship etc.)
+The workflow is only relevant for BCA entities.
+1. Annual Report Date (this will be save to _lear_ or _colin_ as required)
+2. Significant Individual Assessment section
+3. UXA to determine:
+   a. Add Beneficial Owner Details: OR
+   b. Choose from Beneficial Ownership profile
+4. Possibly create a Beneficial Ownership profile
 
 ## Wireframes:
 
