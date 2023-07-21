@@ -25,7 +25,18 @@ The workflow is only relevant for BCA entities.
    a. Add Beneficial Owner Details: OR
    b. Choose from Beneficial Ownership profile
 4. Possibly create a Beneficial Ownership profile
-
+```sequenceDiagram
+    actor Business Manager
+    Business Manager->>+Annual Report: Need to file a businesses Annual Report
+    Annual Report->>+Beneficial Ownership: Need to update Beneficial Owners
+    Beneficial Ownership-->>-Annual Report: Beneficial Owners updated
+    alt Business in Colin
+      Annual Report->>Colin: File the AR Date
+    else Business in Lear
+          Annual Report->>Lear: File the AR Date
+    end
+    Annual Report-->>-Business Manager: Done!
+```
 ## Wireframes:
 
 [https://www.figma.com/file/C2ThYIhZSO44dYBVGp8xAj/Register-Beneficial-Owners?type=design&node-id=0-1&mode=design]
