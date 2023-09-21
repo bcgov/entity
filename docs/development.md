@@ -39,7 +39,6 @@ Follow Microsoft's instructions.
 - `pyenv global 3.8.5` to set it as the default version.
 - `sudo apt install python3-pip`
 - `pip install --upgrade pip`
-- `sudo apt install python3.8-venv`
 
 #### Node.js for npm
 
@@ -65,7 +64,7 @@ directory.
 - Install the *ESLint* extension.
 - Install the *Jest* extension.
 - Install the *Python* extension.
-- Install the *Vetur* extension for working with Vue.js.
+- Install the *Volar* extension for working with Vue.js.
 - Go to File > Preferences > Settings and set the following:
   - editor.formatOnSave: `true`
   - editor.rulers: click the *Edit in settings.json* link and set the value `"editor.rulers": [ 120 ]`
