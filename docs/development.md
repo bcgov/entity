@@ -52,6 +52,8 @@ Follow Microsoft's instructions.
 - `git config --global credential.helper
 "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"`
 
+- Note: Make sure you're running your code on the WSL share (eg. /home/<name>/work) and not the Windows share (eg. /mnt/c/work/), otherwise you'll see a disk performance hit of at least 20x.
+
 #### OpenShift
 
 - Download the oc client tools matching the current version of OpenShift, and put the *oc* binary in your *~/bin*
