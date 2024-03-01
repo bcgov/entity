@@ -51,7 +51,7 @@ All the endpoints are secured by keycloak and partner system must send the acces
 
 ### IP Address connectivity
 The partner system would need connectivity to below listed IP addresses from their hosting environment.
-- Keycloak : 142.34.194.118
+- Keycloak : 142.34.229.4
 - API gateway : 35.203.11.173
 
 # 4. Auth API Integration
