@@ -47,7 +47,7 @@ All the endpoints are secured by keycloak and partner system must send the acces
 |Pay|https://bcregistry-test.apigee.net/pay|https://bcregistry-prod.apigee.net/pay|
 |Auth|https://bcregistry-test.apigee.net/auth|https://bcregistry-prod.apigee.net/auth|
 |Notify|https://bcregistry-test.apigee.net/auth-notify|https://bcregistry-prod.apigee.net/auth-notify|
-|Keycloak|https://test.oidc.gov.bc.ca/|https://oidc.gov.bc.ca/|
+|Keycloak|https://test.loginproxy.gov.bc.ca/|https://loginproxy.gov.bc.ca/|
 
 ### IP Address connectivity
 The partner system would need connectivity to below listed IP addresses from their hosting environment.
