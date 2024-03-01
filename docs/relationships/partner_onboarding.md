@@ -47,11 +47,11 @@ All the endpoints are secured by keycloak and partner system must send the acces
 |Pay|https://bcregistry-test.apigee.net/pay|https://bcregistry-prod.apigee.net/pay|
 |Auth|https://bcregistry-test.apigee.net/auth|https://bcregistry-prod.apigee.net/auth|
 |Notify|https://bcregistry-test.apigee.net/auth-notify|https://bcregistry-prod.apigee.net/auth-notify|
-|Keycloak|https://test.oidc.gov.bc.ca/|https://oidc.gov.bc.ca/|
+|Keycloak|https://test.loginproxy.gov.bc.ca/|https://loginproxy.gov.bc.ca/|
 
 ### IP Address connectivity
 The partner system would need connectivity to below listed IP addresses from their hosting environment.
-- Keycloak : 142.34.194.118
+- Keycloak : 142.34.229.4
 - API gateway : 35.203.11.173
 
 # 4. Auth API Integration
@@ -76,6 +76,7 @@ Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main
 Iterate the response from User Settings endpoint;
 - Match the attribute `type` == `ACCOUNT` and `accountStatus`==`ACTIVE`. 
 - If the partner system doesn't allow basic accounts, then filter out any object with attribute `accountType` == `BASIC`. For premium accounts the value will be `PREMIUM`.
+- Note: In the future we may be merging BASIC and PREMIUM accounts.
 - If user doesn't have any account then they need to be redirected to BC Registries for creating an account. For getting the create account URL, Iterate user settings response and match attribute `type` == `CREATE_ACCOUNT`. Then construct the URL by  `urlorigin` + `urlpath` from the object.
 - If the user have only one account store the Account-Id (`id` from the object), this Account-Id is needed for any API calls hereafter.
 - If the user have more than one account, ask the user to select an account and store the selected the Account-Id (`id` from the object), this Account-Id is needed for any API calls hereafter. 
