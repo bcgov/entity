@@ -76,6 +76,7 @@ Response : Please see the [API Spec](https://github.com/bcgov/sbc-auth/blob/main
 Iterate the response from User Settings endpoint;
 - Match the attribute `type` == `ACCOUNT` and `accountStatus`==`ACTIVE`. 
 - If the partner system doesn't allow basic accounts, then filter out any object with attribute `accountType` == `BASIC`. For premium accounts the value will be `PREMIUM`.
+- Note: In the future we may be merging BASIC and PREMIUM accounts.
 - If user doesn't have any account then they need to be redirected to BC Registries for creating an account. For getting the create account URL, Iterate user settings response and match attribute `type` == `CREATE_ACCOUNT`. Then construct the URL by  `urlorigin` + `urlpath` from the object.
 - If the user have only one account store the Account-Id (`id` from the object), this Account-Id is needed for any API calls hereafter.
 - If the user have more than one account, ask the user to select an account and store the selected the Account-Id (`id` from the object), this Account-Id is needed for any API calls hereafter. 
