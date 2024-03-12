@@ -26,7 +26,7 @@ The known problems are summarized as:
 Therefore, the goals are:
 1. Transparency: Keep all team members informed of what's going on.
 2. Collaboration: Facilitate all team members getting responses to questions, and general responsiveness.
-3. Efficiency: Allow all team members to be focused on their own work without undue interruptions, while being able to reach team members promptly if needed.
+3. Efficiency: Allow all team members to be focused on their own work without undue interruptions, while being able to reach other team members promptly if needed.
 
 The expected outcomes of this RFC are a list of things that a team member should remain updated about (either via notifications or other means), and some recommended best practices to improve communication while managing productivity. It is expected that this RFC does not need to be approved or rejected, but rather that processes be proposed, discussed and then adopted accordingly.
 
@@ -64,9 +64,9 @@ Zenhub appears to support only basic local and email notifications for issue eve
 
 ### GitHub
 
-This system stores BCGov software repositories, personal repos, and provides branching, Pull Request (PR) flows and merging. This system also stores Issues, although most developers probably view issues in the Zenhub "view". GitHub supports lots of local and email notification options, including the concept of "subscriptions", which allows users to un-subscribe from specific items they no longer need to watch.
+This system stores BCGov repositories, personal repos, and provides branching, Pull Request (PR) flows and merging. This system also stores Issues, although most developers probably view issues in the Zenhub "view". GitHub supports lots of local and email notification options, including the concept of "subscriptions", which allows users to "watch" only the specific items they care about.
 
-In the author's experience, GitHub generates a lot of notifications, which can be received on the GitHub site (or CLI) or via email. The author recommends receiving emails ("push") instead of checking GitHub ("pull"). The author finds GitHub email notifications easy to temporarily ignore and quick to review and handle -- items that need follow-up can be left in the Inbox and other items can be promptly deleted.
+In the author's experience, GitHub generates a lot of notifications, which can be received on the GitHub site (or CLI) or via email. The author recommends receiving emails ("push") instead of checking GitHub ("pull"). The author finds email notifications easy to temporarily ignore, and GitHub emails particularly quick to review and handle -- items that need follow-up can be left in the Inbox and other items can be promptly deleted.
 
 ### Email
 
@@ -76,7 +76,7 @@ Incoming emails generally display a notification, although filters or rules can 
 
 In the author's experience, email generates a lot of notifications, either about operations (eg, customer issue, specific design questions, meetings) or sent from another system (eg, GitHub). However, as mentioned in [GitHub](#github) above, emails seem to be easy to handle, likely because selected items can be left in the Inbox for later response (ie, as a kind of "to do list") instead of getting "lost" in a long chat stream.
 
-In the author's experience, the High / Low Importance flags on emails is used inconsistently and is therefore not useful for determining message priority. Some internal guidance could be provided for better setting this flag, thereby adding a useful priority level to some emails, but since emails come from all different organizations, this is unlikely to be a general improvement. Therefore, the Importance flag is not discussed further in this RFC.
+In the author's experience, the High / Low Importance flags on emails is used inconsistently and is therefore not useful for determining objective message priority. Internal guidance could be provided for better setting this flag, thereby adding a useful priority level to some emails, but since emails come from all different organizations, this is unlikely to be a general improvement. Therefore, the Importance flag is not discussed further in this RFC.
 
 Note that email is a good system to use for group discussions that include people who don't have access to MS Teams.
 
@@ -91,71 +91,73 @@ In the author's experience, notifications from personal direct message apps seem
 # Best practices
 
 Team members should stay abreast of:
-- organizational news
-- team meetings (especially late-scheduled or ad hoc meetings), including meeting agendas and minutes
-- team daily check-in (if used)
-- personal requests for help (eg, Pull Request reviews, questions for which you are a Subject Matter Expert)
-- general requests for help (eg, does anyone know about _? is anyone else experiencing _?)
-- issue (aka ticket) or PR questions and responses
-- issue or PR state changes and assignments
+- organizational news,
+- team meetings (especially late-scheduled or ad hoc meetings), including meeting agendas and minutes,
+- team daily check-in (if used),
+- personal requests for help (eg, Pull Request reviews, questions for which you are a Subject Matter Expert),
+- general requests for help (eg, does anyone know about _? is anyone else experiencing _?),
+- issue (aka ticket) or PR questions and responses,
+- issue or PR state changes and assignments.
 
 To promote transparency, the things that need to be known by all team members should be posted to a system that generates appropriate notifications, and all teams members should monitor those notifications. Examples include a team announcement, an important design decision, a plan for a key person to be temporarily unavailable, etc.
 
 To promote collaboration, in addition to posting about and looking at team requests and events, team members should review notifications in an appropriately timely manner. This can be accomplished by assigning different priority levels, for example:
-1. High priority - should action as soon as possible (eg, ad hoc meetings, questions directed to particular people)
-2. Regular priority - should action within an hour or so (eg, check in, deployments, general / group questions, PR reviews)
-3. Low priority - should action within half a day or more (eg, informational content, discussion about future work items)
+1. High priority - should action as soon as possible (eg, ad hoc meetings, questions directed to particular people).
+2. Regular priority - should action within an hour or so (eg, check in, deployments, general / group questions, PR reviews).
+3. Low priority - should action within half a day or more (eg, informational content, discussion about future work items).
 
 To promote efficiency, team members must stay productive with their own work and avoid delaying other people. This is amplified in [Proposal](#proposal), below.
 
 # Proposal
 
 The following practices are proposed:
-- post more-important things to the appropriate audience (person or group) and system
-- post less-important things to secondary channels or systems
-- respect a team member's "heads down" time when requested
-- let the team know if you need temporary heads-down time
-- let the team know if you'll be temporarily away from your keyboard (and when you return)
-- avoid sending excessive notifications (eg, add reviewers _after_ adding a lot of comments to your own PR)
-- avoid sending multiple notifications (or over multiple systems) in order to get a team member's attention
-- subscribe to (or configure notifications for) all topics you need to remain updated about
-- configure different levels of notification for different events / channels (eg, badge only vs alert / sound)
-- respond to notifications according to priority level
-- consider using your mailbox (or other system) as a "to do list"
-- share your personal direct messaging info with your manager if you know you will not have access to other notification systems; this is especially true for key team members
+- Post more-important things to the appropriate audience (person or group) and system.
+- Post less-important things to secondary channels or systems.
+- Respect a team member's "heads down" time when requested.
+- Let the team know if you need temporary heads-down time.
+- Let the team know if you'll be temporarily away from your keyboard (and when you return).
+- Avoid sending excessive notifications (eg, add reviewers _after_ adding a lot of comments to your own PR).
+- Avoid sending multiple notifications (or over multiple systems) in order to get a team member's attention.
+- Subscribe to (and configure notifications for) all topics you need to remain updated about.
+- Configure different levels of notification for different events / channels (eg, badge only vs alert / sound).
+- Respond to notifications according to priority level.
+- Consider using your mailbox (or other system) as a "to do list".
+- Consider sharing your personal direct messaging info with your manager if you know you will not have access to other notification systems; this is especially true for key team members.
+
+## Specific recommendations
 
 Although there is some leeway in how a team member configures different app / system notifications -- as long as they remain appropriately notified -- the following are recommended:
 
 **MS Teams:**
-- use individual messaging in MS Teams to reach someone promptly
-- review and respond to your individual chats frequently (ie, review as soon as possible; respond according to priority)
-- use MS Teams to keep team abreast of activities
-  - enable banner / feed notifications for primary team channel
-  - enable feed only for other channels
-  - hide channels you don't need to follow (which disables their notifications)
-  - use the Activity page and notifications to see the latest messages
-- review MS Teams regularly (every hour or so)
-- recommended channels to monitor:
-  - the member's primary team channel(s) (eg, Entities-Olga and Entities Product Team)
-  - any project-specific channel, if applicable
-  - the general Developer's channel
-  - the general General channel
-  - other team channels (but likely disable their notifications)
+- Use individual messaging in MS Teams to reach someone promptly.
+- Review and respond to your individual chats frequently (ie, review as soon as possible; respond according to priority).
+- Use MS Teams to keep team abreast of activities.
+  - Enable banner / feed notifications for primary team channel.
+  - Enable feed only for other channels.
+  - Hide channels you don't need to follow (which disables their notifications).
+  - Use the Activity page and notifications to see the latest messages.
+- Review MS Teams regularly (every hour or so).
+- Recommended channels to monitor:
+  - The member's primary team channel(s) (eg, Entities-Olga and Entities Product Team).
+  - Any project-specific channel, if applicable.
+  - The general Developer's channel.
+  - The general General channel.
+  - Other team channels as needed for collaboration (but likely disable their notifications).
 
 **GitHub / Zenhub:**
-- enable email notifications in GitHub, and subscribe to issues you need to watch
-- unsubscribe from issues you no longer need to watch (eg, a ticket you created but another team is now handling)
-- ignore notification settings in Zenhub in favour of GitHub notifications
+- Enable email notifications in GitHub, and subscribe to issues you need to watch.
+- Unsubscribe from issues you no longer need to watch (eg, a ticket you created but another team is now handling).
+- Ignore notification settings in Zenhub in favour of GitHub notifications.
 
 **Email:**
-- use email for notifications that shouldn't get "lost" in message streams
+- Use email for notifications that shouldn't get "lost" in message streams.
   - can be used as "to do list"
   - messages can be saved in a folder for possible later retrieval
-- review GitHub notifications (in email) regularly (every hour or so)
-- use email for low-priority interruptions that can be handled later
-- review low-priority emails within half a day or more
-- use email filters to auto-delete irrelevant notifications (eg, Sonarcloud)
-- learn to quickly review and delete / ignore notifications that don't affect you
+- Review GitHub notifications (in email) regularly (every hour or so).
+- Use email for low-priority interruptions that can be handled later.
+- Review low-priority emails within half a day or more.
+- Use email filters to auto-delete irrelevant notifications (eg, Sonarcloud).
+- Learn to quickly review and delete / ignore notifications that don't affect you.
 
 # Drawbacks
 
@@ -163,7 +165,7 @@ Configuring systems to send or display extra notifications may increase a team m
 
 Implementing the proposed practices and recommendations above will require teaching some people.
 
-Some team members may choose to keep private their personal direct message ids (eg, phone number or email), removing this option to reach them outside the normal work systems.
+Some team members may choose to keep their personal direct message ids (eg, phone number or email) private, removing this option to reach them outside the normal work systems.
 
 
 # Alternatives
@@ -174,13 +176,13 @@ The impact of not configuring notifications ideally is described in [Motivation]
 
 # Adoption strategy
 
-Team members should consider following the general practices and recommendations in [Proposal](#proposal), above. There is some leeway and there may be alteratives that meet the same objectives of "not missing anything important" while "not interrupting members constantly", and that's left to each individual member.
+Team members should consider following the practices and recommendations in [Proposal](#proposal), above. There is some leeway and there may be alteratives that meet the same objectives of "not missing anything important" while "not interrupting team members constantly", and that's left to each individual member.
 
 This is not a software or design change and, as such, it is not a breaking change and does not affect other projects. However, while this RFC originated from a particular BCROS team, its guidance may benefit other teams.
 
 # Unresolved questions
 
-No research was done on alternate notification mechanisms. The focus was on tools that are currently being used broadly. There may be, now or in the future, a better notification system that will improve team transparency and collaboration, while minimizing team member inefficiency.
+No research was done on alternate notification mechanisms. The focus was on tools that are currently being used broadly. There may be, now or in the future, a better notification system that will improve team transparency and collaboration, while minimizing team member inefficiency. It is unknown if such a system could even be implemented in the current corporate environment.
 
 # Thanks
 
@@ -188,7 +190,7 @@ This template is heavily based on the Vue, Golang, React, and other RFC template
 
 # Appendix - Sample configurations
 
-### Zenhub notifications
+## Zenhub notifications
 
 <figure>
   <figcaption>Zenhub Notifications Management</figcaption>
@@ -202,7 +204,7 @@ This template is heavily based on the Vue, Golang, React, and other RFC template
        alt="screenshot of Zenhub Notifications Preference section">
 </figure>
 
-### GitHub notifications
+## GitHub notifications
 
 <figure>
   <figcaption>GitHub Issue Subscription</figcaption>
@@ -222,7 +224,7 @@ This template is heavily based on the Vue, Golang, React, and other RFC template
        alt="screenshot of GitHub Notifications page in user's Settings">
 </figure>
 
-### Email notifications
+## Email notifications
 
 <figure>
   <figcaption>Gmail Desktop notifications section</figcaption>
@@ -236,7 +238,7 @@ This template is heavily based on the Vue, Golang, React, and other RFC template
        alt="screenshot of Outlook Mail - Message arrival section in Outlook Options">
 </figure>
 
-### Microsoft Teams notifications
+## Microsoft Teams notifications
 
 <figure>
   <figcaption>MS Teams Notifications and activity page</figcaption>
