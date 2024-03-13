@@ -38,6 +38,8 @@ A notification can take various forms, and depends on the user's environment (eg
 
 Sometimes, a team member needs to be "heads down" on a task and prefers to be uninterrupted for a time. It is not expected that this person would re-configure their notifications, although they may temporarily mute them or close the offending app or just wilfully ignore them. This is an edge case and can be managed by advance notice that this person will be less responsive than usual, and handled accordingly.
 
+Sometimes, a team member is not 100% allocated to one team and will have time / days where they are unavailable. From their point of view, they will need to manage incoming notifications so that they can remain focused on their current team while, ideally, remaining responsive to their other team(s) -- which is the theme of this RFC. From others' point of view, notice of their unavailability would be helpful to avoid any blockers -- asking questions ahead of time, or working on something else while awaiting an answer. This is an edge case similar to the one above.
+
 Another edge case is notifications during off-work hours. It is not generally expected that team members be responsive when away from work, so this is out of scope.
 
 The priority / level of a notification needs to be considered -- some should be seen as soon as possible while others can maybe wait a day.
