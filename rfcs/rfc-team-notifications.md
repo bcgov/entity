@@ -58,6 +58,8 @@ MS Teams supports "activity" and "banner" notifications for the Activity page an
 
 In the author's experience, MS Teams generates a lot notifications, by virtue of the many teams and chat groups subscribed to.
 
+A consideration is that MS Teams messages are purged after a while according to retention policies. Hence, distribution of information that is meant for future reference should be done by email (where messages can be filed into folders permanently) or other methods.
+
 ### Zenhub
 
 This software is a "layer" on top of GitHub Issues and provide workspaces, sprint flows, pipelines, and various reports.
@@ -113,18 +115,18 @@ To promote efficiency, team members must stay productive with their own work and
 # Proposal
 
 The following practices are proposed:
-- Post more-important things to the appropriate audience (person or group) and system.
-- Post less-important things to secondary channels or systems.
-- Respect a team member's "heads down" time when requested.
-- Let the team know if you need temporary heads-down time.
-- Let the team know if you'll be temporarily away from your keyboard (and when you return).
-- Avoid sending excessive notifications (eg, add reviewers _after_ adding a lot of comments to your own PR).
-- Avoid sending multiple notifications (or over multiple systems) in order to get a team member's attention.
-- Subscribe to (and configure notifications for) all topics you need to remain updated about.
-- Configure different levels of notification for different events / channels (eg, badge only vs alert / sound).
-- Respond to notifications according to priority level.
-- Consider using your mailbox (or other system) as a "to do list".
-- Consider sharing your personal direct messaging info with your manager if you know you will not have access to other notification systems; this is especially true for key team members.
+1. Post more-important things to the appropriate audience (person or group) and system.
+2. Post less-important things to secondary channels or systems.
+3. Respect a team member's "heads down" time when requested.
+4. Let the team know if you need temporary heads-down time.
+5. Let the team know if you'll be temporarily away from your keyboard (and when you return).
+6. Avoid sending excessive notifications (eg, add reviewers _after_ adding a lot of comments to your own PR).
+7. Avoid sending multiple notifications (or over multiple systems) in order to get a team member's attention.
+8. Subscribe to (and configure notifications for) all topics you need to remain updated about.
+9. Configure different levels of notification for different events / channels (eg, badge only vs alert / sound).
+10. Respond to notifications according to priority level.
+11. Consider using your mailbox (or other system) as a "to do list".
+12. Consider sharing your personal direct messaging info with your manager if you know you will not have access to other notification systems; this is especially true for key team members.
 
 ## Specific recommendations
 
@@ -168,7 +170,6 @@ Configuring systems to send or display extra notifications may increase a team m
 Implementing the proposed practices and recommendations above will require teaching some people.
 
 Some team members may choose to keep their personal direct message ids (eg, phone number or email) private, removing this option to reach them outside the normal work systems.
-
 
 # Alternatives
 
