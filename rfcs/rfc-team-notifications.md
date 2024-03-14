@@ -58,7 +58,9 @@ MS Teams supports "activity" and "banner" notifications for the Activity page an
 
 In the author's experience, MS Teams generates a lot notifications, by virtue of the many teams and chat groups subscribed to.
 
-A consideration is that MS Teams messages are purged after a while according to retention policies. Hence, distribution of information that is meant for future reference should be done by email (where messages can be filed into folders permanently) or other methods.
+:warning: MS Teams messages are purged after a while according to retention policies. Hence, distribution of information that is meant for future reference should be done by email (where messages can be filed into folders permanently) or other methods.
+
+:warning: Some team members use the browser version of MS Teams. To keep MS Teams running, they must must ensure that the subject browser tab remains active (eg, is exempted from the browser's memory saving configuration). Also, the browser must be configured to allow the subject website to send notifications.
 
 ### Zenhub
 
@@ -82,9 +84,11 @@ In the author's experience, email generates a lot of notifications, either about
 
 In the author's experience, the High / Low Importance flags on emails is used inconsistently and is therefore not useful for determining objective message priority. Internal guidance could be provided for better setting this flag, thereby adding a useful priority level to some emails, but since emails come from all different organizations, this is unlikely to be a general improvement. Therefore, the Importance flag is not discussed further in this RFC.
 
-Note that email is a good system to use for group discussions that include people who don't have access to MS Teams.
+:bulb: Email is a good system to use for group discussions that include people who don't have access to MS Teams.
 
-Email is also a good system to use for discussions that should be saved (eg, in a folder) for possible later retrieval.
+:bulb: Email is a good system to use for discussions that should be saved (eg, in a folder) for possible future reference.
+
+:warning: To access their government email account, non-government employees (ie, contractors) must use the browser version of Outlook (`summer.gov.bc.ca`). Unfortunately, this site times out every 5 minutes or so, meaning that government email (or calendar) notifications can easily be missed. To mitigate this, emails to contractors should also be sent to their non-gov email address. (Email forwarding appears to be disabled.) Also, contractors should login to `summer` to check for missed emails once a day or so. Resolving this issue is not in the scope of this RFC.
 
 ### Personal direct messaging
 
@@ -182,6 +186,8 @@ The impact of not configuring notifications ideally is described in [Motivation]
 Team members should consider following the practices and recommendations in [Proposal](#proposal), above. There is some leeway and there may be alteratives that meet the same objectives of "not missing anything important" while "not interrupting team members constantly", and that's left to each individual member.
 
 This is not a software or design change and, as such, it is not a breaking change and does not affect other projects. However, while this RFC originated from a particular BCROS team, its guidance may benefit other teams.
+
+:bulb: This RFC should be provided to new team members as part of their onboarding process. Awareness of the issues and processes in this RFC will help to make a team with off-site members as productive as possible.
 
 # Unresolved questions
 
