@@ -1,13 +1,13 @@
 ---
 name: 'Analytics Request '
-about: Request for analytics in modernization or Legacy
+about: Request for analytics in Modernization or Legacy
 title: 'Analytics Request - '
 labels: 'analytics :chart:'
 assignees: gprimeau
 
 ---
 
-**Please click what which division you are requiring data **
+**Information / Data analysis required**
 - [ ] BC Companies
 - [ ] Sole Prop / General Partnership
 - [ ] Names
@@ -18,21 +18,21 @@ assignees: gprimeau
 - [ ] Other 
 - If other please  specify 
 
-**Please describe what data you require**
-A clear and concise description of what you are looking for
+**Please describe what analysis is needed**
+A clear and concise description of what you are looking for.
  
-** Date that data is required**
+**Deadline**
 Please let us know when this data is required. 
-Is this a priority
+Is this a priority?
 
 **Screenshots**
-If applicable, add screenshots to help explain your problem.
+If applicable, add screenshots to help explain your request.
 
  **Deliverable**
 - [ ] Excel Spread Sheet
 - [ ] Digital Dashboard
 - [ ] Simple reply to email
-
+      -If by email:
  
 **Additional context**
 Add any other context about your request.
