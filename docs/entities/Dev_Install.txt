@@ -41,7 +41,7 @@ QUICK DEV ENVIRONMENT SETUP FOR FRONTEND DEVELOPMENT
 
 - Fork all the 3 frontend UIs: Filings UI, Create UI, and Edit UI. 
 
-- Clone the 3 UIs on your machine. For reference: https://github.com/argush3/entity/blob/master/docs/setup-forking-workflow.md 
+- Clone the 3 UIs on your machine. For reference: https://github.com/argush3/entity/blob/master/docs/setup-forking-workflow.md (more information in NODE VERSION MANAGER section) 
 
 - Download Node Version 16.15.0: https://nodejs.org/dist/v16.15.0/node-v16.15.0-x64.msi 
 
