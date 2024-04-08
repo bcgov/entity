@@ -43,7 +43,7 @@ QUICK DEV ENVIRONMENT SETUP FOR FRONTEND DEVELOPMENT
 
 - Clone the 3 UIs on your machine. For reference: https://github.com/argush3/entity/blob/master/docs/setup-forking-workflow.md (more information in NODE VERSION MANAGER section) 
 
-- Download Node Version 16.15.0: https://nodejs.org/dist/v16.15.0/node-v16.15.0-x64.msi 
+- Download Node Version 20.x.x 
 
 - Install Node and go to CMD and type: node -v. Make sure the correct version is 
 
@@ -128,7 +128,6 @@ MORE THINGS FOR UI DEVELOPMENT
 install global packages and local dependencies
 ```
 sudo apt install npm
-sudo npm i -g @vue/cli  // don't need jshint tslint typescript
 sudo npm i -g trash-cli  // use 'trash' instead of 'rm'
 npm install  // do this in each repo home folder
 npm i -g lerna
@@ -174,6 +173,8 @@ cd ~/repos
 gh repo clone bcgov/bcregistry
 gh repo clone bcgov/bcrs-shared-components (for UI work)
 gh repo clone bcgov/business-filings-ui
+gh repo clone bcgov/business-create-ui
+gh repo clone bcgov/business-edit-ui
 gh repo clone bcgov/business-schemas
 gh repo clone bcgov/entity (optional)
 gh repo clone bcgov/lear (for BE work)
@@ -196,7 +197,7 @@ add remote "origin" for own repo
 
 Node Version Manager
 ====================
-For the 3 business UIs you will need node version 16.15.0 (or simply have the ability to switch versions)
+For the 3 business UIs you will need node version 20.10.0 (or simply have the ability to switch versions)
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
@@ -246,4 +247,3 @@ GENERAL NOTES
 => There may be other setup docs floating around, best to double check with your team (or programming buddy) which is the most up-to-date and relevant.
 => Document your setup process and any troubleshooting steps you encounter in this file. This can help colleagues or your future self.
 => Incorporate version control best practices: commit often with meaningful messages, use branches to manage features and fixes, and understand how to fetch and rebase safely. 
-=> 
