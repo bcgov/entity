@@ -42,7 +42,7 @@ QUICK DEV ENVIRONMENT SETUP FOR FRONTEND DEVELOPMENT
 
 - Fork all the 3 frontend UIs: Filings UI, Create UI, and Edit UI. 
 
-- Clone the 3 UIs on your machine. For reference: https://github.com/argush3/entity/blob/master/docs/setup-forking-workflow.md (more information in NODE VERSION MANAGER section) 
+- Clone the 3 UIs on your machine. For reference: https://github.com/bcgov/entity/blob/master/docs/setup-forking-workflow.md (more information in NODE VERSION MANAGER section) 
 
 - Download Node Version 20.x.x 
 
@@ -225,7 +225,6 @@ Resolving deltas: 100% (40/40), done.
 => override the binaries of modules installed with `nvm`:
 
 /usr/local/lib
-├── @vue/cli@4.5.13
 ├── jshint@2.13.0
 ├── lerna@4.0.0
 ├── tshint@0.0.2
