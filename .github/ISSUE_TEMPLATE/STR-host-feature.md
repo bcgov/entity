@@ -2,97 +2,120 @@
 name: Host Feature
 about: Host Feature Template
 title: "[FEATURE] - [ADD TITLE ] - [Brief Description]"
-labels: STR
+labels: STRR
 assignees: mbertucci
 
 ---
 
-<!-- 👇 [PO/BA] - Define the role, feature/action, and benefit/outcome clearly to outline the purpose of this issue. -->
 
-# 📖 User Story
+
+### 📖 User Story
 🔹 **As an [role],**  
 🔹 **I want [Feature/Action],**  
 🔹 **so that [Benefit/Outcome].**
 
-<!-- 👇 - Enumerate the business rules or logic that directly influence this issue. -->
+### Context: 
+[add context] 
 
-## 📏 Business Rules
+#### 🎨 UX/UI Link: 
+
+##### 🔗 Mural Links: 
+
+Story in Mural: [Insert link to the story or additional context here]
+
+
 <details>
-<summary>click to view rules </summary>
+<summary>Roadmap and Storymap links</summary>
 
-- [ ] Add Business Rule here
-- [ ] Add Business Rule here
-- [ ] Add Business Rule here
+  Roadmap: https://app.mural.co/t/citzservicebcbcros0435/m/citzservicebcbcros0435/1708551828009/76eaa2c92258b0bde76157b3dd6e37220967e91a?wid=0-1708639933585
+
+  Story Board: https://app.mural.co/t/citzservicebcbcros0435/m/citzservicebcbcros0435/1706554024951/153dc4e4f3fbbd7cfc1352e0c804cb105960321e?sender=u919d7a4924c2e37e12b55343
 
 </details>
 
+### 📏 Business Rules
+ 
+- [ ] Add Business Rule here
+- [ ] Add Business Rule here
+- [ ] Add Business Rule here
 
-<!-- 👇 [PO/BA] - Outline detailed scenarios related to this story for QA to focus on. -->
 
-## 🎭 Story Scenarios
-<details>
-<summary>see specific story scenarios </summary>
+### 🎭 Story Scenarios
 
-
-### Scenario 1: Authenticated and Logged in to STR
+#### Scenario 1: Authenticated and Logged in to STR
 - **Given** the user has been authenticated via SBC Connect
 - **When** [Specific Action]
 - **Then** [Expected Result]
 
-</details>
-
-<!-- 👇 [PO/BA] - Link to relevant Mural boards for visual context. -->
-
-### 🔗 Mural Links
-Story in Mural: [Insert link to the story or additional context here]
-
-
-<!-- 👇[PO/BA] - Complete these parameters to clarify the scope and specific needs of the story. -->
-
-## 🛠️ Parameters Definition
+## 
 <details>
-<summary>click to view parameter definitions </summary>
+<summary> 🌐  Accessibility Scenarios </summary>
 
-- **[Role]**: User role or persona targeted by this issue.
-- **[Feature/Action]**: Action or feature being requested.
-- **[Benefit/Outcome]**: Expected benefit or outcome from implementing the feature/action.
-- **[Authentication Method]**: Method used for user authentication.
-- **[Form Name]**: Specific form or section referenced.
-- **[Specific Action]**: Particular action taken by the user.
-- **[Expected Result]**: Desired outcome after action is taken.
-- **[Invalid Data]**: Examples of invalid data that might be entered.
-- **[X] seconds**: Exact time frame within which an action should complete or a page should load.
-- **[Specific Page]**: Specific page or section of the application.
-- **[Link Name]**: Text or identifier of a link or button.
+###  Keyboard Users
+Scenario: Comprehensive Keyboard Navigation
+Given I am a keyboard user on the website
+When I use the Tab key to navigate through the website
+Then all interactive elements should be accessible and highlighted
+And I should be able to activate these elements using the Enter or Space key
 
+Scenario: Full Content Accessibility via Keyboard
+Given I am a keyboard user navigating the website
+When I traverse through different pages and sections
+Then all content should be fully accessible using the keyboard alone
+And there should be no traps that prevent me from navigating away using the keyboard
+
+### Screen Reader Users
+Scenario: Accessible Image Descriptions
+Given I am using a screen reader on the website
+When I encounter images
+Then each image should have descriptive alt text that conveys the same message as the image
+
+Scenario: Structured Navigation for Screen Readers
+Given I am navigating the website using a screen reader
+When I move through different page elements
+Then the content should be structured with proper headings
+And the reading order should be logical and sequential
+
+Scenario: Descriptive Form Fields
+Given I am filling out a form using a screen reader
+When I navigate through the form fields
+Then each field should be clearly labeled with descriptive text
+And instructions should be directly associated with their respective inputs
+
+### Low Vision Users
+Scenario: Effective High Contrast Mode
+Given I am a user with low vision on the website
+When I enable high contrast mode
+Then all content should display with high color contrast suitable for low vision
+And the layout should remain coherent and unchanged
+
+Scenario: Text Resizing Accommodation
+Given I am a user with low vision on the website
+When I increase the text size
+Then the text should resize without loss of information or functionality
+And the page layout should adapt accordingly without disrupting the user experience
+
+Scenario: Personalized Styling Preferences
+Given I am a user with low vision adjusting settings on the website
+When I customize my styling preferences, including colors, fonts, and spacing
+Then these adjustments should be applied consistently across all pages
+And the changes should persist during my entire session or until altered by me
 </details>
-
 
 
 
 
 <!-- 👇 [PO/BA] - Review these scenarios with QA to ensure they match testing requirements. Do not alter until discussed. -->
 
-## 🌍 Global Scenarios
+ 
 <details>
-<summary>click to see global scenarios</summary>
+  ## 
+<summary>🌍 Global Scenarios </summary>
+## Data Validation 
+# Mikaela to confirm:  Do we need to do these for MVP - data validation required for inputing data in the right format - as defined by business rules. 
 
 
-### Saving, Cancelling, and Reverting
-#### Scenario 1: Cancellation and Reverting Changes
-- **Given** I have made changes to [Form Name] but decide not to save these changes
-- **When** I click a "cancel" button or navigate away from [Form Name]
-- **Then** any unsaved changes should be discarded, and [Form Name] should revert to its previous state.
 
-#### Scenario 2: Validation and Error Handling
-- **Given** I am updating [Form Name] from the newly opened section below the progress bar
-- **When** I enter invalid data (such as [Invalid Data]) and attempt to save
-- **Then** I should receive immediate feedback indicating the error, and the information should not be saved until corrected.
-
-#### Scenario 3: Confirmation of Successful Update
-- **Given** I have entered new or updated information in [Form Name]
-- **When** I click the save button and the data is valid
-- **Then** I should receive a confirmation message indicating [Form Name] has been successfully updated.
 
 ### Internet Connection
 
@@ -129,52 +152,7 @@ Story in Mural: [Insert link to the story or additional context here]
 
 
 
-<!--  👇[PO/BA] - Verify these scenarios to ensure the feature/story is accessible to all users. -->
-
-## 🌐  Accessibility Scenarios
-<details>
-<summary>click to view accessibility scenarios </summary>
 
 
-### Scenario: Navigating the Page Using Keyboard Only
-- **Given** I am a non-mouse user accessing [Specific Page]
-- **When** I use keyboard navigation (Tab, Shift + Tab, Enter, Arrow keys)
-- **Then** I should be able to fully interact with [Specific Page], including buttons, dropdowns, and modals.
 
-### Additional Accessibility Scenarios
-- **Using the "Skip to Main Content" link**
-- **Interacting with form fields using the keyboard**
-- **Navigating dropdown menus using arrow keys**
-- **Closing modals using the Escape key**
-- **Navigating paginated content using keyboard shortcuts**
 
-### Scenario: Ensuring Usability with Color-Blind Friendly Design
-- **Given** I am a user with color vision deficiency
-- **When** I view charts, graphs, status indicators, and use interactive elements like buttons or links
-- **Then** these elements should use patterns, shapes, and additional indicators beyond color to ensure usability and accessibility.
-
-</details>
-
-## 🎨 UX/UI Considerations
-<details>
-<summary>click to view UX/UI considerations </summary>
-
-<!-- 👇 [UX/UI] - Outline key design principles, user experience enhancements, or UI guidelines that should be considered for this story. -->
-
-### Layout and Aesthetics
-- **Design Principle**: Describe any specific design principles or themes that need to be incorporated.
-- **Visual Hierarchy**: Outline how information should be prioritized visually on the page.
-
-### Responsiveness and Adaptability
-- **Device Compatibility**: Ensure the design is responsive and adaptable across different devices and screen sizes.
-- **Orientation Adaptability**: Mention if the design should adapt to changes in device orientation.
-
-### User Flow and Interaction
-- **Navigation**: Describe the intended navigation path for users within this feature or page.
-- **User Actions**: Detail any specific user actions (e.g., clicks, swipes) and their expected outcomes.
-
-### Accessibility and Inclusivity
-- **Color Contrast**: Ensure sufficient color contrast for readability and accessibility.
-- **Interactive Elements**: Specify guidelines for button sizes, hit areas, and interactive element visibility.
-
-</details>
