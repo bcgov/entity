@@ -2,12 +2,10 @@
 name: Host Feature
 about: Host Feature Template
 title: "[FEATURE] - [ADD TITLE ] - [Brief Description]"
-labels: STRR
+labels: STORY, STR
 assignees: mbertucci
 
 ---
-
-
 
 ### 📖 User Story
 🔹 **As an [role],**  
@@ -119,40 +117,24 @@ And the changes should persist during my entire session or until altered by me
 
 ### Internet Connection
 
-#### Scenario 1: Standard Internet Connection
-- **Given** I am accessing the website from a standard internet connection
-- **When** I navigate to any page on the site
-- **Then** the page should load completely within 2 seconds, ensuring a fast and efficient user experience.
+#### Standard Internet Connection
+Given I am accessing the website from a standard internet connection
+When I navigate to any page on the site
+Then the page should load completely within 2 seconds, ensuring a fast and efficient user experience.
 
-#### Scenario 2: Optimizing Dashboard for Hosts with Low Internet Connectivity
-- **Given** a user accesses [Form Name] with a low-speed internet connection
-- **When** the user attempts to load and interact with the dashboard page
-- **Then** [Form Name] should prioritize critical content and functionality, loading essential elements first to ensure usability.
 
-### Security and Privacy
+#### Low-Speed Internet 
+Given a user accesses "Application Details View" with a low-speed internet connection defined as under [specific speed] Mbps
+When the user attempts to load and interact with the dashboard page
+Then the "Application Details View" should prioritize critical content and functionality, loading essential elements first to ensure usability.
 
-#### Scenario 1: Security and Privacy Settings
-- **Given** I am editing [Form Name]
-- **When** I access the form
-- **Then** I should have the option to update my privacy settings related to who can view [Form Name].
+#### Mobile Responsiveness 
 
-#### Scenario 2: Secure My Information
-- **Given** I am a user entering personal or login information into [Form Name]
-- **When** I submit this information through any form or login page
-- **Then** the platform should encrypt this data during transmission and storage, safeguarding it against unauthorized access.
+Given I am accessing "Application Details View" on a mobile device
+When I click on the "any" link
+Then "_____ " should display correctly and be easily editable on my device, ensuring a responsive design.
 
-### Mobile Responsiveness
 
-#### Scenario 1: Mobile Responsiveness
-- **Given** I am accessing [Form Name] on a mobile device
-- **When** I click on the "[Link Name]" link
-- **Then** [Form Name] should display correctly and be easily editable on my device, ensuring a responsive design.
+
 
 </details>
-
-
-
-
-
-
-
