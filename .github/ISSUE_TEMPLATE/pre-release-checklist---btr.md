@@ -7,7 +7,8 @@ assignees: ''
 
 ---
 
-- [ ] create zenhub release tag
+- [ ] create draft github release with auto generated notes
+- [ ] create zenhub release tag / add auto generated notes from draft github release
 - [ ] tag this ticket with the zenhub release
 - [ ] services to be deployed listed below: *list each service including any config changes or post deployment steps*
   - i.e. btr-api
@@ -19,17 +20,20 @@ assignees: ''
       - run ___ script/job
 - [ ] external dependencies listed below:
   - *fill this out* (i.e. None, legal-api, etc.)
+- [ ] OCM requirements listed below
+  - *fill this out* (i.e. None, ...)
 - [ ] deployment to test
-  - [ ] configs updated, services deployed, post deployment complete
   - [ ] external dependencies resolved
+  - [ ] configs updated, services deployed, post deployment complete
   - [ ] regression testing complete
 - [ ] deployment to sandbox *(remove if not applicable)*
-  - [ ] configs updated, services deployed, post deployment complete
   - [ ] external dependencies resolved
+  - [ ] configs updated, services deployed, post deployment complete
   - [ ] regression testing complete
   - [ ] mandatory wait time complete
 - [ ] deployment to prod
-  - [ ] configs updated, services deployed, post deployment complete
+  - [ ] OCM steps completed
   - [ ] external dependencies resolved
+  - [ ] configs updated, services deployed, post deployment complete
   - [ ] regression testing complete
 - [ ] publish github release containing auto generated notes
