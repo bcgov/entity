@@ -73,15 +73,18 @@ This field is intended to exclude a business from being selected as a candidate 
 Assumption:
 - Runs every day
 - Number of dissolutions that can be initiated per day will be retrieved from **configuration** table
+- Days of the week that dissolutions can be initiated will be retrieved from **configuration** table
 
 ### 1. Initiating dissolution process for new businesses where AR has not been filed for 2 yrs and 2 months
 Use **businesses.last_ar_date** and other relevant business rules to determine candidate businesses that can enter dissolution process.
 
-1. Retrieve first **NUM_DISSOLUTIONS_ALLOWED** number of businesses to initiate the involuntary dissolution process for
-2. Create a new entry in **batches** table which will be used to uniquely identify the set of businesses that will be dissolved potentially if involuntary dissolution criteria is still met after specific duration of time has passed
-3. Create **batch_processing** entries to represent each business being dissolved and associate it to the batch created in the previous step.
-4. List of businesses that have dissolution process started are saved somewhere as csv.
-5. List of businesses that have dissolution process started are sent via email to a Staff accessible email address.
+1. Retrieve cron string from **NEW_DISSOLUTIONS_SCHEDULE** in **configuration** table.  This cron string stores which days of the week new dissolutions can be initiated.
+2. If the current day of the week is not a valid day(use **NEW_DISSOLUTIONS_SCHEDULE** to determine this) to initiate dissolutions, skip steps(3-7) for creating a new batch businesses to dissolve.
+3. Retrieve first **NUM_DISSOLUTIONS_ALLOWED** number of businesses to initiate the involuntary dissolution process for
+4. Create a new entry in **batches** table which will be used to uniquely identify the set of businesses that will be dissolved potentially if involuntary dissolution criteria is still met after specific duration of time has passed
+5. Create **batch_processing** entries to represent each business being dissolved and associate it to the batch created in the previous step.
+6. List of businesses that have dissolution process started are saved somewhere as csv.
+7. List of businesses that have dissolution process started are sent via email to a Staff accessible email address.
 
 ### 2. Updating batch processing data for previously created in-progress batches
 1. Retrieve furnishing data for businesses that are currently in dissolution process.
