@@ -114,7 +114,8 @@ Assumption:
 1. Retrieve new active batch runs and create new furnishing batches and entries to schedule various notifications(email, physical mail and etc) as required in relevant furnishing tables.
 2. Check for cancelled **batch_processing** entries and update furnishing tables as required.  For example, all scheduled future notifications for the relevant businesses will need to be withdrawn.
 3. Action any scheduled notifications(email, phsyical mail and etc) that need to happen.
-4. Check for bounced emails if this is a business requirement.  Note that the notification api has an endpoint that can check if an email has bounced.
+4. Check for bounced emails if this is a business requirement.  Note that the notification api has an endpoint that can check if an email has bounced.  However, it has been turned off in GCP for now as GC notify has complained our service response from OCP is too slow, and it is impacting their service.
+
 
 Questions:
 * how does BCMail+ tie into all this
