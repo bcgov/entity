@@ -203,6 +203,11 @@ Only staff will be able to use this endpoint.
 Will need a staff only endpoint that will return a count for the businesses eligible for dissolution.
 
 
+### Allowable Actions
+
+Updates will need to be made to allowable actions code to block specific filings when a business is in the process of involuntary dissolution.
+
+
 ## Outstanding Questions
 
 * Do we need versioning for any of the new tables introduced?
