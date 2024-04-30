@@ -20,9 +20,8 @@ These jobs will operate independently, but there will likely be some dependencie
 
 The legal api will also be extended to provide the following functionality:
 * Addition of warnings to GET /business response
-    * Eligible for involuntary dissolution i.e. multiple ARs not filed and other relevant conditions
-    * Business is in process of being involuntarily dissolved - warning level 1 (can be used by FE to represent legacy D1)
-    * Business is in process of being involuntarily dissolved - warning level 2 (can be used by FE to represent legacy D2)
+  * Eligible for involuntary dissolution i.e. multiple ARs not filed and other relevant conditions
+  * Business is in process of being involuntarily dissolved
 * Configuration endpoint
 * Businesses eligible for dissolution count
 * Providing a way of excluding a business from dissolution process
@@ -138,13 +137,11 @@ If a business files an AR which results in it no longer meeting the critiera for
 
 ### Warnings
 
-The existing warnings list field returned by the GET /business endpoint can be used by the UIs to display the relevant involuntary dissolution warnings.
+The existing warnings list field returned by the GET /business endpoint can be used by the UIs to display the relevant alerts for involuntary dissolution warnings.
 
-Current UI designs still reference D1 and D2 which are sub-states that are no longer relevant to the BE in the modernized system.  However, we will still need to provide a way for the FE to be able to determine these states based on the warnings list being returned.
+Note that a new **data** property will be added to the warnings structure.  This will be used to provide additional information relevant to the involuntary dissolution process for a given business.
 
-This will be represented by using the **code** property for a given warning object.
-
-
+Business that is eligible for involuntary dissolution but does not have process initiated yet
 ```json
 {
     "business": {
@@ -155,22 +152,16 @@ This will be represented by using the **code** property for a given warning obje
         "warnings": [
             {
                 "code": "MULTIPLE_ANNUAL_REPORTS_NOT_FILED",
-                "message": "Multiple annual reports not filed.",
-                "warningType": "GOOD_STANDING"
-            },
-            {
-                "code": "INVOLUNTARY_DISSOLUTION_WARNING_LEVEL_1",
-                "message": "Involuntary dissolution process has been initiated.",
-                "warningType": "INVOLUNTARY_DISSOLUTION"
-            }            
+                "message": "Multiple annual reports not filed.  Eligible for involuntary dissolution.",
+                "warningType": "NOT_IN_GOOD_STANDING"
+            }          
         ],
         ...
     }
-}  
-  
+}
 ```
 
-
+Business that is in the process of involuntary dissolution
 ```json
 {
     "business": {
@@ -181,20 +172,24 @@ This will be represented by using the **code** property for a given warning obje
         "warnings": [
             {
                 "code": "MULTIPLE_ANNUAL_REPORTS_NOT_FILED",
-                "message": "Multiple annual reports not filed.",
-                "warningType": "GOOD_STANDING"
+                "message": "Multiple annual reports not filed.  Eligible for involuntary dissolution.",
+                "warningType": "NOT_IN_GOOD_STANDING"
             },
             {
-                "code": "INVOLUNTARY_DISSOLUTION_WARNING_LEVEL_2",
-                "message": "Involuntary dissolution process step 2.",
-                "warningType": "INVOLUNTARY_DISSOLUTION"
+                "code": "DISSOLUTION_IN_PROGRESS",
+                "message": "Business is in the process of involuntary dissolution.",
+                "warningType": "INVOLUNTARY_DISSOLUTION",
+                "data": {
+                  "warningsSent": 2,
+                  "dissolutionTargetDate": "2025-02-25"
+                }
             }            
         ],
         ...
     }
-}  
-  
+}
 ```
+
 
 ### Configuration
 
