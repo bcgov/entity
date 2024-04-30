@@ -217,6 +217,5 @@ Updates will need to be made to allowable actions code to block specific filings
 
 ## Outstanding Questions
 
-* Do we need versioning for any of the new tables introduced?
 * For the new **businesses.no_dissolution** field, besides excluding from the involuntary dissolutions job, should it be blocking admin dissolution filing and other filings that result in dissolution like limited restoration?
 * Details around where the csv file is saved for businesses that have just had dissolution process initiated.
