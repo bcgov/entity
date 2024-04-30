@@ -69,12 +69,22 @@ This field is intended to exclude a business from being selected as a candidate 
 
 ## Involuntary Dissolutions Job
 
-Assumption:
+Assumptions:
 - Runs every day
+- Maximum number of dissolutions that can be initiated per day will be retrieved from **configuration** table
 - Number of dissolutions that can be initiated per day will be retrieved from **configuration** table
 - Days of the week that dissolutions can be initiated will be retrieved from **configuration** table
+- Dissolution on-hold flag will be retrieved from **configuration** table
 
-### 1. Initiating dissolution process for new businesses where AR has not been filed for 2 yrs and 2 months
+### 1. Dissolutions on-hold check
+1. Retrieve **DISSOLUTIONS_ON_HOLD** flag in **configuration** table.
+2. If flag is true, update all in-progress **status** columns in **batches** and **batch_processing** to **HOLD**.
+3. Exit the job as no new businesses should enter the dissolution process and businesses already in the dissolution processes should also halt all processing.
+
+Notes:
+* In the case where it is required to only halt new eligible businesses from entering the involuntary dissolution process, the **NUM_DISSOLUTIONS_ALLOWED** configuration can be set to zero.  Businesses that were already in the process of being dissolved before **NUM_DISSOLUTIONS_ALLOWED** was set to zero would continue the dissolution process.
+
+### 2. Initiating dissolution process for new businesses where AR has not been filed for 2 yrs and 2 months
 Use **businesses.last_ar_date** and other relevant business rules to determine candidate businesses that can enter dissolution process.
 
 1. Retrieve cron string from **NEW_DISSOLUTIONS_SCHEDULE** in **configuration** table.  This cron string stores which days of the week new dissolutions can be initiated.
@@ -85,23 +95,20 @@ Use **businesses.last_ar_date** and other relevant business rules to determine c
 6. List of businesses that have dissolution process started are saved somewhere as csv.
 7. List of businesses that have dissolution process started are sent via email to a Staff accessible email address.
 
-### 2. Updating batch processing data for previously created in-progress batches
+### 3. Updating batch processing data for previously created in-progress batches
 1. Retrieve furnishing data for businesses that are currently in dissolution process.
 2. Update **batch_processing** entry data(**status**, **step**) as appropriate depending on time that has passed since dissolution process started, whether the appropriate furnishings have been sent and any other relevant conditions that need to be considered.
 
-### 3. Processing actual dissolution of businesses
+### 4. Processing actual dissolution of businesses
 Assumption that following criteria has been met:
 * business is associated with one of the active dissolution batches.
 * business has received all furnishing messages
-* business still hasn’t fired the minimum ARs req’d to avoid dissolution process
+* business still hasn’t filed the minimum ARs req’d to avoid dissolution process
 
 Retrieve all businesses tied to in process batches that can be dissolved and do the following for each business
 1. Dissolve business via an involuntary dissolution filing
 2. Update status for corresponding **batch_processing** entry.
 3. If all entries for corresponding batch have been processed, mark the batch as completed.  Note: furnishings job will take care of any final notifications that need to happen.
-
-Additional notes:
-* In the case where it is required to halt all new eligible businesses from entering the involuntary dissolution process, the **NUM_DISSOLUTIONS_ALLOWED** configuration will need to be set to zero.  Businesses that were already in the process of being dissolved before **NUM_DISSOLUTIONS_ALLOWED** was set to zero would continue the dissolution process.
 
 
 ## Furnishings Job
