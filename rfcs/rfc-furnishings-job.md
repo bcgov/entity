@@ -83,7 +83,7 @@ Assumptions:
 2. If the current day of the week is not a valid day(use `DISSOLUTIONS_STAGE_3_SCHEDULE` to determine this), skip remaining steps in stage 2.
 3. Find existing batches that are in stage 3 of dissolution.
 4. For matching batches that do not have any stage 3(`furnishings.name` = "CORP_DISSOLVED") furnishing entries yet, do the following for each batch:
-    1. Create intent to dissolve furnishing entries
+    1. Create business dissolved furnishing entries
     2. Create required xml to send to gazette.
     3. Send xml to gazette.  For more details, refer to gazette section of this document.
 
