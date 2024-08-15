@@ -35,15 +35,15 @@ Follow Microsoft's instructions.
 #### Python
 
 - `curl https://pyenv.run | bash`, then follow the instructions to add it to your load path.
-- `pyenv install 3.8.5`
-- `pyenv global 3.8.5` to set it as the default version.
+- `pyenv install 3.8.17`
+- `pyenv global 3.8.17` to set it as the default version.
 - `sudo apt install python3-pip`
 - `pip install --upgrade pip`
-- `sudo apt install python3.8-venv`
+- `sudo apt install python3.11-venv`
 
 #### Node.js for npm
 
-- `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash`
+- `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash`
 - `nvm install node`
 
 #### Git
