@@ -3,7 +3,7 @@ name: 'Analytics Request '
 about: Request for analytics in Modernization or Legacy
 title: 'Analytics Request - '
 labels: 'analytics :chart:'
-assignees: gprimeau
+assignees: ''
 
 ---
 
