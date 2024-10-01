@@ -1,5 +1,5 @@
 ---
-name: STRR Spike
+name: STRR - Spike
 about: A template for Spikes on the Short Term Rental Registry team
 title: 'SPIKE - '
 labels: ''
