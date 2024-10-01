@@ -134,6 +134,63 @@ Given I am accessing "Application Details View" on a mobile device
 When I click on the "any" link
 Then "_____ " should display correctly and be easily editable on my device, ensuring a responsive design.
 
+</details>
+
+
+<details>
+
+<summary>🔎 Definition of Done (DoD) Checklist for QA-Testing: </summary>
+
+### 1. Unit Testing (API):
+- [ ] All new and modified code has corresponding unit tests.
+- [ ] Unit tests cover all critical paths and edge cases.
+- [ ] Unit tests pass with 100% success.
+- [ ] Code coverage for unit tests meets the team's threshold (e.g., 80%+).
+
+### 2. UI Testing (Unit Level):
+- [ ] UI components are tested in isolation.
+- [ ] All UI unit tests pass.
+- [ ] Code coverage for unit tests meets the team's threshold (e.g., 80%+).
+
+### 3. API Testing (End Point Level):
+- [ ] API endpoints are tested with both positive and negative scenarios.
+- [ ] Validation of API responses against expected schema.
+- [ ] All API unit tests pass.
+
+### 4. Functional Testing:
+- [ ] User story functionality is validated against acceptance criteria.
+- [ ] Functional tests cover both expected and edge case scenarios.
+- [ ] Functional testing has been completed on all supported platforms (e.g., browsers, devices).
+
+### 5. Business Process Testing:
+- [ ] End-to-end business workflows are tested.
+- [ ] All business rules are validated within the context of the user story.
+- [ ] Testing scenarios reflect real-world use cases.
+
+### 6. Test Automation:
+- [ ] Automated tests have been written for all repetitive or regression-prone scenarios.
+- [ ] Automation scripts are integrated into the CI/CD pipeline.
+- [ ] Automated tests pass without issues.
+
+### 7. Bug Fix Verification:
+- [ ] All reported bugs related to the user story are resolved and retested.
+- [ ] No high or critical severity bugs are left unresolved.
+
+### 8. Performance and Security Testing:
+- [ ] Performance impact of the user story is assessed (if applicable).
+- [ ] Security vulnerabilities are checked and mitigated (e.g., SQL injection, XSS).
+
+### 9. Code Review and Approval:
+- [ ] Code has passed peer review, focusing on quality and test coverage.
+- [ ] All identified issues during the review are addressed.
+
+### 10. Documentation:
+- [ ] Test cases and scenarios are documented and updated.
+- [ ] Test results are logged and stored in the test management tool.
+
+### 11. Sign-off:
+- [ ] QA sign-off obtained for the user story (Moved to Done Column).
+- [ ] Product owner or stakeholder sign-off obtained for feature completion (Moved to Closed Column)
 
 
 
