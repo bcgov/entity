@@ -10,6 +10,11 @@ assignees: ''
 
 Starting with the following content borrowed from the Entities team:
 
+For the first release we will also want to do the following:
+- Fee code present in pay prod - check with PAY team
+- DB-migration done for dev, test,prod- check with tean API lead
+- QA spends a week testing in prod
+- Ensure dev is relatively stable at code freeze, no more breaking changes going into dev after code freeze
 
 Prior to moving into production, the following steps should be completed or confirmed:
 - [ ] Add release # to this ticket
