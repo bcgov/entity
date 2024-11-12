@@ -34,12 +34,12 @@ Prior to moving into production, the following steps should be completed or conf
 - [ ] QA to schedule the release with staff/clients (daytime's best or when staff are available for rollback)
 - [ ] All dev/test pipeline test suites green
 - [ ] Dev/QA chat to plan prod verification testing (unless already automated)
-- [ ] Post message that projects are being deployed to Prod in [#registries-entities](https://chat.developer.gov.bc.ca/channel/registries-entities)
+- [ ] Post message that projects are being deployed to Prod
 - [ ] Release the code to production and complete smoke test (STEPS BELOW)
-- [ ] Post message that projects have been deployed to Prod in [#registries-entities](https://chat.developer.gov.bc.ca/channel/registries-entities) and [#entities-ops](https://chat.developer.gov.bc.ca/channel/registries-ops)
+- [ ] Post message that projects have been deployed to Prod
 - [ ] Finalise/publish the release in GitHub, tagging it
 - [ ] Merge release branch back to master (if applicable)
-- [ ] Change openshift builds/pipelines back to master (if applicable)
+- [ ] Change any builds/pipelines back to master (if applicable)
 
 ### Deployment Steps
 
