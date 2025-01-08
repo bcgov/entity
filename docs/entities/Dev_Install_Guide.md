@@ -93,7 +93,7 @@ For Backend installation general information: https://community.inkdrop.app/note
   - enter `pyenv global 3.8.17`
   - enter `sudo apt install python3-pip`
   - enter `pip install --upgrade pip`
-  - enter `sudo apt install python3.17-venv`
+  - enter `sudo apt install python3.8-venv`
 
 #### 9. install Node Version Manager + Node.js (latest version) (optional?)
   - enter `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
