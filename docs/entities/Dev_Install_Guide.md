@@ -83,17 +83,17 @@ For Backend installation general information: https://community.inkdrop.app/note
 
 #### 7. install compiler for Python, etc for BE work
   - enter `sudo apt install build-essential`
-  - enter `sudo apt install libbz2-dev libffi-dev libreadline-dev libsqlite3-dev libssl-dev zlib1g-dev`
+  - enter `sudo apt install libbz2-dev libffi-dev libreadline-dev libsqlite3-dev libssl-dev zlib1g-dev liblzma-dev tk-dev`
 
 #### 8. install Python + pip for BE work
   - enter `curl https://pyenv.run | bash`
   - follow instructions to update .bashrc
   - enter `source .bashrc`
-  - enter `pyenv install 3.8.5`
-  - enter `pyenv global 3.8.5`
+  - enter `pyenv install 3.8.17`
+  - enter `pyenv global 3.8.17`
   - enter `sudo apt install python3-pip`
   - enter `pip install --upgrade pip`
-  - enter `sudo apt install python3.8-venv`
+  - enter `sudo apt install python3.17-venv`
 
 #### 9. install Node Version Manager + Node.js (latest version) (optional?)
   - enter `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
