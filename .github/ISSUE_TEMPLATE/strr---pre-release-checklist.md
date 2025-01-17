@@ -24,7 +24,8 @@ Prior to moving into production, the following steps should be completed or conf
   - STRR PAY vX.X.X
   - STRR PLATFORM UI vX.X.X
   - STRR STRATA UI vX.X.X
-  - STRR UI vX.X.X
+  - STRR Examiner vX.X.X
+  - STRR Host PM vX.X.X
 - [ ] Ensure deployment steps are filled in - remove/replace placeholders
 - [ ] Create a draft release in GitHub and confirm the correct commits are present
  1. - [ ] Confirm the correct commits are present
@@ -49,7 +50,8 @@ Prior to moving into production, the following steps should be completed or conf
 - [ ] STRR PAY - vX.X.X done by CD script
 - [ ] STRR PLATFORM UI - vX.X.X done by CD script
 - [ ] STRR STRATA UI- vX.X.X done by CD script
-- [ ] STRR UI - vX.X.X done by CD script
+- [ ] STRR Examiner - vX.X.X done by CD script
+- [ ] STRR Host PM - vX.X.X done by CD script
 .
 - [ ] config map changes
   - list here
@@ -66,7 +68,8 @@ Prior to moving into production, the following steps should be completed or conf
 - [ ] STRR PAY - vX.X.X done by XX on Nov X
 - [ ] STRR PLATFORM UI - vX.X.X done by XX on Nov X
 - [ ] STRR STRATA UI - vX.X.X done by XX on Nov X
-- [ ] STRR UI - vX.X.X done by XX on Nov X
+- [ ] STRR Examiner - vX.X.X done by XX on Nov X
+- [ ] STRR Host PM - vX.X.X done by XX on Nov X
 .
 - [ ] config map changes
   - list here
@@ -83,7 +86,8 @@ Prior to moving into production, the following steps should be completed or conf
 - [ ] STRR PAY - vX.X.X done by XX on Nov X
 - [ ] STRR PLATFORM UI - vX.X.X done by XX on Nov X
 - [ ] STRR STRATA UI - vX.X.X done by XX on Nov X
-- [ ] STRR UI - vX.X.X done by XX on Nov X
+- [ ] STRR Examiner - vX.X.X done by XX on Nov X
+- [ ] STRR Host PM - vX.X.X done by XX on Nov X
 .
 - [ ] config map changes
   - list here
