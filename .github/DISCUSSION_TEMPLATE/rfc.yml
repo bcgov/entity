@@ -1,0 +1,110 @@
+# This is based on Vue's great RFC template https://github.com/vuejs/rfcs/blob/master/0000-template.md
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out this Request For Comment - feature request!
+
+        Fill out the following sections in as much detail as you can, then encourage others to join in.
+
+  - type: dropdown
+    id: Product
+    attributes:
+      label: Select Release Product
+      options:
+        - Business Registry
+        - Personal Property
+        - Manufactured Homes
+        - Business Search
+        - Director Search
+        - Names Request or Examination
+  - type: textarea
+    attributes:
+      label: Summary
+      description: Brief explanation of the issue or problem to solve.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Basic Example
+      description: If the proposal involves anything new or changed, include a basic example.
+
+  - type: textarea
+    attributes:
+      label: Motivation
+      description: |
+        Why are we doing this? What use cases does it support? What is the expected outcome?
+
+        Please focus on explaining the motivation so that if this RFC is not accepted, the motivation could be used to develop alternative solutions. In other words, enumerate the constraints you are trying to solve without coupling them too closely to the solution you have in mind.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Detailed Design
+      description: |
+        This is the bulk of the RFC. Explain the design in enough detail for somebody familiar with the BC Registry applications to understand, and for somebody familiar with the implementation to implement. This should get into specifics and corner-cases, and include examples of how the feature is used. Any new terminology should be defined here.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Requirements List
+      value: |
+        ### Must Have:
+        - A
+        - B
+
+        ### Should Have:
+        - C
+
+        ### Could Have:
+        - D
+
+        ### Won't Have:
+        - E
+      description: |
+        What is required to make this feature a success?
+        Please use [the MoSCoW method](https://en.wikipedia.org/wiki/MoSCoW_method) to describe the requirements.
+        You can use [gherkin](https://cucumber.io/docs/gherkin/reference/) to desribe the acceptance criteria.
+        
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Drawbacks
+      description: |
+        Why should we **not** do this? Please consider:
+          - implementation cost, both in term of code size and complexity
+          - whether the proposed feature can be implemented in user space
+          - the impact on teaching people
+          - integration of this feature with other existing and planned features
+          - cost of migrating existing applications (is it a breaking change?)
+
+          There are tradeoffs to choosing any path. Attempt to identify them here.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Alternatives
+      description: |
+        What other designs have been considered? What is the impact of not doing this?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Adoption Strategy
+      description: |
+        If we implement this proposal, how will existing developers adopt it? Is this a breaking change? Can we write a migration? How will this affect other projects in the BC Registry or SBC-Connect ecosystem?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Unresolved Questions
+      description: |
+        What parts of this request are still unknown?
