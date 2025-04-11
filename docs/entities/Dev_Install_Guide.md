@@ -32,10 +32,8 @@ BASIC WINDOWS INSTALL
   - configure Outlook
 #### 13. install Firefox (optional)
 #### 14. install BC Sans fonts (Google for zip file, install the TTFs)
-#### 15. install Zoom (from Microsoft Store)
-#### 16. install Spotify (from Microsoft Store)
-#### 17. install Teams (from Microsoft Store)
-#### 18. install vim or nvim (and know how to exit vim) 
+#### 15. install Teams (from Microsoft Store)
+#### 16. install vim or nvim (and know how to exit vim) 
 
 QUICK DEV ENVIRONMENT SETUP FOR FRONTEND DEVELOPMENT
 ----------------------------------------------------
