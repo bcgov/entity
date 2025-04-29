@@ -24,7 +24,7 @@ git clone https://github.com/$user/$repo.git
 cd $working_dir/$repo 
 git remote add upstream https://github.com/bcgov/$repo.git
  
-# Never push to upstream master
+# Never push to upstream main
 git remote set-url --push upstream no_push
 
 # Confirm that your remotes make sense:
@@ -33,13 +33,13 @@ git remote -v
 
 ### 3 Branch
 
-Get your local master up to date:
+Get your local main up to date:
 
 ```sh
 cd $working_dir/$repo 
 git fetch upstream
-git checkout master
-git rebase upstream/master
+git checkout main
+git rebase upstream/main
 ```
 
 Branch from it:
@@ -55,7 +55,7 @@ Make sure to add tests for your feature and that they all pass.
 ```sh
 # While on your myfeature branch
 git fetch upstream
-git rebase upstream/master
+git rebase upstream/main
 ```
 
 Please don't use `git pull` instead of the above `fetch` / `rebase`. `git pull`
@@ -122,7 +122,7 @@ which will let you tell git what to do with every commit:
 
 ```sh
 git fetch upstream
-git rebase -i upstream/master
+git rebase -i upstream/main
 ```
 
 For mass automated fixups (e.g. automated doc formatting), use one or more
