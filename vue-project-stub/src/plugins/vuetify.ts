@@ -1,7 +1,21 @@
-import Vue from 'vue'
-import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
+// Vuetify configuration for Vue 3
+import { createVuetify } from 'vuetify'
+import 'vuetify/styles'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
 
-Vue.use(Vuetify, {
-  iconfont: 'md'
+// Create the Vuetify instance
+export default createVuetify({
+  components,
+  directives,
+  icons: {
+    defaultSet: 'mdi'
+  },
+  theme: {
+    defaultTheme: 'light'
+  }
 })
+
+// Usage in main.ts:
+// import vuetify from './plugins/vuetify'
+// app.use(vuetify)

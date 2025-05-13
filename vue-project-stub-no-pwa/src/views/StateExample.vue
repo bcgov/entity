@@ -20,40 +20,41 @@
 </template>
 <script lang="ts">
 // Libraries
-import { Component, Mixins } from 'vue-property-decorator'
-import { Action, State } from 'vuex-class'
+import { defineComponent, onMounted } from 'vue'
+import { useStore } from 'vuex'
 
 // Components
 import { ResourceExample } from '@/components/common'
 
-// Mixins
-import { ResourceLookupMixin } from '@/mixins'
-
 // Resources
 import { ExternalResource } from '@/resources'
 
-// Interfaces
-import { StateModelIF, ActionBindingIF } from '@/interfaces'
+// Composables
+import { useResourceLookup } from '@/composables'
 
-@Component({
+export default defineComponent({
+  name: 'StateExample',
   components: {
     ResourceExample
+  },
+  setup() {
+    // Use store and mixins as composables
+    const store = useStore()
+    const { getName, getMessage } = useResourceLookup()
+
+    onMounted(() => {
+      // Example of setting the State of a string
+      store.dispatch('setName', 'Testing My Actions and Mutations: Congratulations... it worked!')
+
+      // Example of setting the State of a Resource
+      store.dispatch('setResource', ExternalResource)
+    })
+
+    return {
+      stateModel: store.state.stateModel,
+      getName,
+      getMessage
+    }
   }
 })
-export default class StateExample extends Mixins(ResourceLookupMixin) {
-  // Initialize State
-  @State stateModel!: StateModelIF
-
-  // Initialize Actions
-  @Action setName!: ActionBindingIF
-  @Action setResource!: ActionBindingIF
-
-  created () {
-    // Example of setting the State of a string
-    this.setName('Testing My Actions and Mutations: Congratulations... it worked!')
-
-    // Example of setting the State of a Resource
-    this.setResource(ExternalResource)
-  }
-}
 </script>

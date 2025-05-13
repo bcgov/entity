@@ -1,6 +1,5 @@
 // Libraries
-import Vue from 'vue'
-import Vuex, { Store } from 'vuex'
+import { createStore, Store } from 'vuex'
 
 // State
 import { stateModel, resourceModel } from './state'
@@ -11,9 +10,11 @@ import { setName, setResource } from './actions'
 // Mutations
 import { mutateName, mutateResource } from '@/store/mutations'
 
-Vue.use(Vuex)
+// Interfaces
+import { RootState } from '@/interfaces'
 
-export const store: Store<any> = new Vuex.Store<any>({
+// Create the store with proper typing
+export const store = createStore<RootState>({
   state: {
     stateModel,
     resourceModel
