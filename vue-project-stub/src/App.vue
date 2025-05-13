@@ -5,15 +5,16 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue'
 import StdHeader from '@/components/StdHeader.vue'
 
-export default {
-  name: 'home',
+export default defineComponent({
+  name: 'App',
   components: {
     StdHeader
   }
-}
+})
 </script>
 
 <style lang="stylus">

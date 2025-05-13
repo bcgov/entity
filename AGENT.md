@@ -1,3 +1,5 @@
+[Generated with Amp](http://ampcode.com/)
+
 # Agent Guidelines for BCGov Entity Repository
 
 ## Commands
@@ -23,5 +25,7 @@
 Follow Vue/TypeScript/ESLint standards and maintain consistency with surrounding code.
 
 ## Vue 3 Migration
-- When I start a threat with "log it", log all the changes to the /migration/log.md file to keep track of what you did.
-- When you complete a step in the migration, update the guide.md by checking the box.
+- Log all the changes to the /vue3-migration/log.md file to keep track of what you did.
+- Log all errors to the /vue3-migration/error-log.md file to keep what went wrong.
+- When you complete a step in the migration, update the /vue3-migration/guide.md by checking the box. Make sure to do after you've completed the step.
+- Do not use --legacy-peer-deps.
