@@ -1,26 +1,20 @@
-// NOTE: Vuetify is not installed yet. This is a placeholder for future implementation.
-
-// For actual implementation, install Vuetify first:
-// npm install vuetify
-
-/*
+// Vuetify configuration for Vue 3
 import { createVuetify } from 'vuetify'
 import 'vuetify/styles'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-import { md3 } from 'vuetify/blueprints'
 
+// Create the Vuetify instance
 export default createVuetify({
-  blueprint: md3,
   components,
   directives,
   icons: {
     defaultSet: 'mdi'
+  },
+  theme: {
+    defaultTheme: 'light'
   }
 })
-*/
-
-export default {}
 
 // Usage in main.ts:
 // import vuetify from './plugins/vuetify'

@@ -7,17 +7,17 @@
 
 <script lang="ts">
 // Libraries
-import { Component, Vue } from 'vue-property-decorator'
+import { defineComponent } from 'vue'
 
 // Components
 import { HelloWorld } from '@/components/Home'
 
-@Component({
+export default defineComponent({
+  name: 'HomeView',
   components: {
     HelloWorld
   }
 })
-export default class Home extends Vue {}
 </script>
 <style lang="scss">
   .home {

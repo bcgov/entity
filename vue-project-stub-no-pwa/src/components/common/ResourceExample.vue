@@ -6,16 +6,21 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import { defineComponent, PropType } from 'vue'
 
-@Component
-export default class ResourceExample extends Vue {
-  @Prop({ default: '' })
-  private name!: string
-
-  @Prop({ default: '' })
-  private message!: string
-}
+export default defineComponent({
+  name: 'ResourceExample',
+  props: {
+    name: {
+      type: String as PropType<string>,
+      default: ''
+    },
+    message: {
+      type: String as PropType<string>,
+      default: ''
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

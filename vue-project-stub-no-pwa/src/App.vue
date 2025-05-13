@@ -11,17 +11,17 @@
 
 <script lang="ts">
 // Libraries
-import { Component, Vue } from 'vue-property-decorator'
+import { defineComponent } from 'vue'
 
 // Components
 import { Header } from '@/components/common'
 
-@Component({
+export default defineComponent({
+  name: 'App',
   components: {
     Header
   }
 })
-export default class App extends Vue {}
 </script>
 
 <style lang="scss">

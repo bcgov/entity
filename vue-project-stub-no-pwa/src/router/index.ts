@@ -1,16 +1,13 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import { routes } from './routes'
 
-Vue.use(VueRouter)
-
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes,
   scrollBehavior (to, from, savedPosition) {
     // see https://router.vuejs.org/guide/advanced/scroll-behavior.html
-    return { x: 0, y: 0 }
+    // Vue Router 4 requires an object with 'left' and 'top' properties (not x,y)
+    return { left: 0, top: 0 }
   }
 })
 

@@ -1,6 +1,5 @@
 // Libraries
-import Vue from 'vue'
-import Vuetify from 'vuetify'
+import { createVuetify } from 'vuetify'
 import { store } from '@/store'
 import { shallowMount } from '@vue/test-utils'
 
@@ -8,8 +7,8 @@ import { shallowMount } from '@vue/test-utils'
 import StateExample from '@/views/StateExample.vue'
 import { ResourceExample } from '@/components/common'
 
-Vue.use(Vuetify)
-let vuetify = new Vuetify({})
+// Create a Vuetify instance for Vue 3
+const vuetify = createVuetify()
 
 describe('HelloWorld.vue', () => {
   let wrapper: any
@@ -17,11 +16,16 @@ describe('HelloWorld.vue', () => {
   beforeEach(() => {
     // create wrapper for Dashboard
     // this stubs out the sub-component
-    wrapper = shallowMount(StateExample, { store, vuetify })
+    wrapper = shallowMount(StateExample, { 
+      global: {
+        plugins: [store, vuetify] // Use global for plugins in Vue 3
+      }
+    })
   })
 
   afterEach(() => {
-    wrapper.destroy()
+    // In Vue Test Utils 2.x, destroy() is replaced with unmount()
+    wrapper.unmount()
   })
 
   it('renders the sub-components properly', () => {

@@ -2,7 +2,7 @@ import 'core-js/stable' // to polyfill ECMAScript features
 import 'regenerator-runtime/runtime' // to use transpiled generator functions
 
 // Vue Libraries
-import Vue from 'vue'
+import { createApp } from 'vue'
 import vuetify from '@/plugins/vuetify'
 import router from '@/router'
 import { store } from '@/store'
@@ -18,10 +18,6 @@ import App from './App.vue'
 
 // Helpers
 import { fetchConfig, haveKcTokens } from '@/utils'
-import TokenServices from 'sbc-common-components/src/services/token.services'
-
-// get rid of "You are running Vue in development mode" console message
-Vue.config.productionTip = false
 
 // ********************** THIS IS FOR TESTING & DEVELOPMENT ONLY ***************************************
 // The following information allows the front to bypass authentication when developing locally
@@ -51,19 +47,16 @@ fetchConfig()
       return // do not execute remaining code
     }
 
-    // start token service to refresh KC token periodically
-    console.info('Starting token refresh service...')
-    const tokenServices = new TokenServices()
-    tokenServices.initUsingUrl(sessionStorage.getItem('KEYCLOAK_CONFIG_URL') || '')
-      .then(() => tokenServices.scheduleRefreshTimer())
-      .catch((err: string) => console.error(err))
-
-    new Vue({
-      vuetify,
-      router,
-      store,
-      render: h => h(App)
-    }).$mount('#app')
+    // Create Vue 3 app
+    const app = createApp(App)
+    
+    // Use plugins
+    app.use(vuetify)
+    app.use(router)
+    app.use(store)
+    
+    // Mount the app
+    app.mount('#app')
   })
   .catch((error: string) => {
     console.error('error fetching config -', error)

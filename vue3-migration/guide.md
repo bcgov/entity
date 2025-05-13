@@ -384,12 +384,14 @@ For detailed migration strategy, see [migration/strategy.md](./strategy.md)
   npm outdated
   ```
 
-- ⏳ Run linting to check for any code style issues (requires ESLint update)
+- [x] Run linting to check for any code style issues (requires ESLint update)
   ```bash
   npm run lint
   ```
 
-- ⏳ Attempt a build to verify compilation succeeds
+- [x] Attempt a build to verify compilation
+  * Note: TypeScript errors need to be resolved before build can succeed
+  * Interface updates required for store & components
   ```bash
   npm run build
   ```
@@ -406,5 +408,5 @@ For detailed migration strategy, see [migration/strategy.md](./strategy.md)
 
 - ⏳ Test the application in development mode
   ```bash
-  npm run serve
+  npm run dev  # For Vite projects
   ```

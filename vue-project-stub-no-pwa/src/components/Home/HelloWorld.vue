@@ -36,12 +36,17 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import { defineComponent, PropType } from 'vue'
 
-@Component
-export default class HelloWorld extends Vue {
- @Prop() private msg!: string
-}
+export default defineComponent({
+  name: 'HelloWorld',
+  props: {
+    msg: {
+      type: String as PropType<string>,
+      required: true
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

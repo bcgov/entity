@@ -4,10 +4,18 @@
     <h2>Testing Mixins: {{ sendMsg('My First Message')}}</h2>
   </div>
 </template>
-<script>
-import { Component, Mixins } from 'vue-property-decorator'
-import { CommonMixin } from '@/mixins'
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { useCommon } from '@/composables'
 
-@Component
-export default class MixinExample extends Mixins(CommonMixin) {}
+export default defineComponent({
+  name: 'MixinExample',
+  setup() {
+    const { sendMsg } = useCommon()
+    
+    return {
+      sendMsg
+    }
+  }
+})
 </script>
