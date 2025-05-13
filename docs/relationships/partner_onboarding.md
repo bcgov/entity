@@ -40,7 +40,7 @@ A new keycloak client specific to the partner will be issued by BC Registries te
     }
 
 # 3. API Integration
-All the endpoints are secured by keycloak and partner system must send the access_token as a Bearer Authorization header to all API requests. API Key for the gateway would be provided by BC Registries team which needs to be passed as a request header to Auth and Pay API calls.
+All the endpoints are secured by keycloak and partner system must send the access_token as a Bearer Authorization header to all API requests. API Key (x-apikey header) for the gateway would be provided by BC Registries team which needs to be passed as a request header to Auth and Pay API calls.
 ## Environments
 |API|TEST|PROD|
 |---|---|---|
