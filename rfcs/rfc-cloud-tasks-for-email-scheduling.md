@@ -28,7 +28,7 @@ All other email types (initial notifications, consent letters, resends) continue
 7. At 2:07 pm, Cloud Tasks POSTs the "Conditional" CE to `/tasks/handle-send`.  
 8. The `handle-send` handler builds and sends the conditional email; the client receives only that one email.
 
-Note: The `{random-6-digits}` in the task name is a short hex UUID to guarantee uniqueness. Cloud Tasks does not allow reusing a task name for at least one hour after the original task is completed or deleted. This suffix avoids name collisions during rapid task rescheduling.
+Note: The `{random-6-digits}` in the task name is a short hex UUID to ensure uniqueness. Cloud Tasks does not allow a task name to be reused for at least one hour after completion or deletion. This suffix prevents name collisions during rapid rescheduling - `NR_123_APPROVED_4hd231` and `NR_123_APPROVED_h3d987` won’t conflict, even if the same option is scheduled multiple times for the same NR.
 
 # Motivation
 
