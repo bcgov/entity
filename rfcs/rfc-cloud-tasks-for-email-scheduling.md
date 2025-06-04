@@ -16,7 +16,7 @@ All other email types (initial notifications, consent letters, resends) continue
 # Basic Example
 
 1. Name Examiner approves `NR 1234567` at 2:00 pm.  
-2. Namex API publishes an "Approved" CE to Emailer Topic, and Emailer Worker picks it up.  
+2. Namex API publishes an "Approved" CE (Cloud Event) to Emailer Topic, and Emailer Worker picks it up.  
 3. Worker sees the `APPROVED` option, deletes any existing task for that NR number, and creates a new Cloud Task:
    - **Name**: `NR_1234567-APPROVED-{random-6-digits}`  
    - **Schedule time**: 2:00 pm + 5 min = 2:05 pm  
@@ -81,7 +81,7 @@ To stop clients from getting spammed with emails when examiners make mistakes an
   - Configurable debounce interval via environment variable.  
 
 - **Won’t Have:**  
-  - Debounce for non-decision or resend CEs—they send immediately.  
+  - Debounce for non-decision or resend Cloud Events - they send immediately.  
   - Multi-region or fallback queue support (single queue only).  
   - Custom retry logic beyond Cloud Tasks’ built-in policy.  
   - Tracking or listing of failed sends.  
@@ -108,7 +108,7 @@ To stop clients from getting spammed with emails when examiners make mistakes an
 # Alternatives
 
 1. Use a database table + periodic sweep job
-   - When an Approved, Conditional, or Rejected CE arrives, write (or overwrite) a row in a new email_debounce table keyed by NR number and event type.
+   - When an Approved, Conditional, or Rejected CE (Cloud Event) arrives, write (or overwrite) a row in a new email_debounce table keyed by NR number and event type.
    - A scheduled job runs every 5 minutes. It queries the table for any NR whose latest CE is at least 5 minutes old, sends the corresponding email, and deletes that row.
 2. Chain into a second Pub/Sub topic
    - When a decision CE arrives, the emailer republishes it to a "debounce" Pub/Sub topic (overwriting any existing message for that NR).
