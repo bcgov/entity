@@ -153,7 +153,7 @@ To stop clients from getting spammed with emails when examiners make mistakes an
    - Cloud Scheduler is already used in other BCGov services, so this approach wouldn’t introduce a new technology.
 
    **Cons**
-   - Requires managing job names and deletion logic to prevent conflicts and delete the c
+   - Requires managing job names and deletion logic to prevent conflicts.
    - Requires a way to detect whether the Cloud Event is coming from the scheduler or from an original decision event—if it's from the scheduler, it must **not** be scheduled again.
 
 
