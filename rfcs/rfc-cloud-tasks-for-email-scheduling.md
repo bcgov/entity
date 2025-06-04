@@ -28,6 +28,8 @@ All other email types (initial notifications, consent letters, resends) continue
 7. At 2:07 pm, Cloud Tasks POSTs the "Conditional" CE to `/tasks/handle-send`.  
 8. The `handle-send` handler builds and sends the conditional email; the client receives only that one email.
 
+Note: The {random-6-digits} in the task name is a short hex UUID to guarantee uniqueness. Cloud Tasks does not allow reusing a task name for at least one hour after the original task is completed or deleted. This suffix avoids name collisions during rapid task rescheduling.
+
 # Motivation
 
 To stop clients from getting spammed with emails when examiners make mistakes and change their minds in a quick succession. Without an external service like cloud tasks the Namex Emailer runs as a Flask WSGI service, so each request is handled synchronously by a single Gunicorn worker. Once a worker starts processing an incoming cloud event, it must finish that entire request before picking up the next one. There is no built-in mechanism to pause, delay, or maintain state between separate HTTP calls. As a result, we cannot implement a "wait 5 minutes for a final decision" pattern purely within the existing WSGI request flow. By adding GCP Cloud Tasks as an external scheduler, we can offload the delay logic to a managed, cancelable queue. This allows us to "debounce" approval/conditional/rejection events without relying on in-process threads or long-running connections.
