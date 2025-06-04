@@ -9,9 +9,9 @@ The Names Team will integrate [**_GCP Cloud Tasks_**](https://cloud.google.com/t
 1. Cancel any existing Cloud Task for that NR.
 2. Enqueue a new task, scheduled for 5 minutes in the future, containing the latest decision (NR number & option).
 
-If a new decision arrives within five minutes, the previous task is revoked and replaced. Only when no further decision arrives for five minutes will the Cloud Task "survive" and  invoke the namex emailer `/handle-send` endpoint and send the email. This prevents sending multiple emails if an examiner changes their mind quickly.
+If a new decision arrives within five minutes, the previous task is revoked and replaced. Only when no further decision arrives for five minutes will the Cloud Task "survive" and invoke the namex emailer `/handle-send` endpoint and send the email. This prevents sending multiple emails if an examiner changes their mind quickly.
 
-All other email types (initial notifications, consent letters, resends) continue to send immediately; only `APPROVED`, `CONDITIONAL`, and `REJECTED` that are not resends go through this cloud tasks async flow.
+All other email types (initial notifications, consent letters, resends) continue to send immediately; only `APPROVED`, `CONDITIONAL`, and `REJECTED` decisions (excluding resends) follow this cloud tasks async flow.
 
 # Basic Example
 
@@ -28,11 +28,11 @@ All other email types (initial notifications, consent letters, resends) continue
 7. At 2:07 pm, Cloud Tasks POSTs the "Conditional" CE to `/tasks/handle-send`.  
 8. The `handle-send` handler builds and sends the conditional email; the client receives only that one email.
 
-Note: The {random-6-digits} in the task name is a short hex UUID to guarantee uniqueness. Cloud Tasks does not allow reusing a task name for at least one hour after the original task is completed or deleted. This suffix avoids name collisions during rapid task rescheduling.
+Note: The `{random-6-digits}` in the task name is a short hex UUID to guarantee uniqueness. Cloud Tasks does not allow reusing a task name for at least one hour after the original task is completed or deleted. This suffix avoids name collisions during rapid task rescheduling.
 
 # Motivation
 
-To stop clients from getting spammed with emails when examiners make mistakes and change their minds in a quick succession. Without an external service like cloud tasks the Namex Emailer runs as a Flask WSGI service, so each request is handled synchronously by a single Gunicorn worker. Once a worker starts processing an incoming cloud event, it must finish that entire request before picking up the next one. There is no built-in mechanism to pause, delay, or maintain state between separate HTTP calls. As a result, we cannot implement a "wait 5 minutes for a final decision" pattern purely within the existing WSGI request flow. By adding GCP Cloud Tasks as an external scheduler, we can offload the delay logic to a managed, cancelable queue. This allows us to "debounce" approval/conditional/rejection events without relying on in-process threads or long-running connections.
+To stop clients from getting spammed with emails when examiners make mistakes and change their minds in a quick succession. Without an external service like cloud tasks the Namex Emailer runs as a Flask WSGI service, so each request is handled synchronously by a single Gunicorn worker. Once a worker starts processing an incoming cloud event, it must finish that entire request before picking up the next one. There is no built-in mechanism to pause, delay, or maintain state between separate HTTP calls. As a result, we cannot implement a _"wait 5 minutes for a final decision"_ pattern purely within the existing WSGI request flow. By adding GCP Cloud Tasks as an external scheduler, we can offload the delay logic to a managed, cancelable queue. This allows us to "debounce" approval/conditional/rejection events without relying on in-process threads or long-running connections.
 
 # Detailed Design
 
@@ -60,7 +60,7 @@ To stop clients from getting spammed with emails when examiners make mistakes an
 ```
 
 ### Example of tasks on cloud tasks queue
-![alt text](rfc-cloud-tasks/tasks_on_queue.png)
+![Cloud Tasks on Queue](rfc-cloud-tasks/tasks_on_queue.png)
 
 # Requirements List
 
@@ -101,7 +101,7 @@ To stop clients from getting spammed with emails when examiners make mistakes an
    - The emailer is no longer just a Pub/Sub consumer; it must also accept incoming HTTP requests from Cloud Tasks. This means adding and maintaining a second route (/handle-send) and handling two different invocation sources.
 
 4. Cost considerations
-   - Adding a new google cloud service will come with an additional cost. Although the payload is minimal in each cloud task (just NR number and email), it will inevitably increase the monthly cloud bill for bcgov. 
+   - Adding a new google cloud service will come with an additional cost. Although the payload is minimal in each cloud task (just NR number and option), it will inevitably increase the monthly cloud bill for bcgov. 
 
 5. No debounce on decision --> reset only flows
    - If an NR is approved, then immediately reset and no new decision follows, the originally scheduled email still sends—because reset events don’t go through the emailer.
