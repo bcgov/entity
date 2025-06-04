@@ -109,12 +109,53 @@ To stop clients from getting spammed with emails when examiners make mistakes an
 
 # Alternatives
 
-1. Use a database table + periodic sweep job
-   - When an Approved, Conditional, or Rejected CE (Cloud Event) arrives, write (or overwrite) a row in a new email_debounce table keyed by NR number and event type.
-   - A scheduled job runs every 5 minutes. It queries the table for any NR whose latest CE is at least 5 minutes old, sends the corresponding email, and deletes that row.
-2. Chain into a second Pub/Sub topic
-   - When a decision CE arrives, the emailer republishes it to a "debounce" Pub/Sub topic (overwriting any existing message for that NR).
-   - A subscriber on the debounce topic processes each message, waits 5 minutes (e.g. via a time.sleep inside a Cloud Run container), then sends the email. If another message for the same NR arrives, the container can track and drop outdated CEs before sending.
+1. **Use a database table + periodic sweep job**
+
+   **Logic**
+   - When an Approved, Conditional, or Rejected CE (Cloud Event) arrives, write (or overwrite) a row in a new `email_debounce` table keyed by NR number and event type.
+   - A scheduled job runs every 5 minutes. It queries the table for any NR whose latest CE is at least 5 minutes old, sends the corresponding email, and deletes that row.  
+
+   **Pros**
+   - Simple and easy to reason about; avoids introducing new cloud services.
+   - No need for async infrastructure - can be implemented with a cron job.
+
+   **Cons**
+   - Polling-based, so emails may be delayed up to 10 minutes depending on job alignment.
+   - Requires creating a new job that runs frequently, which could increase operational complexity and cost.
+   - Requires a new `email_debounce` table in the Namex DB, and the emailer service currently has no DB connection - this would need to be added.
+
+2. **Chain into a second Pub/Sub topic**
+
+   **Logic**
+   - When a decision CE arrives, the emailer republishes it to a dedicated "debounce" Pub/Sub topic, overwriting any existing message for that NR.
+   - An async subscriber listens to this topic, waits 5 minutes (e.g., via `time.sleep`), and then sends the email.
+   - If a newer message for the same NR arrives during the wait, the subscriber drops the older one and resets the timer.
+
+   **Pros**
+   - Reuses existing Pub/Sub-based patterns already common within BCGov.
+   - All asynchronous logic is isolated in a dedicated service, separate from the core emailer.
+
+   **Cons**
+   - Effectively introduces a Pub/Sub → Pub/Sub chain, which increases complexity and likely results in duplicate code between services.
+   - Requires provisioning both a new Pub/Sub topic and a separate service to handle delayed processing.
+
+3. **Use Cloud Scheduler (GCP Scheduler API) to publish back to the same Pub/Sub topic**
+
+   **Logic**
+   - When a decision CE arrives, create a one-time Cloud Scheduler job that publishes to the Emailer Topic 5 minutes later.
+   - If a new decision arrives within that 5-minute window, the existing job is deleted and replaced with a new one containing the updated payload.
+   - When the delay expires, Cloud Scheduler publishes the message to the same Pub/Sub topic. The emailer worker picks it up and processes it through the normal flow (this time skipping scheduling), without needing a separate HTTP callback endpoint.
+
+   **Pros**
+   - Reuses the existing Emailer Topic and Pub/Sub processing flow — no need for a new HTTP endpoint.
+   - Cancellation and rescheduling are straightforward using predictable job names.
+   - Scheduler jobs are visible and traceable in the GCP console or CLI.
+   - Cloud Scheduler is already used in other BCGov services, so this approach wouldn’t introduce a new technology.
+
+   **Cons**
+   - Requires managing job names and deletion logic to prevent conflicts and delete the c
+   - Requires a way to detect whether the Cloud Event is coming from the scheduler or from an original decision event—if it's from the scheduler, it must **not** be scheduled again.
+
 
 # Adoption Strategy
 
