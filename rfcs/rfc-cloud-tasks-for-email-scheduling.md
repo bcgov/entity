@@ -139,23 +139,22 @@ To stop clients from getting spammed with emails when examiners make mistakes an
    - Effectively introduces a Pub/Sub → Pub/Sub chain, which increases complexity and likely results in duplicate code between services.
    - Requires provisioning both a new Pub/Sub topic and a separate service to handle delayed processing.
 
-3. **Use Cloud Scheduler (GCP Scheduler API) to publish back to the same Pub/Sub topic**
+3. **Use Cloud Scheduler (GCP Scheduler API) to schedule a publish to the Pub/Sub topic**
 
    **Logic**
-   - When a decision CE arrives, create a one-time Cloud Scheduler job that publishes to the Emailer Topic 5 minutes later.
-   - If a new decision arrives within that 5-minute window, the existing job is deleted and replaced with a new one containing the updated payload.
-   - When the delay expires, Cloud Scheduler publishes the message to the same Pub/Sub topic. The emailer worker picks it up and processes it through the normal flow (this time skipping scheduling), without needing a separate HTTP callback endpoint.
-   - The emailer would then delete the scheduled job to prevent a large build up of these scheduled jobs.
+   - When a decision is made in Namex API, instead of publishing directly to the emailer topic, it creates a one-time scheduled job that will publish to the emailer topic after a delay.
+   - If another decision occurs within the 5-minute window, the existing scheduled job is deleted and replaced (from the API) with a new one containing the updated payload.
+   - When the delay expires, Cloud Scheduler publishes the message to the emailer topic. The emailer worker picks it up and processes it as usual.
+   - The emailer deletes the scheduled job after processing to prevent a buildup of leftover scheduled jobs (this is the only change needed in the emailer).
 
    **Pros**
-   - Reuses the existing Emailer Topic and Pub/Sub processing flow — no need for a new HTTP endpoint.
+   - Very limited changes to the emailer, it only needs to delete the job after processing.
    - Cancellation and rescheduling are straightforward using predictable job names.
    - Scheduler jobs are visible and traceable in the GCP console or CLI.
    - Cloud Scheduler is already used in other BCGov services, so this approach wouldn’t introduce a new technology.
 
    **Cons**
    - Requires managing job names and deletion logic to prevent conflicts.
-   - Requires a way to detect whether the Cloud Event is coming from the scheduler or from an original decision event—if it's from the scheduler, it must **not** be scheduled again.
    - Cloud Scheduler jobs do not automatically delete themselves like Cloud Tasks, so an extra step is required to identify and remove the job after it completes.
    - Cloud Scheduler jobs appear individually in the GCP Console under the Scheduler Jobs page, and they are not grouped, which can make management and tracking more cluttered compared to Cloud Tasks.
 
