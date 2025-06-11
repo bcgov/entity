@@ -145,6 +145,7 @@ To stop clients from getting spammed with emails when examiners make mistakes an
    - When a decision CE arrives, create a one-time Cloud Scheduler job that publishes to the Emailer Topic 5 minutes later.
    - If a new decision arrives within that 5-minute window, the existing job is deleted and replaced with a new one containing the updated payload.
    - When the delay expires, Cloud Scheduler publishes the message to the same Pub/Sub topic. The emailer worker picks it up and processes it through the normal flow (this time skipping scheduling), without needing a separate HTTP callback endpoint.
+   - The emailer would then delete the scheduled job to prevent a large build up of these scheduled jobs.
 
    **Pros**
    - Reuses the existing Emailer Topic and Pub/Sub processing flow — no need for a new HTTP endpoint.
@@ -155,6 +156,8 @@ To stop clients from getting spammed with emails when examiners make mistakes an
    **Cons**
    - Requires managing job names and deletion logic to prevent conflicts.
    - Requires a way to detect whether the Cloud Event is coming from the scheduler or from an original decision event—if it's from the scheduler, it must **not** be scheduled again.
+   - Cloud Scheduler jobs do not automatically delete themselves like Cloud Tasks, so an extra step is required to identify and remove the job after it completes.
+   - Cloud Scheduler jobs appear individually in the GCP Console under the Scheduler Jobs page, and they are not grouped, which can make management and tracking more cluttered compared to Cloud Tasks.
 
 
 # Adoption Strategy
