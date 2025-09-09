@@ -1,30 +1,30 @@
 ---
 name: Entities_Epic.md
-about: Template for a new entities epic (typically used for a new filing)
+about: Template for a new entities epic
 title: ''
+type: Epic
 labels: ''
 assignees: ''
 
 ---
 
-Things to create for each new epic:
+## Description: High-level summary of what and why
+*
 
-1. Design tickets
-2. UI story
-  - Create UI
-  - Edit UI
-  - Filings UI
-  - Auth Web
-4. Backend and schema validation story
-5. Outputs story
-6. Messaging story
-  - BN
-  - MRAS
-  - Gazette
-  - Orgbook
-  - COLIN API
-  - SOFI
-  - Legacy jobs (BC Mail, Name Results, etc.)
-8. Payments story
-    - Fee code from relationships
-    - Any scenarios where different filing types won't work with a certain payment type?
+## Business Value / Outcome: What’s the impact if delivered? (e.g., improved security, user experience, compliance)
+*
+
+## Success Criteria / Definition of Done: How will we know it’s complete?
+*
+
+## Interested Parties / Owners: Who’s driving it, who’s impacted
+*
+
+## Dependencies / Constraints: Tech, teams, or external factors
+*
+
+## Acceptance Criteria (high-level): Non-negotiables for completion
+*
+
+## Related Initiatives / References
+*
