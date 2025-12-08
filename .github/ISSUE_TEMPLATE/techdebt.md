@@ -24,5 +24,3 @@ assignees: ''
 
 ## Proposed solution (if known)
 *
-
-

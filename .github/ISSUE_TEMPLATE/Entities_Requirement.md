@@ -2,7 +2,6 @@
 name: Entities_Requirement
 about: Describe requirement associated with an Epic or feature
 title: ''
-type: Task
 labels: ''
 assignees: ''
 

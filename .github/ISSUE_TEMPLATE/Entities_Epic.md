@@ -2,7 +2,6 @@
 name: Entities_Epic.md
 about: Template for a new entities epic
 title: ''
-type: Epic
 labels: ''
 assignees: ''
 
