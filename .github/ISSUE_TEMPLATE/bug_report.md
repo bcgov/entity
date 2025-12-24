@@ -33,3 +33,6 @@ A clear and concise description of what you expected to happen. Use the gherking
 
 **Screenshots/ Visual Reference/ Source**
 If applicable, add screenshots to help explain your problem. You an use screengrab.
+
+**Identified Root Cause for the Scenario (Mandatory)**
+The goal is to document why this happened so the issue can be understood, addressed, and prevented from recurring
