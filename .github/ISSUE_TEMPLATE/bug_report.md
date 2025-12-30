@@ -33,3 +33,6 @@ A clear and concise description of what you expected to happen. Use the gherking
 
 **Screenshots/ Visual Reference/ Source**
 If applicable, add screenshots to help explain your problem. You an use screengrab.
+
+**Root Cause Analysis (RCA) results**
+If applicable, document the root cause analysis results for the scenarios. This section is mandatory before the issue can be closed
