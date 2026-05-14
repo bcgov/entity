@@ -1,3 +1,5 @@
+---
+
 about: Report an exception or error that occurred in the system
 title: '[ERROR] - [Brief Description]'
 labels: bug
