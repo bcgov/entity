@@ -1,9 +1,7 @@
 ---
 
 about: Report an exception or error that occurred in the system
-title: '[ERROR] - [Brief Description]'
-labels: bug
-assignees: ''
+
 
 ---
 
@@ -22,7 +20,7 @@ Name of person reviewing solution
 
 ---
 
-Approved by:
+## Approved by:
 Name of person approving the solution
 
 ## Error Details
