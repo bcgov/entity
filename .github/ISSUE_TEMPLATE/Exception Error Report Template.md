@@ -35,40 +35,6 @@ What type of error is this? (e.g., NullPointerException, ValueError, RuntimeErro
 
 Code
 
-**Stack Trace:**
-[Paste the complete stack trace here]
-
-Code
-
----
-
-## Environment Information
-
-- **Environment:** (Development / Staging / Production)
-- **Service/Component:** (Which service or component failed)
-- **Version:** (Application/Service version)
-- **Date/Time of Occurrence:** (YYYY-MM-DD HH:MM:SS)
-- **Browser/Client:** (If applicable)
-- **Operating System:** (If applicable)
-
----
-
-## Steps to Reproduce
-
-1. [First step]
-2. [Second step]
-3. [Additional steps...]
-
----
-
-## Expected vs Actual Behavior
-
-**Expected Behavior:**
-What should have happened?
-
-**Actual Behavior:**
-What actually happened instead?
-
 ---
 
 ## Screenshots/Logs/Links
@@ -78,28 +44,3 @@ Attach any relevant screenshots, error logs, Links, or console output that helps
 [Add attachments or paste logs here]
 
 ---
-
-## Impact Assessment
-
-**Severity Level:** (Critical / High / Medium / Low)
-
-**Affected Components/Features:**
-- [ ] List affected areas
-
-**Number of Users Impacted:**
-(All users / Specific user group / Single user)
-
----
-
-## Additional Information
-
-**Related Issues:**
-Link to any related issues or PRs (if known)
-
-**Root Cause Theory:**
-If you have any theories about what might be causing this, please share them here.
-
-**Workaround:**
-Is there a temporary workaround available?
-
-
