@@ -1,5 +1,6 @@
 ---
 
+name: Exception Error Report Template
 about: Report an exception or error that occurred in the system
 
 
