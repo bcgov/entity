@@ -1,0 +1,12 @@
+{
+  "name": "entity-git-hooks",
+  "private": true,
+  "type": "module",
+  "description": "Root-level package for Git hooks tooling only - subfolders manage their own dependencies.",
+  "scripts": {
+    "prepare": "git --version && lefthook install || exit 0"
+  },
+  "devDependencies": {
+    "lefthook": "^1.11.3"
+  }
+}
