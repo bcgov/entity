@@ -1,0 +1,9 @@
+# Lefthook Git hooks configuration
+# https://github.com/evilmartians/lefthook
+
+pre-commit:
+  parallel: true
+  commands:
+    secret-scan:
+      tags: security
+      run: npx gitleaks-secret-scanner
