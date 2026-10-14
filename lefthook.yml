@@ -6,4 +6,12 @@ pre-commit:
   commands:
     secret-scan:
       tags: security
-      run: npx gitleaks-secret-scanner
+      run: if [ ! -f .git/info/lefthook-remotes/bcregistry-sre-main/git-hooks/gitleaks-base.toml ]; then echo Shared gitleaks rules missing - run npx lefthook install; exit 1; fi; npx --yes gitleaks-secret-scanner
+
+# Shared gitleaks rules: https://github.com/bcgov/bcregistry-sre/tree/main/git-hooks
+remotes:
+  - git_url: https://github.com/bcgov/bcregistry-sre
+    ref: main
+    refetch_frequency: 24h
+    configs:
+      - git-hooks/lefthook-remote.yml
